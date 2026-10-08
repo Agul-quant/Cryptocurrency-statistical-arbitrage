@@ -1,0 +1,8 @@
+# Frozen snapshot hashes must survive Windows/macOS/Linux checkout unchanged.
+studies/** -text
+data_parts/** -text
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+# Put the frozen-study override last so no broad extension rule changes bytes.
+studies/** -text

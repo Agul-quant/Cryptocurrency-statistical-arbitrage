@@ -1,0 +1,122 @@
+Development/validation 01/18: momentum_h024_r01
+Development/validation 02/18: momentum_h024_r04
+Development/validation 03/18: momentum_h024_r24
+Development/validation 04/18: momentum_h072_r01
+Development/validation 05/18: momentum_h072_r04
+Development/validation 06/18: momentum_h072_r24
+Development/validation 07/18: momentum_h168_r01
+Development/validation 08/18: momentum_h168_r04
+Development/validation 09/18: momentum_h168_r24
+Development/validation 10/18: reversal_h001_r01
+Development/validation 11/18: reversal_h001_r04
+Development/validation 12/18: reversal_h001_r24
+Development/validation 13/18: reversal_h004_r01
+Development/validation 14/18: reversal_h004_r04
+Development/validation 15/18: reversal_h004_r24
+Development/validation 16/18: reversal_h012_r01
+Development/validation 17/18: reversal_h012_r04
+Development/validation 18/18: reversal_h012_r24
+Selection frozen before test: [{"family": "momentum", "lookback_h": 168, "rebalance_h": 24, "strategy_id": "momentum_h168_r24", "validation_annual_return": -0.23222024157430715, "validation_mean_hourly_turnover": 0.022028688524590164, "validation_net_sharpe": -0.9815320625217292}, {"family": "reversal", "lookback_h": 1, "rebalance_h": 24, "strategy_id": "reversal_h001_r24", "validation_annual_return": -1.227622138863953, "validation_mean_hourly_turnover": 0.05519932073466909, "validation_net_sharpe": -5.198881119184627}]
+Frozen evaluation: momentum_h168_r24 / development
+Frozen evaluation: momentum_h168_r24 / validation
+Frozen evaluation: momentum_h168_r24 / test
+Frozen evaluation: reversal_h001_r24 / development
+Frozen evaluation: reversal_h001_r24 / validation
+Frozen evaluation: reversal_h001_r24 / test
+{
+  "root": "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb",
+  "selected": [
+    {
+      "strategy_id": "momentum_h168_r24",
+      "family": "momentum",
+      "lookback_h": 168,
+      "rebalance_h": 24,
+      "validation_net_sharpe": -0.9815320625217292,
+      "validation_annual_return": -0.23222024157430715,
+      "validation_mean_hourly_turnover": 0.022028688524590164
+    },
+    {
+      "strategy_id": "reversal_h001_r24",
+      "family": "reversal",
+      "lookback_h": 1,
+      "rebalance_h": 24,
+      "validation_net_sharpe": -5.198881119184627,
+      "validation_annual_return": -1.227622138863953,
+      "validation_mean_hourly_turnover": 0.05519932073466909
+    }
+  ],
+  "combination_eligible": false,
+  "test_primary_metrics": [
+    {
+      "strategy_id": "momentum_h168_r24",
+      "family": "momentum",
+      "lookback_h": 168,
+      "rebalance_h": 24,
+      "split": "test",
+      "cost_bps": 20.0,
+      "execution_lag": 1,
+      "total_return": -0.4037800391760039,
+      "cagr": -0.4037800391760039,
+      "annual_return": -0.5002662822878492,
+      "annual_volatility": 0.18166086505545465,
+      "sharpe": -2.753847297463521,
+      "max_drawdown": 0.4259943897648649,
+      "mean_hourly_turnover": 0.02264554794520548,
+      "total_turnover": 198.375,
+      "total_cost_sum": 0.39675000000000005,
+      "n_hours": 8760,
+      "n_observations": 8760,
+      "n_days": 365,
+      "alpha_annual": -0.498548919343809,
+      "beta": -0.08118749394852282,
+      "alpha_tstat": -2.6363182397733995,
+      "alpha_pvalue": 0.00838110875239247,
+      "alpha_ci_low": -0.8691938254493854,
+      "alpha_ci_high": -0.12790401323823267,
+      "beta_ci_low": -0.14577232306769256,
+      "beta_ci_high": -0.01660266482935306,
+      "gross_total_return": -0.11315754888616192,
+      "gross_cagr": -0.11315754888616192,
+      "gross_annual_return": -0.10377184837248576,
+      "gross_annual_volatility": 0.18057321150724265,
+      "gross_sharpe": -0.5746801948434281,
+      "gross_max_drawdown": 0.24233871644802152
+    },
+    {
+      "strategy_id": "reversal_h001_r24",
+      "family": "reversal",
+      "lookback_h": 1,
+      "rebalance_h": 24,
+      "split": "test",
+      "cost_bps": 20.0,
+      "execution_lag": 1,
+      "total_return": -0.5771590857273323,
+      "cagr": -0.5771590857273323,
+      "annual_return": -0.8417029694797205,
+      "annual_volatility": 0.18997956079202782,
+      "sharpe": -4.430492238063122,
+      "max_drawdown": 0.5901740703556322,
+      "mean_hourly_turnover": 0.053381849315068494,
+      "total_turnover": 467.625,
+      "total_cost_sum": 0.93525,
+      "n_hours": 8760,
+      "n_observations": 8760,
+      "n_days": 365,
+      "alpha_annual": -0.8417966791934954,
+      "beta": 0.00443008092520451,
+      "alpha_tstat": -4.692293695132172,
+      "alpha_pvalue": 2.701589142789624e-06,
+      "alpha_ci_low": -1.1934138798039944,
+      "alpha_ci_high": -0.4901794785829964,
+      "beta_ci_low": -0.06915161207887387,
+      "beta_ci_high": 0.0780117739292829,
+      "gross_total_return": 0.07847463978701197,
+      "gross_cagr": 0.07847463978701197,
+      "gross_annual_return": 0.0934873306033518,
+      "gross_annual_volatility": 0.18962555118745106,
+      "gross_sharpe": 0.4930101983510466,
+      "gross_max_drawdown": 0.11874394420674161
+    }
+  ],
+  "completed_at_utc": "2026-10-06T02:27:31.622784+00:00"
+}

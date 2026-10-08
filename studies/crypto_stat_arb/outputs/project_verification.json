@@ -1,0 +1,30 @@
+{
+  "all_analysis_fingerprints_match": true,
+  "artifact_qa_sha256": "9c0d5baa55faf0360f99c09626b6b7f936f8c39d4e5538b689cb7c64fd604935",
+  "data_quality_status": "pass_with_documented_exceptions",
+  "normalized_observed_rows": 286456,
+  "notebook_all_charts_visually_reviewed_by_root": true,
+  "notebook_code_cells_executed": 9,
+  "notebook_embedded_charts": 4,
+  "notebook_errors": 0,
+  "notebook_sha256": "45cab6f6d78a17907487cdf5129bd8fe7c1866ca20133cc8576924ef07ea5c5b",
+  "pdf_all_pages_visually_reviewed_by_root": true,
+  "pdf_pages": 8,
+  "raw_monthly_archives": 392,
+  "remaining_limitations": [
+    "Purposive fixed survivor sample",
+    "USDT denomination, not USD",
+    "Theoretical shorts without funding, borrowing, margin or capacity constraints",
+    "Idealized close execution with target-weight-change turnover; weight drift omitted",
+    "18 validation comparisons; selected performance is not an unbiased estimate",
+    "Known March 2023 halt uses one invested four-hour observed interval; intra-halt drawdown unknown",
+    "Unknown activity regimes retained where missing source volume prevents a full 168-hour denominator"
+  ],
+  "report_sha256": "331e02ae1fedf69188f6ccde70a53fb8099302ba47df72ab9854f91af509380f",
+  "run_manifest_sha256": "b043fab888b1a0b47b8b4e1e44c51327db0cb3171a4f2d6abb751e4e73e54464",
+  "selection_precedes_test": true,
+  "selection_preserved_across_deterministic_reruns": true,
+  "test_log": "outputs/test_run.log",
+  "tests_passed": 89,
+  "verified_at_utc": "2026-10-06T02:35:39.208605+00:00"
+}

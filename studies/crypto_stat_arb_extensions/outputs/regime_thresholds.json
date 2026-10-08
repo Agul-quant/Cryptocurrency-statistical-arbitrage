@@ -1,0 +1,20 @@
+{
+  "definitions": {
+    "btc_volatility_30d": "Sample standard deviation of preceding 30 complete BTC 24h simple returns; unannualized",
+    "relative_quote_volume": "Complete preceding 24h quote volume across fixed assets / strictly previous seven complete daily totals mean",
+    "return_dispersion_24h": "Sample cross-asset standard deviation of preceding 24h simple returns; full asset universe required"
+  },
+  "n_training_observations": {
+    "btc_volatility_30d": 730,
+    "relative_quote_volume": 722,
+    "return_dispersion_24h": 730
+  },
+  "rule": "high >= development median; low < median; missing is unknown",
+  "thresholds": {
+    "btc_volatility_30d": 0.025608952020686665,
+    "relative_quote_volume": 0.9720950120513324,
+    "return_dispersion_24h": 0.01622225459440902
+  },
+  "training_end_exclusive": "2024-01-01T00:00:00+00:00",
+  "training_start": "2022-01-01T00:00:00+00:00"
+}

@@ -1,0 +1,18 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.DS_Store
+tmp/
+.venv/
+.env
+.env.*
+!.env.example
+/local_outputs/
+/provenance/release_checks.local.json
+*.local.zip
+# The ordinary-Git snapshot restores these exact bytes from data_parts/.
+/studies/crypto_intraday_5m/data/processed/bars.parquet
+/studies/crypto_intraday_5m/outputs/selected_returns.parquet
+# Raw 5m downloads are retained in the full local archive, not duplicated in Git.
+/studies/crypto_intraday_5m/data/raw/**/*.zip
+/studies/crypto_intraday_5m/data/raw/**/*.zip.CHECKSUM

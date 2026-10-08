@@ -1,0 +1,36 @@
+{
+  "analysis_source_sha256": {
+    "configs/research.toml": "6c2f425ed37b615aa43060d6bd248e2eb58e7719a0b113103a9823d5cee373f9",
+    "pyproject.toml": "94e5c223f9b5e0cf3bc1489443041e838068789556d8ce9061c25502fbb7a480",
+    "src/crypto_intraday_5m/__init__.py": "49b40718410db77a13a470ce31bc010504bb7f3a008fd4f7ee5b83b250a8079f",
+    "src/crypto_intraday_5m/__main__.py": "55606b0114875bed32d13017dba729739c8fc0e86b2c9532690febbecbab42d4",
+    "src/crypto_intraday_5m/backtest.py": "002501cd0007dfc8db2519945fb3b23c14a28eb84608858838f2600442df2f81",
+    "src/crypto_intraday_5m/core.py": "293afac0c7a33d16f2bd51935728826310f30e8191bc46d05799e22841c7dd9e",
+    "src/crypto_intraday_5m/data.py": "af05e5e1924c9fc7cec14c5eae84b35e73a6c7a2e864b95310838130702ee976",
+    "src/crypto_intraday_5m/metrics.py": "8834829d075ada3005aedb4d7fec650424a1cbfff864e6d81c2193437840fec3",
+    "src/crypto_intraday_5m/runner.py": "f6afd17ceae8b64b2e47cbea1b00d47b9a8823d9b3c9d2330debf0b130260d40"
+  },
+  "cosmetic_identifier_map": {
+    "momentum_l005_r005": "momentum_m005_r005",
+    "momentum_l005_r015": "momentum_m005_r015",
+    "momentum_l005_r060": "momentum_m005_r060",
+    "momentum_l015_r005": "momentum_m015_r005",
+    "momentum_l015_r015": "momentum_m015_r015",
+    "momentum_l015_r060": "momentum_m015_r060",
+    "momentum_l030_r005": "momentum_m030_r005",
+    "momentum_l030_r015": "momentum_m030_r015",
+    "momentum_l030_r060": "momentum_m030_r060",
+    "reversal_l005_r005": "reversal_m005_r005",
+    "reversal_l005_r015": "reversal_m005_r015",
+    "reversal_l005_r060": "reversal_m005_r060",
+    "reversal_l015_r005": "reversal_m015_r005",
+    "reversal_l015_r015": "reversal_m015_r015",
+    "reversal_l015_r060": "reversal_m015_r060",
+    "reversal_l030_r005": "reversal_m030_r005",
+    "reversal_l030_r015": "reversal_m030_r015",
+    "reversal_l030_r060": "reversal_m030_r060"
+  },
+  "parameters_identical": true,
+  "source_policy_locked_before_backtests": "2026-10-06T17:17:37.152310+00:00",
+  "verified_at_utc": "2026-10-06T17:24:55.928089+00:00"
+}

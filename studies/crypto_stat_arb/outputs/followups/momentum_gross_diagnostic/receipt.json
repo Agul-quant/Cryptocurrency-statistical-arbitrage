@@ -1,0 +1,29 @@
+{
+  "all_eight_end_to_end_asset_returns_negative": true,
+  "caveats": [
+    "Contributions use each interval beginning portfolio equity, so they add exactly to compounded total return.",
+    "These are P&L contributions as percentages of initial capital, not independent compounded long/short sleeve returns.",
+    "End-to-end price declines do not imply prices declined continuously throughout the year.",
+    "This is an accounting explanation, not proof of the economic cause of relative signal failure.",
+    "Dollar-neutral exposure does not imply a beta-neutral portfolio; course shorts remain theoretical."
+  ],
+  "completed_at_utc": "2026-10-06T12:37:37.116239+00:00",
+  "cost_bps": 0,
+  "execution_lag": 1,
+  "hourly_rows": 8760,
+  "input_sha256": {
+    "data/processed/bars.parquet": "4d39bb10aa5a3a4950717894c9f52cfeffc1121059c29b49ca57d11d366605b8",
+    "outputs/selected_returns.parquet": "b6325f0752fe27e5d709856a0a59bd34b14edd962d958ea336c1cb43258ca4f9",
+    "outputs/selected_weights.parquet": "df674c08d9cc574ea9611251cdf62a19699cee0f6227fae5d1b66cbbb59ac157",
+    "outputs/selection.json": "b9a92e2db9eb8aae3d10bcfe63674ae36b216ea9e30bc227760dad560cccd616",
+    "src/crypto_stat_arb/backtest.py": "36045eb2be5ea0a3e5c607a6eb8400bb59fff47c0d95d5c04628a989b3c6d1f0"
+  },
+  "long_gross_exposure": 0.5,
+  "long_plus_short_pnl_reconciles_gross_total": true,
+  "net_exposure": 0,
+  "original_inputs_unchanged": true,
+  "short_gross_exposure": 0.5,
+  "split": "test",
+  "started_at_utc": "2026-10-06T12:37:36.558000+00:00",
+  "strategy_id": "momentum_h168_r24"
+}

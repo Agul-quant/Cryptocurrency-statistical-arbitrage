@@ -1,0 +1,58 @@
+{
+  "all_periods_exploratory_retrospective": true,
+  "evaluated_strategies": [
+    {
+      "family": "momentum",
+      "label": "Momentum 15m / rebalance 60m",
+      "lookback_minutes": 15,
+      "rebalance_minutes": 60,
+      "role": "negative_control",
+      "strategy_id": "momentum_m015_r060",
+      "validation_sharpe": -88.41150566561235,
+      "validation_terminal_log_equity": -23.65811402398703,
+      "validation_total_return": -0.9999999999468612
+    },
+    {
+      "family": "reversal",
+      "label": "Reversal 15m / rebalance 60m",
+      "lookback_minutes": 15,
+      "rebalance_minutes": 60,
+      "role": "negative_control",
+      "strategy_id": "reversal_m015_r060",
+      "validation_sharpe": -94.16908352233244,
+      "validation_terminal_log_equity": -22.145847064334333,
+      "validation_total_return": -0.9999999997589091
+    }
+  ],
+  "research_status": "All periods exploratory/retrospective; January\u2013September2026 already inspected at coarser resolution.",
+  "retrospective_2025_or_2026_used_for_selection": false,
+  "selected": [
+    {
+      "family": "momentum",
+      "label": "Momentum 15m / rebalance 60m",
+      "lookback_minutes": 15,
+      "rebalance_minutes": 60,
+      "role": "negative_control",
+      "strategy_id": "momentum_m015_r060",
+      "validation_sharpe": -88.41150566561235,
+      "validation_terminal_log_equity": -23.65811402398703,
+      "validation_total_return": -0.9999999999468612
+    },
+    {
+      "family": "reversal",
+      "label": "Reversal 15m / rebalance 60m",
+      "lookback_minutes": 15,
+      "rebalance_minutes": 60,
+      "role": "negative_control",
+      "strategy_id": "reversal_m015_r060",
+      "validation_sharpe": -94.16908352233244,
+      "validation_terminal_log_equity": -22.145847064334333,
+      "validation_total_return": -0.9999999997589091
+    }
+  ],
+  "selected_at_utc": "2026-10-06T17:29:42.206470+00:00",
+  "selection_cost_bps": 20,
+  "selection_evidence_sha256": "efbf7e3a1447ca5f4ccda0c077ef4f55aac8c074080cc2ddecb9fb62042be402",
+  "selection_period": "2024",
+  "selection_rule": "Highest defined2024 net daily Sharpe at20bps per family; ties lower turnover then strategy ID. Negative selections are controls."
+}

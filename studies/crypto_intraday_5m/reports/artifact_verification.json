@@ -1,0 +1,132 @@
+{
+  "artifact_paths": {
+    "pdf": "reports/intraday_5m_report.pdf",
+    "notebook": "notebooks/intraday_5m_research.ipynb",
+    "html": "notebooks/intraday_5m_research.html",
+    "figure_selection": "reports/figures/selection.png",
+    "figure_periods": "reports/figures/periods.png",
+    "figure_equity": "reports/figures/equity.png",
+    "figure_costs": "reports/figures/costs.png",
+    "figure_turnover": "reports/figures/turnover.png"
+  },
+  "sha256": {
+    "pdf": "68ee3b581e7b25d592b84417d3dc36803829842af173a9f20cf963c3bd5440cf",
+    "notebook": "b78f673920908c3acbd81589294474a700ff2e49b4daaa1acc00d9a9d320bcfa",
+    "html": "602e893af1ee0663e798e7becfd56f5082394835d1c25cc217eaacbb7ee0d4f2",
+    "figure_selection": "6a4245851290ee9e3be3003861540c6f5c233a4e67645fc944265272b3f7bd0f",
+    "figure_periods": "bb12343cfd09fbbafb35ab5883fb2c7dde8441dd2a748baa6418fc86c261a074",
+    "figure_equity": "43c986d77aff9b12632de4312e0d91ea6fe58e5a2a9e85eceb15ae9be6cb35fa",
+    "figure_costs": "af249475d4000e5420e97fd111e79c85ec0ca0ecbac249d0c333a5926937da60",
+    "figure_turnover": "d9c7009bf1c7c04fdb57a996c305806152c1ffd62aef35966f6a9c670f39e1ae"
+  },
+  "reporting_source_sha256": "983f7031c9b53fd29294e8d72e02783fb8c12229bbc600230d7ebeecde08df3d",
+  "classification": "Entire pilot exploratory/retrospective; 2026 is not a new holdout.",
+  "execution": "Notebook executed top to bottom, selected primary holdings/accounting/daily metrics independently reconciled.",
+  "visual_inspection": "Passed: every one of nine final PDF pages and all five embedded notebook figures personally inspected at readable resolution; native HTML summary, selection controls, scalar source reconciliation, risk/annual/exposure tables, post-hoc break-even and final takeaways/sources inspected. No clipping, overlap, blank pages or missing output.",
+  "visual_qa": {
+    "status": "passed",
+    "completed_at_utc": "2026-10-06T17:45:30.986176+00:00",
+    "pdf_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "pdf_renderer": "Poppler pdftoppm 110 dpi; earlier native PyMuPDF 1.7x crosscheck",
+    "notebook_figures_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "notebook_figure_png_sha256": [
+      "351bd0d0800b4278d5bcb19704de07dae840aa610c18ff63986d19142f735c2c",
+      "99b0b339e2c0c83682f8a9f76f26e48068ceffdb37f98f2bceaff4d8b2ad2558",
+      "b83acdf3bb65c571f150ccbf98e20834c368fc5ef27d59a13ccd1455af56ece0",
+      "5c271a56effaa62dae19dd8efab08160fad82c8401c3b7c7b23cec59643019c7",
+      "2367db5e28260436141f23dbec9fc753907a228b48db3a90e5e524a819b3525a"
+    ],
+    "html_browser": "Temporary local Chrome preview (in-app browser unavailable); existing user tabs unmodified.",
+    "html_sections_inspected": [
+      "summary",
+      "selection controls",
+      "source reconciliation/tolerance",
+      "primary metrics",
+      "annualization and exposure",
+      "historical zero-profit cost",
+      "takeaways and source links"
+    ],
+    "all_case_display": "Terminal log10 retained-capital matrix avoids hiding distinct positive mathematical wealth behind rounded -100% total returns."
+  },
+  "notebook_execution_checks": {
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "error_outputs": 0,
+    "embedded_png_figures": 5,
+    "primary_selected_model_period_paths_independently_reconciled": 8,
+    "checks": [
+      "completed research input/source/output hashes",
+      "gross held-weight P&L from audited cached five-minute source prices",
+      "full-L1 changes including initial entry and final liquidation",
+      "net = gross - cost",
+      "log wealth and exp(log wealth) without bankruptcy clipping",
+      "log-peak observed-endpoint drawdown",
+      "1440 elapsed minutes per UTC day including the 160-minute bridge",
+      "daily volatility, Sharpe, annualized mean and manual BTC OLS intercept/beta"
+    ],
+    "retrospective_2026_observations_per_scenario": 78624,
+    "retrospective_2026_days": 273,
+    "retrospective_2026_elapsed_minutes": 393120
+  },
+  "posthoc_derivative_evidence": {
+    "classification": "Historical derivative diagnostic created after completed research; not a selection input or untouched holdout result.",
+    "path": "outputs/cost_break_even.json",
+    "sha256": "7a3f274d92d6dffdc963d3834cf9222b2ec1b64d8316acf1a538f323a1313792",
+    "independent_recomputation": {
+      "momentum_m015_r060": {
+        "cost_bps": null,
+        "reason": "Already negative before costs; no nonnegative zero-profit cost."
+      },
+      "reversal_m015_r060": {
+        "cost_bps": 0.33949153642324736,
+        "residual_terminal_log_equity": -5.551115123125783e-17,
+        "classification": "Post-hoc historical diagnostic; no reselection or future promise."
+      }
+    },
+    "equation": "sum(log1p(gross_return - cost_bps * 1e-4 * full_L1_turnover)) = 0"
+  },
+  "artifact_tests": {
+    "command": "/Users/cosdis/.venvs/myenv/bin/python -m pytest -q tests/test_reporting.py",
+    "passed": 11,
+    "failed": 0
+  },
+  "preserved_projects": {
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb": {
+      "status": "unchanged",
+      "file_count": 868,
+      "bundle_unchanged": true
+    },
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb_extensions": {
+      "status": "unchanged",
+      "file_count": 1878,
+      "bundle_unchanged": true
+    }
+  },
+  "completed_research_manifest_sha256": "5d561af36f41faab3c7da2f50cd6e4215f74fffe129afb290a822d84b9b67a35"
+}

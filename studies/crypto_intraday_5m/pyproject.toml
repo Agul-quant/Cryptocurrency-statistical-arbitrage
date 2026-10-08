@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-intraday-5m"
+version = "0.1.0"
+description = "Exploratory five-minute crypto momentum and reversal research"
+requires-python = ">=3.11"
+dependencies = ["numpy", "pandas", "scipy", "statsmodels", "requests", "pyarrow", "matplotlib", "reportlab", "nbformat", "nbclient", "nbconvert", "ipykernel"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+crypto-intraday-5m = "crypto_intraday_5m.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "encoding": "Concatenated original bytes, not reserialized parquet. No data values changed.",
+  "files": [
+    {
+      "path": "studies/crypto_intraday_5m/data/processed/bars.parquet",
+      "sha256": "cc253b0782f16dbdafcae7889a62806ae3ea53f456bd74d77dd78d8147fbe037",
+      "bytes": 145934254,
+      "parts": [
+        {
+          "path": "data_parts/studies/crypto_intraday_5m/data/processed/bars.parquet/part-000.bin",
+          "sha256": "b2f78e1c9d15a995d7ca31697689daeb00800bb712b78687e2bc0b41eba56e56",
+          "bytes": 33554432
+        },
+        {
+          "path": "data_parts/studies/crypto_intraday_5m/data/processed/bars.parquet/part-001.bin",
+          "sha256": "829eab45690a548c548d0c7a632c936ea24b358d7e0f6f7d8dc5dbe4ab97a77b",
+          "bytes": 33554432
+        },
+        {
+          "path": "data_parts/studies/crypto_intraday_5m/data/processed/bars.parquet/part-002.bin",
+          "sha256": "801b6606f3b1d7138b1917c967c4662d1121b17abbf971068c5123c5f769bb80",
+          "bytes": 33554432
+        },
+        {
+          "path": "data_parts/studies/crypto_intraday_5m/data/processed/bars.parquet/part-003.bin",
+          "sha256": "c5b1936ad6d2d08c68e24f5c25e4e3c6285aa79ca5e8dbfd9deff70bd955a7bc",
+          "bytes": 33554432
+        },
+        {
+          "path": "data_parts/studies/crypto_intraday_5m/data/processed/bars.parquet/part-004.bin",
+          "sha256": "8c3c058d45d435b25ead047a17148e3f99a71906188066f4a4702a7fd51421f0",
+          "bytes": 11716526
+        }
+      ]
+    },
+    {
+      "path": "studies/crypto_intraday_5m/outputs/selected_returns.parquet",
+      "sha256": "3264d20a7d6b4c35eb58af14adca35a7ee0719b3f2a7ed47bb9324986e38c31e",
+      "bytes": 129414138,
+      "parts": [
+        {
+          "path": "data_parts/studies/crypto_intraday_5m/outputs/selected_returns.parquet/part-000.bin",
+          "sha256": "0bef8d4515ea5d001f8cb076c22b2419e07ce7603f5057e3226e292b090b21de",
+          "bytes": 33554432
+        },
+        {
+          "path": "data_parts/studies/crypto_intraday_5m/outputs/selected_returns.parquet/part-001.bin",
+          "sha256": "578abc5999c46c3479a7e3da5cdcddaba9946adcf152a64f8c495c065d698a44",
+          "bytes": 33554432
+        },
+        {
+          "path": "data_parts/studies/crypto_intraday_5m/outputs/selected_returns.parquet/part-002.bin",
+          "sha256": "2eaf32b621c22867263b7220724bba2ba5fb895009a551400cac8c1b1ff79077",
+          "bytes": 33554432
+        },
+        {
+          "path": "data_parts/studies/crypto_intraday_5m/outputs/selected_returns.parquet/part-003.bin",
+          "sha256": "4462fc6eedd89e7e7d7061d33cb4237c9296a4539c7b0e4714837d06ec78c7c8",
+          "bytes": 28750842
+        }
+      ]
+    }
+  ]
+}

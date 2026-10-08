@@ -1,0 +1,40 @@
+{
+  "analysis_source_sha256": {
+    "configs/research.toml": "d18dc149ea81dce33b85684181f71700bf61dc7b0940caa5910ed7d90477ad4b",
+    "pyproject.toml": "6e3b01ebbf02232c556523d06f382e433118e246c98ccdbab53878c5a8e0fb5c",
+    "src/crypto_stat_arb_extensions/__init__.py": "5bb9665263cb0f713010747cc0d9dcf4be8e2f3817483a86ab2eb4f67e31be3a",
+    "src/crypto_stat_arb_extensions/__main__.py": "8435989f9968c701905342d00175ae778e15103b803a775e78a332a656dc2c6c",
+    "src/crypto_stat_arb_extensions/_vendor/__init__.py": "81e849583ec36ee374761d323cf3227e9f5edef9ba21c62f7ab131a10f5a59ba",
+    "src/crypto_stat_arb_extensions/_vendor/crypto_stat_arb/__init__.py": "95e9699a6a43f84316d9fddc3ecec5bd70d775b1b46663331a3bdb7695ef538d",
+    "src/crypto_stat_arb_extensions/_vendor/crypto_stat_arb/backtest.py": "36045eb2be5ea0a3e5c607a6eb8400bb59fff47c0d95d5c04628a989b3c6d1f0",
+    "src/crypto_stat_arb_extensions/_vendor/crypto_stat_arb/data.py": "e2de4f54cb1dae7b6fc77100e271df76f426986e76e69abd4f067116a7e13a7a",
+    "src/crypto_stat_arb_extensions/_vendor/crypto_stat_arb/metrics.py": "910dc8f3bd0755457ef2e7ac1cc3bdba87e59d946155b780f82bf0d2c09ab03e",
+    "src/crypto_stat_arb_extensions/_vendor/legacy/__init__.py": "1eca7b33acc1e3dfb6903bdb9abd266ea795a497d167016294907a9b70af8ed1",
+    "src/crypto_stat_arb_extensions/_vendor/legacy/extended_backtest.py": "b33b0f9bef71e116a1a8197a52b9f86a9cdb6b5e8bedde4a1d10040fe0c99e46",
+    "src/crypto_stat_arb_extensions/core.py": "41648286c44667824adde59bed8395e3f5dd4adf022685f936fcfb807b70df74",
+    "src/crypto_stat_arb_extensions/data.py": "e1efa79d75099725b031cb16af461f518af3ee74a6b0d7f2609ddf5b3a06c0d4",
+    "src/crypto_stat_arb_extensions/diagnostics.py": "4af2bf6b3710ad38ec17e160057c9f63457f3b7fbbd031ec7cb1bbe64fd41229",
+    "src/crypto_stat_arb_extensions/runner.py": "bf6bd55f58e3a10ccd0662656d20591879f3fb59d809a328e18eef81d679caa5",
+    "src/crypto_stat_arb_extensions/strategies.py": "181f0576669fffb02d0d3e7f000a0de388ec4dfcf41369fe3bbb1f73a009c6a5"
+  },
+  "baseline_preservation": {
+    "file_count": 868,
+    "status": "unchanged",
+    "zip_unchanged": true
+  },
+  "exit_code": 0,
+  "logs_sha256": {
+    "extensions": "ef20059076f86f4df2e4d7c8a5b27ee6fec6b2a9c3e2053e7b6fa6b9664f8ecb",
+    "original": "1e4e6654c5050da5189302e5e206babbc8da6d40542ed24dad06b0d2cf263891",
+    "time_scale": "80bd41536bf1e47f5aee050c0f11e989e5f68265d5ff82f42cb42e8d65a32ed1"
+  },
+  "no_holdout_access_yet": true,
+  "original_tests_passed": true,
+  "suite_pass_counts": {
+    "extensions": 95,
+    "original": 89,
+    "time_scale": 72
+  },
+  "time_scale_tests_passed": true,
+  "verified_at_utc": "2026-10-06T16:33:01.574516+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "change": "Added one universe-story page after the original summary; preserved original findings and figures.",
+  "source_project": "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb",
+  "source_report_sha256": "331e02ae1fedf69188f6ccde70a53fb8099302ba47df72ab9854f91af509380f",
+  "source_reporting_sha256": "0c36e0d611f481a6c514da100f1b390ae2db3eb35640b7f183a5b0a815100e94",
+  "original_artifacts_unchanged": true,
+  "original_file_count_excluding_caches": 895,
+  "original_zip_sha256": "1ed5f6abc9e5b7317d6a38ba0f690a691c6fde5584007ceaa691cc87abfa9ce2",
+  "revised_report": "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb_report_revision/reports/project_report.pdf",
+  "revised_report_sha256": "0c40e46f91b78bc0f02a2515fba92211eb1f01f9aa7455c54f6d9994fa1ed0ce",
+  "larger_coin_pool_documented": false,
+  "strategy_or_data_reselection": false,
+  "fresh_price_access": false,
+  "verification": {
+    "pdf_pages": 9,
+    "all_eight_original_page_bodies_including_numeric_rows_preserved": true,
+    "all_nine_pages_visually_inspected": true,
+    "universe_story_independent_evidence_review": "pass"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "source": "Binance Vision",
+  "license": "CC BY-NC-SA 4.0",
+  "attribution": "Source: Binance Vision",
+  "terms_url": "https://github.com/binance/binance-public-data/blob/master/TERMS_AND_CONDITIONS.md",
+  "repairs": [
+    {
+      "symbol": "SOLUSDT",
+      "open_time": 1640318400000,
+      "timestamp_unit": "ms",
+      "original_close_time": 1640322000475,
+      "corrected_close_time": 1640321999999,
+      "original_monthly_path": "data/raw/SOLUSDT/SOLUSDT-1h-2021-12.zip",
+      "original_monthly_sha256": "e6e88ff1edc3a6910df90bbe311e0ec071913bd8673307adb4d4ecf41db4ef5e",
+      "official_daily_path": "data/raw/repairs/SOLUSDT-1h-2021-12-24.zip",
+      "source_url": "https://data.binance.vision/data/spot/daily/klines/SOLUSDT/1h/SOLUSDT-1h-2021-12-24.zip",
+      "checksum_url": "https://data.binance.vision/data/spot/daily/klines/SOLUSDT/1h/SOLUSDT-1h-2021-12-24.zip.CHECKSUM",
+      "sha256": "caa546d9dad68ad8bf9f656ebf6ce86cad9b75d300cc3e5924ba6c0d2d09100f",
+      "checksum_sha256": "f93eae15dcaec4c7c9ce03fb19596734311089047111680d07b01e82fa0a4c0a",
+      "downloaded_utc": "2026-10-06T02:23:58.133547+00:00",
+      "verified_utc": "2026-10-06T02:23:58.137119+00:00",
+      "original_raw_row": [
+        "1640318400000",
+        "187.68000000",
+        "188.94000000",
+        "187.54000000",
+        "187.87000000",
+        "21580.55000000",
+        "1640322000475",
+        "4061313.16260000",
+        "6432",
+        "12859.16000000",
+        "2419850.42160000",
+        "0"
+      ],
+      "official_daily_raw_row": [
+        "1640318400000",
+        "187.68000000",
+        "188.94000000",
+        "187.54000000",
+        "187.87000000",
+        "21580.55000000",
+        "1640321999999",
+        "4061313.16260000",
+        "6432",
+        "12859.16000000",
+        "2419850.42160000",
+        "0"
+      ],
+      "changed_columns": [
+        "close_time"
+      ],
+      "all_other_fields_byte_identical": true,
+      "original_monthly_retained": true,
+      "price_or_volume_repair": false
+    }
+  ]
+}

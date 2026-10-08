@@ -1,0 +1,22 @@
+{
+  "rows": [
+    {
+      "break_even_cost_bps": 0.0051967030208845645,
+      "criterion": "zero compounded total return",
+      "experiment_id": "momentum_h0004_r024",
+      "family": "momentum",
+      "lookback_h": 4,
+      "rebalance_h": 24,
+      "split": "test"
+    },
+    {
+      "break_even_cost_bps": 0.4454090270152753,
+      "criterion": "zero compounded total return",
+      "experiment_id": "reversal_h0002_r004",
+      "family": "reversal",
+      "lookback_h": 2,
+      "rebalance_h": 4,
+      "split": "test"
+    }
+  ]
+}

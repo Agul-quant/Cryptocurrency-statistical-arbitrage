@@ -1,0 +1,102 @@
+{
+  "verified_at_utc": "2026-10-06T02:34:15.491943+00:00",
+  "pdf": {
+    "path": "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/reports/project_report.pdf",
+    "sha256": "331e02ae1fedf69188f6ccde70a53fb8099302ba47df72ab9854f91af509380f",
+    "page_count": 8,
+    "all_pages_rendered": true,
+    "all_pages_visually_reviewed": true,
+    "render_method": "PyMuPDF 1.6x scale; final-1.png through final-8.png",
+    "visual_review": [
+      "Readable page structure and table text",
+      "No overflow or blank pages",
+      "Gross/net and signed drawdown encodings",
+      "Zero-start and nonoverlapping date ticks",
+      "Costs/delay and activity units consistent",
+      "Explicit halt/metadata exceptions and non-commercial attribution"
+    ]
+  },
+  "notebook": {
+    "path": "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/notebooks/crypto_stat_arb_research.ipynb",
+    "sha256": "45cab6f6d78a17907487cdf5129bd8fe7c1866ca20133cc8576924ef07ea5c5b",
+    "format_valid": true,
+    "executed_top_to_bottom": true,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "code_cells": 9,
+    "errors": 0,
+    "saved_chart_outputs": 4,
+    "python_environment": "/Users/cosdis/.venvs/myenv/bin/python",
+    "frozen_selection_digest_verified": true,
+    "selection_precedes_test_verified": true,
+    "primary_2025_reconciliation": {
+      "strategies": 2,
+      "hours_per_strategy": 8760,
+      "days_per_strategy": 365,
+      "frame_columns": [
+        "gross_return",
+        "net_return",
+        "turnover",
+        "cost",
+        "equity",
+        "drawdown"
+      ],
+      "metrics": [
+        "total_return",
+        "cagr",
+        "annual_return",
+        "annual_volatility",
+        "sharpe",
+        "max_drawdown",
+        "alpha_annual",
+        "beta"
+      ],
+      "manual_checks": [
+        "rank/demean/L1 sample weights",
+        "position-derived gross returns",
+        "entry/change/exit turnover",
+        "net cost subtraction",
+        "UTC interval-day compounding"
+      ],
+      "all_passed": true
+    },
+    "visual_review": [
+      "HTML summary, test-metric table, conclusions and sources inspected in local browser",
+      "All four saved chart PNGs inspected at native resolution"
+    ]
+  },
+  "html_preview": {
+    "path": "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/notebooks/crypto_stat_arb_research.html",
+    "sha256": "1a83fe6686d0e964c86eaed86a891a781fb44d628073a1ee05370c9f5c51c585",
+    "visually_reviewed": true
+  },
+  "evidence": {
+    "run_manifest_sha256": "b043fab888b1a0b47b8b4e1e44c51327db0cb3171a4f2d6abb751e4e73e54464",
+    "selection_sha256": "b9a92e2db9eb8aae3d10bcfe63674ae36b216ea9e30bc227760dad560cccd616",
+    "data_quality_status": "pass_with_documented_exceptions"
+  },
+  "render_paths": [
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/tmp/pdfs/final-1.png",
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/tmp/pdfs/final-2.png",
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/tmp/pdfs/final-3.png",
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/tmp/pdfs/final-4.png",
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/tmp/pdfs/final-5.png",
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/tmp/pdfs/final-6.png",
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/tmp/pdfs/final-7.png",
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/tmp/pdfs/final-8.png"
+  ],
+  "artifact_paths": {
+    "pdf": "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/reports/project_report.pdf",
+    "notebook": "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/notebooks/crypto_stat_arb_research.ipynb",
+    "html": "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb/notebooks/crypto_stat_arb_research.html"
+  }
+}

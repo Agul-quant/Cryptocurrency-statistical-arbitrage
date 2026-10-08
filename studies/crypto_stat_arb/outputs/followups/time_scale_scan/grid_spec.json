@@ -1,0 +1,71 @@
+{
+  "evaluation_splits": {
+    "development": {
+      "end": "2024-01-01",
+      "start": "2022-03-07"
+    },
+    "test": {
+      "end": "2026-01-01",
+      "start": "2025-01-01"
+    },
+    "validation": {
+      "end": "2025-01-01",
+      "start": "2024-01-01"
+    }
+  },
+  "frozen_at_utc": "2026-10-06T15:50:29.235229+00:00",
+  "grid": {
+    "execution_lag": 1,
+    "families": [
+      "momentum",
+      "reversal"
+    ],
+    "lookbacks_hours": [
+      1,
+      2,
+      4,
+      8,
+      12,
+      24,
+      48,
+      72,
+      168,
+      336,
+      672,
+      1440,
+      2160
+    ],
+    "primary_cost_bps": 0,
+    "primary_phase_hours": 0,
+    "rebalances_hours": [
+      1,
+      4,
+      12,
+      24,
+      72,
+      168
+    ],
+    "schedule_anchor_utc": "2022-01-03T00:00:00+00:00",
+    "secondary_cost_bps": 20
+  },
+  "n_configurations": 156,
+  "original_artifact_sha256": {
+    "configs/research.toml": "4ff6a20039ef57da99f7210db9feb7042c6b95695c5f81fd284b4b3e0717ea37",
+    "data/processed/bars.parquet": "4d39bb10aa5a3a4950717894c9f52cfeffc1121059c29b49ca57d11d366605b8",
+    "notebooks/crypto_stat_arb_research.html": "1a83fe6686d0e964c86eaed86a891a781fb44d628073a1ee05370c9f5c51c585",
+    "notebooks/crypto_stat_arb_research.ipynb": "45cab6f6d78a17907487cdf5129bd8fe7c1866ca20133cc8576924ef07ea5c5b",
+    "outputs/experiments.csv": "b33f9ffcee2f300586b78fce5653581436d67431d5ba87fc936abe5b8ad4e89e",
+    "outputs/final_metrics.csv": "0be96ca9181b032c7ad198bb293f545f6c468db1c63c58808426c65bef9c6269",
+    "outputs/run_manifest.json": "b043fab888b1a0b47b8b4e1e44c51327db0cb3171a4f2d6abb751e4e73e54464",
+    "outputs/selected_returns.parquet": "b6325f0752fe27e5d709856a0a59bd34b14edd962d958ea336c1cb43258ca4f9",
+    "outputs/selected_weights.parquet": "df674c08d9cc574ea9611251cdf62a19699cee0f6227fae5d1b66cbbb59ac157",
+    "outputs/selection.json": "b9a92e2db9eb8aae3d10bcfe63674ae36b216ea9e30bc227760dad560cccd616",
+    "reports/project_report.pdf": "331e02ae1fedf69188f6ccde70a53fb8099302ba47df72ab9854f91af509380f",
+    "src/crypto_stat_arb/backtest.py": "36045eb2be5ea0a3e5c607a6eb8400bb59fff47c0d95d5c04628a989b3c6d1f0",
+    "src/crypto_stat_arb/data.py": "e2de4f54cb1dae7b6fc77100e271df76f426986e76e69abd4f067116a7e13a7a",
+    "src/crypto_stat_arb/metrics.py": "910dc8f3bd0755457ef2e7ac1cc3bdba87e59d946155b780f82bf0d2c09ab03e",
+    "src/crypto_stat_arb/runner.py": "108d254c079980c440a8330e66c1281b423571d473536156c9574e67a32f95db"
+  },
+  "research_status": "Post-hoc exploratory extension; 2025 previously inspected.",
+  "selection_rule": "Highest 2024 daily Sharpe separately at 0 and 20 bps; ties lower turnover then experiment ID."
+}

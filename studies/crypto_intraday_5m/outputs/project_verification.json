@@ -1,0 +1,54 @@
+{
+  "actual_future_price_perturbation_review": "both selected models prior targets unchanged",
+  "all_72_primary_period_config_results_negative": true,
+  "all_periods_exploratory_retrospective": true,
+  "analysis_sources_outputs_locked": true,
+  "artifact_sha256": {
+    "notebooks/intraday_5m_research.html": "602e893af1ee0663e798e7becfd56f5082394835d1c25cc217eaacbb7ee0d4f2",
+    "notebooks/intraday_5m_research.ipynb": "b78f673920908c3acbd81589294474a700ff2e49b4daaa1acc00d9a9d320bcfa",
+    "outputs/cost_break_even.json": "7a3f274d92d6dffdc963d3834cf9222b2ec1b64d8316acf1a538f323a1313792",
+    "reports/artifact_verification.json": "739c665982fa616234b6e85d490d36e0741fcdc778426e922cdc224cd39f7c46",
+    "reports/intraday_5m_report.pdf": "68ee3b581e7b25d592b84417d3dc36803829842af173a9f20cf963c3bd5440cf"
+  },
+  "embedded_charts": 5,
+  "independent_saved_scenarios_reconciled": 26,
+  "manual_HAC_attribution_and_95CI_review": "independentagent passed",
+  "notebook_code_cells_executed": 10,
+  "notebook_errors": 0,
+  "preservation": {
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb": {
+      "bundle_unchanged": true,
+      "file_count": 868,
+      "status": "unchanged"
+    },
+    "/Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb_extensions": {
+      "bundle_unchanged": true,
+      "file_count": 1878,
+      "status": "unchanged"
+    }
+  },
+  "pytest_passed": 148,
+  "reporting_source_sha256": "983f7031c9b53fd29294e8d72e02783fb8c12229bbc600230d7ebeecde08df3d",
+  "root_notebook_figures_visually_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "root_pdf_pages_visually_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "status": "complete_with_disclosed_exploratory_limitations",
+  "test_log_sha256": "00e1e69f62c3456209912947de8f1da61cc02e5edde97cc487be493dafb4d9ab",
+  "verified_at_utc": "2026-10-06T17:49:55.318308+00:00",
+  "visual_defects_remaining": []
+}

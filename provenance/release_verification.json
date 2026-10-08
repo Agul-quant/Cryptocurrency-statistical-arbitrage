@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-08T19:51:31.708190+00:00",
+  "distribution": "Local Python research monorepo; no hosted computation or trading service.",
+  "original_studies_byte_identical": true,
+  "study_file_count": 3763,
+  "required_clean_checkout_files_verified": 2811,
+  "raw_5m_cache_files_optional_in_git": 952,
+  "lossless_part_count": 9,
+  "all_parts_reconstructed_to_original_sha256": true,
+  "portable_tests": {
+    "wrapper_passed": 41,
+    "original_passed": 89,
+    "extension_passed": 159,
+    "five_minute_passed": 147,
+    "time_scale_passed": 72,
+    "historical_external_zip_checks_explicitly_skipped": 2
+  },
+  "clean_relocated_notebooks": {
+    "original": "pass",
+    "extension": "pass",
+    "five_minute": "pass",
+    "time_scale": "pass"
+  },
+  "clean_relocated_report_rebuild": {
+    "pages": 9,
+    "all_page_texts_and_pixels_match_pinned_revision": true
+  },
+  "maximum_git_file_bytes": 33554432,
+  "secrets_audit": "No actual credentials, private keys, private course DOCX or unexpected archive contents found; historical originating-machine paths are preserved provenance.",
+  "selections_or_prices_changed": false,
+  "new_research_or_live_orders": false,
+  "historical_freeze_receipts_rewritten": false,
+  "original_project_zip_files": "Not distributed; previous preservation checks remain historical evidence."
+}

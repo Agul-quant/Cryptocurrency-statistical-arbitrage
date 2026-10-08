@@ -1,0 +1,13 @@
+Obtaining file:///Users/cosdis/Desktop/job/quant_projects/crypto_intraday_5m
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: crypto-intraday-5m
+  Building editable for crypto-intraday-5m (pyproject.toml): started
+  Building editable for crypto-intraday-5m (pyproject.toml): finished with status 'done'
+  Created wheel for crypto-intraday-5m: filename=crypto_intraday_5m-0.1.0-0.editable-py3-none-any.whl size=1797 sha256=ca79161431bbfe5c4a360331ab6beb0fa7ab3e8d0248b1349cb43e01b396875e
+  Stored in directory: /private/var/folders/vv/kkwtyd8d6jd7tsmb8y23trkw0000gn/T/pip-ephem-wheel-cache-nhfiy10q/wheels/31/fe/c0/1122ffaad1043366684101b102eb05c201d24f58c96802c661
+Successfully built crypto-intraday-5m
+Installing collected packages: crypto-intraday-5m
+Successfully installed crypto-intraday-5m-0.1.0

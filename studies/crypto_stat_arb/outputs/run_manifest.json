@@ -1,0 +1,475 @@
+{
+  "activity_threshold_development_only": 0.8102312876487727,
+  "baseline_configurations": 18,
+  "combination_eligible": false,
+  "completed_at_utc": "2026-10-06T02:28:45.866724+00:00",
+  "config_sha256": "a144b5476b451c6f109ba4cb10eb7843ae668eee902090213312efeb8873cba1",
+  "data_parquet_sha256": "4d39bb10aa5a3a4950717894c9f52cfeffc1121059c29b49ca57d11d366605b8",
+  "data_quality": {
+    "allowed_missing_endpoints": [
+      "2023-03-24T14:00:00+00:00"
+    ],
+    "archive_count": 392,
+    "attribution": "Source: Binance Vision (data.binance.vision)",
+    "bar_endpoint": "exclusive hourly endpoint: open_time + 1 hour",
+    "cross_venue_substitution": false,
+    "duplicate_count": 0,
+    "end_open_time_exclusive": "2026-01-01T00:00:00+00:00",
+    "expected_rows": 286464,
+    "extra_count": 0,
+    "generated_utc": "2026-10-06T02:24:01.384039+00:00",
+    "halt_bridges": [
+      {
+        "end": "2023-03-24T15:00:00+00:00",
+        "source": "https://www.binance.com/en/blog/from-our-ceo/6789340645608890113",
+        "start": "2023-03-24T11:00:00+00:00"
+      }
+    ],
+    "halt_policy": "Positions retained; no valuation or execution inside the documented observed-interval bridge; no filled prices",
+    "hourly_panel_rows": 35808,
+    "implicit_fill": false,
+    "interval": "1h",
+    "license": "CC BY-NC-SA 4.0; non-commercial research only",
+    "missing_count": 8,
+    "n_elapsed_hours": 35808,
+    "n_rawrows": 286456,
+    "normalized_parquet_sha256": "4d39bb10aa5a3a4950717894c9f52cfeffc1121059c29b49ca57d11d366605b8",
+    "official_metadata_repair_count": 1,
+    "official_metadata_repairs": [
+      {
+        "all_other_fields_byte_identical": true,
+        "changed_columns": [
+          "close_time"
+        ],
+        "checksum_sha256": "f93eae15dcaec4c7c9ce03fb19596734311089047111680d07b01e82fa0a4c0a",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/SOLUSDT/1h/SOLUSDT-1h-2021-12-24.zip.CHECKSUM",
+        "corrected_close_time": 1640321999999,
+        "downloaded_utc": "2026-10-06T02:23:58.133547+00:00",
+        "official_daily_path": "data/raw/repairs/SOLUSDT-1h-2021-12-24.zip",
+        "official_daily_raw_row": [
+          "1640318400000",
+          "187.68000000",
+          "188.94000000",
+          "187.54000000",
+          "187.87000000",
+          "21580.55000000",
+          "1640321999999",
+          "4061313.16260000",
+          "6432",
+          "12859.16000000",
+          "2419850.42160000",
+          "0"
+        ],
+        "open_time": 1640318400000,
+        "original_close_time": 1640322000475,
+        "original_monthly_path": "data/raw/SOLUSDT/SOLUSDT-1h-2021-12.zip",
+        "original_monthly_retained": true,
+        "original_monthly_sha256": "e6e88ff1edc3a6910df90bbe311e0ec071913bd8673307adb4d4ecf41db4ef5e",
+        "original_raw_row": [
+          "1640318400000",
+          "187.68000000",
+          "188.94000000",
+          "187.54000000",
+          "187.87000000",
+          "21580.55000000",
+          "1640322000475",
+          "4061313.16260000",
+          "6432",
+          "12859.16000000",
+          "2419850.42160000",
+          "0"
+        ],
+        "price_or_volume_repair": false,
+        "sha256": "caa546d9dad68ad8bf9f656ebf6ce86cad9b75d300cc3e5924ba6c0d2d09100f",
+        "source_url": "https://data.binance.vision/data/spot/daily/klines/SOLUSDT/1h/SOLUSDT-1h-2021-12-24.zip",
+        "symbol": "SOLUSDT",
+        "timestamp_unit": "ms",
+        "verified_utc": "2026-10-06T02:23:58.137119+00:00"
+      }
+    ],
+    "original_close_time_anomalies": [
+      {
+        "archive": "BTCUSDT-1h-2021-12.zip",
+        "expected_close_time": 1640321999999,
+        "offset_from_expected_seconds": -5.637,
+        "open_time_utc": "2021-12-24T04:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1640321994362,
+        "raw_close_time_utc": "2021-12-24T04:59:54.362000+00:00",
+        "raw_open_time": 1640318400000,
+        "symbol": "BTCUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "BTCUSDT-1h-2023-03.zip",
+        "expected_close_time": 1679662799999,
+        "offset_from_expected_seconds": -1218.353,
+        "open_time_utc": "2023-03-24T12:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1679661581646,
+        "raw_close_time_utc": "2023-03-24T12:39:41.646000+00:00",
+        "raw_open_time": 1679659200000,
+        "symbol": "BTCUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "ETHUSDT-1h-2021-12.zip",
+        "expected_close_time": 1640321999999,
+        "offset_from_expected_seconds": -3.841,
+        "open_time_utc": "2021-12-24T04:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1640321996158,
+        "raw_close_time_utc": "2021-12-24T04:59:56.158000+00:00",
+        "raw_open_time": 1640318400000,
+        "symbol": "ETHUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "ETHUSDT-1h-2023-03.zip",
+        "expected_close_time": 1679662799999,
+        "offset_from_expected_seconds": -1216.938,
+        "open_time_utc": "2023-03-24T12:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1679661583061,
+        "raw_close_time_utc": "2023-03-24T12:39:43.061000+00:00",
+        "raw_open_time": 1679659200000,
+        "symbol": "ETHUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "LTCUSDT-1h-2021-12.zip",
+        "expected_close_time": 1640321999999,
+        "offset_from_expected_seconds": -1.959,
+        "open_time_utc": "2021-12-24T04:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1640321998040,
+        "raw_close_time_utc": "2021-12-24T04:59:58.040000+00:00",
+        "raw_open_time": 1640318400000,
+        "symbol": "LTCUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "LTCUSDT-1h-2023-03.zip",
+        "expected_close_time": 1679662799999,
+        "offset_from_expected_seconds": -1215.091,
+        "open_time_utc": "2023-03-24T12:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1679661584908,
+        "raw_close_time_utc": "2023-03-24T12:39:44.908000+00:00",
+        "raw_open_time": 1679659200000,
+        "symbol": "LTCUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "ADAUSDT-1h-2021-12.zip",
+        "expected_close_time": 1640321999999,
+        "offset_from_expected_seconds": -7.345,
+        "open_time_utc": "2021-12-24T04:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1640321992654,
+        "raw_close_time_utc": "2021-12-24T04:59:52.654000+00:00",
+        "raw_open_time": 1640318400000,
+        "symbol": "ADAUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "ADAUSDT-1h-2023-03.zip",
+        "expected_close_time": 1679662799999,
+        "offset_from_expected_seconds": -1219.848,
+        "open_time_utc": "2023-03-24T12:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1679661580151,
+        "raw_close_time_utc": "2023-03-24T12:39:40.151000+00:00",
+        "raw_open_time": 1679659200000,
+        "symbol": "ADAUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "LINKUSDT-1h-2021-12.zip",
+        "expected_close_time": 1640321999999,
+        "offset_from_expected_seconds": -2.172,
+        "open_time_utc": "2021-12-24T04:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1640321997827,
+        "raw_close_time_utc": "2021-12-24T04:59:57.827000+00:00",
+        "raw_open_time": 1640318400000,
+        "symbol": "LINKUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "LINKUSDT-1h-2023-03.zip",
+        "expected_close_time": 1679662799999,
+        "offset_from_expected_seconds": -1215.314,
+        "open_time_utc": "2023-03-24T12:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1679661584685,
+        "raw_close_time_utc": "2023-03-24T12:39:44.685000+00:00",
+        "raw_open_time": 1679659200000,
+        "symbol": "LINKUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "DOGEUSDT-1h-2021-12.zip",
+        "expected_close_time": 1640321999999,
+        "offset_from_expected_seconds": -4.411,
+        "open_time_utc": "2021-12-24T04:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1640321995588,
+        "raw_close_time_utc": "2021-12-24T04:59:55.588000+00:00",
+        "raw_open_time": 1640318400000,
+        "symbol": "DOGEUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "DOGEUSDT-1h-2023-03.zip",
+        "expected_close_time": 1679662799999,
+        "offset_from_expected_seconds": -1217.437,
+        "open_time_utc": "2023-03-24T12:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1679661582562,
+        "raw_close_time_utc": "2023-03-24T12:39:42.562000+00:00",
+        "raw_open_time": 1679659200000,
+        "symbol": "DOGEUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "DOTUSDT-1h-2021-12.zip",
+        "expected_close_time": 1640321999999,
+        "offset_from_expected_seconds": -4.317,
+        "open_time_utc": "2021-12-24T04:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1640321995682,
+        "raw_close_time_utc": "2021-12-24T04:59:55.682000+00:00",
+        "raw_open_time": 1640318400000,
+        "symbol": "DOTUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "DOTUSDT-1h-2023-03.zip",
+        "expected_close_time": 1679662799999,
+        "offset_from_expected_seconds": -1217.369,
+        "open_time_utc": "2023-03-24T12:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1679661582630,
+        "raw_close_time_utc": "2023-03-24T12:39:42.630000+00:00",
+        "raw_open_time": 1679659200000,
+        "symbol": "DOTUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "SOLUSDT-1h-2021-12.zip",
+        "expected_close_time": 1640321999999,
+        "offset_from_expected_seconds": 0.476,
+        "open_time_utc": "2021-12-24T04:00:00+00:00",
+        "policy": "official_daily_close_time_repair_only",
+        "raw_close_time": 1640322000475,
+        "raw_close_time_utc": "2021-12-24T05:00:00.475000+00:00",
+        "raw_open_time": 1640318400000,
+        "symbol": "SOLUSDT",
+        "timestamp_unit": "ms"
+      },
+      {
+        "archive": "SOLUSDT-1h-2023-03.zip",
+        "expected_close_time": 1679662799999,
+        "offset_from_expected_seconds": -1213.051,
+        "open_time_utc": "2023-03-24T12:00:00+00:00",
+        "policy": "documented_shortened_source_metadata_warning",
+        "raw_close_time": 1679661586948,
+        "raw_close_time_utc": "2023-03-24T12:39:46.948000+00:00",
+        "raw_open_time": 1679659200000,
+        "symbol": "SOLUSDT",
+        "timestamp_unit": "ms"
+      }
+    ],
+    "original_close_time_anomaly_count": 16,
+    "per_symbol": {
+      "ADAUSDT": {
+        "coverage_fraction": 0.999972073279714,
+        "expected_rows": 35808,
+        "extra_bar_ends": [],
+        "extra_count": 0,
+        "first_bar_end": "2021-12-01T01:00:00+00:00",
+        "last_bar_end": "2026-01-01T00:00:00+00:00",
+        "missing_bar_ends": [
+          "2023-03-24T14:00:00+00:00"
+        ],
+        "missing_count": 1,
+        "rows": 35807,
+        "zero_trades_count": 1,
+        "zero_volume_count": 1
+      },
+      "BTCUSDT": {
+        "coverage_fraction": 0.999972073279714,
+        "expected_rows": 35808,
+        "extra_bar_ends": [],
+        "extra_count": 0,
+        "first_bar_end": "2021-12-01T01:00:00+00:00",
+        "last_bar_end": "2026-01-01T00:00:00+00:00",
+        "missing_bar_ends": [
+          "2023-03-24T14:00:00+00:00"
+        ],
+        "missing_count": 1,
+        "rows": 35807,
+        "zero_trades_count": 1,
+        "zero_volume_count": 1
+      },
+      "DOGEUSDT": {
+        "coverage_fraction": 0.999972073279714,
+        "expected_rows": 35808,
+        "extra_bar_ends": [],
+        "extra_count": 0,
+        "first_bar_end": "2021-12-01T01:00:00+00:00",
+        "last_bar_end": "2026-01-01T00:00:00+00:00",
+        "missing_bar_ends": [
+          "2023-03-24T14:00:00+00:00"
+        ],
+        "missing_count": 1,
+        "rows": 35807,
+        "zero_trades_count": 1,
+        "zero_volume_count": 1
+      },
+      "DOTUSDT": {
+        "coverage_fraction": 0.999972073279714,
+        "expected_rows": 35808,
+        "extra_bar_ends": [],
+        "extra_count": 0,
+        "first_bar_end": "2021-12-01T01:00:00+00:00",
+        "last_bar_end": "2026-01-01T00:00:00+00:00",
+        "missing_bar_ends": [
+          "2023-03-24T14:00:00+00:00"
+        ],
+        "missing_count": 1,
+        "rows": 35807,
+        "zero_trades_count": 1,
+        "zero_volume_count": 1
+      },
+      "ETHUSDT": {
+        "coverage_fraction": 0.999972073279714,
+        "expected_rows": 35808,
+        "extra_bar_ends": [],
+        "extra_count": 0,
+        "first_bar_end": "2021-12-01T01:00:00+00:00",
+        "last_bar_end": "2026-01-01T00:00:00+00:00",
+        "missing_bar_ends": [
+          "2023-03-24T14:00:00+00:00"
+        ],
+        "missing_count": 1,
+        "rows": 35807,
+        "zero_trades_count": 1,
+        "zero_volume_count": 1
+      },
+      "LINKUSDT": {
+        "coverage_fraction": 0.999972073279714,
+        "expected_rows": 35808,
+        "extra_bar_ends": [],
+        "extra_count": 0,
+        "first_bar_end": "2021-12-01T01:00:00+00:00",
+        "last_bar_end": "2026-01-01T00:00:00+00:00",
+        "missing_bar_ends": [
+          "2023-03-24T14:00:00+00:00"
+        ],
+        "missing_count": 1,
+        "rows": 35807,
+        "zero_trades_count": 1,
+        "zero_volume_count": 1
+      },
+      "LTCUSDT": {
+        "coverage_fraction": 0.999972073279714,
+        "expected_rows": 35808,
+        "extra_bar_ends": [],
+        "extra_count": 0,
+        "first_bar_end": "2021-12-01T01:00:00+00:00",
+        "last_bar_end": "2026-01-01T00:00:00+00:00",
+        "missing_bar_ends": [
+          "2023-03-24T14:00:00+00:00"
+        ],
+        "missing_count": 1,
+        "rows": 35807,
+        "zero_trades_count": 1,
+        "zero_volume_count": 1
+      },
+      "SOLUSDT": {
+        "coverage_fraction": 0.999972073279714,
+        "expected_rows": 35808,
+        "extra_bar_ends": [],
+        "extra_count": 0,
+        "first_bar_end": "2021-12-01T01:00:00+00:00",
+        "last_bar_end": "2026-01-01T00:00:00+00:00",
+        "missing_bar_ends": [
+          "2023-03-24T14:00:00+00:00"
+        ],
+        "missing_count": 1,
+        "rows": 35807,
+        "zero_trades_count": 1,
+        "zero_volume_count": 1
+      }
+    },
+    "remaining_metadata_warning_count": 15,
+    "rows": 286456,
+    "source": "Binance Vision spot monthly klines",
+    "start_open_time": "2021-12-01T00:00:00+00:00",
+    "status": "pass_with_documented_exceptions",
+    "symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "LTCUSDT",
+      "ADAUSDT",
+      "LINKUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "SOLUSDT"
+    ],
+    "terms_url": "https://github.com/binance/binance-public-data/blob/master/TERMS_AND_CONDITIONS.md",
+    "timestamp_units": {
+      "before_2025-01-01": "ms",
+      "from_2025-01-01": "us"
+    },
+    "timezone": "UTC",
+    "unexpected_symbols": [],
+    "verified_archive_bytes": 14415304
+  },
+  "dataset_terms": "https://github.com/binance/binance-public-data/blob/master/TERMS_AND_CONDITIONS.md",
+  "development_validation_rows": 36,
+  "environment": {
+    "matplotlib": "3.10.8",
+    "nbclient": "0.10.2",
+    "nbconvert": "7.16.6",
+    "nbformat": "5.10.4",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "pyarrow": "20.0.0",
+    "pytest": "9.0.3",
+    "python": "3.12.11",
+    "reportlab": "4.5.1",
+    "requests": "2.32.3",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.6"
+  },
+  "evaluated_strategies": [
+    "momentum_h168_r24",
+    "reversal_h001_r24"
+  ],
+  "final_metric_rows": 24,
+  "limitations": [
+    "Purposive fixed survivor sample",
+    "USDT denomination, not USD",
+    "Theoretical shorts without funding, borrowing, margin or capacity constraints",
+    "Idealized close execution with target-weight-change turnover; weight drift omitted",
+    "18 validation comparisons; selected performance is not an unbiased estimate",
+    "Known March 2023 halt uses one invested four-hour observed interval; intra-halt drawdown unknown",
+    "Unknown activity regimes retained where missing source volume prevents a full 168-hour denominator"
+  ],
+  "research_license": "CC BY-NC-SA 4.0 for dataset-derived materials; educational non-production research only",
+  "selection_frozen_at_utc": "2026-10-06T02:25:12.751313+00:00",
+  "selection_sha256": "b9a92e2db9eb8aae3d10bcfe63674ae36b216ea9e30bc227760dad560cccd616",
+  "source_attribution": "Binance Vision public historical spot OHLCV archives",
+  "source_code_sha256": {
+    "backtest.py": "36045eb2be5ea0a3e5c607a6eb8400bb59fff47c0d95d5c04628a989b3c6d1f0",
+    "data.py": "e2de4f54cb1dae7b6fc77100e271df76f426986e76e69abd4f067116a7e13a7a",
+    "metrics.py": "910dc8f3bd0755457ef2e7ac1cc3bdba87e59d946155b780f82bf0d2c09ab03e",
+    "runner.py": "108d254c079980c440a8330e66c1281b423571d473536156c9574e67a32f95db"
+  },
+  "source_documentation": "https://github.com/binance/binance-public-data",
+  "started_at_utc": "2026-10-06T02:28:34.678969+00:00",
+  "test_evaluation_started_at_utc": "2026-10-06T02:28:41.601132+00:00"
+}

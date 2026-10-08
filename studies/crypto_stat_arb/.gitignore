@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+tmp/
+data/raw/
+data/processed/
+.ipynb_checkpoints/
+build/
+dist/
+

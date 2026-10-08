@@ -1,0 +1,19 @@
+{
+  "criterion": "zero compounded 2025 total return",
+  "rows": [
+    {
+      "break_even_cost_bps": null,
+      "conclusion": "Already negative at zero cost; no nonnegative break-even cost.",
+      "execution_lag": 1,
+      "split": "test",
+      "strategy_id": "momentum_h168_r24"
+    },
+    {
+      "break_even_cost_bps": 1.6157716295526314,
+      "conclusion": "Compounded 2025 total return is zero at this hypothetical aggregate one-way cost.",
+      "execution_lag": 1,
+      "split": "test",
+      "strategy_id": "reversal_h001_r24"
+    }
+  ]
+}

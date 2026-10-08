@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-stat-arb-extensions"
+version = "0.1.0"
+description = "Frozen-protocol crypto research extensions and a 2026 historical holdout"
+requires-python = ">=3.11"
+dependencies = ["numpy", "pandas", "scipy", "statsmodels", "requests", "pyarrow", "matplotlib", "reportlab", "nbformat", "nbclient", "nbconvert", "ipykernel"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+crypto-stat-arb-extensions = "crypto_stat_arb_extensions.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,37 @@
+[data]
+symbols = ["BTCUSDT", "ETHUSDT", "LTCUSDT", "ADAUSDT", "LINKUSDT", "DOGEUSDT", "DOTUSDT", "SOLUSDT"]
+interval = "5m"
+start = "2021-12-01"
+end = "2026-10-01"
+download_workers = 4
+
+[research]
+families = ["momentum", "reversal"]
+lookback_minutes = [5, 15, 30]
+rebalance_minutes = [5, 15, 60]
+primary_cost_bps = 20.0
+primary_execution_lag = 1
+cost_scenarios_bps = [0.0, 5.0, 10.0, 15.0, 20.0, 40.0]
+delay_scenario_lag = 2
+schedule_anchor_utc = "2022-01-01T00:00:00+00:00"
+selection_rule = "Highest defined2024 net daily Sharpe at20bps per family; ties lower turnover then strategy ID. Negative selections are controls."
+research_status = "All periods exploratory/retrospective; January–September2026 already inspected at coarser resolution."
+risk_free_rate = 0.0
+annualization_days = 365
+hac_lags_days = 7
+
+[splits.development]
+start = "2022-01-01"
+end = "2024-01-01"
+
+[splits.validation]
+start = "2024-01-01"
+end = "2025-01-01"
+
+[splits.retrospective]
+start = "2025-01-01"
+end = "2026-01-01"
+
+[splits.retrospective_2026]
+start = "2026-01-01"
+end = "2026-10-01"

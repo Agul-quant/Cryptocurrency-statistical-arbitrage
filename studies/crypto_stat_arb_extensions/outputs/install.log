@@ -1,0 +1,13 @@
+Obtaining file:///Users/cosdis/Desktop/job/quant_projects/crypto_stat_arb_extensions
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: crypto-stat-arb-extensions
+  Building editable for crypto-stat-arb-extensions (pyproject.toml): started
+  Building editable for crypto-stat-arb-extensions (pyproject.toml): finished with status 'done'
+  Created wheel for crypto-stat-arb-extensions: filename=crypto_stat_arb_extensions-0.1.0-0.editable-py3-none-any.whl size=1922 sha256=2c32f0e240efb13b511ecc2656fdc6e2bb81db88c258517bad0108191b25f685
+  Stored in directory: /private/var/folders/vv/kkwtyd8d6jd7tsmb8y23trkw0000gn/T/pip-ephem-wheel-cache-tm_eq8yy/wheels/8a/a7/fb/b420218536725f035efa2727cb076b31665a2845c1b0cd654e
+Successfully built crypto-stat-arb-extensions
+Installing collected packages: crypto-stat-arb-extensions
+Successfully installed crypto-stat-arb-extensions-0.1.0

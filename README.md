@@ -1,4 +1,4 @@
-# Cryptocurrency statistical arbitrage: local research
+# Cryptocurrency statistical arbitrage
 
 A standalone Python research project investigating crypto momentum, reversal,
 transaction costs, and the limits of apparent backtest profitability. All

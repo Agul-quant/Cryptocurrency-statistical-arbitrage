@@ -1,0 +1,180 @@
+{
+  "no_oos2026_access": true,
+  "no_validation_reselection": true,
+  "run_keys": [
+    {
+      "basket_id": 4645,
+      "experiment_id": "buffered_momentum_h0672_r168_b025",
+      "role": "candidate",
+      "roles": [
+        "candidate"
+      ],
+      "run_id": "run_01",
+      "selection_order": 1
+    },
+    {
+      "basket_id": 4645,
+      "experiment_id": "momentum_h0672_r072",
+      "role": "candidate",
+      "roles": [
+        "candidate"
+      ],
+      "run_id": "run_02",
+      "selection_order": 2
+    },
+    {
+      "basket_id": 1159,
+      "experiment_id": "reversal_h1440_r168",
+      "role": "candidate",
+      "roles": [
+        "candidate"
+      ],
+      "run_id": "run_03",
+      "selection_order": 3
+    },
+    {
+      "basket_id": 4444,
+      "experiment_id": "trend_long_short_h0672_r024",
+      "role": "candidate",
+      "roles": [
+        "candidate"
+      ],
+      "run_id": "run_04",
+      "selection_order": 4
+    },
+    {
+      "basket_id": 0,
+      "experiment_id": "buffered_momentum_h0672_r168_b025",
+      "role": "canonical_transfer_control",
+      "roles": [
+        "canonical_transfer_control"
+      ],
+      "run_id": "run_05",
+      "selection_order": 1
+    },
+    {
+      "basket_id": 0,
+      "experiment_id": "momentum_h0672_r072",
+      "role": "canonical_transfer_control",
+      "roles": [
+        "canonical_transfer_control"
+      ],
+      "run_id": "run_06",
+      "selection_order": 2
+    },
+    {
+      "basket_id": 0,
+      "experiment_id": "reversal_h1440_r168",
+      "role": "canonical_transfer_control",
+      "roles": [
+        "canonical_transfer_control"
+      ],
+      "run_id": "run_07",
+      "selection_order": 3
+    },
+    {
+      "basket_id": 0,
+      "experiment_id": "trend_long_short_h0672_r024",
+      "role": "canonical_transfer_control",
+      "roles": [
+        "canonical_transfer_control"
+      ],
+      "run_id": "run_08",
+      "selection_order": 4
+    },
+    {
+      "basket_id": 0,
+      "experiment_id": "trend_long_cash_h0672_r168",
+      "role": "long_cash_control",
+      "roles": [
+        "long_cash_control"
+      ],
+      "run_id": "run_09",
+      "selection_order": 0
+    },
+    {
+      "basket_id": 0,
+      "experiment_id": "factor_residual_fixed",
+      "role": "factor_control",
+      "roles": [
+        "factor_control"
+      ],
+      "run_id": "run_10",
+      "selection_order": 0
+    }
+  ],
+  "selected": [
+    {
+      "basket_id": 4645,
+      "experiment_id": "buffered_momentum_h0672_r168_b025",
+      "report_family": "buffered_momentum",
+      "robust_score": 1.177393082627524,
+      "selection_order": 1,
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT",
+        "LUNAUSDT",
+        "FTMUSDT",
+        "TRXUSDT",
+        "LINKUSDT",
+        "LTCUSDT"
+      ]
+    },
+    {
+      "basket_id": 4645,
+      "experiment_id": "momentum_h0672_r072",
+      "report_family": "momentum",
+      "robust_score": 1.4641507385537569,
+      "selection_order": 2,
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT",
+        "LUNAUSDT",
+        "FTMUSDT",
+        "TRXUSDT",
+        "LINKUSDT",
+        "LTCUSDT"
+      ]
+    },
+    {
+      "basket_id": 1159,
+      "experiment_id": "reversal_h1440_r168",
+      "report_family": "reversal",
+      "robust_score": 0.8441745490597786,
+      "selection_order": 3,
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SHIBUSDT",
+        "DOTUSDT",
+        "ADAUSDT",
+        "MANAUSDT",
+        "FILUSDT",
+        "VETUSDT"
+      ]
+    },
+    {
+      "basket_id": 4444,
+      "experiment_id": "trend_long_short_h0672_r024",
+      "report_family": "trend_long_short",
+      "robust_score": 1.182848976963988,
+      "selection_order": 4,
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT",
+        "LUNAUSDT",
+        "AVAXUSDT",
+        "FTMUSDT",
+        "FILUSDT",
+        "VETUSDT"
+      ]
+    }
+  ],
+  "status": "development_only_candidates_and_controls_fixed_pending_audit",
+  "validation_annual_scenario_rows": 140,
+  "validation_primary_work_keys": 10,
+  "validation_scenario_work_keys": 70
+}

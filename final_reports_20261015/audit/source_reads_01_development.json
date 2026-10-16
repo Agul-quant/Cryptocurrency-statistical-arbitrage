@@ -1,0 +1,11 @@
+{
+  "files": {
+    "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json": "33b896f106a5094b4655614a37401f546f9f9505821e8d0c9eb79cadb53eed84",
+    "research/restart_tiered8_development_20261013/outputs/reporting/summary.json": "dd17c5da0fa41cb7cc7735865541f7c979d1fd440e4f4a8260c72b23e03378c5",
+    "research/restart_tiered8_development_20261013/protocol.json": "207c3a5ba5f8532f5ee162335b4f8461dc3c77cc305cacf6ffccb23e8e198987",
+    "research/restart_tiered8_development_20261013/report/report_source_manifest.json": "cb867ae56fa005db4029365c497eca9a897209dda089c6fbf70d7339fa2a4b4b"
+  },
+  "last_verified_at_utc": "2026-10-15T20:41:25.113103+00:00",
+  "no_price_panel_or_trading_access": true,
+  "report_id": "01_development"
+}

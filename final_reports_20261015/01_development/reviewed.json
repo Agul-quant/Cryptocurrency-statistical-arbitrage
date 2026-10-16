@@ -1,0 +1,4246 @@
+{
+  "surface": "report",
+  "title": "Development and robustness: slower trading helped, but did not establish a durable edge",
+  "generatedAt": "2026-10-15T20:37:06.295068Z",
+  "buildStatus": "complete",
+  "status": "reviewed",
+  "filters": [],
+  "report": {
+    "asOf": "2023-12-31",
+    "subtitle": "Final report 1 of 3 | Restarted crypto research | Development: 2022-2023"
+  },
+  "queries": {
+    "liquidity": {
+      "rows": [
+        {
+          "symbol": "BTCUSDT",
+          "instrument_id": "BTCUSDT",
+          "rank": 1,
+          "medianDailyVolumeMillions": 2384.1263860704
+        },
+        {
+          "symbol": "ETHUSDT",
+          "instrument_id": "ETHUSDT",
+          "rank": 2,
+          "medianDailyVolumeMillions": 1724.3999281254753
+        },
+        {
+          "symbol": "SHIBUSDT",
+          "instrument_id": "SHIBUSDT",
+          "rank": 3,
+          "medianDailyVolumeMillions": 718.9532131131122
+        },
+        {
+          "symbol": "BNBUSDT",
+          "instrument_id": "BNBUSDT",
+          "rank": 4,
+          "medianDailyVolumeMillions": 605.06292640265
+        },
+        {
+          "symbol": "SOLUSDT",
+          "instrument_id": "SOLUSDT",
+          "rank": 5,
+          "medianDailyVolumeMillions": 463.10411859745
+        },
+        {
+          "symbol": "XRPUSDT",
+          "instrument_id": "XRPUSDT",
+          "rank": 6,
+          "medianDailyVolumeMillions": 385.777313868
+        },
+        {
+          "symbol": "DOTUSDT",
+          "instrument_id": "DOTUSDT",
+          "rank": 7,
+          "medianDailyVolumeMillions": 353.15630248825
+        },
+        {
+          "symbol": "SANDUSDT",
+          "instrument_id": "SANDUSDT",
+          "rank": 8,
+          "medianDailyVolumeMillions": 303.10664947285005
+        },
+        {
+          "symbol": "LUNAUSDT",
+          "instrument_id": "LUNAUSDT:legacy_terra",
+          "rank": 9,
+          "medianDailyVolumeMillions": 285.00462848940003
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "instrument_id": "AVAXUSDT",
+          "rank": 10,
+          "medianDailyVolumeMillions": 284.4390576185
+        },
+        {
+          "symbol": "DOGEUSDT",
+          "instrument_id": "DOGEUSDT",
+          "rank": 11,
+          "medianDailyVolumeMillions": 272.76611285095
+        },
+        {
+          "symbol": "ADAUSDT",
+          "instrument_id": "ADAUSDT",
+          "rank": 12,
+          "medianDailyVolumeMillions": 261.92094017645
+        },
+        {
+          "symbol": "FTMUSDT",
+          "instrument_id": "FTMUSDT",
+          "rank": 13,
+          "medianDailyVolumeMillions": 244.34507426985002
+        },
+        {
+          "symbol": "TRXUSDT",
+          "instrument_id": "TRXUSDT",
+          "rank": 14,
+          "medianDailyVolumeMillions": 228.72232615490202
+        },
+        {
+          "symbol": "MATICUSDT",
+          "instrument_id": "MATICUSDT",
+          "rank": 15,
+          "medianDailyVolumeMillions": 223.3710042402
+        },
+        {
+          "symbol": "MANAUSDT",
+          "instrument_id": "MANAUSDT",
+          "rank": 16,
+          "medianDailyVolumeMillions": 208.63268355914997
+        },
+        {
+          "symbol": "FILUSDT",
+          "instrument_id": "FILUSDT",
+          "rank": 17,
+          "medianDailyVolumeMillions": 203.4681873877
+        },
+        {
+          "symbol": "GALAUSDT",
+          "instrument_id": "GALAUSDT",
+          "rank": 18,
+          "medianDailyVolumeMillions": 183.97996661458998
+        },
+        {
+          "symbol": "LINKUSDT",
+          "instrument_id": "LINKUSDT",
+          "rank": 19,
+          "medianDailyVolumeMillions": 140.29915921335
+        },
+        {
+          "symbol": "AXSUSDT",
+          "instrument_id": "AXSUSDT",
+          "rank": 20,
+          "medianDailyVolumeMillions": 121.01244041554999
+        },
+        {
+          "symbol": "LTCUSDT",
+          "instrument_id": "LTCUSDT",
+          "rank": 21,
+          "medianDailyVolumeMillions": 116.42375075330001
+        },
+        {
+          "symbol": "VETUSDT",
+          "instrument_id": "VETUSDT",
+          "rank": 22,
+          "medianDailyVolumeMillions": 103.966236703745
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_tiered8_development_20261013/report/report_source_manifest.json",
+          "research/restart_tiered8_development_20261013/outputs/reporting/liquidity_ranking.csv",
+          "research/restart_tiered8_development_20261013/protocol.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Liquidity",
+            "definition": "Historical ranks and 90-observation median daily quote volume; millions USDT = stored USDT / 1e6. Rank decision 2022-01-01, information cutoff 2021-12-31; no reconstitution.",
+            "componentIds": [
+              "universe-story",
+              "liquidity-fixed",
+              "liquidity-tier-0",
+              "liquidity-tier-1",
+              "liquidity-tier-2",
+              "lifecycle-universe"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_tiered8_development_20261013/report/report_source_manifest.json; research/restart_tiered8_development_20261013/outputs/reporting/liquidity_ranking.csv; research/restart_tiered8_development_20261013/protocol.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed liquidity rows",
+            "detail": "Historical ranks and 90-observation median daily quote volume; millions USDT = stored USDT / 1e6. Rank decision 2022-01-01, information cutoff 2021-12-31; no reconstitution."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Historical ranks and 90-observation median daily quote volume; millions USDT = stored USDT / 1e6. Rank decision 2022-01-01, information cutoff 2021-12-31; no reconstitution."
+        }
+      ]
+    },
+    "family": {
+      "rows": [
+        {
+          "family": "Momentum",
+          "cases": 78,
+          "pairs": 515970,
+          "positive": 0.09512762369905227,
+          "grossReturn": -0.014407013524019725,
+          "netReturn": -0.6086126351615002,
+          "sharpe": -1.5339541198211517,
+          "maxDD": 0.7235917861591911,
+          "turnover": 268.6927083333333,
+          "undefinedSharpe": 0
+        },
+        {
+          "family": "Reversal",
+          "cases": 78,
+          "pairs": 515970,
+          "positive": 0.026158497587069014,
+          "grossReturn": -0.21028582942512083,
+          "netReturn": -0.838126059436108,
+          "sharpe": -2.3068046389893015,
+          "maxDD": 0.8573220886487385,
+          "turnover": 268.6927083333333,
+          "undefinedSharpe": 0
+        },
+        {
+          "family": "Buffered momentum",
+          "cases": 4,
+          "pairs": 26460,
+          "positive": 0.4051020408163265,
+          "grossReturn": 0.24509314381888253,
+          "netReturn": -0.06992138217253105,
+          "sharpe": 0.01965245831212769,
+          "maxDD": 0.39804190262016514,
+          "turnover": 62.255208333333336,
+          "undefinedSharpe": 0
+        },
+        {
+          "family": "Trend long/cash",
+          "cases": 4,
+          "pairs": 26460,
+          "positive": 0.5630385487528344,
+          "grossReturn": 0.17525974887051576,
+          "netReturn": 0.0405129657490063,
+          "sharpe": 0.24590202686793922,
+          "maxDD": 0.45843157345734264,
+          "turnover": 20.75,
+          "undefinedSharpe": 0
+        },
+        {
+          "family": "Trend long/short",
+          "cases": 4,
+          "pairs": 26460,
+          "positive": 0.6558956916099773,
+          "grossReturn": 0.5815630741976621,
+          "netReturn": 0.22042127915622417,
+          "sharpe": 0.4613163788128537,
+          "maxDD": 0.5825943890608337,
+          "turnover": 41.5625,
+          "undefinedSharpe": 0
+        },
+        {
+          "family": "BTC residual reversal",
+          "cases": 1,
+          "pairs": 6615,
+          "positive": 0.11337868480725624,
+          "grossReturn": -0.0046374863921534925,
+          "netReturn": -0.005774714856583322,
+          "sharpe": -0.6401975063842523,
+          "maxDD": 0.008138026943067927,
+          "turnover": 0.2857142857142857,
+          "undefinedSharpe": 1000
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Family",
+            "definition": "financial_summary: scope=development, scenario_id=cost20_lag1. Separate medians across all basket-configuration pairs in each family. Positive fraction = n_positive_net/n_population.",
+            "componentIds": [
+              "family-result-story",
+              "family-table",
+              "family-interpretation"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed family rows",
+            "detail": "financial_summary: scope=development, scenario_id=cost20_lag1. Separate medians across all basket-configuration pairs in each family. Positive fraction = n_positive_net/n_population."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "financial_summary: scope=development, scenario_id=cost20_lag1. Separate medians across all basket-configuration pairs in each family. Positive fraction = n_positive_net/n_population."
+        }
+      ]
+    },
+    "cost": {
+      "rows": [
+        {
+          "costBps": 0,
+          "scenario": "cost00_lag1",
+          "positive": 0.43168431080518993,
+          "medianReturn": -0.07885591235394296,
+          "medianSharpe": -0.008734402966446897
+        },
+        {
+          "costBps": 5,
+          "scenario": "cost05_lag1",
+          "positive": 0.22683161364480045,
+          "medianReturn": -0.36873855230569474,
+          "medianSharpe": -0.6989930862557949
+        },
+        {
+          "costBps": 10,
+          "scenario": "cost10_lag1",
+          "positive": 0.1624844020448416,
+          "medianReturn": -0.5133796249227087,
+          "medianSharpe": -1.0896608585959044
+        },
+        {
+          "costBps": 15,
+          "scenario": "cost15_lag1",
+          "positive": 0.12278531399410521,
+          "medianReturn": -0.6242353287012056,
+          "medianSharpe": -1.4364450554667898
+        },
+        {
+          "costBps": 20,
+          "scenario": "cost20_lag1",
+          "positive": 0.09508781816474124,
+          "medianReturn": -0.7103480782827848,
+          "medianSharpe": -1.7720099769645337
+        },
+        {
+          "costBps": 40,
+          "scenario": "cost40_lag1",
+          "positive": 0.04237187314110391,
+          "medianReturn": -0.8746488888710472,
+          "medianSharpe": -3.0316716135695594
+        },
+        {
+          "costBps": 20,
+          "scenario": "cost20_lag2",
+          "positive": 0.09602883888598174,
+          "medianReturn": -0.7080480477852777,
+          "medianSharpe": -1.7462240164783036
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_tiered8_development_20261013/outputs/reporting/summary.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Cost",
+            "definition": "scenario_summary: all seven development scenarios. Fraction = n_positive_net/n_total. Cost chart excludes extra-hour scenario, not any fee case.",
+            "componentIds": [
+              "cost-story",
+              "cost-chart",
+              "cost-table"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_tiered8_development_20261013/outputs/reporting/summary.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed cost rows",
+            "detail": "scenario_summary: all seven development scenarios. Fraction = n_positive_net/n_total. Cost chart excludes extra-hour scenario, not any fee case."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "scenario_summary: all seven development scenarios. Fraction = n_positive_net/n_total. Cost chart excludes extra-hour scenario, not any fee case."
+        }
+      ]
+    },
+    "years": {
+      "rows": [
+        {
+          "family": "Momentum",
+          "pairs": 515970,
+          "bothPositive": 0.047793476364904934,
+          "only2022": 0.07029866077485125,
+          "only2023": 0.09255383064906875,
+          "neither": 0.7893540322111751
+        },
+        {
+          "family": "Reversal",
+          "pairs": 515970,
+          "bothPositive": 0.006889935461364033,
+          "only2022": 0.05354768688102021,
+          "only2023": 0.03326743802934279,
+          "neither": 0.906294939628273
+        },
+        {
+          "family": "Buffered momentum",
+          "pairs": 26460,
+          "bothPositive": 0.24221466364323507,
+          "only2022": 0.14070294784580498,
+          "only2023": 0.2282312925170068,
+          "neither": 0.3888510959939531
+        },
+        {
+          "family": "Trend long/cash",
+          "pairs": 26460,
+          "bothPositive": 0.0,
+          "only2022": 0.0,
+          "only2023": 1.0,
+          "neither": 0.0
+        },
+        {
+          "family": "Trend long/short",
+          "pairs": 26460,
+          "bothPositive": 0.39145880574452,
+          "only2022": 0.15487528344671203,
+          "only2023": 0.22055933484504914,
+          "neither": 0.2331065759637188
+        },
+        {
+          "family": "BTC residual reversal",
+          "pairs": 6615,
+          "bothPositive": 0.0,
+          "only2022": 0.0,
+          "only2023": 0.11337868480725624,
+          "neither": 0.8866213151927438
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Years",
+            "definition": "family_year_transitions: each sign count divided by n_primary_pairs, same continuous path slices, not annual restarts.",
+            "componentIds": [
+              "year-story",
+              "year-table"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed years rows",
+            "detail": "family_year_transitions: each sign count divided by n_primary_pairs, same continuous path slices, not annual restarts."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "family_year_transitions: each sign count divided by n_primary_pairs, same continuous path slices, not annual restarts."
+        }
+      ]
+    },
+    "annual": {
+      "rows": [
+        {
+          "family": "Momentum",
+          "year": "2022",
+          "medianReturn": -0.42262900918359314,
+          "medianSharpe": -1.5959982103338848,
+          "maxDD": 0.6508436190567202
+        },
+        {
+          "family": "Momentum",
+          "year": "2023",
+          "medianReturn": -0.36946924525043223,
+          "medianSharpe": -1.907003299132284,
+          "maxDD": 0.46660341417260964
+        },
+        {
+          "family": "Reversal",
+          "year": "2022",
+          "medianReturn": -0.6736995970801416,
+          "medianSharpe": -2.2967917797294106,
+          "maxDD": 0.7063453587309696
+        },
+        {
+          "family": "Reversal",
+          "year": "2023",
+          "medianReturn": -0.500715284598223,
+          "medianSharpe": -2.812832780412344,
+          "maxDD": 0.549621539331562
+        },
+        {
+          "family": "Buffered momentum",
+          "year": "2022",
+          "medianReturn": -0.05412604710992024,
+          "medianSharpe": -0.0090554888988389,
+          "maxDD": 0.3403754210582055
+        },
+        {
+          "family": "Buffered momentum",
+          "year": "2023",
+          "medianReturn": -0.013342514864728643,
+          "medianSharpe": 0.06602319237499649,
+          "maxDD": 0.2399281636251911
+        },
+        {
+          "family": "Trend long/cash",
+          "year": "2022",
+          "medianReturn": -0.3858742890271646,
+          "medianSharpe": -1.0171686246373397,
+          "maxDD": 0.4351935094793582
+        },
+        {
+          "family": "Trend long/cash",
+          "year": "2023",
+          "medianReturn": 0.6498368438211013,
+          "medianSharpe": 1.4930690419583688,
+          "maxDD": 0.3176419517077867
+        },
+        {
+          "family": "Trend long/short",
+          "year": "2022",
+          "medianReturn": 0.03549792056370839,
+          "medianSharpe": 0.4002078502591886,
+          "maxDD": 0.5126360764235229
+        },
+        {
+          "family": "Trend long/short",
+          "year": "2023",
+          "medianReturn": 0.14089253367137458,
+          "medianSharpe": 0.5221553640552293,
+          "maxDD": 0.3998011029494575
+        },
+        {
+          "family": "BTC residual reversal",
+          "year": "2022",
+          "medianReturn": 0.0,
+          "medianSharpe": -0.12635261416997473,
+          "maxDD": 0.0
+        },
+        {
+          "family": "BTC residual reversal",
+          "year": "2023",
+          "medianReturn": -0.005774714856583322,
+          "medianSharpe": -0.9691646510626896,
+          "maxDD": 0.007473937536146556
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Annual",
+            "definition": "financial_summary: annual 2022 and 2023 slices at cost20_lag1. Each chart value is family median compounded annual return, multiplied by100 for percent labels.",
+            "componentIds": [
+              "annual-chart"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed annual rows",
+            "detail": "financial_summary: annual 2022 and 2023 slices at cost20_lag1. Each chart value is family median compounded annual return, multiplied by100 for percent labels."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "financial_summary: annual 2022 and 2023 slices at cost20_lag1. Each chart value is family median compounded annual return, multiplied by100 for percent labels."
+        }
+      ]
+    },
+    "neighbors": {
+      "rows": [
+        {
+          "family": "Momentum",
+          "kind": "parameter",
+          "positiveCenters": 49083,
+          "withNeighbors": 49083,
+          "meanPositiveNeighbor": 0.500256368464302,
+          "medianAbsoluteReturnChange": 0.14672434358123995
+        },
+        {
+          "family": "Reversal",
+          "kind": "parameter",
+          "positiveCenters": 13497,
+          "withNeighbors": 13497,
+          "meanPositiveNeighbor": 0.2979180558642661,
+          "medianAbsoluteReturnChange": 0.08163879359622539
+        },
+        {
+          "family": "Buffered momentum",
+          "kind": "parameter",
+          "positiveCenters": 10719,
+          "withNeighbors": 10719,
+          "meanPositiveNeighbor": 0.6607892527287993,
+          "medianAbsoluteReturnChange": 0.18564142837401765
+        },
+        {
+          "family": "Trend long/cash",
+          "kind": "parameter",
+          "positiveCenters": 14898,
+          "withNeighbors": 14898,
+          "meanPositiveNeighbor": 0.5532286212914486,
+          "medianAbsoluteReturnChange": 0.264769842627188
+        },
+        {
+          "family": "Trend long/short",
+          "kind": "parameter",
+          "positiveCenters": 17355,
+          "withNeighbors": 17355,
+          "meanPositiveNeighbor": 0.6236819360414866,
+          "medianAbsoluteReturnChange": 0.6116962209270519
+        },
+        {
+          "family": "BTC residual reversal",
+          "kind": "parameter",
+          "positiveCenters": 750,
+          "withNeighbors": 0,
+          "meanPositiveNeighbor": null,
+          "medianAbsoluteReturnChange": null
+        },
+        {
+          "family": "Momentum",
+          "kind": "basket",
+          "positiveCenters": 49083,
+          "withNeighbors": 49083,
+          "meanPositiveNeighbor": 0.6743358916820197,
+          "medianAbsoluteReturnChange": 0.06871939788264855
+        },
+        {
+          "family": "Reversal",
+          "kind": "basket",
+          "positiveCenters": 13497,
+          "withNeighbors": 13497,
+          "meanPositiveNeighbor": 0.5456344796198097,
+          "medianAbsoluteReturnChange": 0.04632436671027616
+        },
+        {
+          "family": "Buffered momentum",
+          "kind": "basket",
+          "positiveCenters": 10719,
+          "withNeighbors": 10719,
+          "meanPositiveNeighbor": 0.7314781496141698,
+          "medianAbsoluteReturnChange": 0.14850092937161052
+        },
+        {
+          "family": "Trend long/cash",
+          "kind": "basket",
+          "positiveCenters": 14898,
+          "withNeighbors": 14898,
+          "meanPositiveNeighbor": 0.897057131350325,
+          "medianAbsoluteReturnChange": 0.08124301728618216
+        },
+        {
+          "family": "Trend long/short",
+          "kind": "basket",
+          "positiveCenters": 17355,
+          "withNeighbors": 17355,
+          "meanPositiveNeighbor": 0.9227435485862453,
+          "medianAbsoluteReturnChange": 0.19783230946251912
+        },
+        {
+          "family": "BTC residual reversal",
+          "kind": "basket",
+          "positiveCenters": 750,
+          "withNeighbors": 750,
+          "meanPositiveNeighbor": 0.642857142857143,
+          "medianAbsoluteReturnChange": 0.0020541667076743294
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Neighbors",
+            "definition": "neighbor_robustness: mean positive-neighbor fraction conditional on positive center with finite neighbors; median absolute return delta across all centers. Query retains both parameter and basket rows; display pivots the two types by family.",
+            "componentIds": [
+              "neighbor-story",
+              "neighbor-table",
+              "neighbor-caveat"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed neighbors rows",
+            "detail": "neighbor_robustness: mean positive-neighbor fraction conditional on positive center with finite neighbors; median absolute return delta across all centers. Query retains both parameter and basket rows; display pivots the two types by family."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "neighbor_robustness: mean positive-neighbor fraction conditional on positive center with finite neighbors; median absolute return delta across all centers. Query retains both parameter and basket rows; display pivots the two types by family."
+        }
+      ]
+    },
+    "luna": {
+      "rows": [
+        {
+          "family": "Momentum",
+          "present": true,
+          "baskets": 1890,
+          "medianReturn": -0.589958079971741,
+          "medianSharpe": -0.9142748339763853
+        },
+        {
+          "family": "Momentum",
+          "present": false,
+          "baskets": 4725,
+          "medianReturn": -0.615119429620631,
+          "medianSharpe": -1.7971401862138376
+        },
+        {
+          "family": "Reversal",
+          "present": true,
+          "baskets": 1890,
+          "medianReturn": -0.9251703910162887,
+          "medianSharpe": -2.1374147748181844
+        },
+        {
+          "family": "Reversal",
+          "present": false,
+          "baskets": 4725,
+          "medianReturn": -0.7319613142340404,
+          "medianSharpe": -2.456762588287078
+        },
+        {
+          "family": "Buffered momentum",
+          "present": true,
+          "baskets": 1890,
+          "medianReturn": -0.03881196239707582,
+          "medianSharpe": 0.1240297970341883
+        },
+        {
+          "family": "Buffered momentum",
+          "present": false,
+          "baskets": 4725,
+          "medianReturn": -0.08304723013711285,
+          "medianSharpe": -0.040153941192388104
+        },
+        {
+          "family": "Trend long/cash",
+          "present": true,
+          "baskets": 1890,
+          "medianReturn": 0.04725357534574581,
+          "medianSharpe": 0.2527610636190768
+        },
+        {
+          "family": "Trend long/cash",
+          "present": false,
+          "baskets": 4725,
+          "medianReturn": 0.03742160509864456,
+          "medianSharpe": 0.2429111282824832
+        },
+        {
+          "family": "Trend long/short",
+          "present": true,
+          "baskets": 1890,
+          "medianReturn": 0.5233412173533587,
+          "medianSharpe": 0.6467943779036456
+        },
+        {
+          "family": "Trend long/short",
+          "present": false,
+          "baskets": 4725,
+          "medianReturn": 0.14357280454793092,
+          "medianSharpe": 0.40744827538691797
+        },
+        {
+          "family": "BTC residual reversal",
+          "present": true,
+          "baskets": 1890,
+          "medianReturn": -0.010527603854744902,
+          "medianSharpe": -0.5506430982457701
+        },
+        {
+          "family": "BTC residual reversal",
+          "present": false,
+          "baskets": 4725,
+          "medianReturn": -0.004780494993623089,
+          "medianSharpe": -0.7780896191517939
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Luna",
+            "definition": "membership_conditioned_summaries: symbol=LUNAUSDT, present and absent groups. Query retains both groups; display pivots by family. These are associations, not removed-coin counterfactuals.",
+            "componentIds": [
+              "luna-story",
+              "luna-table"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed luna rows",
+            "detail": "membership_conditioned_summaries: symbol=LUNAUSDT, present and absent groups. Query retains both groups; display pivots by family. These are associations, not removed-coin counterfactuals."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "membership_conditioned_summaries: symbol=LUNAUSDT, present and absent groups. Query retains both groups; display pivots by family. These are associations, not removed-coin counterfactuals."
+        }
+      ]
+    },
+    "attribution": {
+      "rows": [
+        {
+          "family": "Momentum",
+          "scope": "development",
+          "lunaNetDollarContribution": 0.015910092055362434,
+          "grossDollarContribution": 0.036421379565984145,
+          "feeDollarContribution": 0.020511287510621697
+        },
+        {
+          "family": "Momentum",
+          "scope": "2022",
+          "lunaNetDollarContribution": 0.017348465703695092,
+          "grossDollarContribution": 0.03205322498373768,
+          "feeDollarContribution": 0.014704759280042584
+        },
+        {
+          "family": "Momentum",
+          "scope": "2023",
+          "lunaNetDollarContribution": -0.0014383736483326718,
+          "grossDollarContribution": 0.004368154582246466,
+          "feeDollarContribution": 0.005806528230579138
+        },
+        {
+          "family": "Momentum",
+          "scope": "event_window",
+          "lunaNetDollarContribution": 0.04080681300089327,
+          "grossDollarContribution": 0.04118781251797604,
+          "feeDollarContribution": 0.0003809995170827777
+        },
+        {
+          "family": "Reversal",
+          "scope": "development",
+          "lunaNetDollarContribution": -0.13344226847491408,
+          "grossDollarContribution": -0.11938657177824614,
+          "feeDollarContribution": 0.014055696696667919
+        },
+        {
+          "family": "Reversal",
+          "scope": "2022",
+          "lunaNetDollarContribution": -0.12954807275251207,
+          "grossDollarContribution": -0.11725600858129732,
+          "feeDollarContribution": 0.012292064171214732
+        },
+        {
+          "family": "Reversal",
+          "scope": "2023",
+          "lunaNetDollarContribution": -0.003894195722402026,
+          "grossDollarContribution": -0.002130563196948815,
+          "feeDollarContribution": 0.0017636325254532105
+        },
+        {
+          "family": "Reversal",
+          "scope": "event_window",
+          "lunaNetDollarContribution": -0.12072617344396062,
+          "grossDollarContribution": -0.12038337206658091,
+          "feeDollarContribution": 0.00034280137737970957
+        },
+        {
+          "family": "Buffered momentum",
+          "scope": "development",
+          "lunaNetDollarContribution": 0.01593600997738032,
+          "grossDollarContribution": 0.02605352536754233,
+          "feeDollarContribution": 0.01011751539016201
+        },
+        {
+          "family": "Buffered momentum",
+          "scope": "2022",
+          "lunaNetDollarContribution": 0.012860989558649255,
+          "grossDollarContribution": 0.017684142117019203,
+          "feeDollarContribution": 0.004823152558369945
+        },
+        {
+          "family": "Buffered momentum",
+          "scope": "2023",
+          "lunaNetDollarContribution": 0.0030750204187310645,
+          "grossDollarContribution": 0.008369383250523128,
+          "feeDollarContribution": 0.005294362831792063
+        },
+        {
+          "family": "Buffered momentum",
+          "scope": "event_window",
+          "lunaNetDollarContribution": 0.04868800841476079,
+          "grossDollarContribution": 0.04893850765313479,
+          "feeDollarContribution": 0.00025049923837398776
+        },
+        {
+          "family": "Trend long/cash",
+          "scope": "development",
+          "lunaNetDollarContribution": 0.00661003332369093,
+          "grossDollarContribution": 0.008867032458236548,
+          "feeDollarContribution": 0.0022569991345456173
+        },
+        {
+          "family": "Trend long/cash",
+          "scope": "2022",
+          "lunaNetDollarContribution": -0.0057745331509120425,
+          "grossDollarContribution": -0.004749349892495653,
+          "feeDollarContribution": 0.0010251832584163895
+        },
+        {
+          "family": "Trend long/cash",
+          "scope": "2023",
+          "lunaNetDollarContribution": 0.012384566474602973,
+          "grossDollarContribution": 0.013616382350732202,
+          "feeDollarContribution": 0.001231815876129228
+        },
+        {
+          "family": "Trend long/cash",
+          "scope": "event_window",
+          "lunaNetDollarContribution": -0.0017774600712444986,
+          "grossDollarContribution": -0.0017628287916920552,
+          "feeDollarContribution": 1.4631279552443693e-05
+        },
+        {
+          "family": "Trend long/short",
+          "scope": "development",
+          "lunaNetDollarContribution": 0.15307609049561804,
+          "grossDollarContribution": 0.16034254382072544,
+          "feeDollarContribution": 0.007266453325107377
+        },
+        {
+          "family": "Trend long/short",
+          "scope": "2022",
+          "lunaNetDollarContribution": 0.1366855393728589,
+          "grossDollarContribution": 0.13976263908208691,
+          "feeDollarContribution": 0.003077099709228025
+        },
+        {
+          "family": "Trend long/short",
+          "scope": "2023",
+          "lunaNetDollarContribution": 0.016390551122759143,
+          "grossDollarContribution": 0.020579904738638497,
+          "feeDollarContribution": 0.0041893536158793526
+        },
+        {
+          "family": "Trend long/short",
+          "scope": "event_window",
+          "lunaNetDollarContribution": 0.14481910618902916,
+          "grossDollarContribution": 0.14496869617106345,
+          "feeDollarContribution": 0.000149589982034279
+        },
+        {
+          "family": "BTC residual reversal",
+          "scope": "development",
+          "lunaNetDollarContribution": -0.0026325121919645385,
+          "grossDollarContribution": -0.0024573738838359004,
+          "feeDollarContribution": 0.00017513830812863855
+        },
+        {
+          "family": "BTC residual reversal",
+          "scope": "2022",
+          "lunaNetDollarContribution": 0.0,
+          "grossDollarContribution": 0.0,
+          "feeDollarContribution": 0.0
+        },
+        {
+          "family": "BTC residual reversal",
+          "scope": "2023",
+          "lunaNetDollarContribution": -0.0026325121919645385,
+          "grossDollarContribution": -0.0024573738838359004,
+          "feeDollarContribution": 0.00017513830812863855
+        },
+        {
+          "family": "BTC residual reversal",
+          "scope": "event_window",
+          "lunaNetDollarContribution": 0.0,
+          "grossDollarContribution": 0.0,
+          "feeDollarContribution": 0.0
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Attribution",
+            "definition": "attribution_summary: symbol=LUNAUSDT. Event chart uses scope=event_window, May6 00:00 through May21 00:00 UTC. Mean dollar contributions per original $1 continuous NAV across all family paths, absent coin structural zero; overlapping scopes never added.",
+            "componentIds": [
+              "luna-chart",
+              "event-accounting"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed attribution rows",
+            "detail": "attribution_summary: symbol=LUNAUSDT. Event chart uses scope=event_window, May6 00:00 through May21 00:00 UTC. Mean dollar contributions per original $1 continuous NAV across all family paths, absent coin structural zero; overlapping scopes never added."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "attribution_summary: symbol=LUNAUSDT. Event chart uses scope=event_window, May6 00:00 through May21 00:00 UTC. Mean dollar contributions per original $1 continuous NAV across all family paths, absent coin structural zero; overlapping scopes never added."
+        }
+      ]
+    },
+    "clocks": {
+      "rows": [
+        {
+          "alpha_annual_mean": -0.05033830344927899,
+          "alpha_annual_median": -0.048828119246266136,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.2536517455229673,
+          "alpha_annual_p90": 0.14935532129207643,
+          "annualized_full_l1_turnover_mean": 136.0729799697657,
+          "annualized_full_l1_turnover_median": 135.75,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 130.35,
+          "annualized_full_l1_turnover_p90": 142.0625,
+          "beta_mean": -0.009811424606314649,
+          "beta_median": -0.02172710593992874,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.044222747879608205,
+          "beta_p90": 0.04311789500369149,
+          "experiment_id": "momentum_h0336_r024",
+          "gross_sharpe_mean": 0.7474160131132358,
+          "gross_sharpe_median": 0.757168431897376,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": 0.09041322702605774,
+          "gross_sharpe_p90": 1.3959792541805438,
+          "gross_total_return_mean": 0.4779396950791526,
+          "gross_total_return_median": 0.42473202414674993,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.039297045116568514,
+          "gross_total_return_p90": 1.0614724140877325,
+          "lookback_h": 336,
+          "max_drawdown_mean": 0.4992455051053089,
+          "max_drawdown_median": 0.46925858024307654,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.29825418123041764,
+          "max_drawdown_p90": 0.7139271978859649,
+          "mean_daily_turnover_mean": 0.3728026848486731,
+          "mean_daily_turnover_median": 0.3719178082191781,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.35712328767123286,
+          "mean_daily_turnover_p90": 0.3892123287671233,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 1778,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 24,
+          "report_family": "momentum",
+          "sharpe_mean": -0.2086574302388844,
+          "sharpe_median": -0.17245400923274026,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.9519433421339701,
+          "sharpe_p90": 0.4775941707643812,
+          "total_return_mean": -0.1396244351049853,
+          "total_return_median": -0.17324883179175918,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.45176426990561785,
+          "total_return_p90": 0.21315296277152976,
+          "family": "Momentum"
+        },
+        {
+          "alpha_annual_mean": -0.031506796544557965,
+          "alpha_annual_median": -0.0317484898950678,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.20143293578583765,
+          "alpha_annual_p90": 0.13128935657521512,
+          "annualized_full_l1_turnover_mean": 48.304511526832954,
+          "annualized_full_l1_turnover_median": 48.3125,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 47.0,
+          "annualized_full_l1_turnover_p90": 49.625,
+          "beta_mean": -0.014846512423941272,
+          "beta_median": -0.01565758071835656,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.044410216464469215,
+          "beta_p90": 0.015712365092910827,
+          "experiment_id": "momentum_h0336_r168",
+          "gross_sharpe_mean": 0.20719176124524413,
+          "gross_sharpe_median": 0.22810369339470213,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -0.41075751602134936,
+          "gross_sharpe_p90": 0.7810885088062411,
+          "gross_total_return_mean": 0.08094792446719792,
+          "gross_total_return_median": 0.048156164546603576,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.24565042383074967,
+          "gross_total_return_p90": 0.43505729174856017,
+          "lookback_h": 336,
+          "max_drawdown_mean": 0.4174434679415371,
+          "max_drawdown_median": 0.416523200408675,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.2814104370435581,
+          "max_drawdown_p90": 0.5397960608038305,
+          "mean_daily_turnover_mean": 0.13234112747077523,
+          "mean_daily_turnover_median": 0.13236301369863013,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.12876712328767123,
+          "mean_daily_turnover_p90": 0.13595890410958905,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 1880,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 168,
+          "report_family": "momentum",
+          "sharpe_mean": -0.14820921543973747,
+          "sharpe_median": -0.12527693709634852,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.7889425142088563,
+          "sharpe_p90": 0.4444060886153704,
+          "total_return_mean": -0.10860725393483431,
+          "total_return_median": -0.1351494491110371,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.37968881211521865,
+          "total_return_p90": 0.18690445420223914,
+          "family": "Momentum"
+        },
+        {
+          "alpha_annual_mean": -0.0093531011588018,
+          "alpha_annual_median": -0.008715901988311518,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.20008653807748816,
+          "alpha_annual_p90": 0.1842197923370568,
+          "annualized_full_l1_turnover_mean": 92.03705971277402,
+          "annualized_full_l1_turnover_median": 91.92708333333334,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 87.4375,
+          "annualized_full_l1_turnover_p90": 96.9375,
+          "beta_mean": 0.0008762280051508863,
+          "beta_median": -0.010696902386037804,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.04672188268593053,
+          "beta_p90": 0.06798233354614175,
+          "experiment_id": "momentum_h0672_r024",
+          "gross_sharpe_mean": 0.5845662449233547,
+          "gross_sharpe_median": 0.58366460167197,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -0.03577720871875451,
+          "gross_sharpe_p90": 1.208032784097244,
+          "gross_total_return_mean": 0.34370365496453514,
+          "gross_total_return_median": 0.29384654172710156,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.09546790975234715,
+          "gross_total_return_p90": 0.860210032714648,
+          "lookback_h": 672,
+          "max_drawdown_mean": 0.48182860797289456,
+          "max_drawdown_median": 0.44629236995047505,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.301460505177647,
+          "max_drawdown_p90": 0.6935660099801549,
+          "mean_daily_turnover_mean": 0.2521563279802027,
+          "mean_daily_turnover_median": 0.25185502283105027,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.23955479452054795,
+          "mean_daily_turnover_p90": 0.26558219178082193,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 2374,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 24,
+          "report_family": "momentum",
+          "sharpe_mean": -0.058884827031701836,
+          "sharpe_median": -0.029059680507527795,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.7568445875182133,
+          "sharpe_p90": 0.5893254883611161,
+          "total_return_mean": -0.06771752527667368,
+          "total_return_median": -0.10384982552638508,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.3826764189407167,
+          "total_return_p90": 0.3028569599516908,
+          "family": "Momentum"
+        },
+        {
+          "alpha_annual_mean": 0.09345568113302279,
+          "alpha_annual_median": 0.09603199766521558,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.0814044771121966,
+          "alpha_annual_p90": 0.27431655031238383,
+          "annualized_full_l1_turnover_mean": 33.358829365079366,
+          "annualized_full_l1_turnover_median": 33.3125,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 31.6875,
+          "annualized_full_l1_turnover_p90": 35.15833333333334,
+          "beta_mean": -0.020162895689911413,
+          "beta_median": -0.02183427776677435,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.05446508928797718,
+          "beta_p90": 0.016469826489040114,
+          "experiment_id": "momentum_h0672_r168",
+          "gross_sharpe_mean": 0.5845507113980855,
+          "gross_sharpe_median": 0.602899830489655,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -0.0515216638200494,
+          "gross_sharpe_p90": 1.2114016414000741,
+          "gross_total_return_mean": 0.32174069860634574,
+          "gross_total_return_median": 0.28317920189481244,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.08951498929573308,
+          "gross_total_return_p90": 0.8122658814795084,
+          "lookback_h": 672,
+          "max_drawdown_mean": 0.33819985624474075,
+          "max_drawdown_median": 0.32767495340713976,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.2428002611184911,
+          "max_drawdown_p90": 0.4418512958102823,
+          "mean_daily_turnover_mean": 0.09139405305501197,
+          "mean_daily_turnover_median": 0.09126712328767124,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.08681506849315068,
+          "mean_daily_turnover_p90": 0.09632420091324204,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 4332,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 168,
+          "report_family": "momentum",
+          "sharpe_mean": 0.3326094939718506,
+          "sharpe_median": 0.35491432812149803,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.32536677483569115,
+          "sharpe_p90": 0.9774008516751098,
+          "total_return_mean": 0.15759243133372472,
+          "total_return_median": 0.1235188691393643,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.20772467514278395,
+          "total_return_p90": 0.5932617800654,
+          "family": "Momentum"
+        },
+        {
+          "alpha_annual_mean": -0.6211100801341958,
+          "alpha_annual_median": -0.5517129383580703,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -1.0397883064797946,
+          "alpha_annual_p90": -0.3261888292084049,
+          "annualized_full_l1_turnover_mean": 136.0729799697657,
+          "annualized_full_l1_turnover_median": 135.75,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 130.35,
+          "annualized_full_l1_turnover_p90": 142.0625,
+          "beta_mean": 0.025355605170462325,
+          "beta_median": 0.025215136618449284,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": 0.006018969981200491,
+          "beta_p90": 0.04460990680932119,
+          "experiment_id": "reversal_h0336_r024",
+          "gross_sharpe_mean": -0.9467694472542747,
+          "gross_sharpe_median": -1.0165209900519874,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -1.6075879058050138,
+          "gross_sharpe_p90": -0.18433147293641983,
+          "gross_total_return_mean": -0.48662646643476226,
+          "gross_total_return_median": -0.4698282640174971,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.8500976460694032,
+          "gross_total_return_p90": -0.14683434201311707,
+          "lookback_h": 336,
+          "max_drawdown_mean": 0.7242154537840291,
+          "max_drawdown_median": 0.7083844099682006,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.5536337624142246,
+          "max_drawdown_p90": 0.9175183266045756,
+          "mean_daily_turnover_mean": 0.3728026848486731,
+          "mean_daily_turnover_median": 0.3719178082191781,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.35712328767123286,
+          "mean_daily_turnover_p90": 0.3892123287671233,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 0,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 24,
+          "report_family": "reversal",
+          "sharpe_mean": -1.8525258342960178,
+          "sharpe_median": -1.8608617374200804,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -2.452627251865903,
+          "sharpe_p90": -1.2408375690950124,
+          "total_return_mean": -0.7023232310906806,
+          "total_return_median": -0.6888940715219637,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.914075596686647,
+          "total_return_p90": -0.5094689046494053,
+          "family": "Reversal"
+        },
+        {
+          "alpha_annual_mean": -0.20781586262812132,
+          "alpha_annual_median": -0.18349751519566695,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.45153916668325267,
+          "alpha_annual_p90": -0.00046766358144044315,
+          "annualized_full_l1_turnover_mean": 48.304511526832954,
+          "annualized_full_l1_turnover_median": 48.3125,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 47.0,
+          "annualized_full_l1_turnover_p90": 49.625,
+          "beta_mean": 0.01938366985423053,
+          "beta_median": 0.01930722582948509,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.005588921798162153,
+          "beta_p90": 0.044735891086758545,
+          "experiment_id": "reversal_h0336_r168",
+          "gross_sharpe_mean": -0.30276056193377265,
+          "gross_sharpe_median": -0.32229695088713056,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -0.9645813736876725,
+          "gross_sharpe_p90": 0.3899500037145196,
+          "gross_total_return_mean": -0.21687565862897829,
+          "gross_total_return_median": -0.215231521365867,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.5922596132274303,
+          "gross_total_return_p90": 0.14214281974631326,
+          "lookback_h": 336,
+          "max_drawdown_mean": 0.45524508882385206,
+          "max_drawdown_median": 0.4210857216595816,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.2663989533941589,
+          "max_drawdown_p90": 0.721817533416277,
+          "mean_daily_turnover_mean": 0.13234112747077523,
+          "mean_daily_turnover_median": 0.13236301369863013,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.12876712328767123,
+          "mean_daily_turnover_p90": 0.13595890410958905,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 392,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 168,
+          "report_family": "reversal",
+          "sharpe_mean": -0.6457946846084309,
+          "sharpe_median": -0.6723850952748109,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -1.2463752839833926,
+          "sharpe_p90": 0.004445959779432337,
+          "total_return_mean": -0.35492766084323596,
+          "total_return_median": -0.3517242450113041,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.6654038201899624,
+          "total_return_p90": -0.06116992625309995,
+          "family": "Reversal"
+        },
+        {
+          "alpha_annual_mean": -0.4838192970345665,
+          "alpha_annual_median": -0.4211589198260276,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.881490787368534,
+          "alpha_annual_p90": -0.1974585054331411,
+          "annualized_full_l1_turnover_mean": 92.03705971277402,
+          "annualized_full_l1_turnover_median": 91.92708333333334,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 87.4375,
+          "annualized_full_l1_turnover_p90": 96.9375,
+          "beta_mean": 0.014105725675527417,
+          "beta_median": 0.014951229690500771,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.019915383299255664,
+          "beta_p90": 0.04685412509490291,
+          "experiment_id": "reversal_h0672_r024",
+          "gross_sharpe_mean": -0.784003438938351,
+          "gross_sharpe_median": -0.846486735884544,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -1.4497876604365452,
+          "gross_sharpe_p90": -0.030545650983447987,
+          "gross_total_return_mean": -0.4405475782502802,
+          "gross_total_return_median": -0.4222833751511429,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.8273371827996541,
+          "gross_total_return_p90": -0.07750922137246019,
+          "lookback_h": 672,
+          "max_drawdown_mean": 0.659476147031879,
+          "max_drawdown_median": 0.6325180337977718,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.4586306693981155,
+          "max_drawdown_p90": 0.8955203131569365,
+          "mean_daily_turnover_mean": 0.2521563279802027,
+          "mean_daily_turnover_median": 0.25185502283105027,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.23955479452054795,
+          "mean_daily_turnover_p90": 0.26558219178082193,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 1,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 24,
+          "report_family": "reversal",
+          "sharpe_mean": -1.3873674101759437,
+          "sharpe_median": -1.4308487429933276,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -1.9443085552124322,
+          "sharpe_p90": -0.7631668613438399,
+          "total_return_mean": -0.613547388878819,
+          "total_return_median": -0.596685856590354,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.8805207557505472,
+          "total_return_p90": -0.36644388460872146,
+          "family": "Reversal"
+        },
+        {
+          "alpha_annual_mean": -0.23610560545079728,
+          "alpha_annual_median": -0.23389664334585983,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.4199081248523006,
+          "alpha_annual_p90": -0.0613440334829117,
+          "annualized_full_l1_turnover_mean": 33.358829365079366,
+          "annualized_full_l1_turnover_median": 33.3125,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 31.6875,
+          "annualized_full_l1_turnover_p90": 35.15833333333334,
+          "beta_mean": 0.019922021574721758,
+          "beta_median": 0.021108696875327772,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.015057597950171229,
+          "beta_p90": 0.05309067982098353,
+          "experiment_id": "reversal_h0672_r168",
+          "gross_sharpe_mean": -0.6068315800743144,
+          "gross_sharpe_median": -0.6182686433275136,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -1.2532704114404942,
+          "gross_sharpe_p90": 0.03879073075727624,
+          "gross_total_return_mean": -0.3074041558308447,
+          "gross_total_return_median": -0.331456242794724,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.5435657228366911,
+          "gross_total_return_p90": -0.044565981058799616,
+          "lookback_h": 672,
+          "max_drawdown_mean": 0.5036479899614529,
+          "max_drawdown_median": 0.49892877289159854,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.36760958693357443,
+          "max_drawdown_p90": 0.6482741766526797,
+          "mean_daily_turnover_mean": 0.09139405305501197,
+          "mean_daily_turnover_median": 0.09126712328767124,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.08681506849315068,
+          "mean_daily_turnover_p90": 0.09632420091324204,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 164,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 168,
+          "report_family": "reversal",
+          "sharpe_mean": -0.8556073319302605,
+          "sharpe_median": -0.8659110419432237,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -1.4902201197504714,
+          "sharpe_p90": -0.22613797115488243,
+          "total_return_mean": -0.3945877290320714,
+          "total_return_median": -0.41498727566254656,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.5992265339771288,
+          "total_return_p90": -0.16921741424197698,
+          "family": "Reversal"
+        },
+        {
+          "alpha_annual_mean": -0.04409526750290755,
+          "alpha_annual_median": -0.04411392574488464,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.2485208566115591,
+          "alpha_annual_p90": 0.15564637436986406,
+          "annualized_full_l1_turnover_mean": 130.69261904761902,
+          "annualized_full_l1_turnover_median": 130.375,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 124.875,
+          "annualized_full_l1_turnover_p90": 136.9020833333333,
+          "beta_mean": -0.009435339832276696,
+          "beta_median": -0.02144066554317387,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.04439531253136182,
+          "beta_p90": 0.044241286393204356,
+          "experiment_id": "buffered_momentum_h0336_r024_b025",
+          "gross_sharpe_mean": 0.7354606502299945,
+          "gross_sharpe_median": 0.7409106649098389,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": 0.07523226309217723,
+          "gross_sharpe_p90": 1.4000258087651116,
+          "gross_total_return_mean": 0.46570995080198985,
+          "gross_total_return_median": 0.4084928478180155,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.04844055854773083,
+          "gross_total_return_p90": 1.0449190974332911,
+          "lookback_h": 336,
+          "max_drawdown_mean": 0.49536109152280267,
+          "max_drawdown_median": 0.46452430489571367,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.29273791869658505,
+          "max_drawdown_p90": 0.7129419925848958,
+          "mean_daily_turnover_mean": 0.3580619699934768,
+          "mean_daily_turnover_median": 0.3571917808219178,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.3421232876712329,
+          "mean_daily_turnover_p90": 0.37507420091324195,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 1865,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 24,
+          "report_family": "buffered_momentum",
+          "sharpe_mean": -0.1841265466586504,
+          "sharpe_median": -0.1526943527894432,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.9188324147060061,
+          "sharpe_p90": 0.505774119594413,
+          "total_return_mean": -0.12783879355074823,
+          "total_return_median": -0.1641005835682402,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.44593744973876615,
+          "total_return_p90": 0.23470523891483888,
+          "family": "Buffered momentum"
+        },
+        {
+          "alpha_annual_mean": -0.030749843665809087,
+          "alpha_annual_median": -0.031232733611028886,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.20089431340568256,
+          "alpha_annual_p90": 0.1317696753725402,
+          "annualized_full_l1_turnover_mean": 48.241702884857645,
+          "annualized_full_l1_turnover_median": 48.25,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 46.9375,
+          "annualized_full_l1_turnover_p90": 49.5625,
+          "beta_mean": -0.01501202776899175,
+          "beta_median": -0.015836847522061936,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.044576487717692605,
+          "beta_p90": 0.015553530262171544,
+          "experiment_id": "buffered_momentum_h0336_r168_b025",
+          "gross_sharpe_mean": 0.20940664523756528,
+          "gross_sharpe_median": 0.22822941293579038,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -0.4078097026737327,
+          "gross_sharpe_p90": 0.7834752314606714,
+          "gross_total_return_mean": 0.08229328655522719,
+          "gross_total_return_median": 0.04860066631756482,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.2442662918656913,
+          "gross_total_return_p90": 0.43575670756404783,
+          "lookback_h": 336,
+          "max_drawdown_mean": 0.41695171645805523,
+          "max_drawdown_median": 0.4160666652933659,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.28015545522653296,
+          "max_drawdown_p90": 0.5395130557002821,
+          "mean_daily_turnover_mean": 0.13216904899961,
+          "mean_daily_turnover_median": 0.13219178082191782,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.1285958904109589,
+          "mean_daily_turnover_p90": 0.13578767123287672,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 1897,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 168,
+          "report_family": "buffered_momentum",
+          "sharpe_mean": -0.14557995933899565,
+          "sharpe_median": -0.12243585927920002,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.7882627385271261,
+          "sharpe_p90": 0.4444488187920544,
+          "total_return_mean": -0.1072628297019726,
+          "total_return_median": -0.1352684827570141,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.3791217768496258,
+          "total_return_p90": 0.18860967758070854,
+          "family": "Buffered momentum"
+        },
+        {
+          "alpha_annual_mean": 0.008050527737706942,
+          "alpha_annual_median": 0.008480105889803703,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.18143454784050572,
+          "alpha_annual_p90": 0.19740626489694538,
+          "annualized_full_l1_turnover_mean": 84.38500535399346,
+          "annualized_full_l1_turnover_median": 84.1875,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 79.625,
+          "annualized_full_l1_turnover_p90": 89.5625,
+          "beta_mean": 0.0009025685509968243,
+          "beta_median": -0.010916986655540323,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.046150295860450566,
+          "beta_p90": 0.0679709388470215,
+          "experiment_id": "buffered_momentum_h0672_r024_b025",
+          "gross_sharpe_mean": 0.5926451566286144,
+          "gross_sharpe_median": 0.5929658308944894,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -0.015704042055447835,
+          "gross_sharpe_p90": 1.2049943633118543,
+          "gross_total_return_mean": 0.34869388530555545,
+          "gross_total_return_median": 0.29780416651963604,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.08811784179163949,
+          "gross_total_return_p90": 0.8537682944835107,
+          "lookback_h": 672,
+          "max_drawdown_mean": 0.47308137319086374,
+          "max_drawdown_median": 0.4321877362603159,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.29202400825397096,
+          "max_drawdown_p90": 0.6931744508016952,
+          "mean_daily_turnover_mean": 0.23119179549039304,
+          "mean_daily_turnover_median": 0.23065068493150684,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.21815068493150686,
+          "mean_daily_turnover_p90": 0.24537671232876712,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 2662,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 24,
+          "report_family": "buffered_momentum",
+          "sharpe_mean": 0.0016377296256382733,
+          "sharpe_median": 0.029624389538289105,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.6780118052969935,
+          "sharpe_p90": 0.6433706896301908,
+          "total_return_mean": -0.03507211053521523,
+          "total_return_median": -0.07346754594418041,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.3581399141665794,
+          "total_return_p90": 0.3424489963915194,
+          "family": "Buffered momentum"
+        },
+        {
+          "alpha_annual_mean": 0.09117969478110376,
+          "alpha_annual_median": 0.09461468934267223,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.08552003587181334,
+          "alpha_annual_p90": 0.27344469665582904,
+          "annualized_full_l1_turnover_mean": 33.1266156462585,
+          "annualized_full_l1_turnover_median": 33.0625,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 31.375,
+          "annualized_full_l1_turnover_p90": 34.979166666666664,
+          "beta_mean": -0.019688417785762635,
+          "beta_median": -0.021323588895358944,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.05390379364059037,
+          "beta_p90": 0.01696075808866834,
+          "experiment_id": "buffered_momentum_h0672_r168_b025",
+          "gross_sharpe_mean": 0.5765148278983104,
+          "gross_sharpe_median": 0.5955707851127365,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -0.06809598798162433,
+          "gross_sharpe_p90": 1.2089405587511994,
+          "gross_total_return_mean": 0.31571680313226846,
+          "gross_total_return_median": 0.27924948088035617,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.10007748603523532,
+          "gross_total_return_p90": 0.805602840956639,
+          "lookback_h": 672,
+          "max_drawdown_mean": 0.34013303522468363,
+          "max_drawdown_median": 0.32869472734922195,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.24313226398120424,
+          "max_drawdown_p90": 0.44622203490734424,
+          "mean_daily_turnover_mean": 0.09075785108563973,
+          "mean_daily_turnover_median": 0.09058219178082191,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.08595890410958903,
+          "mean_daily_turnover_p90": 0.09583333333333333,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 4295,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 168,
+          "report_family": "buffered_momentum",
+          "sharpe_mean": 0.32626465252181286,
+          "sharpe_median": 0.35018484046441695,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.3443696911748357,
+          "sharpe_p90": 0.9743139676684762,
+          "total_return_mean": 0.15338642462681706,
+          "total_return_median": 0.12015585769466577,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.21565450150063606,
+          "total_return_p90": 0.5899938312929466,
+          "family": "Buffered momentum"
+        },
+        {
+          "alpha_annual_mean": 0.04038622883544918,
+          "alpha_annual_median": 0.03879905584506227,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.04686809428020528,
+          "alpha_annual_p90": 0.12814728787119298,
+          "annualized_full_l1_turnover_mean": 45.083333333333336,
+          "annualized_full_l1_turnover_median": 45.0,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 43.5,
+          "annualized_full_l1_turnover_p90": 46.75,
+          "beta_mean": 0.4155123579232323,
+          "beta_median": 0.4151346582268517,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": 0.3930404175960179,
+          "beta_p90": 0.4385492295859585,
+          "experiment_id": "trend_long_cash_h0336_r024",
+          "gross_sharpe_mean": 0.43506097306756025,
+          "gross_sharpe_median": 0.4341316061049251,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": 0.22224719928963732,
+          "gross_sharpe_p90": 0.6462771242853237,
+          "gross_total_return_mean": 0.21792239279308714,
+          "gross_total_return_median": 0.20449632311147065,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": 0.018776730104021006,
+          "gross_total_return_p90": 0.43198151264996004,
+          "lookback_h": 336,
+          "max_drawdown_mean": 0.47001483422668067,
+          "max_drawdown_median": 0.4725547612142465,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.39850791793965656,
+          "max_drawdown_p90": 0.5389838532710642,
+          "mean_daily_turnover_mean": 0.12351598173515983,
+          "mean_daily_turnover_median": 0.1232876712328767,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.11917808219178082,
+          "mean_daily_turnover_p90": 0.12808219178082192,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 3430,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 24,
+          "report_family": "trend_long_cash",
+          "sharpe_mean": 0.2093685055310406,
+          "sharpe_median": 0.2082615302292315,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.008263072894720528,
+          "sharpe_p90": 0.42445220698829267,
+          "total_return_mean": 0.017017678217546038,
+          "total_return_median": 0.006142721194104785,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.14984999553643674,
+          "total_return_p90": 0.19657975060932767,
+          "family": "Trend long/cash"
+        },
+        {
+          "alpha_annual_mean": -0.10799131048303613,
+          "alpha_annual_median": -0.10686945507601046,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.19842575616367727,
+          "alpha_annual_p90": -0.019228709363482047,
+          "annualized_full_l1_turnover_mean": 16.827380952380953,
+          "annualized_full_l1_turnover_median": 16.875,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 16.25,
+          "annualized_full_l1_turnover_p90": 17.375,
+          "beta_mean": 0.47113489218531585,
+          "beta_median": 0.4704421651480161,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": 0.4411869972769751,
+          "beta_p90": 0.5024338408945209,
+          "experiment_id": "trend_long_cash_h0336_r168",
+          "gross_sharpe_mean": -0.053004759770752044,
+          "gross_sharpe_median": -0.052559449302811805,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -0.25691141341799395,
+          "gross_sharpe_p90": 0.1504619779631635,
+          "gross_total_return_mean": -0.2054592154356663,
+          "gross_total_return_median": -0.21146898445173168,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.3491649159243346,
+          "gross_total_return_p90": -0.054105639656271444,
+          "lookback_h": 336,
+          "max_drawdown_mean": 0.5743534627887201,
+          "max_drawdown_median": 0.5765127827160675,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.4937758806354319,
+          "max_drawdown_p90": 0.6514550180414966,
+          "mean_daily_turnover_mean": 0.046102413568166994,
+          "mean_daily_turnover_median": 0.046232876712328765,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.04452054794520548,
+          "mean_daily_turnover_p90": 0.047602739726027396,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 76,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 168,
+          "report_family": "trend_long_cash",
+          "sharpe_mean": -0.13088035688458746,
+          "sharpe_median": -0.13045903548779203,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.333843931080189,
+          "sharpe_p90": 0.07168301457344971,
+          "total_return_mean": -0.25716013849874875,
+          "total_return_median": -0.26263082291922507,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.39166847894212997,
+          "total_return_p90": -0.11539871844124752,
+          "family": "Trend long/cash"
+        },
+        {
+          "alpha_annual_mean": 0.10130328886370395,
+          "alpha_annual_median": 0.09278186161968843,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.007740778320998726,
+          "alpha_annual_p90": 0.23000922300654117,
+          "annualized_full_l1_turnover_mean": 28.023809523809526,
+          "annualized_full_l1_turnover_median": 28.0,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 25.875,
+          "annualized_full_l1_turnover_p90": 30.125,
+          "beta_mean": 0.405725635884432,
+          "beta_median": 0.4055532556663308,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": 0.38285675824399634,
+          "beta_p90": 0.42846505088156195,
+          "experiment_id": "trend_long_cash_h0672_r024",
+          "gross_sharpe_mean": 0.5241113355350139,
+          "gross_sharpe_median": 0.5057167457948548,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": 0.2542173283688337,
+          "gross_sharpe_p90": 0.8332759973738523,
+          "gross_total_return_mean": 0.3117354129418668,
+          "gross_total_return_median": 0.26991944271378115,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": 0.05244882299936829,
+          "gross_total_return_p90": 0.6534637266316633,
+          "lookback_h": 672,
+          "max_drawdown_mean": 0.444017718474247,
+          "max_drawdown_median": 0.44337055689116595,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.3786063150825285,
+          "max_drawdown_p90": 0.5100953568422726,
+          "mean_daily_turnover_mean": 0.07677756033920417,
+          "mean_daily_turnover_median": 0.07671232876712329,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.07089041095890411,
+          "mean_daily_turnover_p90": 0.08253424657534246,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 5229,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 24,
+          "report_family": "trend_long_cash",
+          "sharpe_mean": 0.37551725853676343,
+          "sharpe_median": 0.35937132058206744,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": 0.09464758255317203,
+          "sharpe_p90": 0.6937032817993251,
+          "total_return_mean": 0.17329660643861733,
+          "total_return_median": 0.13674042113197896,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.06356461673021717,
+          "total_return_p90": 0.4816504536430863,
+          "family": "Trend long/cash"
+        },
+        {
+          "alpha_annual_mean": 0.14285500167566922,
+          "alpha_annual_median": 0.13916841596720753,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": 0.041047983828176246,
+          "alpha_annual_p90": 0.24990909643685516,
+          "annualized_full_l1_turnover_mean": 10.75,
+          "annualized_full_l1_turnover_median": 10.75,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 10.25,
+          "annualized_full_l1_turnover_p90": 11.25,
+          "beta_mean": 0.4232613617002735,
+          "beta_median": 0.42330333879756443,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": 0.3933247681672081,
+          "beta_p90": 0.45345638944643346,
+          "experiment_id": "trend_long_cash_h0672_r168",
+          "gross_sharpe_mean": 0.5393049185494597,
+          "gross_sharpe_median": 0.5366667090757986,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": 0.2860804508300123,
+          "gross_sharpe_p90": 0.7962127996289796,
+          "gross_total_return_mean": 0.32369840967496816,
+          "gross_total_return_median": 0.30230605137589367,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": 0.07597109109991959,
+          "gross_total_return_p90": 0.6062169545614332,
+          "lookback_h": 672,
+          "max_drawdown_mean": 0.3807745422498182,
+          "max_drawdown_median": 0.38007191709086574,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.319076545330583,
+          "max_drawdown_p90": 0.4429954014906657,
+          "mean_daily_turnover_mean": 0.029452054794520545,
+          "mean_daily_turnover_median": 0.02945205479452055,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.028082191780821917,
+          "mean_daily_turnover_p90": 0.030821917808219176,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 6163,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 168,
+          "report_family": "trend_long_cash",
+          "sharpe_mean": 0.483500738710245,
+          "sharpe_median": 0.48040806377681,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": 0.22776571268162657,
+          "sharpe_p90": 0.7419604925851654,
+          "total_return_mean": 0.26808502851439187,
+          "total_return_median": 0.24725768741079496,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": 0.029644242510421498,
+          "total_return_p90": 0.5391711794548425,
+          "family": "Trend long/cash"
+        },
+        {
+          "alpha_annual_mean": 0.2868451058897227,
+          "alpha_annual_median": 0.28757960680488226,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": 0.13175059788189136,
+          "alpha_annual_p90": 0.4396590469213871,
+          "annualized_full_l1_turnover_mean": 89.9047619047619,
+          "annualized_full_l1_turnover_median": 89.75,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 86.75,
+          "annualized_full_l1_turnover_p90": 93.125,
+          "beta_mean": -0.2865890578267147,
+          "beta_median": -0.2870002651322721,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.3412408802058187,
+          "beta_p90": -0.23103541231541438,
+          "experiment_id": "trend_long_short_h0336_r024",
+          "gross_sharpe_mean": 0.7179770456520711,
+          "gross_sharpe_median": 0.7201691545584655,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": 0.486109387740742,
+          "gross_sharpe_p90": 0.9472246910308015,
+          "gross_total_return_mean": 0.7021215574227243,
+          "gross_total_return_median": 0.6640169128216212,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": 0.25450637378886254,
+          "gross_total_return_p90": 1.1984727299448317,
+          "lookback_h": 336,
+          "max_drawdown_mean": 0.6085543499715673,
+          "max_drawdown_median": 0.6114988279818315,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.5251871213533973,
+          "max_drawdown_p90": 0.6879027965309721,
+          "mean_daily_turnover_mean": 0.24631441617742988,
+          "mean_daily_turnover_median": 0.2458904109589041,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.23767123287671232,
+          "mean_daily_turnover_p90": 0.2551369863013699,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 4926,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 24,
+          "report_family": "trend_long_short",
+          "sharpe_mean": 0.4192030384566324,
+          "sharpe_median": 0.42395909327645753,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": 0.17883016177162753,
+          "sharpe_p90": 0.6554442114895458,
+          "total_return_mean": 0.18882128507613546,
+          "total_return_median": 0.161019922972511,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.12755805027353975,
+          "total_return_p90": 0.543156612566833,
+          "family": "Trend long/short"
+        },
+        {
+          "alpha_annual_mean": -0.01777594160178684,
+          "alpha_annual_median": -0.0230902605158878,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": -0.18131257147412788,
+          "alpha_annual_p90": 0.15676969357795908,
+          "annualized_full_l1_turnover_mean": 33.601190476190474,
+          "annualized_full_l1_turnover_median": 33.625,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 32.625,
+          "annualized_full_l1_turnover_p90": 34.625,
+          "beta_mean": -0.17419551222230276,
+          "beta_median": -0.17410944071798573,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.21088093692249613,
+          "beta_p90": -0.13802548677091772,
+          "experiment_id": "trend_long_short_h0336_r168",
+          "gross_sharpe_mean": 0.05167468795160195,
+          "gross_sharpe_median": 0.042647652952263415,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": -0.20950223800713835,
+          "gross_sharpe_p90": 0.33159035555641764,
+          "gross_total_return_mean": -0.2536091360266146,
+          "gross_total_return_median": -0.28857810213775736,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": -0.4897835788601807,
+          "gross_total_return_p90": 0.0341999662816242,
+          "lookback_h": 336,
+          "max_drawdown_mean": 0.7660364916388887,
+          "max_drawdown_median": 0.7686011929369155,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.7119783907836615,
+          "max_drawdown_p90": 0.8168281954785475,
+          "mean_daily_turnover_mean": 0.092058056099152,
+          "mean_daily_turnover_median": 0.09212328767123287,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.08938356164383561,
+          "mean_daily_turnover_p90": 0.09486301369863014,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 356,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 168,
+          "report_family": "trend_long_short",
+          "sharpe_mean": -0.056844205759489584,
+          "sharpe_median": -0.06675140405176759,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": -0.31847075935553154,
+          "sharpe_p90": 0.22627196740965635,
+          "total_return_mean": -0.3472562101800995,
+          "total_return_median": -0.37836105988416463,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.5548952800463972,
+          "total_return_p90": -0.09340853722040987,
+          "family": "Trend long/short"
+        },
+        {
+          "alpha_annual_mean": 0.4078548155582369,
+          "alpha_annual_median": 0.411101498662909,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": 0.1480148528424185,
+          "alpha_annual_p90": 0.671160621765166,
+          "annualized_full_l1_turnover_mean": 56.13690476190476,
+          "annualized_full_l1_turnover_median": 56.125,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 52.0,
+          "annualized_full_l1_turnover_p90": 60.375,
+          "beta_mean": -0.3054173400562386,
+          "beta_median": -0.30528455269779187,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.3651732685510035,
+          "beta_p90": -0.2447852210912684,
+          "experiment_id": "trend_long_short_h0672_r024",
+          "gross_sharpe_mean": 0.8308689382693284,
+          "gross_sharpe_median": 0.8429238108448457,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": 0.4271405799818911,
+          "gross_sharpe_p90": 1.2355200085735387,
+          "gross_total_return_mean": 1.0278030753417147,
+          "gross_total_return_median": 0.9101630858796466,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": 0.18379449222345004,
+          "gross_total_return_p90": 2.0844311718514135,
+          "lookback_h": 672,
+          "max_drawdown_mean": 0.5522722306827966,
+          "max_drawdown_median": 0.5488486123722568,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.4902811899520771,
+          "max_drawdown_p90": 0.6209047361598576,
+          "mean_daily_turnover_mean": 0.15379973907371167,
+          "mean_daily_turnover_median": 0.15376712328767123,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.14246575342465753,
+          "mean_daily_turnover_p90": 0.1654109589041096,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 5675,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 24,
+          "report_family": "trend_long_short",
+          "sharpe_mean": 0.6356577394762097,
+          "sharpe_median": 0.6495818113577854,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": 0.2116403944248436,
+          "sharpe_p90": 1.0565918598657509,
+          "total_return_mean": 0.6250568245262965,
+          "total_return_median": 0.5252137713460208,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": -0.06711744791316776,
+          "total_return_p90": 1.4940196439576139,
+          "family": "Trend long/short"
+        },
+        {
+          "alpha_annual_mean": 0.49141548320195283,
+          "alpha_annual_median": 0.48723268932806035,
+          "alpha_annual_n_finite": 6615,
+          "alpha_annual_n_undefined": 0,
+          "alpha_annual_p10": 0.25830385726647165,
+          "alpha_annual_p90": 0.7289012676615203,
+          "annualized_full_l1_turnover_mean": 21.5,
+          "annualized_full_l1_turnover_median": 21.5,
+          "annualized_full_l1_turnover_n_finite": 6615,
+          "annualized_full_l1_turnover_n_undefined": 0,
+          "annualized_full_l1_turnover_p10": 20.375,
+          "annualized_full_l1_turnover_p90": 22.625,
+          "beta_mean": -0.27168457689495984,
+          "beta_median": -0.2714281211307974,
+          "beta_n_finite": 6615,
+          "beta_n_undefined": 0,
+          "beta_p10": -0.3451597656501662,
+          "beta_p90": -0.19672635241694802,
+          "experiment_id": "trend_long_short_h0672_r168",
+          "gross_sharpe_mean": 0.8668961618061143,
+          "gross_sharpe_median": 0.8586152592658453,
+          "gross_sharpe_n_finite": 6615,
+          "gross_sharpe_n_undefined": 0,
+          "gross_sharpe_p10": 0.49450899409212334,
+          "gross_sharpe_p90": 1.2497756187686595,
+          "gross_total_return_mean": 1.087789134716793,
+          "gross_total_return_median": 0.9427658117364619,
+          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_undefined": 0,
+          "gross_total_return_p10": 0.2743462975310416,
+          "gross_total_return_p90": 2.1011669582336743,
+          "lookback_h": 672,
+          "max_drawdown_mean": 0.4997130782064256,
+          "max_drawdown_median": 0.4994427384232958,
+          "max_drawdown_n_finite": 6615,
+          "max_drawdown_n_undefined": 0,
+          "max_drawdown_p10": 0.43934619970728633,
+          "max_drawdown_p90": 0.5603837178089965,
+          "mean_daily_turnover_mean": 0.0589041095890411,
+          "mean_daily_turnover_median": 0.0589041095890411,
+          "mean_daily_turnover_n_finite": 6615,
+          "mean_daily_turnover_n_undefined": 0,
+          "mean_daily_turnover_p10": 0.05582191780821918,
+          "mean_daily_turnover_p90": 0.061986301369863016,
+          "n_evaluated": 6615,
+          "n_population": 6615,
+          "n_positive_net": 6398,
+          "n_undefined_sharpe": 0,
+          "n_zero_net": 0,
+          "rebalance_h": 168,
+          "report_family": "trend_long_short",
+          "sharpe_mean": 0.7921462477459619,
+          "sharpe_median": 0.7841935336006906,
+          "sharpe_n_finite": 6615,
+          "sharpe_n_undefined": 0,
+          "sharpe_p10": 0.41410768526992375,
+          "sharpe_p90": 1.1793117457618543,
+          "total_return_mean": 0.9171234237075853,
+          "total_return_median": 0.781829119440523,
+          "total_return_n_finite": 6615,
+          "total_return_n_undefined": 0,
+          "total_return_p10": 0.1656839406746405,
+          "total_return_p90": 1.8534782719371452,
+          "family": "Trend long/short"
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Clocks",
+            "definition": "matched_clock_summary: five nonfactor families \u00d7 four matched clocks \u00d7 all6,615 baskets. Narrative means read original total_return_mean; source rows include means and medians.",
+            "componentIds": [
+              "cadence-story"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed clocks rows",
+            "detail": "matched_clock_summary: five nonfactor families \u00d7 four matched clocks \u00d7 all6,615 baskets. Narrative means read original total_return_mean; source rows include means and medians."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "matched_clock_summary: five nonfactor families \u00d7 four matched clocks \u00d7 all6,615 baskets. Narrative means read original total_return_mean; source rows include means and medians."
+        }
+      ]
+    },
+    "metrics": {
+      "rows": [
+        {
+          "metric": "Total net return",
+          "value": -0.7103480782827848,
+          "unit": "fraction"
+        },
+        {
+          "metric": "CAGR",
+          "value": -0.46180679889354304,
+          "unit": "fraction"
+        },
+        {
+          "metric": "Annual volatility",
+          "value": 0.27153502012898373,
+          "unit": "fraction"
+        },
+        {
+          "metric": "Maximum drawdown",
+          "value": 0.7684626171459502,
+          "unit": "fraction"
+        },
+        {
+          "metric": "Longest underwater span (days)",
+          "value": 708.5833333333334,
+          "unit": "days"
+        },
+        {
+          "metric": "Full-L1 turnover (times/year)",
+          "value": 189.2291666666666,
+          "unit": "times/year"
+        },
+        {
+          "metric": "Sharpe",
+          "value": -1.7720099769645337,
+          "unit": "ratio"
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_tiered8_development_20261013/outputs/reporting/summary.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Metrics",
+            "definition": "primary_summary: full-grid distribution medians at cost20_lag1. CAGR elapsed-year basis, daily Sharpe complete UTC days, drawdown observed endpoints, full-L1 target turnover annualized365 days.",
+            "componentIds": [
+              "metrics-definition"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_tiered8_development_20261013/outputs/reporting/summary.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed metrics rows",
+            "detail": "primary_summary: full-grid distribution medians at cost20_lag1. CAGR elapsed-year basis, daily Sharpe complete UTC days, drawdown observed endpoints, full-L1 target turnover annualized365 days."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "primary_summary: full-grid distribution medians at cost20_lag1. CAGR elapsed-year basis, daily Sharpe complete UTC days, drawdown observed endpoints, full-L1 target turnover annualized365 days."
+        }
+      ]
+    },
+    "coverage": {
+      "rows": [
+        {
+          "baskets": 6615,
+          "configurations": 169,
+          "primaryPairs": 1117935,
+          "scenarioKeys": 7825545,
+          "positiveNet": 106302,
+          "undefinedSharpe": 1000,
+          "rankCorrelationMedian": 0.8672314293001299
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_tiered8_development_20261013/protocol.json",
+          "research/restart_tiered8_development_20261013/outputs/reporting/summary.json",
+          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Coverage",
+            "definition": "Accepted development coverage, primary medians and within-basket annual Spearman summary. Descriptive distributions only; no re-ranking or new financial evaluation.",
+            "componentIds": [
+              "executive-summary",
+              "scope",
+              "accounting",
+              "year-scope",
+              "methods",
+              "conclusion"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_tiered8_development_20261013/protocol.json; research/restart_tiered8_development_20261013/outputs/reporting/summary.json; research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed coverage rows",
+            "detail": "Accepted development coverage, primary medians and within-basket annual Spearman summary. Descriptive distributions only; no re-ranking or new financial evaluation."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Accepted development coverage, primary medians and within-basket annual Spearman summary. Descriptive distributions only; no re-ranking or new financial evaluation."
+        }
+      ]
+    },
+    "strategy": {
+      "rows": [
+        {
+          "lookback_h": 24,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0024_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0024_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0024_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0072_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0072_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0072_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0168_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0168_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0168_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0001_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0001_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0001_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0004_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0004_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0004_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0012_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0012_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0012_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0001_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0001_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0001_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0001_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0001_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0001_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0002_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0002_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0002_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0002_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0002_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0002_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0004_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0004_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0004_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0004_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0004_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0004_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0008_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0008_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0008_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0008_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0008_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0008_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0012_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0012_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0012_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0012_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0012_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0012_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0024_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0024_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0024_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0048_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0048_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0048_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0048_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0048_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0048_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0072_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0072_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0072_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0168_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0168_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0168_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0336_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0336_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0336_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0336_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0336_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0336_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0672_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0672_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0672_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0672_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0672_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h0672_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h1440_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h1440_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h1440_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h1440_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h1440_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h1440_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h2160_r001",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h2160_r004",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h2160_r012",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h2160_r024",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h2160_r072",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "momentum_h2160_r168",
+          "report_family": "momentum"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0001_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0001_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0001_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0002_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0002_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0002_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0002_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0002_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0002_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0004_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0004_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 4,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0004_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0008_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0008_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0008_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0008_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0008_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 8,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0008_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0012_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0012_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 12,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0012_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0024_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0024_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0024_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0024_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0024_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 24,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0024_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0048_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0048_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0048_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0048_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0048_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 48,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0048_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0072_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0072_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0072_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0072_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0072_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 72,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0072_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0168_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0168_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0168_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0168_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0168_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 168,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0168_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0336_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0336_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0336_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0336_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0336_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0336_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0672_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0672_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0672_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0672_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0672_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h0672_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h1440_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h1440_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h1440_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h1440_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h1440_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 1440,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h1440_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 1,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h2160_r001",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 4,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h2160_r004",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 12,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h2160_r012",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h2160_r024",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 72,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h2160_r072",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 2160,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "reversal_h2160_r168",
+          "report_family": "reversal"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 24,
+          "buffer_l1": 0.25,
+          "phase_hours": 0,
+          "experiment_id": "buffered_momentum_h0336_r024_b025",
+          "report_family": "buffered_momentum"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 168,
+          "buffer_l1": 0.25,
+          "phase_hours": 0,
+          "experiment_id": "buffered_momentum_h0336_r168_b025",
+          "report_family": "buffered_momentum"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 24,
+          "buffer_l1": 0.25,
+          "phase_hours": 0,
+          "experiment_id": "buffered_momentum_h0672_r024_b025",
+          "report_family": "buffered_momentum"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 168,
+          "buffer_l1": 0.25,
+          "phase_hours": 0,
+          "experiment_id": "buffered_momentum_h0672_r168_b025",
+          "report_family": "buffered_momentum"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "trend_long_cash_h0336_r024",
+          "report_family": "trend_long_cash"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "trend_long_cash_h0336_r168",
+          "report_family": "trend_long_cash"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "trend_long_cash_h0672_r024",
+          "report_family": "trend_long_cash"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "trend_long_cash_h0672_r168",
+          "report_family": "trend_long_cash"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "trend_long_short_h0336_r024",
+          "report_family": "trend_long_short"
+        },
+        {
+          "lookback_h": 336,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "trend_long_short_h0336_r168",
+          "report_family": "trend_long_short"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "trend_long_short_h0672_r024",
+          "report_family": "trend_long_short"
+        },
+        {
+          "lookback_h": 672,
+          "rebalance_h": 168,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "trend_long_short_h0672_r168",
+          "report_family": "trend_long_short"
+        },
+        {
+          "lookback_h": 0,
+          "rebalance_h": 24,
+          "buffer_l1": 0.0,
+          "phase_hours": 0,
+          "experiment_id": "factor_residual_fixed",
+          "report_family": "factor_residual"
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_tiered8_development_20261013/protocol.json",
+          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Strategy",
+            "definition": "All169 frozen cases: 78 momentum,78 reversal,4 buffered momentum,4 long/cash,4 long/short,1 fixed BTC residual reversal. Full specification retained; no newly selected configuration.",
+            "componentIds": [
+              "strategy-definitions"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_tiered8_development_20261013/protocol.json; research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed strategy rows",
+            "detail": "All169 frozen cases: 78 momentum,78 reversal,4 buffered momentum,4 long/cash,4 long/short,1 fixed BTC residual reversal. Full specification retained; no newly selected configuration."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "All169 frozen cases: 78 momentum,78 reversal,4 buffered momentum,4 long/cash,4 long/short,1 fixed BTC residual reversal. Full specification retained; no newly selected configuration."
+        }
+      ]
+    },
+    "buffers": {
+      "rows": [
+        {
+          "buffered_experiment_id": "buffered_momentum_h0336_r024_b025",
+          "gross_total_return_buffer_minus_unbuffered_mean": -0.012229744277162767,
+          "gross_total_return_buffer_minus_unbuffered_median": -0.009787673704298727,
+          "gross_total_return_buffer_minus_unbuffered_n_finite": 6615,
+          "gross_total_return_buffer_minus_unbuffered_n_undefined": 0,
+          "gross_total_return_buffer_minus_unbuffered_p10": -0.0628386476543026,
+          "gross_total_return_buffer_minus_unbuffered_p90": 0.03571627774339455,
+          "lookback_h": 336,
+          "max_drawdown_buffer_minus_unbuffered_mean": -0.0038844135825062513,
+          "max_drawdown_buffer_minus_unbuffered_median": -0.002143234274286143,
+          "max_drawdown_buffer_minus_unbuffered_n_finite": 6615,
+          "max_drawdown_buffer_minus_unbuffered_n_undefined": 0,
+          "max_drawdown_buffer_minus_unbuffered_p10": -0.016203165402962294,
+          "max_drawdown_buffer_minus_unbuffered_p90": 0.006707900536343496,
+          "mean_daily_turnover_buffer_minus_unbuffered_mean": -0.01474071485519629,
+          "mean_daily_turnover_buffer_minus_unbuffered_median": -0.014668949771689643,
+          "mean_daily_turnover_buffer_minus_unbuffered_n_finite": 6615,
+          "mean_daily_turnover_buffer_minus_unbuffered_n_undefined": 0,
+          "mean_daily_turnover_buffer_minus_unbuffered_p10": -0.017808219178082174,
+          "mean_daily_turnover_buffer_minus_unbuffered_p90": -0.011815068493150671,
+          "n_population": 6615,
+          "rebalance_h": 24,
+          "sharpe_buffer_minus_unbuffered_mean": 0.024530883580234003,
+          "sharpe_buffer_minus_unbuffered_median": 0.0236642327410721,
+          "sharpe_buffer_minus_unbuffered_n_finite": 6615,
+          "sharpe_buffer_minus_unbuffered_n_undefined": 0,
+          "sharpe_buffer_minus_unbuffered_p10": -0.03575664274385006,
+          "sharpe_buffer_minus_unbuffered_p90": 0.08586555335605003,
+          "total_return_buffer_minus_unbuffered_mean": 0.011785641554237069,
+          "total_return_buffer_minus_unbuffered_median": 0.010909718031153537,
+          "total_return_buffer_minus_unbuffered_n_finite": 6615,
+          "total_return_buffer_minus_unbuffered_n_undefined": 0,
+          "total_return_buffer_minus_unbuffered_p10": -0.01802375180914517,
+          "total_return_buffer_minus_unbuffered_p90": 0.04362418339903559,
+          "unbuffered_experiment_id": "momentum_h0336_r024"
+        },
+        {
+          "buffered_experiment_id": "buffered_momentum_h0336_r168_b025",
+          "gross_total_return_buffer_minus_unbuffered_mean": 0.0013453620880292704,
+          "gross_total_return_buffer_minus_unbuffered_median": 0.0,
+          "gross_total_return_buffer_minus_unbuffered_n_finite": 6615,
+          "gross_total_return_buffer_minus_unbuffered_n_undefined": 0,
+          "gross_total_return_buffer_minus_unbuffered_p10": -0.0059616699590225065,
+          "gross_total_return_buffer_minus_unbuffered_p90": 0.01134920604667398,
+          "lookback_h": 336,
+          "max_drawdown_buffer_minus_unbuffered_mean": -0.0004917514834818864,
+          "max_drawdown_buffer_minus_unbuffered_median": 0.0,
+          "max_drawdown_buffer_minus_unbuffered_n_finite": 6615,
+          "max_drawdown_buffer_minus_unbuffered_n_undefined": 0,
+          "max_drawdown_buffer_minus_unbuffered_p10": -0.0036361235098054,
+          "max_drawdown_buffer_minus_unbuffered_p90": 0.0019568649702020324,
+          "mean_daily_turnover_buffer_minus_unbuffered_mean": -0.00017207847116522951,
+          "mean_daily_turnover_buffer_minus_unbuffered_median": -2.7755575615628914e-17,
+          "mean_daily_turnover_buffer_minus_unbuffered_n_finite": 6615,
+          "mean_daily_turnover_buffer_minus_unbuffered_n_undefined": 0,
+          "mean_daily_turnover_buffer_minus_unbuffered_p10": -0.0004566210045662267,
+          "mean_daily_turnover_buffer_minus_unbuffered_p90": 0.0,
+          "n_population": 6615,
+          "rebalance_h": 168,
+          "sharpe_buffer_minus_unbuffered_mean": 0.00262925610074185,
+          "sharpe_buffer_minus_unbuffered_median": 0.0,
+          "sharpe_buffer_minus_unbuffered_n_finite": 6615,
+          "sharpe_buffer_minus_unbuffered_n_undefined": 0,
+          "sharpe_buffer_minus_unbuffered_p10": -0.009528610876362585,
+          "sharpe_buffer_minus_unbuffered_p90": 0.019930925253842866,
+          "total_return_buffer_minus_unbuffered_mean": 0.0013444242328617012,
+          "total_return_buffer_minus_unbuffered_median": 0.0,
+          "total_return_buffer_minus_unbuffered_n_finite": 6615,
+          "total_return_buffer_minus_unbuffered_n_undefined": 0,
+          "total_return_buffer_minus_unbuffered_p10": -0.004702788245732719,
+          "total_return_buffer_minus_unbuffered_p90": 0.00991222883519073,
+          "unbuffered_experiment_id": "momentum_h0336_r168"
+        },
+        {
+          "buffered_experiment_id": "buffered_momentum_h0672_r024_b025",
+          "gross_total_return_buffer_minus_unbuffered_mean": 0.004990230341020277,
+          "gross_total_return_buffer_minus_unbuffered_median": 0.005508857371503667,
+          "gross_total_return_buffer_minus_unbuffered_n_finite": 6615,
+          "gross_total_return_buffer_minus_unbuffered_n_undefined": 0,
+          "gross_total_return_buffer_minus_unbuffered_p10": -0.04737349599549283,
+          "gross_total_return_buffer_minus_unbuffered_p90": 0.057624088010012176,
+          "lookback_h": 672,
+          "max_drawdown_buffer_minus_unbuffered_mean": -0.008747234782030848,
+          "max_drawdown_buffer_minus_unbuffered_median": -0.006105640983649185,
+          "max_drawdown_buffer_minus_unbuffered_n_finite": 6615,
+          "max_drawdown_buffer_minus_unbuffered_n_undefined": 0,
+          "max_drawdown_buffer_minus_unbuffered_p10": -0.026457918222840805,
+          "max_drawdown_buffer_minus_unbuffered_p90": 0.0030825957426793174,
+          "mean_daily_turnover_buffer_minus_unbuffered_mean": -0.020964532489809708,
+          "mean_daily_turnover_buffer_minus_unbuffered_median": -0.020890410958904093,
+          "mean_daily_turnover_buffer_minus_unbuffered_n_finite": 6615,
+          "mean_daily_turnover_buffer_minus_unbuffered_n_undefined": 0,
+          "mean_daily_turnover_buffer_minus_unbuffered_p10": -0.024486301369863017,
+          "mean_daily_turnover_buffer_minus_unbuffered_p90": -0.01746575342465756,
+          "n_population": 6615,
+          "rebalance_h": 24,
+          "sharpe_buffer_minus_unbuffered_mean": 0.0605225566573401,
+          "sharpe_buffer_minus_unbuffered_median": 0.059332867000564504,
+          "sharpe_buffer_minus_unbuffered_n_finite": 6615,
+          "sharpe_buffer_minus_unbuffered_n_undefined": 0,
+          "sharpe_buffer_minus_unbuffered_p10": -0.0097720560143091,
+          "sharpe_buffer_minus_unbuffered_p90": 0.13175525092923493,
+          "total_return_buffer_minus_unbuffered_mean": 0.032645414741458476,
+          "total_return_buffer_minus_unbuffered_median": 0.030495114653872724,
+          "total_return_buffer_minus_unbuffered_n_finite": 6615,
+          "total_return_buffer_minus_unbuffered_n_undefined": 0,
+          "total_return_buffer_minus_unbuffered_p10": -0.004753371413986953,
+          "total_return_buffer_minus_unbuffered_p90": 0.07422559039350568,
+          "unbuffered_experiment_id": "momentum_h0672_r024"
+        },
+        {
+          "buffered_experiment_id": "buffered_momentum_h0672_r168_b025",
+          "gross_total_return_buffer_minus_unbuffered_mean": -0.006023895474077202,
+          "gross_total_return_buffer_minus_unbuffered_median": 0.0001200305002223706,
+          "gross_total_return_buffer_minus_unbuffered_n_finite": 6615,
+          "gross_total_return_buffer_minus_unbuffered_n_undefined": 0,
+          "gross_total_return_buffer_minus_unbuffered_p10": -0.02090934663324364,
+          "gross_total_return_buffer_minus_unbuffered_p90": 0.018102877204902078,
+          "lookback_h": 672,
+          "max_drawdown_buffer_minus_unbuffered_mean": 0.0019331789799429515,
+          "max_drawdown_buffer_minus_unbuffered_median": 0.0,
+          "max_drawdown_buffer_minus_unbuffered_n_finite": 6615,
+          "max_drawdown_buffer_minus_unbuffered_n_undefined": 0,
+          "max_drawdown_buffer_minus_unbuffered_p10": -0.005449932926788825,
+          "max_drawdown_buffer_minus_unbuffered_p90": 0.005678176023141246,
+          "mean_daily_turnover_buffer_minus_unbuffered_mean": -0.0006362019693722236,
+          "mean_daily_turnover_buffer_minus_unbuffered_median": -0.0005136986301369911,
+          "mean_daily_turnover_buffer_minus_unbuffered_n_finite": 6615,
+          "mean_daily_turnover_buffer_minus_unbuffered_n_undefined": 0,
+          "mean_daily_turnover_buffer_minus_unbuffered_p10": -0.0011986301369863034,
+          "mean_daily_turnover_buffer_minus_unbuffered_p90": -0.00017123287671232112,
+          "n_population": 6615,
+          "rebalance_h": 168,
+          "sharpe_buffer_minus_unbuffered_mean": -0.006344841450037741,
+          "sharpe_buffer_minus_unbuffered_median": 0.0016439612672451628,
+          "sharpe_buffer_minus_unbuffered_n_finite": 6615,
+          "sharpe_buffer_minus_unbuffered_n_undefined": 0,
+          "sharpe_buffer_minus_unbuffered_p10": -0.02792175566062081,
+          "sharpe_buffer_minus_unbuffered_p90": 0.028386387994787366,
+          "total_return_buffer_minus_unbuffered_mean": -0.0042060067069076305,
+          "total_return_buffer_minus_unbuffered_median": 0.0008855885495426263,
+          "total_return_buffer_minus_unbuffered_n_finite": 6615,
+          "total_return_buffer_minus_unbuffered_n_undefined": 0,
+          "total_return_buffer_minus_unbuffered_p10": -0.01741656197088484,
+          "total_return_buffer_minus_unbuffered_p90": 0.017424994561268527,
+          "unbuffered_experiment_id": "momentum_h0672_r168"
+        }
+      ],
+      "source": {
+        "label": "Checksum-verified accepted development evidence",
+        "files": [
+          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+        ],
+        "tables": [],
+        "filters": [
+          "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Buffers",
+            "definition": "matched_buffer_effects: paired buffered-minus-unbuffered paths on same basket, lookback and rebalance; displayed narrative uses stored median net return difference.",
+            "componentIds": [
+              "cadence-story"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Exact accepted source files",
+            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          },
+          {
+            "title": "Verify accepted files",
+            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
+          },
+          {
+            "title": "Prepare reviewed buffers rows",
+            "detail": "matched_buffer_effects: paired buffered-minus-unbuffered paths on same basket, lookback and rebalance; displayed narrative uses stored median net return difference."
+          }
+        ],
+        "caveats": [
+          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Lag1 is idealized observed-close, not1hour elapsed delay."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "matched_buffer_effects: paired buffered-minus-unbuffered paths on same basket, lookback and rebalance; displayed narrative uses stored median net return difference."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+feature,state,n_days,n_support_configs,n_support_pairs,survivor_daily_mean_bps,control_daily_mean_bps,control_minus_survivor_bps,inference
+btc_direction,high_up,159,62,207804,-6.923957172678844,-3.6574587067085695,3.2664984659702756,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+btc_direction,low_down,114,62,207804,-0.6580311056677988,-1.2560786820101963,-0.5980475763423966,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+btc_direction,unknown,0,62,207804,,,,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+btc_volatility,high_up,56,62,207804,-9.16729138697436,-9.912419155515355,-0.745127768540994,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+btc_volatility,low_down,217,62,207804,-3.053255386320283,-0.7817208820597479,2.2715345042605355,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+btc_volatility,unknown,0,62,207804,,,,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+dispersion,high_up,108,62,207804,-0.5899696419557158,0.7443660480864668,1.3343356900421826,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+dispersion,low_down,165,62,207804,-6.740654637399081,-4.879517801873718,1.8611368355253626,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+dispersion,unknown,0,62,207804,,,,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+relative_btc_quote_volume,high_up,135,62,207804,2.243218652590883,2.9450679926815138,0.7018493400906313,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+relative_btc_quote_volume,low_down,138,62,207804,-10.715646772477063,-8.132703500926302,2.582943271550763,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test
+relative_btc_quote_volume,unknown,0,62,207804,,,,Descriptive fixed-case-mass sensitivity only; no additional hypothesis test

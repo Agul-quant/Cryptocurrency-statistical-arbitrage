@@ -1,0 +1,21 @@
+{
+  "files": {
+    "research/reference_reporting_20261014/outputs/notebook_tables/annual_net_returns.csv": "7d62e925e5ad3dc4d8021d12467e7134bf5596fa5aa69d1fe7b7682702904c64",
+    "research/reference_reporting_20261014/outputs/notebook_tables/luna_slot_contribution.csv": "3430da085b21d9fed4037c91ddf60e80feda471e6fe4cd40dc776ea75c2e2695",
+    "research/reference_reporting_20261014/outputs/tables/selected_reference_comparison.csv": "46faad77d736bfb96b77a2b82830e46084308ce9a32785eb3249e05eec192d2f",
+    "research/reference_reporting_20261014/outputs/tables/selection_display.json": "1428b5ba90bdbebcfeee34239d40de00e33a94e478d64a665b00ba68026e6ffc",
+    "research/restart_fullgrid_validation_20261014/outputs/diagnostics/development_ranked_group_performance.csv": "19711285a34f7e1d6a070a30a77065ed272ea56306d130a2d09dd6190883e9b3",
+    "research/restart_fullgrid_validation_20261014/outputs/diagnostics/rank_correlation_summary.csv": "464c1b4090f26b4f3d7fbf54e86a884048a48efc751788544acaa990533a22ef",
+    "research/restart_fullgrid_validation_20261014/outputs/diagnostics/sign_transition_rates.csv": "998d0bb5c6013938c4027b1ca0f5bfcf5a5f8dd882c9a0f08e30fe59b79dffcd",
+    "research/restart_validation_20261014/protocol.json": "418e763aae6ebaca356fff63b5599e4b7b804f6eca36edadbc455ba83b2b0b8a",
+    "research/track_b_q1_validation_selection_20261014/outputs/diagnostics/annual_primary.csv": "c9e01b59639495675ee48af5c3a5a1f52bd6c3732e037a93fc45ce7d3c54362f",
+    "research/track_b_q1_validation_selection_20261014/outputs/family_eligibility.csv": "8c3ffa4dc6b7115a5bc7d48d5cffa756130df714d23ea78e26f7168390f876c4",
+    "research/track_b_q1_validation_selection_20261014/outputs/original_four.csv": "1dad9646af6104bdb7fc82c3d36c56c9a683db813b014cf740a9f5d89fa59140",
+    "research/track_b_q1_validation_selection_20261014/outputs/performance_comparison.csv": "f9e91a51744ac4f5ed5ebeee75e4c1cb4a0f6f9e17f4a1513bdc1a5e0506fade",
+    "research/track_b_q1_validation_selection_20261014/outputs/shortlist_freeze.json": "6af69fa5e60b988296830e0cff5875f4d1779e1c88d63924d4f262c4a4439e54",
+    "research/track_b_q1_validation_selection_20261014/protocol.json": "af76e19cc97e3fbbc23d59ecd4575a412410f008e8ed3356d112138cd8d3a68e"
+  },
+  "last_verified_at_utc": "2026-10-15T20:48:15.484887+00:00",
+  "no_price_panel_or_trading_access": true,
+  "report_id": "02_validation"
+}

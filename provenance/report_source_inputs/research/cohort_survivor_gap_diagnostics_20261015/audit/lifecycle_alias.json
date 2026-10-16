@@ -1,0 +1,34 @@
+{
+  "LUNA_is_legacy_Terra_LUNC_not_Terra2": true,
+  "aliases": [
+    {
+      "2026_source_symbol": "LUNCUSDT",
+      "documented_status": "expected continuously available subject to strict hourly archive audit",
+      "historical_economic_slot": "LUNAUSDT",
+      "source_period_covers_all_Jan_Sep2026": true,
+      "tokens_per_source_token": 1.0
+    },
+    {
+      "2026_source_symbol": "SUSDT",
+      "documented_status": "documented 1:1 FTM/S migration",
+      "historical_economic_slot": "FTMUSDT",
+      "source_period_covers_all_Jan_Sep2026": true,
+      "tokens_per_source_token": 1.0
+    },
+    {
+      "2026_source_symbol": "POLUSDT",
+      "documented_status": "expected continuously available subject to strict hourly archive audit",
+      "historical_economic_slot": "MATICUSDT",
+      "source_period_covers_all_Jan_Sep2026": true,
+      "tokens_per_source_token": 1.0
+    }
+  ],
+  "created_at_utc": "2026-10-15T20:20:13.307311+00:00",
+  "metadata_only_no_prices_decoded": true,
+  "metadata_sha256_verified_against_preserved_parent_source_policy": {
+    "research/top30_oos/lifecycle/effective_dated_lifecycle.json": "378cc95c787c72ce9a51e2a61f79bb5129c5f0aa83ab181b813e80b49d9267ee",
+    "research/top30_oos/outputs/data_quality.json": "080f279aa00efbcb44c4d364c09c4ac7f7604513b379e52733f7bd3946d4e51b"
+  },
+  "no_new_alias_or_replacement_added": true,
+  "status": "passed"
+}

@@ -1,0 +1,72 @@
+{
+  "created_at_utc": "2026-10-15T20:37:06.295068+00:00",
+  "task": "Consolidate post-restart work into at most3final reader-facing reports",
+  "classification": "Publication/presentation-only consolidation of existing accepted research; no new strategy evaluations, data acquisition or selection",
+  "reports": [
+    {
+      "id": "01_development",
+      "title": "Development and robustness",
+      "pdf": "01_development_and_robustness.pdf",
+      "sources": [
+        "restart_tiered8_development_20261013",
+        "restart_development_robustness_20261013"
+      ]
+    },
+    {
+      "id": "02_validation",
+      "title": "Validation and frozen selection",
+      "pdf": "02_validation_and_frozen_selection.pdf",
+      "sources": [
+        "restart_validation_20261014",
+        "restart_validation_diagnosis_20261014",
+        "reference_reporting_20261014",
+        "restart_fullgrid_validation_20261014",
+        "track_b_q1_validation_selection_20261014"
+      ]
+    },
+    {
+      "id": "03_2026_evaluation",
+      "title": "2026 evaluation and conclusions",
+      "pdf": "03_2026_evaluation_and_conclusions.pdf",
+      "sources": [
+        "oos_nine_partial_20261015",
+        "post_oos_diagnostics_20261015",
+        "q1_validation_survivor_oos_20261015",
+        "cohort_survivor_gap_diagnostics_20261015"
+      ]
+    }
+  ],
+  "source_manifest_sha256": {
+    "research/restart_tiered8_development_20261013/outputs/final_delivery_manifest.json": "777577d82a55981f006c5d5737944152c3a5ecb53344546e5cd75ff3e78083f8",
+    "research/restart_development_robustness_20261013/outputs/final_delivery_manifest.json": "b1b3f6bbf8fda1764c4f134bd759b500f085c489a06ed6aecd3061db10624240",
+    "research/restart_validation_20261014/outputs/final_delivery_manifest.json": "8644c49e375ae185b206e26b0e3c00d597030cca67270f5a13b47c0fe0f26925",
+    "research/restart_validation_diagnosis_20261014/outputs/final_delivery_manifest.json": "6fdb5d6e2f6f197364b419d30b1979d314a2480f4f8743a6b987c506b81e6cbc",
+    "research/reference_reporting_20261014/outputs/final_delivery_manifest.json": "64f6b616b2356c5266bf41520ae1ee78649edf72ea2ef47454bedc34d72c88ad",
+    "research/restart_fullgrid_validation_20261014/outputs/final_delivery_manifest.json": "24514fb1197e56cf021cabbc833153dba534cd4b87de893a36864cf677204ba4",
+    "research/track_b_q1_validation_selection_20261014/outputs/final_delivery_manifest.json": "b27a4375d54c060067e25cded4662df4fb869c03e0383dded7c160e298ef8d01",
+    "research/oos_nine_partial_20261015/outputs/final_delivery_manifest.json": "89ff9339ebe3079691e875a7500499478476fe8fe424874eb2d4df6ced230aed",
+    "research/post_oos_diagnostics_20261015/outputs/final_delivery_manifest.json": "d81b77da5c3ff1c944d3f154b14fb38f2f7df8411610dc8d234cf581d3008264",
+    "research/q1_validation_survivor_oos_20261015/outputs/final_delivery_manifest.json": "e83c051c2509f9f467c1855cc3744b195e18aa9dfcc0053eb4ee61ec5906ffac",
+    "research/cohort_survivor_gap_diagnostics_20261015/outputs/final_delivery_manifest.json": "ddf2497722a35b60cf7233ae951949bf48f969b0872028f02b08659eb35edd00",
+    "research/oos_protocol_draft_20261015/OOS_PROTOCOL_DRAFT.md": "a29c96cdaf9e61003247d8ab047d93ceb61ca69aeaedb23623a7408dc940d337"
+  },
+  "calendar": {
+    "development": "2022-01-01\u20132024-01-01 exclusive",
+    "validation": "2024-01-01\u20132026-01-01 exclusive",
+    "partial_2026": "2026-01-01\u20132026-10-01 exclusive,273days,Oct1UTCclosingendpoint"
+  },
+  "locked": [
+    "Original frozen strategies,baskets,selections,results,risk limits and statistical decisions unchanged",
+    "Read saved metric/report/accounting evidence only; verify expected source bytes before decode",
+    "No pricepanel/rawarchive downloads/decodes,tradingruns,parametersearch ornewranking",
+    "No newwinner,promotedcontrols,portfolioweights,monitoring,orders,push orpublication",
+    "Old studies/reports remain byte-identical archives;3newreports constitute final reading list",
+    "PDFs derive from same verified compiled sharedDatareportapp; each newPDF marker once; inspecteveryfinalpage",
+    "Readerlabelreference notcanonical; lag1 idealizedobservedclose notactual1hdelay; cost20bpsonewayfullL1primary",
+    "Report3 nine-month retrospective/previouslyinspected limitation,cohortstats notportfolio,no causality,volinferenceunavailable29draws",
+    "Standalone individual figurePDFs,QA drafts,provenance logs andCSVexports are not extra reports"
+  ],
+  "editorial": "Cohesive sections, no blind concatenation or duplicate full appendices. Material methods/results/unsuccessful cases retained via summaries and archival CSV companion references. No fourth summary report; README navigation only.",
+  "environment": "/Users/cosdis/.venvs/myenv/bin/python",
+  "non_cloud": true
+}

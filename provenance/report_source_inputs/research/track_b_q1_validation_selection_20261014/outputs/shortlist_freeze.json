@@ -1,0 +1,349 @@
+{
+  "additional_diagnostics_cannot_change_this_shortlist": true,
+  "artifact_sha256": {
+    "outputs/eligible_pool.parquet": "9bd12ce2cd5adfec7372c294ab412db84a2ee383409f74e6d17e9ed8622e62fc",
+    "outputs/family_eligibility.csv": "8c3ffa4dc6b7115a5bc7d48d5cffa756130df714d23ea78e26f7168390f876c4",
+    "outputs/original_four.csv": "1dad9646af6104bdb7fc82c3d36c56c9a683db813b014cf740a9f5d89fa59140",
+    "outputs/original_four.parquet": "4df14d58eb8c2d711c783e3256f0ed499589651d914f348e7af1d9d2c33c568e",
+    "outputs/selected_pairs.csv": "95fc6ad215d3074e31257677c178ad0e0ece6bb9753e5925504f1518799b6c26",
+    "outputs/selected_pairs.parquet": "bcc3cb410241f93a964f41e848c230781d85924f8011d0b2ffbfdb668ccf3134"
+  },
+  "ensemble_weights": null,
+  "family_status": [
+    {
+      "family_id": "B01",
+      "n_eligible_pairs": 3619,
+      "n_full_pairs": 26460,
+      "n_q1_pairs": 20068,
+      "n_q1_positive_both_net_returns": 3619,
+      "report_family": "buffered_momentum",
+      "selected_count": 1,
+      "selection_status": "selected_one"
+    },
+    {
+      "family_id": "B02",
+      "n_eligible_pairs": 0,
+      "n_full_pairs": 6615,
+      "n_q1_pairs": 1355,
+      "n_q1_positive_both_net_returns": 0,
+      "report_family": "factor_residual",
+      "selected_count": 0,
+      "selection_status": "unselected_no_eligible_pair"
+    },
+    {
+      "family_id": "B03",
+      "n_eligible_pairs": 13585,
+      "n_full_pairs": 515970,
+      "n_q1_pairs": 107412,
+      "n_q1_positive_both_net_returns": 13585,
+      "report_family": "momentum",
+      "selected_count": 1,
+      "selection_status": "selected_one"
+    },
+    {
+      "family_id": "B04",
+      "n_eligible_pairs": 1227,
+      "n_full_pairs": 515970,
+      "n_q1_pairs": 45673,
+      "n_q1_positive_both_net_returns": 1227,
+      "report_family": "reversal",
+      "selected_count": 1,
+      "selection_status": "selected_one"
+    },
+    {
+      "family_id": "B05",
+      "n_eligible_pairs": 12125,
+      "n_full_pairs": 26460,
+      "n_q1_pairs": 24856,
+      "n_q1_positive_both_net_returns": 12125,
+      "report_family": "trend_long_cash",
+      "selected_count": 1,
+      "selection_status": "selected_one"
+    },
+    {
+      "family_id": "B06",
+      "n_eligible_pairs": 8776,
+      "n_full_pairs": 26460,
+      "n_q1_pairs": 25503,
+      "n_q1_positive_both_net_returns": 8776,
+      "report_family": "trend_long_short",
+      "selected_count": 1,
+      "selection_status": "selected_one"
+    }
+  ],
+  "frozen_at_utc": "2026-10-15T03:17:00.226881+00:00",
+  "oos2026_accessed": false,
+  "oos2026_authorized": false,
+  "oos_primary_designation": null,
+  "oos_protocol_complete": false,
+  "original_four_unchanged": true,
+  "prices_loaded": false,
+  "rule_chosen_after_observed_validation": true,
+  "rule_freeze_sha256": "2b73b6ab0722911e053db27d14868b003d1a36d48250587684ef2b82355611a4",
+  "selection_filters_revised_after_results": false,
+  "selections": [
+    {
+      "basket_id": 2323,
+      "case": {
+        "buffer_l1": 0.25,
+        "experiment_id": "buffered_momentum_h0672_r024_b025",
+        "family": "cross_momentum",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 24,
+        "report_family": "buffered_momentum",
+        "strategy_id": "cross_momentum_h672_r024_b025"
+      },
+      "comparison_id": "B01",
+      "experiment_id": "buffered_momentum_h0672_r024_b025",
+      "liquidity_ranks": [
+        1,
+        2,
+        4,
+        6,
+        11,
+        13,
+        20,
+        22
+      ],
+      "rank_in_eligible_family": 1,
+      "report_family": "buffered_momentum",
+      "slot_indices": [
+        0,
+        1,
+        3,
+        5,
+        10,
+        12,
+        19,
+        21
+      ],
+      "source_case_index": 158,
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "DOGEUSDT",
+        "FTMUSDT",
+        "AXSUSDT",
+        "VETUSDT"
+      ],
+      "validation_selection_score": 1.6236518827918454,
+      "validation_sharpe_is_selection_statistic": true,
+      "validation_total_turnover_tie_break": 155.10416666666663
+    },
+    {
+      "basket_id": 2457,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "momentum_h2160_r072",
+        "family": "momentum",
+        "grid_id": "time_scale",
+        "lookback_h": 2160,
+        "phase_hours": 0,
+        "rebalance_h": 72,
+        "report_family": "momentum",
+        "strategy_id": "momentum_h2160_r072"
+      },
+      "comparison_id": "B03",
+      "experiment_id": "momentum_h2160_r072",
+      "liquidity_ranks": [
+        1,
+        2,
+        4,
+        6,
+        13,
+        15,
+        20,
+        21
+      ],
+      "rank_in_eligible_family": 1,
+      "report_family": "momentum",
+      "slot_indices": [
+        0,
+        1,
+        3,
+        5,
+        12,
+        14,
+        19,
+        20
+      ],
+      "source_case_index": 85,
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "FTMUSDT",
+        "MATICUSDT",
+        "AXSUSDT",
+        "LTCUSDT"
+      ],
+      "validation_selection_score": 1.8462962880871356,
+      "validation_sharpe_is_selection_statistic": true,
+      "validation_total_turnover_tie_break": 48.333333333333336
+    },
+    {
+      "basket_id": 6064,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "reversal_h2160_r168",
+        "family": "reversal",
+        "grid_id": "time_scale",
+        "lookback_h": 2160,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "reversal",
+        "strategy_id": "reversal_h2160_r168"
+      },
+      "comparison_id": "B04",
+      "experiment_id": "reversal_h2160_r168",
+      "liquidity_ranks": [
+        1,
+        2,
+        7,
+        9,
+        10,
+        16,
+        17,
+        22
+      ],
+      "rank_in_eligible_family": 1,
+      "report_family": "reversal",
+      "slot_indices": [
+        0,
+        1,
+        6,
+        8,
+        9,
+        15,
+        16,
+        21
+      ],
+      "source_case_index": 155,
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "DOTUSDT",
+        "LUNAUSDT",
+        "AVAXUSDT",
+        "MANAUSDT",
+        "FILUSDT",
+        "VETUSDT"
+      ],
+      "validation_selection_score": 1.139190437994262,
+      "validation_sharpe_is_selection_statistic": true,
+      "validation_total_turnover_tie_break": 44.75
+    },
+    {
+      "basket_id": 2330,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "trend_long_cash_h0672_r168",
+        "family": "trend_long_cash",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "trend_long_cash",
+        "strategy_id": "trend_long_cash_h672_r168_b000"
+      },
+      "comparison_id": "B05",
+      "experiment_id": "trend_long_cash_h0672_r168",
+      "liquidity_ranks": [
+        1,
+        2,
+        4,
+        6,
+        11,
+        14,
+        18,
+        19
+      ],
+      "rank_in_eligible_family": 1,
+      "report_family": "trend_long_cash",
+      "slot_indices": [
+        0,
+        1,
+        3,
+        5,
+        10,
+        13,
+        17,
+        18
+      ],
+      "source_case_index": 163,
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "DOGEUSDT",
+        "TRXUSDT",
+        "GALAUSDT",
+        "LINKUSDT"
+      ],
+      "validation_selection_score": 1.4046429901982092,
+      "validation_sharpe_is_selection_statistic": true,
+      "validation_total_turnover_tie_break": 25.0
+    },
+    {
+      "basket_id": 2495,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "trend_long_short_h0672_r168",
+        "family": "trend_long_short",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "trend_long_short",
+        "strategy_id": "trend_long_short_h672_r168_b000"
+      },
+      "comparison_id": "B06",
+      "experiment_id": "trend_long_short_h0672_r168",
+      "liquidity_ranks": [
+        1,
+        2,
+        4,
+        6,
+        14,
+        16,
+        18,
+        19
+      ],
+      "rank_in_eligible_family": 1,
+      "report_family": "trend_long_short",
+      "slot_indices": [
+        0,
+        1,
+        3,
+        5,
+        13,
+        15,
+        17,
+        18
+      ],
+      "source_case_index": 167,
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "TRXUSDT",
+        "MANAUSDT",
+        "GALAUSDT",
+        "LINKUSDT"
+      ],
+      "validation_selection_score": 1.2391134665277062,
+      "validation_sharpe_is_selection_statistic": true,
+      "validation_total_turnover_tie_break": 49.25
+    }
+  ],
+  "source_parent_final_sha256": "24514fb1197e56cf021cabbc833153dba534cd4b87de893a36864cf677204ba4",
+  "status": "frozen_track_b_family_shortlist_no_oos_release",
+  "strategies_executed": false
+}

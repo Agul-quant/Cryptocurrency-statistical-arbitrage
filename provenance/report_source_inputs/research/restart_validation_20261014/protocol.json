@@ -1,0 +1,2148 @@
+{
+  "all_historical_periods_previously_inspected": true,
+  "asof_utc": "2026-01-01T00:00:00Z",
+  "basket_count": 6615,
+  "benchmark": "BTCUSDT exact samehourlyreturns; originaldailyconventions, theoreticalspotshorts, nofunding/borrow/margin/capacity/realisticfills orordinarydriftmaintenancetrading.",
+  "cases": [
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0024_r001",
+      "family": "momentum",
+      "grid_id": "original",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h024_r01"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0024_r004",
+      "family": "momentum",
+      "grid_id": "original",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h024_r04"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0024_r024",
+      "family": "momentum",
+      "grid_id": "original",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h024_r24"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0072_r001",
+      "family": "momentum",
+      "grid_id": "original",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h072_r01"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0072_r004",
+      "family": "momentum",
+      "grid_id": "original",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h072_r04"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0072_r024",
+      "family": "momentum",
+      "grid_id": "original",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h072_r24"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0168_r001",
+      "family": "momentum",
+      "grid_id": "original",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h168_r01"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0168_r004",
+      "family": "momentum",
+      "grid_id": "original",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h168_r04"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0168_r024",
+      "family": "momentum",
+      "grid_id": "original",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h168_r24"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0001_r001",
+      "family": "reversal",
+      "grid_id": "original",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h001_r01"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0001_r004",
+      "family": "reversal",
+      "grid_id": "original",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h001_r04"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0001_r024",
+      "family": "reversal",
+      "grid_id": "original",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h001_r24"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0004_r001",
+      "family": "reversal",
+      "grid_id": "original",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h004_r01"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0004_r004",
+      "family": "reversal",
+      "grid_id": "original",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h004_r04"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0004_r024",
+      "family": "reversal",
+      "grid_id": "original",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h004_r24"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0012_r001",
+      "family": "reversal",
+      "grid_id": "original",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h012_r01"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0012_r004",
+      "family": "reversal",
+      "grid_id": "original",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h012_r04"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0012_r024",
+      "family": "reversal",
+      "grid_id": "original",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h012_r24"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0001_r001",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0001_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0001_r004",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0001_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0001_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0001_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0001_r024",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0001_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0001_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0001_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0001_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0001_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0002_r001",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0002_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0002_r004",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0002_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0002_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0002_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0002_r024",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0002_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0002_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0002_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0002_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0002_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0004_r001",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0004_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0004_r004",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0004_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0004_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0004_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0004_r024",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0004_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0004_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0004_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0004_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0004_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0008_r001",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0008_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0008_r004",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0008_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0008_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0008_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0008_r024",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0008_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0008_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0008_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0008_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0008_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0012_r001",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0012_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0012_r004",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0012_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0012_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0012_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0012_r024",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0012_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0012_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0012_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0012_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0012_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0024_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0024_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0024_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0024_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0024_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0024_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0048_r001",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0048_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0048_r004",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0048_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0048_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0048_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0048_r024",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0048_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0048_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0048_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0048_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0048_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0072_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0072_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0072_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0072_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0072_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0072_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0168_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0168_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0168_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0168_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0168_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0168_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0336_r001",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0336_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0336_r004",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0336_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0336_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0336_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0336_r024",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0336_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0336_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0336_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0336_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0336_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0672_r001",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0672_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0672_r004",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0672_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0672_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0672_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0672_r024",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0672_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0672_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0672_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h0672_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h0672_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h1440_r001",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h1440_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h1440_r004",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h1440_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h1440_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h1440_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h1440_r024",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h1440_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h1440_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h1440_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h1440_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h1440_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h2160_r001",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h2160_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h2160_r004",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h2160_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h2160_r012",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h2160_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h2160_r024",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h2160_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h2160_r072",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h2160_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "momentum_h2160_r168",
+      "family": "momentum",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "momentum",
+      "strategy_id": "momentum_h2160_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0001_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0001_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0001_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0001_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0001_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 1,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0001_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0002_r001",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0002_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0002_r004",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0002_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0002_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0002_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0002_r024",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0002_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0002_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0002_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0002_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0002_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0004_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0004_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0004_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0004_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0004_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 4,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0004_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0008_r001",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0008_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0008_r004",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0008_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0008_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0008_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0008_r024",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0008_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0008_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0008_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0008_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 8,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0008_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0012_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0012_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0012_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0012_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0012_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 12,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0012_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0024_r001",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0024_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0024_r004",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0024_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0024_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0024_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0024_r024",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0024_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0024_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0024_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0024_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 24,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0024_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0048_r001",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0048_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0048_r004",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0048_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0048_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0048_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0048_r024",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0048_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0048_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0048_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0048_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 48,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0048_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0072_r001",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0072_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0072_r004",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0072_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0072_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0072_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0072_r024",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0072_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0072_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0072_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0072_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 72,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0072_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0168_r001",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0168_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0168_r004",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0168_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0168_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0168_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0168_r024",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0168_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0168_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0168_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0168_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 168,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0168_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0336_r001",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0336_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0336_r004",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0336_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0336_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0336_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0336_r024",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0336_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0336_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0336_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0336_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0336_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0672_r001",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0672_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0672_r004",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0672_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0672_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0672_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0672_r024",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0672_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0672_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0672_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0672_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0672_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h1440_r001",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h1440_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h1440_r004",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h1440_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h1440_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h1440_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h1440_r024",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h1440_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h1440_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h1440_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h1440_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 1440,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h1440_r168"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h2160_r001",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 1,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h2160_r001"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h2160_r004",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 4,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h2160_r004"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h2160_r012",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 12,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h2160_r012"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h2160_r024",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h2160_r024"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h2160_r072",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 72,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h2160_r072"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h2160_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 2160,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h2160_r168"
+    },
+    {
+      "buffer_l1": 0.25,
+      "experiment_id": "buffered_momentum_h0336_r024_b025",
+      "family": "cross_momentum",
+      "grid_id": "extensions",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "buffered_momentum",
+      "strategy_id": "cross_momentum_h336_r024_b025"
+    },
+    {
+      "buffer_l1": 0.25,
+      "experiment_id": "buffered_momentum_h0336_r168_b025",
+      "family": "cross_momentum",
+      "grid_id": "extensions",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "buffered_momentum",
+      "strategy_id": "cross_momentum_h336_r168_b025"
+    },
+    {
+      "buffer_l1": 0.25,
+      "experiment_id": "buffered_momentum_h0672_r024_b025",
+      "family": "cross_momentum",
+      "grid_id": "extensions",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "buffered_momentum",
+      "strategy_id": "cross_momentum_h672_r024_b025"
+    },
+    {
+      "buffer_l1": 0.25,
+      "experiment_id": "buffered_momentum_h0672_r168_b025",
+      "family": "cross_momentum",
+      "grid_id": "extensions",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "buffered_momentum",
+      "strategy_id": "cross_momentum_h672_r168_b025"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "trend_long_cash_h0336_r024",
+      "family": "trend_long_cash",
+      "grid_id": "extensions",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "trend_long_cash",
+      "strategy_id": "trend_long_cash_h336_r024_b000"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "trend_long_cash_h0336_r168",
+      "family": "trend_long_cash",
+      "grid_id": "extensions",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "trend_long_cash",
+      "strategy_id": "trend_long_cash_h336_r168_b000"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "trend_long_cash_h0672_r024",
+      "family": "trend_long_cash",
+      "grid_id": "extensions",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "trend_long_cash",
+      "strategy_id": "trend_long_cash_h672_r024_b000"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "trend_long_cash_h0672_r168",
+      "family": "trend_long_cash",
+      "grid_id": "extensions",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "trend_long_cash",
+      "strategy_id": "trend_long_cash_h672_r168_b000"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "trend_long_short_h0336_r024",
+      "family": "trend_long_short",
+      "grid_id": "extensions",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "trend_long_short",
+      "strategy_id": "trend_long_short_h336_r024_b000"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "trend_long_short_h0336_r168",
+      "family": "trend_long_short",
+      "grid_id": "extensions",
+      "lookback_h": 336,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "trend_long_short",
+      "strategy_id": "trend_long_short_h336_r168_b000"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "trend_long_short_h0672_r024",
+      "family": "trend_long_short",
+      "grid_id": "extensions",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "trend_long_short",
+      "strategy_id": "trend_long_short_h672_r024_b000"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "trend_long_short_h0672_r168",
+      "family": "trend_long_short",
+      "grid_id": "extensions",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "trend_long_short",
+      "strategy_id": "trend_long_short_h672_r168_b000"
+    },
+    {
+      "buffer_l1": 0.0,
+      "experiment_id": "factor_residual_fixed",
+      "family": "factor_residual",
+      "grid_id": "extensions",
+      "lookback_h": 0,
+      "phase_hours": 0,
+      "rebalance_h": 24,
+      "report_family": "factor_residual",
+      "strategy_id": "factor_residual_fixed"
+    }
+  ],
+  "controls": [
+    {
+      "basket_id": 0,
+      "experiment_id": "trend_long_cash_h0672_r168",
+      "role": "long_cash_control"
+    },
+    {
+      "basket_id": 0,
+      "experiment_id": "factor_residual_fixed",
+      "role": "factor_control"
+    }
+  ],
+  "created_at_utc": "2026-10-14T11:40:54.680926+00:00",
+  "exploratory": true,
+  "family_counts": {
+    "buffered_momentum": 4,
+    "factor_residual": 1,
+    "momentum": 78,
+    "reversal": 78,
+    "trend_long_cash": 4,
+    "trend_long_short": 4
+  },
+  "fixed_symbols": [
+    "BTCUSDT",
+    "ETHUSDT"
+  ],
+  "fresh_oos_claim": false,
+  "no_orders_publication_push_monitoring": true,
+  "parent_final_manifest_sha256": "b1b3f6bbf8fda1764c4f134bd759b500f085c489a06ed6aecd3061db10624240",
+  "parent_study": "research/restart_development_robustness_20261013",
+  "periods": {
+    "validation": [
+      "2024-01-01T00:00:00Z",
+      "2026-01-01T00:00:00Z"
+    ]
+  },
+  "primary_scenario": "cost20_lag1",
+  "prior_development_annual_scenario_keys": 15651090,
+  "prior_development_annual_scopes": {
+    "2022": [
+      "2022-01-01T00:00:00Z",
+      "2023-01-01T00:00:00Z"
+    ],
+    "2023": [
+      "2023-01-01T00:00:00Z",
+      "2024-01-01T00:00:00Z"
+    ]
+  },
+  "prior_development_attribution_keys": 4471740,
+  "prior_development_attribution_method": "Eight actual tradedcoins: prior continuous hourlyNAV\u00d7each modeledcoinreturn contribution and actual aggregatecoinfullL1fee contribution. Store continuous dollar and scope-rebased return contributions; reconcile to originalhourlybucket wealth. Not imaginedintrahourmarks, causalcoin effects or coin-removalcounterfactual.",
+  "prior_development_attribution_scopes": {
+    "2022": [
+      "2022-01-01T00:00:00Z",
+      "2023-01-01T00:00:00Z"
+    ],
+    "2023": [
+      "2023-01-01T00:00:00Z",
+      "2024-01-01T00:00:00Z"
+    ],
+    "development": [
+      "2022-01-01T00:00:00Z",
+      "2024-01-01T00:00:00Z"
+    ],
+    "event_window": [
+      "2022-05-06T00:00:00Z",
+      "2022-05-21T00:00:00Z"
+    ]
+  },
+  "prior_development_break_even_keys": 6707610,
+  "prior_development_break_even_lags": [
+    1,
+    2
+  ],
+  "prior_development_break_even_method": "Exact zero ofsumlog1p(gross\u2212cost_bps/10000\u00d7fullL1turnover) in nonnegativecompoundable fee domain. No linear interpolation orfixed40bpscap; allcash/noTO/grossloss/zero/finite/numericalfailure states retained.",
+  "prior_development_break_even_scopes": [
+    "development",
+    "2022",
+    "2023"
+  ],
+  "prior_development_concentration_method": "Absolute contribution denominators retain sign/cancellation caveats; zero denominators undefined. Percoin continuous NAVweighted gross/fee/net attribution plus daily/monthly dollar-PNL concentration if provided by exact pathkernel. No event/coin deleted from live path.",
+  "prior_development_event_window_rule": "Audited legacyLUNAforcedexitUTCday2022May13 \u00b17calendar days inclusive. Lifecycle-associated diagnostic, not inferred regime or edited strategy; overlapsannual/full scopes and is not addedtwice.",
+  "prior_development_storage_policy": {
+    "all_cash_losing_undefined_results_retained": true,
+    "all_hourly_paths": false,
+    "atomic_compact_parquet": true,
+    "retained_predetermined_audit_paths": true,
+    "supplementary_notebook_report": true
+  },
+  "purpose": "Development-only robustness-based candidate selection followed by fixed2024\u20132025 validation; no2026 OOS access",
+  "rank_tiers": {
+    "3-9": [
+      "SHIBUSDT",
+      "BNBUSDT",
+      "SOLUSDT",
+      "XRPUSDT",
+      "DOTUSDT",
+      "SANDUSDT",
+      "LUNAUSDT"
+    ],
+    "10-16": [
+      "AVAXUSDT",
+      "DOGEUSDT",
+      "ADAUSDT",
+      "FTMUSDT",
+      "TRXUSDT",
+      "MATICUSDT",
+      "MANAUSDT"
+    ],
+    "17-22": [
+      "FILUSDT",
+      "GALAUSDT",
+      "LINKUSDT",
+      "AXSUSDT",
+      "LTCUSDT",
+      "VETUSDT"
+    ]
+  },
+  "reserved_periods": {
+    "oos": [
+      "2026-01-01T00:00:00Z",
+      "2027-01-01T00:00:00Z"
+    ]
+  },
+  "reserved_periods_authorized": false,
+  "scenarios": [
+    {
+      "cost_bps": 0,
+      "execution_lag_h": 1,
+      "scenario_id": "cost00_lag1"
+    },
+    {
+      "cost_bps": 5,
+      "execution_lag_h": 1,
+      "scenario_id": "cost05_lag1"
+    },
+    {
+      "cost_bps": 10,
+      "execution_lag_h": 1,
+      "scenario_id": "cost10_lag1"
+    },
+    {
+      "cost_bps": 15,
+      "execution_lag_h": 1,
+      "scenario_id": "cost15_lag1"
+    },
+    {
+      "cost_bps": 20,
+      "execution_lag_h": 1,
+      "scenario_id": "cost20_lag1"
+    },
+    {
+      "cost_bps": 40,
+      "execution_lag_h": 1,
+      "scenario_id": "cost40_lag1"
+    },
+    {
+      "cost_bps": 20,
+      "execution_lag_h": 2,
+      "scenario_id": "cost20_lag2"
+    }
+  ],
+  "schema_version": 1,
+  "selected_per_tier": 2,
+  "selection_development_period": [
+    "2022-01-01T00:00:00Z",
+    "2024-01-01T00:00:00Z"
+  ],
+  "selection_policy": "Newfrozenrobustdevelopment-onlyrule; no validation/OOS inputs or reselection",
+  "selection_rule": {
+    "annual_gate": "Each2022/2023 evaluatedfinite netreturn>0 anddefinedfiniteSharpe>0 fromsamecontinuousdevelopmentpath",
+    "concentration_policy": "Diagnosticonly; nocoin/eventdeletion,noconcentrationcutoff orLUNAexclusion",
+    "development_primary": "20bpslag1idealizedobservedclose",
+    "family_selection": "Selectatmostonepairperreport_familybydescendingrobust_score; ties lowerfullprimaryL1turnover,experiment_idlexicographic,basket_idnumeric. No rounding.",
+    "full_primary_gate": "Evaluatedfinite netreturn,Sharpe andfullL1turnover; allcash/undefinedneverzero-filled; fullL1turnoverfiniteandnonnegative",
+    "neighborhood_gate": "Atleastonedeclaredparameterneighbor ANDall28declaredsame-tierbasketneighbors. Everyexpectedneighbor evaluatedfiniteprimarynetreturn anddefinedfiniteprimarySharpe; eachkind strictly>0.5 positiveprimarynetreturnfraction. Centerexcluded.",
+    "no_qualifier_policy": "Selectnoneforfamilywithzeroeligiblepairs; neverrelaxrulesaftercounts",
+    "robust_score": "min(2022Sharpe,2023Sharpe,medianparameterneighborfull20lag1Sharpe,medianbasketneighborfull20lag1Sharpe), finite andstrictly>0",
+    "scope": "All169cases\u00d76615baskets; only2022\u20132023saveddevelopmentresults",
+    "search_bias": "Ruledesignedafterdevelopmentrobustness; thresholds are heuristics, not calibratedsignificance. Candidateis optimizedovercorrelatedconfigurationsandbaskets; freeze doesnoterase search/priorinspectionbias.",
+    "stress_gate": "Full2022\u201323 evaluatedfinite netreturn>0 at40bpslag1 and20bpslag2; definedfiniteSharpe>0 at20bpslag2. Noannualstressgate andno40bpsSharpegate."
+  },
+  "storage_policy": "Retainfulltargets,heldweights,gross/turnoverbasepaths,allfee/scopemetrics andfactormodel/eventlogs for every frozenvalidationrunkey.",
+  "study_id": "restart_validation_20261014",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SHIBUSDT",
+    "BNBUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "DOTUSDT",
+    "SANDUSDT",
+    "LUNAUSDT",
+    "AVAXUSDT",
+    "DOGEUSDT",
+    "ADAUSDT",
+    "FTMUSDT",
+    "TRXUSDT",
+    "MATICUSDT",
+    "MANAUSDT",
+    "FILUSDT",
+    "GALAUSDT",
+    "LINKUSDT",
+    "AXSUSDT",
+    "LTCUSDT",
+    "VETUSDT"
+  ],
+  "validation_protocol": {
+    "annuals": "2024/2025samecombinedvalidationpath; noartificialJanuary2025reset/entry/exit/fee",
+    "controls": "Eachselectedconfigurationonoutcomeindependentcanonicalbasket0; canonical0trend_long_cash_h0672_r168 andfactor_residual_fixed; identicalcase/basketkeys deduplicated retainingroles",
+    "last_needed_endpoint": "2026-01-01T00:00:00Z from December2025 completedcandle; no candleopening2026",
+    "no_reselection": true,
+    "oos2026_authorized": false,
+    "primary_cost_bps": 20,
+    "source_policy": "Ownedverifiedhistoricalpanels throughJan1 2025 plus exact2025 checksumarchives, preservinglineage/NaNs/attrs/masks. Neverdecode mixed2026sourcepickle.",
+    "start_from_cash": true,
+    "terminal_liquidation": true,
+    "validation_years": 2
+  },
+  "warmup_start": "2021-10-01T01:00:00Z",
+  "inherited_development_scope_method": "Generate exactly one continuous full2022\u201323 accounting path percase/basket/lag. Year slices retain inherited holdings/fees; no annualcash reset or invented internalJan1entry/liquidation. Interval labels endpoint\u22121ns; scopeNAVrebased only for risk/return arithmetic, never resimulated.",
+  "inherited_development_source_policy": {
+    "cache_source": "Parentowneddevelopmentonly prepared.pkl andchecksumreceipt; bytecopy intoownedstudy, thennewgate beforedecode. No parentmixed-periodParquetprices, newdownload, originalrunner orlaterdata.",
+    "no_price_or_volume_fill": true,
+    "no_validation_oos_materialization": true,
+    "preserve_all_controls_attrs": true
+  },
+  "inherited_development_audit_policy": {
+    "all169_on_basket0": true,
+    "all_population_keys_scalar_chain_cost_root_attribution_topology_checks": true,
+    "basket_ids": [
+      0,
+      1,
+      14,
+      3149,
+      3150,
+      3307,
+      6613,
+      6614
+    ],
+    "case_basket_samples": 225,
+    "financial_scenario_samples": 1575,
+    "full_population_hourly_independent_audit": false,
+    "representative_case_ids": [
+      "reversal_h0672_r072",
+      "reversal_h0672_r168",
+      "momentum_h0001_r001",
+      "momentum_h2160_r168",
+      "buffered_momentum_h0336_r024_b025",
+      "trend_long_cash_h0336_r024",
+      "trend_long_short_h0672_r168",
+      "factor_residual_fixed"
+    ]
+  },
+  "inherited_development_full_parent_scenario_keys": 7825545,
+  "inherited_development_attribution_cost_bps": 20,
+  "inherited_development_attribution_lag": 1,
+  "inherited_development_break_even_numerical_contract": {
+    "absolute_log_residual_tolerance": 2e-12,
+    "domain": "nonnegative cost strictly below min((1+gross)/turnover); no arbitrary cap",
+    "max_iterations": 80,
+    "method": "compensated logsum safeguarded Newton"
+  },
+  "inherited_development_membership_conditioning": "Compare presence/absence distributions for20variablecoins within eachfixedconfiguration beforefamilyaggregation. BTC/ETHhave noabsencecomparison; no causalorleaveoneoutclaim.",
+  "inherited_development_parameter_topology": {
+    "adjacency": "Exactly one ordered-grid-neighbor change in lookback orrebalance, preserve report/implementationfamily, buffer,phase,andotheraxis. legacygridaliasdoesnotblock semanticneighbors.",
+    "directed_per_basket": 572,
+    "factor_no_neighbors": "No parameter neighbor; retained explicitly, not score0.",
+    "undirected_edges": 286,
+    "unordered_comparisons": 1891890
+  },
+  "inherited_development_basket_topology": {
+    "adjacency": "Replace exactly one nonfixedcoin within its ownliquiditytier; preserve two per tier andBTCETH.",
+    "correlation_caveat": "Adjacent baskets share sevenmembers anddates; not independentreplications.",
+    "degree_per_basket": 28,
+    "undirected_edges": 92610,
+    "unordered_case_comparisons": 15651090
+  },
+  "scope_method": "Continuous2024\u20132025 fromcash toterminal; 2024/2025 are samepath annuals, no artificial yearreset/trades/fees.",
+  "source_policy": "Onlyownverifiedhistorical panels throughJan1 2025 and exact2025 archives; no2026 sourcecandles/mixedlaterpickle.",
+  "audit_policy": "Independent all-pairdevelopmentselection decisions beforepriceaccess; strictsourcechecks+independentfullsavedhold/quote/L1 accounting all validationkeys; finalclaims/visual/preservation."
+}

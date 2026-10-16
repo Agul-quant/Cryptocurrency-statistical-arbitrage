@@ -5,7 +5,22 @@ transaction costs, and the limits of apparent backtest profitability. All
 calculations run on your computer. No Codex/ChatGPT, cloud notebook, account,
 exchange API key, live order, scheduled monitor, or Git LFS service is required.
 
-## Start here
+## Final reading list — three consolidated reports
+
+The restarted study is now presented in exactly **three reports**. Each PDF
+has an equivalent portable HTML edition; these are formats of the same report,
+not extra studies. Earlier material below remains archival.
+
+1. **Development and robustness** — [PDF](final_reports_20261015/01_development/01_development_and_robustness.pdf) · [offline HTML](final_reports_20261015/01_development/01_development_and_robustness.html).
+2. **Validation and frozen selection** — [PDF](final_reports_20261015/02_validation/02_validation_and_frozen_selection.pdf) · [offline HTML](final_reports_20261015/02_validation/02_validation_and_frozen_selection.html).
+3. **2026 evaluation and conclusions** — [PDF](final_reports_20261015/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf) · [offline HTML](final_reports_20261015/03_2026_evaluation/03_2026_evaluation_and_conclusions.html).
+
+BTC alpha and beta for all nine frozen strategies are already in Report 3,
+page 2. The [publication guide](docs/FINAL_REPORTS_PUBLICATION.md) explains
+the saved evidence, metric interpretation and verification boundary. No prices,
+strategies, selections or results were changed for this publication.
+
+## Earlier reports (archival)
 
 - **Original course study, with the new universe story:**
   [Revised PDF](studies/crypto_stat_arb_report_revision/reports/project_report.pdf).

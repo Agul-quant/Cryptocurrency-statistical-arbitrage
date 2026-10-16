@@ -1,0 +1,77 @@
+{
+  "study_id": "cohort_survivor_gap_diagnostics_20261015",
+  "created_at_utc": "2026-10-15T20:13:49.355118+00:00",
+  "classification": "Posthoc exploratory diagnosis of already-inspected outcomes; not a new blind test, no causal attribution",
+  "question": "Why controls had higher fraction positive compounded Jan-Sep2026 net return than validation survivors; diagnose settings, basket composition, market regimes without new winner",
+  "parent_study": "q1_validation_survivor_oos_20261015",
+  "parent_manifest_sha256": "e83c051c2509f9f467c1855cc3744b195e18aa9dfcc0053eb4ee61ec5906ffac",
+  "parent_verification_sha256": "a17340f83a3cd3dfa7df25bd6a5b18cccc729570a433072fa2eb11648dff4d7e",
+  "period": {
+    "start_utc": "2026-01-01T00:00:00Z",
+    "end_exclusive_utc": "2026-10-01T00:00:00Z",
+    "days": 273,
+    "later_prices_allowed": false
+  },
+  "cohorts": {
+    "all_Q1": 224867,
+    "survivors": 69108,
+    "strict": 39332,
+    "dev_negative_survivors": 29776,
+    "controls": 155759,
+    "Q1": "approximately top20percent defined development Sharpe within basket, not calendar Q1"
+  },
+  "primary": "20bps one-way full-L1 target changes; inherited lag1 idealized observed-close execution, not an actual 1h fill delay",
+  "inputs": "Previously finalized metrics, daily paths, membership, catalogs, and seven audited 22-slot source panels only. Verify parent pins before decode. No new archives/downloads/trades/simulator runs.",
+  "settings": {
+    "summaries": [
+      "family",
+      "exact experiment",
+      "lookback_h",
+      "rebalance_h",
+      "buffer_l1",
+      "development sign"
+    ],
+    "statistics": [
+      "n, profitable fraction",
+      "median net/gross returns and Sharpe",
+      "turnover, exposure, cash, BTC beta",
+      "gross-positive to net-negative erosion"
+    ],
+    "decomposition": "Controls-minus-survivors fraction-positive gap. Exact symmetric Kitagawa over common strata; original cohort shares. Unsupported strata explicit direct contributions, not imputed survivor rates. Family and full experiment; plus renormalized common support. Exact config standardization uses pooled all-Q1 case weights fixed from historical membership."
+  },
+  "basket": {
+    "summaries": "22 coins in historical liquidity order; fixed BTC/ETH not estimated. Inclusion frequencies by historical cohorts; per-basket gap/decomposition; configuration-standardized inclusion vs exclusion associations for20 variable coins separately per cohort.",
+    "no_causal_coin_effects": "Within-tier substitution and overlapping baskets, historical/Q1 selection and lifecycle confounding. No isolated coin experiment. Report support denominators, no coin/basket winners.",
+    "inference": "All coin, basket and settings cuts descriptive; no IID pair SE, no uncorrected significance stars. A joint config+basket additive fixed-effect linear projection may be provided as descriptive sensitivity if stable and audited; not causality."
+  },
+  "regimes": {
+    "decision_time": "Features computed at day d00UTC from information ending at d, labels apply to following interval[d,d+1). Original carried net daily paths, no regime switching or resets.",
+    "features": {
+      "btc_direction": "trailing30-calendar-day BTC endpoint return >0 vs <=0",
+      "btc_volatility": "sample SD of30 contiguous BTC daily logreturns ending at d, sqrt365; high vs low using median2022-23 only",
+      "dispersion": "sample SD of contemporaneous previous24h simple returns among22 fixed economic slots with finite positive prices and observed endpoints; require>=8 valid slots; high vs low median2022-23 only",
+      "relative_btc_quote_volume": "BTC previous24 hourly quote-volume sum /mean of30 preceding complete daily volume sums excluding current24h; high vs low median2022-23 only"
+    },
+    "unknown": "Retain unknown explicitly; never fill. State day counts, data coverage and fixed slots. No discontinuous-regime Sharpe.",
+    "statistics": "Cohort cross-path daily arithmetic mean return (bps), daily-positive breadth, median path daily return, and mean log-return contributions by regime. These averages are not a proposed invested portfolio. Monthly carried-path results. Gross/control full-period metrics exist; no unsupported control fee/delay scenarios or daily-turnover inference.",
+    "four_posthoc_tests": "For each of4 predefined regime features, interaction = (controls-minus-survivors mean daily net return in high/up) minus corresponding gap in low/down. Reuse4000 synchronized28-day circular calendar bootstrap indices from parent; resample regime labels and paired daily cohort summary together. Marginal95percent percentile CIs, centered2sided plus1 p, Holm4 over these4only; not full-research-search correction. Unknown excluded only from known-state contrast and counts retained.",
+    "context": "Period-level BTC/ETH returns, volatility, fixed22 dispersion, relative volume and valid counts for development2022-23,validation2024-25,partial2026; daily14/28day trailing-return vs nextday cross-sectional Spearman across fixed22 as contextual diagnostic only, not basket engine signal or new strategy.",
+    "asset_context": "22-slot Jan-Sep endpoint buyhold marks if available and hourly observed/tradable/hold_allowed fractions; no replacement of retired slots. BTCETH fixed membership unidentifiable."
+  },
+  "uncertainty": "Retain prior aggregate screening-gap interval. New settings/coin cuts descriptive only. Four new regime tests explicitly posthoc and corrected only within own small family. Shared calendar dependence, limited9months, selection and nonstationarity remain.",
+  "prohibitions": [
+    "No OOS rank/winner selection",
+    "No strategy/basket/risk-rule changes",
+    "No new portfolio weights",
+    "No prices after2026-10-01 endpoint",
+    "No mutation of parent studies",
+    "No publication,push,orders,automation"
+  ],
+  "deliverables": [
+    "Reproducible diagnostic scripts and CSVs",
+    "Separate local non-cloud report and offline HTML",
+    "Independent arithmetic/source/chronology audit",
+    "Final source and preservation manifest"
+  ],
+  "module_policy": "Each module script hash recorded before executing real outcome analysis; scientific repairs explicitly logged. Protocol is a posthoc analysis-plan receipt, not pristine pre-OOS freeze."
+}

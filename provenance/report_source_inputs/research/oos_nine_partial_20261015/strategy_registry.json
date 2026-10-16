@@ -1,0 +1,360 @@
+{
+  "factor_B02_status": "unselected_no_eligible_pair_not_added",
+  "order": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "B01",
+    "B03",
+    "B04",
+    "B05",
+    "B06"
+  ],
+  "source_shortlist_sha256": "6af69fa5e60b988296830e0cff5875f4d1779e1c88d63924d4f262c4a4439e54",
+  "status": "unchanged_nine_frozen_strategies",
+  "strategies": [
+    {
+      "basket_id": 4645,
+      "case": {
+        "buffer_l1": 0.25,
+        "experiment_id": "buffered_momentum_h0672_r168_b025",
+        "family": "cross_momentum",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "buffered_momentum",
+        "strategy_id": "cross_momentum_h672_r168_b025"
+      },
+      "comparison_id": "A01",
+      "experiment_id": "buffered_momentum_h0672_r168_b025",
+      "original_run_id": "run_01",
+      "proposed_turnover_guardrail": {
+        "baseline_max": 35.14976630186958,
+        "development_annualized": 31.437499999999996,
+        "limit": 52.72464945280437,
+        "multiplier": 1.5,
+        "status": "new_draft_acceptance_budget_requires_approval",
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 35.14976630186958
+      },
+      "report_family": "buffered_momentum",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT",
+        "LUNAUSDT",
+        "FTMUSDT",
+        "TRXUSDT",
+        "LINKUSDT",
+        "LTCUSDT"
+      ],
+      "track": "A_development_only"
+    },
+    {
+      "basket_id": 4645,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "momentum_h0672_r072",
+        "family": "momentum",
+        "grid_id": "time_scale",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 72,
+        "report_family": "momentum",
+        "strategy_id": "momentum_h0672_r072"
+      },
+      "comparison_id": "A02",
+      "experiment_id": "momentum_h0672_r072",
+      "original_run_id": "run_02",
+      "proposed_turnover_guardrail": {
+        "baseline_max": 55.4344790241678,
+        "development_annualized": 49.583333333333336,
+        "limit": 83.1517185362517,
+        "multiplier": 1.5,
+        "status": "new_draft_acceptance_budget_requires_approval",
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 55.4344790241678
+      },
+      "report_family": "momentum",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT",
+        "LUNAUSDT",
+        "FTMUSDT",
+        "TRXUSDT",
+        "LINKUSDT",
+        "LTCUSDT"
+      ],
+      "track": "A_development_only"
+    },
+    {
+      "basket_id": 1159,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "reversal_h1440_r168",
+        "family": "reversal",
+        "grid_id": "time_scale",
+        "lookback_h": 1440,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "reversal",
+        "strategy_id": "reversal_h1440_r168"
+      },
+      "comparison_id": "A03",
+      "experiment_id": "reversal_h1440_r168",
+      "original_run_id": "run_03",
+      "proposed_turnover_guardrail": {
+        "baseline_max": 27.625,
+        "development_annualized": 27.625,
+        "limit": 41.4375,
+        "multiplier": 1.5,
+        "status": "new_draft_acceptance_budget_requires_approval",
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 22.344391244870042
+      },
+      "report_family": "reversal",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SHIBUSDT",
+        "DOTUSDT",
+        "ADAUSDT",
+        "MANAUSDT",
+        "FILUSDT",
+        "VETUSDT"
+      ],
+      "track": "A_development_only"
+    },
+    {
+      "basket_id": 4444,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "trend_long_short_h0672_r024",
+        "family": "trend_long_short",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 24,
+        "report_family": "trend_long_short",
+        "strategy_id": "trend_long_short_h672_r024_b000"
+      },
+      "comparison_id": "A04",
+      "experiment_id": "trend_long_short_h0672_r024",
+      "original_run_id": "run_04",
+      "proposed_turnover_guardrail": {
+        "baseline_max": 63.912448700410394,
+        "development_annualized": 50.5,
+        "limit": 95.8686730506156,
+        "multiplier": 1.5,
+        "status": "new_draft_acceptance_budget_requires_approval",
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 63.912448700410394
+      },
+      "report_family": "trend_long_short",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT",
+        "LUNAUSDT",
+        "AVAXUSDT",
+        "FTMUSDT",
+        "FILUSDT",
+        "VETUSDT"
+      ],
+      "track": "A_development_only"
+    },
+    {
+      "basket_id": 2323,
+      "case": {
+        "buffer_l1": 0.25,
+        "experiment_id": "buffered_momentum_h0672_r024_b025",
+        "family": "cross_momentum",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 24,
+        "report_family": "buffered_momentum",
+        "strategy_id": "cross_momentum_h672_r024_b025"
+      },
+      "comparison_id": "B01",
+      "experiment_id": "buffered_momentum_h0672_r024_b025",
+      "original_run_id": null,
+      "proposed_turnover_guardrail": {
+        "baseline_max": 81.6875,
+        "development_annualized": 81.6875,
+        "limit": 122.53125,
+        "multiplier": 1.5,
+        "status": "new_draft_acceptance_budget_requires_approval",
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 77.44599293205653
+      },
+      "report_family": "buffered_momentum",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "DOGEUSDT",
+        "FTMUSDT",
+        "AXSUSDT",
+        "VETUSDT"
+      ],
+      "track": "B_development_validation"
+    },
+    {
+      "basket_id": 2457,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "momentum_h2160_r072",
+        "family": "momentum",
+        "grid_id": "time_scale",
+        "lookback_h": 2160,
+        "phase_hours": 0,
+        "rebalance_h": 72,
+        "report_family": "momentum",
+        "strategy_id": "momentum_h2160_r072"
+      },
+      "comparison_id": "B03",
+      "experiment_id": "momentum_h2160_r072",
+      "original_run_id": null,
+      "proposed_turnover_guardrail": {
+        "baseline_max": 27.75,
+        "development_annualized": 27.75,
+        "limit": 41.625,
+        "multiplier": 1.5,
+        "status": "new_draft_acceptance_budget_requires_approval",
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 24.133606931144552
+      },
+      "report_family": "momentum",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "FTMUSDT",
+        "MATICUSDT",
+        "AXSUSDT",
+        "LTCUSDT"
+      ],
+      "track": "B_development_validation"
+    },
+    {
+      "basket_id": 6064,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "reversal_h2160_r168",
+        "family": "reversal",
+        "grid_id": "time_scale",
+        "lookback_h": 2160,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "reversal",
+        "strategy_id": "reversal_h2160_r168"
+      },
+      "comparison_id": "B04",
+      "experiment_id": "reversal_h2160_r168",
+      "original_run_id": null,
+      "proposed_turnover_guardrail": {
+        "baseline_max": 22.344391244870042,
+        "development_annualized": 21.312499999999996,
+        "limit": 33.516586867305065,
+        "multiplier": 1.5,
+        "status": "new_draft_acceptance_budget_requires_approval",
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 22.344391244870042
+      },
+      "report_family": "reversal",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "DOTUSDT",
+        "LUNAUSDT",
+        "AVAXUSDT",
+        "MANAUSDT",
+        "FILUSDT",
+        "VETUSDT"
+      ],
+      "track": "B_development_validation"
+    },
+    {
+      "basket_id": 2330,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "trend_long_cash_h0672_r168",
+        "family": "trend_long_cash",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "trend_long_cash",
+        "strategy_id": "trend_long_cash_h672_r168_b000"
+      },
+      "comparison_id": "B05",
+      "experiment_id": "trend_long_cash_h0672_r168",
+      "original_run_id": null,
+      "proposed_turnover_guardrail": {
+        "baseline_max": 12.482900136798905,
+        "development_annualized": 11.875,
+        "limit": 18.72435020519836,
+        "multiplier": 1.5,
+        "status": "new_draft_acceptance_budget_requires_approval",
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 12.482900136798905
+      },
+      "report_family": "trend_long_cash",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "DOGEUSDT",
+        "TRXUSDT",
+        "GALAUSDT",
+        "LINKUSDT"
+      ],
+      "track": "B_development_validation"
+    },
+    {
+      "basket_id": 2495,
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "trend_long_short_h0672_r168",
+        "family": "trend_long_short",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "trend_long_short",
+        "strategy_id": "trend_long_short_h672_r168_b000"
+      },
+      "comparison_id": "B06",
+      "experiment_id": "trend_long_short_h0672_r168",
+      "original_run_id": null,
+      "proposed_turnover_guardrail": {
+        "baseline_max": 24.591313269493845,
+        "development_annualized": 22.875,
+        "limit": 36.88696990424077,
+        "multiplier": 1.5,
+        "status": "new_draft_acceptance_budget_requires_approval",
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 24.591313269493845
+      },
+      "report_family": "trend_long_short",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "TRXUSDT",
+        "MANAUSDT",
+        "GALAUSDT",
+        "LINKUSDT"
+      ],
+      "track": "B_development_validation"
+    }
+  ]
+}

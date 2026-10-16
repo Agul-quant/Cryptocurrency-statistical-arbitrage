@@ -1,0 +1,455 @@
+{
+  "access_freeze_sha256": "e823063002bdfdd1b6e87b90a49143864f12e10062cf22a1886ab00229aa28a8",
+  "aligned_calendar_days_required_externally": 273,
+  "bootstrap_index_file_sha256": "edd20a79681d2154ee96c0fbaee8d5423200930875bc461e23e0218fcbce18fb",
+  "created_at_utc": "2026-10-15T12:48:08.819602+00:00",
+  "evaluated_slot_count": 9,
+  "execution_scope": "approved_retrospective_partial_2026_OOS_inference",
+  "failure_aware_nine_slot_wrapper": true,
+  "future_market_runner_required_complete_days": 273,
+  "future_market_runner_requires_explicit_human_release": true,
+  "joint_daily_return_matrix_sha256": "8522078ff52f331a7d18b6333d9ba847ed15bae9cfbe15a11a08de47cbfcac8f",
+  "method": {
+    "alternative": "greater_than_zero",
+    "annualization_days": 365,
+    "block_days": 28,
+    "drawdown_bootstrap_interval": "not_calculated",
+    "exact_finite_sample": false,
+    "generator": "numpy.random.Generator(PCG64)",
+    "hac_kernel": "bartlett",
+    "hac_max_lag": 27,
+    "hac_variance_correction": "n/(n-1)",
+    "multiplicity": "Holm_fixed_m9_FWER_0.05",
+    "primary_null": "expected_net_daily_simple_return_le_zero",
+    "primary_p_method": "centered_circular_block_bootstrap_t_plus_one",
+    "quantile_method": "linear",
+    "replications": 10000,
+    "resampling": "shared_indices_across_all_nine_preserving_daily_cross_strategy_dependence",
+    "seed": 20261015,
+    "selection_adjusted": false
+  },
+  "n_complete_daily_observations": 273,
+  "per_strategy": [
+    {
+      "annualized_complete_day_geometric_growth": 0.307964227675344,
+      "bootstrap_invalid_null_t_draws": 0,
+      "bootstrap_invalid_studentization_draws": 0,
+      "growth_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.9344863086285633,
+        "invalid_draws": 0,
+        "low": -0.0893153027072496,
+        "status": "available"
+      },
+      "hac_se_mean": 0.0005270933402007553,
+      "hac_t": 1.5600544731443997,
+      "inferential_status": "approximate_defined",
+      "mean_ci95_studentized_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.001858129435171835,
+        "low": -2.93283023210379e-05,
+        "status": "available"
+      },
+      "mean_daily_net_return": 0.0008222943231448111,
+      "mean_lower_bound_familywise95_bonferroni": {
+        "coverage": "approximate_95pct_familywise_one_sided_bonferroni_over_nine",
+        "low": -0.00027431085791565545,
+        "marginal_quantile": 0.9944444444444445,
+        "not_a_holm_interval": true,
+        "status": "available"
+      },
+      "n_complete_daily_observations": 273,
+      "primary_centered_block_bootstrap_t_p": 0.0287971202879712,
+      "primary_holm9_p": 0.2303769623037696,
+      "primary_tail_exceedances_including_invalid": 287,
+      "reject_primary_holm5pct": false,
+      "secondary_hac_normal_one_sided_p": 0.05937350446886932,
+      "sharpe_annualized_daily": 1.1903119670107178,
+      "sharpe_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 2.5785399191598835,
+        "invalid_draws": 0,
+        "low": -0.27694698305915616,
+        "status": "available"
+      },
+      "slot_status": "evaluated",
+      "strategy_id": "A01"
+    },
+    {
+      "annualized_complete_day_geometric_growth": 0.19645328539636486,
+      "bootstrap_invalid_null_t_draws": 0,
+      "bootstrap_invalid_studentization_draws": 0,
+      "growth_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.7873969991510262,
+        "invalid_draws": 0,
+        "low": -0.1956087579533618,
+        "status": "available"
+      },
+      "hac_se_mean": 0.0006177976868731326,
+      "hac_t": 0.9439524648691742,
+      "inferential_status": "approximate_defined",
+      "mean_ci95_studentized_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.001787829878114404,
+        "low": -0.00044681937830051536,
+        "status": "available"
+      },
+      "mean_daily_net_return": 0.0005831716493143677,
+      "mean_lower_bound_familywise95_bonferroni": {
+        "coverage": "approximate_95pct_familywise_one_sided_bonferroni_over_nine",
+        "low": -0.0007250589845966615,
+        "marginal_quantile": 0.9944444444444445,
+        "not_a_holm_interval": true,
+        "status": "available"
+      },
+      "n_complete_daily_observations": 273,
+      "primary_centered_block_bootstrap_t_p": 0.1421857814218578,
+      "primary_holm9_p": 0.9953004699530047,
+      "primary_tail_exceedances_including_invalid": 1421,
+      "reject_primary_holm5pct": false,
+      "secondary_hac_normal_one_sided_p": 0.17259696995634438,
+      "sharpe_annualized_daily": 0.8195851223820333,
+      "sharpe_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 2.1686364168713568,
+        "invalid_draws": 0,
+        "low": -0.8713313967347581,
+        "status": "available"
+      },
+      "slot_status": "evaluated",
+      "strategy_id": "A02"
+    },
+    {
+      "annualized_complete_day_geometric_growth": 0.44029911849291575,
+      "bootstrap_invalid_null_t_draws": 0,
+      "bootstrap_invalid_studentization_draws": 0,
+      "growth_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.8664331557843481,
+        "invalid_draws": 0,
+        "low": 0.1283310890544537,
+        "status": "available"
+      },
+      "hac_se_mean": 0.0003368831808191246,
+      "hac_t": 3.0760061493538338,
+      "inferential_status": "approximate_defined",
+      "mean_ci95_studentized_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.0017123163750647073,
+        "low": 0.00038684066156421807,
+        "status": "available"
+      },
+      "mean_daily_net_return": 0.0010362547358135068,
+      "mean_lower_bound_familywise95_bonferroni": {
+        "coverage": "approximate_95pct_familywise_one_sided_bonferroni_over_nine",
+        "low": 0.0001298151981847628,
+        "marginal_quantile": 0.9944444444444445,
+        "not_a_holm_interval": true,
+        "status": "available"
+      },
+      "n_complete_daily_observations": 273,
+      "primary_centered_block_bootstrap_t_p": 0.0023997600239976003,
+      "primary_holm9_p": 0.021597840215978402,
+      "primary_tail_exceedances_including_invalid": 23,
+      "reject_primary_holm5pct": true,
+      "secondary_hac_normal_one_sided_p": 0.0010489675915288778,
+      "sharpe_annualized_daily": 2.3168904856842003,
+      "sharpe_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 3.8812618266518872,
+        "invalid_draws": 0,
+        "low": 0.8541334707484685,
+        "status": "available"
+      },
+      "slot_status": "evaluated",
+      "strategy_id": "A03"
+    },
+    {
+      "annualized_complete_day_geometric_growth": -0.21962483224339463,
+      "bootstrap_invalid_null_t_draws": 0,
+      "bootstrap_invalid_studentization_draws": 0,
+      "growth_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 1.1949561175803711,
+        "invalid_draws": 0,
+        "low": -0.7169775789690085,
+        "status": "available"
+      },
+      "hac_se_mean": 0.0015804379281299222,
+      "hac_t": -0.19736775285590802,
+      "inferential_status": "approximate_defined",
+      "mean_ci95_studentized_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.0034683340296110593,
+        "low": -0.0034345388309965667,
+        "status": "available"
+      },
+      "mean_daily_net_return": -0.0003119274824032498,
+      "mean_lower_bound_familywise95_bonferroni": {
+        "coverage": "approximate_95pct_familywise_one_sided_bonferroni_over_nine",
+        "low": -0.004522374060311373,
+        "marginal_quantile": 0.9944444444444445,
+        "not_a_holm_interval": true,
+        "status": "available"
+      },
+      "n_complete_daily_observations": 273,
+      "primary_centered_block_bootstrap_t_p": 0.5774422557744225,
+      "primary_holm9_p": 1.0,
+      "primary_tail_exceedances_including_invalid": 5774,
+      "reject_primary_holm5pct": false,
+      "secondary_hac_normal_one_sided_p": 0.578230118623501,
+      "sharpe_annualized_daily": -0.21856800416905078,
+      "sharpe_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 1.646707340875842,
+        "invalid_draws": 0,
+        "low": -2.7152040835112676,
+        "status": "available"
+      },
+      "slot_status": "evaluated",
+      "strategy_id": "A04"
+    },
+    {
+      "annualized_complete_day_geometric_growth": -0.24532709211169745,
+      "bootstrap_invalid_null_t_draws": 0,
+      "bootstrap_invalid_studentization_draws": 0,
+      "growth_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.4683971882329258,
+        "invalid_draws": 0,
+        "low": -0.5913562974480984,
+        "status": "available"
+      },
+      "hac_se_mean": 0.000931568786559635,
+      "hac_t": -0.7030965896135862,
+      "inferential_status": "approximate_defined",
+      "mean_ci95_studentized_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.0018248442869601739,
+        "low": -0.002176643781039112,
+        "status": "available"
+      },
+      "mean_daily_net_return": -0.0006549828368205463,
+      "mean_lower_bound_familywise95_bonferroni": {
+        "coverage": "approximate_95pct_familywise_one_sided_bonferroni_over_nine",
+        "low": -0.0025354579693807593,
+        "marginal_quantile": 0.9944444444444445,
+        "not_a_holm_interval": true,
+        "status": "available"
+      },
+      "n_complete_daily_observations": 273,
+      "primary_centered_block_bootstrap_t_p": 0.7046295370462954,
+      "primary_holm9_p": 1.0,
+      "primary_tail_exceedances_including_invalid": 7046,
+      "reject_primary_holm5pct": false,
+      "secondary_hac_normal_one_sided_p": 0.7590022213212717,
+      "sharpe_annualized_daily": -0.8163659328772674,
+      "sharpe_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 1.2473172523680551,
+        "invalid_draws": 0,
+        "low": -3.495415145710238,
+        "status": "available"
+      },
+      "slot_status": "evaluated",
+      "strategy_id": "B01"
+    },
+    {
+      "annualized_complete_day_geometric_growth": -0.5542821167821761,
+      "bootstrap_invalid_null_t_draws": 0,
+      "bootstrap_invalid_studentization_draws": 0,
+      "growth_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": -0.2669420849889488,
+        "invalid_draws": 0,
+        "low": -0.7694116867991063,
+        "status": "available"
+      },
+      "hac_se_mean": 0.0006877301988421486,
+      "hac_t": -3.048789363845073,
+      "inferential_status": "approximate_defined",
+      "mean_ci95_studentized_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": -0.0008741329331451745,
+        "low": -0.003959171081566562,
+        "status": "available"
+      },
+      "mean_daily_net_return": -0.0020967445154249998,
+      "mean_lower_bound_familywise95_bonferroni": {
+        "coverage": "approximate_95pct_familywise_one_sided_bonferroni_over_nine",
+        "low": -0.004532236784341198,
+        "marginal_quantile": 0.9944444444444445,
+        "not_a_holm_interval": true,
+        "status": "available"
+      },
+      "n_complete_daily_observations": 273,
+      "primary_centered_block_bootstrap_t_p": 0.9996000399960004,
+      "primary_holm9_p": 1.0,
+      "primary_tail_exceedances_including_invalid": 9996,
+      "reject_primary_holm5pct": false,
+      "secondary_hac_normal_one_sided_p": 0.9988511724086765,
+      "sharpe_annualized_daily": -2.647197570218438,
+      "sharpe_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": -0.9806482957263811,
+        "invalid_draws": 0,
+        "low": -5.089116809644403,
+        "status": "available"
+      },
+      "slot_status": "evaluated",
+      "strategy_id": "B03"
+    },
+    {
+      "annualized_complete_day_geometric_growth": -0.1863359534280048,
+      "bootstrap_invalid_null_t_draws": 0,
+      "bootstrap_invalid_studentization_draws": 0,
+      "growth_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.44439961540036627,
+        "invalid_draws": 0,
+        "low": -0.5741178813345147,
+        "status": "available"
+      },
+      "hac_se_mean": 0.000786690766024005,
+      "hac_t": -0.6170034824190334,
+      "inferential_status": "approximate_defined",
+      "mean_ci95_studentized_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.0010967551630827678,
+        "low": -0.00254803110509727,
+        "status": "available"
+      },
+      "mean_daily_net_return": -0.00048539094222370806,
+      "mean_lower_bound_familywise95_bonferroni": {
+        "coverage": "approximate_95pct_familywise_one_sided_bonferroni_over_nine",
+        "low": -0.0033677920566194865,
+        "marginal_quantile": 0.9944444444444445,
+        "not_a_holm_interval": true,
+        "status": "available"
+      },
+      "n_complete_daily_observations": 273,
+      "primary_centered_block_bootstrap_t_p": 0.7231276872312768,
+      "primary_holm9_p": 1.0,
+      "primary_tail_exceedances_including_invalid": 7231,
+      "reject_primary_holm5pct": false,
+      "secondary_hac_normal_one_sided_p": 0.7313837856234563,
+      "sharpe_annualized_daily": -0.7349384221699428,
+      "sharpe_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 1.8775892932311344,
+        "invalid_draws": 0,
+        "low": -2.909493455927701,
+        "status": "available"
+      },
+      "slot_status": "evaluated",
+      "strategy_id": "B04"
+    },
+    {
+      "annualized_complete_day_geometric_growth": -0.0775420481900993,
+      "bootstrap_invalid_null_t_draws": 0,
+      "bootstrap_invalid_studentization_draws": 0,
+      "growth_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.5514769980094646,
+        "invalid_draws": 0,
+        "low": -0.4682942736815714,
+        "status": "available"
+      },
+      "hac_se_mean": 0.0007381598866525058,
+      "hac_t": -0.18935895341086556,
+      "inferential_status": "approximate_defined",
+      "mean_ci95_studentized_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.0014459360340932698,
+        "low": -0.0018716994787106452,
+        "status": "available"
+      },
+      "mean_daily_net_return": -0.00013977718358640164,
+      "mean_lower_bound_familywise95_bonferroni": {
+        "coverage": "approximate_95pct_familywise_one_sided_bonferroni_over_nine",
+        "low": -0.002405802525195434,
+        "marginal_quantile": 0.9944444444444445,
+        "not_a_holm_interval": true,
+        "status": "available"
+      },
+      "n_complete_daily_observations": 273,
+      "primary_centered_block_bootstrap_t_p": 0.5767423257674232,
+      "primary_holm9_p": 1.0,
+      "primary_tail_exceedances_including_invalid": 5767,
+      "reject_primary_holm5pct": false,
+      "secondary_hac_normal_one_sided_p": 0.5750942535740915,
+      "sharpe_annualized_daily": -0.20882808397869546,
+      "sharpe_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 1.9177349599819349,
+        "invalid_draws": 0,
+        "low": -2.5118777536313055,
+        "status": "available"
+      },
+      "slot_status": "evaluated",
+      "strategy_id": "B05"
+    },
+    {
+      "annualized_complete_day_geometric_growth": -0.056049665022504754,
+      "bootstrap_invalid_null_t_draws": 0,
+      "bootstrap_invalid_studentization_draws": 0,
+      "growth_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.6011479071069112,
+        "invalid_draws": 0,
+        "low": -0.4289405618112283,
+        "status": "available"
+      },
+      "hac_se_mean": 0.000794727207180252,
+      "hac_t": 0.06694251829568632,
+      "inferential_status": "approximate_defined",
+      "mean_ci95_studentized_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 0.00168077543122724,
+        "low": -0.0012760044187323796,
+        "status": "available"
+      },
+      "mean_daily_net_return": 5.320104060674371e-05,
+      "mean_lower_bound_familywise95_bonferroni": {
+        "coverage": "approximate_95pct_familywise_one_sided_bonferroni_over_nine",
+        "low": -0.001671265459376633,
+        "marginal_quantile": 0.9944444444444445,
+        "not_a_holm_interval": true,
+        "status": "available"
+      },
+      "n_complete_daily_observations": 273,
+      "primary_centered_block_bootstrap_t_p": 0.46035396460353967,
+      "primary_holm9_p": 1.0,
+      "primary_tail_exceedances_including_invalid": 4603,
+      "reject_primary_holm5pct": false,
+      "secondary_hac_normal_one_sided_p": 0.47331373211428457,
+      "sharpe_annualized_daily": 0.0491232441914069,
+      "sharpe_ci95_percentile_marginal": {
+        "coverage": "approximate_marginal_95pct_not_multiple_testing_adjusted",
+        "high": 1.2507765757616425,
+        "invalid_draws": 0,
+        "low": -1.5306859565913293,
+        "status": "available"
+      },
+      "slot_status": "evaluated",
+      "strategy_id": "B06"
+    }
+  ],
+  "schema_version": "1.0",
+  "scope": "pure_reference_math_not_an_oos_runner_or_release",
+  "strategy_order": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "B01",
+    "B03",
+    "B04",
+    "B05",
+    "B06"
+  ],
+  "synthetic_replication_override": false,
+  "unevaluable_slot_count": 0,
+  "unevaluable_slots_zero_filled": false
+}

@@ -1,0 +1,121 @@
+{
+  "attribution": {
+    "bootstrap": {
+      "block_days": 28,
+      "generator": "numpy PCG64",
+      "interpretation": "Conditional path-component resampling, not a full strategy-rule resimulation or search-adjusted evidence",
+      "intervals": "marginal two-sided95% percentile, linear quantiles; gross/fee/net CIs exported",
+      "invalid_draw_policy": "Count and retain invalid/nonfinite/nonpositive NAV draws; any invalid draw makes affected CI unavailable, never silently discard",
+      "replications": 4000,
+      "scheme": "circular calendar blocks; one index matrix per period, synchronized across all9strategies and all8coins",
+      "seed": 20261016,
+      "statistic": "Resample daily per-coin gross/fee vectors jointly; rebuild sampled daily net NAV and relink sampled contributions with NEW prior NAV; no signals/targets/fees regenerated"
+    },
+    "daily": "Within-day link hourly gross and fees to day-start NAV; preserve full730/731/273 strategy days including valid bridge accounting",
+    "fees": "20bps times coin full-L1 ordinary/forced/terminal target changes, with terminal liquidation once and no block-boundary artificial costs",
+    "gross": "Held coin weight times valid asset return, linked with NET prior strategy NAV",
+    "net": "Gross linked contribution minus linked allocated fees; all eight contributions exactly reconcile period net compounded return",
+    "units": "percentage points of initial strategy capital, not annualized and not standalone coin returns"
+  },
+  "btc_comparison": {
+    "legacy": "Retain exact full-period BTC-only point estimates and HAC(7) intervals from saved shared/metrics.csv; no changes",
+    "matched": "Refit BTC-only intercept+slope on exactly each joint model complete-case calendar, using the same calendar HAC(27) and finite-sample correction; report sample separately",
+    "purpose": "Separate added-factor effects from lifecycle sample exclusions; alpha may change sign, no new winner"
+  },
+  "classification": "post-hoc fixed-basket explanatory attribution; previously inspected history, not a fresh OOS test",
+  "comparison_ids": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "B01",
+    "B03",
+    "B04",
+    "B05",
+    "B06"
+  ],
+  "cost_bps": 20,
+  "created_at_utc": "2026-10-16T16:07:59.089214+00:00",
+  "deliverables": [
+    "joint_coefficients.csv",
+    "joint_models.csv",
+    "btc_comparison.csv",
+    "coin_attribution.csv",
+    "regression_sample_calendar.csv",
+    "daily_factor_returns.parquet",
+    "daily_attribution_components.parquet",
+    "tests and independent audit",
+    "exactly three updated primary reports with full per-period tables and source inspection",
+    "bounded GitHub update preserving existing remote and unrelated dirty local files"
+  ],
+  "execution_lag_h": 1,
+  "expected_coin_rows": 216,
+  "expected_joint_coefficients": 243,
+  "expected_paths": 27,
+  "joint_model": {
+    "annual_alpha": "365 times daily intercept; not CAGR or cumulative return",
+    "beta": "dimensionless conditional sensitivity, not portfolio weight, causal exposure or a hedge prescription",
+    "dependent": "saved net simple returns on complete contiguous UTC days",
+    "diagnostics": [
+      "calendar_days",
+      "fit_days",
+      "excluded_date_ranges",
+      "rank",
+      "singular_values",
+      "standardized_condition_number",
+      "VIF per coin",
+      "R2",
+      "adjusted_R2"
+    ],
+    "factor_day_rule": "Every accounting interval in the UTC day must have a finite valid asset return, including valid audited global halt bridges; no missing-to-zero or price forward fill; no return bridging lifecycle/migration cash gaps",
+    "primary_confidence": "approximate marginal two-sided 95% normal Wald intervals",
+    "primary_covariance": "Bartlett HAC over actual calendar lags 1..27, zero score for excluded dates, n_fit/(n_fit-k) finite-sample multiplier",
+    "regressors": "intercept plus all eight basket coins contemporaneous simple daily returns; exact frozen slot order",
+    "sample": "complete cases only for regression; full strategy return and attribution sample unchanged; export every excluded date and reason",
+    "sensitivity": "same fixed design calendar HAC with 7 lags",
+    "solver": "standardized SVD least squares; rank threshold 1e-12 relative to largest singular value; rank-deficient model unavailable, never drop coins or use ridge",
+    "warnings": "standardized condition number >30 or any VIF >10 flagged, never a rule to drop or reselect a model"
+  },
+  "joint_multiplicity": {
+    "adjustment": "Holm adjusted HAC-normal p-values; Bonferroni243 approximate 95% simultaneous coefficient intervals also exported",
+    "family": "All27jointalphas and216jointbetas, two-sided zero-coefficient nulls",
+    "family_size": 243,
+    "limitations": "Conditional post-hoc inference, not correction for original universe/configuration/period/strategy-selection search; do not promote significant rows as discoveries"
+  },
+  "periods": {
+    "development": [
+      "2022-01-01T00:00:00Z",
+      "2024-01-01T00:00:00Z"
+    ],
+    "oos_partial_2026_jan_sep": [
+      "2026-01-01T00:00:00Z",
+      "2026-10-01T00:00:00Z"
+    ],
+    "validation": [
+      "2024-01-01T00:00:00Z",
+      "2026-01-01T00:00:00Z"
+    ]
+  },
+  "schema_version": 1,
+  "scope_exclusions": [
+    "no trading or monitoring",
+    "no full-grid search",
+    "no new winner or risk-limit changes",
+    "no mentor contact"
+  ],
+  "source_policy": {
+    "no_new_downloads": true,
+    "no_old_runner_or_gate_writes": true,
+    "parent": "research/post_oos_diagnostics_20261015",
+    "parent_final_manifest_sha256": "d81b77da5c3ff1c944d3f154b14fb38f2f7df8411610dc8d234cf581d3008264",
+    "record_owned_access_before_decode": true,
+    "reuse": "Existing pinned primary/held/target accounting paths, normalized source prices and masks; never regenerate signals or orders"
+  },
+  "unchanged": [
+    "all frozen strategies and baskets",
+    "all original performance returns/Sharpe/drawdown/turnover",
+    "all selections and nine-case acceptance decisions",
+    "all previous original source/artifact bytes"
+  ],
+  "user_authorization": "All nine frozen strategies across development, validation and Jan-Sep2026; per-coin attribution and joint basket alpha/beta confidence intervals, update three reports and GitHub without changing strategies"
+}

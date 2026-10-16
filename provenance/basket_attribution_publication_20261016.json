@@ -1,0 +1,615 @@
+{
+  "artifact_sha256": {
+    ".gitattributes": "0fc084a34482857a260f8866995a2aedd614fc741b66b4a17fd92eda88d84893",
+    "README.md": "d0598d41813e1cc619018e9dd553a656dc72b1e4f57ac0c990a96830e20f2674",
+    "docs/ATTRIBUTION_PUBLICATION.md": "5cd6efb4e631a3974ccd86c99cac7e354896e5205ee5b49debbce70a04c3b134",
+    "final_reports_20261016/01_development/01_development_and_robustness.html": "5598dbeab3ac063f292084716ed91edc8c417753e9801ed5be6d1b40455ebafb",
+    "final_reports_20261016/01_development/01_development_and_robustness.pdf": "138f48515ad5e3b64845f7500b9ad128b421843edf9e12ef4e903dfc043ee63e",
+    "final_reports_20261016/01_development/archival_base_pins.json": "555c71e539b75c067e115392617f26e6b22b4d506c31955ab91e4afbe6c98e04",
+    "final_reports_20261016/01_development/attribution_source_pins.json": "6edde1d53d4866882246f1d8fe2ca50a012f954b8a78b9eab2ef6a023ce21101",
+    "final_reports_20261016/01_development/delivery_receipt.json": "c97a15a0cf941800aa88a5bd5026e25a7e6532e98c4a45c8b30fd42a822582a7",
+    "final_reports_20261016/01_development/exports/basket_coin_attribution.csv": "342468b6bae65e7c62a565145f708903566cb491cb4140f812934b321e24fc75",
+    "final_reports_20261016/01_development/exports/basket_joint_coefficients.csv": "ecd4dfe51bee44925f562811ee87c97138897e3daee6fdb0fba4ef57c5133b63",
+    "final_reports_20261016/01_development/exports/basket_joint_models.csv": "2be587e94f249c8e6f931d4fd764f14efa366e511d22531b02007711400bf08f",
+    "final_reports_20261016/01_development/exports/basket_legacy_btc.csv": "61a18a5c85401e1092d4f8a51080f352353d04a5a400c5d4c276d8c4e6c3e338",
+    "final_reports_20261016/01_development/exports/basket_matched_btc.csv": "9ab9ad1983f5050eca4711ddcd9fcdbfd49269c3d310ca4345984969b74131db",
+    "final_reports_20261016/01_development/exports/basket_regression_calendar.csv": "d7f6deda011bf668c60d3b5091fa7da80b8872f7350f38ab9fc8496f02304f49",
+    "final_reports_20261016/01_development/reviewed_snapshot.json": "ecc53fc2b1ebccbb5cca7785c92d6e151c01efd18162e0e4743d00d2ab0fe09a",
+    "final_reports_20261016/01_development/tables/annual.csv": "7ff0f1817a6ea46b69ac5edebba1b0ea825d4813bd1be2d88f5eebd3901385fb",
+    "final_reports_20261016/01_development/tables/attribution.csv": "19e8573ba47608ed8aed54cf11ab01545bfa24e43752b12b72965f5ff63a0b52",
+    "final_reports_20261016/01_development/tables/clocks.csv": "301e0ee0b1182a94bfd490aedae81341fef81bb970fc060f4972fca69e66c824",
+    "final_reports_20261016/01_development/tables/cost.csv": "cb2da09e9f7131bcfc29b49346e8e72d5eb7ac5888d66ad8d25a7c942f8efb9d",
+    "final_reports_20261016/01_development/tables/coverage.csv": "23058e1111856ad3d273176ca47b7c75299f7b36708d2f6f8d01fc4c41137f0e",
+    "final_reports_20261016/01_development/tables/family.csv": "2a4caafdb862e216cffadc2e45e7f4ce9105e770fef2dd4fe7c9357dfb409981",
+    "final_reports_20261016/01_development/tables/liquidity.csv": "8a3241000fa15512da421572f331fb3ec25c801c66fe3e3693fd9261dde91b6e",
+    "final_reports_20261016/01_development/tables/luna.csv": "9b2d01a7656eebbad659e44b8d5f2a99237f6516d1b89aa268a7da00aaafa65f",
+    "final_reports_20261016/01_development/tables/metrics.csv": "bb60f9a76a48329de989efc24d8be274d9c245469396eb8558909fd58650e152",
+    "final_reports_20261016/01_development/tables/neighbors.csv": "faf106f35149c033dca187f82184287714be3c26a0785d09ec2d5612349b3077",
+    "final_reports_20261016/01_development/tables/years.csv": "7312aedba48b8697d5fa639f8857c0e25b290210f1a42777c7c89738c6f8e790",
+    "final_reports_20261016/02_validation/02_validation_and_frozen_selection.html": "19290cb9fd0b41e06744eaf5a1878845e1709413daf9d9778510ff46b6541f83",
+    "final_reports_20261016/02_validation/02_validation_and_frozen_selection.pdf": "9d75e9922395ce3c3a801d4e3417e6a0b7a7f60e634403d8883a83152ff54b16",
+    "final_reports_20261016/02_validation/archival_base_pins.json": "9bb768d3aa4ab148d9ae4c4cbc88dbc5beb44f2257ed9438075e44aea102fec0",
+    "final_reports_20261016/02_validation/attribution_source_pins.json": "526193f11ecbcd3ba0befd2a06f5f18c77523cc5f6b98075f9dbd6b9c531bc67",
+    "final_reports_20261016/02_validation/delivery_receipt.json": "9a32b17c40a0b5acf0fe36e65b8e1fd01776cd3478938ccd9f995a20ba497fc6",
+    "final_reports_20261016/02_validation/exports/basket_coin_attribution.csv": "d6cf0f230b4093fee42a18bb96621b5c19c95f24e8d8bbc573315d72648c3c81",
+    "final_reports_20261016/02_validation/exports/basket_joint_coefficients.csv": "a3d3d0f9de6e9720a9d08dccb3764a20e5fe1c9eebe62823b45f0e4d855eccf6",
+    "final_reports_20261016/02_validation/exports/basket_joint_models.csv": "3acf5ba00643b78454a45130bd918a1d20e342e222ea2db6d7c05fb82312a069",
+    "final_reports_20261016/02_validation/exports/basket_legacy_btc.csv": "0ef8392597e114d2b6782c8603e71edb4dba89236a7f6e3c8ef1208df05aca7e",
+    "final_reports_20261016/02_validation/exports/basket_matched_btc.csv": "8485ee2a0f40038a58b3c2c0854339b146cb53f0b8231658f813bd2cb6f21aff",
+    "final_reports_20261016/02_validation/exports/basket_regression_calendar.csv": "d52cd089691ae0b384dc82b643d943b080eef5166817ae9381d65682c453c2f2",
+    "final_reports_20261016/02_validation/reviewed_snapshot.json": "b8f7be6b7cb6f35dc507e5a05b6c8c940999925ae7cbbe0bfe2091ed61087e8a",
+    "final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.html": "b8de1807f1d915a22ca27fb89cec25ae135b569b0af9632c50f4ee735f3558ab",
+    "final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf": "1150716f7883fccba7525eb6727679261f5dbef7b3a1f06d9b78138017b84aec",
+    "final_reports_20261016/03_2026_evaluation/archival_base_pins.json": "06fca59ba1b37af348ceb90628e896e23ec5efdbae2a63bdc8823956072c27bc",
+    "final_reports_20261016/03_2026_evaluation/attribution_source_pins.json": "d029ffe1437af637bf169c814098a043855a008789684fa80418a70e29148398",
+    "final_reports_20261016/03_2026_evaluation/delivery_receipt.json": "f60b912e0e78d53bcd21e371cbf95030b46e931af3a8464fd95e5854606b96c9",
+    "final_reports_20261016/03_2026_evaluation/exports/all_69108_survivors.csv": "2d6e1f446f82c361342a80a02f3c7dc30dcc79a0f316ba34f24a35af38439778",
+    "final_reports_20261016/03_2026_evaluation/exports/all_settings_summary.csv": "aad0fc11c64962effe39e3f091c60bb8f0305fe40981fe56021dc886017a2f40",
+    "final_reports_20261016/03_2026_evaluation/exports/attribution_summary.csv": "1fdfac432b1fb90006606782923d48d951d28b898d19b3dbc071a339c3d36d66",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_coin_attribution.csv": "7eebf0ebfc7bb86bca122c25aa45553366b16fc9a7783970ac0b0d0c43ad1137",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_joint_coefficients.csv": "6f5fec5a8a900b60d2c03d2311a001ff7295cc900138d0b01419dd8719594844",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_joint_models.csv": "287985a40879f17fc663fdc2a985772291a275fe51f6b74abccc37c31659e342",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_legacy_btc.csv": "483017aadeb30f3337a459c5a9dc7e6f08fd7e01cd9fe7dd3a7bc0233d80ba52",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_matched_btc.csv": "2289f336d6d3afe8e7bbb783ab41e984756ab5891ca851e92dbb564b1beabd8f",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_regression_calendar.csv": "8f9c05ca26de8a5ca9595e0648fde1bb850c11c5543344c4c6517f8bad02a55f",
+    "final_reports_20261016/03_2026_evaluation/exports/coin_inclusion_frequencies.csv": "eb3137a067acca606187e6013833e2b1f78adcb85329e90a93d62ffd1b70217a",
+    "final_reports_20261016/03_2026_evaluation/exports/gap_decompositions.csv": "f5247461d230c50465253ed8503fcf6f0d9f2184bb8753bd83d0aa87d441ae0c",
+    "final_reports_20261016/03_2026_evaluation/exports/hypothetical_carry_slippage.csv": "5b2608fb162d1d24592ce8e11c61ebfc704787635034cee0d5ded289edb749d9",
+    "final_reports_20261016/03_2026_evaluation/exports/nine_all_63_scenarios.csv": "01d69c1b76438a6420744f184a9f506bbe2bdb7e4e0ceb47e65804ea273c3008",
+    "final_reports_20261016/03_2026_evaluation/exports/nine_primary_inference.csv": "a10e3f22fb3c8fcb16170414eb059a99571290773b1c952d9562406690ca54d6",
+    "final_reports_20261016/03_2026_evaluation/exports/nine_primary_metrics.csv": "25d5ff704656a3ad10dcc019237b91e526244068e17f9a82ffb796a16b8d17ea",
+    "final_reports_20261016/03_2026_evaluation/exports/nine_same_pair_periods.csv": "ae2f4ce8596a1926b5683cd94ef6def4f6d7b52962a13efe5fa83198c12efc63",
+    "final_reports_20261016/03_2026_evaluation/exports/posthoc_control_contrasts.csv": "fb5cdad53f42b9f0c09323132a08a234b2fb7f7ce3f648ff3e31d541cc6505cf",
+    "final_reports_20261016/03_2026_evaluation/exports/regime_interactions.csv": "dfa460d5f90dfacc5ab7552b37db09307c65a0fd3902bd415a4761d6bf4aafc6",
+    "final_reports_20261016/03_2026_evaluation/exports/regime_results.csv": "970b4dba9fbcffde05ee4fd9504595cc0b0a45f18ff468bfcb773103eede84ae",
+    "final_reports_20261016/03_2026_evaluation/exports/strict_39332_survivors.csv": "eb8e5e5a4cc32831f96418bfa738be035c2c4868c5d02e92f19201f063591cb6",
+    "final_reports_20261016/03_2026_evaluation/exports/target_volume_proxy.csv": "3af0931786ba29c9db91b97b111d9c09e07f5197b68f9f80e3db5eaf9c4876a4",
+    "final_reports_20261016/03_2026_evaluation/reviewed_snapshot.json": "4bad577ac95125c6f915ec932c54abdf3ed0a272b6cfa04799b5eaed6a8046bc",
+    "final_reports_20261016/README.md": "4da4c66101aad2750892c7463b6c7ededcba7d0b5a02b38f71fba61abc3875fa",
+    "final_reports_20261016/final_delivery_manifest.json": "4184aae05ba980d8c6568f22e8563cea0b965d54e4982813b41699dc95aca5fd",
+    "final_reports_20261016/final_manifest_verification.json": "9d0e27281306c68c51e947d39fec69dc4766f4fcf6e3505f3e5dd75b49b9f3fc",
+    "research/basket_factor_attribution_20261016/README.md": "64107a0dcae0ab73cf0debfc8d42f9cbf7b9e3f11673fa7cf01b25ec2f9c10c6",
+    "research/basket_factor_attribution_20261016/accounting.py": "1ca2d40a43f613d7c6b3de53d1e61ed0db5c7f265bfce0f7dfcb4c6583bfb27f",
+    "research/basket_factor_attribution_20261016/audit/independent_accounting.json": "fdb2a4fcc8726520a4de8a7c58a8cc2d94d908d2c44092db83e8ad21fd04bdcc",
+    "research/basket_factor_attribution_20261016/audit/independent_accounting.py": "4b2a7e141ca375b93086f3d5e8b62255bc1a39d37d2d602696cdba28b9672963",
+    "research/basket_factor_attribution_20261016/audit/independent_inference_audit.json": "d6a4a5b27a1ed6e6764d3fb35b90d7b9a224d4b959f0c09409e313e70feb9973",
+    "research/basket_factor_attribution_20261016/audit/independent_inference_audit.py": "54067df1215b8bd5fab1d5db6db7d59b2befc71e55092da33d459cbdaf9a0ee1",
+    "research/basket_factor_attribution_20261016/audit/influential_source_day.json": "a2c8ce93cd30927962ed9b5d3d214ce8dc97543ed9ed0e05aac7fcc6876aebde",
+    "research/basket_factor_attribution_20261016/audit/original_preservation.json": "b69152fdf226e26232467f3ac00148ba814cd9a37554128a14969ef622d9b07e",
+    "research/basket_factor_attribution_20261016/audit/volatile_log_custody.json": "7fbcc73c997377cde875a0c2c802fdc5da2da80a3467e3b8f06157d5d7eb50c7",
+    "research/basket_factor_attribution_20261016/finalize_analysis.py": "f64dab3972cb33b853d53a1984506757eee0b44e9df8f9142f840bb3a970a0f9",
+    "research/basket_factor_attribution_20261016/gate.py": "057c325708d396a7df816943bc84b17c605db6fc87d192a4fd30b1d71407897a",
+    "research/basket_factor_attribution_20261016/inference.py": "d6732f1001180447b2afe0003badc0942dbba9b25b0be5c9715e8e43b7d44d77",
+    "research/basket_factor_attribution_20261016/outputs/access_freeze.json": "da3b7def2655ab9fe6fed96f687291f774d34905b12de74c5499e2aa232a0f98",
+    "research/basket_factor_attribution_20261016/outputs/attribution_totals.csv": "0db0302e9b36ad84692ace98061c606357c2b645cdf3ce28af70b6376d268525",
+    "research/basket_factor_attribution_20261016/outputs/bootstrap_methods.json": "8a18522d27179d49128f2ed1d2a6466cfa82c0a95db0600a15fcae496d2193ec",
+    "research/basket_factor_attribution_20261016/outputs/coin_attribution.csv": "d63c08623d9c0b681527836cbcd20687b27e12a71b305fdd44ef5c0b4fc630f5",
+    "research/basket_factor_attribution_20261016/outputs/computation.log": "f19b84cde151ca494d8c759c5f968e72f96d365dda3f97c4af7055d6b2a3394f",
+    "research/basket_factor_attribution_20261016/outputs/computation_receipt.json": "427cd55611359fa9da12890f814e4563d80d0ab24410481f20a1b99b023a2c62",
+    "research/basket_factor_attribution_20261016/outputs/daily_attribution_components.parquet": "a93031b3c34d53c80a5c539b8f13e59cf438762fac77e391c8be96295c1b0276",
+    "research/basket_factor_attribution_20261016/outputs/daily_model_inputs.parquet": "9ddde621256707ffba10fe183a779ad4ef0e81edccbe1d6c5a495ae977f8d290",
+    "research/basket_factor_attribution_20261016/outputs/final_delivery_manifest.json": "99344c0eb405c4b434a94dcca7f05d00e789396a44fe2ba448948c310595fde0",
+    "research/basket_factor_attribution_20261016/outputs/final_manifest_verification.json": "3b8706b7f73e291905bc87a9cd05024a1e3599d1eeb4a6ecafe8a052aec3d5e9",
+    "research/basket_factor_attribution_20261016/outputs/joint_coefficients.csv": "d72a70c29467a81bf4f662d80ce93bb5ea4211a9719fc6ec3a5d74230a7844eb",
+    "research/basket_factor_attribution_20261016/outputs/joint_models.csv": "fa0348a162752a3c7f621299bdcac7922cfc1ec0a81cee5cdf482077302c6fe6",
+    "research/basket_factor_attribution_20261016/outputs/joint_models.json": "0b9197754fdad4b9a83f17a47f5bc3d5678d9686fbc45dbb304c076e177dad19",
+    "research/basket_factor_attribution_20261016/outputs/legacy_btc_comparison.csv": "cebdc605bf6e17fa8045f89c409d73cabc6716f34fed750ec5402a8f40ec02ab",
+    "research/basket_factor_attribution_20261016/outputs/matched_btc_coefficients.csv": "3d23248c6c25117672953eb9b1145e984e1b14409b871b2463d347e6c21916c9",
+    "research/basket_factor_attribution_20261016/outputs/matched_btc_models.json": "dd5a51de8f4cb490217eb2e273e0970cccde3edb2b7427a9616824c898610817",
+    "research/basket_factor_attribution_20261016/outputs/metadata.json": "407f3d52a52c87db904dcde1e22d1cb3c4c6609d907926942f9e4a812630e220",
+    "research/basket_factor_attribution_20261016/outputs/path_accounting_audit.csv": "03ecf75c0c72985b121588c646d762c32b5d6091c2b7480888a84b1ebee4df15",
+    "research/basket_factor_attribution_20261016/outputs/path_accounting_audit.json": "e5b6cd27a1d69e1ff52635a42642fe6bb26199d188fb084e5aed58ebe2cfa19c",
+    "research/basket_factor_attribution_20261016/outputs/regression_sample_calendar.csv": "3b61079a9c4034a52072a04fc3a26e87e28ad464df51d4debb03ba2c698f4662",
+    "research/basket_factor_attribution_20261016/outputs/report_payload.json": "ab98870600d5164148218ee19613b46d080a1175e9508ac05e80893f53f4e472",
+    "research/basket_factor_attribution_20261016/outputs/source_access_receipt.json": "db2f88adad723e0169a0fd5b59863bb5273e466ffa47cd0abe24211c72a32bfc",
+    "research/basket_factor_attribution_20261016/protocol.json": "7d8119be9555353458a6dbd5b531f2248375cf6166068e3821c565aac94600cf",
+    "research/basket_factor_attribution_20261016/recon/source_accounting_contract.md": "c95cfa8f34b83e50af92a9db241ce80489b374d4fd952620663f2f11ad4e9652",
+    "research/basket_factor_attribution_20261016/required_source_pins.json": "66a16522617bea96cc7de93e6f288497c5962b46d6685f05e41967ec8cabe14f",
+    "research/basket_factor_attribution_20261016/run.py": "95252ada34f3de3082b1ebe05c97c1e1d3ef560304cf352f199cb9ce21c750af",
+    "research/basket_factor_attribution_20261016/source.py": "cc19b56bd311d11f15f155ec1387ee55bf9135245755c443b06184b90e5a07f9",
+    "research/basket_factor_attribution_20261016/tests/test_accounting.py": "00ee4cb8242b3afb318910ee78b35a2ddbdfa5f482badf96f116b484ff946c6a",
+    "research/basket_factor_attribution_20261016/tests/test_inference.py": "9de3a38c71d6fd9cded19b882b49e4de95a4b1d66fda8b617fb269d518d7d6f5",
+    "scripts/reproduce_basket_attribution.py": "abf9bb7e5d13aa673a7c52edbf74b8dda043490dc1f2fe31e3c56b4ee37b5151",
+    "scripts/verify_basket_attribution_publication.py": "2ff27f8a48ad0e57c3d75c9751ec080a3159d248f3d78c132a42fc5086d1cfde"
+  },
+  "base_remote_commit": "be204694b241abbbb80b42b2e0d16bbe312a53b9",
+  "baseline_preserved_sha256": {
+    "docs/FINAL_REPORTS_PUBLICATION.md": "b78b57f73869b018a610845f3408d62d816bc4ab8cec4eaf955889c9ba6bab9a",
+    "final_reports_20261015/01_development/01_development_and_robustness.html": "2b3e10c36425a495717d4c74d193d729919fe49c2277b67925a883298c275ae8",
+    "final_reports_20261015/01_development/01_development_and_robustness.pdf": "e24b176091c75c3e644f315e344207fd77032e93a04d02b7d961c59bb11511ea",
+    "final_reports_20261015/01_development/delivery_receipt.json": "2fe2409b464a5ac11ecc2cc9d9673ac4d1239d78429e04da1d12d41ba32438f6",
+    "final_reports_20261015/01_development/reviewed.json": "c0843a2e3f86bd3ac05b18fdb06b07a15ac1077728015266f802d8f158653b33",
+    "final_reports_20261015/01_development/source_pins.json": "74c9fdc3fdfd74f3b2f09bf4292e7f502dfe3d4e29d585778b8457d391c5dbee",
+    "final_reports_20261015/01_development/tables/annual.csv": "7ff0f1817a6ea46b69ac5edebba1b0ea825d4813bd1be2d88f5eebd3901385fb",
+    "final_reports_20261015/01_development/tables/attribution.csv": "19e8573ba47608ed8aed54cf11ab01545bfa24e43752b12b72965f5ff63a0b52",
+    "final_reports_20261015/01_development/tables/clocks.csv": "301e0ee0b1182a94bfd490aedae81341fef81bb970fc060f4972fca69e66c824",
+    "final_reports_20261015/01_development/tables/cost.csv": "cb2da09e9f7131bcfc29b49346e8e72d5eb7ac5888d66ad8d25a7c942f8efb9d",
+    "final_reports_20261015/01_development/tables/coverage.csv": "23058e1111856ad3d273176ca47b7c75299f7b36708d2f6f8d01fc4c41137f0e",
+    "final_reports_20261015/01_development/tables/family.csv": "2a4caafdb862e216cffadc2e45e7f4ce9105e770fef2dd4fe7c9357dfb409981",
+    "final_reports_20261015/01_development/tables/liquidity.csv": "8a3241000fa15512da421572f331fb3ec25c801c66fe3e3693fd9261dde91b6e",
+    "final_reports_20261015/01_development/tables/luna.csv": "9b2d01a7656eebbad659e44b8d5f2a99237f6516d1b89aa268a7da00aaafa65f",
+    "final_reports_20261015/01_development/tables/metrics.csv": "bb60f9a76a48329de989efc24d8be274d9c245469396eb8558909fd58650e152",
+    "final_reports_20261015/01_development/tables/neighbors.csv": "faf106f35149c033dca187f82184287714be3c26a0785d09ec2d5612349b3077",
+    "final_reports_20261015/01_development/tables/years.csv": "7312aedba48b8697d5fa639f8857c0e25b290210f1a42777c7c89738c6f8e790",
+    "final_reports_20261015/02_validation/02_validation_and_frozen_selection.html": "f392db993990543d9f32cfedc3e6b7e8c388eb99e89bdfb990a1f66f389a6897",
+    "final_reports_20261015/02_validation/02_validation_and_frozen_selection.pdf": "ade3186e4096c8e051ec861031f867f37d7e2b74a28a8f6ef4538a7e27407b96",
+    "final_reports_20261015/02_validation/delivery_receipt.json": "8f7ffdf38679da457b3ae72d34df05e70c37143f6145e6f7183ff194f6637fc8",
+    "final_reports_20261015/02_validation/reviewed_snapshot.json": "7d8a50ddf38fddde9e97604a5da7e83a77e0882f569dd68ae00ec4f3d076c052",
+    "final_reports_20261015/02_validation/source_pins.json": "ee2b5dafef1b1bbf587a95ffd25a8897b2f5e1735616a00193358f35e87deac6",
+    "final_reports_20261015/03_2026_evaluation/03_2026_evaluation_and_conclusions.html": "46d14fc8f1ff593a8b6ac82ab82ddd5cca748fff5b47f739970e20233d43da4c",
+    "final_reports_20261015/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf": "e8569cf2716d29f7ca880bd199090e6ade24f4448dc191c603025dbb62b37e26",
+    "final_reports_20261015/03_2026_evaluation/delivery_receipt.json": "58359b0a8e989302844e8183db78c5cba2f969183ea36bab6ae7f055f464e572",
+    "final_reports_20261015/03_2026_evaluation/export_manifest.json": "9e68386f0e2808d34c293ce4af71e1177ca6fcee4460c3559148af9038ca6654",
+    "final_reports_20261015/03_2026_evaluation/exports/all_69108_survivors.csv": "2d6e1f446f82c361342a80a02f3c7dc30dcc79a0f316ba34f24a35af38439778",
+    "final_reports_20261015/03_2026_evaluation/exports/all_settings_summary.csv": "aad0fc11c64962effe39e3f091c60bb8f0305fe40981fe56021dc886017a2f40",
+    "final_reports_20261015/03_2026_evaluation/exports/attribution_summary.csv": "1fdfac432b1fb90006606782923d48d951d28b898d19b3dbc071a339c3d36d66",
+    "final_reports_20261015/03_2026_evaluation/exports/coin_inclusion_frequencies.csv": "eb3137a067acca606187e6013833e2b1f78adcb85329e90a93d62ffd1b70217a",
+    "final_reports_20261015/03_2026_evaluation/exports/gap_decompositions.csv": "f5247461d230c50465253ed8503fcf6f0d9f2184bb8753bd83d0aa87d441ae0c",
+    "final_reports_20261015/03_2026_evaluation/exports/hypothetical_carry_slippage.csv": "5b2608fb162d1d24592ce8e11c61ebfc704787635034cee0d5ded289edb749d9",
+    "final_reports_20261015/03_2026_evaluation/exports/nine_all_63_scenarios.csv": "01d69c1b76438a6420744f184a9f506bbe2bdb7e4e0ceb47e65804ea273c3008",
+    "final_reports_20261015/03_2026_evaluation/exports/nine_primary_inference.csv": "a10e3f22fb3c8fcb16170414eb059a99571290773b1c952d9562406690ca54d6",
+    "final_reports_20261015/03_2026_evaluation/exports/nine_primary_metrics.csv": "25d5ff704656a3ad10dcc019237b91e526244068e17f9a82ffb796a16b8d17ea",
+    "final_reports_20261015/03_2026_evaluation/exports/nine_same_pair_periods.csv": "ae2f4ce8596a1926b5683cd94ef6def4f6d7b52962a13efe5fa83198c12efc63",
+    "final_reports_20261015/03_2026_evaluation/exports/posthoc_control_contrasts.csv": "fb5cdad53f42b9f0c09323132a08a234b2fb7f7ce3f648ff3e31d541cc6505cf",
+    "final_reports_20261015/03_2026_evaluation/exports/regime_interactions.csv": "dfa460d5f90dfacc5ab7552b37db09307c65a0fd3902bd415a4761d6bf4aafc6",
+    "final_reports_20261015/03_2026_evaluation/exports/regime_results.csv": "970b4dba9fbcffde05ee4fd9504595cc0b0a45f18ff468bfcb773103eede84ae",
+    "final_reports_20261015/03_2026_evaluation/exports/strict_39332_survivors.csv": "eb8e5e5a4cc32831f96418bfa738be035c2c4868c5d02e92f19201f063591cb6",
+    "final_reports_20261015/03_2026_evaluation/exports/target_volume_proxy.csv": "3af0931786ba29c9db91b97b111d9c09e07f5197b68f9f80e3db5eaf9c4876a4",
+    "final_reports_20261015/03_2026_evaluation/reviewed_snapshot.json": "13dfd44790eba79c54bc379f146424b1cd58253dccf78681e03e69c346cad353",
+    "final_reports_20261015/03_2026_evaluation/source_pins.json": "82d1857778c5b9cf1f08b3bed38083cdd212df3cc26d6a4888a0a126181c4c52",
+    "final_reports_20261015/README.md": "5f0c7dbd0d89ef51bf98856f226bd7fb01359384b4ecaf823f989d206b30399f",
+    "final_reports_20261015/audit/independent_reader_sources.json": "52a08eadbf30f66801d9847e5e1f53d0fdcaa97f35e250192a7518e1f72174d2",
+    "final_reports_20261015/audit/original_reader_artifacts.json": "600c61197515424ab1cc6ef4092c6ac3b575f7e741f70371310b22a8fe766f48",
+    "final_reports_20261015/audit/source_reads_01_development.json": "952af631b80fe37c99096f3aadde79f14ddc7bdce645907dbfa61be5ee9f2145",
+    "final_reports_20261015/audit/source_reads_02_validation.json": "7044c347e6cd77a94dc35b8cbdb878399cead9ece6d647fb41b54a3d25f853ac",
+    "final_reports_20261015/audit/source_reads_03_2026_evaluation.json": "4dfddb837c6e5b07d74c6fd347a191e9cbd43adb7ad8f6680a83ae6cfede0eed",
+    "final_reports_20261015/final_delivery_manifest.json": "cb1a1611a965bb660bdebc71775dfd3860c81b625a9b8f100354157c559e050a",
+    "final_reports_20261015/final_manifest_verification.json": "0fde0bb6c134534ca93e625f6554f749f8722cc6697c0e1671f74f1c68790f50",
+    "final_reports_20261015/publication_freeze.json": "75bd886867a028ab7906ab7e5daf99c087cfed5a2cf8b9190b331a3b9524cfde",
+    "final_reports_20261015/publication_protocol.json": "e4842b053f74bcafbbde1bdacc0c6fc014c99a79afeda72ec5b9417727e46369",
+    "provenance/final_reports_20261016_distribution.json": "126e5eb1e648958ab315ab541b4e2b3bc7c85ffa2ae9397d416f0c566f97fbdc",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/audit/lifecycle_alias.json": "8e8ec4289cb2354331fb964fc7e1962ea4ffe4603d8b23e076d5a2b26d0fcec0",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/basket/basket_gap_summary.json": "2664e4e6b23a1e1aac68b2aa5f2a299fcf799de602e06d3851663ad8b2ad4cbd",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/basket/coin_inclusion_frequencies.csv": "eb3137a067acca606187e6013833e2b1f78adcb85329e90a93d62ffd1b70217a",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/basket/joint_adjustment.json": "1e757054abd7984694cada07d7bb11d23c0ccc9c1d883530f7b132383b25e565",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/outputs/final_delivery_manifest.json": "ddf2497722a35b60cf7233ae951949bf48f969b0872028f02b08659eb35edd00",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/protocol.json": "99e1efa6f38a389735df901d49d16a98dc5977c868604aec332f931942aa7ba7",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/regimes/conditional_cohort_results.csv": "970b4dba9fbcffde05ee4fd9504595cc0b0a45f18ff468bfcb773103eede84ae",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/regimes/period_market_context.csv": "94474988611ebc5d11b7f3129098b0579ffff496851e957eedcd350658d7e76b",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/regimes/regime_interactions_corrected.csv": "dfa460d5f90dfacc5ab7552b37db09307c65a0fd3902bd415a4761d6bf4aafc6",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/regimes/standardized_conditional_results.csv": "a9ef5ef5b459fe9589c0b25af5573f901b67a38e0015b7b6e6be9e0cba758973",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/regimes/thresholds.json": "14e217ee3d943f89824948384468a3b795cdc2d81b82941914516974f9d3eee8",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/settings/gap_decomposition_summary.csv": "f5247461d230c50465253ed8503fcf6f0d9f2184bb8753bd83d0aa87d441ae0c",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/settings/gross_net_exposure_summary.csv": "14aafbaf75ab1ef0fe50e84d80450f7ae3bc069da654629ce6b2ce0b9cf32a7d",
+    "provenance/report_source_inputs/research/cohort_survivor_gap_diagnostics_20261015/settings/settings_summary.csv": "aad0fc11c64962effe39e3f091c60bb8f0305fe40981fe56021dc886017a2f40",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/OOS_AMENDMENT.md": "1a0269b1866ca5fbad8753b198f951080cc5c47ee1119c7aec9e22282d7082b5",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/access_freeze.json": "e823063002bdfdd1b6e87b90a49143864f12e10062cf22a1886ab00229aa28a8",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/daily_net_returns.csv": "7ff1f1bb88a516cb19337ee75d762263dc959eb5ab92e04032171a697affd60f",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/final_delivery_manifest.json": "89ff9339ebe3079691e875a7500499478476fe8fe424874eb2d4df6ced230aed",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/first_2026_access.json": "163478a838392e7c31e9775e774b2670c48a038fd1c5f069a68647f0968f592b",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/independent_execution_audit.json": "545ac04b74f870f500f2843c025417e9691d6087fd5aa48898be4d13d65d8243",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/independent_inference_audit.json": "24a980abd047a69c288f805f2378192809a3eefa2de92eb8d020a6b38a63a809",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/inference.json": "1247658e9ff3063f87011c48dc5adf7478194036d055dfcce44611573c2855d2",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/period_comparison.csv": "ae2f4ce8596a1926b5683cd94ef6def4f6d7b52962a13efe5fa83198c12efc63",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/primary_inference.csv": "a10e3f22fb3c8fcb16170414eb059a99571290773b1c952d9562406690ca54d6",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/primary_results.csv": "25d5ff704656a3ad10dcc019237b91e526244068e17f9a82ffb796a16b8d17ea",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/outputs/results.csv": "01d69c1b76438a6420744f184a9f506bbe2bdb7e4e0ceb47e65804ea273c3008",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/protocol.json": "6535a8e0fa332b1a00e9096839216b268bf4becff132aae89c93228163b6f928",
+    "provenance/report_source_inputs/research/oos_nine_partial_20261015/strategy_registry.json": "05e5da43c9e97e68434ec1e248e1d4dd7e34884240564db9087917e941c63784",
+    "provenance/report_source_inputs/research/oos_protocol_draft_20261015/OOS_PROTOCOL_DRAFT.md": "a29c96cdaf9e61003247d8ab047d93ceb61ca69aeaedb23623a7408dc940d337",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/attribution/coin_contributions.csv": "be4c1d9e6afcd0d91084d9ef8f540785c4b743ebd13260f30460f678feb5f5d8",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/attribution/month.csv": "ec84844dc94721008cdfd0cd519e0b339ad0da0b6a4feb197c844e94300f05d2",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/attribution/summary.csv": "1fdfac432b1fb90006606782923d48d951d28b898d19b3dbc071a339c3d36d66",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/controls/outputs/contrasts.csv": "fb5cdad53f42b9f0c09323132a08a234b2fb7f7ce3f648ff3e31d541cc6505cf",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/execution/outputs/a03_oos_largest_volume_ratios.csv": "219cff575cad9fd0f802d6d7762c0d686ef1ad0d6abf8e1f8c2f2ab83c7315af",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/execution/outputs/exact_break_even_fees.csv": "6706601dd047ebb5fff9317baba9c6125c1fa59fe66bbb551b2d16024bb850ba",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/execution/outputs/hypothetical_carry_slippage.csv": "5b2608fb162d1d24592ce8e11c61ebfc704787635034cee0d5ded289edb749d9",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/execution/outputs/official_execution_source_coverage.csv": "0fa05eaef713a0391786dc85217fab55174b7e8e3366fce62b750340a50f66d7",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/execution/outputs/target_volume_participation.csv": "3af0931786ba29c9db91b97b111d9c09e07f5197b68f9f80e3db5eaf9c4876a4",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/outputs/final_delivery_manifest.json": "d81b77da5c3ff1c944d3f154b14fb38f2f7df8411610dc8d234cf581d3008264",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/prospective/protocol_draft.json": "abc5552331430815c40965512b6a4fbab2abfaed0bce3fce7ee3fa7b0f37f5bb",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/selection/outputs/b02_period_summary.csv": "b2a73b64b7490f56478fc137a3ffb32a56e4c87e2bf34d58cbe387b20d923c4f",
+    "provenance/report_source_inputs/research/post_oos_diagnostics_20261015/selection/outputs/b02_qualification_funnel.csv": "cb5f063ca0d242676e97242f3b9232d8210b4f4c247684d69313bcc2b9306ead",
+    "provenance/report_source_inputs/research/q1_validation_survivor_oos_20261015/analysis/bootstrap_group_intervals.csv": "6905a0b837a786362cc6eadb7452d16e7c93d5965554611f635380b19372f30e",
+    "provenance/report_source_inputs/research/q1_validation_survivor_oos_20261015/analysis/cohort_summary.csv": "ea9b91f8ca1c5a5ced5d1fa285e677a21ecdeadc448645a095d8afaaa2e11a27",
+    "provenance/report_source_inputs/research/q1_validation_survivor_oos_20261015/analysis/common_support.json": "26d187188484e7a64d02510c2f2f96e538fb19884b33d6dc6c37214d7d91888b",
+    "provenance/report_source_inputs/research/q1_validation_survivor_oos_20261015/analysis/cost_sensitivity.csv": "9d162995a3acc3b8ec8edb2f55c8d50744695a11d71a315bce0ee50285e99510",
+    "provenance/report_source_inputs/research/q1_validation_survivor_oos_20261015/analysis/family_summary.csv": "0ea0874e90b7acfd451496e9a3f4e427aa4b76c7b92f5c8b3a3b203c718e66e4",
+    "provenance/report_source_inputs/research/q1_validation_survivor_oos_20261015/analysis/screening_contrasts.csv": "9508194a8684b813ef473f384cdf009c413ed1713268981e7d25b403402eb6b3",
+    "provenance/report_source_inputs/research/q1_validation_survivor_oos_20261015/outputs/final_delivery_manifest.json": "e83c051c2509f9f467c1855cc3744b195e18aa9dfcc0053eb4ee61ec5906ffac",
+    "provenance/report_source_inputs/research/q1_validation_survivor_oos_20261015/protocol.json": "7bee3d57594ba95f71a88ed40b9421c0447a435f2756ff4078a9aa1973a6ba4e",
+    "provenance/report_source_inputs/research/reference_reporting_20261014/outputs/final_delivery_manifest.json": "64f6b616b2356c5266bf41520ae1ee78649edf72ea2ef47454bedc34d72c88ad",
+    "provenance/report_source_inputs/research/reference_reporting_20261014/outputs/notebook_tables/annual_net_returns.csv": "7d62e925e5ad3dc4d8021d12467e7134bf5596fa5aa69d1fe7b7682702904c64",
+    "provenance/report_source_inputs/research/reference_reporting_20261014/outputs/notebook_tables/luna_slot_contribution.csv": "3430da085b21d9fed4037c91ddf60e80feda471e6fe4cd40dc776ea75c2e2695",
+    "provenance/report_source_inputs/research/reference_reporting_20261014/outputs/notebook_tables/same_case_basket_gross.csv": "d0345fab228e9b1c1e6e83c4c9b7f7196808e7af7844efb0ecb147caf36a3b80",
+    "provenance/report_source_inputs/research/reference_reporting_20261014/outputs/tables/matched_period_performance.csv": "e6436ed94131668c706cedb3766ed5aa9c535a0ef45db7904036937b04c7b75b",
+    "provenance/report_source_inputs/research/reference_reporting_20261014/outputs/tables/selected_reference_comparison.csv": "46faad77d736bfb96b77a2b82830e46084308ce9a32785eb3249e05eec192d2f",
+    "provenance/report_source_inputs/research/reference_reporting_20261014/outputs/tables/selection_display.json": "1428b5ba90bdbebcfeee34239d40de00e33a94e478d64a665b00ba68026e6ffc",
+    "provenance/report_source_inputs/research/restart_development_robustness_20261013/outputs/final_delivery_manifest.json": "b1b3f6bbf8fda1764c4f134bd759b500f085c489a06ed6aecd3061db10624240",
+    "provenance/report_source_inputs/research/restart_development_robustness_20261013/outputs/reporting/report_payload.json": "33b896f106a5094b4655614a37401f546f9f9505821e8d0c9eb79cadb53eed84",
+    "provenance/report_source_inputs/research/restart_fullgrid_validation_20261014/outputs/diagnostics/development_ranked_group_performance.csv": "19711285a34f7e1d6a070a30a77065ed272ea56306d130a2d09dd6190883e9b3",
+    "provenance/report_source_inputs/research/restart_fullgrid_validation_20261014/outputs/diagnostics/rank_correlation_summary.csv": "464c1b4090f26b4f3d7fbf54e86a884048a48efc751788544acaa990533a22ef",
+    "provenance/report_source_inputs/research/restart_fullgrid_validation_20261014/outputs/diagnostics/rank_correlations_within_basket.csv": "097d87c98e5d411c32aeb3c7ca4baac55706c8193528c2936c475983e50b8632",
+    "provenance/report_source_inputs/research/restart_fullgrid_validation_20261014/outputs/diagnostics/sign_transition_rates.csv": "998d0bb5c6013938c4027b1ca0f5bfcf5a5f8dd882c9a0f08e30fe59b79dffcd",
+    "provenance/report_source_inputs/research/restart_fullgrid_validation_20261014/outputs/final_delivery_manifest.json": "24514fb1197e56cf021cabbc833153dba534cd4b87de893a36864cf677204ba4",
+    "provenance/report_source_inputs/research/restart_tiered8_development_20261013/outputs/final_delivery_manifest.json": "777577d82a55981f006c5d5737944152c3a5ecb53344546e5cd75ff3e78083f8",
+    "provenance/report_source_inputs/research/restart_tiered8_development_20261013/outputs/reporting/liquidity_ranking.csv": "1be5342e5929190711666da537f2692e1a51b2756480241ef7be5c9b332763e0",
+    "provenance/report_source_inputs/research/restart_tiered8_development_20261013/outputs/reporting/summary.json": "dd17c5da0fa41cb7cc7735865541f7c979d1fd440e4f4a8260c72b23e03378c5",
+    "provenance/report_source_inputs/research/restart_tiered8_development_20261013/protocol.json": "207c3a5ba5f8532f5ee162335b4f8461dc3c77cc305cacf6ffccb23e8e198987",
+    "provenance/report_source_inputs/research/restart_tiered8_development_20261013/report/report_source_manifest.json": "cb867ae56fa005db4029365c497eca9a897209dda089c6fbf70d7339fa2a4b4b",
+    "provenance/report_source_inputs/research/restart_validation_20261014/outputs/final_delivery_manifest.json": "8644c49e375ae185b206e26b0e3c00d597030cca67270f5a13b47c0fe0f26925",
+    "provenance/report_source_inputs/research/restart_validation_20261014/outputs/selected_candidates.csv": "995985b94e79572df179c064654139331333ec718a743dea689b4ffddec59079",
+    "provenance/report_source_inputs/research/restart_validation_20261014/outputs/selection_summary.json": "8d3c22e73e7322785a1a6bfa0b77db165b297934212bc05e2c8ffaa717b43b27",
+    "provenance/report_source_inputs/research/restart_validation_20261014/outputs/selections.json": "44c876b1af24f28ab433c8536ee44b653076c0ee52241cb0ba565476deb9898f",
+    "provenance/report_source_inputs/research/restart_validation_20261014/protocol.json": "418e763aae6ebaca356fff63b5599e4b7b804f6eca36edadbc455ba83b2b0b8a",
+    "provenance/report_source_inputs/research/restart_validation_diagnosis_20261014/outputs/final_delivery_manifest.json": "6fdb5d6e2f6f197364b419d30b1979d314a2480f4f8743a6b987c506b81e6cbc",
+    "provenance/report_source_inputs/research/track_b_q1_validation_selection_20261014/outputs/diagnostics/annual_primary.csv": "c9e01b59639495675ee48af5c3a5a1f52bd6c3732e037a93fc45ce7d3c54362f",
+    "provenance/report_source_inputs/research/track_b_q1_validation_selection_20261014/outputs/family_eligibility.csv": "8c3ffa4dc6b7115a5bc7d48d5cffa756130df714d23ea78e26f7168390f876c4",
+    "provenance/report_source_inputs/research/track_b_q1_validation_selection_20261014/outputs/final_delivery_manifest.json": "b27a4375d54c060067e25cded4662df4fb869c03e0383dded7c160e298ef8d01",
+    "provenance/report_source_inputs/research/track_b_q1_validation_selection_20261014/outputs/original_four.csv": "1dad9646af6104bdb7fc82c3d36c56c9a683db813b014cf740a9f5d89fa59140",
+    "provenance/report_source_inputs/research/track_b_q1_validation_selection_20261014/outputs/performance_comparison.csv": "f9e91a51744ac4f5ed5ebeee75e4c1cb4a0f6f9e17f4a1513bdc1a5e0506fade",
+    "provenance/report_source_inputs/research/track_b_q1_validation_selection_20261014/outputs/rule_freeze.json": "2b73b6ab0722911e053db27d14868b003d1a36d48250587684ef2b82355611a4",
+    "provenance/report_source_inputs/research/track_b_q1_validation_selection_20261014/outputs/selected_pairs.csv": "95fc6ad215d3074e31257677c178ad0e0ece6bb9753e5925504f1518799b6c26",
+    "provenance/report_source_inputs/research/track_b_q1_validation_selection_20261014/outputs/shortlist_freeze.json": "6af69fa5e60b988296830e0cff5875f4d1779e1c88d63924d4f262c4a4439e54",
+    "provenance/report_source_inputs/research/track_b_q1_validation_selection_20261014/protocol.json": "af76e19cc97e3fbbc23d59ecd4575a412410f008e8ed3356d112138cd8d3a68e",
+    "scripts/verify_final_reports_publication.py": "f394fc24f3bf141cdfe87faf4b3691d6a2460f9ebbd3856a3ac211bd0aee5b77"
+  },
+  "classification": "bounded_posthoc_attribution_report_distribution",
+  "created_at_utc": "2026-10-16T16:22:03.284242+00:00",
+  "diagnostic_dir": "research/basket_factor_attribution_20261016",
+  "diagnostic_source_seal": {
+    "path": "research/basket_factor_attribution_20261016/outputs/final_delivery_manifest.json",
+    "sha256": "99344c0eb405c4b434a94dcca7f05d00e789396a44fe2ba448948c310595fde0"
+  },
+  "lineage": {
+    "coin_rows": 216,
+    "conditional_posthoc_not_fresh_OOS": true,
+    "diagnostics_fitted": true,
+    "fixed_strategy_period_paths": 27,
+    "joint_coefficient_slots": 243,
+    "joint_multiplicity_family": 243,
+    "new_prices_or_trading_models": false,
+    "prior_research_search_adjusted": false,
+    "raw_hourly_source_reconstruction_included": false,
+    "strategy_rules_rerun": false
+  },
+  "omitted_bootstrap_indices": {
+    "outputs/bootstrap_indices_development.npy": "e8bdfa6bcfc0ef9517b826ca0ee29df68cc95c035356db5ac7858bc2eb7d154c",
+    "outputs/bootstrap_indices_oos_partial_2026_jan_sep.npy": "c626d55ed4fbba93a123eb073481abbbd07abe4109a2ee6b241ce63c74f96e65",
+    "outputs/bootstrap_indices_validation.npy": "f124c451a3dc3801c2e374f3b2da150fb19d9942fe70ef4ea80f50aef9b3c9e8"
+  },
+  "report_source_aliases": {
+    "01_development/01_development_and_robustness.html": {
+      "distributed_path": "final_reports_20261016/01_development/01_development_and_robustness.html",
+      "sha256": "5598dbeab3ac063f292084716ed91edc8c417753e9801ed5be6d1b40455ebafb"
+    },
+    "01_development/01_development_and_robustness.pdf": {
+      "distributed_path": "final_reports_20261016/01_development/01_development_and_robustness.pdf",
+      "sha256": "138f48515ad5e3b64845f7500b9ad128b421843edf9e12ef4e903dfc043ee63e"
+    },
+    "01_development/app/src/data.json": {
+      "distributed_path": "final_reports_20261016/01_development/reviewed_snapshot.json",
+      "sha256": "ecc53fc2b1ebccbb5cca7785c92d6e151c01efd18162e0e4743d00d2ab0fe09a"
+    },
+    "01_development/archival_base_pins.json": {
+      "distributed_path": "final_reports_20261016/01_development/archival_base_pins.json",
+      "sha256": "555c71e539b75c067e115392617f26e6b22b4d506c31955ab91e4afbe6c98e04"
+    },
+    "01_development/attribution_source_pins.json": {
+      "distributed_path": "final_reports_20261016/01_development/attribution_source_pins.json",
+      "sha256": "6edde1d53d4866882246f1d8fe2ca50a012f954b8a78b9eab2ef6a023ce21101"
+    },
+    "01_development/delivery_receipt.json": {
+      "distributed_path": "final_reports_20261016/01_development/delivery_receipt.json",
+      "sha256": "c97a15a0cf941800aa88a5bd5026e25a7e6532e98c4a45c8b30fd42a822582a7"
+    },
+    "01_development/exports/basket_coin_attribution.csv": {
+      "distributed_path": "final_reports_20261016/01_development/exports/basket_coin_attribution.csv",
+      "sha256": "342468b6bae65e7c62a565145f708903566cb491cb4140f812934b321e24fc75"
+    },
+    "01_development/exports/basket_joint_coefficients.csv": {
+      "distributed_path": "final_reports_20261016/01_development/exports/basket_joint_coefficients.csv",
+      "sha256": "ecd4dfe51bee44925f562811ee87c97138897e3daee6fdb0fba4ef57c5133b63"
+    },
+    "01_development/exports/basket_joint_models.csv": {
+      "distributed_path": "final_reports_20261016/01_development/exports/basket_joint_models.csv",
+      "sha256": "2be587e94f249c8e6f931d4fd764f14efa366e511d22531b02007711400bf08f"
+    },
+    "01_development/exports/basket_legacy_btc.csv": {
+      "distributed_path": "final_reports_20261016/01_development/exports/basket_legacy_btc.csv",
+      "sha256": "61a18a5c85401e1092d4f8a51080f352353d04a5a400c5d4c276d8c4e6c3e338"
+    },
+    "01_development/exports/basket_matched_btc.csv": {
+      "distributed_path": "final_reports_20261016/01_development/exports/basket_matched_btc.csv",
+      "sha256": "9ab9ad1983f5050eca4711ddcd9fcdbfd49269c3d310ca4345984969b74131db"
+    },
+    "01_development/exports/basket_regression_calendar.csv": {
+      "distributed_path": "final_reports_20261016/01_development/exports/basket_regression_calendar.csv",
+      "sha256": "d7f6deda011bf668c60d3b5091fa7da80b8872f7350f38ab9fc8496f02304f49"
+    },
+    "01_development/tables/annual.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/annual.csv",
+      "sha256": "7ff0f1817a6ea46b69ac5edebba1b0ea825d4813bd1be2d88f5eebd3901385fb"
+    },
+    "01_development/tables/attribution.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/attribution.csv",
+      "sha256": "19e8573ba47608ed8aed54cf11ab01545bfa24e43752b12b72965f5ff63a0b52"
+    },
+    "01_development/tables/clocks.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/clocks.csv",
+      "sha256": "301e0ee0b1182a94bfd490aedae81341fef81bb970fc060f4972fca69e66c824"
+    },
+    "01_development/tables/cost.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/cost.csv",
+      "sha256": "cb2da09e9f7131bcfc29b49346e8e72d5eb7ac5888d66ad8d25a7c942f8efb9d"
+    },
+    "01_development/tables/coverage.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/coverage.csv",
+      "sha256": "23058e1111856ad3d273176ca47b7c75299f7b36708d2f6f8d01fc4c41137f0e"
+    },
+    "01_development/tables/family.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/family.csv",
+      "sha256": "2a4caafdb862e216cffadc2e45e7f4ce9105e770fef2dd4fe7c9357dfb409981"
+    },
+    "01_development/tables/liquidity.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/liquidity.csv",
+      "sha256": "8a3241000fa15512da421572f331fb3ec25c801c66fe3e3693fd9261dde91b6e"
+    },
+    "01_development/tables/luna.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/luna.csv",
+      "sha256": "9b2d01a7656eebbad659e44b8d5f2a99237f6516d1b89aa268a7da00aaafa65f"
+    },
+    "01_development/tables/metrics.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/metrics.csv",
+      "sha256": "bb60f9a76a48329de989efc24d8be274d9c245469396eb8558909fd58650e152"
+    },
+    "01_development/tables/neighbors.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/neighbors.csv",
+      "sha256": "faf106f35149c033dca187f82184287714be3c26a0785d09ec2d5612349b3077"
+    },
+    "01_development/tables/years.csv": {
+      "distributed_path": "final_reports_20261016/01_development/tables/years.csv",
+      "sha256": "7312aedba48b8697d5fa639f8857c0e25b290210f1a42777c7c89738c6f8e790"
+    },
+    "02_validation/02_validation_and_frozen_selection.html": {
+      "distributed_path": "final_reports_20261016/02_validation/02_validation_and_frozen_selection.html",
+      "sha256": "19290cb9fd0b41e06744eaf5a1878845e1709413daf9d9778510ff46b6541f83"
+    },
+    "02_validation/02_validation_and_frozen_selection.pdf": {
+      "distributed_path": "final_reports_20261016/02_validation/02_validation_and_frozen_selection.pdf",
+      "sha256": "9d75e9922395ce3c3a801d4e3417e6a0b7a7f60e634403d8883a83152ff54b16"
+    },
+    "02_validation/app/src/data.json": {
+      "distributed_path": "final_reports_20261016/02_validation/reviewed_snapshot.json",
+      "sha256": "b8f7be6b7cb6f35dc507e5a05b6c8c940999925ae7cbbe0bfe2091ed61087e8a"
+    },
+    "02_validation/archival_base_pins.json": {
+      "distributed_path": "final_reports_20261016/02_validation/archival_base_pins.json",
+      "sha256": "9bb768d3aa4ab148d9ae4c4cbc88dbc5beb44f2257ed9438075e44aea102fec0"
+    },
+    "02_validation/attribution_source_pins.json": {
+      "distributed_path": "final_reports_20261016/02_validation/attribution_source_pins.json",
+      "sha256": "526193f11ecbcd3ba0befd2a06f5f18c77523cc5f6b98075f9dbd6b9c531bc67"
+    },
+    "02_validation/delivery_receipt.json": {
+      "distributed_path": "final_reports_20261016/02_validation/delivery_receipt.json",
+      "sha256": "9a32b17c40a0b5acf0fe36e65b8e1fd01776cd3478938ccd9f995a20ba497fc6"
+    },
+    "02_validation/exports/basket_coin_attribution.csv": {
+      "distributed_path": "final_reports_20261016/02_validation/exports/basket_coin_attribution.csv",
+      "sha256": "d6cf0f230b4093fee42a18bb96621b5c19c95f24e8d8bbc573315d72648c3c81"
+    },
+    "02_validation/exports/basket_joint_coefficients.csv": {
+      "distributed_path": "final_reports_20261016/02_validation/exports/basket_joint_coefficients.csv",
+      "sha256": "a3d3d0f9de6e9720a9d08dccb3764a20e5fe1c9eebe62823b45f0e4d855eccf6"
+    },
+    "02_validation/exports/basket_joint_models.csv": {
+      "distributed_path": "final_reports_20261016/02_validation/exports/basket_joint_models.csv",
+      "sha256": "3acf5ba00643b78454a45130bd918a1d20e342e222ea2db6d7c05fb82312a069"
+    },
+    "02_validation/exports/basket_legacy_btc.csv": {
+      "distributed_path": "final_reports_20261016/02_validation/exports/basket_legacy_btc.csv",
+      "sha256": "0ef8392597e114d2b6782c8603e71edb4dba89236a7f6e3c8ef1208df05aca7e"
+    },
+    "02_validation/exports/basket_matched_btc.csv": {
+      "distributed_path": "final_reports_20261016/02_validation/exports/basket_matched_btc.csv",
+      "sha256": "8485ee2a0f40038a58b3c2c0854339b146cb53f0b8231658f813bd2cb6f21aff"
+    },
+    "02_validation/exports/basket_regression_calendar.csv": {
+      "distributed_path": "final_reports_20261016/02_validation/exports/basket_regression_calendar.csv",
+      "sha256": "d52cd089691ae0b384dc82b643d943b080eef5166817ae9381d65682c453c2f2"
+    },
+    "03_2026_evaluation/03_2026_evaluation_and_conclusions.html": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.html",
+      "sha256": "b8de1807f1d915a22ca27fb89cec25ae135b569b0af9632c50f4ee735f3558ab"
+    },
+    "03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf",
+      "sha256": "1150716f7883fccba7525eb6727679261f5dbef7b3a1f06d9b78138017b84aec"
+    },
+    "03_2026_evaluation/app/src/data.json": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/reviewed_snapshot.json",
+      "sha256": "4bad577ac95125c6f915ec932c54abdf3ed0a272b6cfa04799b5eaed6a8046bc"
+    },
+    "03_2026_evaluation/archival_base_pins.json": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/archival_base_pins.json",
+      "sha256": "06fca59ba1b37af348ceb90628e896e23ec5efdbae2a63bdc8823956072c27bc"
+    },
+    "03_2026_evaluation/attribution_source_pins.json": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/attribution_source_pins.json",
+      "sha256": "d029ffe1437af637bf169c814098a043855a008789684fa80418a70e29148398"
+    },
+    "03_2026_evaluation/delivery_receipt.json": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/delivery_receipt.json",
+      "sha256": "f60b912e0e78d53bcd21e371cbf95030b46e931af3a8464fd95e5854606b96c9"
+    },
+    "03_2026_evaluation/exports/all_69108_survivors.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/all_69108_survivors.csv",
+      "sha256": "2d6e1f446f82c361342a80a02f3c7dc30dcc79a0f316ba34f24a35af38439778"
+    },
+    "03_2026_evaluation/exports/all_settings_summary.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/all_settings_summary.csv",
+      "sha256": "aad0fc11c64962effe39e3f091c60bb8f0305fe40981fe56021dc886017a2f40"
+    },
+    "03_2026_evaluation/exports/attribution_summary.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/attribution_summary.csv",
+      "sha256": "1fdfac432b1fb90006606782923d48d951d28b898d19b3dbc071a339c3d36d66"
+    },
+    "03_2026_evaluation/exports/basket_coin_attribution.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/basket_coin_attribution.csv",
+      "sha256": "7eebf0ebfc7bb86bca122c25aa45553366b16fc9a7783970ac0b0d0c43ad1137"
+    },
+    "03_2026_evaluation/exports/basket_joint_coefficients.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/basket_joint_coefficients.csv",
+      "sha256": "6f5fec5a8a900b60d2c03d2311a001ff7295cc900138d0b01419dd8719594844"
+    },
+    "03_2026_evaluation/exports/basket_joint_models.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/basket_joint_models.csv",
+      "sha256": "287985a40879f17fc663fdc2a985772291a275fe51f6b74abccc37c31659e342"
+    },
+    "03_2026_evaluation/exports/basket_legacy_btc.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/basket_legacy_btc.csv",
+      "sha256": "483017aadeb30f3337a459c5a9dc7e6f08fd7e01cd9fe7dd3a7bc0233d80ba52"
+    },
+    "03_2026_evaluation/exports/basket_matched_btc.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/basket_matched_btc.csv",
+      "sha256": "2289f336d6d3afe8e7bbb783ab41e984756ab5891ca851e92dbb564b1beabd8f"
+    },
+    "03_2026_evaluation/exports/basket_regression_calendar.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/basket_regression_calendar.csv",
+      "sha256": "8f9c05ca26de8a5ca9595e0648fde1bb850c11c5543344c4c6517f8bad02a55f"
+    },
+    "03_2026_evaluation/exports/coin_inclusion_frequencies.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/coin_inclusion_frequencies.csv",
+      "sha256": "eb3137a067acca606187e6013833e2b1f78adcb85329e90a93d62ffd1b70217a"
+    },
+    "03_2026_evaluation/exports/gap_decompositions.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/gap_decompositions.csv",
+      "sha256": "f5247461d230c50465253ed8503fcf6f0d9f2184bb8753bd83d0aa87d441ae0c"
+    },
+    "03_2026_evaluation/exports/hypothetical_carry_slippage.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/hypothetical_carry_slippage.csv",
+      "sha256": "5b2608fb162d1d24592ce8e11c61ebfc704787635034cee0d5ded289edb749d9"
+    },
+    "03_2026_evaluation/exports/nine_all_63_scenarios.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/nine_all_63_scenarios.csv",
+      "sha256": "01d69c1b76438a6420744f184a9f506bbe2bdb7e4e0ceb47e65804ea273c3008"
+    },
+    "03_2026_evaluation/exports/nine_primary_inference.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/nine_primary_inference.csv",
+      "sha256": "a10e3f22fb3c8fcb16170414eb059a99571290773b1c952d9562406690ca54d6"
+    },
+    "03_2026_evaluation/exports/nine_primary_metrics.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/nine_primary_metrics.csv",
+      "sha256": "25d5ff704656a3ad10dcc019237b91e526244068e17f9a82ffb796a16b8d17ea"
+    },
+    "03_2026_evaluation/exports/nine_same_pair_periods.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/nine_same_pair_periods.csv",
+      "sha256": "ae2f4ce8596a1926b5683cd94ef6def4f6d7b52962a13efe5fa83198c12efc63"
+    },
+    "03_2026_evaluation/exports/posthoc_control_contrasts.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/posthoc_control_contrasts.csv",
+      "sha256": "fb5cdad53f42b9f0c09323132a08a234b2fb7f7ce3f648ff3e31d541cc6505cf"
+    },
+    "03_2026_evaluation/exports/regime_interactions.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/regime_interactions.csv",
+      "sha256": "dfa460d5f90dfacc5ab7552b37db09307c65a0fd3902bd415a4761d6bf4aafc6"
+    },
+    "03_2026_evaluation/exports/regime_results.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/regime_results.csv",
+      "sha256": "970b4dba9fbcffde05ee4fd9504595cc0b0a45f18ff468bfcb773103eede84ae"
+    },
+    "03_2026_evaluation/exports/strict_39332_survivors.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/strict_39332_survivors.csv",
+      "sha256": "eb8e5e5a4cc32831f96418bfa738be035c2c4868c5d02e92f19201f063591cb6"
+    },
+    "03_2026_evaluation/exports/target_volume_proxy.csv": {
+      "distributed_path": "final_reports_20261016/03_2026_evaluation/exports/target_volume_proxy.csv",
+      "sha256": "3af0931786ba29c9db91b97b111d9c09e07f5197b68f9f80e3db5eaf9c4876a4"
+    },
+    "README.md": {
+      "distributed_path": "final_reports_20261016/README.md",
+      "sha256": "4da4c66101aad2750892c7463b6c7ededcba7d0b5a02b38f71fba61abc3875fa"
+    }
+  },
+  "report_source_seal": {
+    "path": "final_reports_20261016/final_delivery_manifest.json",
+    "sha256": "4184aae05ba980d8c6568f22e8563cea0b965d54e4982813b41699dc95aca5fd"
+  },
+  "reports": [
+    {
+      "coefficient_export": "final_reports_20261016/01_development/exports/basket_joint_coefficients.csv",
+      "coin_export": "final_reports_20261016/01_development/exports/basket_coin_attribution.csv",
+      "html": "final_reports_20261016/01_development/01_development_and_robustness.html",
+      "pdf": "final_reports_20261016/01_development/01_development_and_robustness.pdf",
+      "period": "development",
+      "prior_snapshot": "final_reports_20261015/01_development/reviewed.json",
+      "snapshot": "final_reports_20261016/01_development/reviewed_snapshot.json",
+      "title": "Development and robustness"
+    },
+    {
+      "coefficient_export": "final_reports_20261016/02_validation/exports/basket_joint_coefficients.csv",
+      "coin_export": "final_reports_20261016/02_validation/exports/basket_coin_attribution.csv",
+      "html": "final_reports_20261016/02_validation/02_validation_and_frozen_selection.html",
+      "pdf": "final_reports_20261016/02_validation/02_validation_and_frozen_selection.pdf",
+      "period": "validation",
+      "prior_snapshot": "final_reports_20261015/02_validation/reviewed_snapshot.json",
+      "snapshot": "final_reports_20261016/02_validation/reviewed_snapshot.json",
+      "title": "Validation and frozen selection"
+    },
+    {
+      "coefficient_export": "final_reports_20261016/03_2026_evaluation/exports/basket_joint_coefficients.csv",
+      "coin_export": "final_reports_20261016/03_2026_evaluation/exports/basket_coin_attribution.csv",
+      "html": "final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.html",
+      "pdf": "final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf",
+      "period": "oos_partial_2026_jan_sep",
+      "prior_snapshot": "final_reports_20261015/03_2026_evaluation/reviewed_snapshot.json",
+      "snapshot": "final_reports_20261016/03_2026_evaluation/reviewed_snapshot.json",
+      "title": "2026 evaluation and conclusions"
+    }
+  ],
+  "required_relative_targets": [
+    "final_reports_20261016/01_development/exports/basket_coin_attribution.csv",
+    "final_reports_20261016/01_development/exports/basket_joint_coefficients.csv",
+    "final_reports_20261016/01_development/exports/basket_joint_models.csv",
+    "final_reports_20261016/01_development/exports/basket_legacy_btc.csv",
+    "final_reports_20261016/01_development/exports/basket_matched_btc.csv",
+    "final_reports_20261016/01_development/exports/basket_regression_calendar.csv",
+    "final_reports_20261016/02_validation/exports/basket_coin_attribution.csv",
+    "final_reports_20261016/02_validation/exports/basket_joint_coefficients.csv",
+    "final_reports_20261016/02_validation/exports/basket_joint_models.csv",
+    "final_reports_20261016/02_validation/exports/basket_legacy_btc.csv",
+    "final_reports_20261016/02_validation/exports/basket_matched_btc.csv",
+    "final_reports_20261016/02_validation/exports/basket_regression_calendar.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/all_69108_survivors.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/all_settings_summary.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/attribution_summary.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_coin_attribution.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_joint_coefficients.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_joint_models.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_legacy_btc.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_matched_btc.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/basket_regression_calendar.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/coin_inclusion_frequencies.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/gap_decompositions.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/hypothetical_carry_slippage.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/nine_all_63_scenarios.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/nine_primary_inference.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/nine_primary_metrics.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/nine_same_pair_periods.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/posthoc_control_contrasts.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/regime_interactions.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/regime_results.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/strict_39332_survivors.csv",
+    "final_reports_20261016/03_2026_evaluation/exports/target_volume_proxy.csv"
+  ],
+  "schema_version": 1,
+  "scope": {
+    "all143_original_source_bytes_reverified_by_published_checker": false,
+    "bootstrap_index_policy": "Three seed-deterministic NPY arrays omitted, expected SHA preserved; optional independent reproducer regenerates exact bytes in a temporary copy",
+    "full_trading_engine_reproduction_claimed": false,
+    "old15edition_archival_unchanged": true,
+    "primary_report_titles": 3,
+    "source_input_copy_policy": "compact daily diagnostic inputs; no raw/hourly panels or held/target paths"
+  }
+}

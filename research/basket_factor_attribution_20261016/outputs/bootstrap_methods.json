@@ -1,0 +1,47 @@
+[
+  {
+    "block_days": 28,
+    "extra_fees_per_block": false,
+    "interval": "marginal95_percentile_numpy_quantile_linear",
+    "invalid_policy": "any_invalid_draw_makes_strategy_intervals_unavailable_no_draw_dropping",
+    "method": "circular_daily_component_vectors_NEW_NAV_relink",
+    "n_calendar_days": 730,
+    "period": "development",
+    "replications": 4000,
+    "rng": "numpy.Generator(PCG64)",
+    "seed": 20261016,
+    "selection_adjusted": false,
+    "signals_rerun": false,
+    "synchronized_nine": true
+  },
+  {
+    "block_days": 28,
+    "extra_fees_per_block": false,
+    "interval": "marginal95_percentile_numpy_quantile_linear",
+    "invalid_policy": "any_invalid_draw_makes_strategy_intervals_unavailable_no_draw_dropping",
+    "method": "circular_daily_component_vectors_NEW_NAV_relink",
+    "n_calendar_days": 731,
+    "period": "validation",
+    "replications": 4000,
+    "rng": "numpy.Generator(PCG64)",
+    "seed": 20261016,
+    "selection_adjusted": false,
+    "signals_rerun": false,
+    "synchronized_nine": true
+  },
+  {
+    "block_days": 28,
+    "extra_fees_per_block": false,
+    "interval": "marginal95_percentile_numpy_quantile_linear",
+    "invalid_policy": "any_invalid_draw_makes_strategy_intervals_unavailable_no_draw_dropping",
+    "method": "circular_daily_component_vectors_NEW_NAV_relink",
+    "n_calendar_days": 273,
+    "period": "oos_partial_2026_jan_sep",
+    "replications": 4000,
+    "rng": "numpy.Generator(PCG64)",
+    "seed": 20261016,
+    "selection_adjusted": false,
+    "signals_rerun": false,
+    "synchronized_nine": true
+  }
+]

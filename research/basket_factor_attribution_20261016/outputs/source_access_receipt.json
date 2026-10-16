@@ -1,0 +1,9 @@
+{
+  "access_freeze_sha256": "da3b7def2655ab9fe6fed96f687291f774d34905b12de74c5499e2aa232a0f98",
+  "classification": "post-hoc diagnostics on previously inspected history",
+  "created_at_utc": "2026-10-16T16:10:13.251788+00:00",
+  "no_new_prices_no_strategy_rerun_no_reselection": true,
+  "operation": "Before verification/decoding of saved path and market source bytes",
+  "protocol_sha256": "7d8119be9555353458a6dbd5b531f2248375cf6166068e3821c565aac94600cf",
+  "status": "first_additional_diagnostic_access_after_owned_freeze"
+}

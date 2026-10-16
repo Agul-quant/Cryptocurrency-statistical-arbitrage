@@ -10,3 +10,7 @@ studies/** -text
 # Preserve the consolidated reports and hash-pinned reporting inputs byte-for-byte.
 final_reports_20261015/** -text
 provenance/report_source_inputs/** -text
+
+final_reports_20261016/** -text
+
+research/basket_factor_attribution_20261016/** -text

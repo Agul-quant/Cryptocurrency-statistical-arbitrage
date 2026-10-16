@@ -1,0 +1,1294 @@
+{
+  "access_follows_owned_freeze": true,
+  "all_216_coin_point_rows_reconciled": true,
+  "all_27_frozen_paths_unchanged": true,
+  "all_strategy_days_730_731_273_preserved": true,
+  "auditor_code_sha256": "4b2a7e141ca375b93086f3d5e8b62255bc1a39d37d2d602696cdba28b9672963",
+  "bootstrap_draw_checks": [
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 6.217248937900877e-15,
+      "period": "development",
+      "strategy_id": "A01"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 3.0531133177191805e-15,
+      "period": "validation",
+      "strategy_id": "A01"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 2.6645352591003757e-15,
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_id": "A01"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 3.9968028886505635e-15,
+      "period": "development",
+      "strategy_id": "A02"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 1.6653345369377348e-15,
+      "period": "validation",
+      "strategy_id": "A02"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 2.7755575615628914e-15,
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_id": "A02"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 3.3306690738754696e-15,
+      "period": "development",
+      "strategy_id": "A03"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 3.83026943495679e-15,
+      "period": "validation",
+      "strategy_id": "A03"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 2.4424906541753444e-15,
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_id": "A03"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 7.105427357601002e-15,
+      "period": "development",
+      "strategy_id": "A04"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 2.4980018054066022e-15,
+      "period": "validation",
+      "strategy_id": "A04"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 1.6653345369377348e-15,
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_id": "A04"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 3.774758283725532e-15,
+      "period": "development",
+      "strategy_id": "B01"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 7.993605777301127e-15,
+      "period": "validation",
+      "strategy_id": "B01"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 2.3037127760972e-15,
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_id": "B01"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 3.83026943495679e-15,
+      "period": "development",
+      "strategy_id": "B03"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 4.6629367034256575e-15,
+      "period": "validation",
+      "strategy_id": "B03"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 1.3322676295501878e-15,
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_id": "B03"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 5.773159728050814e-15,
+      "period": "development",
+      "strategy_id": "B04"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 4.107825191113079e-15,
+      "period": "validation",
+      "strategy_id": "B04"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 1.9290125052862095e-15,
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_id": "B04"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 3.3584246494910985e-15,
+      "period": "development",
+      "strategy_id": "B05"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 1.2434497875801753e-14,
+      "period": "validation",
+      "strategy_id": "B05"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 1.2212453270876722e-15,
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_id": "B05"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 3.2751579226442118e-15,
+      "period": "development",
+      "strategy_id": "B06"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 9.325873406851315e-15,
+      "period": "validation",
+      "strategy_id": "B06"
+    },
+    {
+      "audited_draws": [
+        0,
+        1,
+        2,
+        17,
+        199,
+        3999
+      ],
+      "common_4000_indices_exact": true,
+      "fresh_nav_relink_checks_passed": true,
+      "maximum_draw_reconciliation_error": 7.771561172376096e-16,
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_id": "B06"
+    }
+  ],
+  "computed_artifacts_reverified": 20,
+  "created_at_utc": "2026-10-16T16:12:25.520776+00:00",
+  "earlier_documents_unchanged": 225,
+  "factor_calendar_checks": [
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 120,
+      "joint_days": 610,
+      "missing_by_symbol": {
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 0,
+        "LINKUSDT": 0,
+        "LTCUSDT": 0,
+        "LUNAUSDT": 120,
+        "SOLUSDT": 0,
+        "TRXUSDT": 0
+      },
+      "period": "development",
+      "strategy_days": 730,
+      "strategy_id": "A01"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 4,
+      "joint_days": 727,
+      "missing_by_symbol": {
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 4,
+        "LINKUSDT": 0,
+        "LTCUSDT": 0,
+        "LUNAUSDT": 0,
+        "SOLUSDT": 0,
+        "TRXUSDT": 0
+      },
+      "period": "validation",
+      "strategy_days": 731,
+      "strategy_id": "A01"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 273,
+      "missing_by_symbol": {
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 0,
+        "LINKUSDT": 0,
+        "LTCUSDT": 0,
+        "LUNAUSDT": 0,
+        "SOLUSDT": 0,
+        "TRXUSDT": 0
+      },
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_days": 273,
+      "strategy_id": "A01"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 120,
+      "joint_days": 610,
+      "missing_by_symbol": {
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 0,
+        "LINKUSDT": 0,
+        "LTCUSDT": 0,
+        "LUNAUSDT": 120,
+        "SOLUSDT": 0,
+        "TRXUSDT": 0
+      },
+      "period": "development",
+      "strategy_days": 730,
+      "strategy_id": "A02"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 4,
+      "joint_days": 727,
+      "missing_by_symbol": {
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 4,
+        "LINKUSDT": 0,
+        "LTCUSDT": 0,
+        "LUNAUSDT": 0,
+        "SOLUSDT": 0,
+        "TRXUSDT": 0
+      },
+      "period": "validation",
+      "strategy_days": 731,
+      "strategy_id": "A02"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 273,
+      "missing_by_symbol": {
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 0,
+        "LINKUSDT": 0,
+        "LTCUSDT": 0,
+        "LUNAUSDT": 0,
+        "SOLUSDT": 0,
+        "TRXUSDT": 0
+      },
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_days": 273,
+      "strategy_id": "A02"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 730,
+      "missing_by_symbol": {
+        "ADAUSDT": 0,
+        "BTCUSDT": 0,
+        "DOTUSDT": 0,
+        "ETHUSDT": 0,
+        "FILUSDT": 0,
+        "MANAUSDT": 0,
+        "SHIBUSDT": 0,
+        "VETUSDT": 0
+      },
+      "period": "development",
+      "strategy_days": 730,
+      "strategy_id": "A03"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 731,
+      "missing_by_symbol": {
+        "ADAUSDT": 0,
+        "BTCUSDT": 0,
+        "DOTUSDT": 0,
+        "ETHUSDT": 0,
+        "FILUSDT": 0,
+        "MANAUSDT": 0,
+        "SHIBUSDT": 0,
+        "VETUSDT": 0
+      },
+      "period": "validation",
+      "strategy_days": 731,
+      "strategy_id": "A03"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 273,
+      "missing_by_symbol": {
+        "ADAUSDT": 0,
+        "BTCUSDT": 0,
+        "DOTUSDT": 0,
+        "ETHUSDT": 0,
+        "FILUSDT": 0,
+        "MANAUSDT": 0,
+        "SHIBUSDT": 0,
+        "VETUSDT": 0
+      },
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_days": 273,
+      "strategy_id": "A03"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 120,
+      "joint_days": 610,
+      "missing_by_symbol": {
+        "AVAXUSDT": 0,
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FILUSDT": 0,
+        "FTMUSDT": 0,
+        "LUNAUSDT": 120,
+        "SOLUSDT": 0,
+        "VETUSDT": 0
+      },
+      "period": "development",
+      "strategy_days": 730,
+      "strategy_id": "A04"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 4,
+      "joint_days": 727,
+      "missing_by_symbol": {
+        "AVAXUSDT": 0,
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FILUSDT": 0,
+        "FTMUSDT": 4,
+        "LUNAUSDT": 0,
+        "SOLUSDT": 0,
+        "VETUSDT": 0
+      },
+      "period": "validation",
+      "strategy_days": 731,
+      "strategy_id": "A04"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 273,
+      "missing_by_symbol": {
+        "AVAXUSDT": 0,
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FILUSDT": 0,
+        "FTMUSDT": 0,
+        "LUNAUSDT": 0,
+        "SOLUSDT": 0,
+        "VETUSDT": 0
+      },
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_days": 273,
+      "strategy_id": "A04"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 730,
+      "missing_by_symbol": {
+        "AXSUSDT": 0,
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "DOGEUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 0,
+        "VETUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "development",
+      "strategy_days": 730,
+      "strategy_id": "B01"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 4,
+      "joint_days": 727,
+      "missing_by_symbol": {
+        "AXSUSDT": 0,
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "DOGEUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 4,
+        "VETUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "validation",
+      "strategy_days": 731,
+      "strategy_id": "B01"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 273,
+      "missing_by_symbol": {
+        "AXSUSDT": 0,
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "DOGEUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 0,
+        "VETUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_days": 273,
+      "strategy_id": "B01"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 730,
+      "missing_by_symbol": {
+        "AXSUSDT": 0,
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 0,
+        "LTCUSDT": 0,
+        "MATICUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "development",
+      "strategy_days": 730,
+      "strategy_id": "B03"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 8,
+      "joint_days": 723,
+      "missing_by_symbol": {
+        "AXSUSDT": 0,
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 4,
+        "LTCUSDT": 0,
+        "MATICUSDT": 4,
+        "XRPUSDT": 0
+      },
+      "period": "validation",
+      "strategy_days": 731,
+      "strategy_id": "B03"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 273,
+      "missing_by_symbol": {
+        "AXSUSDT": 0,
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "FTMUSDT": 0,
+        "LTCUSDT": 0,
+        "MATICUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_days": 273,
+      "strategy_id": "B03"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 120,
+      "joint_days": 610,
+      "missing_by_symbol": {
+        "AVAXUSDT": 0,
+        "BTCUSDT": 0,
+        "DOTUSDT": 0,
+        "ETHUSDT": 0,
+        "FILUSDT": 0,
+        "LUNAUSDT": 120,
+        "MANAUSDT": 0,
+        "VETUSDT": 0
+      },
+      "period": "development",
+      "strategy_days": 730,
+      "strategy_id": "B04"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 731,
+      "missing_by_symbol": {
+        "AVAXUSDT": 0,
+        "BTCUSDT": 0,
+        "DOTUSDT": 0,
+        "ETHUSDT": 0,
+        "FILUSDT": 0,
+        "LUNAUSDT": 0,
+        "MANAUSDT": 0,
+        "VETUSDT": 0
+      },
+      "period": "validation",
+      "strategy_days": 731,
+      "strategy_id": "B04"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 273,
+      "missing_by_symbol": {
+        "AVAXUSDT": 0,
+        "BTCUSDT": 0,
+        "DOTUSDT": 0,
+        "ETHUSDT": 0,
+        "FILUSDT": 0,
+        "LUNAUSDT": 0,
+        "MANAUSDT": 0,
+        "VETUSDT": 0
+      },
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_days": 273,
+      "strategy_id": "B04"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 730,
+      "missing_by_symbol": {
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "DOGEUSDT": 0,
+        "ETHUSDT": 0,
+        "GALAUSDT": 0,
+        "LINKUSDT": 0,
+        "TRXUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "development",
+      "strategy_days": 730,
+      "strategy_id": "B05"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 731,
+      "missing_by_symbol": {
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "DOGEUSDT": 0,
+        "ETHUSDT": 0,
+        "GALAUSDT": 0,
+        "LINKUSDT": 0,
+        "TRXUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "validation",
+      "strategy_days": 731,
+      "strategy_id": "B05"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 273,
+      "missing_by_symbol": {
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "DOGEUSDT": 0,
+        "ETHUSDT": 0,
+        "GALAUSDT": 0,
+        "LINKUSDT": 0,
+        "TRXUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_days": 273,
+      "strategy_id": "B05"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 730,
+      "missing_by_symbol": {
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "GALAUSDT": 0,
+        "LINKUSDT": 0,
+        "MANAUSDT": 0,
+        "TRXUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "development",
+      "strategy_days": 730,
+      "strategy_id": "B06"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 731,
+      "missing_by_symbol": {
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "GALAUSDT": 0,
+        "LINKUSDT": 0,
+        "MANAUSDT": 0,
+        "TRXUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "validation",
+      "strategy_days": 731,
+      "strategy_id": "B06"
+    },
+    {
+      "all_factor_missingness_preserved": true,
+      "excluded_days": 0,
+      "joint_days": 273,
+      "missing_by_symbol": {
+        "BNBUSDT": 0,
+        "BTCUSDT": 0,
+        "ETHUSDT": 0,
+        "GALAUSDT": 0,
+        "LINKUSDT": 0,
+        "MANAUSDT": 0,
+        "TRXUSDT": 0,
+        "XRPUSDT": 0
+      },
+      "period": "oos_partial_2026_jan_sep",
+      "strategy_days": 273,
+      "strategy_id": "B06"
+    }
+  ],
+  "fresh_nav_bootstrap_draws_checked": 162,
+  "frozen_source_files_verified": 143,
+  "maximum_coin_return_reconciliation_error": 4.440892098500626e-14,
+  "no_new_prices_strategies_or_selections": true,
+  "original_final_report_artifacts_unchanged": 1004,
+  "path_checks": [
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 4.440892098500626e-16,
+      "elapsed_hours": 17520,
+      "forced_units": 0.5208333333333333,
+      "n_days": 730,
+      "net_return": 1.6535741519222498,
+      "ordinary_units": 61.354166666666664,
+      "period": "development",
+      "source_partial_events": [
+        {
+          "bucket_end": "2022-05-13T01:00:00+00:00",
+          "event_time": "2022-05-13T00:40:00Z",
+          "post_event_weight": 0.0,
+          "symbol": "LUNAUSDT"
+        }
+      ],
+      "strategy_id": "A01",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 5.551115123125783e-16,
+      "elapsed_hours": 17544,
+      "forced_units": 0.6458333333333333,
+      "n_days": 731,
+      "net_return": -0.2955158316095263,
+      "ordinary_units": 68.75,
+      "period": "validation",
+      "source_partial_events": [],
+      "strategy_id": "A01",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 2.9698465908722937e-15,
+      "elapsed_hours": 6552,
+      "forced_units": 0.0,
+      "n_days": 273,
+      "net_return": 0.2223830500926971,
+      "ordinary_units": 25.125,
+      "period": "oos_partial_2026_jan_sep",
+      "source_partial_events": [],
+      "strategy_id": "A01",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 1.9539925233402755e-14,
+      "elapsed_hours": 17520,
+      "forced_units": 0.5208333333333333,
+      "n_days": 730,
+      "net_return": 2.5293646685495252,
+      "ordinary_units": 97.64583333333333,
+      "period": "development",
+      "source_partial_events": [
+        {
+          "bucket_end": "2022-05-13T01:00:00+00:00",
+          "event_time": "2022-05-13T00:40:00Z",
+          "post_event_weight": 0.0,
+          "symbol": "LUNAUSDT"
+        }
+      ],
+      "strategy_id": "A02",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 5.329070518200751e-15,
+      "elapsed_hours": 17544,
+      "forced_units": 1.0,
+      "n_days": 731,
+      "net_return": -0.39631024086140576,
+      "ordinary_units": 109.02083333333333,
+      "period": "validation",
+      "source_partial_events": [],
+      "strategy_id": "A02",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 5.190292640122607e-15,
+      "elapsed_hours": 6552,
+      "forced_units": 0.0,
+      "n_days": 273,
+      "net_return": 0.14356735754979244,
+      "ordinary_units": 42.0,
+      "period": "oos_partial_2026_jan_sep",
+      "source_partial_events": [],
+      "strategy_id": "A02",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 7.549516567451064e-15,
+      "elapsed_hours": 17520,
+      "forced_units": 0.0,
+      "n_days": 730,
+      "net_return": 0.643845665089142,
+      "ordinary_units": 54.25,
+      "period": "development",
+      "source_partial_events": [],
+      "strategy_id": "A03",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 1.7486012637846216e-15,
+      "elapsed_hours": 17544,
+      "forced_units": 0.0,
+      "n_days": 731,
+      "net_return": -0.223113082252124,
+      "ordinary_units": 43.75,
+      "period": "validation",
+      "source_partial_events": [],
+      "strategy_id": "A03",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 1.942890293094024e-15,
+      "elapsed_hours": 6552,
+      "forced_units": 0.0,
+      "n_days": 273,
+      "net_return": 0.313753643340666,
+      "ordinary_units": 24.75,
+      "period": "oos_partial_2026_jan_sep",
+      "source_partial_events": [],
+      "strategy_id": "A03",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 4.440892098500626e-14,
+      "elapsed_hours": 17520,
+      "forced_units": 0.125,
+      "n_days": 730,
+      "net_return": 3.142223228572334,
+      "ordinary_units": 99.875,
+      "period": "development",
+      "source_partial_events": [
+        {
+          "bucket_end": "2022-05-13T01:00:00+00:00",
+          "event_time": "2022-05-13T00:40:00Z",
+          "post_event_weight": 0.0,
+          "symbol": "LUNAUSDT"
+        }
+      ],
+      "strategy_id": "A04",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 4.996003610813204e-16,
+      "elapsed_hours": 17544,
+      "forced_units": 0.125,
+      "n_days": 731,
+      "net_return": -0.45310169510258236,
+      "ordinary_units": 126.875,
+      "period": "validation",
+      "source_partial_events": [],
+      "strategy_id": "A04",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 4.996003610813204e-16,
+      "elapsed_hours": 6552,
+      "forced_units": 0.0,
+      "n_days": 273,
+      "net_return": -0.16929107730603066,
+      "ordinary_units": 56.75,
+      "period": "oos_partial_2026_jan_sep",
+      "source_partial_events": [],
+      "strategy_id": "A04",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 3.95516952522712e-15,
+      "elapsed_hours": 17520,
+      "forced_units": 0.0,
+      "n_days": 730,
+      "net_return": 0.003359930499778674,
+      "ordinary_units": 162.375,
+      "period": "development",
+      "source_partial_events": [],
+      "strategy_id": "B01",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 5.995204332975845e-15,
+      "elapsed_hours": 17544,
+      "forced_units": 0.5833333333333333,
+      "n_days": 731,
+      "net_return": 1.2018544507998006,
+      "ordinary_units": 153.52083333333331,
+      "period": "validation",
+      "source_partial_events": [],
+      "strategy_id": "B01",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 2.1649348980190553e-15,
+      "elapsed_hours": 6552,
+      "forced_units": 0.0,
+      "n_days": 273,
+      "net_return": -0.18984101991651303,
+      "ordinary_units": 72.0,
+      "period": "oos_partial_2026_jan_sep",
+      "source_partial_events": [],
+      "strategy_id": "B01",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 9.71445146547012e-16,
+      "elapsed_hours": 17520,
+      "forced_units": 0.0,
+      "n_days": 730,
+      "net_return": 0.010537943330962252,
+      "ordinary_units": 54.5,
+      "period": "development",
+      "source_partial_events": [],
+      "strategy_id": "B03",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 2.220446049250313e-15,
+      "elapsed_hours": 17544,
+      "forced_units": 1.0416666666666665,
+      "n_days": 731,
+      "net_return": 1.5130478477376572,
+      "ordinary_units": 46.29166666666667,
+      "period": "validation",
+      "source_partial_events": [],
+      "strategy_id": "B03",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 7.716050021144838e-15,
+      "elapsed_hours": 6552,
+      "forced_units": 0.0,
+      "n_days": 273,
+      "net_return": -0.45359312642142824,
+      "ordinary_units": 30.625,
+      "period": "oos_partial_2026_jan_sep",
+      "source_partial_events": [],
+      "strategy_id": "B03",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 1.0880185641326534e-14,
+      "elapsed_hours": 17520,
+      "forced_units": 0.7708333333333333,
+      "n_days": 730,
+      "net_return": 0.4410739232526022,
+      "ordinary_units": 40.854166666666664,
+      "period": "development",
+      "source_partial_events": [
+        {
+          "bucket_end": "2022-05-13T01:00:00+00:00",
+          "event_time": "2022-05-13T00:40:00Z",
+          "post_event_weight": 0.0,
+          "symbol": "LUNAUSDT"
+        }
+      ],
+      "strategy_id": "B04",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 1.9984014443252818e-15,
+      "elapsed_hours": 17544,
+      "forced_units": 0.0,
+      "n_days": 731,
+      "net_return": 0.737829733757744,
+      "ordinary_units": 43.75,
+      "period": "validation",
+      "source_partial_events": [],
+      "strategy_id": "B04",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 1.0269562977782698e-15,
+      "elapsed_hours": 6552,
+      "forced_units": 0.0,
+      "n_days": 273,
+      "net_return": -0.14292690605764602,
+      "ordinary_units": 14.25,
+      "period": "oos_partial_2026_jan_sep",
+      "source_partial_events": [],
+      "strategy_id": "B04",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 1.9984014443252818e-15,
+      "elapsed_hours": 17520,
+      "forced_units": 0.0,
+      "n_days": 730,
+      "net_return": 0.1260357393213789,
+      "ordinary_units": 23.0,
+      "period": "development",
+      "source_partial_events": [],
+      "strategy_id": "B05",
+      "terminal_units": 0.75
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 3.2862601528904634e-14,
+      "elapsed_hours": 17544,
+      "forced_units": 0.0,
+      "n_days": 731,
+      "net_return": 1.5200344869307725,
+      "ordinary_units": 24.875,
+      "period": "validation",
+      "source_partial_events": [],
+      "strategy_id": "B05",
+      "terminal_units": 0.125
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 9.853229343548264e-16,
+      "elapsed_hours": 6552,
+      "forced_units": 0.0,
+      "n_days": 273,
+      "net_return": -0.058583161930160554,
+      "ordinary_units": 10.125,
+      "period": "oos_partial_2026_jan_sep",
+      "source_partial_events": [],
+      "strategy_id": "B05",
+      "terminal_units": 0.875
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 7.549516567451064e-15,
+      "elapsed_hours": 17520,
+      "forced_units": 0.0,
+      "n_days": 730,
+      "net_return": 0.35861992552923816,
+      "ordinary_units": 44.75,
+      "period": "development",
+      "source_partial_events": [],
+      "strategy_id": "B06",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 4.6629367034256575e-15,
+      "elapsed_hours": 17544,
+      "forced_units": 0.0,
+      "n_days": 731,
+      "net_return": 1.6424457894383004,
+      "ordinary_units": 48.25,
+      "period": "validation",
+      "source_partial_events": [],
+      "strategy_id": "B06",
+      "terminal_units": 1.0
+    },
+    {
+      "all_checks_passed": true,
+      "coin_sum_error": 1.6237011735142914e-15,
+      "elapsed_hours": 6552,
+      "forced_units": 0.0,
+      "n_days": 273,
+      "net_return": -0.04222536119096765,
+      "ordinary_units": 20.5,
+      "period": "oos_partial_2026_jan_sep",
+      "source_partial_events": [],
+      "strategy_id": "B06",
+      "terminal_units": 1.0
+    }
+  ],
+  "status": "PASS_independent_accounting_coverage_preservation_and_bootstrap_draw_audit",
+  "strict_factor_gap_handling_verified": true,
+  "technical_stdout_intermediate_pin_amendment_verified": true
+}

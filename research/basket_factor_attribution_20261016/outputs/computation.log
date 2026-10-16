@@ -1,0 +1,43 @@
+fit A01 development 610 / 730
+fit A02 development 610 / 730
+fit A03 development 730 / 730
+fit A04 development 610 / 730
+fit B01 development 730 / 730
+fit B03 development 730 / 730
+fit B04 development 610 / 730
+fit B05 development 730 / 730
+fit B06 development 730 / 730
+bootstrap development 4000 synchronized draws
+fit A01 validation 727 / 731
+fit A02 validation 727 / 731
+fit A03 validation 731 / 731
+fit A04 validation 727 / 731
+fit B01 validation 727 / 731
+fit B03 validation 723 / 731
+fit B04 validation 731 / 731
+fit B05 validation 731 / 731
+fit B06 validation 731 / 731
+bootstrap validation 4000 synchronized draws
+fit A01 oos_partial_2026_jan_sep 273 / 273
+fit A02 oos_partial_2026_jan_sep 273 / 273
+fit A03 oos_partial_2026_jan_sep 273 / 273
+fit A04 oos_partial_2026_jan_sep 273 / 273
+fit B01 oos_partial_2026_jan_sep 273 / 273
+fit B03 oos_partial_2026_jan_sep 273 / 273
+fit B04 oos_partial_2026_jan_sep 273 / 273
+fit B05 oos_partial_2026_jan_sep 273 / 273
+fit B06 oos_partial_2026_jan_sep 273 / 273
+bootstrap oos_partial_2026_jan_sep 4000 synchronized draws
+{
+  "status": "completed_fixed_27_path_diagnostic_computation_pending_independent_audit",
+  "created_at_utc": "2026-10-16T16:10:24.002663+00:00",
+  "paths": 27,
+  "coin_rows": 216,
+  "joint_coefficient_slots": 243,
+  "matched_btc_models": 27,
+  "legacy_btc_models": 27,
+  "all_accounting_checks_passed": true,
+  "no_new_prices_or_strategy_execution_or_reselection": true,
+  "protocol_sha256": "7d8119be9555353458a6dbd5b531f2248375cf6166068e3821c565aac94600cf",
+  "access_freeze_sha256": "da3b7def2655ab9fe6fed96f687291f774d34905b12de74c5499e2aa232a0f98"
+}

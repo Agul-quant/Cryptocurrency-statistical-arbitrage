@@ -1,0 +1,1633 @@
+[
+  {
+    "adjusted_r_squared": -0.0012332053444841229,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [
+      {
+        "end_inclusive": "2022-09-09",
+        "n_days": 120,
+        "start": "2022-05-13"
+      }
+    ],
+    "factor_missing_date_ranges": {
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [],
+      "LINKUSDT": [],
+      "LTCUSDT": [],
+      "LUNAUSDT": [
+        {
+          "end_inclusive": "2022-09-09",
+          "n_days": 120,
+          "start": "2022-05-13"
+        }
+      ],
+      "SOLUSDT": [],
+      "TRXUSDT": []
+    },
+    "factor_missing_days": {
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 0,
+      "LINKUSDT": 0,
+      "LTCUSDT": 0,
+      "LUNAUSDT": 120,
+      "SOLUSDT": 0,
+      "TRXUSDT": 0
+    },
+    "first_fit_day": "2022-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0032894736842106,
+    "last_fit_day": "2023-12-31",
+    "maximum_cooks_distance": 0.32480695884222105,
+    "maximum_leverage": 0.04851978119168304,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 730,
+    "n_excluded_days": 120,
+    "n_fit_days": 610,
+    "n_parameters": 2,
+    "period": "development",
+    "r_squared": 0.0004108557480356767,
+    "rank": 2,
+    "residual_sum_squares": 0.1327105565077073,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      24.698178070456944,
+      24.69817807045694
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A01",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999999
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": -0.001064399959646467,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [
+      {
+        "end_inclusive": "2022-09-09",
+        "n_days": 120,
+        "start": "2022-05-13"
+      }
+    ],
+    "factor_missing_date_ranges": {
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [],
+      "LINKUSDT": [],
+      "LTCUSDT": [],
+      "LUNAUSDT": [
+        {
+          "end_inclusive": "2022-09-09",
+          "n_days": 120,
+          "start": "2022-05-13"
+        }
+      ],
+      "SOLUSDT": [],
+      "TRXUSDT": []
+    },
+    "factor_missing_days": {
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 0,
+      "LINKUSDT": 0,
+      "LTCUSDT": 0,
+      "LUNAUSDT": 120,
+      "SOLUSDT": 0,
+      "TRXUSDT": 0
+    },
+    "first_fit_day": "2022-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0032894736842106,
+    "last_fit_day": "2023-12-31",
+    "maximum_cooks_distance": 0.24064167253200866,
+    "maximum_leverage": 0.04851978119168304,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 730,
+    "n_excluded_days": 120,
+    "n_fit_days": 610,
+    "n_parameters": 2,
+    "period": "development",
+    "r_squared": 0.0005793839483332341,
+    "rank": 2,
+    "residual_sum_squares": 0.17790114516324873,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      24.698178070456944,
+      24.69817807045694
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A02",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999999
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.00033459691668036307,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "ADAUSDT": [],
+      "BTCUSDT": [],
+      "DOTUSDT": [],
+      "ETHUSDT": [],
+      "FILUSDT": [],
+      "MANAUSDT": [],
+      "SHIBUSDT": [],
+      "VETUSDT": []
+    },
+    "factor_missing_days": {
+      "ADAUSDT": 0,
+      "BTCUSDT": 0,
+      "DOTUSDT": 0,
+      "ETHUSDT": 0,
+      "FILUSDT": 0,
+      "MANAUSDT": 0,
+      "SHIBUSDT": 0,
+      "VETUSDT": 0
+    },
+    "first_fit_day": "2022-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027472527472527,
+    "last_fit_day": "2023-12-31",
+    "maximum_cooks_distance": 0.29699166007469335,
+    "maximum_leverage": 0.04071344874286609,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 730,
+    "n_excluded_days": 0,
+    "n_fit_days": 730,
+    "n_parameters": 2,
+    "period": "development",
+    "r_squared": 0.0017058800484819336,
+    "rank": 2,
+    "residual_sum_squares": 0.10673515573087557,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      27.018512172212592,
+      27.018512172212592
+    ],
+    "standardized_condition_number": 1.0,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A03",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 1.0
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.026894377162243743,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [
+      {
+        "end_inclusive": "2022-09-09",
+        "n_days": 120,
+        "start": "2022-05-13"
+      }
+    ],
+    "factor_missing_date_ranges": {
+      "AVAXUSDT": [],
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FILUSDT": [],
+      "FTMUSDT": [],
+      "LUNAUSDT": [
+        {
+          "end_inclusive": "2022-09-09",
+          "n_days": 120,
+          "start": "2022-05-13"
+        }
+      ],
+      "SOLUSDT": [],
+      "VETUSDT": []
+    },
+    "factor_missing_days": {
+      "AVAXUSDT": 0,
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FILUSDT": 0,
+      "FTMUSDT": 0,
+      "LUNAUSDT": 120,
+      "SOLUSDT": 0,
+      "VETUSDT": 0
+    },
+    "first_fit_day": "2022-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0032894736842106,
+    "last_fit_day": "2023-12-31",
+    "maximum_cooks_distance": 0.926224079533942,
+    "maximum_leverage": 0.04851978119168304,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 730,
+    "n_excluded_days": 120,
+    "n_fit_days": 610,
+    "n_parameters": 2,
+    "period": "development",
+    "r_squared": 0.02849225174818426,
+    "rank": 2,
+    "residual_sum_squares": 0.6117766245450986,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      24.698178070456944,
+      24.69817807045694
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A04",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999999
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.004802610246848138,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "AXSUSDT": [],
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "DOGEUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [],
+      "VETUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "AXSUSDT": 0,
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "DOGEUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 0,
+      "VETUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2022-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027472527472527,
+    "last_fit_day": "2023-12-31",
+    "maximum_cooks_distance": 0.3043002915551883,
+    "maximum_leverage": 0.04071344874286609,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 730,
+    "n_excluded_days": 0,
+    "n_fit_days": 730,
+    "n_parameters": 2,
+    "period": "development",
+    "r_squared": 0.006167764416605492,
+    "rank": 2,
+    "residual_sum_squares": 0.1451272791696914,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      27.018512172212592,
+      27.018512172212592
+    ],
+    "standardized_condition_number": 1.0,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B01",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 1.0
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 5.712863324880413e-05,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "AXSUSDT": [],
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [],
+      "LTCUSDT": [],
+      "MATICUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "AXSUSDT": 0,
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 0,
+      "LTCUSDT": 0,
+      "MATICUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2022-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027472527472527,
+    "last_fit_day": "2023-12-31",
+    "maximum_cooks_distance": 0.5206278875725229,
+    "maximum_leverage": 0.04071344874286609,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 730,
+    "n_excluded_days": 0,
+    "n_fit_days": 730,
+    "n_parameters": 2,
+    "period": "development",
+    "r_squared": 0.0014287923799796154,
+    "rank": 2,
+    "residual_sum_squares": 0.13407574672849962,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      27.018512172212592,
+      27.018512172212592
+    ],
+    "standardized_condition_number": 1.0,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B03",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 1.0
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": -0.0015475250862060363,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [
+      {
+        "end_inclusive": "2022-09-09",
+        "n_days": 120,
+        "start": "2022-05-13"
+      }
+    ],
+    "factor_missing_date_ranges": {
+      "AVAXUSDT": [],
+      "BTCUSDT": [],
+      "DOTUSDT": [],
+      "ETHUSDT": [],
+      "FILUSDT": [],
+      "LUNAUSDT": [
+        {
+          "end_inclusive": "2022-09-09",
+          "n_days": 120,
+          "start": "2022-05-13"
+        }
+      ],
+      "MANAUSDT": [],
+      "VETUSDT": []
+    },
+    "factor_missing_days": {
+      "AVAXUSDT": 0,
+      "BTCUSDT": 0,
+      "DOTUSDT": 0,
+      "ETHUSDT": 0,
+      "FILUSDT": 0,
+      "LUNAUSDT": 120,
+      "MANAUSDT": 0,
+      "VETUSDT": 0
+    },
+    "first_fit_day": "2022-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0032894736842106,
+    "last_fit_day": "2023-12-31",
+    "maximum_cooks_distance": 0.8426605646240668,
+    "maximum_leverage": 0.04851978119168304,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 730,
+    "n_excluded_days": 120,
+    "n_fit_days": 610,
+    "n_parameters": 2,
+    "period": "development",
+    "r_squared": 9.705213068422758e-05,
+    "rank": 2,
+    "residual_sum_squares": 0.25881844500911216,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      24.698178070456944,
+      24.69817807045694
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B04",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999999
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.4030355950797956,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "DOGEUSDT": [],
+      "ETHUSDT": [],
+      "GALAUSDT": [],
+      "LINKUSDT": [],
+      "TRXUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "DOGEUSDT": 0,
+      "ETHUSDT": 0,
+      "GALAUSDT": 0,
+      "LINKUSDT": 0,
+      "TRXUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2022-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027472527472527,
+    "last_fit_day": "2023-12-31",
+    "maximum_cooks_distance": 0.4285281574467976,
+    "maximum_leverage": 0.04071344874286609,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 730,
+    "n_excluded_days": 0,
+    "n_fit_days": 730,
+    "n_parameters": 2,
+    "period": "development",
+    "r_squared": 0.4038544762936779,
+    "rank": 2,
+    "residual_sum_squares": 0.13010104028288016,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      27.018512172212592,
+      27.018512172212592
+    ],
+    "standardized_condition_number": 1.0,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B05",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 1.0
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.09764129253365195,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "GALAUSDT": [],
+      "LINKUSDT": [],
+      "MANAUSDT": [],
+      "TRXUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "GALAUSDT": 0,
+      "LINKUSDT": 0,
+      "MANAUSDT": 0,
+      "TRXUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2022-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027472527472527,
+    "last_fit_day": "2023-12-31",
+    "maximum_cooks_distance": 0.2213189382768237,
+    "maximum_leverage": 0.04071344874286609,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 730,
+    "n_excluded_days": 0,
+    "n_fit_days": 730,
+    "n_parameters": 2,
+    "period": "development",
+    "r_squared": 0.09887909597324918,
+    "rank": 2,
+    "residual_sum_squares": 0.45363924961517704,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      27.018512172212592,
+      27.018512172212592
+    ],
+    "standardized_condition_number": 1.0,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B06",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 1.0
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.03316579504317063,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [
+      {
+        "end_inclusive": "2025-01-16",
+        "n_days": 4,
+        "start": "2025-01-13"
+      }
+    ],
+    "factor_missing_date_ranges": {
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [
+        {
+          "end_inclusive": "2025-01-16",
+          "n_days": 4,
+          "start": "2025-01-13"
+        }
+      ],
+      "LINKUSDT": [],
+      "LTCUSDT": [],
+      "LUNAUSDT": [],
+      "SOLUSDT": [],
+      "TRXUSDT": []
+    },
+    "factor_missing_days": {
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 4,
+      "LINKUSDT": 0,
+      "LTCUSDT": 0,
+      "LUNAUSDT": 0,
+      "SOLUSDT": 0,
+      "TRXUSDT": 0
+    },
+    "first_fit_day": "2024-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027586206896553,
+    "last_fit_day": "2025-12-31",
+    "maximum_cooks_distance": 0.23333488119443807,
+    "maximum_leverage": 0.031825691039884134,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 731,
+    "n_excluded_days": 4,
+    "n_fit_days": 727,
+    "n_parameters": 2,
+    "period": "validation",
+    "r_squared": 0.0344975225982076,
+    "rank": 2,
+    "residual_sum_squares": 0.19296344775089208,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      26.962937525425527,
+      26.962937525425524
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A01",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 1.0000000000000002
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.02148660550419801,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [
+      {
+        "end_inclusive": "2025-01-16",
+        "n_days": 4,
+        "start": "2025-01-13"
+      }
+    ],
+    "factor_missing_date_ranges": {
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [
+        {
+          "end_inclusive": "2025-01-16",
+          "n_days": 4,
+          "start": "2025-01-13"
+        }
+      ],
+      "LINKUSDT": [],
+      "LTCUSDT": [],
+      "LUNAUSDT": [],
+      "SOLUSDT": [],
+      "TRXUSDT": []
+    },
+    "factor_missing_days": {
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 4,
+      "LINKUSDT": 0,
+      "LTCUSDT": 0,
+      "LUNAUSDT": 0,
+      "SOLUSDT": 0,
+      "TRXUSDT": 0
+    },
+    "first_fit_day": "2024-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027586206896553,
+    "last_fit_day": "2025-12-31",
+    "maximum_cooks_distance": 0.15704122772921206,
+    "maximum_leverage": 0.031825691039884134,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 731,
+    "n_excluded_days": 4,
+    "n_fit_days": 727,
+    "n_parameters": 2,
+    "period": "validation",
+    "r_squared": 0.022834420097167518,
+    "rank": 2,
+    "residual_sum_squares": 0.1952556027734259,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      26.962937525425527,
+      26.962937525425524
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A02",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 1.0000000000000002
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.001183630118889556,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "ADAUSDT": [],
+      "BTCUSDT": [],
+      "DOTUSDT": [],
+      "ETHUSDT": [],
+      "FILUSDT": [],
+      "MANAUSDT": [],
+      "SHIBUSDT": [],
+      "VETUSDT": []
+    },
+    "factor_missing_days": {
+      "ADAUSDT": 0,
+      "BTCUSDT": 0,
+      "DOTUSDT": 0,
+      "ETHUSDT": 0,
+      "FILUSDT": 0,
+      "MANAUSDT": 0,
+      "SHIBUSDT": 0,
+      "VETUSDT": 0
+    },
+    "first_fit_day": "2024-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027434842249656,
+    "last_fit_day": "2025-12-31",
+    "maximum_cooks_distance": 0.3778353852894129,
+    "maximum_leverage": 0.031647421748826475,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 731,
+    "n_excluded_days": 0,
+    "n_fit_days": 731,
+    "n_parameters": 2,
+    "period": "validation",
+    "r_squared": 0.0025518717214664255,
+    "rank": 2,
+    "residual_sum_squares": 0.1196315866829201,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      27.037011669191553,
+      27.037011669191546
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A03",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999997
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.05894562746700949,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [
+      {
+        "end_inclusive": "2025-01-16",
+        "n_days": 4,
+        "start": "2025-01-13"
+      }
+    ],
+    "factor_missing_date_ranges": {
+      "AVAXUSDT": [],
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FILUSDT": [],
+      "FTMUSDT": [
+        {
+          "end_inclusive": "2025-01-16",
+          "n_days": 4,
+          "start": "2025-01-13"
+        }
+      ],
+      "LUNAUSDT": [],
+      "SOLUSDT": [],
+      "VETUSDT": []
+    },
+    "factor_missing_days": {
+      "AVAXUSDT": 0,
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FILUSDT": 0,
+      "FTMUSDT": 4,
+      "LUNAUSDT": 0,
+      "SOLUSDT": 0,
+      "VETUSDT": 0
+    },
+    "first_fit_day": "2024-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027586206896553,
+    "last_fit_day": "2025-12-31",
+    "maximum_cooks_distance": 0.3696668105336542,
+    "maximum_leverage": 0.031825691039884134,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 731,
+    "n_excluded_days": 4,
+    "n_fit_days": 727,
+    "n_parameters": 2,
+    "period": "validation",
+    "r_squared": 0.06024184561099433,
+    "rank": 2,
+    "residual_sum_squares": 0.6540068606853038,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      26.962937525425527,
+      26.962937525425524
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A04",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 1.0000000000000002
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.019957048773150965,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [
+      {
+        "end_inclusive": "2025-01-16",
+        "n_days": 4,
+        "start": "2025-01-13"
+      }
+    ],
+    "factor_missing_date_ranges": {
+      "AXSUSDT": [],
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "DOGEUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [
+        {
+          "end_inclusive": "2025-01-16",
+          "n_days": 4,
+          "start": "2025-01-13"
+        }
+      ],
+      "VETUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "AXSUSDT": 0,
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "DOGEUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 4,
+      "VETUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2024-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027586206896553,
+    "last_fit_day": "2025-12-31",
+    "maximum_cooks_distance": 0.32265964231927474,
+    "maximum_leverage": 0.031825691039884134,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 731,
+    "n_excluded_days": 4,
+    "n_fit_days": 727,
+    "n_parameters": 2,
+    "period": "validation",
+    "r_squared": 0.021306970193573638,
+    "rank": 2,
+    "residual_sum_squares": 0.13636802988307672,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      26.962937525425527,
+      26.962937525425524
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B01",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 1.0000000000000002
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.009101549689261579,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [
+      {
+        "end_inclusive": "2024-09-13",
+        "n_days": 4,
+        "start": "2024-09-10"
+      },
+      {
+        "end_inclusive": "2025-01-16",
+        "n_days": 4,
+        "start": "2025-01-13"
+      }
+    ],
+    "factor_missing_date_ranges": {
+      "AXSUSDT": [],
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [
+        {
+          "end_inclusive": "2025-01-16",
+          "n_days": 4,
+          "start": "2025-01-13"
+        }
+      ],
+      "LTCUSDT": [],
+      "MATICUSDT": [
+        {
+          "end_inclusive": "2024-09-13",
+          "n_days": 4,
+          "start": "2024-09-10"
+        }
+      ],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "AXSUSDT": 0,
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 4,
+      "LTCUSDT": 0,
+      "MATICUSDT": 4,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2024-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027739251040222,
+    "last_fit_day": "2025-12-31",
+    "maximum_cooks_distance": 0.20571613824151666,
+    "maximum_leverage": 0.03199700332100193,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 731,
+    "n_excluded_days": 8,
+    "n_fit_days": 723,
+    "n_parameters": 2,
+    "period": "validation",
+    "r_squared": 0.01047398521600773,
+    "rank": 2,
+    "residual_sum_squares": 0.14105702630290728,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      26.888659319497506,
+      26.888659319497503
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B03",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 1.0000000000000002
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": -0.0012020081435741847,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "AVAXUSDT": [],
+      "BTCUSDT": [],
+      "DOTUSDT": [],
+      "ETHUSDT": [],
+      "FILUSDT": [],
+      "LUNAUSDT": [],
+      "MANAUSDT": [],
+      "VETUSDT": []
+    },
+    "factor_missing_days": {
+      "AVAXUSDT": 0,
+      "BTCUSDT": 0,
+      "DOTUSDT": 0,
+      "ETHUSDT": 0,
+      "FILUSDT": 0,
+      "LUNAUSDT": 0,
+      "MANAUSDT": 0,
+      "VETUSDT": 0
+    },
+    "first_fit_day": "2024-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027434842249656,
+    "last_fit_day": "2025-12-31",
+    "maximum_cooks_distance": 0.2138034988385832,
+    "maximum_leverage": 0.031647421748826475,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 731,
+    "n_excluded_days": 0,
+    "n_fit_days": 731,
+    "n_parameters": 2,
+    "period": "validation",
+    "r_squared": 0.0001695014566225339,
+    "rank": 2,
+    "residual_sum_squares": 0.15022891558556042,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      27.037011669191553,
+      27.037011669191546
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B04",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999997
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.3357405695122634,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "DOGEUSDT": [],
+      "ETHUSDT": [],
+      "GALAUSDT": [],
+      "LINKUSDT": [],
+      "TRXUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "DOGEUSDT": 0,
+      "ETHUSDT": 0,
+      "GALAUSDT": 0,
+      "LINKUSDT": 0,
+      "TRXUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2024-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027434842249656,
+    "last_fit_day": "2025-12-31",
+    "maximum_cooks_distance": 0.13795709298817668,
+    "maximum_leverage": 0.031647421748826475,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 731,
+    "n_excluded_days": 0,
+    "n_fit_days": 731,
+    "n_parameters": 2,
+    "period": "validation",
+    "r_squared": 0.33665051393758905,
+    "rank": 2,
+    "residual_sum_squares": 0.1916476963464011,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      27.037011669191553,
+      27.037011669191546
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B05",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999997
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.038325666634676625,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "GALAUSDT": [],
+      "LINKUSDT": [],
+      "MANAUSDT": [],
+      "TRXUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "GALAUSDT": 0,
+      "LINKUSDT": 0,
+      "MANAUSDT": 0,
+      "TRXUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2024-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.0027434842249656,
+    "last_fit_day": "2025-12-31",
+    "maximum_cooks_distance": 0.1788580091737024,
+    "maximum_leverage": 0.031647421748826475,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 731,
+    "n_excluded_days": 0,
+    "n_fit_days": 731,
+    "n_parameters": 2,
+    "period": "validation",
+    "r_squared": 0.039643028735177,
+    "rank": 2,
+    "residual_sum_squares": 0.45579780796441105,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      27.037011669191553,
+      27.037011669191546
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B06",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999997
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.04666381158858057,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [],
+      "LINKUSDT": [],
+      "LTCUSDT": [],
+      "LUNAUSDT": [],
+      "SOLUSDT": [],
+      "TRXUSDT": []
+    },
+    "factor_missing_days": {
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 0,
+      "LINKUSDT": 0,
+      "LTCUSDT": 0,
+      "LUNAUSDT": 0,
+      "SOLUSDT": 0,
+      "TRXUSDT": 0
+    },
+    "first_fit_day": "2026-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.007380073800738,
+    "last_fit_day": "2026-09-30",
+    "maximum_cooks_distance": 0.06445801192311966,
+    "maximum_leverage": 0.12847089764100716,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 273,
+    "n_excluded_days": 0,
+    "n_fit_days": 273,
+    "n_parameters": 2,
+    "period": "oos_partial_2026_jan_sep",
+    "r_squared": 0.0501687240459755,
+    "rank": 2,
+    "residual_sum_squares": 0.04500297439809104,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      16.522711641858308,
+      16.522711641858304
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A01",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999998
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.037950958957568615,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [],
+      "LINKUSDT": [],
+      "LTCUSDT": [],
+      "LUNAUSDT": [],
+      "SOLUSDT": [],
+      "TRXUSDT": []
+    },
+    "factor_missing_days": {
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 0,
+      "LINKUSDT": 0,
+      "LTCUSDT": 0,
+      "LUNAUSDT": 0,
+      "SOLUSDT": 0,
+      "TRXUSDT": 0
+    },
+    "first_fit_day": "2026-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.007380073800738,
+    "last_fit_day": "2026-09-30",
+    "maximum_cooks_distance": 0.12813798963884035,
+    "maximum_leverage": 0.12847089764100716,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 273,
+    "n_excluded_days": 0,
+    "n_fit_days": 273,
+    "n_parameters": 2,
+    "period": "oos_partial_2026_jan_sep",
+    "r_squared": 0.04148790396140101,
+    "rank": 2,
+    "residual_sum_squares": 0.04817969422789967,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      16.522711641858308,
+      16.522711641858304
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A02",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999998
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.002403978479525448,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "ADAUSDT": [],
+      "BTCUSDT": [],
+      "DOTUSDT": [],
+      "ETHUSDT": [],
+      "FILUSDT": [],
+      "MANAUSDT": [],
+      "SHIBUSDT": [],
+      "VETUSDT": []
+    },
+    "factor_missing_days": {
+      "ADAUSDT": 0,
+      "BTCUSDT": 0,
+      "DOTUSDT": 0,
+      "ETHUSDT": 0,
+      "FILUSDT": 0,
+      "MANAUSDT": 0,
+      "SHIBUSDT": 0,
+      "VETUSDT": 0
+    },
+    "first_fit_day": "2026-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.007380073800738,
+    "last_fit_day": "2026-09-30",
+    "maximum_cooks_distance": 0.18434166788457765,
+    "maximum_leverage": 0.12847089764100716,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 273,
+    "n_excluded_days": 0,
+    "n_fit_days": 273,
+    "n_parameters": 2,
+    "period": "oos_partial_2026_jan_sep",
+    "r_squared": 0.006071610911585923,
+    "rank": 2,
+    "residual_sum_squares": 0.019739625466070842,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      16.522711641858308,
+      16.522711641858304
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A03",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999998
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.11102179310899818,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "AVAXUSDT": [],
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FILUSDT": [],
+      "FTMUSDT": [],
+      "LUNAUSDT": [],
+      "SOLUSDT": [],
+      "VETUSDT": []
+    },
+    "factor_missing_days": {
+      "AVAXUSDT": 0,
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FILUSDT": 0,
+      "FTMUSDT": 0,
+      "LUNAUSDT": 0,
+      "SOLUSDT": 0,
+      "VETUSDT": 0
+    },
+    "first_fit_day": "2026-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.007380073800738,
+    "last_fit_day": "2026-09-30",
+    "maximum_cooks_distance": 1.2701257479283852,
+    "maximum_leverage": 0.12847089764100716,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 273,
+    "n_excluded_days": 0,
+    "n_fit_days": 273,
+    "n_parameters": 2,
+    "period": "oos_partial_2026_jan_sep",
+    "r_squared": 0.11429009534021517,
+    "rank": 2,
+    "residual_sum_squares": 0.17909661461996507,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      16.522711641858308,
+      16.522711641858304
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "A04",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999998
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.001504300600096875,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "AXSUSDT": [],
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "DOGEUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [],
+      "VETUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "AXSUSDT": 0,
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "DOGEUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 0,
+      "VETUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2026-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.007380073800738,
+    "last_fit_day": "2026-09-30",
+    "maximum_cooks_distance": 0.19172900866259746,
+    "maximum_leverage": 0.12847089764100716,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 273,
+    "n_excluded_days": 0,
+    "n_fit_days": 273,
+    "n_parameters": 2,
+    "period": "oos_partial_2026_jan_sep",
+    "r_squared": 0.005175240671420056,
+    "rank": 2,
+    "residual_sum_squares": 0.06357676815431804,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      16.522711641858308,
+      16.522711641858304
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B01",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999998
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.028633210913327378,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "AXSUSDT": [],
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "FTMUSDT": [],
+      "LTCUSDT": [],
+      "MATICUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "AXSUSDT": 0,
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "FTMUSDT": 0,
+      "LTCUSDT": 0,
+      "MATICUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2026-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.007380073800738,
+    "last_fit_day": "2026-09-30",
+    "maximum_cooks_distance": 0.21735525227665217,
+    "maximum_leverage": 0.12847089764100716,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 273,
+    "n_excluded_days": 0,
+    "n_fit_days": 273,
+    "n_parameters": 2,
+    "period": "oos_partial_2026_jan_sep",
+    "r_squared": 0.03220441234379312,
+    "rank": 2,
+    "residual_sum_squares": 0.0602786790446137,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      16.522711641858308,
+      16.522711641858304
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B03",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999998
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": -0.0012285573465697919,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "AVAXUSDT": [],
+      "BTCUSDT": [],
+      "DOTUSDT": [],
+      "ETHUSDT": [],
+      "FILUSDT": [],
+      "LUNAUSDT": [],
+      "MANAUSDT": [],
+      "VETUSDT": []
+    },
+    "factor_missing_days": {
+      "AVAXUSDT": 0,
+      "BTCUSDT": 0,
+      "DOTUSDT": 0,
+      "ETHUSDT": 0,
+      "FILUSDT": 0,
+      "LUNAUSDT": 0,
+      "MANAUSDT": 0,
+      "VETUSDT": 0
+    },
+    "first_fit_day": "2026-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.007380073800738,
+    "last_fit_day": "2026-09-30",
+    "maximum_cooks_distance": 0.1205652537319784,
+    "maximum_leverage": 0.12847089764100716,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 273,
+    "n_excluded_days": 0,
+    "n_fit_days": 273,
+    "n_parameters": 2,
+    "period": "oos_partial_2026_jan_sep",
+    "r_squared": 0.002452429996616212,
+    "rank": 2,
+    "residual_sum_squares": 0.04319931036910888,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      16.522711641858308,
+      16.522711641858304
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B04",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999998
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.3410484344071245,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "DOGEUSDT": [],
+      "ETHUSDT": [],
+      "GALAUSDT": [],
+      "LINKUSDT": [],
+      "TRXUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "DOGEUSDT": 0,
+      "ETHUSDT": 0,
+      "GALAUSDT": 0,
+      "LINKUSDT": 0,
+      "TRXUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2026-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.007380073800738,
+    "last_fit_day": "2026-09-30",
+    "maximum_cooks_distance": 1.5060331490774055,
+    "maximum_leverage": 0.12847089764100716,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 273,
+    "n_excluded_days": 0,
+    "n_fit_days": 273,
+    "n_parameters": 2,
+    "period": "oos_partial_2026_jan_sep",
+    "r_squared": 0.34347105045709825,
+    "rank": 2,
+    "residual_sum_squares": 0.02920185316475694,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      16.522711641858308,
+      16.522711641858304
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B05",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999998
+    },
+    "vif_above_10": false
+  },
+  {
+    "adjusted_r_squared": 0.18201971762065172,
+    "alpha_annualization": "365_times_daily_arithmetic_intercept_not_CAGR",
+    "causal": false,
+    "excluded_date_ranges": [],
+    "factor_missing_date_ranges": {
+      "BNBUSDT": [],
+      "BTCUSDT": [],
+      "ETHUSDT": [],
+      "GALAUSDT": [],
+      "LINKUSDT": [],
+      "MANAUSDT": [],
+      "TRXUSDT": [],
+      "XRPUSDT": []
+    },
+    "factor_missing_days": {
+      "BNBUSDT": 0,
+      "BTCUSDT": 0,
+      "ETHUSDT": 0,
+      "GALAUSDT": 0,
+      "LINKUSDT": 0,
+      "MANAUSDT": 0,
+      "TRXUSDT": 0,
+      "XRPUSDT": 0
+    },
+    "first_fit_day": "2026-01-01",
+    "hac_max_lag_days": 27,
+    "hac_small_sample_multiplier": 1.007380073800738,
+    "last_fit_day": "2026-09-30",
+    "maximum_cooks_distance": 2.9930052266977136,
+    "maximum_leverage": 0.12847089764100716,
+    "model_type": "btc_only_joint_matched_sample",
+    "n_calendar_days": 273,
+    "n_excluded_days": 0,
+    "n_fit_days": 273,
+    "n_parameters": 2,
+    "period": "oos_partial_2026_jan_sep",
+    "r_squared": 0.18502699807057577,
+    "rank": 2,
+    "residual_sum_squares": 0.09490108182730991,
+    "sample_scope": "joint_factor_observed_days_only",
+    "selection_adjusted": false,
+    "singular_values": [
+      16.522711641858308,
+      16.522711641858304
+    ],
+    "standardized_condition_number": 1.0000000000000002,
+    "standardized_condition_warning": false,
+    "status": "estimated_conditional_posthoc",
+    "strategy_id": "B06",
+    "svd_relative_rank_tolerance": 1e-12,
+    "vif": {
+      "BTCUSDT": 0.9999999999999998
+    },
+    "vif_above_10": false
+  }
+]

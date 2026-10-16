@@ -1,0 +1,17 @@
+{
+  "affected_models": [
+    "A02 validation largest Cooks distance",
+    "B05 validation largest leverage"
+  ],
+  "end_mark": 0.4334,
+  "end_mark_utc": "2024-12-04T00:00:00+00:00",
+  "factor_day": "2024-12-03",
+  "interpretation": "Observed extreme in the inherited pinned normalized source; not an additional raw-archive or executable-fill audit. No row removed, no fit repeated and no strategy changed.",
+  "simple_return": 0.9610859728506786,
+  "source": "research/post_oos_diagnostics_20261015/shared/data/prices.parquet",
+  "source_sha256": "dc66f865cca81ebf849ef6b78fcbb3919b8cdc31351dad91b019155b02318efd",
+  "start_mark": 0.221,
+  "start_mark_utc": "2024-12-03T00:00:00+00:00",
+  "status": "pinned_normalized_source_price_reconciliation_passed",
+  "symbol": "TRXUSDT"
+}

@@ -5,22 +5,27 @@ transaction costs, and the limits of apparent backtest profitability. All
 calculations run on your computer. No Codex/ChatGPT, cloud notebook, account,
 exchange API key, live order, scheduled monitor, or Git LFS service is required.
 
-## Final reading list — three consolidated reports
+## Final reading list — one latest edition, three reports
 
-The current dated edition adds **per-coin contribution intervals and a joint
-eight-coin alpha/beta model** for all nine unchanged frozen strategies in all
-three periods. Exactly three report titles remain the primary reading list:
+Only `final_reports_20261016/` is the current final-report edition. It includes
+**per-coin contribution intervals and joint eight-coin alpha/betas** for all
+nine unchanged frozen strategies across development, validation and 2026:
 
 1. **Development and robustness** — [PDF](final_reports_20261016/01_development/01_development_and_robustness.pdf) · [offline HTML](final_reports_20261016/01_development/01_development_and_robustness.html).
 2. **Validation and frozen selection** — [PDF](final_reports_20261016/02_validation/02_validation_and_frozen_selection.pdf) · [offline HTML](final_reports_20261016/02_validation/02_validation_and_frozen_selection.html).
 3. **2026 evaluation and conclusions** — [PDF](final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf) · [offline HTML](final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.html).
 
-These are post-hoc explanatory diagnostics, not new OOS results, causal effects
-or a new winner. Original returns, Sharpe, turnover, drawdowns and selections
-are unchanged. See the [publication/reproduction guide](docs/ATTRIBUTION_PUBLICATION.md).
+The superseded final-report edition has been removed from the current tree;
+Git history retains it. Older non-reader provenance is retained without a
+second PDF/HTML edition. [Current verification and layout](docs/FINAL_REPORTS_PUBLICATION.md):
 
-The [prior edition](final_reports_20261015/README.md) remains unchanged as
-archival version history of the same three reports, not a fourth report.
+```sh
+python3 scripts/verify_latest_final_reports.py
+```
+
+No frozen strategy, original performance result or current report bytes changed.
+The factor additions remain post-hoc diagnostics, not new OOS evidence or a
+new winner. See the [method/reproduction guide](docs/ATTRIBUTION_PUBLICATION.md).
 
 ## Earlier reports (archival)
 

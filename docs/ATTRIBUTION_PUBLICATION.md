@@ -3,8 +3,10 @@
 The current edition still has **three primary reports**, one for development,
 one for validation, and one for January–September 2026. Each now includes all
 nine unchanged frozen strategies' accounting contributions from all eight
-coins and joint-model alpha/beta confidence intervals. The previous dated
-edition remains unchanged archival version history of the same report titles.
+coins and joint-model alpha/beta confidence intervals. Only the October 16 final-report edition remains in the current checkout.
+The superseded reader edition is recoverable from Git history, not duplicated
+as another visible final-report folder. This October 19 cleanup does not
+change any report or scientific result; see the [current publication guide](FINAL_REPORTS_PUBLICATION.md).
 
 ## What was added, and what was not changed
 
@@ -71,15 +73,29 @@ From the checkout root, this standard-library-only command performs **read-only
 inspection/checksum verification**, without loading prices or running models:
 
 ```sh
-python3 scripts/verify_basket_attribution_publication.py
+python3 scripts/verify_latest_final_reports.py
 ```
 
-It checks published file hashes and links, unchanged prior-edition bytes,
-period row counts and identities, original-query preservation, scientific
-receipt/custody relationships, and the exact three current PDF/HTML editions.
+It checks current file hashes and links, all 250 historical input dispositions,
+19 relocated provenance JSONs and 26 exact-byte aliases, period row counts and
+identities, archived-snapshot original-query preservation, scientific
+receipt/custody relationships, and exactly three current PDF/HTML pairs. The
+seven superseded reader files are deliberately absent; their historical hashes
+and recoverable Git commit are recorded, not silently reported as current
+verified bytes. The three navigation amendments retain old and new hashes.
 The original local seals also describe deliberately omitted app/QA artifacts
 and historical raw inputs; they are historical custody records, not assertions
 that those complete archives are present or newly checked in this clone.
+
+Historical publication manifests and verifiers remain unchanged. The old
+`verify_final_reports_publication.py` and `verify_basket_attribution_publication.py`
+are not current-layout entry points: use a separate checkout at commit
+`b965678aacec9f653c27a41a9351dda3ee913dd6` to restore their original layout.
+The current maintenance manifest is
+`provenance/latest_final_reports_20261019.json`. The sealed report README
+continues to describe its creation-time archival layout; the current
+[publication guide](FINAL_REPORTS_PUBLICATION.md) supersedes that wording
+without altering the report seal.
 
 For **optional numerical reproduction of the saved diagnostics**, install the
 pinned dependencies in `requirements.lock.txt`, then run:

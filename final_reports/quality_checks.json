@@ -1,0 +1,51 @@
+{
+  "all_financial_values_unchanged": true,
+  "field_equality_checks": 30159,
+  "no_strategy_rerun_or_selection": true,
+  "report_count": 3,
+  "reports": [
+    {
+      "artifact_id": "report:f26b9347-f15d-4a65-bc28-46d53878f60f",
+      "offline_html_sha256": "5af9aaf284b0bfbd924dcdd655a5ded1c315fdf761646ef2e73a6550c9277823",
+      "pages": 16,
+      "pdf_sha256": "002ca6d79b9e8c5200fddc20632dc8c03659d69d28bdf2f01aee704563cc5da5",
+      "preview_url": "http://127.0.0.1:60578/?view=1",
+      "report": "01_development",
+      "snapshot_sha256": "a9b1dc95d287bcc81323a1406207224f6391edd2bae1b81ccaa53398f5f832c7"
+    },
+    {
+      "artifact_id": "report:14e8d12f-59f2-4502-8ad1-811a0302ee01",
+      "offline_html_sha256": "381859e8ae50057199f1790b05c5640be1aa7f0bb648add54e474ee7222ffbae",
+      "pages": 17,
+      "pdf_sha256": "74f3b4e220d8ed60acc268e6bc518780a6b1fe3b582f0a02815c2da346ab74ce",
+      "preview_url": "http://127.0.0.1:60579/?view=1",
+      "report": "02_validation",
+      "snapshot_sha256": "dd9a853e49a071ffb3d9b8f417b5fc8881a1ff17e103f2aee1e74960c905ccce"
+    },
+    {
+      "artifact_id": "report:5adafe7e-d3eb-4b9e-bf95-d857c77f7240",
+      "offline_html_sha256": "c055675608d0768ae352c5a9b803b0e6d57f5a083712ea58175f267e2385ceea",
+      "pages": 20,
+      "pdf_sha256": "7f9d819084928a7c5ce9cbae05c9d44c7e3066d06b7ab62cfe466aa9f9365f17",
+      "preview_url": "http://127.0.0.1:60580/?view=1",
+      "report": "03_2026_evaluation",
+      "snapshot_sha256": "d2351f5097ce46b495894d27d19b86b11bcb01fd14411a3a884a8a55e30b6fce"
+    }
+  ],
+  "reviewed_query_count": 68,
+  "stable_report_and_query_identities": true,
+  "status": "PASS",
+  "total_pdf_pages": 53,
+  "checks": [
+    "Three current reports only; complete current development/validation/OOS scope",
+    "All 53 final PDF pages visually inspected; final pixel closure checked",
+    "68 reviewed queries and stable artifact IDs",
+    "30,159 saved-row field equality checks; only nonfinancial labels/narrative vary",
+    "Frozen strategies, financial results and uncertainty estimates unchanged",
+    "Normal 1280 and narrow 430 native browser checks",
+    "A03 eight-row source scope and current result aliases checked in all three",
+    "Offline report renders with connect-src none; no external script URLs or runtime errors",
+    "32 distinct CSV links respond HTTP 200 and match local bytes",
+    "PDF operation marker called once by root for the three-file edit batch"
+  ]
+}

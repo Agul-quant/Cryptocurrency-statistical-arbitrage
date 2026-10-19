@@ -1,0 +1,55 @@
+{
+  "query_id": "sign_flips",
+  "period": "validation",
+  "rows": [
+    {
+      "Dev negative": 1010633,
+      "Dev positive": 106302,
+      "Family": "All families",
+      "Negative → positive": "6.40%",
+      "Positive → negative": "62.90%"
+    },
+    {
+      "Dev negative": 466887,
+      "Dev positive": 49083,
+      "Family": "Momentum",
+      "Negative → positive": "8.69%",
+      "Positive → negative": "72.29%"
+    },
+    {
+      "Dev negative": 502473,
+      "Dev positive": 13497,
+      "Family": "Reversal",
+      "Negative → positive": "1.79%",
+      "Positive → negative": "90.91%"
+    },
+    {
+      "Dev negative": 15741,
+      "Dev positive": 10719,
+      "Family": "Buffered momentum",
+      "Negative → positive": "35.04%",
+      "Positive → negative": "66.24%"
+    },
+    {
+      "Dev negative": 11562,
+      "Dev positive": 14898,
+      "Family": "Long/cash trend",
+      "Negative → positive": "63.81%",
+      "Positive → negative": "18.53%"
+    },
+    {
+      "Dev negative": 9105,
+      "Dev positive": 17355,
+      "Family": "Long/short trend",
+      "Negative → positive": "24.91%",
+      "Positive → negative": "49.43%"
+    },
+    {
+      "Dev negative": 4865,
+      "Dev positive": 750,
+      "Family": "BTC residual reversal",
+      "Negative → positive": "0.00%",
+      "Positive → negative": "90.40%"
+    }
+  ]
+}

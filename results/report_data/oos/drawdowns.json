@@ -1,0 +1,105 @@
+{
+  "query_id": "drawdowns",
+  "period": "oos",
+  "rows": [
+    {
+      "DD episode days": 124.08333333333333,
+      "Daily ES95 loss": 0.026490671889570352,
+      "ID": "A01",
+      "Longest underwater days": 124.08333333333333,
+      "Peak UTC": "2026-05-05 18:00",
+      "Recovery UTC": "2026-09-06 20:00",
+      "To trough days": 10.625,
+      "Trough UTC": "2026-05-16 09:00",
+      "Worst day": -0.046572814514183034
+    },
+    {
+      "DD episode days": 63.166666666666664,
+      "Daily ES95 loss": 0.02653856728931371,
+      "ID": "A02",
+      "Longest underwater days": 139.58333333333334,
+      "Peak UTC": "2026-02-28 20:00",
+      "Recovery UTC": "2026-05-03 00:00",
+      "To trough days": 50.833333333333336,
+      "Trough UTC": "2026-04-20 16:00",
+      "Worst day": -0.05636799573376815
+    },
+    {
+      "DD episode days": 38.708333333333336,
+      "Daily ES95 loss": 0.015714903421279056,
+      "ID": "A03",
+      "Longest underwater days": 38.708333333333336,
+      "Peak UTC": "2026-01-18 01:00",
+      "Recovery UTC": "2026-02-25 18:00",
+      "To trough days": 13.708333333333334,
+      "Trough UTC": "2026-01-31 18:00",
+      "Worst day": -0.02343870190506488
+    },
+    {
+      "DD episode days": 236.95833333333334,
+      "Daily ES95 loss": 0.06032681552463353,
+      "ID": "A04",
+      "Longest underwater days": 236.95833333333334,
+      "Peak UTC": "2026-02-06 01:00",
+      "Recovery UTC": "Unrecovered",
+      "To trough days": 72.95833333333333,
+      "Trough UTC": "2026-04-20 00:00",
+      "Worst day": -0.11256067362107182
+    },
+    {
+      "DD episode days": 250.375,
+      "Daily ES95 loss": 0.03265980466708549,
+      "ID": "B01",
+      "Longest underwater days": 250.375,
+      "Peak UTC": "2026-01-23 15:00",
+      "Recovery UTC": "Unrecovered",
+      "To trough days": 237.45833333333334,
+      "Trough UTC": "2026-09-18 02:00",
+      "Worst day": -0.07417834163389635
+    },
+    {
+      "DD episode days": 272.8333333333333,
+      "Daily ES95 loss": 0.03914571942981253,
+      "ID": "B03",
+      "Longest underwater days": 272.8333333333333,
+      "Peak UTC": "2026-01-01 04:00",
+      "Recovery UTC": "Unrecovered",
+      "To trough days": 272.125,
+      "Trough UTC": "2026-09-30 07:00",
+      "Worst day": -0.07517862599446942
+    },
+    {
+      "DD episode days": 250.79166666666666,
+      "Daily ES95 loss": 0.03002281826408553,
+      "ID": "B04",
+      "Longest underwater days": 250.79166666666666,
+      "Peak UTC": "2026-01-23 05:00",
+      "Recovery UTC": "Unrecovered",
+      "To trough days": 220.45833333333334,
+      "Trough UTC": "2026-08-31 16:00",
+      "Worst day": -0.053738657681929355
+    },
+    {
+      "DD episode days": 259.2916666666667,
+      "Daily ES95 loss": 0.03087476594385746,
+      "ID": "B05",
+      "Longest underwater days": 259.2916666666667,
+      "Peak UTC": "2026-01-14 17:00",
+      "Recovery UTC": "Unrecovered",
+      "To trough days": 142.5,
+      "Trough UTC": "2026-06-06 05:00",
+      "Worst day": -0.052828572679034784
+    },
+    {
+      "DD episode days": 237.0,
+      "Daily ES95 loss": 0.04801515001846103,
+      "ID": "B06",
+      "Longest underwater days": 237.0,
+      "Peak UTC": "2026-02-06 00:00",
+      "Recovery UTC": "Unrecovered",
+      "To trough days": 222.75,
+      "Trough UTC": "2026-09-16 18:00",
+      "Worst day": -0.10620381752086933
+    }
+  ]
+}

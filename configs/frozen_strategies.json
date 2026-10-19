@@ -1,0 +1,349 @@
+{
+  "order": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "B01",
+    "B03",
+    "B04",
+    "B05",
+    "B06"
+  ],
+  "strategies": [
+    {
+      "comparison_id": "A01",
+      "track": "A_development_only",
+      "basket_id": 4645,
+      "experiment_id": "buffered_momentum_h0672_r168_b025",
+      "report_family": "buffered_momentum",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT",
+        "LUNAUSDT",
+        "FTMUSDT",
+        "TRXUSDT",
+        "LINKUSDT",
+        "LTCUSDT"
+      ],
+      "case": {
+        "buffer_l1": 0.25,
+        "experiment_id": "buffered_momentum_h0672_r168_b025",
+        "family": "cross_momentum",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "buffered_momentum",
+        "strategy_id": "cross_momentum_h672_r168_b025"
+      },
+      "risk_limits": {
+        "baseline_max": 35.14976630186958,
+        "development_annualized": 31.437499999999996,
+        "limit": 52.72464945280437,
+        "multiplier": 1.5,
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 35.14976630186958,
+        "max_drawdown": 0.4
+      }
+    },
+    {
+      "comparison_id": "A02",
+      "track": "A_development_only",
+      "basket_id": 4645,
+      "experiment_id": "momentum_h0672_r072",
+      "report_family": "momentum",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT",
+        "LUNAUSDT",
+        "FTMUSDT",
+        "TRXUSDT",
+        "LINKUSDT",
+        "LTCUSDT"
+      ],
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "momentum_h0672_r072",
+        "family": "momentum",
+        "grid_id": "time_scale",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 72,
+        "report_family": "momentum",
+        "strategy_id": "momentum_h0672_r072"
+      },
+      "risk_limits": {
+        "baseline_max": 55.4344790241678,
+        "development_annualized": 49.583333333333336,
+        "limit": 83.1517185362517,
+        "multiplier": 1.5,
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 55.4344790241678,
+        "max_drawdown": 0.4
+      }
+    },
+    {
+      "comparison_id": "A03",
+      "track": "A_development_only",
+      "basket_id": 1159,
+      "experiment_id": "reversal_h1440_r168",
+      "report_family": "reversal",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SHIBUSDT",
+        "DOTUSDT",
+        "ADAUSDT",
+        "MANAUSDT",
+        "FILUSDT",
+        "VETUSDT"
+      ],
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "reversal_h1440_r168",
+        "family": "reversal",
+        "grid_id": "time_scale",
+        "lookback_h": 1440,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "reversal",
+        "strategy_id": "reversal_h1440_r168"
+      },
+      "risk_limits": {
+        "baseline_max": 27.625,
+        "development_annualized": 27.625,
+        "limit": 41.4375,
+        "multiplier": 1.5,
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 22.344391244870042,
+        "max_drawdown": 0.4
+      }
+    },
+    {
+      "comparison_id": "A04",
+      "track": "A_development_only",
+      "basket_id": 4444,
+      "experiment_id": "trend_long_short_h0672_r024",
+      "report_family": "trend_long_short",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT",
+        "LUNAUSDT",
+        "AVAXUSDT",
+        "FTMUSDT",
+        "FILUSDT",
+        "VETUSDT"
+      ],
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "trend_long_short_h0672_r024",
+        "family": "trend_long_short",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 24,
+        "report_family": "trend_long_short",
+        "strategy_id": "trend_long_short_h672_r024_b000"
+      },
+      "risk_limits": {
+        "baseline_max": 63.912448700410394,
+        "development_annualized": 50.5,
+        "limit": 95.8686730506156,
+        "multiplier": 1.5,
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 63.912448700410394,
+        "max_drawdown": 0.4
+      }
+    },
+    {
+      "comparison_id": "B01",
+      "track": "B_development_validation",
+      "basket_id": 2323,
+      "experiment_id": "buffered_momentum_h0672_r024_b025",
+      "report_family": "buffered_momentum",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "DOGEUSDT",
+        "FTMUSDT",
+        "AXSUSDT",
+        "VETUSDT"
+      ],
+      "case": {
+        "buffer_l1": 0.25,
+        "experiment_id": "buffered_momentum_h0672_r024_b025",
+        "family": "cross_momentum",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 24,
+        "report_family": "buffered_momentum",
+        "strategy_id": "cross_momentum_h672_r024_b025"
+      },
+      "risk_limits": {
+        "baseline_max": 81.6875,
+        "development_annualized": 81.6875,
+        "limit": 122.53125,
+        "multiplier": 1.5,
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 77.44599293205653,
+        "max_drawdown": 0.4
+      }
+    },
+    {
+      "comparison_id": "B03",
+      "track": "B_development_validation",
+      "basket_id": 2457,
+      "experiment_id": "momentum_h2160_r072",
+      "report_family": "momentum",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "FTMUSDT",
+        "MATICUSDT",
+        "AXSUSDT",
+        "LTCUSDT"
+      ],
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "momentum_h2160_r072",
+        "family": "momentum",
+        "grid_id": "time_scale",
+        "lookback_h": 2160,
+        "phase_hours": 0,
+        "rebalance_h": 72,
+        "report_family": "momentum",
+        "strategy_id": "momentum_h2160_r072"
+      },
+      "risk_limits": {
+        "baseline_max": 27.75,
+        "development_annualized": 27.75,
+        "limit": 41.625,
+        "multiplier": 1.5,
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 24.133606931144552,
+        "max_drawdown": 0.4
+      }
+    },
+    {
+      "comparison_id": "B04",
+      "track": "B_development_validation",
+      "basket_id": 6064,
+      "experiment_id": "reversal_h2160_r168",
+      "report_family": "reversal",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "DOTUSDT",
+        "LUNAUSDT",
+        "AVAXUSDT",
+        "MANAUSDT",
+        "FILUSDT",
+        "VETUSDT"
+      ],
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "reversal_h2160_r168",
+        "family": "reversal",
+        "grid_id": "time_scale",
+        "lookback_h": 2160,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "reversal",
+        "strategy_id": "reversal_h2160_r168"
+      },
+      "risk_limits": {
+        "baseline_max": 22.344391244870042,
+        "development_annualized": 21.312499999999996,
+        "limit": 33.516586867305065,
+        "multiplier": 1.5,
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 22.344391244870042,
+        "max_drawdown": 0.4
+      }
+    },
+    {
+      "comparison_id": "B05",
+      "track": "B_development_validation",
+      "basket_id": 2330,
+      "experiment_id": "trend_long_cash_h0672_r168",
+      "report_family": "trend_long_cash",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "DOGEUSDT",
+        "TRXUSDT",
+        "GALAUSDT",
+        "LINKUSDT"
+      ],
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "trend_long_cash_h0672_r168",
+        "family": "trend_long_cash",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "trend_long_cash",
+        "strategy_id": "trend_long_cash_h672_r168_b000"
+      },
+      "risk_limits": {
+        "baseline_max": 12.482900136798905,
+        "development_annualized": 11.875,
+        "limit": 18.72435020519836,
+        "multiplier": 1.5,
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 12.482900136798905,
+        "max_drawdown": 0.4
+      }
+    },
+    {
+      "comparison_id": "B06",
+      "track": "B_development_validation",
+      "basket_id": 2495,
+      "experiment_id": "trend_long_short_h0672_r168",
+      "report_family": "trend_long_short",
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "BNBUSDT",
+        "XRPUSDT",
+        "TRXUSDT",
+        "MANAUSDT",
+        "GALAUSDT",
+        "LINKUSDT"
+      ],
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "trend_long_short_h0672_r168",
+        "family": "trend_long_short",
+        "grid_id": "extensions",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "trend_long_short",
+        "strategy_id": "trend_long_short_h672_r168_b000"
+      },
+      "risk_limits": {
+        "baseline_max": 24.591313269493845,
+        "development_annualized": 22.875,
+        "limit": 36.88696990424077,
+        "multiplier": 1.5,
+        "unit": "capital_multiples_per_year_full_L1",
+        "validation_annualized": 24.591313269493845,
+        "max_drawdown": 0.4
+      }
+    }
+  ],
+  "factor_family_status": "No eligible Track B factor candidate; no factor strategy added."
+}

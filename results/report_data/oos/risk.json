@@ -1,0 +1,105 @@
+{
+  "query_id": "risk",
+  "period": "oos",
+  "rows": [
+    {
+      "Ann. volatility": 0.2521502230222924,
+      "BTC alpha / year": 0.30538279740947794,
+      "BTC beta": -0.12277331677442356,
+      "Calmar": 2.1911408163677137,
+      "Cash allocation": null,
+      "Gross exposure": 1.0,
+      "ID": "A01",
+      "Net exposure": 0.0,
+      "Sortino": 1.828489458982888
+    },
+    {
+      "Ann. volatility": 0.25971390425084473,
+      "BTC alpha / year": 0.21777075814622418,
+      "BTC beta": -0.11499634900486927,
+      "Calmar": 1.2667381533038955,
+      "Cash allocation": null,
+      "Gross exposure": 1.0,
+      "ID": "A02",
+      "Net exposure": 0.0,
+      "Sortino": 1.280610501834987
+    },
+    {
+      "Ann. volatility": 0.16325026189584185,
+      "BTC alpha / year": 0.37705155385643274,
+      "BTC beta": 0.0276524717471443,
+      "Calmar": 6.050481559254318,
+      "Cash allocation": null,
+      "Gross exposure": 1.0,
+      "ID": "A03",
+      "Net exposure": 0.0,
+      "Sortino": 3.973405982030952
+    },
+    {
+      "Ann. volatility": 0.5209066693454659,
+      "BTC alpha / year": -0.0974980088938481,
+      "BTC beta": -0.382817973208168,
+      "Calmar": -0.5647151221651209,
+      "Cash allocation": null,
+      "Gross exposure": 0.9981684981684982,
+      "ID": "A04",
+      "Net exposure": -0.03296703296703297,
+      "Sortino": -0.32406635609993
+    },
+    {
+      "Ann. volatility": 0.29284506593373616,
+      "BTC alpha / year": -0.2371121294179897,
+      "BTC beta": -0.045796394827682704,
+      "Calmar": -0.7257524731446365,
+      "Cash allocation": null,
+      "Gross exposure": 1.0,
+      "ID": "B01",
+      "Net exposure": 0.0,
+      "Sortino": -1.2196729143664744
+    },
+    {
+      "Ann. volatility": 0.28910261808187365,
+      "BTC alpha / year": -0.7604932697690366,
+      "BTC beta": -0.11278148746715663,
+      "Calmar": -1.2107979785595342,
+      "Cash allocation": null,
+      "Gross exposure": 1.0,
+      "ID": "B03",
+      "Net exposure": 0.0,
+      "Sortino": -3.3006646552406385
+    },
+    {
+      "Ann. volatility": 0.24106467775702464,
+      "BTC alpha / year": -0.17827643996869275,
+      "BTC beta": 0.025951352307831806,
+      "Calmar": -0.5859912166705472,
+      "Cash allocation": null,
+      "Gross exposure": 1.0,
+      "ID": "B04",
+      "Net exposure": 0.0,
+      "Sortino": -1.0065185641209922
+    },
+    {
+      "Ann. volatility": 0.24430943883123252,
+      "BTC alpha / year": -0.06431664707611322,
+      "BTC beta": 0.31125290931628063,
+      "Calmar": -0.34580698453577374,
+      "Cash allocation": 0.5077838827838828,
+      "Gross exposure": 0.49221611721611724,
+      "ID": "B05",
+      "Net exposure": 0.49221611721611724,
+      "Sortino": -0.2989950619121422
+    },
+    {
+      "Ann. volatility": 0.39529921407060276,
+      "BTC alpha / year": 0.03521061857790566,
+      "BTC beta": -0.3696337399315853,
+      "Calmar": -0.28725983003468686,
+      "Cash allocation": null,
+      "Gross exposure": 1.0,
+      "ID": "B06",
+      "Net exposure": -0.015567765567765568,
+      "Sortino": 0.07074278040854066
+    }
+  ]
+}

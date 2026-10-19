@@ -1,0 +1,33 @@
+{
+  "query_id": "a03_sides",
+  "period": "oos",
+  "rows": [
+    {
+      "Best 5 weeks share": 0.356364927890178,
+      "Largest abs. coin share": 0.27071779230165005,
+      "Long contribution pp": 32.69187681359439,
+      "Net return": 0.643845665089142,
+      "Period": "2022-2023",
+      "Positive months": "14/24",
+      "Short contribution pp": 31.69268969532051
+    },
+    {
+      "Best 5 weeks share": 0.5252946782517086,
+      "Largest abs. coin share": 0.2899575823892034,
+      "Long contribution pp": 4.6389807800994,
+      "Net return": -0.223113082252124,
+      "Period": "2024-2025",
+      "Positive months": "9/24",
+      "Short contribution pp": -26.95028900531164
+    },
+    {
+      "Best 5 weeks share": 0.5121470048296934,
+      "Largest abs. coin share": 0.19551197502414097,
+      "Long contribution pp": 20.517702608901068,
+      "Net return": 0.313753643340666,
+      "Period": "Jan-Sep 2026",
+      "Positive months": "7/9",
+      "Short contribution pp": 10.857661725165354
+    }
+  ]
+}

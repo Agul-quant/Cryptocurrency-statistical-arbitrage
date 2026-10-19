@@ -1,0 +1,14 @@
+{
+  "query_id": "prospective",
+  "period": "oos",
+  "rows": [
+    {
+      "End UTC": null,
+      "Monitoring authorized": false,
+      "Orders authorized": false,
+      "Proposed months": 18,
+      "Start UTC": null,
+      "Status": "DRAFT_NOT_APPROVED_NOT_ACTIVATED"
+    }
+  ]
+}

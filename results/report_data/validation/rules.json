@@ -1,0 +1,48 @@
+{
+  "query_id": "rules",
+  "period": "validation",
+  "rows": [
+    {
+      "Execution": "lag1 means idealized observed-close fill, not genuine one-hour execution delay",
+      "Fees": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        40
+      ],
+      "No extra gates": [
+        "annual consistency",
+        "40bps survival",
+        "additional-hour survival",
+        "parameter neighborhoods",
+        "basket neighborhoods",
+        "drawdown caps",
+        "volatility caps",
+        "beta caps"
+      ],
+      "Track A rule": {
+        "annual_gate": "Each2022/2023 evaluatedfinite netreturn>0 anddefinedfiniteSharpe>0 fromsamecontinuousdevelopmentpath",
+        "concentration_policy": "Diagnosticonly; nocoin/eventdeletion,noconcentrationcutoff orLUNAexclusion",
+        "development_primary": "20bpslag1idealizedobservedclose",
+        "family_selection": "Selectatmostonepairperreport_familybydescendingrobust_score; ties lowerfullprimaryL1turnover,experiment_idlexicographic,basket_idnumeric. No rounding.",
+        "full_primary_gate": "Evaluatedfinite netreturn,Sharpe andfullL1turnover; allcash/undefinedneverzero-filled; fullL1turnoverfiniteandnonnegative",
+        "neighborhood_gate": "Atleastonedeclaredparameterneighbor ANDall28declaredsame-tierbasketneighbors. Everyexpectedneighbor evaluatedfiniteprimarynetreturn anddefinedfiniteprimarySharpe; eachkind strictly>0.5 positiveprimarynetreturnfraction. Centerexcluded.",
+        "no_qualifier_policy": "Selectnoneforfamilywithzeroeligiblepairs; neverrelaxrulesaftercounts",
+        "robust_score": "min(2022Sharpe,2023Sharpe,medianparameterneighborfull20lag1Sharpe,medianbasketneighborfull20lag1Sharpe), finite andstrictly>0",
+        "scope": "All169cases×6615baskets; only2022–2023saveddevelopmentresults",
+        "search_bias": "Ruledesignedafterdevelopmentrobustness; thresholds are heuristics, not calibratedsignificance. Candidateis optimizedovercorrelatedconfigurationsandbaskets; freeze doesnoterase search/priorinspectionbias.",
+        "stress_gate": "Full2022–23 evaluatedfinite netreturn>0 at40bpslag1 and20bpslag2; definedfiniteSharpe>0 at20bpslag2. Noannualstressgate andno40bpsSharpegate."
+      },
+      "Track B rule": {
+        "both_net_total_return": "finite and strictly greater than zero",
+        "both_sharpe": "finite/defined; no extra positive-Sharpe threshold",
+        "both_status": "evaluated",
+        "development_ranked_group": 1,
+        "scenario_id": "cost20_lag1"
+      },
+      "Track B timing": "Rule chosen using observed validation; freeze is before executing this selection, NOT before validation inspection"
+    }
+  ]
+}

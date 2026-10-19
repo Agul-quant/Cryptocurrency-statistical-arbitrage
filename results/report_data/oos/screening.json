@@ -1,0 +1,38 @@
+{
+  "query_id": "screening",
+  "period": "oos",
+  "rows": [
+    {
+      "95% CI pp": "[-18.21, 9.24]",
+      "Centered p": 0.3224193951512122,
+      "Contrast": "Overall survivors - controls",
+      "Holm-4 p": 0.6448387903024244,
+      "Lift pp": -9.435638943318637,
+      "Reject 5%": false
+    },
+    {
+      "95% CI pp": "[-20.73, 15.25]",
+      "Centered p": 0.4038990252436891,
+      "Contrast": "Within development-positive",
+      "Holm-4 p": 0.6448387903024244,
+      "Lift pp": -9.368973081366278,
+      "Reject 5%": false
+    },
+    {
+      "95% CI pp": "[-18.52, 7.33]",
+      "Centered p": 0.20019995001249688,
+      "Contrast": "Within development-negative",
+      "Holm-4 p": 0.6005998500374906,
+      "Lift pp": -9.919583706662724,
+      "Reject 5%": false
+    },
+    {
+      "95% CI pp": "[-16.77, 1.21]",
+      "Centered p": 0.05923519120219945,
+      "Contrast": "Configuration-standardized",
+      "Holm-4 p": 0.2369407648087978,
+      "Lift pp": -10.709614299783336,
+      "Reject 5%": false
+    }
+  ]
+}

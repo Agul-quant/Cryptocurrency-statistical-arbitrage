@@ -1,0 +1,90 @@
+{
+  "query_id": "annual",
+  "period": "development",
+  "rows": [
+    {
+      "family": "Momentum",
+      "year": "2022",
+      "medianReturn": -0.42262900918359314,
+      "medianSharpe": -1.5959982103338848,
+      "maxDD": 0.6508436190567202
+    },
+    {
+      "family": "Momentum",
+      "year": "2023",
+      "medianReturn": -0.36946924525043223,
+      "medianSharpe": -1.907003299132284,
+      "maxDD": 0.46660341417260964
+    },
+    {
+      "family": "Reversal",
+      "year": "2022",
+      "medianReturn": -0.6736995970801416,
+      "medianSharpe": -2.2967917797294106,
+      "maxDD": 0.7063453587309696
+    },
+    {
+      "family": "Reversal",
+      "year": "2023",
+      "medianReturn": -0.500715284598223,
+      "medianSharpe": -2.812832780412344,
+      "maxDD": 0.549621539331562
+    },
+    {
+      "family": "Buffered momentum",
+      "year": "2022",
+      "medianReturn": -0.05412604710992024,
+      "medianSharpe": -0.0090554888988389,
+      "maxDD": 0.3403754210582055
+    },
+    {
+      "family": "Buffered momentum",
+      "year": "2023",
+      "medianReturn": -0.013342514864728643,
+      "medianSharpe": 0.06602319237499649,
+      "maxDD": 0.2399281636251911
+    },
+    {
+      "family": "Trend long/cash",
+      "year": "2022",
+      "medianReturn": -0.3858742890271646,
+      "medianSharpe": -1.0171686246373397,
+      "maxDD": 0.4351935094793582
+    },
+    {
+      "family": "Trend long/cash",
+      "year": "2023",
+      "medianReturn": 0.6498368438211013,
+      "medianSharpe": 1.4930690419583688,
+      "maxDD": 0.3176419517077867
+    },
+    {
+      "family": "Trend long/short",
+      "year": "2022",
+      "medianReturn": 0.03549792056370839,
+      "medianSharpe": 0.4002078502591886,
+      "maxDD": 0.5126360764235229
+    },
+    {
+      "family": "Trend long/short",
+      "year": "2023",
+      "medianReturn": 0.14089253367137458,
+      "medianSharpe": 0.5221553640552293,
+      "maxDD": 0.3998011029494575
+    },
+    {
+      "family": "BTC residual reversal",
+      "year": "2022",
+      "medianReturn": 0.0,
+      "medianSharpe": -0.12635261416997473,
+      "maxDD": 0.0
+    },
+    {
+      "family": "BTC residual reversal",
+      "year": "2023",
+      "medianReturn": -0.005774714856583322,
+      "medianSharpe": -0.9691646510626896,
+      "maxDD": 0.007473937536146556
+    }
+  ]
+}

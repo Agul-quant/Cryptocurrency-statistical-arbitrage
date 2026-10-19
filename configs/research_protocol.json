@@ -1,0 +1,49 @@
+{
+  "periods": {
+    "development": [
+      "2022-01-01T00:00:00Z",
+      "2024-01-01T00:00:00Z"
+    ],
+    "validation": [
+      "2024-01-01T00:00:00Z",
+      "2026-01-01T00:00:00Z"
+    ],
+    "oos_partial_2026_jan_sep": [
+      "2026-01-01T00:00:00Z",
+      "2026-10-01T00:00:00Z"
+    ]
+  },
+  "warmup_start": "2021-10-01T01:00:00Z",
+  "schedule_epoch": "2022-01-03T00:00:00Z",
+  "primary_cost_bps": 20,
+  "primary_execution_lag": 1,
+  "cost_sensitivity_bps": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    40
+  ],
+  "additional_execution_lag": 2,
+  "period_cash_initialization": true,
+  "terminal_liquidation": true,
+  "turnover": "full L1 target change, including entry, forced exits and liquidation",
+  "execution": "Lag1 is idealized observed-close execution; lag2 adds an hour. Not actual executable fills.",
+  "data_use": "Historical source data had been examined during this research. Frozen definitions preserve a fixed comparison; this is not a prospective live record.",
+  "selection": "Keep frozen nine unchanged; no selection or reselection by this runner.",
+  "limitations": [
+    "Theoretical shorts; funding, borrow, margin and capacity unmodeled.",
+    "No ordinary weight-drift maintenance costs.",
+    "Universe and configuration searches make highlighted results conditional.",
+    "The partial-year OOS window covers 273 days, not a complete year."
+  ],
+  "acceptance": {
+    "economic": "Primary full-hour compounded net return >0",
+    "statistical": "Positive HAC27 t and centered circular28day10000draw bootstrap-t Holm9 p <=0.05",
+    "drawdown_limit": 0.4,
+    "turnover_limit": "1.5 times maximum saved development/validation annualized full-L1 turnover; per-strategy unrounded limits in frozen registry",
+    "risk_application": "Research acceptance flags only; not intra-run stop rules",
+    "search_adjustment": "Holm9 tests the frozen nine only; not the preceding universe/configuration search."
+  }
+}

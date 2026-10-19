@@ -1,0 +1,87 @@
+{
+  "query_id": "identities",
+  "period": "oos",
+  "rows": [
+    {
+      "Basket": 4645,
+      "Buffer": 0.25,
+      "Coins": "BTC, ETH, SOL, LUNA/LUNC, FTM/S, TRX, LINK, LTC",
+      "ID": "A01",
+      "Lookback days": 28.0,
+      "Rebalance hours": 168,
+      "Strategy": "Buffered momentum"
+    },
+    {
+      "Basket": 4645,
+      "Buffer": 0.0,
+      "Coins": "BTC, ETH, SOL, LUNA/LUNC, FTM/S, TRX, LINK, LTC",
+      "ID": "A02",
+      "Lookback days": 28.0,
+      "Rebalance hours": 72,
+      "Strategy": "Momentum"
+    },
+    {
+      "Basket": 1159,
+      "Buffer": 0.0,
+      "Coins": "BTC, ETH, SHIB, DOT, ADA, MANA, FIL, VET",
+      "ID": "A03",
+      "Lookback days": 60.0,
+      "Rebalance hours": 168,
+      "Strategy": "Reversal"
+    },
+    {
+      "Basket": 4444,
+      "Buffer": 0.0,
+      "Coins": "BTC, ETH, SOL, LUNA/LUNC, AVAX, FTM/S, FIL, VET",
+      "ID": "A04",
+      "Lookback days": 28.0,
+      "Rebalance hours": 24,
+      "Strategy": "Trend long/short"
+    },
+    {
+      "Basket": 2323,
+      "Buffer": 0.25,
+      "Coins": "BTC, ETH, BNB, XRP, DOGE, FTM/S, AXS, VET",
+      "ID": "B01",
+      "Lookback days": 28.0,
+      "Rebalance hours": 24,
+      "Strategy": "Buffered momentum"
+    },
+    {
+      "Basket": 2457,
+      "Buffer": 0.0,
+      "Coins": "BTC, ETH, BNB, XRP, FTM/S, MATIC/POL, AXS, LTC",
+      "ID": "B03",
+      "Lookback days": 90.0,
+      "Rebalance hours": 72,
+      "Strategy": "Momentum"
+    },
+    {
+      "Basket": 6064,
+      "Buffer": 0.0,
+      "Coins": "BTC, ETH, DOT, LUNA/LUNC, AVAX, MANA, FIL, VET",
+      "ID": "B04",
+      "Lookback days": 90.0,
+      "Rebalance hours": 168,
+      "Strategy": "Reversal"
+    },
+    {
+      "Basket": 2330,
+      "Buffer": 0.0,
+      "Coins": "BTC, ETH, BNB, XRP, DOGE, TRX, GALA, LINK",
+      "ID": "B05",
+      "Lookback days": 28.0,
+      "Rebalance hours": 168,
+      "Strategy": "Trend long/cash"
+    },
+    {
+      "Basket": 2495,
+      "Buffer": 0.0,
+      "Coins": "BTC, ETH, BNB, XRP, TRX, MANA, GALA, LINK",
+      "ID": "B06",
+      "Lookback days": 28.0,
+      "Rebalance hours": 168,
+      "Strategy": "Trend long/short"
+    }
+  ]
+}

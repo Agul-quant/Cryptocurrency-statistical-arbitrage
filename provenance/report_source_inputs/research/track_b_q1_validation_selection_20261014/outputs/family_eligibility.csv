@@ -1,7 +1,0 @@
-report_family,n_full_pairs,n_q1_pairs,n_q1_positive_both_net_returns,n_eligible_pairs,selected_count,selection_status,family_id
-buffered_momentum,26460,20068,3619,3619,1,selected_one,B01
-factor_residual,6615,1355,0,0,0,unselected_no_eligible_pair,B02
-momentum,515970,107412,13585,13585,1,selected_one,B03
-reversal,515970,45673,1227,1227,1,selected_one,B04
-trend_long_cash,26460,24856,12125,12125,1,selected_one,B05
-trend_long_short,26460,25503,8776,8776,1,selected_one,B06

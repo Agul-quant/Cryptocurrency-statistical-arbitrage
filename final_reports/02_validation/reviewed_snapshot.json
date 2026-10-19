@@ -7,8 +7,8 @@
     "annual_a": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/annual_a.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -42,15 +42,15 @@
         }
       ],
       "source": {
-        "description": "Annual slices from each continuous two-year path. No artificial internal January cash reset, entry or liquidation; annual figures do not describe independently reinitialized strategies.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/annual_a.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "reference_reporting_20261014/outputs/notebook_tables/annual_net_returns.csv"
+          "results/report_data/validation/annual_a.json"
         ],
         "metricDefinitions": [
           {
@@ -63,7 +63,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "reference_reporting_20261014/outputs/notebook_tables/annual_net_returns.csv"
+                  "results/report_data/validation/annual_a.json"
                 ]
               }
             ]
@@ -76,8 +76,8 @@
     "annual_b": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/annual_b.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -118,15 +118,15 @@
         }
       ],
       "source": {
-        "description": "Annual slices of Track B paths; not additional selection gates. B01/B03 are weak in development, and B01/B03/B05 each have one losing development year; no after-the-fact rejection or rule change.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/annual_b.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "track_b_q1_validation_selection_20261014/outputs/diagnostics/annual_primary.csv"
+          "results/report_data/validation/annual_b.json"
         ],
         "metricDefinitions": [
           {
@@ -139,7 +139,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "track_b_q1_validation_selection_20261014/outputs/diagnostics/annual_primary.csv"
+                  "results/report_data/validation/annual_b.json"
                 ]
               }
             ]
@@ -152,8 +152,8 @@
     "development_groups": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/development_groups.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -249,15 +249,15 @@
         }
       ],
       "source": {
-        "description": "Development-only within-basket five ranked groups across169 configurations, using defined Sharpe average ranks and keeping ties together. Q1 means best approximately20%, not first calendar quarter. Descriptive constituent distributions, not portfolios or independent trials. Undefined group retained in archived full grid.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/development_groups.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "restart_fullgrid_validation_20261014/outputs/diagnostics/development_ranked_group_performance.csv"
+          "results/report_data/validation/development_groups.json"
         ],
         "metricDefinitions": [
           {
@@ -267,12 +267,12 @@
               "groups-text",
               "sign-text"
             ],
-            "definition": "Development-only within-basket five ranked groups across169 configurations, using defined Sharpe average ranks and keeping ties together. Q1 means best approximately20%, not first calendar quarter. Descriptive constituent distributions, not portfolios or independent trials. Undefined group retained in archived full grid.",
+            "definition": "Development-only within-basket five ranked groups across169 configurations, using defined Sharpe average ranks and keeping ties together. Q1 means best approximately20%, not first calendar quarter. Descriptive constituent distributions, not portfolios or independent trials. Undefined group retained in saved full-grid results.",
             "label": "Development Groups",
             "sourceLineage": [
               {
                 "files": [
-                  "restart_fullgrid_validation_20261014/outputs/diagnostics/development_ranked_group_performance.csv"
+                  "results/report_data/validation/development_groups.json"
                 ]
               }
             ]
@@ -285,8 +285,8 @@
     "eligibility": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/eligibility.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -340,16 +340,15 @@
         }
       ],
       "source": {
-        "description": "Track B eligibility requires development Q1, evaluated statuses, defined finite Sharpes and strictly positive net returns in both development and validation at20bps lag1. Select one per existing family by validation Sharpe, then lower validation total turnover, lexical experimentID and numeric basketID. B02 had zero eligible pairs and no candidate.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/eligibility.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "track_b_q1_validation_selection_20261014/outputs/family_eligibility.csv",
-          "track_b_q1_validation_selection_20261014/protocol.json"
+          "results/report_data/validation/eligibility.json"
         ],
         "metricDefinitions": [
           {
@@ -364,8 +363,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "track_b_q1_validation_selection_20261014/outputs/family_eligibility.csv",
-                  "track_b_q1_validation_selection_20261014/protocol.json"
+                  "results/report_data/validation/eligibility.json"
                 ]
               }
             ]
@@ -378,8 +376,8 @@
     "frozen_nine": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/frozen_nine.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -439,16 +437,15 @@
         }
       ],
       "source": {
-        "description": "Frozen case-basket identities. BTC and ETH fixed in every basket; other six are economic slots, with documented symbol migrations/lifecycle handling. The nine are a research shortlist, not a combined portfolio; no ensemble weights.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/frozen_nine.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "reference_reporting_20261014/outputs/tables/selection_display.json",
-          "track_b_q1_validation_selection_20261014/outputs/shortlist_freeze.json"
+          "results/report_data/validation/frozen_nine.json"
         ],
         "metricDefinitions": [
           {
@@ -462,8 +459,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "reference_reporting_20261014/outputs/tables/selection_display.json",
-                  "track_b_q1_validation_selection_20261014/outputs/shortlist_freeze.json"
+                  "results/report_data/validation/frozen_nine.json"
                 ]
               }
             ]
@@ -476,8 +472,8 @@
     "luna_attribution": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/luna_attribution.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -498,15 +494,15 @@
         }
       ],
       "source": {
-        "description": "Saved per-coin NAV-weighted net-return contribution of the legacy LUNA economic slot, in percentage points of scope-initial capital. Accounting attribution, not a causal deletion experiment or isolated coin strategy return.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/luna_attribution.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "reference_reporting_20261014/outputs/notebook_tables/luna_slot_contribution.csv"
+          "results/report_data/validation/luna_attribution.json"
         ],
         "metricDefinitions": [
           {
@@ -520,7 +516,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "reference_reporting_20261014/outputs/notebook_tables/luna_slot_contribution.csv"
+                  "results/report_data/validation/luna_attribution.json"
                 ]
               }
             ]
@@ -533,8 +529,8 @@
     "rank_transfer": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/rank_transfer.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -554,15 +550,15 @@
         }
       ],
       "source": {
-        "description": "Median of separately computed development-versus-validation Sharpe rank correlations; overlapping baskets, configurations and dates mean no IID significance claim. Within-basket correlations can largely retain the cost/turnover hierarchy while basket-specific winner selection is much less stable.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/rank_transfer.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "restart_fullgrid_validation_20261014/outputs/diagnostics/rank_correlation_summary.csv"
+          "results/report_data/validation/rank_transfer.json"
         ],
         "metricDefinitions": [
           {
@@ -577,7 +573,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "restart_fullgrid_validation_20261014/outputs/diagnostics/rank_correlation_summary.csv"
+                  "results/report_data/validation/rank_transfer.json"
                 ]
               }
             ]
@@ -590,8 +586,8 @@
     "reference_comparison": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/reference_comparison.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -733,15 +729,15 @@
         }
       ],
       "source": {
-        "description": "Same exact strategy settings on selected basket versus the predefined liquidity-tier reference basket0; basket changes alter all cross-sectional ranks, not just the substituted coin P&L.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/reference_comparison.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "reference_reporting_20261014/outputs/tables/selected_reference_comparison.csv"
+          "results/report_data/validation/reference_comparison.json"
         ],
         "metricDefinitions": [
           {
@@ -759,7 +755,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "reference_reporting_20261014/outputs/tables/selected_reference_comparison.csv"
+                  "results/report_data/validation/reference_comparison.json"
                 ]
               }
             ]
@@ -772,8 +768,8 @@
     "rules": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/rules.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -821,16 +817,15 @@
         }
       ],
       "source": {
-        "description": "Saved frozen selection rules, calendar and execution assumptions. Track A designed after development robustness; Track B designed after observing validation and frozen before its selection execution, not before validation.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/rules.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "restart_validation_20261014/protocol.json",
-          "track_b_q1_validation_selection_20261014/protocol.json"
+          "results/report_data/validation/rules.json"
         ],
         "metricDefinitions": [
           {
@@ -847,8 +842,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "restart_validation_20261014/protocol.json",
-                  "track_b_q1_validation_selection_20261014/protocol.json"
+                  "results/report_data/validation/rules.json"
                 ]
               }
             ]
@@ -861,8 +855,8 @@
     "sign_flips": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/sign_flips.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -917,15 +911,15 @@
         }
       ],
       "source": {
-        "description": "Full-grid conditional proportions: positive-to-negative divides by strictly positive development results; negative-to-positive divides by strictly negative development results. Exact zero is a separate state, never counted as strictly negative. All1,117,935 pairs jointly available.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/sign_flips.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "restart_fullgrid_validation_20261014/outputs/diagnostics/sign_transition_rates.csv"
+          "results/report_data/validation/sign_flips.json"
         ],
         "metricDefinitions": [
           {
@@ -939,7 +933,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "restart_fullgrid_validation_20261014/outputs/diagnostics/sign_transition_rates.csv"
+                  "results/report_data/validation/sign_flips.json"
                 ]
               }
             ]
@@ -952,8 +946,8 @@
     "track_a_performance": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/track_a_performance.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -1031,15 +1025,15 @@
         }
       ],
       "source": {
-        "description": "Primary 20 bps idealized observed-close result. Return and drawdown are for the stated two-year window; Sharpe uses UTC daily arithmetic returns, sample SD and sqrt365; annual full-L1 turnover is target-change turnover including boundary entry/liquidation.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/track_a_performance.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "track_b_q1_validation_selection_20261014/outputs/performance_comparison.csv"
+          "results/report_data/validation/track_a_performance.json"
         ],
         "metricDefinitions": [
           {
@@ -1054,7 +1048,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "track_b_q1_validation_selection_20261014/outputs/performance_comparison.csv"
+                  "results/report_data/validation/track_a_performance.json"
                 ]
               }
             ]
@@ -1067,8 +1061,8 @@
     "track_b_performance": {
       "methods": [
         {
-          "code": "See build_snapshot.py in this publication edition. Read SHA256-verified saved CSV/JSON; filter/project columns and rename reader-facing labels only. No performance recomputation or ranking.",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/validation/track_b_performance.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -1164,15 +1158,15 @@
         }
       ],
       "source": {
-        "description": "Same conventions as Track A. Track B validation metrics are selection statistics, not unbiased test estimates.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Verify the study final manifest and file SHA256 before reading. Project only saved rows; no market panels, trading runs, reselection or revised outcomes.",
-            "title": "Saved accepted results, publication-only edition"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/track_b_performance.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "track_b_q1_validation_selection_20261014/outputs/performance_comparison.csv"
+          "results/report_data/validation/track_b_performance.json"
         ],
         "metricDefinitions": [
           {
@@ -1187,7 +1181,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "track_b_q1_validation_selection_20261014/outputs/performance_comparison.csv"
+                  "results/report_data/validation/track_b_performance.json"
                 ]
               }
             ]
@@ -1207,13 +1201,13 @@
           "Fit / calendar days": "727/731",
           "R²": "0.236",
           "Max VIF": "3.87",
-          "Case narrative": "### A01 | basket 4645 | 2024-2025 validation\n\nBuffered momentum; 28.0d lookback, 168h rebalance. **Net period return: -29.55%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **727/731 days**; R-squared **0.236**; standardized condition **5.04**; max VIF **3.87**. Neither declared collinearity warning threshold was crossed. Max leverage **0.746**, max Cook's distance **12.496**: low collinearity alone does not establish stability. Excluded: **2025-01-13 to 2025-01-16 (4 days)**.\n\nBTC beta: legacy full-calendar HAC7 **-0.123 [-0.185, -0.060]**; matched-calendar HAC27 **-0.123 [-0.196, -0.050]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A01 | basket 4645 | 2024-2025 validation\n\nBuffered momentum; 28.0d lookback, 168h rebalance. **Net period return: -29.55%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **727/731 days**; R-squared **0.236**; standardized condition **5.04**; max VIF **3.87**. Neither declared collinearity warning threshold was crossed. Max leverage **0.746**, max Cook's distance **12.496**: low collinearity alone does not establish stability. Excluded: **2025-01-13 to 2025-01-16 (4 days)**.\n\nBTC-only beta: full-calendar HAC7 **-0.123 [-0.185, -0.060]**; matched-calendar HAC27 **-0.123 [-0.196, -0.050]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.08244803986310079,
           "joint_alpha_ci95_low": -0.3708471524152193,
           "joint_alpha_ci95_high": 0.20595107268901774,
-          "legacy_btc_alpha_annual": -0.0655726499915307,
-          "legacy_btc_alpha_ci95_low": -0.4244086383595884,
-          "legacy_btc_alpha_ci95_high": 0.2932633383765269,
+          "btc_only_alpha_annual": -0.0655726499915307,
+          "btc_only_alpha_ci95_low": -0.4244086383595884,
+          "btc_only_alpha_ci95_high": 0.2932633383765269,
           "matched_btc_alpha_annual": -0.0706972137652739,
           "matched_btc_alpha_ci95_low": -0.4031987201523061,
           "matched_btc_alpha_ci95_high": 0.26180429262175836,
@@ -1235,13 +1229,13 @@
           "Fit / calendar days": "727/731",
           "R²": "0.208",
           "Max VIF": "3.87",
-          "Case narrative": "### A02 | basket 4645 | 2024-2025 validation\n\nMomentum; 28.0d lookback, 72h rebalance. **Net period return: -39.63%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **727/731 days**; R-squared **0.208**; standardized condition **5.04**; max VIF **3.87**. Neither declared collinearity warning threshold was crossed. Max leverage **0.746**, max Cook's distance **13.712**: low collinearity alone does not establish stability. Excluded: **2025-01-13 to 2025-01-16 (4 days)**.\n\nBTC beta: legacy full-calendar HAC7 **-0.100 [-0.161, -0.039]**; matched-calendar HAC27 **-0.100 [-0.176, -0.024]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A02 | basket 4645 | 2024-2025 validation\n\nMomentum; 28.0d lookback, 72h rebalance. **Net period return: -39.63%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **727/731 days**; R-squared **0.208**; standardized condition **5.04**; max VIF **3.87**. Neither declared collinearity warning threshold was crossed. Max leverage **0.746**, max Cook's distance **13.712**: low collinearity alone does not establish stability. Excluded: **2025-01-13 to 2025-01-16 (4 days)**.\n\nBTC-only beta: full-calendar HAC7 **-0.100 [-0.161, -0.039]**; matched-calendar HAC27 **-0.100 [-0.176, -0.024]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.16124569103025818,
           "joint_alpha_ci95_low": -0.5156596354767358,
           "joint_alpha_ci95_high": 0.19316825341621943,
-          "legacy_btc_alpha_annual": -0.1532918350118143,
-          "legacy_btc_alpha_ci95_low": -0.5460510323711814,
-          "legacy_btc_alpha_ci95_high": 0.2394673623475526,
+          "btc_only_alpha_annual": -0.1532918350118143,
+          "btc_only_alpha_ci95_low": -0.5460510323711814,
+          "btc_only_alpha_ci95_high": 0.2394673623475526,
           "matched_btc_alpha_annual": -0.15699177252421087,
           "matched_btc_alpha_ci95_low": -0.5326520448135653,
           "matched_btc_alpha_ci95_high": 0.21866849976514358,
@@ -1263,13 +1257,13 @@
           "Fit / calendar days": "731/731",
           "R²": "0.282",
           "Max VIF": "5.58",
-          "Case narrative": "### A03 | basket 1159 | 2024-2025 validation\n\nReversal; 60.0d lookback, 168h rebalance. **Net period return: -22.31%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **731/731 days**; R-squared **0.282**; standardized condition **6.44**; max VIF **5.58**. Neither declared collinearity warning threshold was crossed. Max leverage **0.499**, max Cook's distance **2.425**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.026 [-0.083, 0.031]**; matched-calendar HAC27 **-0.026 [-0.089, 0.037]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A03 | basket 1159 | 2024-2025 validation\n\nReversal; 60.0d lookback, 168h rebalance. **Net period return: -22.31%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **731/731 days**; R-squared **0.282**; standardized condition **6.44**; max VIF **5.58**. Neither declared collinearity warning threshold was crossed. Max leverage **0.499**, max Cook's distance **2.425**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.026 [-0.083, 0.031]**; matched-calendar HAC27 **-0.026 [-0.089, 0.037]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.04467540510154638,
           "joint_alpha_ci95_low": -0.17921221030977152,
           "joint_alpha_ci95_high": 0.2685630205128643,
-          "legacy_btc_alpha_annual": -0.0839644709971758,
-          "legacy_btc_alpha_ci95_low": -0.3948509806762258,
-          "legacy_btc_alpha_ci95_high": 0.2269220386818743,
+          "btc_only_alpha_annual": -0.0839644709971758,
+          "btc_only_alpha_ci95_low": -0.3948509806762258,
+          "btc_only_alpha_ci95_high": 0.2269220386818743,
           "matched_btc_alpha_annual": -0.08396447099717734,
           "matched_btc_alpha_ci95_low": -0.36237778801795445,
           "matched_btc_alpha_ci95_high": 0.19444884602359974,
@@ -1291,13 +1285,13 @@
           "Fit / calendar days": "727/731",
           "R²": "0.127",
           "Max VIF": "3.72",
-          "Case narrative": "### A04 | basket 4444 | 2024-2025 validation\n\nTrend long/short; 28.0d lookback, 24h rebalance. **Net period return: -45.31%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **727/731 days**; R-squared **0.127**; standardized condition **5.28**; max VIF **3.72**. Neither declared collinearity warning threshold was crossed. Max leverage **0.489**, max Cook's distance **1.315**: low collinearity alone does not establish stability. Excluded: **2025-01-13 to 2025-01-16 (4 days)**.\n\nBTC beta: legacy full-calendar HAC7 **-0.309 [-0.548, -0.071]**; matched-calendar HAC27 **-0.304 [-0.639, 0.031]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A04 | basket 4444 | 2024-2025 validation\n\nTrend long/short; 28.0d lookback, 24h rebalance. **Net period return: -45.31%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **727/731 days**; R-squared **0.127**; standardized condition **5.28**; max VIF **3.72**. Neither declared collinearity warning threshold was crossed. Max leverage **0.489**, max Cook's distance **1.315**: low collinearity alone does not establish stability. Excluded: **2025-01-13 to 2025-01-16 (4 days)**.\n\nBTC-only beta: full-calendar HAC7 **-0.309 [-0.548, -0.071]**; matched-calendar HAC27 **-0.304 [-0.639, 0.031]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.01647850456355131,
           "joint_alpha_ci95_low": -0.852526790947408,
           "joint_alpha_ci95_high": 0.8195697818203055,
-          "legacy_btc_alpha_annual": 0.0201222202109054,
-          "legacy_btc_alpha_ci95_low": -0.7499542843069698,
-          "legacy_btc_alpha_ci95_high": 0.7901987247287807,
+          "btc_only_alpha_annual": 0.0201222202109054,
+          "btc_only_alpha_ci95_low": -0.7499542843069698,
+          "btc_only_alpha_ci95_high": 0.7901987247287807,
           "matched_btc_alpha_annual": 0.04586959507851802,
           "matched_btc_alpha_ci95_low": -0.7454062706099678,
           "matched_btc_alpha_ci95_high": 0.8371454607670039,
@@ -1319,13 +1313,13 @@
           "Fit / calendar days": "727/731",
           "R²": "0.176",
           "Max VIF": "4.25",
-          "Case narrative": "### B01 | basket 2323 | 2024-2025 validation\n\nBuffered momentum; 28.0d lookback, 24h rebalance. **Net period return: 120.19%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **727/731 days**; R-squared **0.176**; standardized condition **6.02**; max VIF **4.25**. Neither declared collinearity warning threshold was crossed. Max leverage **0.272**, max Cook's distance **0.427**: low collinearity alone does not establish stability. Excluded: **2025-01-13 to 2025-01-16 (4 days)**.\n\nBTC beta: legacy full-calendar HAC7 **-0.080 [-0.142, -0.017]**; matched-calendar HAC27 **-0.081 [-0.156, -0.005]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B01 | basket 2323 | 2024-2025 validation\n\nBuffered momentum; 28.0d lookback, 24h rebalance. **Net period return: 120.19%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **727/731 days**; R-squared **0.176**; standardized condition **6.02**; max VIF **4.25**. Neither declared collinearity warning threshold was crossed. Max leverage **0.272**, max Cook's distance **0.427**: low collinearity alone does not establish stability. Excluded: **2025-01-13 to 2025-01-16 (4 days)**.\n\nBTC-only beta: full-calendar HAC7 **-0.080 [-0.142, -0.017]**; matched-calendar HAC27 **-0.081 [-0.156, -0.005]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.19033889132363874,
           "joint_alpha_ci95_low": -0.14436610899930302,
           "joint_alpha_ci95_high": 0.5250438916465805,
-          "legacy_btc_alpha_annual": 0.4670728731853382,
-          "legacy_btc_alpha_ci95_low": 0.1096451054158368,
-          "legacy_btc_alpha_ci95_high": 0.8245006409548395,
+          "btc_only_alpha_annual": 0.4670728731853382,
+          "btc_only_alpha_ci95_low": 0.1096451054158368,
+          "btc_only_alpha_ci95_high": 0.8245006409548395,
           "matched_btc_alpha_annual": 0.4514200351966278,
           "matched_btc_alpha_ci95_low": 0.09409379599679729,
           "matched_btc_alpha_ci95_high": 0.8087462743964584,
@@ -1347,13 +1341,13 @@
           "Fit / calendar days": "723/731",
           "R²": "0.223",
           "Max VIF": "4.34",
-          "Case narrative": "### B03 | basket 2457 | 2024-2025 validation\n\nMomentum; 90.0d lookback, 72h rebalance. **Net period return: 151.30%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **723/731 days**; R-squared **0.223**; standardized condition **5.80**; max VIF **4.34**. Neither declared collinearity warning threshold was crossed. Max leverage **0.145**, max Cook's distance **0.422**: low collinearity alone does not establish stability. Excluded: **2024-09-10 to 2024-09-13 (4 days); 2025-01-13 to 2025-01-16 (4 days)**.\n\nBTC beta: legacy full-calendar HAC7 **-0.054 [-0.117, 0.008]**; matched-calendar HAC27 **-0.057 [-0.132, 0.017]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B03 | basket 2457 | 2024-2025 validation\n\nMomentum; 90.0d lookback, 72h rebalance. **Net period return: 151.30%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **723/731 days**; R-squared **0.223**; standardized condition **5.80**; max VIF **4.34**. Neither declared collinearity warning threshold was crossed. Max leverage **0.145**, max Cook's distance **0.422**: low collinearity alone does not establish stability. Excluded: **2024-09-10 to 2024-09-13 (4 days); 2025-01-13 to 2025-01-16 (4 days)**.\n\nBTC-only beta: full-calendar HAC7 **-0.054 [-0.117, 0.008]**; matched-calendar HAC27 **-0.057 [-0.132, 0.017]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.11950617605473288,
           "joint_alpha_ci95_low": -0.1716443685346332,
           "joint_alpha_ci95_high": 0.41065672064409897,
-          "legacy_btc_alpha_annual": 0.5223279738415,
-          "legacy_btc_alpha_ci95_low": 0.195920008842238,
-          "legacy_btc_alpha_ci95_high": 0.8487359388407621,
+          "btc_only_alpha_annual": 0.5223279738415,
+          "btc_only_alpha_ci95_low": 0.195920008842238,
+          "btc_only_alpha_ci95_high": 0.8487359388407621,
           "matched_btc_alpha_annual": 0.4874589676179142,
           "matched_btc_alpha_ci95_low": 0.17382730954571635,
           "matched_btc_alpha_ci95_high": 0.801090625690112,
@@ -1375,13 +1369,13 @@
           "Fit / calendar days": "731/731",
           "R²": "0.308",
           "Max VIF": "5.37",
-          "Case narrative": "### B04 | basket 6064 | 2024-2025 validation\n\nReversal; 90.0d lookback, 168h rebalance. **Net period return: 73.78%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **731/731 days**; R-squared **0.308**; standardized condition **6.31**; max VIF **5.37**. Neither declared collinearity warning threshold was crossed. Max leverage **0.497**, max Cook's distance **9.072**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.007 [-0.061, 0.046]**; matched-calendar HAC27 **-0.007 [-0.069, 0.054]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B04 | basket 6064 | 2024-2025 validation\n\nReversal; 90.0d lookback, 168h rebalance. **Net period return: 73.78%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **731/731 days**; R-squared **0.308**; standardized condition **6.31**; max VIF **5.37**. Neither declared collinearity warning threshold was crossed. Max leverage **0.497**, max Cook's distance **9.072**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.007 [-0.061, 0.046]**; matched-calendar HAC27 **-0.007 [-0.069, 0.054]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.3998249055645979,
           "joint_alpha_ci95_low": 0.11799450849962018,
           "joint_alpha_ci95_high": 0.6816553026295755,
-          "legacy_btc_alpha_annual": 0.3158109353682969,
-          "legacy_btc_alpha_ci95_low": -0.0493894224915416,
-          "legacy_btc_alpha_ci95_high": 0.6810112932281355,
+          "btc_only_alpha_annual": 0.3158109353682969,
+          "btc_only_alpha_ci95_low": -0.0493894224915416,
+          "btc_only_alpha_ci95_high": 0.6810112932281355,
           "matched_btc_alpha_annual": 0.3158109353682945,
           "matched_btc_alpha_ci95_low": -0.0417485414312907,
           "matched_btc_alpha_ci95_high": 0.6733704121678797,
@@ -1403,13 +1397,13 @@
           "Fit / calendar days": "731/731",
           "R²": "0.634",
           "Max VIF": "3.96",
-          "Case narrative": "### B05 | basket 2330 | 2024-2025 validation\n\nTrend long/cash; 28.0d lookback, 168h rebalance. **Net period return: 152.00%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **731/731 days**; R-squared **0.634**; standardized condition **5.20**; max VIF **3.96**. Neither declared collinearity warning threshold was crossed. Max leverage **0.754**, max Cook's distance **0.635**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **0.462 [0.361, 0.562]**; matched-calendar HAC27 **0.462 [0.318, 0.606]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B05 | basket 2330 | 2024-2025 validation\n\nTrend long/cash; 28.0d lookback, 168h rebalance. **Net period return: 152.00%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **731/731 days**; R-squared **0.634**; standardized condition **5.20**; max VIF **3.96**. Neither declared collinearity warning threshold was crossed. Max leverage **0.754**, max Cook's distance **0.635**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **0.462 [0.361, 0.562]**; matched-calendar HAC27 **0.462 [0.318, 0.606]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.3180876397311577,
           "joint_alpha_ci95_low": 0.013640531563791025,
           "joint_alpha_ci95_high": 0.6225347478985244,
-          "legacy_btc_alpha_annual": 0.3134738060159163,
-          "legacy_btc_alpha_ci95_low": -0.1802776107607417,
-          "legacy_btc_alpha_ci95_high": 0.8072252227925744,
+          "btc_only_alpha_annual": 0.3134738060159163,
+          "btc_only_alpha_ci95_low": -0.1802776107607417,
+          "btc_only_alpha_ci95_high": 0.8072252227925744,
           "matched_btc_alpha_annual": 0.31347380601590163,
           "matched_btc_alpha_ci95_low": -0.20507619911582037,
           "matched_btc_alpha_ci95_high": 0.8320238111476237,
@@ -1431,13 +1425,13 @@
           "Fit / calendar days": "731/731",
           "R²": "0.101",
           "Max VIF": "3.83",
-          "Case narrative": "### B06 | basket 2495 | 2024-2025 validation\n\nTrend long/short; 28.0d lookback, 168h rebalance. **Net period return: 164.24%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **731/731 days**; R-squared **0.101**; standardized condition **5.41**; max VIF **3.83**. Neither declared collinearity warning threshold was crossed. Max leverage **0.753**, max Cook's distance **0.313**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.203 [-0.394, -0.012]**; matched-calendar HAC27 **-0.203 [-0.482, 0.076]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B06 | basket 2495 | 2024-2025 validation\n\nTrend long/short; 28.0d lookback, 168h rebalance. **Net period return: 164.24%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **731/731 days**; R-squared **0.101**; standardized condition **5.41**; max VIF **3.83**. Neither declared collinearity warning threshold was crossed. Max leverage **0.753**, max Cook's distance **0.313**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.203 [-0.394, -0.012]**; matched-calendar HAC27 **-0.203 [-0.482, 0.076]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.7022805755839064,
           "joint_alpha_ci95_low": 0.08682002455215732,
           "joint_alpha_ci95_high": 1.3177411266156556,
-          "legacy_btc_alpha_annual": 0.700557389153663,
-          "legacy_btc_alpha_ci95_low": 0.0022345395111673,
-          "legacy_btc_alpha_ci95_high": 1.3988802387961587,
+          "btc_only_alpha_annual": 0.700557389153663,
+          "btc_only_alpha_ci95_low": 0.0022345395111673,
+          "btc_only_alpha_ci95_high": 1.3988802387961587,
           "matched_btc_alpha_annual": 0.7005573891536655,
           "matched_btc_alpha_ci95_low": 0.03925840638419642,
           "matched_btc_alpha_ci95_high": 1.3618563719231345,
@@ -1453,18 +1447,14 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January 2024-31 December 2025; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/joint_models.json",
-          "research/basket_factor_attribution_20261016/outputs/joint_coefficients.csv",
-          "research/basket_factor_attribution_20261016/outputs/legacy_btc_comparison.csv",
-          "research/basket_factor_attribution_20261016/outputs/matched_btc_coefficients.csv",
-          "research/basket_factor_attribution_20261016/outputs/attribution_totals.csv"
+          "results/report_data/validation/basket_attribution_summary.json"
         ],
         "metricDefinitions": [
           {
             "label": "Summary",
-            "definition": "Annual alpha is 365 times the daily arithmetic intercept. All displayed alpha values/intervals are percent/year. Joint and matched BTC use the same complete-case dates and corrected calendar HAC27; legacy BTC retains original full-period saved HAC7. R2 is joint in-sample fit; VIF and condition diagnostics are descriptive.",
+            "definition": "Annual alpha is 365 times the daily arithmetic intercept. All displayed alpha values/intervals are percent/year. Joint and matched BTC use the same complete-case dates and corrected calendar HAC27; full-calendar BTC-only retains original full-period saved HAC7. R2 is joint in-sample fit; VIF and condition diagnostics are descriptive.",
             "componentIds": [
               "basket-attribution-20261016-overview",
               "basket-attribution-20261016-interpretation",
@@ -1477,17 +1467,20 @@
               "basket-attribution-20261016-B04-context",
               "basket-attribution-20261016-B05-context",
               "basket-attribution-20261016-B06-context"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/validation/basket_attribution_summary.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly validation; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/basket_attribution_summary.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -1497,8 +1490,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: validation."
+          "language": "text",
+          "code": "Read results/report_data/validation/basket_attribution_summary.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -4458,10 +4451,9 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January 2024-31 December 2025; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/coin_attribution.csv",
-          "research/basket_factor_attribution_20261016/outputs/joint_coefficients.csv"
+          "results/report_data/validation/basket_attribution_coins.json"
         ],
         "metricDefinitions": [
           {
@@ -4477,17 +4469,20 @@
               "basket-attribution-20261016-B04-coins",
               "basket-attribution-20261016-B05-coins",
               "basket-attribution-20261016-B06-coins"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/validation/basket_attribution_coins.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly validation; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/basket_attribution_coins.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -4497,8 +4492,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: validation."
+          "language": "text",
+          "code": "Read results/report_data/validation/basket_attribution_coins.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -4812,9 +4807,9 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January 2024-31 December 2025; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/joint_models.json"
+          "results/report_data/validation/basket_attribution_diagnostics.json"
         ],
         "metricDefinitions": [
           {
@@ -4830,17 +4825,20 @@
               "basket-attribution-20261016-B04-context",
               "basket-attribution-20261016-B05-context",
               "basket-attribution-20261016-B06-context"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/validation/basket_attribution_diagnostics.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly validation; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/basket_attribution_diagnostics.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -4850,8 +4848,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: validation."
+          "language": "text",
+          "code": "Read results/report_data/validation/basket_attribution_diagnostics.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "payloadColumns": [
@@ -6810,9 +6808,9 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January 2024-31 December 2025; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/joint_coefficients.csv"
+          "results/report_data/validation/basket_attribution_coefficients.json"
         ],
         "metricDefinitions": [
           {
@@ -6820,17 +6818,20 @@
             "definition": "81 joint coefficients in this report period; marginal HAC27 and HAC7 intervals, global Holm243 p-values and Bonferroni243 simultaneous intervals refer to all 243 fixed joint coefficient slots across 3 periods. Correction is not search-adjustment for prior strategy research.",
             "componentIds": [
               "basket-attribution-20261016-companion"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/validation/basket_attribution_coefficients.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly validation; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/basket_attribution_coefficients.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -6840,8 +6841,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: validation."
+          "language": "text",
+          "code": "Read results/report_data/validation/basket_attribution_coefficients.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -6849,10 +6850,10 @@
       "rows": [
         {
           "Period label": "2024-2025 validation",
-          "Scope narrative": "## Added attribution: what each coin contributed, and what joint basket exposure explains\n\n**1 January 2024-31 December 2025, all nine unchanged frozen strategies.** This post-hoc addition separates accounting contribution from statistical sensitivity. Original returns, Sharpe, turnover, drawdowns, baskets and decisions are unchanged. Track B validation alpha/beta and attribution remain selection-conditioned diagnostics; they are not unbiased final-test results.\n\nThe overview shows **annual alpha in percent per year**, estimate [95% CI]. Alpha is 365 times the daily arithmetic intercept, **not CAGR**. Legacy BTC uses its original full-calendar HAC7 estimate; matched BTC and the joint model use the identical complete-case dates with calendar HAC27.",
-          "Interpretation narrative": "**How to read this.** The joint regression includes an intercept and all eight basket coins simultaneously. A conditional beta is sensitivity holding the other seven factors fixed; it is not a portfolio weight, a causal contribution or proof of market neutrality. R-squared is an in-sample descriptive fit. Comparing joint with matched BTC separates added factors from sample exclusions; legacy BTC also uses a different covariance convention.",
+          "Scope narrative": "## Per-coin attribution: what each coin contributed, and what joint basket exposure explains\n\n**1 January 2024-31 December 2025, all nine unchanged frozen strategies.** These explanatory diagnostics separate accounting contribution from statistical sensitivity. Strategy returns, Sharpe, turnover, drawdowns, baskets and decisions remain fixed. Track B validation alpha/beta and attribution remain selection-conditioned diagnostics; they are not unbiased final-test results.\n\nThe overview shows **annual alpha in percent per year**, estimate [95% CI]. Alpha is 365 times the daily arithmetic intercept, **not CAGR**. The BTC-only comparison uses its full-calendar HAC7 estimate; matched BTC and the joint model use the identical complete-case dates with calendar HAC27.",
+          "Interpretation narrative": "**How to read this.** The joint regression includes an intercept and all eight basket coins simultaneously. A conditional beta is sensitivity holding the other seven factors fixed; it is not a portfolio weight, a causal contribution or proof of market neutrality. R-squared is an in-sample descriptive fit. Comparing joint with matched BTC separates added factors from sample exclusions; the full-calendar BTC-only comparison also uses a different covariance convention.",
           "Methods narrative": "**Uncertainty and missingness.** Joint and matched BTC intervals are approximate marginal 95% normal-Wald intervals using Bartlett calendar HAC27 and n/(n-k) correction; HAC7 sensitivity is exported. Missing factor days are excluded from regressions only; gaps are not filled or compressed. The complete strategy and attribution calendars remain intact. Standardized condition >30 or any VIF >10 is a warning, not a reason to drop a coin. Some fits are sensitive to extreme days; high leverage/Cook's distance can coexist with modest collinearity. No event is removed and no model reselected.\n\n**Per-coin accounting.** Gross contributions and positive allocated fees are both linked with prior **net** strategy NAV; net = gross - fees. Units are whole-period percentage points (pp) of initial capital, not standalone coin returns. The next pages retain all eight slots and their marginal net-contribution intervals.",
-          "Companion narrative": "### Full precision, sensitivity and multiplicity\n\n[Per-coin gross, fee and net attribution with all three confidence intervals](exports/basket_coin_attribution.csv) | [Joint alpha/betas, HAC7 sensitivity, global Holm243 p-values and Bonferroni243 intervals](exports/basket_joint_coefficients.csv) | [Joint model diagnostics and individual VIFs](exports/basket_joint_models.csv) | [Legacy BTC-only estimates and intervals](exports/basket_legacy_btc.csv) | [Matched BTC-only coefficients and intervals](exports/basket_matched_btc.csv) | [Regression calendar and exclusions](exports/basket_regression_calendar.csv).\n\nAttribution uses **4,000 seeded, synchronized circular 28-day calendar-block draws** across all nine strategies and eight coins. Daily gross/fee vectors are resampled together and relinked using each draw's **new prior NAV**; signals, targets and trades are not regenerated and no block-boundary fee is invented. Any invalid draw makes the affected interval unavailable; none is silently dropped. Gross/fee intervals and invalid-draw counts remain in the CSV.\n\nThe coefficient correction spans **243 predeclared diagnostic slots: 27 joint alphas + 216 joint betas** across all three periods. Displayed intervals are marginal; approximate Bonferroni familywise intervals and Holm-adjusted p-values are exported. This corrects only that conditional coefficient family, **not the original universe, configuration, period or strategy-selection search**. Attribution intervals are marginal and not multiplicity-adjusted. No significance row changes the frozen shortlist or crowns a new winner. LUNA/LUNC is legacy Terra, not Terra 2.0; FTM/S and MATIC/POL retain the original economic slots.",
+          "Companion narrative": "### Full precision, sensitivity and multiplicity\n\n[Per-coin gross, fee and net attribution with all three confidence intervals](exports/basket_coin_attribution.csv) | [Joint alpha/betas, HAC7 sensitivity, global Holm243 p-values and Bonferroni243 intervals](exports/basket_joint_coefficients.csv) | [Joint model diagnostics and individual VIFs](exports/basket_joint_models.csv) | [Full-calendar BTC-only estimates and intervals](exports/basket_btc_only.csv) | [Matched BTC-only coefficients and intervals](exports/basket_matched_btc.csv) | [Regression calendar and exclusions](exports/basket_regression_calendar.csv).\n\nAttribution uses **4,000 seeded, synchronized circular 28-day calendar-block draws** across all nine strategies and eight coins. Daily gross/fee vectors are resampled together and relinked using each draw's **new prior NAV**; signals, targets and trades are not regenerated and no block-boundary fee is invented. Any invalid draw makes the affected interval unavailable; none is silently dropped. Gross/fee intervals and invalid-draw counts remain in the CSV.\n\nThe coefficient correction spans **243 predeclared diagnostic slots: 27 joint alphas + 216 joint betas** across all three periods. Displayed intervals are marginal; approximate Bonferroni familywise intervals and Holm-adjusted p-values are exported. This corrects only that conditional coefficient family, **not the original universe, configuration, period or strategy-selection search**. Attribution intervals are marginal and not multiplicity-adjusted. No significance row changes the frozen shortlist or crowns a new winner. LUNA/LUNC is legacy Terra, not Terra 2.0; FTM/S and MATIC/POL retain the original economic slots.",
           "period": "validation",
           "protocol_sha256": "7d8119be9555353458a6dbd5b531f2248375cf6166068e3821c565aac94600cf",
           "payload_sha256": "ab98870600d5164148218ee19613b46d080a1175e9508ac05e80893f53f4e472",
@@ -6862,33 +6863,33 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January 2024-31 December 2025; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/protocol.json",
-          "research/basket_factor_attribution_20261016/outputs/bootstrap_methods.json",
-          "research/basket_factor_attribution_20261016/audit/independent_accounting.json",
-          "research/basket_factor_attribution_20261016/audit/independent_inference_audit.json"
+          "results/report_data/validation/basket_attribution_methods.json"
         ],
         "metricDefinitions": [
           {
             "label": "Methods",
-            "definition": "Post-hoc fixed-strategy attribution protocol;20 bps, all 9 strategies, 8 coin factors, calendar HAC27 for joint and matched BTC; legacy BTC full-sample HAC7 unchanged. 4,000 synchronized 28-day bootstrap draws with new NAV relinking; marginal 95% intervals and 243 joint-coefficient correction only.",
+            "definition": "Post-hoc fixed-strategy attribution protocol;20 bps, all 9 strategies, 8 coin factors, calendar HAC27 for joint and matched BTC; full-calendar BTC-only full-sample HAC7 unchanged. 4,000 synchronized 28-day bootstrap draws with new NAV relinking; marginal 95% intervals and 243 joint-coefficient correction only.",
             "componentIds": [
               "basket-attribution-20261016-scope",
               "basket-attribution-20261016-methods",
               "basket-attribution-20261016-interpretation",
               "basket-attribution-20261016-companion"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/validation/basket_attribution_methods.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly validation; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/validation/basket_attribution_methods.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -6898,8 +6899,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: validation."
+          "language": "text",
+          "code": "Read results/report_data/validation/basket_attribution_methods.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     }
@@ -6909,5 +6910,5 @@
   },
   "status": "reviewed",
   "surface": "report",
-  "title": "Validation did not confirm the original selections"
+  "title": "Validation did not confirm development-only selections"
 }

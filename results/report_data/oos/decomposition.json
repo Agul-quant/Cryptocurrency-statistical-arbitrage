@@ -1,0 +1,36 @@
+{
+  "query_id": "decomposition",
+  "period": "oos",
+  "rows": [
+    {
+      "Composition pp": 2.3294820712338526,
+      "Conditioning": "Family",
+      "Raw gap pp": 9.435638943318637,
+      "Shared pairs": 223512,
+      "Shared strata": 5,
+      "Standardized gap pp": 6.3408016211628,
+      "Unsupported pp": 0.1649984912589321,
+      "Within pp": 6.941158380825854
+    },
+    {
+      "Composition pp": -4.2401243292115085,
+      "Conditioning": "Exact configuration",
+      "Raw gap pp": 9.435638943318637,
+      "Shared pairs": 207804,
+      "Shared strata": 62,
+      "Standardized gap pp": 10.709614299783013,
+      "Unsupported pp": 2.652174192181511,
+      "Within pp": 11.023589080348636
+    },
+    {
+      "Composition pp": 3.8079183332998303,
+      "Conditioning": "Exact basket",
+      "Raw gap pp": 9.435638943318637,
+      "Shared pairs": 224731,
+      "Shared strata": 6611,
+      "Standardized gap pp": 4.920493093525106,
+      "Unsupported pp": 0.03531096116436289,
+      "Within pp": 5.592409648854446
+    }
+  ]
+}

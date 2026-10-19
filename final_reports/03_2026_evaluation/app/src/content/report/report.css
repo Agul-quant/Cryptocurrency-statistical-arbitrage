@@ -1,0 +1,31 @@
+.report-page { --data-app-layout-intent: authored-report; --data-app-content-width: 1080px; --data-app-report-prose-width:1080px; }
+.final-report{display:grid;gap:56px;width:100%;padding-bottom:60px;}
+.final-page{display:grid;gap:24px;min-width:0;}
+.final-report .report-hero h1{font-size:44px;line-height:1.12;margin:0 0 6px;letter-spacing:-.025em;}
+.final-report .rich-narrative-content{line-height:1.58;font-size:16px;}
+.final-scroll{width:100%;max-width:100%;overflow-x:auto;}
+.final-table{border-collapse:collapse;width:100%;font-size:12.5px;line-height:1.42;font-variant-numeric:tabular-nums;}
+.final-table th{font-weight:600;text-align:left;background:color-mix(in srgb,var(--text) 4%,transparent);border-bottom:1px solid var(--border);padding:9px 8px;vertical-align:bottom;}
+.final-table td{border-bottom:1px solid color-mix(in srgb,var(--text) 9%,transparent);padding:9px 8px;vertical-align:top;}
+.final-table .num{text-align:right;white-space:nowrap;}
+.final-table th,.final-table td{overflow-wrap:normal;}
+@media(max-width:700px){.final-report .report-hero h1{font-size:34px;}.final-table{min-width:650px;}.final-report{gap:40px;}.final-page{gap:20px;}}
+@media print{
+ @page{size:A4;margin:13mm 11mm 15mm;}
+ .final-report{display:block;padding:0;}
+ .final-report .final-page{display:block;break-after:page;padding:0;margin:0;}
+ .final-report .final-page:last-child{break-after:auto;}
+ .final-report .final-page>*{margin-bottom:3mm;}
+ .final-report .report-hero h1{font-size:27pt;line-height:1.1;}
+ .final-report .rich-narrative-content{font-size:8.7pt;line-height:1.32;}
+ .final-report .rich-narrative-content :is(h2,h3){font-size:12pt;line-height:1.2;margin-top:0;margin-bottom:2mm;}
+ .final-report .rich-narrative-content p{margin-top:0;margin-bottom:2.4mm;}
+ .final-report .final-table{font-size:7.4pt;line-height:1.22;min-width:0;table-layout:auto;}
+ .final-report .final-table th,.final-report .final-table td{padding:1.3mm 1.2mm;}
+ .final-report .final-scroll{overflow:visible;}
+ .final-report :is(table,tr,svg){break-inside:avoid;}
+ .final-report [data-component-kind="chart"]{break-inside:avoid;}
+ .final-report [data-component-id="identities-table"] .final-table{font-size:7pt;}
+ .final-report [data-component-id="criteria-table"] .final-table{font-size:7pt;}
+ .final-report [data-component-id="family-table"] .final-table{font-size:7.4pt;}
+}

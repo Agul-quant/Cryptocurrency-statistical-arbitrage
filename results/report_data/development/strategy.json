@@ -1,0 +1,1358 @@
+{
+  "query_id": "strategy",
+  "period": "development",
+  "rows": [
+    {
+      "lookback_h": 24,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0024_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0024_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0024_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0072_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0072_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0072_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0168_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0168_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0168_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0001_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0001_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0001_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0004_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0004_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0004_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0012_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0012_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0012_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0001_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0001_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0001_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0001_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0001_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0001_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0002_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0002_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0002_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0002_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0002_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0002_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0004_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0004_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0004_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0004_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0004_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0004_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0008_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0008_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0008_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0008_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0008_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0008_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0012_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0012_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0012_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0012_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0012_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0012_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0024_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0024_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0024_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0048_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0048_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0048_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0048_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0048_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0048_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0072_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0072_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0072_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0168_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0168_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0168_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0336_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0336_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0336_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0336_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0336_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0336_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0672_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0672_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0672_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0672_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0672_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h0672_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h1440_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h1440_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h1440_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h1440_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h1440_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h1440_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h2160_r001",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h2160_r004",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h2160_r012",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h2160_r024",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h2160_r072",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "momentum_h2160_r168",
+      "report_family": "momentum"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0001_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0001_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0001_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0002_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0002_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0002_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0002_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0002_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0002_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0004_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0004_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 4,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0004_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0008_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0008_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0008_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0008_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0008_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 8,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0008_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0012_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0012_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 12,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0012_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0024_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0024_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0024_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0024_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0024_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 24,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0024_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0048_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0048_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0048_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0048_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0048_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 48,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0048_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0072_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0072_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0072_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0072_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0072_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 72,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0072_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0168_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0168_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0168_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0168_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0168_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 168,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0168_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0336_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0336_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0336_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0336_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0336_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0336_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0672_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0672_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0672_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0672_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0672_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h0672_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h1440_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h1440_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h1440_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h1440_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h1440_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 1440,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h1440_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 1,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h2160_r001",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 4,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h2160_r004",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 12,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h2160_r012",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h2160_r024",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 72,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h2160_r072",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 2160,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "reversal_h2160_r168",
+      "report_family": "reversal"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 24,
+      "buffer_l1": 0.25,
+      "phase_hours": 0,
+      "experiment_id": "buffered_momentum_h0336_r024_b025",
+      "report_family": "buffered_momentum"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 168,
+      "buffer_l1": 0.25,
+      "phase_hours": 0,
+      "experiment_id": "buffered_momentum_h0336_r168_b025",
+      "report_family": "buffered_momentum"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 24,
+      "buffer_l1": 0.25,
+      "phase_hours": 0,
+      "experiment_id": "buffered_momentum_h0672_r024_b025",
+      "report_family": "buffered_momentum"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 168,
+      "buffer_l1": 0.25,
+      "phase_hours": 0,
+      "experiment_id": "buffered_momentum_h0672_r168_b025",
+      "report_family": "buffered_momentum"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "trend_long_cash_h0336_r024",
+      "report_family": "trend_long_cash"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "trend_long_cash_h0336_r168",
+      "report_family": "trend_long_cash"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "trend_long_cash_h0672_r024",
+      "report_family": "trend_long_cash"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "trend_long_cash_h0672_r168",
+      "report_family": "trend_long_cash"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "trend_long_short_h0336_r024",
+      "report_family": "trend_long_short"
+    },
+    {
+      "lookback_h": 336,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "trend_long_short_h0336_r168",
+      "report_family": "trend_long_short"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "trend_long_short_h0672_r024",
+      "report_family": "trend_long_short"
+    },
+    {
+      "lookback_h": 672,
+      "rebalance_h": 168,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "trend_long_short_h0672_r168",
+      "report_family": "trend_long_short"
+    },
+    {
+      "lookback_h": 0,
+      "rebalance_h": 24,
+      "buffer_l1": 0.0,
+      "phase_hours": 0,
+      "experiment_id": "factor_residual_fixed",
+      "report_family": "factor_residual"
+    }
+  ]
+}

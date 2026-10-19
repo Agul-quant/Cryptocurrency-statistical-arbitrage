@@ -1,0 +1,42 @@
+{
+  "query_id": "cohort",
+  "period": "oos",
+  "rows": [
+    {
+      "Cohort": "Broad survivors",
+      "Median Max DD": 0.2884362301115474,
+      "Median Sharpe": -0.4154397815470234,
+      "Median TO / year": 47.79761904761905,
+      "Median net return": -0.12078949890664589,
+      "Pairs": 69108,
+      "Profitable": 0.17722984314406437
+    },
+    {
+      "Cohort": "Strict both-positive",
+      "Median Max DD": 0.2908746960055648,
+      "Median Sharpe": -0.3201318196089763,
+      "Median TO / year": 39.60851648351648,
+      "Median net return": -0.10946102799283931,
+      "Pairs": 39332,
+      "Profitable": 0.18483677412793653
+    },
+    {
+      "Cohort": "Dev-negative survivors",
+      "Median Max DD": 0.28428326548200566,
+      "Median Sharpe": -0.5933872643289435,
+      "Median TO / year": 50.8058608058608,
+      "Median net return": -0.13826504761851838,
+      "Pairs": 29776,
+      "Profitable": 0.16718162278344975
+    },
+    {
+      "Cohort": "Controls",
+      "Median Max DD": 0.25854479586482226,
+      "Median Sharpe": -0.4328573124545264,
+      "Median TO / year": 68.85531135531136,
+      "Median net return": -0.10821187348556802,
+      "Pairs": 155759,
+      "Profitable": 0.27158623257725073
+    }
+  ]
+}

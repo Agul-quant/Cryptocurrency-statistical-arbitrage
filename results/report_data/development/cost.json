@@ -1,0 +1,55 @@
+{
+  "query_id": "cost",
+  "period": "development",
+  "rows": [
+    {
+      "costBps": 0,
+      "scenario": "cost00_lag1",
+      "positive": 0.43168431080518993,
+      "medianReturn": -0.07885591235394296,
+      "medianSharpe": -0.008734402966446897
+    },
+    {
+      "costBps": 5,
+      "scenario": "cost05_lag1",
+      "positive": 0.22683161364480045,
+      "medianReturn": -0.36873855230569474,
+      "medianSharpe": -0.6989930862557949
+    },
+    {
+      "costBps": 10,
+      "scenario": "cost10_lag1",
+      "positive": 0.1624844020448416,
+      "medianReturn": -0.5133796249227087,
+      "medianSharpe": -1.0896608585959044
+    },
+    {
+      "costBps": 15,
+      "scenario": "cost15_lag1",
+      "positive": 0.12278531399410521,
+      "medianReturn": -0.6242353287012056,
+      "medianSharpe": -1.4364450554667898
+    },
+    {
+      "costBps": 20,
+      "scenario": "cost20_lag1",
+      "positive": 0.09508781816474124,
+      "medianReturn": -0.7103480782827848,
+      "medianSharpe": -1.7720099769645337
+    },
+    {
+      "costBps": 40,
+      "scenario": "cost40_lag1",
+      "positive": 0.04237187314110391,
+      "medianReturn": -0.8746488888710472,
+      "medianSharpe": -3.0316716135695594
+    },
+    {
+      "costBps": 20,
+      "scenario": "cost20_lag2",
+      "positive": 0.09602883888598174,
+      "medianReturn": -0.7080480477852777,
+      "medianSharpe": -1.7462240164783036
+    }
+  ]
+}

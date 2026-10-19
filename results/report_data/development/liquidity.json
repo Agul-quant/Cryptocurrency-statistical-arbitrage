@@ -1,0 +1,138 @@
+{
+  "query_id": "liquidity",
+  "period": "development",
+  "rows": [
+    {
+      "symbol": "BTCUSDT",
+      "instrument_id": "BTCUSDT",
+      "rank": 1,
+      "medianDailyVolumeMillions": 2384.1263860704
+    },
+    {
+      "symbol": "ETHUSDT",
+      "instrument_id": "ETHUSDT",
+      "rank": 2,
+      "medianDailyVolumeMillions": 1724.3999281254753
+    },
+    {
+      "symbol": "SHIBUSDT",
+      "instrument_id": "SHIBUSDT",
+      "rank": 3,
+      "medianDailyVolumeMillions": 718.9532131131122
+    },
+    {
+      "symbol": "BNBUSDT",
+      "instrument_id": "BNBUSDT",
+      "rank": 4,
+      "medianDailyVolumeMillions": 605.06292640265
+    },
+    {
+      "symbol": "SOLUSDT",
+      "instrument_id": "SOLUSDT",
+      "rank": 5,
+      "medianDailyVolumeMillions": 463.10411859745
+    },
+    {
+      "symbol": "XRPUSDT",
+      "instrument_id": "XRPUSDT",
+      "rank": 6,
+      "medianDailyVolumeMillions": 385.777313868
+    },
+    {
+      "symbol": "DOTUSDT",
+      "instrument_id": "DOTUSDT",
+      "rank": 7,
+      "medianDailyVolumeMillions": 353.15630248825
+    },
+    {
+      "symbol": "SANDUSDT",
+      "instrument_id": "SANDUSDT",
+      "rank": 8,
+      "medianDailyVolumeMillions": 303.10664947285005
+    },
+    {
+      "symbol": "LUNAUSDT",
+      "instrument_id": "LUNAUSDT:legacy_terra",
+      "rank": 9,
+      "medianDailyVolumeMillions": 285.00462848940003
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "instrument_id": "AVAXUSDT",
+      "rank": 10,
+      "medianDailyVolumeMillions": 284.4390576185
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "instrument_id": "DOGEUSDT",
+      "rank": 11,
+      "medianDailyVolumeMillions": 272.76611285095
+    },
+    {
+      "symbol": "ADAUSDT",
+      "instrument_id": "ADAUSDT",
+      "rank": 12,
+      "medianDailyVolumeMillions": 261.92094017645
+    },
+    {
+      "symbol": "FTMUSDT",
+      "instrument_id": "FTMUSDT",
+      "rank": 13,
+      "medianDailyVolumeMillions": 244.34507426985002
+    },
+    {
+      "symbol": "TRXUSDT",
+      "instrument_id": "TRXUSDT",
+      "rank": 14,
+      "medianDailyVolumeMillions": 228.72232615490202
+    },
+    {
+      "symbol": "MATICUSDT",
+      "instrument_id": "MATICUSDT",
+      "rank": 15,
+      "medianDailyVolumeMillions": 223.3710042402
+    },
+    {
+      "symbol": "MANAUSDT",
+      "instrument_id": "MANAUSDT",
+      "rank": 16,
+      "medianDailyVolumeMillions": 208.63268355914997
+    },
+    {
+      "symbol": "FILUSDT",
+      "instrument_id": "FILUSDT",
+      "rank": 17,
+      "medianDailyVolumeMillions": 203.4681873877
+    },
+    {
+      "symbol": "GALAUSDT",
+      "instrument_id": "GALAUSDT",
+      "rank": 18,
+      "medianDailyVolumeMillions": 183.97996661458998
+    },
+    {
+      "symbol": "LINKUSDT",
+      "instrument_id": "LINKUSDT",
+      "rank": 19,
+      "medianDailyVolumeMillions": 140.29915921335
+    },
+    {
+      "symbol": "AXSUSDT",
+      "instrument_id": "AXSUSDT",
+      "rank": 20,
+      "medianDailyVolumeMillions": 121.01244041554999
+    },
+    {
+      "symbol": "LTCUSDT",
+      "instrument_id": "LTCUSDT",
+      "rank": 21,
+      "medianDailyVolumeMillions": 116.42375075330001
+    },
+    {
+      "symbol": "VETUSDT",
+      "instrument_id": "VETUSDT",
+      "rank": 22,
+      "medianDailyVolumeMillions": 103.966236703745
+    }
+  ]
+}

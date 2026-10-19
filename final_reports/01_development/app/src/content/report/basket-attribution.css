@@ -1,0 +1,28 @@
+.basket-factor-appendix { box-sizing:border-box; width:100%; max-width:1120px; padding-inline:32px; margin:48px auto 0; display:grid; gap:48px; }
+.basket-factor-sheet { min-width:0; display:grid; gap:18px; }
+.basket-factor-pair { gap:36px; }
+.basket-factor-case { min-width:0; display:grid; gap:12px; }
+.basket-factor-scroll { max-width:100%; overflow-x:auto; }
+.basket-factor-table { border-collapse:collapse; width:100%; font-size:12.2px; line-height:1.4; font-variant-numeric:tabular-nums; }
+.basket-factor-table th { text-align:left; font-weight:600; background:color-mix(in srgb,var(--text) 4%,transparent); border-bottom:1px solid var(--border); padding:8px 7px; vertical-align:bottom; }
+.basket-factor-table td { border-bottom:1px solid color-mix(in srgb,var(--text) 9%,transparent); padding:8px 7px; vertical-align:top; }
+.basket-factor-table .numeric { text-align:right; white-space:nowrap; }
+.basket-factor-case .rich-narrative-content { font-size:14px; line-height:1.48; }
+@media(max-width:700px){ .basket-factor-appendix{padding-inline:16px;} .basket-factor-table{min-width:680px;} .basket-factor-compact{min-width:960px;} .basket-factor-pair{gap:32px;} }
+@media print{
+ .basket-factor-appendix { display:block; margin-top:0; padding-inline:0; max-width:none; }
+ .basket-factor-sheet { display:block; break-before:page; page-break-before:always; padding:0; margin:0; }
+ .basket-factor-sheet > * { margin-bottom:3mm; }
+ .basket-factor-case { display:block; break-inside:avoid; page-break-inside:avoid; margin-bottom:6mm; }
+ .basket-factor-case > * { margin-bottom:2mm; }
+ .basket-factor-appendix .rich-narrative-content { font-size:8.3pt!important; line-height:1.3!important; }
+ .basket-factor-appendix .rich-narrative-content p, .basket-factor-appendix .rich-narrative-content li { font-size:8.3pt!important; line-height:1.3!important; margin-bottom:2mm; }
+ .basket-factor-appendix .rich-narrative-content h2 { font-size:13pt!important; line-height:1.2!important; margin:0 0 2mm; }
+ .basket-factor-appendix .rich-narrative-content h3 { font-size:10.5pt!important; line-height:1.2!important; margin:0 0 2mm; }
+ .basket-factor-table { min-width:0; font-size:7.6pt!important; line-height:1.22!important; }
+ .basket-factor-table th, .basket-factor-table td { font-size:7.6pt!important; padding:1.2mm 1.1mm!important; }
+ .basket-factor-compact th, .basket-factor-compact td {font-size:7.1pt!important;padding:1.1mm 0.9mm!important;}
+ .basket-factor-scroll { overflow:visible; }
+ .basket-factor-appendix [data-component-kind="table"] { break-inside:avoid; }
+ .basket-factor-appendix .component-title { font-size:9pt!important;line-height:1.2!important; }
+}

@@ -1,0 +1,102 @@
+{
+  "query_id": "neighbors",
+  "period": "development",
+  "rows": [
+    {
+      "family": "Momentum",
+      "kind": "parameter",
+      "positiveCenters": 49083,
+      "withNeighbors": 49083,
+      "meanPositiveNeighbor": 0.500256368464302,
+      "medianAbsoluteReturnChange": 0.14672434358123995
+    },
+    {
+      "family": "Reversal",
+      "kind": "parameter",
+      "positiveCenters": 13497,
+      "withNeighbors": 13497,
+      "meanPositiveNeighbor": 0.2979180558642661,
+      "medianAbsoluteReturnChange": 0.08163879359622539
+    },
+    {
+      "family": "Buffered momentum",
+      "kind": "parameter",
+      "positiveCenters": 10719,
+      "withNeighbors": 10719,
+      "meanPositiveNeighbor": 0.6607892527287993,
+      "medianAbsoluteReturnChange": 0.18564142837401765
+    },
+    {
+      "family": "Trend long/cash",
+      "kind": "parameter",
+      "positiveCenters": 14898,
+      "withNeighbors": 14898,
+      "meanPositiveNeighbor": 0.5532286212914486,
+      "medianAbsoluteReturnChange": 0.264769842627188
+    },
+    {
+      "family": "Trend long/short",
+      "kind": "parameter",
+      "positiveCenters": 17355,
+      "withNeighbors": 17355,
+      "meanPositiveNeighbor": 0.6236819360414866,
+      "medianAbsoluteReturnChange": 0.6116962209270519
+    },
+    {
+      "family": "BTC residual reversal",
+      "kind": "parameter",
+      "positiveCenters": 750,
+      "withNeighbors": 0,
+      "meanPositiveNeighbor": null,
+      "medianAbsoluteReturnChange": null
+    },
+    {
+      "family": "Momentum",
+      "kind": "basket",
+      "positiveCenters": 49083,
+      "withNeighbors": 49083,
+      "meanPositiveNeighbor": 0.6743358916820197,
+      "medianAbsoluteReturnChange": 0.06871939788264855
+    },
+    {
+      "family": "Reversal",
+      "kind": "basket",
+      "positiveCenters": 13497,
+      "withNeighbors": 13497,
+      "meanPositiveNeighbor": 0.5456344796198097,
+      "medianAbsoluteReturnChange": 0.04632436671027616
+    },
+    {
+      "family": "Buffered momentum",
+      "kind": "basket",
+      "positiveCenters": 10719,
+      "withNeighbors": 10719,
+      "meanPositiveNeighbor": 0.7314781496141698,
+      "medianAbsoluteReturnChange": 0.14850092937161052
+    },
+    {
+      "family": "Trend long/cash",
+      "kind": "basket",
+      "positiveCenters": 14898,
+      "withNeighbors": 14898,
+      "meanPositiveNeighbor": 0.897057131350325,
+      "medianAbsoluteReturnChange": 0.08124301728618216
+    },
+    {
+      "family": "Trend long/short",
+      "kind": "basket",
+      "positiveCenters": 17355,
+      "withNeighbors": 17355,
+      "meanPositiveNeighbor": 0.9227435485862453,
+      "medianAbsoluteReturnChange": 0.19783230946251912
+    },
+    {
+      "family": "BTC residual reversal",
+      "kind": "basket",
+      "positiveCenters": 750,
+      "withNeighbors": 750,
+      "meanPositiveNeighbor": 0.642857142857143,
+      "medianAbsoluteReturnChange": 0.0020541667076743294
+    }
+  ]
+}

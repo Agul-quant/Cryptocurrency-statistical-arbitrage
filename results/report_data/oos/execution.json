@@ -1,0 +1,78 @@
+{
+  "query_id": "execution",
+  "period": "oos",
+  "rows": [
+    {
+      "Base net return": 0.22238305009269452,
+      "ID": "A01",
+      "Max volume proxy": 1.304044920246834,
+      "P95 volume proxy": 0.3248798930022386,
+      "Stressed net return": 0.10499092471034348,
+      "Unknown volume events": 0
+    },
+    {
+      "Base net return": 0.14356735754978675,
+      "ID": "A02",
+      "Max volume proxy": 2.5051602854780293,
+      "P95 volume proxy": 0.39159825218323,
+      "Stressed net return": 0.016408125316878956,
+      "Unknown volume events": 0
+    },
+    {
+      "Base net return": 0.31375364334066436,
+      "ID": "A03",
+      "Max volume proxy": 4.672919905778981,
+      "P95 volume proxy": 0.896121138560737,
+      "Stressed net return": 0.18802475144047692,
+      "Unknown volume events": 0
+    },
+    {
+      "Base net return": -0.16929107730603135,
+      "ID": "A04",
+      "Max volume proxy": 7.659447832002632,
+      "P95 volume proxy": 1.3166817809652807,
+      "Stressed net return": -0.2741801086804455,
+      "Unknown volume events": 0
+    },
+    {
+      "Base net return": -0.18984101991651114,
+      "ID": "B01",
+      "Max volume proxy": 2.676191973528551,
+      "P95 volume proxy": 0.5915715599236357,
+      "Stressed net return": -0.3011860110386929,
+      "Unknown volume events": 0
+    },
+    {
+      "Base net return": -0.4535931264214226,
+      "ID": "B03",
+      "Max volume proxy": 1.305599897978544,
+      "P95 volume proxy": 0.3712578161741137,
+      "Stressed net return": -0.5087748880531174,
+      "Unknown volume events": 0
+    },
+    {
+      "Base net return": -0.14292690605764652,
+      "ID": "B04",
+      "Max volume proxy": 2.139399250186774,
+      "P95 volume proxy": 0.9603534748312973,
+      "Stressed net return": -0.21675016135695452,
+      "Unknown volume events": 0
+    },
+    {
+      "Base net return": -0.058583161930159715,
+      "ID": "B05",
+      "Max volume proxy": 0.502284914892533,
+      "P95 volume proxy": 0.24134606441919704,
+      "Stressed net return": -0.06889050963297343,
+      "Unknown volume events": 0
+    },
+    {
+      "Base net return": -0.042225361190966024,
+      "ID": "B06",
+      "Max volume proxy": 2.921363713147698,
+      "P95 volume proxy": 1.287230662753963,
+      "Stressed net return": -0.1312368723383716,
+      "Unknown volume events": 0
+    }
+  ]
+}

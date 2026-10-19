@@ -1,0 +1,114 @@
+{
+  "query_id": "regimes",
+  "period": "oos",
+  "rows": [
+    {
+      "Control mean bps/day": -4.160310878904714,
+      "Days": 159,
+      "Raw C-S gap bps/day": 3.363259203519081,
+      "Regime": "BTC 30-day direction",
+      "Same-setting gap bps/day": 3.2664984659702756,
+      "State": "High / up",
+      "Survivor mean bps/day": -7.523570082423795
+    },
+    {
+      "Control mean bps/day": -2.1796675062153623,
+      "Days": 114,
+      "Raw C-S gap bps/day": -2.9609680384685455,
+      "Regime": "BTC 30-day direction",
+      "Same-setting gap bps/day": -0.5980475763423966,
+      "State": "Low / down",
+      "Survivor mean bps/day": 0.7813005322531833
+    },
+    {
+      "Control mean bps/day": null,
+      "Days": 0,
+      "Raw C-S gap bps/day": null,
+      "Regime": "BTC 30-day direction",
+      "Same-setting gap bps/day": null,
+      "State": "Unknown",
+      "Survivor mean bps/day": null
+    },
+    {
+      "Control mean bps/day": -9.596243985894969,
+      "Days": 56,
+      "Raw C-S gap bps/day": 1.1129218116358341,
+      "Regime": "BTC trailing volatility",
+      "Same-setting gap bps/day": -0.745127768540994,
+      "State": "High / up",
+      "Survivor mean bps/day": -10.709165797530803
+    },
+    {
+      "Control mean bps/day": -1.7169671071165096,
+      "Days": 217,
+      "Raw C-S gap bps/day": 0.6215863388134231,
+      "Regime": "BTC trailing volatility",
+      "Same-setting gap bps/day": 2.2715345042605355,
+      "State": "Low / down",
+      "Survivor mean bps/day": -2.3385534459299326
+    },
+    {
+      "Control mean bps/day": null,
+      "Days": 0,
+      "Raw C-S gap bps/day": null,
+      "Regime": "BTC trailing volatility",
+      "Same-setting gap bps/day": null,
+      "State": "Unknown",
+      "Survivor mean bps/day": null
+    },
+    {
+      "Control mean bps/day": -1.4003089147721197,
+      "Days": 108,
+      "Raw C-S gap bps/day": -1.8064303751412378,
+      "Regime": "Cross-coin dispersion",
+      "Same-setting gap bps/day": 1.3343356900421826,
+      "State": "High / up",
+      "Survivor mean bps/day": 0.40612146036911806
+    },
+    {
+      "Control mean bps/day": -4.598413107024313,
+      "Days": 165,
+      "Raw C-S gap bps/day": 2.3775899241780207,
+      "Regime": "Cross-coin dispersion",
+      "Same-setting gap bps/day": 1.8611368355253626,
+      "State": "Low / down",
+      "Survivor mean bps/day": -6.976003031202334
+    },
+    {
+      "Control mean bps/day": null,
+      "Days": 0,
+      "Raw C-S gap bps/day": null,
+      "Regime": "Cross-coin dispersion",
+      "Same-setting gap bps/day": null,
+      "State": "Unknown",
+      "Survivor mean bps/day": null
+    },
+    {
+      "Control mean bps/day": 1.1943049364520681,
+      "Days": 135,
+      "Raw C-S gap bps/day": -1.6787633891971803,
+      "Regime": "Relative BTC quote volume",
+      "Same-setting gap bps/day": 0.7018493400906313,
+      "State": "High / up",
+      "Survivor mean bps/day": 2.8730683256492484
+    },
+    {
+      "Control mean bps/day": -7.762338346923406,
+      "Days": 138,
+      "Raw C-S gap bps/day": 3.0713109747517295,
+      "Regime": "Relative BTC quote volume",
+      "Same-setting gap bps/day": 2.582943271550763,
+      "State": "Low / down",
+      "Survivor mean bps/day": -10.833649321675136
+    },
+    {
+      "Control mean bps/day": null,
+      "Days": 0,
+      "Raw C-S gap bps/day": null,
+      "Regime": "Relative BTC quote volume",
+      "Same-setting gap bps/day": null,
+      "State": "Unknown",
+      "Survivor mean bps/day": null
+    }
+  ]
+}

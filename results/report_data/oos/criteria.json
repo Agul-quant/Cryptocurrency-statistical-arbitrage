@@ -1,0 +1,114 @@
+{
+  "query_id": "criteria",
+  "period": "oos",
+  "rows": [
+    {
+      "All criteria": false,
+      "Bootstrap p": 0.0287971202879712,
+      "DD": true,
+      "Economic": true,
+      "HAC t": 1.5600544731443997,
+      "Holm-9 p": 0.2303769623037696,
+      "ID": "A01",
+      "Statistical": false,
+      "TO cap / year": 52.72464945280437,
+      "Turnover": true
+    },
+    {
+      "All criteria": false,
+      "Bootstrap p": 0.1421857814218578,
+      "DD": true,
+      "Economic": true,
+      "HAC t": 0.9439524648691742,
+      "Holm-9 p": 0.9953004699530047,
+      "ID": "A02",
+      "Statistical": false,
+      "TO cap / year": 83.1517185362517,
+      "Turnover": true
+    },
+    {
+      "All criteria": true,
+      "Bootstrap p": 0.0023997600239976003,
+      "DD": true,
+      "Economic": true,
+      "HAC t": 3.0760061493538338,
+      "Holm-9 p": 0.021597840215978402,
+      "ID": "A03",
+      "Statistical": true,
+      "TO cap / year": 41.4375,
+      "Turnover": true
+    },
+    {
+      "All criteria": false,
+      "Bootstrap p": 0.5774422557744225,
+      "DD": true,
+      "Economic": false,
+      "HAC t": -0.19736775285590802,
+      "Holm-9 p": 1.0,
+      "ID": "A04",
+      "Statistical": false,
+      "TO cap / year": 95.8686730506156,
+      "Turnover": true
+    },
+    {
+      "All criteria": false,
+      "Bootstrap p": 0.7046295370462954,
+      "DD": true,
+      "Economic": false,
+      "HAC t": -0.7030965896135862,
+      "Holm-9 p": 1.0,
+      "ID": "B01",
+      "Statistical": false,
+      "TO cap / year": 122.53125,
+      "Turnover": true
+    },
+    {
+      "All criteria": false,
+      "Bootstrap p": 0.9996000399960004,
+      "DD": false,
+      "Economic": false,
+      "HAC t": -3.048789363845073,
+      "Holm-9 p": 1.0,
+      "ID": "B03",
+      "Statistical": false,
+      "TO cap / year": 41.625,
+      "Turnover": false
+    },
+    {
+      "All criteria": false,
+      "Bootstrap p": 0.7231276872312768,
+      "DD": true,
+      "Economic": false,
+      "HAC t": -0.6170034824190334,
+      "Holm-9 p": 1.0,
+      "ID": "B04",
+      "Statistical": false,
+      "TO cap / year": 33.516586867305065,
+      "Turnover": true
+    },
+    {
+      "All criteria": false,
+      "Bootstrap p": 0.5767423257674232,
+      "DD": true,
+      "Economic": false,
+      "HAC t": -0.18935895341086556,
+      "Holm-9 p": 1.0,
+      "ID": "B05",
+      "Statistical": false,
+      "TO cap / year": 18.72435020519836,
+      "Turnover": true
+    },
+    {
+      "All criteria": false,
+      "Bootstrap p": 0.46035396460353967,
+      "DD": true,
+      "Economic": false,
+      "HAC t": 0.06694251829568632,
+      "Holm-9 p": 1.0,
+      "ID": "B06",
+      "Statistical": false,
+      "TO cap / year": 36.88696990424077,
+      "Turnover": true
+    }
+  ]
+}

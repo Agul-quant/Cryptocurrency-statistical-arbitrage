@@ -1,0 +1,54 @@
+{
+  "query_id": "eligibility",
+  "period": "validation",
+  "rows": [
+    {
+      "Dev Q1": 20068,
+      "Eligible": 3619,
+      "Family": "Buffered momentum",
+      "Full grid": 26460,
+      "ID": "B01",
+      "Selected": 1
+    },
+    {
+      "Dev Q1": 1355,
+      "Eligible": 0,
+      "Family": "BTC residual reversal",
+      "Full grid": 6615,
+      "ID": "B02",
+      "Selected": 0
+    },
+    {
+      "Dev Q1": 107412,
+      "Eligible": 13585,
+      "Family": "Momentum",
+      "Full grid": 515970,
+      "ID": "B03",
+      "Selected": 1
+    },
+    {
+      "Dev Q1": 45673,
+      "Eligible": 1227,
+      "Family": "Reversal",
+      "Full grid": 515970,
+      "ID": "B04",
+      "Selected": 1
+    },
+    {
+      "Dev Q1": 24856,
+      "Eligible": 12125,
+      "Family": "Long/cash trend",
+      "Full grid": 26460,
+      "ID": "B05",
+      "Selected": 1
+    },
+    {
+      "Dev Q1": 25503,
+      "Eligible": 8776,
+      "Family": "Long/short trend",
+      "Full grid": 26460,
+      "ID": "B06",
+      "Selected": 1
+    }
+  ]
+}

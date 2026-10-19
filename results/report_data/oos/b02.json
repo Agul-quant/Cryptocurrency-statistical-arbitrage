@@ -1,0 +1,30 @@
+{
+  "query_id": "b02",
+  "period": "oos",
+  "rows": [
+    {
+      "Pairs": 6615,
+      "Stage": "All factor baskets"
+    },
+    {
+      "Pairs": 1355,
+      "Stage": "Development Q1"
+    },
+    {
+      "Pairs": 1355,
+      "Stage": "Evaluated in both periods"
+    },
+    {
+      "Pairs": 740,
+      "Stage": "Positive development"
+    },
+    {
+      "Pairs": 0,
+      "Stage": "Positive both periods"
+    },
+    {
+      "Pairs": 0,
+      "Stage": "Eligible with defined Sharpes"
+    }
+  ]
+}

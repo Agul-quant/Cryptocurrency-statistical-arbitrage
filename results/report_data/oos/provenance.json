@@ -1,0 +1,14 @@
+{
+  "query_id": "provenance",
+  "period": "oos",
+  "rows": [
+    {
+      "Complete days": 273,
+      "Earlier project-wide inspection": true,
+      "First owned access UTC": "2026-10-15T12:47:53.262852+00:00",
+      "Freeze UTC": "2026-10-15T12:47:45.892101+00:00",
+      "Window": "1Jan-30Sep2026;Oct1UTC closing endpoint",
+      "Saved results and factor diagnostics": true
+    }
+  ]
+}

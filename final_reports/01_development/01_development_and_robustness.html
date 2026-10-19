@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ffffff">
-<meta name="data-app-snapshot-sha256" content="ecc53fc2b1ebccbb5cca7785c92d6e151c01efd18162e0e4743d00d2ab0fe09a">
+<meta name="data-app-snapshot-sha256" content="a9b1dc95d287bcc81323a1406207224f6391edd2bae1b81ccaa53398f5f832c7">
 <meta name="data-app-runtime-sha256" content="9e3ede84b28aded3c7379b6e6a5611f0d95b9977eb0f781e279ceefabfcbd27e">
 <meta name="data-app-bootstrap" content="deferred-content-v1">
 
@@ -31,7 +31,7 @@
   "filters": [],
   "report": {
     "asOf": "2023-12-31",
-    "subtitle": "Final report 1 of 3 | Restarted crypto research | Development: 2022-2023"
+    "subtitle": "Report 1 of 3 | Development: 2022-2023"
   },
   "queries": {
     "liquidity": {
@@ -172,11 +172,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_tiered8_development_20261013/report/report_source_manifest.json",
-          "research/restart_tiered8_development_20261013/outputs/reporting/liquidity_ranking.csv",
-          "research/restart_tiered8_development_20261013/protocol.json"
+          "results/report_data/development/liquidity.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -191,32 +188,32 @@
               "liquidity-tier-1",
               "liquidity-tier-2",
               "lifecycle-universe"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/liquidity.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_tiered8_development_20261013/report/report_source_manifest.json; research/restart_tiered8_development_20261013/outputs/reporting/liquidity_ranking.csv; research/restart_tiered8_development_20261013/protocol.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed liquidity rows",
-            "detail": "Historical ranks and 90-observation median daily quote volume; millions USDT = stored USDT / 1e6. Rank decision 2022-01-01, information cutoff 2021-12-31; no reconstitution."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/liquidity.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "Historical ranks and 90-observation median daily quote volume; millions USDT = stored USDT / 1e6. Rank decision 2022-01-01, information cutoff 2021-12-31; no reconstitution."
+          "code": "Read results/report_data/development/liquidity.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -298,9 +295,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          "results/report_data/development/family.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -312,32 +308,32 @@
               "family-result-story",
               "family-table",
               "family-interpretation"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/family.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed family rows",
-            "detail": "financial_summary: scope=development, scenario_id=cost20_lag1. Separate medians across all basket-configuration pairs in each family. Positive fraction = n_positive_net/n_population."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/family.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "financial_summary: scope=development, scenario_id=cost20_lag1. Separate medians across all basket-configuration pairs in each family. Positive fraction = n_positive_net/n_population."
+          "code": "Read results/report_data/development/family.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -396,9 +392,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_tiered8_development_20261013/outputs/reporting/summary.json"
+          "results/report_data/development/cost.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -410,32 +405,32 @@
               "cost-story",
               "cost-chart",
               "cost-table"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/cost.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_tiered8_development_20261013/outputs/reporting/summary.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed cost rows",
-            "detail": "scenario_summary: all seven development scenarios. Fraction = n_positive_net/n_total. Cost chart excludes extra-hour scenario, not any fee case."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/cost.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "scenario_summary: all seven development scenarios. Fraction = n_positive_net/n_total. Cost chart excludes extra-hour scenario, not any fee case."
+          "code": "Read results/report_data/development/cost.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -493,9 +488,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          "results/report_data/development/years.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -506,32 +500,32 @@
             "componentIds": [
               "year-story",
               "year-table"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/years.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed years rows",
-            "detail": "family_year_transitions: each sign count divided by n_primary_pairs, same continuous path slices, not annual restarts."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/years.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "family_year_transitions: each sign count divided by n_primary_pairs, same continuous path slices, not annual restarts."
+          "code": "Read results/report_data/development/years.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -625,9 +619,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          "results/report_data/development/annual.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -637,32 +630,32 @@
             "definition": "financial_summary: annual 2022 and 2023 slices at cost20_lag1. Each chart value is family median compounded annual return, multiplied by100 for percent labels.",
             "componentIds": [
               "annual-chart"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/annual.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed annual rows",
-            "detail": "financial_summary: annual 2022 and 2023 slices at cost20_lag1. Each chart value is family median compounded annual return, multiplied by100 for percent labels."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/annual.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "financial_summary: annual 2022 and 2023 slices at cost20_lag1. Each chart value is family median compounded annual return, multiplied by100 for percent labels."
+          "code": "Read results/report_data/development/annual.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -768,9 +761,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          "results/report_data/development/neighbors.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -782,32 +774,32 @@
               "neighbor-story",
               "neighbor-table",
               "neighbor-caveat"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/neighbors.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed neighbors rows",
-            "detail": "neighbor_robustness: mean positive-neighbor fraction conditional on positive center with finite neighbors; median absolute return delta across all centers. Query retains both parameter and basket rows; display pivots the two types by family."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/neighbors.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "neighbor_robustness: mean positive-neighbor fraction conditional on positive center with finite neighbors; median absolute return delta across all centers. Query retains both parameter and basket rows; display pivots the two types by family."
+          "code": "Read results/report_data/development/neighbors.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -901,9 +893,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          "results/report_data/development/luna.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -914,32 +905,32 @@
             "componentIds": [
               "luna-story",
               "luna-table"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/luna.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed luna rows",
-            "detail": "membership_conditioned_summaries: symbol=LUNAUSDT, present and absent groups. Query retains both groups; display pivots by family. These are associations, not removed-coin counterfactuals."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/luna.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "membership_conditioned_summaries: symbol=LUNAUSDT, present and absent groups. Query retains both groups; display pivots by family. These are associations, not removed-coin counterfactuals."
+          "code": "Read results/report_data/development/luna.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -1117,9 +1108,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          "results/report_data/development/attribution.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -1130,32 +1120,32 @@
             "componentIds": [
               "luna-chart",
               "event-accounting"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/attribution.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed attribution rows",
-            "detail": "attribution_summary: symbol=LUNAUSDT. Event chart uses scope=event_window, May6 00:00 through May21 00:00 UTC. Mean dollar contributions per original $1 continuous NAV across all family paths, absent coin structural zero; overlapping scopes never added."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/attribution.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "attribution_summary: symbol=LUNAUSDT. Event chart uses scope=event_window, May6 00:00 through May21 00:00 UTC. Mean dollar contributions per original $1 continuous NAV across all family paths, absent coin structural zero; overlapping scopes never added."
+          "code": "Read results/report_data/development/attribution.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -1691,7 +1681,7 @@
         },
         {
           "alpha_annual_mean": -0.04409526750290755,
-          "alpha_annual_median": -0.044113</script><script type="application/json" data-app-snapshot-chunk>92574488464,
+          "alpha_annual_median": -0.04411392574488464,
           "alpha_annual_n_finite": 6615,
           "alpha_annual_n_undefined": 0,
           "alpha_annual_p10": -0.2485208566115591,
@@ -1717,7 +1707,7 @@
           "gross_sharpe_p90": 1.4000258087651116,
           "gross_total_return_mean": 0.46570995080198985,
           "gross_total_return_median": 0.4084928478180155,
-          "gross_total_return_n_finite": 6615,
+          "gross_total_return_n_finite": 66</script><script type="application/json" data-app-snapshot-chunk>15,
           "gross_total_return_n_undefined": 0,
           "gross_total_return_p10": -0.04844055854773083,
           "gross_total_return_p90": 1.0449190974332911,
@@ -2485,9 +2475,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          "results/report_data/development/clocks.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -2497,32 +2486,32 @@
             "definition": "matched_clock_summary: five nonfactor families × four matched clocks × all6,615 baskets. Narrative means read original total_return_mean; source rows include means and medians.",
             "componentIds": [
               "cadence-story"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/clocks.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed clocks rows",
-            "detail": "matched_clock_summary: five nonfactor families × four matched clocks × all6,615 baskets. Narrative means read original total_return_mean; source rows include means and medians."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/clocks.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "matched_clock_summary: five nonfactor families × four matched clocks × all6,615 baskets. Narrative means read original total_return_mean; source rows include means and medians."
+          "code": "Read results/report_data/development/clocks.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -2567,9 +2556,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_tiered8_development_20261013/outputs/reporting/summary.json"
+          "results/report_data/development/metrics.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -2579,32 +2567,32 @@
             "definition": "primary_summary: full-grid distribution medians at cost20_lag1. CAGR elapsed-year basis, daily Sharpe complete UTC days, drawdown observed endpoints, full-L1 target turnover annualized365 days.",
             "componentIds": [
               "metrics-definition"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/metrics.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_tiered8_development_20261013/outputs/reporting/summary.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed metrics rows",
-            "detail": "primary_summary: full-grid distribution medians at cost20_lag1. CAGR elapsed-year basis, daily Sharpe complete UTC days, drawdown observed endpoints, full-L1 target turnover annualized365 days."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/metrics.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "primary_summary: full-grid distribution medians at cost20_lag1. CAGR elapsed-year basis, daily Sharpe complete UTC days, drawdown observed endpoints, full-L1 target turnover annualized365 days."
+          "code": "Read results/report_data/development/metrics.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -2623,11 +2611,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_tiered8_development_20261013/protocol.json",
-          "research/restart_tiered8_development_20261013/outputs/reporting/summary.json",
-          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          "results/report_data/development/coverage.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -2642,32 +2627,32 @@
               "year-scope",
               "methods",
               "conclusion"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/coverage.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_tiered8_development_20261013/protocol.json; research/restart_tiered8_development_20261013/outputs/reporting/summary.json; research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed coverage rows",
-            "detail": "Accepted development coverage, primary medians and within-basket annual Spearman summary. Descriptive distributions only; no re-ranking or new financial evaluation."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/coverage.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "Accepted development coverage, primary medians and within-basket annual Spearman summary. Descriptive distributions only; no re-ranking or new financial evaluation."
+          "code": "Read results/report_data/development/coverage.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -3449,7 +3434,7 @@
           "experiment_id": "reversal_h0004_r012",
           "report_family": "reversal"
         },
- </script><script type="application/json" data-app-snapshot-chunk>       {
+        {
           "lookback_h": 4,
           "rebalance_h": 72,
           "buffer_l1": 0.0,
@@ -3518,7 +3503,7 @@
           "rebalance_h": 12,
           "buffer_l1": 0.0,
           "phase_hours": 0,
-          "experiment_id": "reversal_h0012_r012",
+          "experiment_id": "reversal_h0012_r</script><script type="application/json" data-app-snapshot-chunk>012",
           "report_family": "reversal"
         },
         {
@@ -4029,10 +4014,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_tiered8_development_20261013/protocol.json",
-          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          "results/report_data/development/strategy.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -4042,32 +4025,32 @@
             "definition": "All169 frozen cases: 78 momentum,78 reversal,4 buffered momentum,4 long/cash,4 long/short,1 fixed BTC residual reversal. Full specification retained; no newly selected configuration.",
             "componentIds": [
               "strategy-definitions"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/strategy.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_tiered8_development_20261013/protocol.json; research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed strategy rows",
-            "detail": "All169 frozen cases: 78 momentum,78 reversal,4 buffered momentum,4 long/cash,4 long/short,1 fixed BTC residual reversal. Full specification retained; no newly selected configuration."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/strategy.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "All169 frozen cases: 78 momentum,78 reversal,4 buffered momentum,4 long/cash,4 long/short,1 fixed BTC residual reversal. Full specification retained; no newly selected configuration."
+          "code": "Read results/report_data/development/strategy.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -4225,9 +4208,8 @@
       "source": {
         "label": "Checksum-verified accepted development evidence",
         "files": [
-          "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
+          "results/report_data/development/buffers.json"
         ],
-        "tables": [],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
         ],
@@ -4237,32 +4219,32 @@
             "definition": "matched_buffer_effects: paired buffered-minus-unbuffered paths on same basket, lookback and rebalance; displayed narrative uses stored median net return difference.",
             "componentIds": [
               "cadence-story"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/buffers.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Exact accepted source files",
-            "detail": "research/restart_development_robustness_20261013/outputs/reporting/report_payload.json"
-          },
-          {
-            "title": "Verify accepted files",
-            "detail": "SHA-256 checked before decode through final source manifests; liquidity CSV additionally verified through its accepted report_source_manifest.json pin."
-          },
-          {
-            "title": "Prepare reviewed buffers rows",
-            "detail": "matched_buffer_effects: paired buffered-minus-unbuffered paths on same basket, lookback and rebalance; displayed narrative uses stored median net return difference."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/buffers.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "caveats": [
-          "Correlated retrospective research paths; not a portfolio or search-adjusted discovery.",
+          "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
-        ]
+        ],
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
       },
       "methods": [
         {
           "language": "text",
-          "code": "matched_buffer_effects: paired buffered-minus-unbuffered paths on same basket, lookback and rebalance; displayed narrative uses stored median net return difference."
+          "code": "Read results/report_data/development/buffers.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -4276,13 +4258,13 @@
           "Fit / calendar days": "610/730",
           "R²": "0.093",
           "Max VIF": "5.46",
-          "Case narrative": "### A01 | basket 4645 | 2022-2023 development\n\nBuffered momentum; 28.0d lookback, 168h rebalance. **Net period return: 165.36%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **610/730 days**; R-squared **0.093**; standardized condition **6.50**; max VIF **5.46**. Neither declared collinearity warning threshold was crossed. Max leverage **0.279**, max Cook's distance **1.375**: low collinearity alone does not establish stability. Excluded: **2022-05-13 to 2022-09-09 (120 days)**.\n\nBTC beta: legacy full-calendar HAC7 **-0.019 [-0.084, 0.047]**; matched-calendar HAC27 **-0.011 [-0.097, 0.074]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A01 | basket 4645 | 2022-2023 development\n\nBuffered momentum; 28.0d lookback, 168h rebalance. **Net period return: 165.36%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **610/730 days**; R-squared **0.093**; standardized condition **6.50**; max VIF **5.46**. Neither declared collinearity warning threshold was crossed. Max leverage **0.279**, max Cook's distance **1.375**: low collinearity alone does not establish stability. Excluded: **2022-05-13 to 2022-09-09 (120 days)**.\n\nBTC-only beta: full-calendar HAC7 **-0.019 [-0.084, 0.047]**; matched-calendar HAC27 **-0.011 [-0.097, 0.074]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.5638928094155837,
           "joint_alpha_ci95_low": 0.10704701306513748,
           "joint_alpha_ci95_high": 1.02073860576603,
-          "legacy_btc_alpha_annual": 0.5314104755286057,
-          "legacy_btc_alpha_ci95_low": 0.1014867288591981,
-          "legacy_btc_alpha_ci95_high": 0.9613342221980132,
+          "btc_only_alpha_annual": 0.5314104755286057,
+          "btc_only_alpha_ci95_low": 0.1014867288591981,
+          "btc_only_alpha_ci95_high": 0.9613342221980132,
           "matched_btc_alpha_annual": 0.6995736099146113,
           "matched_btc_alpha_ci95_low": 0.1462576807608934,
           "matched_btc_alpha_ci95_high": 1.2528895390683292,
@@ -4304,13 +4286,13 @@
           "Fit / calendar days": "610/730",
           "R²": "0.184",
           "Max VIF": "5.46",
-          "Case narrative": "### A02 | basket 4645 | 2022-2023 development\n\nMomentum; 28.0d lookback, 72h rebalance. **Net period return: 252.94%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **610/730 days**; R-squared **0.184**; standardized condition **6.50**; max VIF **5.46**. Neither declared collinearity warning threshold was crossed. Max leverage **0.279**, max Cook's distance **4.224**: low collinearity alone does not establish stability. Excluded: **2022-05-13 to 2022-09-09 (120 days)**.\n\nBTC beta: legacy full-calendar HAC7 **-0.027 [-0.088, 0.034]**; matched-calendar HAC27 **-0.015 [-0.105, 0.074]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A02 | basket 4645 | 2022-2023 development\n\nMomentum; 28.0d lookback, 72h rebalance. **Net period return: 252.94%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **610/730 days**; R-squared **0.184**; standardized condition **6.50**; max VIF **5.46**. Neither declared collinearity warning threshold was crossed. Max leverage **0.279**, max Cook's distance **4.224**: low collinearity alone does not establish stability. Excluded: **2022-05-13 to 2022-09-09 (120 days)**.\n\nBTC-only beta: full-calendar HAC7 **-0.027 [-0.088, 0.034]**; matched-calendar HAC27 **-0.015 [-0.105, 0.074]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.5487463451181844,
           "joint_alpha_ci95_low": 0.007808013001319836,
           "joint_alpha_ci95_high": 1.089684677235049,
-          "legacy_btc_alpha_annual": 0.6886386759762381,
-          "legacy_btc_alpha_ci95_low": 0.0780899777326626,
-          "legacy_btc_alpha_ci95_high": 1.299187374219814,
+          "btc_only_alpha_annual": 0.6886386759762381,
+          "btc_only_alpha_ci95_low": 0.0780899777326626,
+          "btc_only_alpha_ci95_high": 1.299187374219814,
           "matched_btc_alpha_annual": 0.7502235026093812,
           "matched_btc_alpha_ci95_low": 0.0256652217960619,
           "matched_btc_alpha_ci95_high": 1.4747817834227006,
@@ -4332,13 +4314,13 @@
           "Fit / calendar days": "730/730",
           "R²": "0.255",
           "Max VIF": "5.03",
-          "Case narrative": "### A03 | basket 1159 | 2022-2023 development\n\nReversal; 60.0d lookback, 168h rebalance. **Net period return: 64.38%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **730/730 days**; R-squared **0.255**; standardized condition **7.07**; max VIF **5.03**. Neither declared collinearity warning threshold was crossed. Max leverage **0.205**, max Cook's distance **0.730**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **0.017 [-0.035, 0.069]**; matched-calendar HAC27 **0.017 [-0.044, 0.079]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A03 | basket 1159 | 2022-2023 development\n\nReversal; 60.0d lookback, 168h rebalance. **Net period return: 64.38%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **730/730 days**; R-squared **0.255**; standardized condition **7.07**; max VIF **5.03**. Neither declared collinearity warning threshold was crossed. Max leverage **0.205**, max Cook's distance **0.730**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **0.017 [-0.035, 0.069]**; matched-calendar HAC27 **0.017 [-0.044, 0.079]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.3637312037436952,
           "joint_alpha_ci95_low": 0.08208416937981783,
           "joint_alpha_ci95_high": 0.6453782381075726,
-          "legacy_btc_alpha_annual": 0.273189466146774,
-          "legacy_btc_alpha_ci95_low": -0.0518501370607177,
-          "legacy_btc_alpha_ci95_high": 0.5982290693542657,
+          "btc_only_alpha_annual": 0.273189466146774,
+          "btc_only_alpha_ci95_low": -0.0518501370607177,
+          "btc_only_alpha_ci95_high": 0.5982290693542657,
           "matched_btc_alpha_annual": 0.2731894661467803,
           "matched_btc_alpha_ci95_low": -0.07395387629974814,
           "matched_btc_alpha_ci95_high": 0.6203328085933087,
@@ -4360,13 +4342,13 @@
           "Fit / calendar days": "610/730",
           "R²": "0.118",
           "Max VIF": "4.94",
-          "Case narrative": "### A04 | basket 4444 | 2022-2023 development\n\nTrend long/short; 28.0d lookback, 24h rebalance. **Net period return: 314.22%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **610/730 days**; R-squared **0.118**; standardized condition **6.61**; max VIF **4.94**. Neither declared collinearity warning threshold was crossed. Max leverage **0.267**, max Cook's distance **1.684**: low collinearity alone does not establish stability. Excluded: **2022-05-13 to 2022-09-09 (120 days)**.\n\nBTC beta: legacy full-calendar HAC7 **-0.276 [-0.498, -0.054]**; matched-calendar HAC27 **-0.201 [-0.549, 0.146]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A04 | basket 4444 | 2022-2023 development\n\nTrend long/short; 28.0d lookback, 24h rebalance. **Net period return: 314.22%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **610/730 days**; R-squared **0.118**; standardized condition **6.61**; max VIF **4.94**. Neither declared collinearity warning threshold was crossed. Max leverage **0.267**, max Cook's distance **1.684**: low collinearity alone does not establish stability. Excluded: **2022-05-13 to 2022-09-09 (120 days)**.\n\nBTC-only beta: full-calendar HAC7 **-0.276 [-0.498, -0.054]**; matched-calendar HAC27 **-0.201 [-0.549, 0.146]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.7488641887032921,
           "joint_alpha_ci95_low": -0.22180232234323605,
           "joint_alpha_ci95_high": 1.71953069974982,
-          "legacy_btc_alpha_annual": 0.9371640731171172,
-          "legacy_btc_alpha_ci95_low": 0.0150802383119672,
-          "legacy_btc_alpha_ci95_high": 1.8592479079222677,
+          "btc_only_alpha_annual": 0.9371640731171172,
+          "btc_only_alpha_ci95_low": 0.0150802383119672,
+          "btc_only_alpha_ci95_high": 1.8592479079222677,
           "matched_btc_alpha_annual": 0.9471430052656766,
           "matched_btc_alpha_ci95_low": -0.22673709455570168,
           "matched_btc_alpha_ci95_high": 2.1210231050870547,
@@ -4388,13 +4370,13 @@
           "Fit / calendar days": "730/730",
           "R²": "0.146",
           "Max VIF": "5.26",
-          "Case narrative": "### B01 | basket 2323 | 2022-2023 development\n\nBuffered momentum; 28.0d lookback, 24h rebalance. **Net period return: 0.34%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **730/730 days**; R-squared **0.146**; standardized condition **6.74**; max VIF **5.26**. Neither declared collinearity warning threshold was crossed. Max leverage **0.493**, max Cook's distance **4.421**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.039 [-0.093, 0.016]**; matched-calendar HAC27 **-0.039 [-0.109, 0.032]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B01 | basket 2323 | 2022-2023 development\n\nBuffered momentum; 28.0d lookback, 24h rebalance. **Net period return: 0.34%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **730/730 days**; R-squared **0.146**; standardized condition **6.74**; max VIF **5.26**. Neither declared collinearity warning threshold was crossed. Max leverage **0.493**, max Cook's distance **4.421**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.039 [-0.093, 0.016]**; matched-calendar HAC27 **-0.039 [-0.109, 0.032]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.020029163298700955,
           "joint_alpha_ci95_low": -0.3840545274716615,
           "joint_alpha_ci95_high": 0.3439962008742596,
-          "legacy_btc_alpha_annual": 0.0423604588138428,
-          "legacy_btc_alpha_ci95_low": -0.3312531258898329,
-          "legacy_btc_alpha_ci95_high": 0.4159740435175186,
+          "btc_only_alpha_annual": 0.0423604588138428,
+          "btc_only_alpha_ci95_low": -0.3312531258898329,
+          "btc_only_alpha_ci95_high": 0.4159740435175186,
           "matched_btc_alpha_annual": 0.04236045881384625,
           "matched_btc_alpha_ci95_low": -0.3472483106907493,
           "matched_btc_alpha_ci95_high": 0.4319692283184418,
@@ -4416,13 +4398,13 @@
           "Fit / calendar days": "730/730",
           "R²": "0.176",
           "Max VIF": "5.99",
-          "Case narrative": "### B03 | basket 2457 | 2022-2023 development\n\nMomentum; 90.0d lookback, 72h rebalance. **Net period return: 1.05%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **730/730 days**; R-squared **0.176**; standardized condition **7.12**; max VIF **5.99**. Neither declared collinearity warning threshold was crossed. Max leverage **0.490**, max Cook's distance **0.493**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.018 [-0.077, 0.041]**; matched-calendar HAC27 **-0.018 [-0.098, 0.062]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B03 | basket 2457 | 2022-2023 development\n\nMomentum; 90.0d lookback, 72h rebalance. **Net period return: 1.05%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **730/730 days**; R-squared **0.176**; standardized condition **7.12**; max VIF **5.99**. Neither declared collinearity warning threshold was crossed. Max leverage **0.490**, max Cook's distance **0.493**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.018 [-0.077, 0.041]**; matched-calendar HAC27 **-0.018 [-0.098, 0.062]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.06599744077162574,
           "joint_alpha_ci95_low": -0.3917785013596256,
           "joint_alpha_ci95_high": 0.25978361981637416,
-          "legacy_btc_alpha_annual": 0.0406778292288426,
-          "legacy_btc_alpha_ci95_low": -0.3027938976027758,
-          "legacy_btc_alpha_ci95_high": 0.3841495560604611,
+          "btc_only_alpha_annual": 0.0406778292288426,
+          "btc_only_alpha_ci95_low": -0.3027938976027758,
+          "btc_only_alpha_ci95_high": 0.3841495560604611,
           "matched_btc_alpha_annual": 0.04067782922884398,
           "matched_btc_alpha_ci95_low": -0.29705710518303385,
           "matched_btc_alpha_ci95_high": 0.37841276364072185,
@@ -4444,13 +4426,13 @@
           "Fit / calendar days": "610/730",
           "R²": "0.135",
           "Max VIF": "4.96",
-          "Case narrative": "### B04 | basket 6064 | 2022-2023 development\n\nReversal; 90.0d lookback, 168h rebalance. **Net period return: 44.11%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **610/730 days**; R-squared **0.135**; standardized condition **6.75**; max VIF **4.96**. Neither declared collinearity warning threshold was crossed. Max leverage **0.255**, max Cook's distance **7.566**: low collinearity alone does not establish stability. Excluded: **2022-05-13 to 2022-09-09 (120 days)**.\n\nBTC beta: legacy full-calendar HAC7 **0.009 [-0.063, 0.082]**; matched-calendar HAC27 **-0.008 [-0.093, 0.078]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B04 | basket 6064 | 2022-2023 development\n\nReversal; 90.0d lookback, 168h rebalance. **Net period return: 44.11%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **610/730 days**; R-squared **0.135**; standardized condition **6.75**; max VIF **4.96**. Neither declared collinearity warning threshold was crossed. Max leverage **0.255**, max Cook's distance **7.566**: low collinearity alone does not establish stability. Excluded: **2022-05-13 to 2022-09-09 (120 days)**.\n\nBTC-only beta: full-calendar HAC7 **0.009 [-0.063, 0.082]**; matched-calendar HAC27 **-0.008 [-0.093, 0.078]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.05332645357691623,
           "joint_alpha_ci95_low": -0.304928843500833,
           "joint_alpha_ci95_high": 0.41158175065466546,
-          "legacy_btc_alpha_annual": 0.2748173289967694,
-          "legacy_btc_alpha_ci95_low": -0.341313620588993,
-          "legacy_btc_alpha_ci95_high": 0.890948278582532,
+          "btc_only_alpha_annual": 0.2748173289967694,
+          "btc_only_alpha_ci95_low": -0.341313620588993,
+          "btc_only_alpha_ci95_high": 0.890948278582532,
           "matched_btc_alpha_annual": -0.05650856363068058,
           "matched_btc_alpha_ci95_low": -0.457626359712979,
           "matched_btc_alpha_ci95_high": 0.34460923245161784,
@@ -4472,13 +4454,13 @@
           "Fit / calendar days": "730/730",
           "R²": "0.544",
           "Max VIF": "5.38",
-          "Case narrative": "### B05 | basket 2330 | 2022-2023 development\n\nTrend long/cash; 28.0d lookback, 168h rebalance. **Net period return: 12.60%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **730/730 days**; R-squared **0.544**; standardized condition **6.51**; max VIF **5.38**. Neither declared collinearity warning threshold was crossed. Max leverage **0.489**, max Cook's distance **0.291**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **0.382 [0.273, 0.492]**; matched-calendar HAC27 **0.382 [0.243, 0.521]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B05 | basket 2330 | 2022-2023 development\n\nTrend long/cash; 28.0d lookback, 168h rebalance. **Net period return: 12.60%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **730/730 days**; R-squared **0.544**; standardized condition **6.51**; max VIF **5.38**. Neither declared collinearity warning threshold was crossed. Max leverage **0.489**, max Cook's distance **0.291**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **0.382 [0.273, 0.492]**; matched-calendar HAC27 **0.382 [0.243, 0.521]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.07508462852983576,
           "joint_alpha_ci95_low": -0.20828896357145388,
           "joint_alpha_ci95_high": 0.3584582206311254,
-          "legacy_btc_alpha_annual": 0.0734499965663088,
-          "legacy_btc_alpha_ci95_low": -0.2518663371026632,
-          "legacy_btc_alpha_ci95_high": 0.3987663302352808,
+          "btc_only_alpha_annual": 0.0734499965663088,
+          "btc_only_alpha_ci95_low": -0.2518663371026632,
+          "btc_only_alpha_ci95_high": 0.3987663302352808,
           "matched_btc_alpha_annual": 0.07344999656631572,
           "matched_btc_alpha_ci95_low": -0.24113873250404722,
           "matched_btc_alpha_ci95_high": 0.3880387256366787,
@@ -4500,13 +4482,13 @@
           "Fit / calendar days": "730/730",
           "R²": "0.174",
           "Max VIF": "5.28",
-          "Case narrative": "### B06 | basket 2495 | 2022-2023 development\n\nTrend long/short; 28.0d lookback, 168h rebalance. **Net period return: 35.86%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **730/730 days**; R-squared **0.174**; standardized condition **6.59**; max VIF **5.28**. Neither declared collinearity warning threshold was crossed. Max leverage **0.488**, max Cook's distance **0.226**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.287 [-0.475, -0.100]**; matched-calendar HAC27 **-0.287 [-0.551, -0.023]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B06 | basket 2495 | 2022-2023 development\n\nTrend long/short; 28.0d lookback, 168h rebalance. **Net period return: 35.86%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **730/730 days**; R-squared **0.174**; standardized condition **6.59**; max VIF **5.28**. Neither declared collinearity warning threshold was crossed. Max leverage **0.488**, max Cook's distance **0.226**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.287 [-0.475, -0.100]**; matched-calendar HAC27 **-0.287 [-0.551, -0.023]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.1982454967761983,
           "joint_alpha_ci95_low": -0.36320559387909834,
           "joint_alpha_ci95_high": 0.7596965874314949,
-          "legacy_btc_alpha_annual": 0.3088256365558733,
-          "legacy_btc_alpha_ci95_low": -0.2840673141301406,
-          "legacy_btc_alpha_ci95_high": 0.9017185872418872,
+          "btc_only_alpha_annual": 0.3088256365558733,
+          "btc_only_alpha_ci95_low": -0.2840673141301406,
+          "btc_only_alpha_ci95_high": 0.9017185872418872,
           "matched_btc_alpha_annual": 0.30882563655586737,
           "matched_btc_alpha_ci95_low": -0.25088155937323986,
           "matched_btc_alpha_ci95_high": 0.8685328324849746,
@@ -4522,18 +4504,14 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January 2022-31 December 2023; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/joint_models.json",
-          "research/basket_factor_attribution_20261016/outputs/joint_coefficients.csv",
-          "research/basket_factor_attribution_20261016/outputs/legacy_btc_comparison.csv",
-          "research/basket_factor_attribution_20261016/outputs/matched_btc_coefficients.csv",
-          "research/basket_factor_attribution_20261016/outputs/attribution_totals.csv"
+          "results/report_data/development/basket_attribution_summary.json"
         ],
         "metricDefinitions": [
           {
             "label": "Summary",
-            "definition": "Annual alpha is 365 times the daily arithmetic intercept. All displayed alpha values/intervals are percent/year. Joint and matched BTC use the same complete-case dates and corrected calendar HAC27; legacy BTC retains original full-period saved HAC7. R2 is joint in-sample fit; VIF and condition diagnostics are descriptive.",
+            "definition": "Annual alpha is 365 times the daily arithmetic intercept. All displayed alpha values/intervals are percent/year. Joint and matched BTC use the same complete-case dates and corrected calendar HAC27; full-calendar BTC-only retains original full-period saved HAC7. R2 is joint in-sample fit; VIF and condition diagnostics are descriptive.",
             "componentIds": [
               "basket-attribution-20261016-overview",
               "basket-attribution-20261016-interpretation",
@@ -4546,17 +4524,20 @@
               "basket-attribution-20261016-B04-context",
               "basket-attribution-20261016-B05-context",
               "basket-attribution-20261016-B06-context"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/basket_attribution_summary.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly development; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/basket_attribution_summary.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -4566,8 +4547,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: development."
+          "language": "text",
+          "code": "Read results/report_data/development/basket_attribution_summary.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -4884,7 +4865,7 @@
           "ordinary_turnover": 8.9375,
           "period": "development",
           "strategy_id": "A01",
-      </script><script type="application/json" data-app-snapshot-chunk>    "symbol": "LTCUSDT",
+          "symbol": "LTCUSDT",
           "terminal_turnover": 0.15625,
           "ID": "A01",
           "Coin": "LTC",
@@ -4950,7 +4931,7 @@
           "contribution_units": "fraction_of_initial_net_NAV_whole_period_not_annualized",
           "fees_ci95_high": 0.136470352069547,
           "fees_ci95_low": 0.02391538684576197,
-          "fees_linked_contribution": 0.04904358328301919,
+          "fees_linked_contribution": 0.0490435</script><script type="application/json" data-app-snapshot-chunk>8328301919,
           "forced_turnover": 0.010416666666666671,
           "full_l1_turnover": 11.75,
           "gross_ci95_high": 1.218899807014175,
@@ -6311,7 +6292,7 @@
           "gross_linked_contribution": -0.08868796461791596,
           "gross_linked_contribution_saved": -0.08868796461791639,
           "linked_fees": 0.013059373022297992,
-          </script><script type="application/json" data-app-snapshot-chunk>"n_calendar_days": 730,
+          "n_calendar_days": 730,
           "net_ci95_high": 0.12367908457758957,
           "net_ci95_low": -0.40152852390291927,
           "net_linked_contribution": -0.10174733764021394,
@@ -6380,7 +6361,7 @@
         {
           "bootstrap_invalid_draws": 0,
           "bootstrap_replications": 4000,
-          "bootstrap_status": "estimated_conditional_posthoc",
+          "bootstrap_status": "es</script><script type="application/json" data-app-snapshot-chunk>timated_conditional_posthoc",
           "ci_scope": "marginal_approximate_conditional_not_search_adjusted",
           "contribution_units": "fraction_of_initial_net_NAV_whole_period_not_annualized",
           "fees_ci95_high": 0.020707952428808442,
@@ -7527,10 +7508,9 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January 2022-31 December 2023; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/coin_attribution.csv",
-          "research/basket_factor_attribution_20261016/outputs/joint_coefficients.csv"
+          "results/report_data/development/basket_attribution_coins.json"
         ],
         "metricDefinitions": [
           {
@@ -7546,17 +7526,20 @@
               "basket-attribution-20261016-B04-coins",
               "basket-attribution-20261016-B05-coins",
               "basket-attribution-20261016-B06-coins"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/basket_attribution_coins.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly development; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/basket_attribution_coins.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -7566,8 +7549,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: development."
+          "language": "text",
+          "code": "Read results/report_data/development/basket_attribution_coins.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -7681,7 +7664,7 @@
           "causal": false,
           "first_fit_day": "2022-01-01",
           "hac_max_lag_days": 27,
-       </script><script type="application/json" data-app-snapshot-chunk>   "hac_small_sample_multiplier": 1.0149750415973378,
+          "hac_small_sample_multiplier": 1.0149750415973378,
           "last_fit_day": "2023-12-31",
           "maximum_cooks_distance": 1.683575802703498,
           "maximum_leverage": 0.2668524699253987,
@@ -7739,7 +7722,7 @@
           "ID": "B01",
           "vif_json": "{\"AXSUSDT\":2.5455733510240206,\"BNBUSDT\":3.243746728864986,\"BTCUSDT\":4.865805867280973,\"DOGEUSDT\":2.019006725968864,\"ETHUSDT\":5.257583150715079,\"FTMUSDT\":2.8352722212459343,\"VETUSDT\":3.7870805205039404,\"XRPUSDT\":1.7431910699999855}",
           "excluded_date_ranges_json": "[]",
-          "factor_missing_days_json": "{\"AXSUSDT\":0,\"BNBUSDT\":0,\"BTCUSDT\":0,\"DOGEUSDT\":0,\"ETHUSDT\":0,\"FTMUSDT\":0,\"VETUSDT\":0,\"XRPUSDT\":0}",
+          "factor_missing_days_json": "{\"AXSUSDT\":0,\"BNBUSDT\":0,\"BTCUSDT\":0,\"DOGEU</script><script type="application/json" data-app-snapshot-chunk>SDT\":0,\"ETHUSDT\":0,\"FTMUSDT\":0,\"VETUSDT\":0,\"XRPUSDT\":0}",
           "factor_missing_date_ranges_json": "{\"AXSUSDT\":[],\"BNBUSDT\":[],\"BTCUSDT\":[],\"DOGEUSDT\":[],\"ETHUSDT\":[],\"FTMUSDT\":[],\"VETUSDT\":[],\"XRPUSDT\":[]}",
           "singular_values_json": "[64.34309637779661,27.018512172212592,19.7323767263292,18.492679463605523,17.628326444834197,14.67805273640394,13.731907141765625,12.760112083532217,9.541027407541797]"
         },
@@ -7881,9 +7864,9 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January 2022-31 December 2023; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/joint_models.json"
+          "results/report_data/development/basket_attribution_diagnostics.json"
         ],
         "metricDefinitions": [
           {
@@ -7899,17 +7882,20 @@
               "basket-attribution-20261016-B04-context",
               "basket-attribution-20261016-B05-context",
               "basket-attribution-20261016-B06-context"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/basket_attribution_diagnostics.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly development; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/basket_attribution_diagnostics.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -7919,8 +7905,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: development."
+          "language": "text",
+          "code": "Read results/report_data/development/basket_attribution_diagnostics.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "payloadColumns": [
@@ -9074,7 +9060,7 @@
           "hac27_two_sided_p": 0.5400171645289389,
           "hac27_z": 0.6127870351342769,
           "hac7_ci95_high": 0.10615330315051157,
-          "hac7_ci95_low": -</script><script type="application/json" data-app-snapshot-chunk>0.04820412447490387,
+          "hac7_ci95_low": -0.04820412447490387,
           "hac7_se": 0.03937761837538015,
           "model_type": "joint_eight_coin",
           "multiplicity_family_size": 243,
@@ -9163,7 +9149,7 @@
           "ci95_high": 0.09123539240397821,
           "ci95_low": -0.04147591503705298,
           "ci_scope": "marginal_approximate_conditional_not_search_adjusted",
-          "coefficient_kind": "conditional_coin_beta",
+       </script><script type="application/json" data-app-snapshot-chunk>   "coefficient_kind": "conditional_coin_beta",
           "estimate": 0.02487973868346261,
           "global_holm243_p": 1.0,
           "hac27_se": 0.03385554747123953,
@@ -9879,9 +9865,9 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January 2022-31 December 2023; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/joint_coefficients.csv"
+          "results/report_data/development/basket_attribution_coefficients.json"
         ],
         "metricDefinitions": [
           {
@@ -9889,17 +9875,20 @@
             "definition": "81 joint coefficients in this report period; marginal HAC27 and HAC7 intervals, global Holm243 p-values and Bonferroni243 simultaneous intervals refer to all 243 fixed joint coefficient slots across 3 periods. Correction is not search-adjustment for prior strategy research.",
             "componentIds": [
               "basket-attribution-20261016-companion"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/basket_attribution_coefficients.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly development; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/basket_attribution_coefficients.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -9909,8 +9898,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: development."
+          "language": "text",
+          "code": "Read results/report_data/development/basket_attribution_coefficients.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -9918,10 +9907,10 @@
       "rows": [
         {
           "Period label": "2022-2023 development",
-          "Scope narrative": "## Added attribution: what each coin contributed, and what joint basket exposure explains\n\n**1 January 2022-31 December 2023, all nine unchanged frozen strategies.** This post-hoc addition separates accounting contribution from statistical sensitivity. Original returns, Sharpe, turnover, drawdowns, baskets and decisions are unchanged. The four Track A identities were selected using development; the five Track B identities were later selected using development plus validation. Showing all nine on development is a retrospective fixed-identity comparison, not a development-only selection claim.\n\nThe overview shows **annual alpha in percent per year**, estimate [95% CI]. Alpha is 365 times the daily arithmetic intercept, **not CAGR**. Legacy BTC uses its original full-calendar HAC7 estimate; matched BTC and the joint model use the identical complete-case dates with calendar HAC27.",
-          "Interpretation narrative": "**How to read this.** The joint regression includes an intercept and all eight basket coins simultaneously. A conditional beta is sensitivity holding the other seven factors fixed; it is not a portfolio weight, a causal contribution or proof of market neutrality. R-squared is an in-sample descriptive fit. Comparing joint with matched BTC separates added factors from sample exclusions; legacy BTC also uses a different covariance convention.",
+          "Scope narrative": "## Per-coin attribution: what each coin contributed, and what joint basket exposure explains\n\n**1 January 2022-31 December 2023, all nine unchanged frozen strategies.** These explanatory diagnostics separate accounting contribution from statistical sensitivity. Strategy returns, Sharpe, turnover, drawdowns, baskets and decisions remain fixed. The four Track A identities were selected using development; the five Track B identities were later selected using development plus validation. Track B development estimates describe validation-selected identities, not development-only selections.\n\nThe overview shows **annual alpha in percent per year**, estimate [95% CI]. Alpha is 365 times the daily arithmetic intercept, **not CAGR**. The BTC-only comparison uses its full-calendar HAC7 estimate; matched BTC and the joint model use the identical complete-case dates with calendar HAC27.",
+          "Interpretation narrative": "**How to read this.** The joint regression includes an intercept and all eight basket coins simultaneously. A conditional beta is sensitivity holding the other seven factors fixed; it is not a portfolio weight, a causal contribution or proof of market neutrality. R-squared is an in-sample descriptive fit. Comparing joint with matched BTC separates added factors from sample exclusions; the full-calendar BTC-only comparison also uses a different covariance convention.",
           "Methods narrative": "**Uncertainty and missingness.** Joint and matched BTC intervals are approximate marginal 95% normal-Wald intervals using Bartlett calendar HAC27 and n/(n-k) correction; HAC7 sensitivity is exported. Missing factor days are excluded from regressions only; gaps are not filled or compressed. The complete strategy and attribution calendars remain intact. Standardized condition >30 or any VIF >10 is a warning, not a reason to drop a coin. Some fits are sensitive to extreme days; high leverage/Cook's distance can coexist with modest collinearity. No event is removed and no model reselected.\n\n**Per-coin accounting.** Gross contributions and positive allocated fees are both linked with prior **net** strategy NAV; net = gross - fees. Units are whole-period percentage points (pp) of initial capital, not standalone coin returns. The next pages retain all eight slots and their marginal net-contribution intervals.",
-          "Companion narrative": "### Full precision, sensitivity and multiplicity\n\n[Per-coin gross, fee and net attribution with all three confidence intervals](exports/basket_coin_attribution.csv) | [Joint alpha/betas, HAC7 sensitivity, global Holm243 p-values and Bonferroni243 intervals](exports/basket_joint_coefficients.csv) | [Joint model diagnostics and individual VIFs](exports/basket_joint_models.csv) | [Legacy BTC-only estimates and intervals](exports/basket_legacy_btc.csv) | [Matched BTC-only coefficients and intervals](exports/basket_matched_btc.csv) | [Regression calendar and exclusions](exports/basket_regression_calendar.csv).\n\nAttribution uses **4,000 seeded, synchronized circular 28-day calendar-block draws** across all nine strategies and eight coins. Daily gross/fee vectors are resampled together and relinked using each draw's **new prior NAV**; signals, targets and trades are not regenerated and no block-boundary fee is invented. Any invalid draw makes the affected interval unavailable; none is silently dropped. Gross/fee intervals and invalid-draw counts remain in the CSV.\n\nThe coefficient correction spans **243 predeclared diagnostic slots: 27 joint alphas + 216 joint betas** across all three periods. Displayed intervals are marginal; approximate Bonferroni familywise intervals and Holm-adjusted p-values are exported. This corrects only that conditional coefficient family, **not the original universe, configuration, period or strategy-selection search**. Attribution intervals are marginal and not multiplicity-adjusted. No significance row changes the frozen shortlist or crowns a new winner. LUNA/LUNC is legacy Terra, not Terra 2.0; FTM/S and MATIC/POL retain the original economic slots.",
+          "Companion narrative": "### Full precision, sensitivity and multiplicity\n\n[Per-coin gross, fee and net attribution with all three confidence intervals](exports/basket_coin_attribution.csv) | [Joint alpha/betas, HAC7 sensitivity, global Holm243 p-values and Bonferroni243 intervals](exports/basket_joint_coefficients.csv) | [Joint model diagnostics and individual VIFs](exports/basket_joint_models.csv) | [Full-calendar BTC-only estimates and intervals](exports/basket_btc_only.csv) | [Matched BTC-only coefficients and intervals](exports/basket_matched_btc.csv) | [Regression calendar and exclusions](exports/basket_regression_calendar.csv).\n\nAttribution uses **4,000 seeded, synchronized circular 28-day calendar-block draws** across all nine strategies and eight coins. Daily gross/fee vectors are resampled together and relinked using each draw's **new prior NAV**; signals, targets and trades are not regenerated and no block-boundary fee is invented. Any invalid draw makes the affected interval unavailable; none is silently dropped. Gross/fee intervals and invalid-draw counts remain in the CSV.\n\nThe coefficient correction spans **243 predeclared diagnostic slots: 27 joint alphas + 216 joint betas** across all three periods. Displayed intervals are marginal; approximate Bonferroni familywise intervals and Holm-adjusted p-values are exported. This corrects only that conditional coefficient family, **not the original universe, configuration, period or strategy-selection search**. Attribution intervals are marginal and not multiplicity-adjusted. No significance row changes the frozen shortlist or crowns a new winner. LUNA/LUNC is legacy Terra, not Terra 2.0; FTM/S and MATIC/POL retain the original economic slots.",
           "period": "development",
           "protocol_sha256": "7d8119be9555353458a6dbd5b531f2248375cf6166068e3821c565aac94600cf",
           "payload_sha256": "ab98870600d5164148218ee19613b46d080a1175e9508ac05e80893f53f4e472",
@@ -9931,33 +9920,33 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January 2022-31 December 2023; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/protocol.json",
-          "research/basket_factor_attribution_20261016/outputs/bootstrap_methods.json",
-          "research/basket_factor_attribution_20261016/audit/independent_accounting.json",
-          "research/basket_factor_attribution_20261016/audit/independent_inference_audit.json"
+          "results/report_data/development/basket_attribution_methods.json"
         ],
         "metricDefinitions": [
           {
             "label": "Methods",
-            "definition": "Post-hoc fixed-strategy attribution protocol;20 bps, all 9 strategies, 8 coin factors, calendar HAC27 for joint and matched BTC; legacy BTC full-sample HAC7 unchanged. 4,000 synchronized 28-day bootstrap draws with new NAV relinking; marginal 95% intervals and 243 joint-coefficient correction only.",
+            "definition": "Post-hoc fixed-strategy attribution protocol;20 bps, all 9 strategies, 8 coin factors, calendar HAC27 for joint and matched BTC; full-calendar BTC-only full-sample HAC7 unchanged. 4,000 synchronized 28-day bootstrap draws with new NAV relinking; marginal 95% intervals and 243 joint-coefficient correction only.",
             "componentIds": [
               "basket-attribution-20261016-scope",
               "basket-attribution-20261016-methods",
               "basket-attribution-20261016-interpretation",
               "basket-attribution-20261016-companion"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/development/basket_attribution_methods.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly development; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/development/basket_attribution_methods.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -9967,8 +9956,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: development."
+          "language": "text",
+          "code": "Read results/report_data/development/basket_attribution_methods.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     }
@@ -10054,13 +10043,13 @@ function ReportContent(){
  const lm=families.map(f=>{const a=luna.find(v=>v.family===f.family&&v.present),b=luna.find(v=>v.family===f.family&&!v.present);return {family:f.family,withLuna:a.medianReturn,withoutLuna:b.medianReturn,withSharpe:a.medianSharpe,withoutSharpe:b.medianSharpe}});
  return jsxRuntime.jsxs('article', { className: "report-content final-development" , 'aria-label': "Development and robustness report"   , children: [
  jsxRuntime.jsxs('section', { className: "chapter", id: "development-summary", children: [
- jsxRuntime.jsxs('header', { className: "report-hero", children: [jsxRuntime.jsx('h1', { 'data-data-app-title': true, contentEditable: canEdit&&mode==='edit', suppressContentEditableWarning: true, onBlur: canEdit&&mode==='edit'?e=>setAppTitle(e.currentTarget.textContent.trim()||appTitle):undefined, children: appTitle}), jsxRuntime.jsx(dataApp.RichNarrative, { id: "description", value: "Final report 1 of 3 | Restarted crypto research | 1 January 2022-31 December 2023"              , className: "report-deck",})]})
- , jsxRuntime.jsx(dataApp.RichNarrative, { id: "attribution-edition-note", value: "**Updated edition:** [Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix). Strategies and original results are unchanged."                     ,})
- , jsxRuntime.jsx(N, { id: "executive-summary", children: `## Executive Summary\n\n- Only **106,302 of 1,117,935 paths (9.51%)** had positive compounded net return at 20 bps. The full-grid median was **-71.03%**, versus **-7.89% before modeled fees**. Fast turnover was a major obstacle, not the only one.\n- Slower trend definitions had better development distributions: median net returns were **+4.05% long/cash** and **+22.04% theoretical long/short**. These are unequal family grids, not evidence that trend universally dominates cross-sectional strategies.\n- The apparent edge was uneven. **Every long/cash path lost in 2022 and gained in 2023**; only **39.15% of long/short paths** were positive in both years. Basket and event concentration mattered.\n- This stage supported **development robustness checks before selection**, not a discovery claim. All unsuccessful configurations remain in the archive; the 169-definition space evolved in earlier retrospective research.`})
- , jsxRuntime.jsx(N, { id: "scope", children: `## What was restarted\n\nThe restart retained the cryptocurrency history and full configuration space, but did not import previous winning baskets, survivor filters or selection conclusions. It could not erase earlier inspection of those historical years.\n\nThe complete study covered **6,615 eight-coin baskets × 169 definitions**, or **1,117,935 primary basket-configuration pairs**. Seven fee/delay scenarios produced **7,825,545 result rows**. All were evaluated; **1,000 genuine all-cash paths had undefined Sharpe**, not zero Sharpe. Every basket had at least one positive development result, which is unsurprising after a large correlated search.\n\nDevelopment was 2022-2023. Validation was reserved as 2024-2025 and 2026 as a later evaluation; neither was used in the development evidence presented here. Reports 2 and 3 cover those subsequent stages.`})
+ jsxRuntime.jsxs('header', { className: "report-hero", children: [jsxRuntime.jsx('h1', { 'data-data-app-title': true, contentEditable: canEdit&&mode==='edit', suppressContentEditableWarning: true, onBlur: canEdit&&mode==='edit'?e=>setAppTitle(e.currentTarget.textContent.trim()||appTitle):undefined, children: appTitle}), jsxRuntime.jsx(dataApp.RichNarrative, { id: "description", value: "Report 1 of 3 | Development | 1 January 2022-31 December 2023"           , className: "report-deck",})]})
+ , jsxRuntime.jsx(dataApp.RichNarrative, { id: "attribution-edition-note", value: "[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix)."             ,})
+ , jsxRuntime.jsx(N, { id: "executive-summary", children: `## Executive Summary\n\n- Only **106,302 of 1,117,935 paths (9.51%)** had positive compounded net return at 20 bps. The full-grid median was **-71.03%**, versus **-7.89% before modeled fees**. Fast turnover was a major obstacle, not the only one.\n- Slower trend definitions had better development distributions: median net returns were **+4.05% long/cash** and **+22.04% theoretical long/short**. These are unequal family grids, not evidence that trend universally dominates cross-sectional strategies.\n- The apparent edge was uneven. **Every long/cash path lost in 2022 and gained in 2023**; only **39.15% of long/short paths** were positive in both years. Basket and event concentration mattered.\n- This stage supported **development robustness checks before selection**, not a discovery claim. All unsuccessful configurations remain in the results; the 169-definition space is research-defined, not an independent discovery test.`})
+ , jsxRuntime.jsx(N, { id: "scope", children: `## Study scope\n\nThe study evaluates the complete configuration space across systematically enumerated liquidity-tier baskets. The configuration space and historical universe are research-defined; this large correlated search does not provide independent confirmation of an edge.\n\nThe complete study covered **6,615 eight-coin baskets × 169 definitions**, or **1,117,935 primary basket-configuration pairs**. Seven fee/delay scenarios produced **7,825,545 result rows**. All were evaluated; **1,000 genuine all-cash paths had undefined Sharpe**, not zero Sharpe. Every basket had at least one positive development result, which is unsurprising after a large correlated search.\n\nDevelopment was 2022-2023. Validation was reserved as 2024-2025 and 2026 as a later evaluation; neither was used in the development evidence presented here. Reports 2 and 3 cover those subsequent stages.`})
  ]})
  , jsxRuntime.jsxs('section', { className: "chapter", id: "universe", children: [
- jsxRuntime.jsx(N, { id: "universe-story", q: "liquidity", children: `## The basket rule used historical liquidity within an inherited pool\n\nAt the 1 January 2022 decision, coins were ranked by **median daily USDT quote volume across 90 observations**, with endpoints from **3 October through 31 December 2021** and a **24-hour information lag**. This used the inherited historical top-30 research universe, not an unrestricted census of every exchange listing. The restarted basket campaign used ranks **1-22** only, with no reconstitution.\n\n**BTC and ETH were fixed.** Each basket took two coins from ranks 3-9, two from 10-16 and two from 17-22: **C(7,2) × C(7,2) × C(6,2) = 6,615** baskets. Every signal was recomputed inside its own eight-coin basket; thirty-coin portfolio weights were not sliced.\n\nRank is historical liquidity rank; volume is millions of USDT per day. Quote volume measures activity, not a demonstrated executable spread or trading capacity.`})
+ jsxRuntime.jsx(N, { id: "universe-story", q: "liquidity", children: `## The basket rule used historical liquidity within an inherited pool\n\nAt the 1 January 2022 decision, coins were ranked by **median daily USDT quote volume across 90 observations**, with endpoints from **3 October through 31 December 2021** and a **24-hour information lag**. This used the inherited historical top-30 research universe, not an unrestricted census of every exchange listing. The basket campaign used ranks **1-22** only, with no reconstitution.\n\n**BTC and ETH were fixed.** Each basket took two coins from ranks 3-9, two from 10-16 and two from 17-22: **C(7,2) × C(7,2) × C(6,2) = 6,615** baskets. Every signal was recomputed inside its own eight-coin basket; thirty-coin portfolio weights were not sliced.\n\nRank is historical liquidity rank; volume is millions of USDT per day. Quote volume measures activity, not a demonstrated executable spread or trading capacity.`})
  , jsxRuntime.jsx(Table, { id: "liquidity-fixed", q: "liquidity", title: "Fixed slots" , rows: liq.filter(x=>x.rank<=2), columns: [col('rank','Rank'),col('symbol','Pair'),col('medianDailyVolumeMillions','Median volume (USDT m)','num')],})
  , [['Tier 1: choose two from ranks 3-9',3,9],['Tier 2: choose two from ranks 10-16',10,16],['Tier 3: choose two from ranks 17-22',17,22]].map(([title,a,b],i)=>jsxRuntime.jsx(Table, { id: `liquidity-tier-${i}`, q: "liquidity", title: title, rows: liq.filter(x=>x.rank>=a&&x.rank<=b), columns: [col('rank','Rank'),col('symbol','Pair'),col('medianDailyVolumeMillions','Median volume (USDT m)','num')],}, title))
  , jsxRuntime.jsx(N, { id: "lifecycle-universe", q: "liquidity", children: `LUNA denotes the **legacy Terra/LUNC economic slot, not Terra 2.0**. A suspension or unavailable slot remained cash under the preserved lifecycle policy; it did not trigger replacement by a current survivor.`})
@@ -10073,7 +10062,7 @@ function ReportContent(){
  jsxRuntime.jsx(N, { id: "family-result-story", q: "family", children: `## Trend had better development medians, but family grids were not comparable experiments\n\nAt 20 bps, unbuffered momentum and reversal had strongly negative median paths. Trend and buffered momentum used only four slow definitions each, compared with 78 definitions in each unbuffered family. Thus the broad family comparison mixes signal form, cadence, lookback and exposure. It cannot establish a universal ranking of trading styles.`})
  , jsxRuntime.jsx(Table, { id: "family-table", q: "family", title: "2022-2023 development: distribution medians across each family's complete grid"        , rows: families, columns: [col('family','Family'),col('positive','Positive','pct'),col('grossReturn','Gross return','pct'),col('netReturn','Net return','pct'),col('sharpe','Sharpe','num'),col('maxDD','Max DD','pct')],})
  , jsxRuntime.jsx(N, { id: "family-interpretation", q: "family", children: `All return numbers are compounded **two-year returns**, not annual returns. Max DD is nonnegative loss depth. Turnover is annualized **full-L1 target-change multiples**, including entry/liquidation, not conventional half-L1 turnover or actual drift-adjusted traded notional. Column medians may correspond to different individual paths.\n\nFamily median annual full-L1 turnover was **268.69× momentum/reversal**, **62.26× buffered momentum**, **20.75× long/cash**, **41.56× long/short**, and **0.29× residual reversal**.\n\nThe residual model's small median loss and low turnover reflect sparse eligibility/trading, not a low-risk established edge. Its all-cash cases retain undefined Sharpe. The theoretical short books omit borrow/funding/margin constraints. Long/cash carries variable market participation and cash, so equal gross/net returns do not imply equal risk.`})
- , jsxRuntime.jsx(N, { id: "metrics-definition", q: "metrics", children: `### Read risk alongside return\n\nAcross the entire unequal grid, the median CAGR was **-46.18%**, annual volatility **27.15%**, Max DD **76.85%**, and longest underwater span **708.6 days**. The median net Sharpe was **-1.77** and annualized full-L1 turnover **189.23×**. These summarize individual research paths, not an implementable aggregate portfolio.\n\nThe archive also retains Sortino, Calmar, expected shortfall, worst day/week, ulcer index, win rate, gain/loss ratio, time underwater, exposure, and BTC alpha/beta. No single maximum or aggregate score substitutes for these risks.`})
+ , jsxRuntime.jsx(N, { id: "metrics-definition", q: "metrics", children: `### Read risk alongside return\n\nAcross the entire unequal grid, the median CAGR was **-46.18%**, annual volatility **27.15%**, Max DD **76.85%**, and longest underwater span **708.6 days**. The median net Sharpe was **-1.77** and annualized full-L1 turnover **189.23×**. These summarize individual research paths, not an implementable aggregate portfolio.\n\nThe results also retain Sortino, Calmar, expected shortfall, worst day/week, ulcer index, win rate, gain/loss ratio, time underwater, exposure, and BTC alpha/beta. No single maximum or aggregate score substitutes for these risks.`})
  ]})
  , jsxRuntime.jsxs('section', { className: "chapter", id: "costs", children: [
  jsxRuntime.jsx(N, { id: "cost-story", q: "cost", children: `## Fees destroyed much of the broad grid's already weak economics\n\nAt zero modeled fees, **43.17%** of development paths were profitable. At 20 bps that fell to **9.51%**, and at 40 bps to **4.24%**. The zero-cost median was already negative, so the problem was not solely execution costs. Gross return minus a simple percentage fee is not the net compounded result.`})
@@ -10099,8 +10088,8 @@ function ReportContent(){
  , jsxRuntime.jsx(N, { id: "event-accounting", q: "attribution", children: `The event-window mean LUNA contribution was **+$0.1448** for long/short trend and **-$0.1207** for reversal, per original $1 continuous NAV and averaged over **all family paths**, including structural zeros when LUNA was absent. This is reconciled traded-coin P&L accounting, not a counterfactual return after deleting the event. The event window overlaps 2022 and the full path and must not be added twice.\n\nThe forced exit used the last **00:40 UTC partial quote on 13 May**, in the 01:00 accounting bucket: 40 minutes of LUNA exposure and possible temporary orphan hedge. This idealized liquidation does not establish executable short profit, borrow availability, or treatment of Terra 2.0/airdrop liabilities.`})
  ]})
  , jsxRuntime.jsxs('section', { className: "chapter", id: "methods-and-boundaries", children: [
- jsxRuntime.jsx(N, { id: "methods", children: `## What these development results did and did not establish\n\n**Measurement.** Full-period return, elapsed CAGR, drawdown, fees, exposure and turnover used every requested accounting interval. Sharpe was annualized from complete contiguous UTC daily net returns using 365 days; a constant/all-cash series had undefined Sharpe. BTC alpha/beta used the same daily benchmark convention and did not turn a neutral-dollar portfolio into a beta-neutral one. Drawdowns were observed-endpoint measures; intrahour lows and halt interiors were not observed.\n\n**Robustness coverage.** The retained work included all seven full-period scenarios; both annual slices; exact nonnegative compounded fee roots at both delays; coin/day/month concentration; traded-coin attribution for the full path, each year and the predeclared May event window; matched clocks/buffers; and local parameter/basket perturbations. Finite fee roots were solved from compounded hourly net returns, not gross-return/turnover division. Gross-loss, flat zero-turnover, infinite-tolerance and unavailable states stayed distinct.\n\n**Reliability and limits.** Complete work-key/scalar identities and saved-file checksums were audited. Independent public-engine reconstruction covered 225 basket-case samples and 1,575 financial scenarios, not every hourly path. Ranking used past liquidity, but inherited universe/source selection remained. The 169-case space itself had evolved retrospectively; correlated basket/parameter searches were not search-adjusted discoveries.\n\nThe execution model excluded funding, borrow, margin constraints, order-book depth, slippage, market impact and ordinary drift-maintenance trades. Historical volume did not validate capacity. The original consolidated core reused accepted saved evidence without new price access or strategy runs. The added post-hoc appendix uses unchanged saved accounting paths and existing factor prices; no signals, targets, trades or selections are regenerated.`})
- , jsxRuntime.jsx(N, { id: "conclusion", children: `### Development-stage conclusion\n\nThe defensible development finding was **a cost-and-stability problem**, with some slower configurations worth testing under a rule frozen before validation. It was not “choose the highest development Sharpe” or “trend is proven superior.”\n\nReport 2 follows the development-only selection rule, validation failure diagnosis, reference comparisons and Track B shortlist. Report 3 covers the partial-year 2026 evaluation and subsequent exploratory screening diagnostics. All earlier technical outputs remain archived, but these three reports are the final reading set.\n\n**Companion evidence:** compact tables alongside this report retain the displayed denominators and units; the source archive retains every unsuccessful configuration, complete metric tables, accounting diagnostics, original notebooks and provenance receipts. No strategy, selection, basket or original performance result has changed; the appended factor attribution is a new post-hoc diagnostic, not a new strategy evaluation.`})
+ jsxRuntime.jsx(N, { id: "methods", children: `## What these development results did and did not establish\n\n**Measurement.** Full-period return, elapsed CAGR, drawdown, fees, exposure and turnover used every requested accounting interval. Sharpe was annualized from complete contiguous UTC daily net returns using 365 days; a constant/all-cash series had undefined Sharpe. BTC alpha/beta used the same daily benchmark convention and did not turn a neutral-dollar portfolio into a beta-neutral one. Drawdowns were observed-endpoint measures; intrahour lows and halt interiors were not observed.\n\n**Robustness coverage.** The retained work included all seven full-period scenarios; both annual slices; exact nonnegative compounded fee roots at both delays; coin/day/month concentration; traded-coin attribution for the full path, each year and the predeclared May event window; matched clocks/buffers; and local parameter/basket perturbations. Finite fee roots were solved from compounded hourly net returns, not gross-return/turnover division. Gross-loss, flat zero-turnover, infinite-tolerance and unavailable states stayed distinct.\n\n**Reliability and limits.** Complete work-key/scalar identities and saved-file checksums were audited. Independent public-engine reconstruction covered 225 basket-case samples and 1,575 financial scenarios, not every hourly path. Ranking used past liquidity, but inherited universe/source selection remained. The 169-case space was informed by historical research; correlated basket/parameter searches were not search-adjusted discoveries.\n\nThe execution model excluded funding, borrow, margin constraints, order-book depth, slippage, market impact and ordinary drift-maintenance trades. Historical volume did not validate capacity. Performance tables use the audited saved strategy paths. The attribution and joint-factor diagnostics use those same paths and their existing factor prices; they do not regenerate signals, targets, trades or selections.`})
+ , jsxRuntime.jsx(N, { id: "conclusion", children: `### Development-stage conclusion\n\nThe defensible development finding was **a cost-and-stability problem**, with some slower configurations worth testing under a rule frozen before validation. It was not “choose the highest development Sharpe” or “trend is proven superior.”\n\nReport 2 follows the development-only selection rule, validation failure diagnosis, reference comparisons and Track B shortlist. Report 3 covers the partial-year 2026 evaluation and subsequent exploratory screening diagnostics. These three reports are the complete reading set.\n\n**Companion evidence:** compact tables alongside this report retain the displayed denominators and units; the supporting results retain unsuccessful configurations, complete metric tables, accounting diagnostics and provenance. Factor attribution describes the frozen strategies; it is not a separate strategy-selection test.`})
  ]})
  , jsxRuntime.jsx(BasketAttributionAppendix, {})
  ]})

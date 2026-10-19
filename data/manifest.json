@@ -1,0 +1,45 @@
+{
+  "names": [
+    "prices",
+    "quote_volume",
+    "tradable",
+    "observed",
+    "hold_allowed",
+    "mandatory_exit",
+    "decision_allowed"
+  ],
+  "source": "Binance Vision normalized hourly endpoints and audited lifecycle masks",
+  "first_endpoint": "2021-10-01T01:00:00Z",
+  "last_endpoint": "2026-10-01T00:00:00Z",
+  "role": "Union of the 21 coins in the nine frozen baskets; not the entire basket-search universe.",
+  "files": {
+    "prices.parquet": {
+      "sha256": "dc66f865cca81ebf849ef6b78fcbb3919b8cdc31351dad91b019155b02318efd",
+      "bytes": 3774647
+    },
+    "quote_volume.parquet": {
+      "sha256": "22128d946f94dc4f2abe805dfcf3f2e2cbd3b7e342d2001304d6b4bff4c72214",
+      "bytes": 9573206
+    },
+    "tradable.parquet": {
+      "sha256": "0bb97ea3466ea7d3ebd3e2573f4951c3bc61fd818b37a9559bbab55fec14f69b",
+      "bytes": 419988
+    },
+    "observed.parquet": {
+      "sha256": "103fd22a451f66edf9e3fa56662b83775dbba15c196175b97b7f5233055f6b59",
+      "bytes": 420127
+    },
+    "hold_allowed.parquet": {
+      "sha256": "f52c936b13b82c42cf56aa117c8e352ae0e4eeea06f51c0f51811d3726fa84fc",
+      "bytes": 419989
+    },
+    "mandatory_exit.parquet": {
+      "sha256": "df088c8ddb6825d59bc8b983b2474095a3bce30ce4e1500b110a685ab53b38b7",
+      "bytes": 419976
+    },
+    "decision_allowed.parquet": {
+      "sha256": "ee2d1f4102d74fda2942d8d2640033be6d8b10dca00101c9dfe1b427f7c80538",
+      "bytes": 405703
+    }
+  }
+}

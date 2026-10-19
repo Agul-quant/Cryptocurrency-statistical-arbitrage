@@ -1,0 +1,29 @@
+.final-development { --data-app-layout-intent: authored-report; --data-app-content-width: 960px; }
+.final-development .chapter { margin-block: 42px; }
+.final-development .report-hero h1 { font-size: 40px; line-height: 1.13; }
+.final-development .report-deck { color: #5d6774; }
+.final-development .chapter > * + * { margin-top: 20px; }
+.final-development table { font-size: 13px; }
+@media (max-width:700px){ .final-development .report-hero h1 {font-size:32px;} }
+@media print {
+ .final-development { --data-app-content-width: 100%; }
+ .final-development .chapter { break-before: page; margin-block:0; }
+ .final-development .chapter:first-child { break-before:auto; }
+ .final-development .report-hero h1 { font-size:29px; line-height:1.14; }
+ .final-development p, .final-development li { font-size:10.1pt; line-height:1.44; }
+ .final-development h2 { font-size:16pt; }
+ .final-development h3 { font-size:12pt; }
+ .final-development table {font-size:8pt;}
+ .final-development .chapter > * + * { margin-top:12px; }
+}
+@media print {
+ .final-development p, .final-development li { font-size:9.3pt !important; line-height:1.36 !important; }
+ .final-development table th, .final-development table td { font-size:8.1pt !important; padding:5px 7px !important; }
+ .final-development .chapter > * + * { margin-top:8px; }
+ .final-development h2 {margin-top:9px; margin-bottom:8px;}
+ .final-development h3 {margin-top:8px; margin-bottom:7px;}
+}
+@media print {
+ .final-development .chapter { break-before:auto; margin-block:18px; }
+ .final-development .chapter h2, .final-development .chapter h3 {break-after:avoid;}
+}

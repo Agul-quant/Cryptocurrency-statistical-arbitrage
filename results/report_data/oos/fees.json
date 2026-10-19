@@ -1,0 +1,24 @@
+{
+  "query_id": "fees",
+  "period": "oos",
+  "rows": [
+    {
+      "Cohort": "Survivors",
+      "Gross profit erased pp": 15.332523007466575,
+      "Gross profitable": 0.3305550732187301,
+      "Median TO / year": 47.79761904761905,
+      "Median gross return": -0.05964599601435698,
+      "Median net return": -0.12078949890664589,
+      "Net profitable": 0.17722984314406437
+    },
+    {
+      "Cohort": "Controls",
+      "Gross profit erased pp": 23.528014432552855,
+      "Gross profitable": 0.5068663769027792,
+      "Median TO / year": 68.85531135531136,
+      "Median gross return": 0.002245092974728018,
+      "Median net return": -0.10821187348556802,
+      "Net profitable": 0.27158623257725073
+    }
+  ]
+}

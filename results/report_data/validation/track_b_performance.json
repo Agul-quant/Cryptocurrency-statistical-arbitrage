@@ -1,0 +1,96 @@
+{
+  "query_id": "track_b_performance",
+  "period": "validation",
+  "rows": [
+    {
+      "Annual L1 turnover": "81.69×",
+      "CAGR": "+0.17%",
+      "ID": "B01",
+      "Max drawdown": "37.34%",
+      "Net return": "+0.34%",
+      "Period": "Development",
+      "Sharpe": "0.14"
+    },
+    {
+      "Annual L1 turnover": "77.45×",
+      "CAGR": "+48.31%",
+      "ID": "B01",
+      "Max drawdown": "15.50%",
+      "Net return": "+120.19%",
+      "Period": "Validation",
+      "Sharpe": "1.62"
+    },
+    {
+      "Annual L1 turnover": "27.75×",
+      "CAGR": "+0.53%",
+      "ID": "B03",
+      "Max drawdown": "27.64%",
+      "Net return": "+1.05%",
+      "Period": "Development",
+      "Sharpe": "0.15"
+    },
+    {
+      "Annual L1 turnover": "24.13×",
+      "CAGR": "+58.43%",
+      "ID": "B03",
+      "Max drawdown": "22.08%",
+      "Net return": "+151.30%",
+      "Period": "Validation",
+      "Sharpe": "1.85"
+    },
+    {
+      "Annual L1 turnover": "21.31×",
+      "CAGR": "+20.04%",
+      "ID": "B04",
+      "Max drawdown": "61.98%",
+      "Net return": "+44.11%",
+      "Period": "Development",
+      "Sharpe": "0.63"
+    },
+    {
+      "Annual L1 turnover": "22.34×",
+      "CAGR": "+31.78%",
+      "ID": "B04",
+      "Max drawdown": "23.42%",
+      "Net return": "+73.78%",
+      "Period": "Validation",
+      "Sharpe": "1.14"
+    },
+    {
+      "Annual L1 turnover": "11.88×",
+      "CAGR": "+6.11%",
+      "ID": "B05",
+      "Max drawdown": "36.50%",
+      "Net return": "+12.60%",
+      "Period": "Development",
+      "Sharpe": "0.35"
+    },
+    {
+      "Annual L1 turnover": "12.48×",
+      "CAGR": "+58.65%",
+      "ID": "B05",
+      "Max drawdown": "32.48%",
+      "Net return": "+152.00%",
+      "Period": "Validation",
+      "Sharpe": "1.40"
+    },
+    {
+      "Annual L1 turnover": "22.88×",
+      "CAGR": "+16.56%",
+      "ID": "B06",
+      "Max drawdown": "48.23%",
+      "Net return": "+35.86%",
+      "Period": "Development",
+      "Sharpe": "0.55"
+    },
+    {
+      "Annual L1 turnover": "24.59×",
+      "CAGR": "+62.45%",
+      "ID": "B06",
+      "Max drawdown": "32.83%",
+      "Net return": "+164.24%",
+      "Period": "Validation",
+      "Sharpe": "1.24"
+    }
+  ]
+}

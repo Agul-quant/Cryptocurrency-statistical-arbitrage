@@ -1,0 +1,20 @@
+{
+  "query_id": "rank_transfer",
+  "period": "validation",
+  "rows": [
+    {
+      "10th percentile": "0.86",
+      "90th percentile": "0.94",
+      "Cohorts": 6615,
+      "Comparison": "Across settings within basket",
+      "Median Spearman": "0.91"
+    },
+    {
+      "10th percentile": "-0.23",
+      "90th percentile": "0.62",
+      "Cohorts": 169,
+      "Comparison": "Across baskets within setting",
+      "Median Spearman": "0.14"
+    }
+  ]
+}

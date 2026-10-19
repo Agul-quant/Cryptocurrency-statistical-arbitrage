@@ -1,0 +1,105 @@
+{
+  "query_id": "family",
+  "period": "oos",
+  "rows": [
+    {
+      "Cohort": "Survivors",
+      "Family": "Buffered momentum",
+      "Median Sharpe": -1.3932659632965851,
+      "Median net return": -0.2206836114148624,
+      "Pairs": 6879,
+      "Profitable": 0.043174880069777585,
+      "Share of cohort": 0.09953985066851884
+    },
+    {
+      "Cohort": "Controls",
+      "Family": "Buffered momentum",
+      "Median Sharpe": -1.0827321231949645,
+      "Median net return": -0.18831840552601498,
+      "Pairs": 13189,
+      "Profitable": 0.109712639320646,
+      "Share of cohort": 0.08467568487214222
+    },
+    {
+      "Cohort": "Survivors",
+      "Family": "Momentum",
+      "Median Sharpe": -1.1111797968712338,
+      "Median net return": -0.1937606268312353,
+      "Pairs": 29269,
+      "Profitable": 0.09996925074310704,
+      "Share of cohort": 0.4235254963245934
+    },
+    {
+      "Cohort": "Controls",
+      "Family": "Momentum",
+      "Median Sharpe": -0.926610788976243,
+      "Median net return": -0.16649195973581776,
+      "Pairs": 78143,
+      "Profitable": 0.17755909038557516,
+      "Share of cohort": 0.5016917160485108
+    },
+    {
+      "Cohort": "Survivors",
+      "Family": "Reversal",
+      "Median Sharpe": 0.09921769896541664,
+      "Median net return": -0.0006386951805606897,
+      "Pairs": 3323,
+      "Profitable": 0.4968402046343665,
+      "Share of cohort": 0.04808415812930485
+    },
+    {
+      "Cohort": "Controls",
+      "Family": "Reversal",
+      "Median Sharpe": 0.058099157643663774,
+      "Median net return": -0.009214628697336181,
+      "Pairs": 42350,
+      "Profitable": 0.48028335301062575,
+      "Share of cohort": 0.2718944009655943
+    },
+    {
+      "Cohort": "Survivors",
+      "Family": "Trend long/cash",
+      "Median Sharpe": -0.06442440623286208,
+      "Median net return": -0.04580660494542908,
+      "Pairs": 18685,
+      "Profitable": 0.28975113727588975,
+      "Share of cohort": 0.27037390750709034
+    },
+    {
+      "Cohort": "Controls",
+      "Family": "Trend long/cash",
+      "Median Sharpe": 0.07905982769309151,
+      "Median net return": -0.018059433611161826,
+      "Pairs": 6171,
+      "Profitable": 0.41581591314211636,
+      "Share of cohort": 0.03961889842641517
+    },
+    {
+      "Cohort": "Survivors",
+      "Family": "Trend long/short",
+      "Median Sharpe": -0.1323895987377734,
+      "Median net return": -0.11573137114997054,
+      "Pairs": 10952,
+      "Profitable": 0.1789627465303141,
+      "Share of cohort": 0.15847658737049256
+    },
+    {
+      "Cohort": "Controls",
+      "Family": "Trend long/short",
+      "Median Sharpe": -0.02238407856404312,
+      "Median net return": -0.08397593995978453,
+      "Pairs": 14551,
+      "Profitable": 0.26231874098000135,
+      "Share of cohort": 0.0934199628913899
+    },
+    {
+      "Cohort": "Controls",
+      "Family": "BTC-factor residual",
+      "Median Sharpe": -0.6731173509396505,
+      "Median net return": -0.004052954226744685,
+      "Pairs": 1355,
+      "Profitable": 0.1896678966789668,
+      "Share of cohort": 0.008699336795947586
+    }
+  ]
+}

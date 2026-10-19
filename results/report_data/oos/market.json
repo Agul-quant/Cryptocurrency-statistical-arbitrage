@@ -1,0 +1,36 @@
+{
+  "query_id": "market",
+  "period": "oos",
+  "rows": [
+    {
+      "BTC hold return": -0.08510625868053112,
+      "BTC up-state days": 366,
+      "Context 28d rank IC": -0.0005220347546696068,
+      "Days": 730,
+      "ETH hold return": -0.37929074078607705,
+      "High vol days": 365,
+      "Median BTC trailing vol": 0.4903509292252055,
+      "Period": "2022-2023"
+    },
+    {
+      "BTC hold return": 1.0728665831984898,
+      "BTC up-state days": 401,
+      "Context 28d rank IC": -0.00727734350468675,
+      "Days": 731,
+      "ETH hold return": 0.3022827768453067,
+      "High vol days": 259,
+      "Median BTC trailing vol": 0.4500608619752915,
+      "Period": "2024-2025"
+    },
+    {
+      "BTC hold return": -0.045917874886677645,
+      "BTC up-state days": 159,
+      "Context 28d rank IC": -0.01904968300541882,
+      "Days": 273,
+      "ETH hold return": -0.09611864155819672,
+      "High vol days": 56,
+      "Median BTC trailing vol": 0.4065820938117958,
+      "Period": "Jan-Sep 2026"
+    }
+  ]
+}

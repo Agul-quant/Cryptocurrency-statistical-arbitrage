@@ -1,0 +1,78 @@
+{
+  "query_id": "track_a_performance",
+  "period": "validation",
+  "rows": [
+    {
+      "Annual L1 turnover": "31.44×",
+      "CAGR": "+62.90%",
+      "ID": "A01",
+      "Max drawdown": "23.25%",
+      "Net return": "+165.36%",
+      "Period": "Development",
+      "Sharpe": "1.84"
+    },
+    {
+      "Annual L1 turnover": "35.15×",
+      "CAGR": "-16.05%",
+      "ID": "A01",
+      "Max drawdown": "44.82%",
+      "Net return": "-29.55%",
+      "Period": "Validation",
+      "Sharpe": "-0.39"
+    },
+    {
+      "Annual L1 turnover": "49.58×",
+      "CAGR": "+87.87%",
+      "ID": "A02",
+      "Max drawdown": "58.37%",
+      "Net return": "+252.94%",
+      "Period": "Development",
+      "Sharpe": "2.03"
+    },
+    {
+      "Annual L1 turnover": "55.43×",
+      "CAGR": "-22.28%",
+      "ID": "A02",
+      "Max drawdown": "47.29%",
+      "Net return": "-39.63%",
+      "Period": "Validation",
+      "Sharpe": "-0.64"
+    },
+    {
+      "Annual L1 turnover": "27.62×",
+      "CAGR": "+28.21%",
+      "ID": "A03",
+      "Max drawdown": "19.79%",
+      "Net return": "+64.38%",
+      "Period": "Development",
+      "Sharpe": "1.19"
+    },
+    {
+      "Annual L1 turnover": "22.34×",
+      "CAGR": "-11.84%",
+      "ID": "A03",
+      "Max drawdown": "43.11%",
+      "Net return": "-22.31%",
+      "Period": "Validation",
+      "Sharpe": "-0.39"
+    },
+    {
+      "Annual L1 turnover": "50.50×",
+      "CAGR": "+103.52%",
+      "ID": "A04",
+      "Max drawdown": "51.35%",
+      "Net return": "+314.22%",
+      "Period": "Development",
+      "Sharpe": "1.43"
+    },
+    {
+      "Annual L1 turnover": "63.91×",
+      "CAGR": "-26.02%",
+      "ID": "A04",
+      "Max drawdown": "70.96%",
+      "Net return": "-45.31%",
+      "Period": "Validation",
+      "Sharpe": "-0.22"
+    }
+  ]
+}

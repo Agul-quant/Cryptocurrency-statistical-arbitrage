@@ -1,0 +1,41 @@
+{
+  "query_id": "metrics",
+  "period": "development",
+  "rows": [
+    {
+      "metric": "Total net return",
+      "value": -0.7103480782827848,
+      "unit": "fraction"
+    },
+    {
+      "metric": "CAGR",
+      "value": -0.46180679889354304,
+      "unit": "fraction"
+    },
+    {
+      "metric": "Annual volatility",
+      "value": 0.27153502012898373,
+      "unit": "fraction"
+    },
+    {
+      "metric": "Maximum drawdown",
+      "value": 0.7684626171459502,
+      "unit": "fraction"
+    },
+    {
+      "metric": "Longest underwater span (days)",
+      "value": 708.5833333333334,
+      "unit": "days"
+    },
+    {
+      "metric": "Full-L1 turnover (times/year)",
+      "value": 189.2291666666666,
+      "unit": "times/year"
+    },
+    {
+      "metric": "Sharpe",
+      "value": -1.7720099769645337,
+      "unit": "ratio"
+    }
+  ]
+}

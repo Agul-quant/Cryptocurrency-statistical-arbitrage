@@ -1,0 +1,60 @@
+{
+  "query_id": "frozen_nine",
+  "period": "validation",
+  "rows": [
+    {
+      "Basket": 4645,
+      "ID": "A01",
+      "Other six coins": "SOL, LUNA, FTM, TRX, LINK, LTC",
+      "Strategy": "buffered_momentum_h0672_r168_b025"
+    },
+    {
+      "Basket": 4645,
+      "ID": "A02",
+      "Other six coins": "SOL, LUNA, FTM, TRX, LINK, LTC",
+      "Strategy": "momentum_h0672_r072"
+    },
+    {
+      "Basket": 1159,
+      "ID": "A03",
+      "Other six coins": "SHIB, DOT, ADA, MANA, FIL, VET",
+      "Strategy": "reversal_h1440_r168"
+    },
+    {
+      "Basket": 4444,
+      "ID": "A04",
+      "Other six coins": "SOL, LUNA, AVAX, FTM, FIL, VET",
+      "Strategy": "trend_long_short_h0672_r024"
+    },
+    {
+      "Basket": 2323,
+      "ID": "B01",
+      "Other six coins": "BNB, XRP, DOGE, FTM, AXS, VET",
+      "Strategy": "buffered_momentum_h0672_r024_b025"
+    },
+    {
+      "Basket": 2457,
+      "ID": "B03",
+      "Other six coins": "BNB, XRP, FTM, MATIC, AXS, LTC",
+      "Strategy": "momentum_h2160_r072"
+    },
+    {
+      "Basket": 6064,
+      "ID": "B04",
+      "Other six coins": "DOT, LUNA, AVAX, MANA, FIL, VET",
+      "Strategy": "reversal_h2160_r168"
+    },
+    {
+      "Basket": 2330,
+      "ID": "B05",
+      "Other six coins": "BNB, XRP, DOGE, TRX, GALA, LINK",
+      "Strategy": "trend_long_cash_h0672_r168"
+    },
+    {
+      "Basket": 2495,
+      "ID": "B06",
+      "Other six coins": "BNB, XRP, TRX, MANA, GALA, LINK",
+      "Strategy": "trend_long_short_h0672_r168"
+    }
+  ]
+}

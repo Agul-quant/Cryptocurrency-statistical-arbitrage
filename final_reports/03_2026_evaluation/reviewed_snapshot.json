@@ -7,8 +7,8 @@
     "a03_sides": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['a03_sides']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/a03_sides.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -41,19 +41,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query a03_sides from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/a03_sides.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/post_oos_diagnostics_20261015/attribution/summary.csv"
+          "results/report_data/oos/a03_sides.json"
         ],
         "metricDefinitions": [
           {
@@ -66,21 +62,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/post_oos_diagnostics_20261015/attribution/summary.csv"
+                  "results/report_data/oos/a03_sides.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "all_primary": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['all_primary']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/all_primary.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -1436,19 +1432,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query all_primary from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/all_primary.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/outputs/primary_results.csv"
+          "results/report_data/oos/all_primary.json"
         ],
         "metricDefinitions": [
           {
@@ -1460,21 +1452,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/outputs/primary_results.csv"
+                  "results/report_data/oos/all_primary.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "b02": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['b02']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/b02.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -1504,20 +1496,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query b02 from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/b02.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/post_oos_diagnostics_20261015/selection/outputs/b02_qualification_funnel.csv",
-          "research/post_oos_diagnostics_20261015/selection/outputs/b02_period_summary.csv"
+          "results/report_data/oos/b02.json"
         ],
         "metricDefinitions": [
           {
@@ -1530,22 +1517,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/post_oos_diagnostics_20261015/selection/outputs/b02_qualification_funnel.csv",
-                  "research/post_oos_diagnostics_20261015/selection/outputs/b02_period_summary.csv"
+                  "results/report_data/oos/b02.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "cohort": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['cohort']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/cohort.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -1587,19 +1573,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query cohort from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/cohort.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/q1_validation_survivor_oos_20261015/analysis/cohort_summary.csv"
+          "results/report_data/oos/cohort.json"
         ],
         "metricDefinitions": [
           {
@@ -1615,21 +1597,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/q1_validation_survivor_oos_20261015/analysis/cohort_summary.csv"
+                  "results/report_data/oos/cohort.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "cohort_costs": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['cohort_costs']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/cohort_costs.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -2097,19 +2079,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query cohort_costs from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/cohort_costs.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/q1_validation_survivor_oos_20261015/analysis/cost_sensitivity.csv"
+          "results/report_data/oos/cohort_costs.json"
         ],
         "metricDefinitions": [
           {
@@ -2122,21 +2100,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/q1_validation_survivor_oos_20261015/analysis/cost_sensitivity.csv"
+                  "results/report_data/oos/cohort_costs.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "coins": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['coins']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/coins.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -3352,19 +3330,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query coins from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/coins.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/cohort_survivor_gap_diagnostics_20261015/basket/coin_inclusion_frequencies.csv"
+          "results/report_data/oos/coins.json"
         ],
         "metricDefinitions": [
           {
@@ -3377,21 +3351,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/cohort_survivor_gap_diagnostics_20261015/basket/coin_inclusion_frequencies.csv"
+                  "results/report_data/oos/coins.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "costs": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['costs']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/costs.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -3487,19 +3461,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query costs from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/costs.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/outputs/results.csv"
+          "results/report_data/oos/costs.json"
         ],
         "metricDefinitions": [
           {
@@ -3512,21 +3482,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/outputs/results.csv"
+                  "results/report_data/oos/costs.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "criteria": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['criteria']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/criteria.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -3640,19 +3610,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query criteria from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/criteria.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/outputs/primary_inference.csv"
+          "results/report_data/oos/criteria.json"
         ],
         "metricDefinitions": [
           {
@@ -3669,21 +3635,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/outputs/primary_inference.csv"
+                  "results/report_data/oos/criteria.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "decomposition": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['decomposition']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/decomposition.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -3719,20 +3685,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query decomposition from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/decomposition.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/cohort_survivor_gap_diagnostics_20261015/settings/gap_decomposition_summary.csv",
-          "research/cohort_survivor_gap_diagnostics_20261015/basket/basket_gap_summary.json"
+          "results/report_data/oos/decomposition.json"
         ],
         "metricDefinitions": [
           {
@@ -3746,22 +3707,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/cohort_survivor_gap_diagnostics_20261015/settings/gap_decomposition_summary.csv",
-                  "research/cohort_survivor_gap_diagnostics_20261015/basket/basket_gap_summary.json"
+                  "results/report_data/oos/decomposition.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "drawdowns": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['drawdowns']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/drawdowns.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -3866,19 +3826,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query drawdowns from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/drawdowns.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/outputs/primary_results.csv"
+          "results/report_data/oos/drawdowns.json"
         ],
         "metricDefinitions": [
           {
@@ -3892,21 +3848,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/outputs/primary_results.csv"
+                  "results/report_data/oos/drawdowns.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "execution": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['execution']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/execution.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -3984,22 +3940,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query execution from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/execution.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/post_oos_diagnostics_20261015/execution/outputs/hypothetical_carry_slippage.csv",
-          "research/post_oos_diagnostics_20261015/execution/outputs/target_volume_participation.csv",
-          "research/post_oos_diagnostics_20261015/execution/outputs/a03_oos_largest_volume_ratios.csv",
-          "research/post_oos_diagnostics_20261015/execution/outputs/official_execution_source_coverage.csv"
+          "results/report_data/oos/execution.json"
         ],
         "metricDefinitions": [
           {
@@ -4014,24 +3963,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/post_oos_diagnostics_20261015/execution/outputs/hypothetical_carry_slippage.csv",
-                  "research/post_oos_diagnostics_20261015/execution/outputs/target_volume_participation.csv",
-                  "research/post_oos_diagnostics_20261015/execution/outputs/a03_oos_largest_volume_ratios.csv",
-                  "research/post_oos_diagnostics_20261015/execution/outputs/official_execution_source_coverage.csv"
+                  "results/report_data/oos/execution.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "family": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['family']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/family.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -4136,19 +4082,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query family from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/family.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/cohort_survivor_gap_diagnostics_20261015/settings/settings_summary.csv"
+          "results/report_data/oos/family.json"
         ],
         "metricDefinitions": [
           {
@@ -4162,21 +4104,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/cohort_survivor_gap_diagnostics_20261015/settings/settings_summary.csv"
+                  "results/report_data/oos/family.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "fees": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['fees']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/fees.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -4200,19 +4142,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query fees from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/fees.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/cohort_survivor_gap_diagnostics_20261015/settings/settings_summary.csv"
+          "results/report_data/oos/fees.json"
         ],
         "metricDefinitions": [
           {
@@ -4225,21 +4163,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/cohort_survivor_gap_diagnostics_20261015/settings/settings_summary.csv"
+                  "results/report_data/oos/fees.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "identities": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['identities']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/identities.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -4326,19 +4264,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query identities from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/identities.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/strategy_registry.json"
+          "results/report_data/oos/identities.json"
         ],
         "metricDefinitions": [
           {
@@ -4351,21 +4285,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/strategy_registry.json"
+                  "results/report_data/oos/identities.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "joint": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['joint']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/joint.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -4379,19 +4313,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query joint from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/joint.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/cohort_survivor_gap_diagnostics_20261015/basket/joint_adjustment.json"
+          "results/report_data/oos/joint.json"
         ],
         "metricDefinitions": [
           {
@@ -4404,21 +4334,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/cohort_survivor_gap_diagnostics_20261015/basket/joint_adjustment.json"
+                  "results/report_data/oos/joint.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "market": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['market']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/market.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -4454,19 +4384,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query market from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/market.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/cohort_survivor_gap_diagnostics_20261015/regimes/period_market_context.csv"
+          "results/report_data/oos/market.json"
         ],
         "metricDefinitions": [
           {
@@ -4479,21 +4405,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/cohort_survivor_gap_diagnostics_20261015/regimes/period_market_context.csv"
+                  "results/report_data/oos/market.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "neighbor_breadth": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['neighbor_breadth']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/neighbor_breadth.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -4553,19 +4479,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query neighbor_breadth from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/neighbor_breadth.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/post_oos_diagnostics_20261015/controls/outputs/contrasts.csv"
+          "results/report_data/oos/neighbor_breadth.json"
         ],
         "metricDefinitions": [
           {
@@ -4578,21 +4500,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/post_oos_diagnostics_20261015/controls/outputs/contrasts.csv"
+                  "results/report_data/oos/neighbor_breadth.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "paths": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['paths']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/paths.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -16928,19 +16850,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query paths from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/paths.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/outputs/daily_net_returns.csv"
+          "results/report_data/oos/paths.json"
         ],
         "metricDefinitions": [
           {
@@ -16954,21 +16872,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/outputs/daily_net_returns.csv"
+                  "results/report_data/oos/paths.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "periods": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['periods']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/periods.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -17190,19 +17108,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query periods from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/periods.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/outputs/period_comparison.csv"
+          "results/report_data/oos/periods.json"
         ],
         "metricDefinitions": [
           {
@@ -17215,21 +17129,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/outputs/period_comparison.csv"
+                  "results/report_data/oos/periods.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "primary": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['primary']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/primary.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -17325,19 +17239,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query primary from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/primary.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/outputs/primary_results.csv"
+          "results/report_data/oos/primary.json"
         ],
         "metricDefinitions": [
           {
@@ -17352,21 +17262,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/outputs/primary_results.csv"
+                  "results/report_data/oos/primary.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "prospective": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['prospective']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/prospective.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -17380,19 +17290,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query prospective from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/prospective.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/post_oos_diagnostics_20261015/prospective/protocol_draft.json"
+          "results/report_data/oos/prospective.json"
         ],
         "metricDefinitions": [
           {
@@ -17404,21 +17310,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/post_oos_diagnostics_20261015/prospective/protocol_draft.json"
+                  "results/report_data/oos/prospective.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "provenance": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['provenance']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/provenance.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -17427,26 +17333,20 @@
           "Earlier project-wide inspection": true,
           "First owned access UTC": "2026-10-15T12:47:53.262852+00:00",
           "Freeze UTC": "2026-10-15T12:47:45.892101+00:00",
-          "No new data/backtests in this edition": true,
-          "Window": "1Jan-30Sep2026;Oct1UTC closing endpoint"
+          "Window": "1Jan-30Sep2026;Oct1UTC closing endpoint",
+          "Saved results and factor diagnostics": true
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query provenance from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/provenance.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/outputs/access_freeze.json",
-          "research/oos_nine_partial_20261015/outputs/first_2026_access.json",
-          "research/oos_nine_partial_20261015/OOS_AMENDMENT.md"
+          "results/report_data/oos/provenance.json"
         ],
         "metricDefinitions": [
           {
@@ -17459,23 +17359,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/outputs/access_freeze.json",
-                  "research/oos_nine_partial_20261015/outputs/first_2026_access.json",
-                  "research/oos_nine_partial_20261015/OOS_AMENDMENT.md"
+                  "results/report_data/oos/provenance.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "reference": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['reference']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/reference.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -17544,19 +17442,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query reference from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/reference.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/post_oos_diagnostics_20261015/controls/outputs/contrasts.csv"
+          "results/report_data/oos/reference.json"
         ],
         "metricDefinitions": [
           {
@@ -17569,21 +17463,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/post_oos_diagnostics_20261015/controls/outputs/contrasts.csv"
+                  "results/report_data/oos/reference.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "regime_tests": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['regime_tests']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/regime_tests.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -17625,19 +17519,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query regime_tests from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/regime_tests.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/cohort_survivor_gap_diagnostics_20261015/regimes/regime_interactions_corrected.csv"
+          "results/report_data/oos/regime_tests.json"
         ],
         "metricDefinitions": [
           {
@@ -17651,21 +17541,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/cohort_survivor_gap_diagnostics_20261015/regimes/regime_interactions_corrected.csv"
+                  "results/report_data/oos/regime_tests.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "regimes": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['regimes']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/regimes.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -17779,21 +17669,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query regimes from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/regimes.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/cohort_survivor_gap_diagnostics_20261015/regimes/conditional_cohort_results.csv",
-          "research/cohort_survivor_gap_diagnostics_20261015/regimes/standardized_conditional_results.csv",
-          "research/cohort_survivor_gap_diagnostics_20261015/regimes/thresholds.json"
+          "results/report_data/oos/regimes.json"
         ],
         "metricDefinitions": [
           {
@@ -17806,23 +17690,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/cohort_survivor_gap_diagnostics_20261015/regimes/conditional_cohort_results.csv",
-                  "research/cohort_survivor_gap_diagnostics_20261015/regimes/standardized_conditional_results.csv",
-                  "research/cohort_survivor_gap_diagnostics_20261015/regimes/thresholds.json"
+                  "results/report_data/oos/regimes.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "risk": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['risk']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/risk.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -17927,19 +17809,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query risk from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/risk.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/outputs/primary_results.csv"
+          "results/report_data/oos/risk.json"
         ],
         "metricDefinitions": [
           {
@@ -17952,21 +17830,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/outputs/primary_results.csv"
+                  "results/report_data/oos/risk.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "screening": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['screening']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/screening.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -18004,19 +17882,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query screening from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/screening.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/q1_validation_survivor_oos_20261015/analysis/screening_contrasts.csv"
+          "results/report_data/oos/screening.json"
         ],
         "metricDefinitions": [
           {
@@ -18031,21 +17905,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/q1_validation_survivor_oos_20261015/analysis/screening_contrasts.csv"
+                  "results/report_data/oos/screening.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "uncertainty": {
       "methods": [
         {
-          "code": "from build_report import projections\nrows = projections()[0]['uncertainty']",
-          "language": "Python"
+          "language": "text",
+          "code": "Read results/report_data/oos/uncertainty.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "rows": [
@@ -18123,19 +17997,15 @@
         }
       ],
       "source": {
-        "description": "Editorial consolidation of previously accepted outputs; no live connection, new market prices, trading runs or reselection.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "evidenceFlow": [
           {
-            "detail": "Exact source bytes verified against the accepted study final_delivery_manifest before decoding; publication source audit retains SHA256 mapping.",
-            "title": "Accepted archival evidence"
-          },
-          {
-            "detail": "build_report.py projections() forms query uncertainty from the listed saved rows, filters and labels; no price panels or new backtest.",
-            "title": "Editorial projection, no new financial evaluation"
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/uncertainty.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "files": [
-          "research/oos_nine_partial_20261015/outputs/primary_inference.csv"
+          "results/report_data/oos/uncertainty.json"
         ],
         "metricDefinitions": [
           {
@@ -18148,14 +18018,14 @@
             "sourceLineage": [
               {
                 "files": [
-                  "research/oos_nine_partial_20261015/outputs/primary_inference.csv"
+                  "results/report_data/oos/uncertainty.json"
                 ]
               }
             ]
           }
         ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year retrospective evaluation",
-        "type": "hash-verified local research archive"
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
       }
     },
     "basket_attribution_summary": {
@@ -18168,13 +18038,13 @@
           "Fit / calendar days": "273/273",
           "R²": "0.424",
           "Max VIF": "8.23",
-          "Case narrative": "### A01 | basket 4645 | January-September 2026\n\nBuffered momentum; 28.0d lookback, 168h rebalance. **Net period return: 22.24%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.424**; standardized condition **8.31**; max VIF **8.23**. Neither declared collinearity warning threshold was crossed. Max leverage **0.334**, max Cook's distance **0.471**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.123 [-0.192, -0.053]**; matched-calendar HAC27 **-0.123 [-0.215, -0.031]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A01 | basket 4645 | January-September 2026\n\nBuffered momentum; 28.0d lookback, 168h rebalance. **Net period return: 22.24%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.424**; standardized condition **8.31**; max VIF **8.23**. Neither declared collinearity warning threshold was crossed. Max leverage **0.334**, max Cook's distance **0.471**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.123 [-0.192, -0.053]**; matched-calendar HAC27 **-0.123 [-0.215, -0.031]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.09420438893709655,
           "joint_alpha_ci95_low": -0.28821347488009313,
           "joint_alpha_ci95_high": 0.4766222527542862,
-          "legacy_btc_alpha_annual": 0.3053827974094912,
-          "legacy_btc_alpha_ci95_low": -0.2256324156959374,
-          "legacy_btc_alpha_ci95_high": 0.83639801051492,
+          "btc_only_alpha_annual": 0.3053827974094912,
+          "btc_only_alpha_ci95_low": -0.2256324156959374,
+          "btc_only_alpha_ci95_high": 0.83639801051492,
           "matched_btc_alpha_annual": 0.30538279740947993,
           "matched_btc_alpha_ci95_low": -0.07708475472176685,
           "matched_btc_alpha_ci95_high": 0.6878503495407267,
@@ -18196,13 +18066,13 @@
           "Fit / calendar days": "273/273",
           "R²": "0.370",
           "Max VIF": "8.23",
-          "Case narrative": "### A02 | basket 4645 | January-September 2026\n\nMomentum; 28.0d lookback, 72h rebalance. **Net period return: 14.36%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.370**; standardized condition **8.31**; max VIF **8.23**. Neither declared collinearity warning threshold was crossed. Max leverage **0.334**, max Cook's distance **0.336**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.115 [-0.198, -0.032]**; matched-calendar HAC27 **-0.115 [-0.228, -0.002]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A02 | basket 4645 | January-September 2026\n\nMomentum; 28.0d lookback, 72h rebalance. **Net period return: 14.36%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.370**; standardized condition **8.31**; max VIF **8.23**. Neither declared collinearity warning threshold was crossed. Max leverage **0.334**, max Cook's distance **0.336**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.115 [-0.198, -0.032]**; matched-calendar HAC27 **-0.115 [-0.228, -0.002]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.03950580588306159,
           "joint_alpha_ci95_low": -0.42104676904711447,
           "joint_alpha_ci95_high": 0.5000583808132376,
-          "legacy_btc_alpha_annual": 0.2177707581462442,
-          "legacy_btc_alpha_ci95_low": -0.3443862595883112,
-          "legacy_btc_alpha_ci95_high": 0.7799277758807996,
+          "btc_only_alpha_annual": 0.2177707581462442,
+          "btc_only_alpha_ci95_low": -0.3443862595883112,
+          "btc_only_alpha_ci95_high": 0.7799277758807996,
           "matched_btc_alpha_annual": 0.21777075814622557,
           "matched_btc_alpha_ci95_low": -0.22273836597723132,
           "matched_btc_alpha_ci95_high": 0.6582798822696825,
@@ -18224,13 +18094,13 @@
           "Fit / calendar days": "273/273",
           "R²": "0.331",
           "Max VIF": "6.61",
-          "Case narrative": "### A03 | basket 1159 | January-September 2026\n\nReversal; 60.0d lookback, 168h rebalance. **Net period return: 31.38%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.331**; standardized condition **8.28**; max VIF **6.61**. Neither declared collinearity warning threshold was crossed. Max leverage **0.358**, max Cook's distance **0.217**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **0.028 [-0.030, 0.086]**; matched-calendar HAC27 **0.028 [-0.039, 0.094]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A03 | basket 1159 | January-September 2026\n\nReversal; 60.0d lookback, 168h rebalance. **Net period return: 31.38%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.331**; standardized condition **8.28**; max VIF **6.61**. Neither declared collinearity warning threshold was crossed. Max leverage **0.358**, max Cook's distance **0.217**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **0.028 [-0.030, 0.086]**; matched-calendar HAC27 **0.028 [-0.039, 0.094]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": 0.4036033495037295,
           "joint_alpha_ci95_low": 0.2210464309314593,
           "joint_alpha_ci95_high": 0.5861602680759997,
-          "legacy_btc_alpha_annual": 0.3770515538564312,
-          "legacy_btc_alpha_ci95_low": 0.0596963268413535,
-          "legacy_btc_alpha_ci95_high": 0.6944067808715089,
+          "btc_only_alpha_annual": 0.3770515538564312,
+          "btc_only_alpha_ci95_low": 0.0596963268413535,
+          "btc_only_alpha_ci95_high": 0.6944067808715089,
           "matched_btc_alpha_annual": 0.3770515538564327,
           "matched_btc_alpha_ci95_low": 0.13881705045760548,
           "matched_btc_alpha_ci95_high": 0.6152860572552599,
@@ -18252,13 +18122,13 @@
           "Fit / calendar days": "273/273",
           "R²": "0.193",
           "Max VIF": "7.23",
-          "Case narrative": "### A04 | basket 4444 | January-September 2026\n\nTrend long/short; 28.0d lookback, 24h rebalance. **Net period return: -16.93%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.193**; standardized condition **7.95**; max VIF **7.23**. Neither declared collinearity warning threshold was crossed. Max leverage **0.411**, max Cook's distance **0.391**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.383 [-0.782, 0.017]**; matched-calendar HAC27 **-0.383 [-0.875, 0.109]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### A04 | basket 4444 | January-September 2026\n\nTrend long/short; 28.0d lookback, 24h rebalance. **Net period return: -16.93%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.193**; standardized condition **7.95**; max VIF **7.23**. Neither declared collinearity warning threshold was crossed. Max leverage **0.411**, max Cook's distance **0.391**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.383 [-0.782, 0.017]**; matched-calendar HAC27 **-0.383 [-0.875, 0.109]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.134600477498542,
           "joint_alpha_ci95_low": -1.078715100449269,
           "joint_alpha_ci95_high": 0.809514145452185,
-          "legacy_btc_alpha_annual": -0.0974980088938491,
-          "legacy_btc_alpha_ci95_low": -1.2220770724123655,
-          "legacy_btc_alpha_ci95_high": 1.0270810546246671,
+          "btc_only_alpha_annual": -0.0974980088938491,
+          "btc_only_alpha_ci95_low": -1.2220770724123655,
+          "btc_only_alpha_ci95_high": 1.0270810546246671,
           "matched_btc_alpha_annual": -0.0974980088938431,
           "matched_btc_alpha_ci95_low": -1.1235109179716614,
           "matched_btc_alpha_ci95_high": 0.9285149001839752,
@@ -18280,13 +18150,13 @@
           "Fit / calendar days": "273/273",
           "R²": "0.238",
           "Max VIF": "8.95",
-          "Case narrative": "### B01 | basket 2323 | January-September 2026\n\nBuffered momentum; 28.0d lookback, 24h rebalance. **Net period return: -18.98%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.238**; standardized condition **8.78**; max VIF **8.95**. Neither declared collinearity warning threshold was crossed. Max leverage **0.302**, max Cook's distance **1.829**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.046 [-0.108, 0.016]**; matched-calendar HAC27 **-0.046 [-0.112, 0.021]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B01 | basket 2323 | January-September 2026\n\nBuffered momentum; 28.0d lookback, 24h rebalance. **Net period return: -18.98%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.238**; standardized condition **8.78**; max VIF **8.95**. Neither declared collinearity warning threshold was crossed. Max leverage **0.302**, max Cook's distance **1.829**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.046 [-0.108, 0.016]**; matched-calendar HAC27 **-0.046 [-0.112, 0.021]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.39741522587412675,
           "joint_alpha_ci95_low": -0.7551046436610012,
           "joint_alpha_ci95_high": -0.039725808087252346,
-          "legacy_btc_alpha_annual": -0.2371121294179775,
-          "legacy_btc_alpha_ci95_low": -0.9585563940261352,
-          "legacy_btc_alpha_ci95_high": 0.48433213519018,
+          "btc_only_alpha_annual": -0.2371121294179775,
+          "btc_only_alpha_ci95_low": -0.9585563940261352,
+          "btc_only_alpha_ci95_high": 0.48433213519018,
           "matched_btc_alpha_annual": -0.23711212941798876,
           "matched_btc_alpha_ci95_low": -0.8885527423435149,
           "matched_btc_alpha_ci95_high": 0.41432848350753737,
@@ -18308,13 +18178,13 @@
           "Fit / calendar days": "273/273",
           "R²": "0.290",
           "Max VIF": "8.99",
-          "Case narrative": "### B03 | basket 2457 | January-September 2026\n\nMomentum; 90.0d lookback, 72h rebalance. **Net period return: -45.36%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.290**; standardized condition **8.36**; max VIF **8.99**. Neither declared collinearity warning threshold was crossed. Max leverage **0.331**, max Cook's distance **1.213**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.113 [-0.193, -0.033]**; matched-calendar HAC27 **-0.113 [-0.195, -0.031]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B03 | basket 2457 | January-September 2026\n\nMomentum; 90.0d lookback, 72h rebalance. **Net period return: -45.36%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.290**; standardized condition **8.36**; max VIF **8.99**. Neither declared collinearity warning threshold was crossed. Max leverage **0.331**, max Cook's distance **1.213**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.113 [-0.193, -0.033]**; matched-calendar HAC27 **-0.113 [-0.195, -0.031]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.8153151522523507,
           "joint_alpha_ci95_low": -1.2299334380733131,
           "joint_alpha_ci95_high": -0.40069686643138847,
-          "legacy_btc_alpha_annual": -0.7604932697690501,
-          "legacy_btc_alpha_ci95_low": -1.3671827149883284,
-          "legacy_btc_alpha_ci95_high": -0.1538038245497717,
+          "btc_only_alpha_annual": -0.7604932697690501,
+          "btc_only_alpha_ci95_low": -1.3671827149883284,
+          "btc_only_alpha_ci95_high": -0.1538038245497717,
           "matched_btc_alpha_annual": -0.7604932697690355,
           "matched_btc_alpha_ci95_low": -1.245816739813029,
           "matched_btc_alpha_ci95_high": -0.275169799725042,
@@ -18336,13 +18206,13 @@
           "Fit / calendar days": "273/273",
           "R²": "0.735",
           "Max VIF": "6.62",
-          "Case narrative": "### B04 | basket 6064 | January-September 2026\n\nReversal; 90.0d lookback, 168h rebalance. **Net period return: -14.29%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.735**; standardized condition **7.91**; max VIF **6.62**. Neither declared collinearity warning threshold was crossed. Max leverage **0.410**, max Cook's distance **2.681**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **0.026 [-0.034, 0.086]**; matched-calendar HAC27 **0.026 [-0.046, 0.098]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B04 | basket 6064 | January-September 2026\n\nReversal; 90.0d lookback, 168h rebalance. **Net period return: -14.29%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.735**; standardized condition **7.91**; max VIF **6.62**. Neither declared collinearity warning threshold was crossed. Max leverage **0.410**, max Cook's distance **2.681**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **0.026 [-0.034, 0.086]**; matched-calendar HAC27 **0.026 [-0.046, 0.098]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.000490509269728222,
           "joint_alpha_ci95_low": -0.230144567693389,
           "joint_alpha_ci95_high": 0.22916354915393258,
-          "legacy_btc_alpha_annual": -0.1782764399686873,
-          "legacy_btc_alpha_ci95_low": -0.7237310035654754,
-          "legacy_btc_alpha_ci95_high": 0.3671781236281006,
+          "btc_only_alpha_annual": -0.1782764399686873,
+          "btc_only_alpha_ci95_low": -0.7237310035654754,
+          "btc_only_alpha_ci95_high": 0.3671781236281006,
           "matched_btc_alpha_annual": -0.17827643996869286,
           "matched_btc_alpha_ci95_low": -0.7435855036968522,
           "matched_btc_alpha_ci95_high": 0.3870326237594664,
@@ -18364,13 +18234,13 @@
           "Fit / calendar days": "273/273",
           "R²": "0.496",
           "Max VIF": "8.87",
-          "Case narrative": "### B05 | basket 2330 | January-September 2026\n\nTrend long/cash; 28.0d lookback, 168h rebalance. **Net period return: -5.86%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.496**; standardized condition **9.13**; max VIF **8.87**. Neither declared collinearity warning threshold was crossed. Max leverage **0.300**, max Cook's distance **0.626**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **0.311 [0.138, 0.485]**; matched-calendar HAC27 **0.311 [0.105, 0.517]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B05 | basket 2330 | January-September 2026\n\nTrend long/cash; 28.0d lookback, 168h rebalance. **Net period return: -5.86%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.496**; standardized condition **9.13**; max VIF **8.87**. Neither declared collinearity warning threshold was crossed. Max leverage **0.300**, max Cook's distance **0.626**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **0.311 [0.138, 0.485]**; matched-calendar HAC27 **0.311 [0.105, 0.517]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.11337265843637855,
           "joint_alpha_ci95_low": -0.40358877683482636,
           "joint_alpha_ci95_high": 0.17684345996206924,
-          "legacy_btc_alpha_annual": -0.0643166470761243,
-          "legacy_btc_alpha_ci95_low": -0.4656273649136835,
-          "legacy_btc_alpha_ci95_high": 0.3369940707614348,
+          "btc_only_alpha_annual": -0.0643166470761243,
+          "btc_only_alpha_ci95_low": -0.4656273649136835,
+          "btc_only_alpha_ci95_high": 0.3369940707614348,
           "matched_btc_alpha_annual": -0.0643166470761177,
           "matched_btc_alpha_ci95_low": -0.37236947631066897,
           "matched_btc_alpha_ci95_high": 0.24373618215843354,
@@ -18392,13 +18262,13 @@
           "Fit / calendar days": "273/273",
           "R²": "0.220",
           "Max VIF": "8.88",
-          "Case narrative": "### B06 | basket 2495 | January-September 2026\n\nTrend long/short; 28.0d lookback, 168h rebalance. **Net period return: -4.22%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.220**; standardized condition **9.00**; max VIF **8.88**. Neither declared collinearity warning threshold was crossed. Max leverage **0.319**, max Cook's distance **0.962**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC beta: legacy full-calendar HAC7 **-0.370 [-0.711, -0.028]**; matched-calendar HAC27 **-0.370 [-0.763, 0.024]**. All brackets are marginal 95% intervals.",
+          "Case narrative": "### B06 | basket 2495 | January-September 2026\n\nTrend long/short; 28.0d lookback, 168h rebalance. **Net period return: -4.22%.** The eight net contributions below sum to that unchanged return.\n\nJoint fit **273/273 days**; R-squared **0.220**; standardized condition **9.00**; max VIF **8.88**. Neither declared collinearity warning threshold was crossed. Max leverage **0.319**, max Cook's distance **0.962**: low collinearity alone does not establish stability. Excluded: **None**.\n\nBTC-only beta: full-calendar HAC7 **-0.370 [-0.711, -0.028]**; matched-calendar HAC27 **-0.370 [-0.763, 0.024]**. All brackets are marginal 95% intervals.",
           "joint_alpha_annual": -0.12765870173884253,
           "joint_alpha_ci95_low": -0.6644764008011541,
           "joint_alpha_ci95_high": 0.40915899732346905,
-          "legacy_btc_alpha_annual": 0.0352106185779052,
-          "legacy_btc_alpha_ci95_low": -0.7052659963567943,
-          "legacy_btc_alpha_ci95_high": 0.7756872335126048,
+          "btc_only_alpha_annual": 0.0352106185779052,
+          "btc_only_alpha_ci95_low": -0.7052659963567943,
+          "btc_only_alpha_ci95_high": 0.7756872335126048,
           "matched_btc_alpha_annual": 0.03521061857791091,
           "matched_btc_alpha_ci95_low": -0.5120633913624109,
           "matched_btc_alpha_ci95_high": 0.5824846285182328,
@@ -18414,18 +18284,14 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January-30 September 2026; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/joint_models.json",
-          "research/basket_factor_attribution_20261016/outputs/joint_coefficients.csv",
-          "research/basket_factor_attribution_20261016/outputs/legacy_btc_comparison.csv",
-          "research/basket_factor_attribution_20261016/outputs/matched_btc_coefficients.csv",
-          "research/basket_factor_attribution_20261016/outputs/attribution_totals.csv"
+          "results/report_data/oos/basket_attribution_summary.json"
         ],
         "metricDefinitions": [
           {
             "label": "Summary",
-            "definition": "Annual alpha is 365 times the daily arithmetic intercept. All displayed alpha values/intervals are percent/year. Joint and matched BTC use the same complete-case dates and corrected calendar HAC27; legacy BTC retains original full-period saved HAC7. R2 is joint in-sample fit; VIF and condition diagnostics are descriptive.",
+            "definition": "Annual alpha is 365 times the daily arithmetic intercept. All displayed alpha values/intervals are percent/year. Joint and matched BTC use the same complete-case dates and corrected calendar HAC27; full-calendar BTC-only retains original full-period saved HAC7. R2 is joint in-sample fit; VIF and condition diagnostics are descriptive.",
             "componentIds": [
               "basket-attribution-20261016-overview",
               "basket-attribution-20261016-interpretation",
@@ -18438,17 +18304,20 @@
               "basket-attribution-20261016-B04-context",
               "basket-attribution-20261016-B05-context",
               "basket-attribution-20261016-B06-context"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/oos/basket_attribution_summary.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly oos_partial_2026_jan_sep; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/basket_attribution_summary.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -18458,8 +18327,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: oos_partial_2026_jan_sep."
+          "language": "text",
+          "code": "Read results/report_data/oos/basket_attribution_summary.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -21419,10 +21288,9 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January-30 September 2026; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/coin_attribution.csv",
-          "research/basket_factor_attribution_20261016/outputs/joint_coefficients.csv"
+          "results/report_data/oos/basket_attribution_coins.json"
         ],
         "metricDefinitions": [
           {
@@ -21438,17 +21306,20 @@
               "basket-attribution-20261016-B04-coins",
               "basket-attribution-20261016-B05-coins",
               "basket-attribution-20261016-B06-coins"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/oos/basket_attribution_coins.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly oos_partial_2026_jan_sep; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/basket_attribution_coins.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -21458,8 +21329,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: oos_partial_2026_jan_sep."
+          "language": "text",
+          "code": "Read results/report_data/oos/basket_attribution_coins.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -21773,9 +21644,9 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January-30 September 2026; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/joint_models.json"
+          "results/report_data/oos/basket_attribution_diagnostics.json"
         ],
         "metricDefinitions": [
           {
@@ -21791,17 +21662,20 @@
               "basket-attribution-20261016-B04-context",
               "basket-attribution-20261016-B05-context",
               "basket-attribution-20261016-B06-context"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/oos/basket_attribution_diagnostics.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly oos_partial_2026_jan_sep; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/basket_attribution_diagnostics.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -21811,8 +21685,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: oos_partial_2026_jan_sep."
+          "language": "text",
+          "code": "Read results/report_data/oos/basket_attribution_diagnostics.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ],
       "payloadColumns": [
@@ -23771,9 +23645,9 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January-30 September 2026; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/outputs/joint_coefficients.csv"
+          "results/report_data/oos/basket_attribution_coefficients.json"
         ],
         "metricDefinitions": [
           {
@@ -23781,17 +23655,20 @@
             "definition": "81 joint coefficients in this report period; marginal HAC27 and HAC7 intervals, global Holm243 p-values and Bonferroni243 simultaneous intervals refer to all 243 fixed joint coefficient slots across 3 periods. Correction is not search-adjustment for prior strategy research.",
             "componentIds": [
               "basket-attribution-20261016-companion"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/oos/basket_attribution_coefficients.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly oos_partial_2026_jan_sep; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/basket_attribution_coefficients.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -23801,8 +23678,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: oos_partial_2026_jan_sep."
+          "language": "text",
+          "code": "Read results/report_data/oos/basket_attribution_coefficients.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     },
@@ -23810,10 +23687,10 @@
       "rows": [
         {
           "Period label": "January-September 2026",
-          "Scope narrative": "## Added attribution: what each coin contributed, and what joint basket exposure explains\n\n**1 January-30 September 2026, all nine unchanged frozen strategies.** This post-hoc addition separates accounting contribution from statistical sensitivity. Original returns, Sharpe, turnover, drawdowns, baskets and decisions are unchanged. These nine months were previously inspected historical data. New factor tests do not change the original nine-case acceptance decisions or select a new winner.\n\nThe overview shows **annual alpha in percent per year**, estimate [95% CI]. Alpha is 365 times the daily arithmetic intercept, **not CAGR**. Legacy BTC uses its original full-calendar HAC7 estimate; matched BTC and the joint model use the identical complete-case dates with calendar HAC27.",
-          "Interpretation narrative": "**How to read this.** The joint regression includes an intercept and all eight basket coins simultaneously. A conditional beta is sensitivity holding the other seven factors fixed; it is not a portfolio weight, a causal contribution or proof of market neutrality. R-squared is an in-sample descriptive fit. Comparing joint with matched BTC separates added factors from sample exclusions; legacy BTC also uses a different covariance convention.",
+          "Scope narrative": "## Per-coin attribution: what each coin contributed, and what joint basket exposure explains\n\n**1 January-30 September 2026, all nine unchanged frozen strategies.** These explanatory diagnostics separate accounting contribution from statistical sensitivity. Strategy returns, Sharpe, turnover, drawdowns, baskets and decisions remain fixed. These factor diagnostics explain the same evaluation paths; they do not select a new winner or change the nine-case acceptance decisions.\n\nThe overview shows **annual alpha in percent per year**, estimate [95% CI]. Alpha is 365 times the daily arithmetic intercept, **not CAGR**. The BTC-only comparison uses its full-calendar HAC7 estimate; matched BTC and the joint model use the identical complete-case dates with calendar HAC27.",
+          "Interpretation narrative": "**How to read this.** The joint regression includes an intercept and all eight basket coins simultaneously. A conditional beta is sensitivity holding the other seven factors fixed; it is not a portfolio weight, a causal contribution or proof of market neutrality. R-squared is an in-sample descriptive fit. Comparing joint with matched BTC separates added factors from sample exclusions; the full-calendar BTC-only comparison also uses a different covariance convention.",
           "Methods narrative": "**Uncertainty and missingness.** Joint and matched BTC intervals are approximate marginal 95% normal-Wald intervals using Bartlett calendar HAC27 and n/(n-k) correction; HAC7 sensitivity is exported. Missing factor days are excluded from regressions only; gaps are not filled or compressed. The complete strategy and attribution calendars remain intact. Standardized condition >30 or any VIF >10 is a warning, not a reason to drop a coin. Some fits are sensitive to extreme days; high leverage/Cook's distance can coexist with modest collinearity. No event is removed and no model reselected.\n\n**Per-coin accounting.** Gross contributions and positive allocated fees are both linked with prior **net** strategy NAV; net = gross - fees. Units are whole-period percentage points (pp) of initial capital, not standalone coin returns. The next pages retain all eight slots and their marginal net-contribution intervals.",
-          "Companion narrative": "### Full precision, sensitivity and multiplicity\n\n[Per-coin gross, fee and net attribution with all three confidence intervals](exports/basket_coin_attribution.csv) | [Joint alpha/betas, HAC7 sensitivity, global Holm243 p-values and Bonferroni243 intervals](exports/basket_joint_coefficients.csv) | [Joint model diagnostics and individual VIFs](exports/basket_joint_models.csv) | [Legacy BTC-only estimates and intervals](exports/basket_legacy_btc.csv) | [Matched BTC-only coefficients and intervals](exports/basket_matched_btc.csv) | [Regression calendar and exclusions](exports/basket_regression_calendar.csv).\n\nAttribution uses **4,000 seeded, synchronized circular 28-day calendar-block draws** across all nine strategies and eight coins. Daily gross/fee vectors are resampled together and relinked using each draw's **new prior NAV**; signals, targets and trades are not regenerated and no block-boundary fee is invented. Any invalid draw makes the affected interval unavailable; none is silently dropped. Gross/fee intervals and invalid-draw counts remain in the CSV.\n\nThe coefficient correction spans **243 predeclared diagnostic slots: 27 joint alphas + 216 joint betas** across all three periods. Displayed intervals are marginal; approximate Bonferroni familywise intervals and Holm-adjusted p-values are exported. This corrects only that conditional coefficient family, **not the original universe, configuration, period or strategy-selection search**. Attribution intervals are marginal and not multiplicity-adjusted. No significance row changes the frozen shortlist or crowns a new winner. LUNA/LUNC is legacy Terra, not Terra 2.0; FTM/S and MATIC/POL retain the original economic slots.",
+          "Companion narrative": "### Full precision, sensitivity and multiplicity\n\n[Per-coin gross, fee and net attribution with all three confidence intervals](exports/basket_coin_attribution.csv) | [Joint alpha/betas, HAC7 sensitivity, global Holm243 p-values and Bonferroni243 intervals](exports/basket_joint_coefficients.csv) | [Joint model diagnostics and individual VIFs](exports/basket_joint_models.csv) | [Full-calendar BTC-only estimates and intervals](exports/basket_btc_only.csv) | [Matched BTC-only coefficients and intervals](exports/basket_matched_btc.csv) | [Regression calendar and exclusions](exports/basket_regression_calendar.csv).\n\nAttribution uses **4,000 seeded, synchronized circular 28-day calendar-block draws** across all nine strategies and eight coins. Daily gross/fee vectors are resampled together and relinked using each draw's **new prior NAV**; signals, targets and trades are not regenerated and no block-boundary fee is invented. Any invalid draw makes the affected interval unavailable; none is silently dropped. Gross/fee intervals and invalid-draw counts remain in the CSV.\n\nThe coefficient correction spans **243 predeclared diagnostic slots: 27 joint alphas + 216 joint betas** across all three periods. Displayed intervals are marginal; approximate Bonferroni familywise intervals and Holm-adjusted p-values are exported. This corrects only that conditional coefficient family, **not the original universe, configuration, period or strategy-selection search**. Attribution intervals are marginal and not multiplicity-adjusted. No significance row changes the frozen shortlist or crowns a new winner. LUNA/LUNC is legacy Terra, not Terra 2.0; FTM/S and MATIC/POL retain the original economic slots.",
           "period": "oos_partial_2026_jan_sep",
           "protocol_sha256": "7d8119be9555353458a6dbd5b531f2248375cf6166068e3821c565aac94600cf",
           "payload_sha256": "ab98870600d5164148218ee19613b46d080a1175e9508ac05e80893f53f4e472",
@@ -23823,33 +23700,33 @@
         }
       ],
       "source": {
-        "description": "Post-hoc attribution only; 1 January-30 September 2026; nine unchanged frozen strategies; primary 20 bps observed-close convention. No signals, orders, selections or original performance results changed.",
+        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
         "files": [
-          "research/basket_factor_attribution_20261016/protocol.json",
-          "research/basket_factor_attribution_20261016/outputs/bootstrap_methods.json",
-          "research/basket_factor_attribution_20261016/audit/independent_accounting.json",
-          "research/basket_factor_attribution_20261016/audit/independent_inference_audit.json"
+          "results/report_data/oos/basket_attribution_methods.json"
         ],
         "metricDefinitions": [
           {
             "label": "Methods",
-            "definition": "Post-hoc fixed-strategy attribution protocol;20 bps, all 9 strategies, 8 coin factors, calendar HAC27 for joint and matched BTC; legacy BTC full-sample HAC7 unchanged. 4,000 synchronized 28-day bootstrap draws with new NAV relinking; marginal 95% intervals and 243 joint-coefficient correction only.",
+            "definition": "Post-hoc fixed-strategy attribution protocol;20 bps, all 9 strategies, 8 coin factors, calendar HAC27 for joint and matched BTC; full-calendar BTC-only full-sample HAC7 unchanged. 4,000 synchronized 28-day bootstrap draws with new NAV relinking; marginal 95% intervals and 243 joint-coefficient correction only.",
             "componentIds": [
               "basket-attribution-20261016-scope",
               "basket-attribution-20261016-methods",
               "basket-attribution-20261016-interpretation",
               "basket-attribution-20261016-companion"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/report_data/oos/basket_attribution_methods.json"
+                ]
+              }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Verified fixed-strategy scientific outputs",
-            "detail": "Check exact input file SHA256 against outputs/computation_receipt.json and protocol SHA before decoding; the separately recorded volatile stdout-log custody amendment does not change any scientific output."
-          },
-          {
-            "title": "Bounded period projection",
-            "detail": "Filter period exactly oos_partial_2026_jan_sep; retain frozen nine identities and all eight slots. Format fractions as percent/percentage points only for annual alpha and contributions; retain dimensionless betas, nulls, and exact full-precision source/export rows. Compare legacy full-calendar BTC HAC7, joint complete-case calendar HAC27, and matched BTC HAC27 separately."
+            "title": "Current saved result rows",
+            "detail": "Read results/report_data/oos/basket_attribution_methods.json; retain all rows and values; apply only the documented display projections and period scope."
           }
         ],
         "limitations": [
@@ -23859,8 +23736,8 @@
       },
       "methods": [
         {
-          "language": "Python",
-          "code": "Run final_reports_20261016/prepare_attribution_revision.py. Inputs are immutable scientific outputs from research/basket_factor_attribution_20261016; no statistical calculation performed in this reporting projection. Exact period: oos_partial_2026_jan_sep."
+          "language": "text",
+          "code": "Read results/report_data/oos/basket_attribution_methods.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
         }
       ]
     }
@@ -23868,7 +23745,7 @@
   "report": {
     "asOf": "2026-09-30"
   },
-  "status": "Reviewed retrospective partial-year research; no new selection",
+  "status": "Reviewed partial-year historical OOS evaluation; frozen strategies",
   "surface": "report",
-  "title": "2026 evaluation and conclusions"
+  "title": "2026 OOS evaluation and conclusions"
 }

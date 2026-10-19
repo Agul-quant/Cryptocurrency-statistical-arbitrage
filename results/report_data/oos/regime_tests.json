@@ -1,0 +1,42 @@
+{
+  "query_id": "regime_tests",
+  "period": "oos",
+  "rows": [
+    {
+      "95% CI bps": "[-0.93, 14.21]",
+      "Centered p": 0.108222944263934,
+      "Holm-4 p": 0.432891777055736,
+      "Interaction bps": 6.324227241987624,
+      "Invalid draws": 0,
+      "Regime": "BTC 30-day direction",
+      "Status": "Conditional posthoc"
+    },
+    {
+      "95% CI bps": "Unavailable",
+      "Centered p": null,
+      "Holm-4 p": null,
+      "Interaction bps": 0.4913354728224101,
+      "Invalid draws": 29,
+      "Regime": "BTC trailing volatility",
+      "Status": "Unavailable; no state in 29 draws"
+    },
+    {
+      "95% CI bps": "[-13.47, 4.05]",
+      "Centered p": 0.3559110222444389,
+      "Holm-4 p": 1.0,
+      "Interaction bps": -4.18402029931926,
+      "Invalid draws": 0,
+      "Regime": "Cross-coin dispersion",
+      "Status": "Conditional posthoc"
+    },
+    {
+      "95% CI bps": "[-16.02, 5.63]",
+      "Centered p": 0.3916520869782554,
+      "Holm-4 p": 1.0,
+      "Interaction bps": -4.7500743639489125,
+      "Invalid draws": 0,
+      "Regime": "Relative BTC quote volume",
+      "Status": "Conditional posthoc"
+    }
+  ]
+}

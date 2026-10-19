@@ -1,0 +1,21 @@
+{
+  "query_id": "luna_attribution",
+  "period": "validation",
+  "rows": [
+    {
+      "Development LUNA contribution (pp)": "+49.39",
+      "ID": "A01",
+      "Validation LUNA contribution (pp)": "-25.46"
+    },
+    {
+      "Development LUNA contribution (pp)": "+132.19",
+      "ID": "A02",
+      "Validation LUNA contribution (pp)": "-19.51"
+    },
+    {
+      "Development LUNA contribution (pp)": "+78.96",
+      "ID": "A04",
+      "Validation LUNA contribution (pp)": "-19.88"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "query_id": "development_groups",
+  "period": "validation",
+  "rows": [
+    {
+      "Cases": 224867,
+      "Group": "Q1 (best)",
+      "Median Sharpe": "0.14",
+      "Median annual TO": "60.01×",
+      "Median net": "-1.55%",
+      "Period": "Development",
+      "Positive fraction": "47.19%"
+    },
+    {
+      "Cases": 224867,
+      "Group": "Q1 (best)",
+      "Median Sharpe": "-0.15",
+      "Median annual TO": "64.77×",
+      "Median net": "-16.27%",
+      "Period": "Validation",
+      "Positive fraction": "30.73%"
+    },
+    {
+      "Cases": 223954,
+      "Group": "Q2",
+      "Median Sharpe": "-0.74",
+      "Median annual TO": "70.25×",
+      "Median net": "-37.25%",
+      "Period": "Development",
+      "Positive fraction": "0.08%"
+    },
+    {
+      "Cases": 223954,
+      "Group": "Q2",
+      "Median Sharpe": "-0.76",
+      "Median annual TO": "69.73×",
+      "Median net": "-35.59%",
+      "Period": "Validation",
+      "Positive fraction": "12.99%"
+    },
+    {
+      "Cases": 219294,
+      "Group": "Q3",
+      "Median Sharpe": "-1.77",
+      "Median annual TO": "159.44×",
+      "Median net": "-69.06%",
+      "Period": "Development",
+      "Positive fraction": "0.00%"
+    },
+    {
+      "Cases": 219294,
+      "Group": "Q3",
+      "Median Sharpe": "-1.63",
+      "Median annual TO": "162.09×",
+      "Median net": "-59.56%",
+      "Period": "Validation",
+      "Positive fraction": "2.68%"
+    },
+    {
+      "Cases": 223910,
+      "Group": "Q4",
+      "Median Sharpe": "-4.03",
+      "Median annual TO": "487.59×",
+      "Median net": "-92.90%",
+      "Period": "Development",
+      "Positive fraction": "0.00%"
+    },
+    {
+      "Cases": 223910,
+      "Group": "Q4",
+      "Median Sharpe": "-4.18",
+      "Median annual TO": "489.30×",
+      "Median net": "-90.15%",
+      "Period": "Validation",
+      "Positive fraction": "0.01%"
+    },
+    {
+      "Cases": 224910,
+      "Group": "Q5 (worst)",
+      "Median Sharpe": "-15.69",
+      "Median annual TO": "2753.01×",
+      "Median net": "-99.9973%",
+      "Period": "Development",
+      "Positive fraction": "0.00%"
+    },
+    {
+      "Cases": 224910,
+      "Group": "Q5 (worst)",
+      "Median Sharpe": "-17.87",
+      "Median annual TO": "2654.28×",
+      "Median net": "-99.9977%",
+      "Period": "Validation",
+      "Positive fraction": "0.00%"
+    }
+  ]
+}

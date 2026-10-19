@@ -1,0 +1,77 @@
+{
+  "provider": "Binance Vision public market data",
+  "venue": "Binance spot",
+  "quote_currency": "USDT",
+  "bar_frequency": "1 hour",
+  "timestamp_convention": "UTC completed-bar endpoints; ordinary hourly endpoint = open time +1h, not raw close_time rounded; timestamp units normalized from source milliseconds before2025 and microseconds from2025. Event final quote retains documented sub-hour close in its accounting bucket.",
+  "endpoint_start": "2021-10-01T01:00:00Z",
+  "endpoint_end": "2026-10-01T00:00:00Z",
+  "n_endpoints": 43824,
+  "n_full_search_slots": 22,
+  "n_frozen_basket_union_slots": 21,
+  "n_each_strategy_slots": 8,
+  "n_frozen_strategies": 9,
+  "warmup": [
+    "2021-10-01",
+    "2021-12-31"
+  ],
+  "periods": {
+    "development": [
+      "2022-01-01",
+      "2023-12-31",
+      730,
+      17520
+    ],
+    "validation": [
+      "2024-01-01",
+      "2025-12-31",
+      731,
+      17544
+    ],
+    "oos": [
+      "2026-01-01",
+      "2026-09-30",
+      273,
+      6552
+    ]
+  },
+  "monthly_archive_url_template": "https://data.binance.vision/data/spot/monthly/klines/{source_symbol}/1h/{source_symbol}-1h-{YYYY-MM}.zip",
+  "daily_archive_url_template": "https://data.binance.vision/data/spot/daily/klines/{source_symbol}/1h/{source_symbol}-1h-{YYYY-MM-DD}.zip",
+  "checksum_url": "Append .CHECKSUM to ZIP URL; SHA256-verified before normalization.",
+  "raw_schema": [
+    "open_time",
+    "open",
+    "high",
+    "low",
+    "close",
+    "base_asset_volume",
+    "close_time",
+    "quote_asset_volume",
+    "number_of_trades",
+    "taker_buy_base_asset_volume",
+    "taker_buy_quote_asset_volume",
+    "ignore"
+  ],
+  "analysis_fields": {
+    "prices": "Float64 slot-level source close marks in USDT. Missing marks remain NaN. Exact documented partial-final quotes and same-asset source mappings preserved.",
+    "quote_volume": "Float64 total quote-asset volume during the source bar in USDT, not base volume. Missing values remain NaN.",
+    "observed": "Boolean actual valid source mark; not fabricated observations.",
+    "tradable": "Boolean slot eligible for a new decision given point-in-time lifecycle status; no signals across an inactive run.",
+    "hold_allowed": "Boolean permission to retain exposure, preserving actual final earned event return before closure.",
+    "mandatory_exit": "Boolean forced lifecycle closure event; costs remain charged.",
+    "decision_allowed": "Single venue-wide boolean Series; suspension stops new decisions for every basket."
+  },
+  "license": "CC BY-NC-SA 4.0 subject to Binance source terms",
+  "documentation": "https://github.com/binance/binance-public-data",
+  "source_terms": "https://github.com/binance/binance-public-data/blob/master/TERMS_AND_CONDITIONS.md",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "dataset_scope": "Full 22 means the complete normalized 22-slot hourly search universe, not every cryptocurrency listing, the entire initial 30-name pool, or all raw OHLCV columns. Each frozen strategy uses eight slots; the nine-strategy union has 21. SAND is in the 22-slot screening universe but not the frozen nine.",
+  "archive_inventory_count": 1319,
+  "download_or_model_changes": false,
+  "full_hourly_matrix_cells": 964128,
+  "missing_price_cells": 3041,
+  "missing_quote_volume_cells": 3041,
+  "raw_ohlcv_archives_included": false,
+  "physical_hourly_source_symbols": 25,
+  "metadata_correction_rule": "Only the diagnosed SOL/SAND/TRX close_time fields were applied from 2021-12-24 daily archives. Normalized monthly prices and quote volumes were retained; differences in other daily rows were not substituted."
+}

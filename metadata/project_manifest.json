@@ -7,7 +7,8 @@
     "totals_path": "results/basket_factors/attribution_totals.csv"
   },
   "configuration_count": 169,
-  "created_at_utc": "2026-10-19T17:22:46.820540+00:00",
+  "created_at_utc": "2026-10-19T17:43:34.455767+00:00",
+  "data_universe_slots": 22,
   "data_use_note": "Fixed historical periods with prior project data inspection. The nine-strategy evaluation and later explanatory diagnoses share observations and are not additional independent tests.",
   "files": {
     ".gitattributes": {
@@ -23,8 +24,8 @@
       "sha256": "1ba0bde14166c529053b0ab9dfd2815751bd6e9286113a3e03f2c7edb1646a8d"
     },
     "README.md": {
-      "bytes": 3773,
-      "sha256": "d65bcf86c41219c867c39d61295d66804e48b0fdc5d43222c0f62fd7c8b9b194"
+      "bytes": 4628,
+      "sha256": "86f7feebe9f9c49a6a05af917bbbe9b379bff519ab770b4ac89de36fcc9a57ea"
     },
     "configs/configuration_space.json": {
       "bytes": 50142,
@@ -38,6 +39,10 @@
       "bytes": 1932,
       "sha256": "3ab5b587ab3c59ea0e9e0d589dcbe7684f1e0b760aca4e45fef974dd3862fe03"
     },
+    "data/availability_ranges.csv": {
+      "bytes": 2452,
+      "sha256": "588e8580ca8bf0c98966f2d65159781ea6136970e83cd5d9d932971658004f67"
+    },
     "data/decision_allowed.parquet": {
       "bytes": 405703,
       "sha256": "ee2d1f4102d74fda2942d8d2640033be6d8b10dca00101c9dfe1b427f7c80538"
@@ -50,53 +55,81 @@
       "bytes": 644195,
       "sha256": "9ddde621256707ffba10fe183a779ad4ef0e81edccbe1d6c5a495ae977f8d290"
     },
+    "data/historical_liquidity_candidates.csv": {
+      "bytes": 125084,
+      "sha256": "153b1727d2346b1c38341c1ce962ca7cebbac917d74c7347115ccd156d2739a7"
+    },
+    "data/historical_liquidity_top30.csv": {
+      "bytes": 5138,
+      "sha256": "049f66e194fe099182ccc0ce59b1715899cfc75e70a5fddbe101705a3d40cf37"
+    },
     "data/hold_allowed.parquet": {
-      "bytes": 419989,
-      "sha256": "f52c936b13b82c42cf56aa117c8e352ae0e4eeea06f51c0f51811d3726fa84fc"
+      "bytes": 420709,
+      "sha256": "46a939f61bc473d76b1dadfb0dfdcbbe9f7cffa1aeac636112429129c3237e24"
+    },
+    "data/liquidity_source_archive_inventory.csv": {
+      "bytes": 338317,
+      "sha256": "7a1419b6475c22d161b051d4964335c81cb0c55bc8a3793177c9f5e2e2c2571e"
     },
     "data/mandatory_exit.parquet": {
-      "bytes": 419976,
-      "sha256": "df088c8ddb6825d59bc8b983b2474095a3bce30ce4e1500b110a685ab53b38b7"
+      "bytes": 420696,
+      "sha256": "be7ee2ad7cf5994208c07c92a728b0a1eabbfa43a7a159077098f86af1bf243d"
     },
     "data/manifest.json": {
-      "bytes": 1439,
-      "sha256": "3de09aff8ac7b9c50fedbd8cc723f48b5979e869fb6607112b627d6c2701b152"
+      "bytes": 1586,
+      "sha256": "b42a52ad424ea57af44ef542b9f418e353005952c51819cb6c19ee20c535381a"
+    },
+    "data/metadata_correction_sources.csv": {
+      "bytes": 1457,
+      "sha256": "9a4c036e1d46164afaa1417d509aff62917c1d4d8cb5b0344abbbd9d46b86b69"
     },
     "data/observed.parquet": {
-      "bytes": 420127,
-      "sha256": "103fd22a451f66edf9e3fa56662b83775dbba15c196175b97b7f5233055f6b59"
+      "bytes": 420854,
+      "sha256": "873356d8479359ae0627ea82a1bb6323300786e616be41ef900b75452f8ad3bf"
     },
     "data/prices.parquet": {
-      "bytes": 3774647,
-      "sha256": "dc66f865cca81ebf849ef6b78fcbb3919b8cdc31351dad91b019155b02318efd"
+      "bytes": 3938710,
+      "sha256": "853e0980a8bdf5cad99cc1ad075db07595e2fc8117aaed7ff7ff3ca34ef14dd2"
     },
     "data/quote_volume.parquet": {
-      "bytes": 9573206,
-      "sha256": "22128d946f94dc4f2abe805dfcf3f2e2cbd3b7e342d2001304d6b4bff4c72214"
+      "bytes": 10004088,
+      "sha256": "d456f4af680f92e1154ef49ba585b0e82bade046651e60f8ddd1187cebce1dce"
+    },
+    "data/source_archive_inventory.csv": {
+      "bytes": 530240,
+      "sha256": "2f169e7151989eedd6bdaedeadaa8b2efa9340a84fa930ba8b3fc943e5050504"
     },
     "data/tradable.parquet": {
-      "bytes": 419988,
-      "sha256": "0bb97ea3466ea7d3ebd3e2573f4951c3bc61fd818b37a9559bbab55fec14f69b"
+      "bytes": 420708,
+      "sha256": "93358cdfcb2fe105d22289ce82280b54ef67f9a236d903e9bd4a09eb3cf07d27"
+    },
+    "data/universe.csv": {
+      "bytes": 7849,
+      "sha256": "1aa6d5827f220dced04d1bce20b40d52dd5b0a615ab7b1c237aafe2f71a87c7d"
+    },
+    "docs/DATA.md": {
+      "bytes": 9971,
+      "sha256": "d57e27a6bbdb405ca82e5e8a2cbbc1008b0952033bd89f04443642a6db14929c"
     },
     "docs/METHODS.md": {
       "bytes": 5317,
       "sha256": "0f152093eef65f2c60ce5376e84bb8b8cdb6a3b24cf64b5bc92669455cf78c76"
     },
     "final_reports/01_development/01_development_and_robustness.html": {
-      "bytes": 3303860,
-      "sha256": "5af9aaf284b0bfbd924dcdd655a5ded1c315fdf761646ef2e73a6550c9277823"
+      "bytes": 3304744,
+      "sha256": "9d1a5c2ee4e2b66a6328e34db5dae7b8e86494fbc46103da7d20c4e6f90a81ec"
     },
     "final_reports/01_development/01_development_and_robustness.pdf": {
-      "bytes": 660131,
-      "sha256": "002ca6d79b9e8c5200fddc20632dc8c03659d69d28bdf2f01aee704563cc5da5"
+      "bytes": 663051,
+      "sha256": "2f7bf6d65bf29d3717342c995b2efb58d366cdbca7eda56d7369f61d587f5cbd"
     },
     "final_reports/01_development/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3292,
       "sha256": "3e0a0f628554f270adceebc81a3b4631c6072fa14986f7cd6b899da896594f9d"
     },
     "final_reports/01_development/app/src/content/report/ReportContent.jsx": {
-      "bytes": 22695,
-      "sha256": "c6dd2fac8eceec1b380c6cb10bacca14e8edb930c337e45278c8713b87e06a3b"
+      "bytes": 23579,
+      "sha256": "3cd67600cf46acd8294141c6a32e6cbfe684b78dc49100ee110502d311d6d1ef"
     },
     "final_reports/01_development/app/src/content/report/basket-attribution.css": {
       "bytes": 2663,
@@ -183,20 +216,20 @@
       "sha256": "7312aedba48b8697d5fa639f8857c0e25b290210f1a42777c7c89738c6f8e790"
     },
     "final_reports/02_validation/02_validation_and_frozen_selection.html": {
-      "bytes": 3192607,
-      "sha256": "381859e8ae50057199f1790b05c5640be1aa7f0bb648add54e474ee7222ffbae"
+      "bytes": 3193491,
+      "sha256": "cd3f1b4f6addb9cc0495e8596873025849474db20726d584deee93c627c3155e"
     },
     "final_reports/02_validation/02_validation_and_frozen_selection.pdf": {
-      "bytes": 638339,
-      "sha256": "74f3b4e220d8ed60acc268e6bc518780a6b1fe3b582f0a02815c2da346ab74ce"
+      "bytes": 643143,
+      "sha256": "836b08e1a9634c8c32633d6918ede80a85ed68780a6a81d6c40e07ed3beda001"
     },
     "final_reports/02_validation/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3292,
       "sha256": "3e0a0f628554f270adceebc81a3b4631c6072fa14986f7cd6b899da896594f9d"
     },
     "final_reports/02_validation/app/src/content/report/ReportContent.jsx": {
-      "bytes": 18996,
-      "sha256": "306ab97d5f44fb205b1e1204c854cfa70fbc6688e55d91c1c715ff4d95d78823"
+      "bytes": 19880,
+      "sha256": "a83201f094d579530776859b1bb369a6537a2db23ae8c079f65632c45318f878"
     },
     "final_reports/02_validation/app/src/content/report/basket-attribution.css": {
       "bytes": 2663,
@@ -239,12 +272,12 @@
       "sha256": "dd9a853e49a071ffb3d9b8f417b5fc8881a1ff17e103f2aee1e74960c905ccce"
     },
     "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.html": {
-      "bytes": 3657945,
-      "sha256": "c055675608d0768ae352c5a9b803b0e6d57f5a083712ea58175f267e2385ceea"
+      "bytes": 3658831,
+      "sha256": "dad14f7b69ed5f266f336f1323c923e34790fc507afb86755659c0855ee15002"
     },
     "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf": {
-      "bytes": 869096,
-      "sha256": "7f9d819084928a7c5ce9cbae05c9d44c7e3066d06b7ab62cfe466aa9f9365f17"
+      "bytes": 872288,
+      "sha256": "4b2f69e212ea8db2da97049b98e0010cd5464a7f428f1603d4a0883fd52abbbc"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3292,
@@ -259,8 +292,8 @@
       "sha256": "8050480010c13ea6c9a3fe167dcad29db977355aecdc32a033dc723e27c4b943"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/plan.json": {
-      "bytes": 19122,
-      "sha256": "f09c51d401579a6df8fe4770e7b46c1c74cab5323530aa598d7dd9f9419b1536"
+      "bytes": 20006,
+      "sha256": "3984bf8a2911b1015e2fde79fe38be3deda6e4f3684ae82052623ec3d61e7928"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/report.css": {
       "bytes": 2363,
@@ -359,16 +392,24 @@
       "sha256": "d2351f5097ce46b495894d27d19b86b11bcb01fd14411a3a884a8a55e30b6fce"
     },
     "final_reports/README.md": {
-      "bytes": 1120,
-      "sha256": "46480b1f9649fa0d72d3d4b416f80dc25b1c4aec82eea3c5c11e6b85c37d4e88"
+      "bytes": 1441,
+      "sha256": "7502430ca2b1eeca93d2f17685be8a099eda44f70c41b2ddae8783a234a1a162"
     },
     "final_reports/quality_checks.json": {
-      "bytes": 2461,
-      "sha256": "5f6f09e36827a017b948bd727128b761a30c72b1896f4d8ff83ee7c9510713f9"
+      "bytes": 3234,
+      "sha256": "8344e5e285787791df9b2eac17dd391fc5ddb4448d135eaca04aa6b7f70e137e"
     },
     "licenses/DATA_LICENSE.md": {
       "bytes": 925,
       "sha256": "2195c5ce45fcb2012b72d29f611274bd557a5837e7e5fda8eb75e254d34c6c0f"
+    },
+    "metadata/dataset.json": {
+      "bytes": 3634,
+      "sha256": "ec9b507cfb68a3bae816790b6823d0c3857ae704a7c6d96653febea1c29e3381"
+    },
+    "metadata/source_verification.json": {
+      "bytes": 1518,
+      "sha256": "c7cf992e436d929c1485a9eb694c53f1c2aa4dcfc1ec60b45684ef04f5d65aff"
     },
     "requirements.lock.txt": {
       "bytes": 167,
@@ -711,8 +752,8 @@
       "sha256": "ced0b627d07dad5cefeeeed8a1779dd090828460997687969797a6130cacfb39"
     },
     "scripts/verify_project.py": {
-      "bytes": 6302,
-      "sha256": "905faa5d40241f861993d4939325aaa906fc8a582568e5d2baf0e3b992cc396f"
+      "bytes": 6961,
+      "sha256": "7f364a09c05d4c0f93a839ecaad3f52ab8f012cbfd73f295d3ac176ecadaf433"
     },
     "src/crypto_research/__init__.py": {
       "bytes": 77,
@@ -764,7 +805,7 @@
     },
     "tests/test_current_engine.py": {
       "bytes": 7198,
-      "sha256": "df0f5d8796bc527efd74d8ee124d2ba68c94537e780d702f7cd4029e4033452d"
+      "sha256": "4cfa7158db44935ca3f082b9e77b7c3c3f8469cbd3b082c801de77eb63fc7950"
     },
     "tests/test_diagnostics.py": {
       "bytes": 1709,
@@ -772,10 +813,12 @@
     }
   },
   "frozen_strategy_count": 9,
+  "frozen_strategy_union_slots": 21,
   "link_check_markdown": [
     "README.md",
     "NOTICE.md",
-    "docs/METHODS.md"
+    "docs/METHODS.md",
+    "docs/DATA.md"
   ],
   "package": "Current cryptocurrency strategy research",
   "periods": {
@@ -1003,6 +1046,91 @@
         "strategy_id",
         "period",
         "term"
+      ]
+    },
+    {
+      "finite_columns": [],
+      "path": "data/universe.csv",
+      "required_values": {
+        "in_frozen_nine_union_21": [
+          "True",
+          "False"
+        ],
+        "in_tiered_basket_search_22": [
+          "True",
+          "False"
+        ]
+      },
+      "rows": 30,
+      "unique_keys": [
+        "symbol"
+      ]
+    },
+    {
+      "finite_columns": [],
+      "path": "data/historical_liquidity_top30.csv",
+      "required_values": {
+        "selected": [
+          "True"
+        ]
+      },
+      "rows": 30,
+      "unique_keys": [
+        "symbol"
+      ]
+    },
+    {
+      "finite_columns": [],
+      "path": "data/historical_liquidity_candidates.csv",
+      "required_values": {
+        "eligible": [
+          "True",
+          "False"
+        ],
+        "selected": [
+          "True",
+          "False"
+        ]
+      },
+      "rows": 757,
+      "unique_keys": [
+        "symbol"
+      ]
+    },
+    {
+      "finite_columns": [],
+      "path": "data/source_archive_inventory.csv",
+      "required_values": {
+        "status": [
+          "verified"
+        ]
+      },
+      "rows": 1319,
+      "unique_keys": [
+        "source_url"
+      ]
+    },
+    {
+      "finite_columns": [],
+      "path": "data/metadata_correction_sources.csv",
+      "required_values": {},
+      "rows": 3,
+      "unique_keys": [
+        "symbol",
+        "date"
+      ]
+    },
+    {
+      "finite_columns": [],
+      "path": "data/liquidity_source_archive_inventory.csv",
+      "required_values": {
+        "interval": [
+          "1d"
+        ]
+      },
+      "rows": 857,
+      "unique_keys": [
+        "source_url"
       ]
     },
     {

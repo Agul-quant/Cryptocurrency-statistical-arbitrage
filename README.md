@@ -45,17 +45,31 @@ checks go to `local_outputs/`, not into the checked research results.
 | --- | --- |
 | `src/` | Python strategies, accounting, metrics and statistical diagnostics |
 | `configs/` | The 169 configuration definitions, nine frozen strategies and evaluation periods |
-| `data/` | Audited normalized hourly inputs and lifecycle/decision masks for the nine strategies |
+| `data/` | Complete 22-instrument normalized hourly search inputs, liquidity inventory, source catalogs and lifecycle/decision masks |
 | `results/` | Current performance, screening and explanatory results, plus compact statistical inputs |
 | `final_reports/` | Three PDF reports and their fully offline HTML editions |
 | `scripts/` | Current verification, research execution and diagnostic reproduction entry points |
 | `tests/` | Strategy, accounting and numerical checks |
 | `metadata/` | Current package file checksums and result contracts |
 
-The included hourly panels cover the 21 instruments required by the frozen nine;
-they do not provide every basket used in the full screening campaign. Supporting
-screening/cohort tables are supplied as saved results, not as a claim that the
-compact package reruns the entire basket search.
+## Data sources and included dataset
+
+Source: **Binance Vision, Binance spot USDT, one-hour bars**. The complete
+normalized **22-instrument search dataset** is included, with **43,824 UTC
+endpoints per panel**, from 1 October 2021 at 01:00 UTC to 1 October 2026 at
+00:00 UTC. Each strategy uses eight coins; the frozen nine together use 21.
+The initial 30-name historical liquidity ranking and explicit 22/21 membership
+flags are included in the [universe inventory](data/universe.csv).
+
+[Data sources, full coverage and field definitions](docs/DATA.md) explain the
+22 instruments, original 757-directory/259-eligible liquidity screen, archive
+URLs/checksums, token continuations and suspension treatment. The bundle
+contains normalized close/quote-volume panels and masks—not all raw OHLCV
+fields or raw ZIP archives. Source catalogs identify the verified originals.
+
+The supplied runner reproduces the nine frozen strategies and reconciles their
+27 primary strategy-period paths. It does not rerun the complete basket-selection
+campaign; supporting screening and cohort tables are saved research results.
 
 See [methods and interpretation](docs/METHODS.md) for costs, sample boundaries,
 statistical intervals, data-use limitations and reproduction scope.

@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "hourly_monthly_archives_and_sidecars_rehashed_now": 1319,
+  "hourly_zip_bytes": 46464826,
+  "daily_metadata_correction_archives_and_sidecars_rehashed_now": 3,
+  "liquidity_1d_archives_and_sidecars_rehashed_now": 857,
+  "checksum_verification": "Both stored ZIP SHA and CHECKSUM sidecar SHA match acquisition evidence; sidecar content hash and archive filename also independently matched.",
+  "raw_archives_in_public_current_dataset": false,
+  "raw_catalog_public": true,
+  "new_downloads": false,
+  "model_runs": false,
+  "normalized_panel_sha256": {
+    "prices.parquet": "853e0980a8bdf5cad99cc1ad075db07595e2fc8117aaed7ff7ff3ca34ef14dd2",
+    "quote_volume.parquet": "d456f4af680f92e1154ef49ba585b0e82bade046651e60f8ddd1187cebce1dce",
+    "tradable.parquet": "93358cdfcb2fe105d22289ce82280b54ef67f9a236d903e9bd4a09eb3cf07d27",
+    "observed.parquet": "873356d8479359ae0627ea82a1bb6323300786e616be41ef900b75452f8ad3bf",
+    "hold_allowed.parquet": "46a939f61bc473d76b1dadfb0dfdcbbe9f7cffa1aeac636112429129c3237e24",
+    "mandatory_exit.parquet": "be7ee2ad7cf5994208c07c92a728b0a1eabbfa43a7a159077098f86af1bf243d",
+    "decision_allowed.parquet": "ee2d1f4102d74fda2942d8d2640033be6d8b10dca00101c9dfe1b427f7c80538"
+  },
+  "full_data_universe_slots": 22,
+  "frozen_strategy_union_slots": 21,
+  "all_seven_full_panels_subset_to_frozen_union_exact_including_attributes": true,
+  "scope": "Source-cache byte verification and normalized-panel assembly; strategy reproduction is a separate check."
+}

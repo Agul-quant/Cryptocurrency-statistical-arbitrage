@@ -78,7 +78,7 @@ def test_frozen_grid_and_periods():
 
 def test_complete_pinned_inputs_and_subsets():
     panel=load_panel(ROOT);reg=json.loads((ROOT/'configs/frozen_strategies.json').read_text())
-    assert len(reg['strategies'])==9 and panel['prices'].shape==(43824,21)
+    assert len(reg['strategies'])==9 and panel['prices'].shape==(43824,22)
     for x in reg['strategies']:
         sub=subset_panel(panel,x['symbols']);assert sub['prices'].shape[1]==8
         assert sub['prices'].attrs==panel['prices'].attrs

@@ -11,35 +11,38 @@
   "source": "Binance Vision normalized hourly endpoints and audited lifecycle masks",
   "first_endpoint": "2021-10-01T01:00:00Z",
   "last_endpoint": "2026-10-01T00:00:00Z",
-  "role": "Union of the 21 coins in the nine frozen baskets; not the entire basket-search universe.",
+  "role": "Complete 22-slot hourly universe for the tiered eight-coin basket search; each frozen strategy uses eight slots and the nine-strategy union has 21.",
   "files": {
     "prices.parquet": {
-      "sha256": "dc66f865cca81ebf849ef6b78fcbb3919b8cdc31351dad91b019155b02318efd",
-      "bytes": 3774647
+      "sha256": "853e0980a8bdf5cad99cc1ad075db07595e2fc8117aaed7ff7ff3ca34ef14dd2",
+      "bytes": 3938710
     },
     "quote_volume.parquet": {
-      "sha256": "22128d946f94dc4f2abe805dfcf3f2e2cbd3b7e342d2001304d6b4bff4c72214",
-      "bytes": 9573206
+      "sha256": "d456f4af680f92e1154ef49ba585b0e82bade046651e60f8ddd1187cebce1dce",
+      "bytes": 10004088
     },
     "tradable.parquet": {
-      "sha256": "0bb97ea3466ea7d3ebd3e2573f4951c3bc61fd818b37a9559bbab55fec14f69b",
-      "bytes": 419988
+      "sha256": "93358cdfcb2fe105d22289ce82280b54ef67f9a236d903e9bd4a09eb3cf07d27",
+      "bytes": 420708
     },
     "observed.parquet": {
-      "sha256": "103fd22a451f66edf9e3fa56662b83775dbba15c196175b97b7f5233055f6b59",
-      "bytes": 420127
+      "sha256": "873356d8479359ae0627ea82a1bb6323300786e616be41ef900b75452f8ad3bf",
+      "bytes": 420854
     },
     "hold_allowed.parquet": {
-      "sha256": "f52c936b13b82c42cf56aa117c8e352ae0e4eeea06f51c0f51811d3726fa84fc",
-      "bytes": 419989
+      "sha256": "46a939f61bc473d76b1dadfb0dfdcbbe9f7cffa1aeac636112429129c3237e24",
+      "bytes": 420709
     },
     "mandatory_exit.parquet": {
-      "sha256": "df088c8ddb6825d59bc8b983b2474095a3bce30ce4e1500b110a685ab53b38b7",
-      "bytes": 419976
+      "sha256": "be7ee2ad7cf5994208c07c92a728b0a1eabbfa43a7a159077098f86af1bf243d",
+      "bytes": 420696
     },
     "decision_allowed.parquet": {
       "sha256": "ee2d1f4102d74fda2942d8d2640033be6d8b10dca00101c9dfe1b427f7c80538",
       "bytes": 405703
     }
-  }
+  },
+  "n_source_slots": 22,
+  "n_frozen_strategy_union_slots": 21,
+  "n_endpoints": 43824
 }

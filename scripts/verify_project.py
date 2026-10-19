@@ -64,6 +64,15 @@ def verify(root: Path) -> dict:
     assert {row['comparison_id'] for row in registry['strategies']} == IDS
     assert all(len(row['symbols']) == len(set(row['symbols'])) == 8 for row in registry['strategies'])
     assert len({coin for row in registry['strategies'] for coin in row['symbols']}) == 21
+    dataset = json.loads((root/'metadata/dataset.json').read_text())
+    assert dataset['n_full_search_slots'] == 22 and dataset['n_frozen_basket_union_slots'] == 21
+    assert dataset['n_endpoints'] == 43824 and len(dataset['raw_schema']) == 12
+    assert dataset['raw_ohlcv_archives_included'] is False
+    assert manifest['data_universe_slots'] == 22 and manifest['frozen_strategy_union_slots'] == 21
+    inventory = read_rows(root/'data/universe.csv')
+    assert len(inventory) == 30
+    assert sum(row['in_tiered_basket_search_22'] == 'True' for row in inventory) == 22
+    assert sum(row['in_frozen_nine_union_21'] == 'True' for row in inventory) == 21
     protocol = json.loads((root/'configs/research_protocol.json').read_text())
     assert set(protocol['periods']) == set(manifest['periods'])
     assert protocol['primary_cost_bps'] == manifest['primary_cost_bps'] == 20

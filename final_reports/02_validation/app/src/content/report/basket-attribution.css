@@ -7,6 +7,7 @@
 .basket-factor-table th { text-align:left; font-weight:600; background:color-mix(in srgb,var(--text) 4%,transparent); border-bottom:1px solid var(--border); padding:8px 7px; vertical-align:bottom; }
 .basket-factor-table td { border-bottom:1px solid color-mix(in srgb,var(--text) 9%,transparent); padding:8px 7px; vertical-align:top; }
 .basket-factor-table .numeric { text-align:right; white-space:nowrap; }
+.basket-factor-table th.numeric { white-space:normal; }
 .basket-factor-case .rich-narrative-content { font-size:14px; line-height:1.48; }
 @media(max-width:700px){ .basket-factor-appendix{padding-inline:16px;} .basket-factor-table{min-width:680px;} .basket-factor-compact{min-width:960px;} .basket-factor-pair{gap:32px;} }
 @media print{

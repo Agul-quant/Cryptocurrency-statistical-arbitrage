@@ -7,7 +7,7 @@
     "totals_path": "results/basket_factors/attribution_totals.csv"
   },
   "configuration_count": 169,
-  "created_at_utc": "2026-10-19T17:43:34.455767+00:00",
+  "created_at_utc": "2026-10-19T18:28:04.400673+00:00",
   "data_universe_slots": 22,
   "data_use_note": "Fixed historical periods with prior project data inspection. The nine-strategy evaluation and later explanatory diagnoses share observations and are not additional independent tests.",
   "files": {
@@ -116,28 +116,28 @@
       "sha256": "0f152093eef65f2c60ce5376e84bb8b8cdb6a3b24cf64b5bc92669455cf78c76"
     },
     "final_reports/01_development/01_development_and_robustness.html": {
-      "bytes": 3304744,
-      "sha256": "9d1a5c2ee4e2b66a6328e34db5dae7b8e86494fbc46103da7d20c4e6f90a81ec"
+      "bytes": 3304880,
+      "sha256": "c3e6b0531953610a2077c862cacfdb4150f43db996159f837fe6e8404cf19a1a"
     },
     "final_reports/01_development/01_development_and_robustness.pdf": {
-      "bytes": 663051,
-      "sha256": "2f7bf6d65bf29d3717342c995b2efb58d366cdbca7eda56d7369f61d587f5cbd"
+      "bytes": 663088,
+      "sha256": "ab2627f0adaa2a152c28dc5a954bd96d04a048ead19390436304777cf7d4b5b1"
     },
     "final_reports/01_development/app/src/content/report/BasketAttributionAppendix.jsx": {
-      "bytes": 3292,
-      "sha256": "3e0a0f628554f270adceebc81a3b4631c6072fa14986f7cd6b899da896594f9d"
+      "bytes": 3323,
+      "sha256": "5aa7508b0fa692454c6fb74698de8a9dd549279b027e881517ee12332aaa6320"
     },
     "final_reports/01_development/app/src/content/report/ReportContent.jsx": {
       "bytes": 23579,
       "sha256": "3cd67600cf46acd8294141c6a32e6cbfe684b78dc49100ee110502d311d6d1ef"
     },
     "final_reports/01_development/app/src/content/report/basket-attribution.css": {
-      "bytes": 2663,
-      "sha256": "8050480010c13ea6c9a3fe167dcad29db977355aecdc32a033dc723e27c4b943"
+      "bytes": 2719,
+      "sha256": "ab0d5c6c87fe6cb72324c12f2683be152a81ab50907ccc75a3ccaac10ac0c101"
     },
     "final_reports/01_development/app/src/content/report/report.css": {
-      "bytes": 1606,
-      "sha256": "bd522a89eae4dac6db1d2bf6809cc166e7282c51e79461dbb5c9f2615c194a76"
+      "bytes": 1746,
+      "sha256": "6ccc450af3c865646b084478154610892e29c31c451a97eaeb97d1fac065e038"
     },
     "final_reports/01_development/app/src/data.json": {
       "bytes": 433699,
@@ -216,28 +216,28 @@
       "sha256": "7312aedba48b8697d5fa639f8857c0e25b290210f1a42777c7c89738c6f8e790"
     },
     "final_reports/02_validation/02_validation_and_frozen_selection.html": {
-      "bytes": 3193491,
-      "sha256": "cd3f1b4f6addb9cc0495e8596873025849474db20726d584deee93c627c3155e"
+      "bytes": 3194082,
+      "sha256": "eda8339c842d0af8dc82e5cb2868609b0bed5b346258b73ca7f675f83d662fd8"
     },
     "final_reports/02_validation/02_validation_and_frozen_selection.pdf": {
-      "bytes": 643143,
-      "sha256": "836b08e1a9634c8c32633d6918ede80a85ed68780a6a81d6c40e07ed3beda001"
+      "bytes": 643285,
+      "sha256": "34c4a342977587a72f9c8685a06dc54ec761e5b1728342a9502da4d3ac181bab"
     },
     "final_reports/02_validation/app/src/content/report/BasketAttributionAppendix.jsx": {
-      "bytes": 3292,
-      "sha256": "3e0a0f628554f270adceebc81a3b4631c6072fa14986f7cd6b899da896594f9d"
+      "bytes": 3323,
+      "sha256": "5aa7508b0fa692454c6fb74698de8a9dd549279b027e881517ee12332aaa6320"
     },
     "final_reports/02_validation/app/src/content/report/ReportContent.jsx": {
       "bytes": 19880,
       "sha256": "a83201f094d579530776859b1bb369a6537a2db23ae8c079f65632c45318f878"
     },
     "final_reports/02_validation/app/src/content/report/basket-attribution.css": {
-      "bytes": 2663,
-      "sha256": "8050480010c13ea6c9a3fe167dcad29db977355aecdc32a033dc723e27c4b943"
+      "bytes": 2719,
+      "sha256": "ab0d5c6c87fe6cb72324c12f2683be152a81ab50907ccc75a3ccaac10ac0c101"
     },
     "final_reports/02_validation/app/src/content/report/report.css": {
-      "bytes": 10340,
-      "sha256": "f428760fd05afac214547fe15c5054106ea38a7e852f5adb9909363c4a73ba9f"
+      "bytes": 11034,
+      "sha256": "408091aea125c0f873681d89c3bc963a8e3d48c5243cdaea251138cea009df68"
     },
     "final_reports/02_validation/app/src/data.json": {
       "bytes": 318992,
@@ -272,32 +272,32 @@
       "sha256": "dd9a853e49a071ffb3d9b8f417b5fc8881a1ff17e103f2aee1e74960c905ccce"
     },
     "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.html": {
-      "bytes": 3658831,
-      "sha256": "dad14f7b69ed5f266f336f1323c923e34790fc507afb86755659c0855ee15002"
+      "bytes": 3659488,
+      "sha256": "aff2937548caed338329f1a4201e36819a72bbbd05cfc2b4db2cacd1b6cf39d9"
     },
     "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf": {
-      "bytes": 872288,
-      "sha256": "4b2f69e212ea8db2da97049b98e0010cd5464a7f428f1603d4a0883fd52abbbc"
+      "bytes": 872385,
+      "sha256": "8454e16afe3a0dd52ab469f4e3511fdcaa40818c2dc13731857f65c63f87e1e3"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/BasketAttributionAppendix.jsx": {
-      "bytes": 3292,
-      "sha256": "3e0a0f628554f270adceebc81a3b4631c6072fa14986f7cd6b899da896594f9d"
+      "bytes": 3323,
+      "sha256": "5aa7508b0fa692454c6fb74698de8a9dd549279b027e881517ee12332aaa6320"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/ReportContent.jsx": {
-      "bytes": 12707,
-      "sha256": "8efa5b5f7aa44c85232d8583d4a7eac427adae9300fae821ea3c7b52aa5868f0"
+      "bytes": 13243,
+      "sha256": "6778c55113abf0990a084aa9063f9cf57ad0a458e1215e140ca5cae17f2fb3b7"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/basket-attribution.css": {
-      "bytes": 2663,
-      "sha256": "8050480010c13ea6c9a3fe167dcad29db977355aecdc32a033dc723e27c4b943"
+      "bytes": 2719,
+      "sha256": "ab0d5c6c87fe6cb72324c12f2683be152a81ab50907ccc75a3ccaac10ac0c101"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/plan.json": {
       "bytes": 20006,
       "sha256": "3984bf8a2911b1015e2fde79fe38be3deda6e4f3684ae82052623ec3d61e7928"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/report.css": {
-      "bytes": 2363,
-      "sha256": "fa355487fe8338ae8df55f86b608169249a899991b8e7eb65390b4413255da24"
+      "bytes": 2404,
+      "sha256": "35299fe5dfe95475b050ad078152024d4f3840e78c8f082742c2dcdab664b2ac"
     },
     "final_reports/03_2026_evaluation/app/src/data.json": {
       "bytes": 777835,
@@ -396,8 +396,8 @@
       "sha256": "7502430ca2b1eeca93d2f17685be8a099eda44f70c41b2ddae8783a234a1a162"
     },
     "final_reports/quality_checks.json": {
-      "bytes": 3234,
-      "sha256": "8344e5e285787791df9b2eac17dd391fc5ddb4448d135eaca04aa6b7f70e137e"
+      "bytes": 4147,
+      "sha256": "50593897c4c13c00d4a6ddefdf3f78d08c9c0ae2260d65dc77dd6c50931583f9"
     },
     "licenses/DATA_LICENSE.md": {
       "bytes": 925,

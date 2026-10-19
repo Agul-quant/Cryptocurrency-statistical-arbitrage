@@ -3,7 +3,7 @@ import {DataComponent, ReportSection, RichNarrative, useDataApp} from '../../dat
 import './basket-attribution.css';
 const PREFIX='basket-attribution-20261016';
 const cols=['Coin','Gross pp','Fees pp','Net pp','Net 95% CI (pp)','Joint beta [95% CI]'];
-function FactorTable({columns,rows,label,compact=false}){return <div className="basket-factor-scroll"><table className={`basket-factor-table${compact?' basket-factor-compact':''}`} data-reviewed-rows aria-label={label}><thead><tr>{columns.map(c=><th key={c}>{c}</th>)}</tr></thead><tbody>{rows.map((r,i)=><tr key={i}>{columns.map((c,j)=><td key={c} className={j?'numeric':''}>{r[c]??'Unavailable'}</td>)}</tr>)}</tbody></table></div>}
+function FactorTable({columns,rows,label,compact=false}){return <div className="basket-factor-scroll"><table className={`basket-factor-table${compact?' basket-factor-compact':''}`} data-reviewed-rows aria-label={label}><thead><tr>{columns.map((c,j)=><th key={c} className={j?'numeric':''}>{c}</th>)}</tr></thead><tbody>{rows.map((r,i)=><tr key={i}>{columns.map((c,j)=><td key={c} className={j?'numeric':''}>{r[c]??'Unavailable'}</td>)}</tr>)}</tbody></table></div>}
 export function BasketAttributionAppendix(){
  const {reviewedRows}=useDataApp();
  const summary=reviewedRows('basket_attribution_summary');const coins=reviewedRows('basket_attribution_coins');

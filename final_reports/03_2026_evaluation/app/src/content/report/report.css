@@ -8,6 +8,7 @@
 .final-table th{font-weight:600;text-align:left;background:color-mix(in srgb,var(--text) 4%,transparent);border-bottom:1px solid var(--border);padding:9px 8px;vertical-align:bottom;}
 .final-table td{border-bottom:1px solid color-mix(in srgb,var(--text) 9%,transparent);padding:9px 8px;vertical-align:top;}
 .final-table .num{text-align:right;white-space:nowrap;}
+.final-table th.num{white-space:normal;}
 .final-table th,.final-table td{overflow-wrap:normal;}
 @media(max-width:700px){.final-report .report-hero h1{font-size:34px;}.final-table{min-width:650px;}.final-report{gap:40px;}.final-page{gap:20px;}}
 @media print{

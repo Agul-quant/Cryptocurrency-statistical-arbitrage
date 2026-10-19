@@ -27,3 +27,6 @@
  .final-development .chapter { break-before:auto; margin-block:18px; }
  .final-development .chapter h2, .final-development .chapter h3 {break-after:avoid;}
 }
+
+/* Header labels follow the same numeric/text alignment as their data cells. */
+.final-development table th button { text-align:inherit; }

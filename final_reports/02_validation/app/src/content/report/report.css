@@ -370,3 +370,15 @@
  .validation-report .identity-page .validation-evidence{font-size:8.5pt;}
  .validation-report .subtable{margin-block:8px;}
 }
+
+/* Header labels follow the same numeric/text alignment as their data cells. */
+.validation-report table th button { text-align:inherit; }
+
+/* Turnover multipliers are numeric, despite their displayed multiplication suffix. */
+.validation-report [data-component-id="a-performance"] table :is(th,td):nth-child(5),
+.validation-report [data-component-id="reference-risk-table"] table :is(th,td):nth-child(3),
+.validation-report [data-component-id="reference-risk-table"] table :is(th,td):nth-child(4),
+.validation-report [data-component-id="groups-table"] table :is(th,td):nth-child(5),
+.validation-report [data-component-id="b-performance"] table :is(th,td):nth-child(4) {
+  text-align:right;
+}

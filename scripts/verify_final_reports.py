@@ -42,6 +42,14 @@ ANCHORS = {
     'research/basket_factor_attribution_20261016/outputs/final_delivery_manifest.json': '99344c0eb405c4b434a94dcca7f05d00e789396a44fe2ba448948c310595fde0',
 }
 
+# A narrowly bounded GitHub-language-statistics maintenance amendment.
+LANGUAGE_BASE = 'a3d7fdbfecfa681e41e92b7b52771446970ceb92'
+PRE_LANGUAGE_ATTRIBUTES_SHA256 = '839d70ef3ee6ea032411a7594bdfbd50b98005489bc704ef52c006fe448b82e3'
+PRE_LANGUAGE_VERIFIER_SHA256 = '2f1ba419ab6b4601ca409281737de558bb6647e2b4ab82b480351e7f98497228'
+PRE_LANGUAGE_MANIFESTS = {'public': 'a08af129e4b562307be056bee5b86c47e6aa8269023493a2feb779ccd2e772b7', 'owner': '41dce50fe8d2a54347a12881604f44fe3a5a5f81e027afcd1387bd01d86eb79a'}
+LINGUIST_BLOCK = b'\n# Generated reports must not outweigh the Python research engine in language statistics.\n# Keep all report files; these attributes affect GitHub Linguist metadata only.\nfinal_reports/**/*.html linguist-generated\nstudies/crypto_intraday_5m/notebooks/intraday_5m_research.html linguist-generated\nstudies/crypto_stat_arb/notebooks/crypto_stat_arb_research.html linguist-generated\nstudies/crypto_stat_arb/outputs/followups/time_scale_scan/time_scale_research.html linguist-generated\nstudies/crypto_stat_arb_extensions/notebooks/expanded_crypto_research.html linguist-generated\n# Saved executed report companions contain large embedded outputs; do not count them as engine source.\nstudies/crypto_intraday_5m/notebooks/intraday_5m_research.ipynb -linguist-detectable\nstudies/crypto_stat_arb/notebooks/crypto_stat_arb_research.ipynb -linguist-detectable\nstudies/crypto_stat_arb/outputs/followups/time_scale_scan/time_scale_research.ipynb -linguist-detectable\nstudies/crypto_stat_arb_extensions/notebooks/expanded_crypto_research.ipynb -linguist-detectable\n'
+EXCLUDED_REPORT_ASSETS = {'final_reports/01_development/01_development_and_robustness.html': '5598dbeab3ac063f292084716ed91edc8c417753e9801ed5be6d1b40455ebafb', 'final_reports/02_validation/02_validation_and_frozen_selection.html': '19290cb9fd0b41e06744eaf5a1878845e1709413daf9d9778510ff46b6541f83', 'final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.html': 'b8de1807f1d915a22ca27fb89cec25ae135b569b0af9632c50f4ee735f3558ab', 'studies/crypto_intraday_5m/notebooks/intraday_5m_research.html': '602e893af1ee0663e798e7becfd56f5082394835d1c25cc217eaacbb7ee0d4f2', 'studies/crypto_intraday_5m/notebooks/intraday_5m_research.ipynb': 'b78f673920908c3acbd81589294474a700ff2e49b4daaa1acc00d9a9d320bcfa', 'studies/crypto_stat_arb/notebooks/crypto_stat_arb_research.html': '1a83fe6686d0e964c86eaed86a891a781fb44d628073a1ee05370c9f5c51c585', 'studies/crypto_stat_arb/notebooks/crypto_stat_arb_research.ipynb': '45cab6f6d78a17907487cdf5129bd8fe7c1866ca20133cc8576924ef07ea5c5b', 'studies/crypto_stat_arb/outputs/followups/time_scale_scan/time_scale_research.html': '745bf71bd0d8e9f2afe5f417fb243a52b8a360fb5a2f0f6efaf565e9b3bd9863', 'studies/crypto_stat_arb/outputs/followups/time_scale_scan/time_scale_research.ipynb': '965450414d1dd0d203a34fc1397e97b4a686171c697c927d5bfe3e7eaa2dc617', 'studies/crypto_stat_arb_extensions/notebooks/expanded_crypto_research.html': 'adebd9ba82ea56e4de84eaf76cfc21175ac469fa4cb03ea6eaa51374a63b4145', 'studies/crypto_stat_arb_extensions/notebooks/expanded_crypto_research.ipynb': 'd2f8fafe96236bebd7b1a31c000fa004784998c3ea4063e67ed495284964057e'}
+
 
 def require(ok, label):
     if not ok:
@@ -131,16 +139,21 @@ def verify_layout(layout, previous):
                     and record['current_sha256'] != expected_pin, 'Invalid authorized amendment: ' + rel)
         else:
             require(artifacts.get(moved(rel)) == expected_pin, 'Unapproved changed bytes: ' + rel)
-    # The custody amendment changes only the directory-specific -text pattern;
-    # it does not introduce Linguist classifications or extension rules.
+    # Preserve the original byte-custody prefix; only the exact declared
+    # language-statistics block may follow it. No source-language relabelling.
+    attrs = safe('.gitattributes').read_bytes()
+    require(attrs.endswith(LINGUIST_BLOCK), 'Missing/changed report-only Linguist block')
+    custody_attrs = attrs[:-len(LINGUIST_BLOCK)]
+    require(hashlib.sha256(custody_attrs).hexdigest() == PRE_LANGUAGE_ATTRIBUTES_SHA256,
+            'Original byte-custody attribute prefix changed')
     old_attrs = SOURCE_EDITION + '/** -text'
     new_attrs = EDITION + '/** -text'
-    attrs = safe('.gitattributes').read_bytes()
-    require(attrs.count(new_attrs.encode()) == 1 and old_attrs.encode() not in attrs,
+    require(custody_attrs.count(new_attrs.encode()) == 1 and old_attrs.encode() not in custody_attrs,
             'Missing/ambiguous undated binary-custody rule')
-    reconstructed = attrs.replace(new_attrs.encode(), old_attrs.encode())
+    reconstructed = custody_attrs.replace(new_attrs.encode(), old_attrs.encode())
     require(hashlib.sha256(reconstructed).hexdigest() == source['.gitattributes'],
             'Custody attributes changed beyond the directory pattern')
+    verify_language_statistics(layout, attrs)
     previous_reports = previous['reports']
     expected_reports = [{key: moved(value) if isinstance(value, str) else value
                          for key, value in row.items()} for row in previous_reports]
@@ -150,6 +163,44 @@ def verify_layout(layout, previous):
                 'Dated reader label still in current navigation: ' + rel)
     require(not safe(SOURCE_EDITION).exists(), 'Dated reader directory still exists')
     return artifacts
+
+
+
+def verify_language_statistics(layout, attrs):
+    """Verify exact metadata-only changes and every excluded asset's old bytes."""
+    import copy
+    amended = layout.get('language_statistics_amendment')
+    require(isinstance(amended, dict), 'Missing language-statistics maintenance authority')
+    variant = 'owner' if 'local_working_tree_variant' in layout else 'public'
+    prior_manifest = PRE_LANGUAGE_MANIFESTS[variant]
+    artifacts = layout['artifact_sha256']
+    expected = dict(
+        schema_version=1, classification='github_linguist_report_exclusions',
+        base_remote_commit=LANGUAGE_BASE, previous_manifest_sha256=prior_manifest,
+        previous_attributes_sha256=PRE_LANGUAGE_ATTRIBUTES_SHA256,
+        current_attributes_sha256=hashlib.sha256(attrs).hexdigest(),
+        previous_verifier_sha256=PRE_LANGUAGE_VERIFIER_SHA256,
+        current_verifier_sha256=artifacts[SELF_REL],
+        excluded_asset_sha256=EXCLUDED_REPORT_ASSETS,
+        generated_html_files=7, executed_report_notebooks=4,
+        language_statistics_only=True, excluded_asset_bytes_unchanged=True,
+        python_sources_excluded=False, language_relabelling_used=False)
+    require(amended == expected, 'Unexpected language-statistics amendment scope')
+    require(layout['scope'].get('linguist_language_classification_changed') is True,
+            'Current language-statistics scope must disclose the amendment')
+    # Reconstruct the exact previous manifest, preserving public/owner README
+    # authorities and all 221 owned artifacts except the two declared metadata pins.
+    original = copy.deepcopy(layout)
+    del original['language_statistics_amendment']
+    original['scope']['linguist_language_classification_changed'] = False
+    original['artifact_sha256']['.gitattributes'] = PRE_LANGUAGE_ATTRIBUTES_SHA256
+    original['artifact_sha256'][SELF_REL] = PRE_LANGUAGE_VERIFIER_SHA256
+    original['navigation_and_custody_amendments']['.gitattributes']['current_sha256'] = PRE_LANGUAGE_ATTRIBUTES_SHA256
+    original_bytes = (json.dumps(original, indent=2, sort_keys=True) + '\n').encode('utf-8')
+    require(hashlib.sha256(original_bytes).hexdigest() == prior_manifest,
+            'Changes outside the two approved language-statistics metadata pins')
+    for rel, expected_hash in EXCLUDED_REPORT_ASSETS.items():
+        pin(rel, expected_hash)
 
 
 def verify_moved_report_seal(record, artifacts):
@@ -366,7 +417,9 @@ def main():
                 historical_csv_alias_links_verified=csvlinks, report_seal_overlap=overlap,
                 retired_reader_bytes_available_only_in_git_history=True,
                 strategy_results_or_scientific_outputs_changed=False,
-                new_prices_or_trading_models=False, **diagnostic)
+                language_statistics_only_amendment=True, generated_html_files_excluded=7,
+                executed_report_notebooks_excluded=4, excluded_report_asset_bytes_unchanged=True,
+                python_sources_excluded=False, new_prices_or_trading_models=False, **diagnostic)
 
 
 if __name__ == '__main__':

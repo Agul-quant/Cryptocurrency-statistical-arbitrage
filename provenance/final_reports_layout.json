@@ -1,6 +1,6 @@
 {
   "artifact_sha256": {
-    ".gitattributes": "839d70ef3ee6ea032411a7594bdfbd50b98005489bc704ef52c006fe448b82e3",
+    ".gitattributes": "bfe8088903838c187157379eb66646099011b8f725e55f2dc5cf86e454fa8256",
     "README.md": "a96501de9d164c45facb6e8fe1639d40d28ec76e405aca3d0d56992570d613d0",
     "docs/ATTRIBUTION_PUBLICATION.md": "e4a51cfcd49c9dd7d5e3f90a25ddf6c325a2e3d34a25237cf5bb1c985aa00c4b",
     "docs/FINAL_REPORTS_PUBLICATION.md": "5927e45a629f3ecedd65d4d3c28ba6ae7e158cd798e46241c0843d8574e2f71f",
@@ -218,7 +218,7 @@
     "research/basket_factor_attribution_20261016/tests/test_inference.py": "9de3a38c71d6fd9cded19b882b49e4de95a4b1d66fda8b617fb269d518d7d6f5",
     "scripts/reproduce_basket_attribution.py": "abf9bb7e5d13aa673a7c52edbf74b8dda043490dc1f2fe31e3c56b4ee37b5151",
     "scripts/verify_basket_attribution_publication.py": "2ff27f8a48ad0e57c3d75c9751ec080a3159d248f3d78c132a42fc5086d1cfde",
-    "scripts/verify_final_reports.py": "2f1ba419ab6b4601ca409281737de558bb6647e2b4ab82b480351e7f98497228",
+    "scripts/verify_final_reports.py": "1a0345f153f74a8022728de853575cd1a18df7c06d6c0f560ad0d7fc71cf2cbb",
     "scripts/verify_final_reports_publication.py": "f394fc24f3bf141cdfe87faf4b3691d6a2460f9ebbd3856a3ac211bd0aee5b77",
     "scripts/verify_latest_final_reports.py": "76982e9dd1ec12e93255b0e8516039e568e3014548fcd9d1dc2f4e6001fd89b7"
   },
@@ -226,9 +226,38 @@
   "classification": "undated_final_reports_layout",
   "created_at_utc": "2026-10-19T16:12:24.128162+00:00",
   "current_prefix": "final_reports",
+  "language_statistics_amendment": {
+    "base_remote_commit": "a3d7fdbfecfa681e41e92b7b52771446970ceb92",
+    "classification": "github_linguist_report_exclusions",
+    "current_attributes_sha256": "bfe8088903838c187157379eb66646099011b8f725e55f2dc5cf86e454fa8256",
+    "current_verifier_sha256": "1a0345f153f74a8022728de853575cd1a18df7c06d6c0f560ad0d7fc71cf2cbb",
+    "excluded_asset_bytes_unchanged": true,
+    "excluded_asset_sha256": {
+      "final_reports/01_development/01_development_and_robustness.html": "5598dbeab3ac063f292084716ed91edc8c417753e9801ed5be6d1b40455ebafb",
+      "final_reports/02_validation/02_validation_and_frozen_selection.html": "19290cb9fd0b41e06744eaf5a1878845e1709413daf9d9778510ff46b6541f83",
+      "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.html": "b8de1807f1d915a22ca27fb89cec25ae135b569b0af9632c50f4ee735f3558ab",
+      "studies/crypto_intraday_5m/notebooks/intraday_5m_research.html": "602e893af1ee0663e798e7becfd56f5082394835d1c25cc217eaacbb7ee0d4f2",
+      "studies/crypto_intraday_5m/notebooks/intraday_5m_research.ipynb": "b78f673920908c3acbd81589294474a700ff2e49b4daaa1acc00d9a9d320bcfa",
+      "studies/crypto_stat_arb/notebooks/crypto_stat_arb_research.html": "1a83fe6686d0e964c86eaed86a891a781fb44d628073a1ee05370c9f5c51c585",
+      "studies/crypto_stat_arb/notebooks/crypto_stat_arb_research.ipynb": "45cab6f6d78a17907487cdf5129bd8fe7c1866ca20133cc8576924ef07ea5c5b",
+      "studies/crypto_stat_arb/outputs/followups/time_scale_scan/time_scale_research.html": "745bf71bd0d8e9f2afe5f417fb243a52b8a360fb5a2f0f6efaf565e9b3bd9863",
+      "studies/crypto_stat_arb/outputs/followups/time_scale_scan/time_scale_research.ipynb": "965450414d1dd0d203a34fc1397e97b4a686171c697c927d5bfe3e7eaa2dc617",
+      "studies/crypto_stat_arb_extensions/notebooks/expanded_crypto_research.html": "adebd9ba82ea56e4de84eaf76cfc21175ac469fa4cb03ea6eaa51374a63b4145",
+      "studies/crypto_stat_arb_extensions/notebooks/expanded_crypto_research.ipynb": "d2f8fafe96236bebd7b1a31c000fa004784998c3ea4063e67ed495284964057e"
+    },
+    "executed_report_notebooks": 4,
+    "generated_html_files": 7,
+    "language_relabelling_used": false,
+    "language_statistics_only": true,
+    "previous_attributes_sha256": "839d70ef3ee6ea032411a7594bdfbd50b98005489bc704ef52c006fe448b82e3",
+    "previous_manifest_sha256": "a08af129e4b562307be056bee5b86c47e6aa8269023493a2feb779ccd2e772b7",
+    "previous_verifier_sha256": "2f1ba419ab6b4601ca409281737de558bb6647e2b4ab82b480351e7f98497228",
+    "python_sources_excluded": false,
+    "schema_version": 1
+  },
   "navigation_and_custody_amendments": {
     ".gitattributes": {
-      "current_sha256": "839d70ef3ee6ea032411a7594bdfbd50b98005489bc704ef52c006fe448b82e3",
+      "current_sha256": "bfe8088903838c187157379eb66646099011b8f725e55f2dc5cf86e454fa8256",
       "prior_sha256": "0fc084a34482857a260f8866995a2aedd614fc741b66b4a17fd92eda88d84893"
     },
     "README.md": {
@@ -557,7 +586,7 @@
     "git_history_rewritten": false,
     "historical_path_references_interpreted_by_explicit_mapping": true,
     "historical_raw_inputs_byte_verified": false,
-    "linguist_language_classification_changed": false,
+    "linguist_language_classification_changed": true,
     "new_prices_or_trading_models": false,
     "new_reader_file_bytes": false,
     "new_scientific_results": false,

@@ -14,3 +14,16 @@ provenance/report_source_inputs/** -text
 final_reports/** -text
 
 research/basket_factor_attribution_20261016/** -text
+
+# Generated reports must not outweigh the Python research engine in language statistics.
+# Keep all report files; these attributes affect GitHub Linguist metadata only.
+final_reports/**/*.html linguist-generated
+studies/crypto_intraday_5m/notebooks/intraday_5m_research.html linguist-generated
+studies/crypto_stat_arb/notebooks/crypto_stat_arb_research.html linguist-generated
+studies/crypto_stat_arb/outputs/followups/time_scale_scan/time_scale_research.html linguist-generated
+studies/crypto_stat_arb_extensions/notebooks/expanded_crypto_research.html linguist-generated
+# Saved executed report companions contain large embedded outputs; do not count them as engine source.
+studies/crypto_intraday_5m/notebooks/intraday_5m_research.ipynb -linguist-detectable
+studies/crypto_stat_arb/notebooks/crypto_stat_arb_research.ipynb -linguist-detectable
+studies/crypto_stat_arb/outputs/followups/time_scale_scan/time_scale_research.ipynb -linguist-detectable
+studies/crypto_stat_arb_extensions/notebooks/expanded_crypto_research.ipynb -linguist-detectable

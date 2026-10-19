@@ -1,13 +1,13 @@
 # Final reports: one latest edition
 
-The current checkout contains **one final-report edition**, `final_reports_20261016/`,
+The current checkout contains **one final-report edition**, `final_reports/`,
 with exactly three report titles. The superseded October 15 PDFs, HTMLs and
 reader directory have been removed from the current tree, not rewritten into a
-new study. The October 19 change is file organization and navigation only.
+new study. The directory rename is file organization and navigation only.
 
-1. [Development and robustness](../final_reports_20261016/01_development/01_development_and_robustness.pdf) — 2022–2023, 16 pages.
-2. [Validation and frozen selection](../final_reports_20261016/02_validation/02_validation_and_frozen_selection.pdf) — 2024–2025, 17 pages.
-3. [2026 evaluation and conclusions](../final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf) — January–September 2026, 273 days, 20 pages.
+1. [Development and robustness](../final_reports/01_development/01_development_and_robustness.pdf) — 2022–2023, 16 pages.
+2. [Validation and frozen selection](../final_reports/02_validation/02_validation_and_frozen_selection.pdf) — 2024–2025, 17 pages.
+3. [2026 evaluation and conclusions](../final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf) — January–September 2026, 273 days, 20 pages.
 
 Each adjacent top-level HTML is the same report in portable offline form, not
 another version or study. Download it to open locally; GitHub's ordinary file
@@ -23,7 +23,7 @@ net contribution with block-bootstrap intervals; joint basket alpha and eight
 conditional betas with HAC intervals; and legacy plus matched-sample BTC-only
 comparisons. Full-precision CSVs include model/calendar diagnostics and the
 243-coefficient multiplicity correction. The unchanged saved
-[nine-strategy 2026 metrics](../final_reports_20261016/03_2026_evaluation/exports/nine_primary_metrics.csv)
+[nine-strategy 2026 metrics](../final_reports/03_2026_evaluation/exports/nine_primary_metrics.csv)
 remain available alongside this additional explanatory analysis.
 
 **No baskets, parameters, signals, targets, returns, Sharpe, turnover,
@@ -40,16 +40,19 @@ for interval conventions, conditional beta interpretation and limitations.
 From the repository root:
 
 ```sh
-python3 scripts/verify_latest_final_reports.py
+python3 scripts/verify_final_reports.py
 ```
 
-This standard-library-only check reads the new
-[maintenance manifest](../provenance/latest_final_reports_20261019.json), verifies
+This standard-library-only check reads the current
+[layout manifest](../provenance/final_reports_layout.json), verifies the
+byte-identical relocation from the prior dated directory, then verifies
 all 250 prior attribution-publication artifact/baseline identities through
 explicit dispositions, and checks the unchanged current report and scientific
 bytes. It verifies 19 byte-identical relocated provenance JSONs, 26 aliases to
 unchanged latest-edition tables/exports, seven retired old reader files, and
-three documentation/navigation amendments. Three archived snapshots still
+three historical documentation/navigation amendments. The current undated
+layout additionally records four narrow navigation/custody amendments; all
+65 published report files remain byte-identical. Three archived snapshots still
 verify that the original reviewed query objects are unchanged. It also checks
 three current PDF/HTML pairs and current CSV/link targets. It fetches no data,
 fits no models, runs no strategy and writes no files.
@@ -61,19 +64,25 @@ The 19 unique earlier snapshots, receipts and provenance JSONs live under
 or HTML reports**. The 26 earlier table/export identities refer by exact hash
 to the already delivered current copies, rather than duplicating them.
 
+The folder is deliberately undated. Publication dates remain only in
+historical provenance rather than the current reader-directory name. The
+65 published report files and all local sealed report artifacts were moved
+without changing their bytes.
+
 The earlier publication manifests, scientific seals and verifiers are retained
 byte-for-byte as historical evidence. Their references describe the layout at
 the time of creation, not missing portable prerequisites or promises that
 retired files still exist. In particular, the sealed October 16 report README's
 sentence saying the October 15 edition remains was true when that seal was
-created; this guide and the October 19 maintenance manifest supersede that
+created; this guide and the current layout manifest supersede that
 layout statement without rewriting the sealed report bytes.
 
 To inspect or run the **historical publication checks**, use a separate
 checkout at commit
 [`b965678aacec9f653c27a41a9351dda3ee913dd6`](https://github.com/Agul-quant/Cryptocurrency-statistical-arbitrage/commit/b965678aacec9f653c27a41a9351dda3ee913dd6).
-Do not run the old `verify_final_reports_publication.py` or
-`verify_basket_attribution_publication.py` as the current-layout check. Those
+Do not run the old `verify_final_reports_publication.py`,
+`verify_basket_attribution_publication.py` or `verify_latest_final_reports.py`
+as the current-layout check. Those
 scripts intentionally still require their original historical working trees.
 Git history preserves the prior edition without presenting a second visible
 final-report edition in the current checkout.

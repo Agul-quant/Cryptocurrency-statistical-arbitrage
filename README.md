@@ -7,23 +7,24 @@ exchange API key, live order, scheduled monitor, or Git LFS service is required.
 
 ## Final reading list — one latest edition, three reports
 
-Only `final_reports_20261016/` is the current final-report edition. It includes
+The three current reports are in the undated `final_reports/` directory. It includes
 **per-coin contribution intervals and joint eight-coin alpha/betas** for all
 nine unchanged frozen strategies across development, validation and 2026:
 
-1. **Development and robustness** — [PDF](final_reports_20261016/01_development/01_development_and_robustness.pdf) · [offline HTML](final_reports_20261016/01_development/01_development_and_robustness.html).
-2. **Validation and frozen selection** — [PDF](final_reports_20261016/02_validation/02_validation_and_frozen_selection.pdf) · [offline HTML](final_reports_20261016/02_validation/02_validation_and_frozen_selection.html).
-3. **2026 evaluation and conclusions** — [PDF](final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf) · [offline HTML](final_reports_20261016/03_2026_evaluation/03_2026_evaluation_and_conclusions.html).
+1. **Development and robustness** — [PDF](final_reports/01_development/01_development_and_robustness.pdf) · [offline HTML](final_reports/01_development/01_development_and_robustness.html).
+2. **Validation and frozen selection** — [PDF](final_reports/02_validation/02_validation_and_frozen_selection.pdf) · [offline HTML](final_reports/02_validation/02_validation_and_frozen_selection.html).
+3. **2026 evaluation and conclusions** — [PDF](final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf) · [offline HTML](final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.html).
 
 The superseded final-report edition has been removed from the current tree;
 Git history retains it. Older non-reader provenance is retained without a
 second PDF/HTML edition. [Current verification and layout](docs/FINAL_REPORTS_PUBLICATION.md):
 
 ```sh
-python3 scripts/verify_latest_final_reports.py
+python3 scripts/verify_final_reports.py
 ```
 
-No frozen strategy, original performance result or current report bytes changed.
+The folder name carries no edition date. No frozen strategy, original
+performance result or current PDF/HTML bytes changed.
 The factor additions remain post-hoc diagnostics, not new OOS evidence or a
 new winner. See the [method/reproduction guide](docs/ATTRIBUTION_PUBLICATION.md).
 

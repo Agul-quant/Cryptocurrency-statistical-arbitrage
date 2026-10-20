@@ -1,80 +1,77 @@
 {
-  "status": "PASS",
-  "report_count": 3,
-  "total_pdf_pages": 66,
-  "reports": [
-    {
-      "report": "01_development",
-      "artifact_id": "report:f26b9347-f15d-4a65-bc28-46d53878f60f",
-      "period": "development",
-      "as_of": "2026-09-30",
-      "pages": 21,
-      "pdf_sha256": "760ffe760427e337e5386b31b3708db5aa824e40f17b686866775cbfab34c2a9",
-      "offline_html_sha256": "431f79f485c634503ae8696623483cf8e25b466e3d7a76d06395e7995baa411e",
-      "snapshot_sha256": "6e030d6af0486d5c62fe19a5bda9f3c33ba5822c6ae2289fee96da21a3b0c9e2",
-      "preview_url": "http://127.0.0.1:58860/?view=1"
-    },
-    {
-      "report": "02_validation",
-      "artifact_id": "report:14e8d12f-59f2-4502-8ad1-811a0302ee01",
-      "period": "validation",
-      "as_of": "2026-09-30",
-      "pages": 20,
-      "pdf_sha256": "2a1959ffbb247dbcf527184337ef41337c552c835f3dce07a0f14ef4d6109467",
-      "offline_html_sha256": "0cde64761863e39f45d1160e5f54587a4cd383fc1c34e9c9086b8b479105fb7e",
-      "snapshot_sha256": "5165f078aff3d2462461d4acdff5e90d17d7e4ee17bf7c9bfcc7eec054477979",
-      "preview_url": "http://127.0.0.1:58862/?view=1"
-    },
-    {
-      "report": "03_2026_evaluation",
-      "artifact_id": "report:5adafe7e-d3eb-4b9e-bf95-d857c77f7240",
-      "period": "oos",
-      "as_of": "2026-09-30",
-      "pages": 25,
-      "pdf_sha256": "b145783365832ecad911213e41f2f5e598ea6150818c615f36ff5ec9aec48b07",
-      "offline_html_sha256": "d2d45a9c08dae4153be336e1f58f204db60b78442e4ccdead53aa2a8ef25a2a7",
-      "snapshot_sha256": "4be31087afcb399eaabb50ca58b92031a39c86a406a8f1dba5251d5a55f2a768",
-      "preview_url": "http://127.0.0.1:58863/?view=1"
-    }
-  ],
-  "reviewed_query_count": 101,
-  "existing_reviewed_query_count_unchanged": 83,
   "all_existing_financial_values_and_cash_calculations_unchanged": true,
-  "stable_report_and_existing_query_identities": true,
-  "no_strategy_rerun_or_selection": true,
-  "selection_generalization": {
-    "followup_orientation_not_development_selection_input": true,
-    "track_A_validation_losses": 4,
-    "track_B_OOS_compounded_losses": 5,
-    "B06_positive_raw_arithmetic_Sharpe_qualified": true,
-    "A03_strong_OOS_and_failed_validation_retained": true,
-    "consistent_with_overfitting_or_weak_transfer_not_unique_causal_proof": true,
+  "cash_benchmark": {
+    "bootstrap_calendar_block_days": 28,
+    "bootstrap_replications": 4000,
+    "bootstrap_seed": 20261016,
+    "cash_interest_credited_to_strategy": false,
+    "conditional_not_original_search_adjusted": true,
+    "daily_rate": 8.219178082191781e-05,
+    "day_count": "ACT/365F",
+    "new_cash_table_count": 6,
+    "new_joint_cash_coefficient_correction_family": 243,
+    "new_mean_correction_family": 27,
+    "new_query_count": 12,
+    "nominal_annual_rate": 0.03,
+    "original_corrections_and_acceptance_flags_unchanged": true,
+    "period_days": [
+      730,
+      731,
+      273
+    ],
+    "raw_metrics_retained": true,
+    "relative_drawdown": "daily endpoints including initial NAV; not original hourly drawdown",
+    "relative_return": "W(strategy)/W(cash)-1",
     "source": "results/cash_excess/strategy_summary.csv"
   },
-  "sharpe_conventions": {
-    "primary_annualization_days": 365,
-    "comparison_annualization_days": 252,
-    "factor": 0.8309097176613772,
-    "same_UTC_daily_series_including_weekends": true,
-    "weekend_observations_dropped": false,
-    "new_display_alias_queries": 15,
-    "new_crossperiod_followup_queries": 3,
-    "scaled_statistics_including_CI_endpoints": 274,
-    "approximate_252_statistics_from_rounded_validation_group_medians": 10,
-    "reference_252_values_use_exact_packaged_contrast_source": true,
-    "raw_OOS_CI_252_values_use_exact_packaged_inference_source": true,
-    "counts_ranks_correlations_t_statistics_p_values_CAGR_alpha_cash_accrual_inference_and_acceptance_unchanged": true,
-    "full_precision_comparison": "Per-report exports/sharpe_conventions.csv",
-    "definitions_component_scoped_in_source_inspector": true
+  "checks": [
+    "Exactly3PDFs and3offlineHTML editions, stable report identities and all101previous query objects unchanged;12newseparate-study queries only",
+    "The headline is cross-period failure to generalize, not the most favorable single period or a newly selected direction",
+    "All6primary fixed-study rows,42fee/delay keys and18exactCSV companions checked against completed savedoutputs; raw/cash,365/252,CAGR,turnover,DD,inference,BTC intervals retained",
+    "Two separate Holm3 families, marginal/searchconditional uncertainty, historicaldata-use caveats and momentum chronologyexception remain explicit",
+    "All78finalPDFpages reviewed by three agents: firstrevision allpages visual, finalrevision75bodypixelclosures plus3changed sensitivitypages direct visual; sourcecontinuationpages retained for legibility",
+    "All78 pages contain complete readable tables/figures without clipping or overlap; numeric header alignment checked",
+    "Same verified compiled apps supply PDF/offline HTML; no protected runtime edits; nativebrowser studytable sourceoverview and exact3momentum previewrows checked",
+    "New metadata publication-only absolute-path projection retains original configuration hashes; immutable study source metadata not rewritten",
+    "All originalfinancial source/config/data/results/tests/entrypoints and completedlocalstudybytes verified unchanged against baseline; publication addedsavedresults without strategyrerun",
+    "A single PDF edit operation marker was called beforefirstauthoring for3outputs; no additional markers",
+    "Final publication-only derived reversal compliance alias corrected from exact nested completion; CSV hrefs changed to local companion paths. All78PDFpage rasters includingfooters are pixelidentical to visuallyreviewedfinalcontent after metadata/link re-export."
+  ],
+  "created_at_utc": "2026-10-20T19:33:46.527115+00:00",
+  "data_source": {
+    "bar_frequency": "1h",
+    "distributed_study_slots": 22,
+    "endpoint_count": 43824,
+    "first_close_endpoint_utc": "2021-10-01T01:00:00Z",
+    "frozen_nine_union_slots": 21,
+    "last_close_endpoint_utc": "2026-10-01T00:00:00Z",
+    "market": "spot",
+    "provider": "Binance public Data Vision",
+    "query_data_unchanged": true,
+    "quote_currency": "USDT",
+    "root_native_followup_qa": "PASS",
+    "screening_only_slot": "SANDUSDT",
+    "source_url": "https://data.binance.vision/"
+  },
+  "existing_reviewed_query_count_unchanged": 101,
+  "formatting": {
+    "narrow_viewport_this_edit": "No mobile viewport emulation performed; actual native863px view and1280px export exercised",
+    "native_viewport_this_edit": [
+      863,
+      884
+    ],
+    "numeric_headers_and_cells": "right-aligned; fixed IDs left",
+    "offline_connect_src_none": true,
+    "protected_runtime_changed": false,
+    "table_count": 108,
+    "table_counts_by_period": [
+      30,
+      37,
+      41
+    ]
   },
   "main_performance": {
-    "source": "results/cash_excess/strategy_summary.csv",
-    "new_query_count": 3,
-    "new_query_rows_by_report": [
-      9,
-      18,
-      9
-    ],
+    "development_trackB_validation_informed_identities_labeled": true,
     "fixed_id_order": [
       "A01",
       "A02",
@@ -86,100 +83,150 @@
       "B05",
       "B06"
     ],
+    "full_grid_family_and_reference_control_metrics_unchanged": true,
+    "like_clock_daily_drawdown_comparison": true,
+    "main_table_pdf_locations": {
+      "development": [
+        7,
+        8
+      ],
+      "oos_primary": 6,
+      "oos_risk": 8,
+      "validation_track_A": 7,
+      "validation_track_B": 14,
+      "validation_unified": 6
+    },
+    "new_query_count": 3,
+    "new_query_rows_by_report": [
+      9,
+      18,
+      9
+    ],
+    "oos_cash_alpha_convention": "full-calendar BTC-only HAC7, like-convention raw/cash pair",
+    "oos_gross_exposures_and_beta_retained": true,
+    "original_acceptance_flags_and_risk_limits_unchanged": true,
     "raw_cash_pairs": [
       "net return versus cash-relative wealth return",
       "raw CAGR versus relative CAGR",
       "raw Sharpe versus arithmetic-excess Sharpe"
     ],
     "raw_definition": "net of 20 bps transaction costs, before the cash benchmark; not gross-versus-net fees",
-    "turnover_and_original_hourly_drawdown_retained": true,
-    "like_clock_daily_drawdown_comparison": true,
-    "validation_historical_comparisons": "Track A 4+4 and Track B 5+5 rows retain both development and validation raw/cash pairs;9pt body text",
-    "oos_gross_exposures_and_beta_retained": true,
-    "oos_cash_alpha_convention": "full-calendar BTC-only HAC7, like-convention raw/cash pair",
-    "full_grid_family_and_reference_control_metrics_unchanged": true,
-    "development_trackB_validation_informed_identities_labeled": true,
-    "original_acceptance_flags_and_risk_limits_unchanged": true,
-    "main_table_pdf_locations": {
-      "development": [
-        3,
-        4
-      ],
-      "validation_unified": 2,
-      "validation_track_A": 3,
-      "validation_track_B": 10,
-      "oos_primary": 2,
-      "oos_risk": 4
-    }
-  },
-  "cash_benchmark": {
-    "nominal_annual_rate": 0.03,
-    "day_count": "ACT/365F",
-    "daily_rate": 8.219178082191781e-05,
-    "period_days": [
-      730,
-      731,
-      273
-    ],
     "source": "results/cash_excess/strategy_summary.csv",
-    "new_query_count": 12,
-    "new_cash_table_count": 6,
-    "raw_metrics_retained": true,
-    "cash_interest_credited_to_strategy": false,
-    "relative_return": "W(strategy)/W(cash)-1",
-    "relative_drawdown": "daily endpoints including initial NAV; not original hourly drawdown",
-    "new_mean_correction_family": 27,
-    "new_joint_cash_coefficient_correction_family": 243,
-    "original_corrections_and_acceptance_flags_unchanged": true,
-    "bootstrap_replications": 4000,
-    "bootstrap_calendar_block_days": 28,
-    "bootstrap_seed": 20261016,
-    "conditional_not_original_search_adjusted": true
+    "turnover_and_original_hourly_drawdown_retained": true,
+    "validation_historical_comparisons": "Track A 4+4 and Track B 5+5 rows retain both development and validation raw/cash pairs;9pt body text"
   },
-  "formatting": {
-    "table_count": 87,
-    "table_counts_by_period": [
-      23,
-      30,
-      34
-    ],
-    "numeric_headers_and_cells": "right-aligned; fixed IDs left",
-    "native_viewport_this_edit": [
-      1280,
-      720
-    ],
-    "narrow_viewport_this_edit": "Not performed: viewport capability unavailable",
-    "protected_runtime_changed": false,
-    "offline_connect_src_none": true
-  },
-  "checks": [
-    "Exactly three current reports with source-backed cross-period failure-to-generalize findings; original study-period labels and stable artifact identities retained",
-    "All83 existing whole query objects and saved query JSON files unchanged;15 new presentation aliases and3 new follow-up source queries only",
-    "All66 final PDF pages verified:29 changed/reflowed pages directly inspected and37 original body pages exact pixel closure outside changed page-number footer; metadata/accessibility-only final exports preserve all66 raster hashes",
-    "274Sharpe point/CI comparisons independently verified; only10 rounded validation-group statistics carry explicit approximation flags",
-    "Primary365-day results, inference, rankings, acceptance flags and risk limits unchanged;252uses identical daily observations including weekends",
-    "All main raw/cash, validation historical pairs, full-grid and control Sharpe tables, cohort/family summaries and cash/raw uncertainty intervals show365/252",
-    "Root native and offline connect-src-none checks at actual1280x720: main tables, headlines, source menus and data scopes verified; no narrow viewport claim",
-    "Both Raw/Cash definitions and new Sharpe annualization definitions visible in scoped source inspection; wrapped development link works with semantic Enter",
-    "All56 distinct relative companion CSV links return HTTP200 and exact local bytes",
-    "Cash benchmark, alpha/beta attribution, original fees/turnover/drawdown/exposures and detailed scientific evidence remain unchanged",
-    "No prices downloaded, strategy run, parameter reselection, protocol execution or live orders",
-    "One PDF edit operation marker called by root for the three outputs; author called zero markers"
+  "no_strategy_rerun_or_selection": true,
+  "report_count": 3,
+  "reports": [
+    {
+      "artifact_id": "report:f26b9347-f15d-4a65-bc28-46d53878f60f",
+      "as_of": "2026-09-30",
+      "offline_html_sha256": "80fb8f0e060a2ced2fce9f0d433be37ed63e910aaded309879f7c8150c07d772",
+      "pages": 25,
+      "pdf_sha256": "9c40ba52036131678fccf44b4fc3c3be52eb9cc72f887c8fe8137289a9d5b169",
+      "period": "development",
+      "preview_url": "http://127.0.0.1:49572/01_development/app/dist/?view=1",
+      "report": "01_development",
+      "snapshot_sha256": "b56cfaef8fe8f42c2e6f584895ce0ef3974966983d7fa832763b156281baf1a7"
+    },
+    {
+      "artifact_id": "report:14e8d12f-59f2-4502-8ad1-811a0302ee01",
+      "as_of": "2026-09-30",
+      "offline_html_sha256": "5b0e1de3344d4d29b9f204de884d5f6fcc5c7146e3ff597704ae593ab417559d",
+      "pages": 24,
+      "pdf_sha256": "844ad42c4b1ea749f89dbd5fbce39f319ba4dad571dd4bb6f3fd241ddf879118",
+      "period": "validation",
+      "preview_url": "http://127.0.0.1:49572/02_validation/app/dist/?view=1",
+      "report": "02_validation",
+      "snapshot_sha256": "cb4346a99cae8cf5b2436b73f48a920a59a68c99551f90f2fb726a5f4cc71adc"
+    },
+    {
+      "artifact_id": "report:5adafe7e-d3eb-4b9e-bf95-d857c77f7240",
+      "as_of": "2026-09-30",
+      "offline_html_sha256": "00a07fb1b80da6f21bc2b696515cadab77410be53c9682c2b140d8aaba6c67b1",
+      "pages": 29,
+      "pdf_sha256": "e3763601a67a1180ddc7f406e2e23b52b63b589289f96de1f846db30e84f2832",
+      "period": "oos",
+      "preview_url": "http://127.0.0.1:49572/03_2026_evaluation/app/dist/?view=1",
+      "report": "03_2026_evaluation",
+      "snapshot_sha256": "445b20d11d85d8aff140988422239647b62a57f0e2d88e5a1f20def3e91372cc"
+    }
   ],
-  "data_source": {
-    "provider": "Binance public Data Vision",
-    "source_url": "https://data.binance.vision/",
-    "market": "spot",
-    "quote_currency": "USDT",
-    "bar_frequency": "1h",
-    "endpoint_count": 43824,
-    "first_close_endpoint_utc": "2021-10-01T01:00:00Z",
-    "last_close_endpoint_utc": "2026-10-01T00:00:00Z",
-    "distributed_study_slots": 22,
-    "frozen_nine_union_slots": 21,
-    "screening_only_slot": "SANDUSDT",
-    "query_data_unchanged": true,
-    "root_native_followup_qa": "PASS"
+  "reviewed_query_count": 113,
+  "selection_generalization": {
+    "A03_strong_OOS_and_failed_validation_retained": true,
+    "B06_positive_raw_arithmetic_Sharpe_qualified": true,
+    "consistent_with_overfitting_or_weak_transfer_not_unique_causal_proof": true,
+    "followup_orientation_not_development_selection_input": true,
+    "source": "results/cash_excess/strategy_summary.csv",
+    "track_A_validation_losses": 4,
+    "track_B_OOS_compounded_losses": 5
   },
-  "created_at_utc": "2026-10-20T18:27:39.788054+00:00"
+  "separate_fixed_all22_studies": {
+    "PDF_section_pages": {
+      "01_development": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "02_validation": [
+        3,
+        4,
+        5
+      ],
+      "03_2026_evaluation": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "all_period_economic_risk_statistical_conditions_reported_separately": true,
+    "fixed_primary_rows": 6,
+    "fresh_independent_confirmation": false,
+    "momentum_predecode_chronology_exception_disclosed": true,
+    "multiple_testing": "Holm3 separately within eachstudy; never pooled",
+    "new_public_runner": false,
+    "new_queries_per_report": 4,
+    "new_saved_evidence_verifier": "scripts/verify_fixed_all22.py",
+    "new_tables_per_report": 7,
+    "original_nine_unchanged": true,
+    "per_report_source_rows": {
+      "fixed_all22_inference": 6,
+      "fixed_all22_methods": 2,
+      "fixed_all22_primary": 6,
+      "fixed_all22_scenarios": 42
+    },
+    "publication_private_absolute_paths_projected": true,
+    "published_output_bytes_identical_to_completed_studies": true,
+    "reversal_newstudy_predecode_gate_passed": true,
+    "scenario_period_keys": 42,
+    "source": "results/fixed_all22_momentum and results/fixed_all22_reversal",
+    "strict_compliance_derived_aliases": {
+      "momentum": false,
+      "reversal": true
+    },
+    "studies_ranked_or_combined": false,
+    "study_count": 2
+  },
+  "sharpe_conventions": {
+    "approximate_252_statistics_from_rounded_validation_group_medians": 10,
+    "comparison_annualization_days": 252,
+    "counts_ranks_correlations_t_statistics_p_values_CAGR_alpha_cash_accrual_inference_and_acceptance_unchanged": true,
+    "definitions_component_scoped_in_source_inspector": true,
+    "factor": 0.8309097176613772,
+    "full_precision_comparison": "Per-report exports/sharpe_conventions.csv",
+    "new_crossperiod_followup_queries": 3,
+    "new_display_alias_queries": 15,
+    "primary_annualization_days": 365,
+    "raw_OOS_CI_252_values_use_exact_packaged_inference_source": true,
+    "reference_252_values_use_exact_packaged_contrast_source": true,
+    "same_UTC_daily_series_including_weekends": true,
+    "scaled_statistics_including_CI_endpoints": 274,
+    "weekend_observations_dropped": false
+  },
+  "stable_report_and_existing_query_identities": true,
+  "status": "PASS",
+  "total_pdf_pages": 78
 }

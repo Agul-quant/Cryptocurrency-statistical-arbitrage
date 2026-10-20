@@ -1,0 +1,360 @@
+{
+  "accounting": {
+    "cost_basis": "one-way full-L1 target changes without division by2, including entries, mandatory changes and final liquidation",
+    "entry_and_final_liquidation_charged": true,
+    "first_interval_may_enter_warmup_target": true,
+    "lag1": "idealized observed-close fill, not a guaranteed one-hour wait",
+    "lag2": "additional-hour execution sensitivity",
+    "legacy_luna_exit": "2022-05-13T00:40:00Z real final quote, accounting bucket01:00UTC",
+    "lifecycle": "preserve source permissions, venue bridges, mandatory exits, migration cash gaps and rewarm rules; no fills or window shortening",
+    "periods_reset_independently_from_cash": true,
+    "warmup_start": "2021-10-01"
+  },
+  "approved_protocol_snapshot": {
+    "byte_identical_to_approved_snapshot": true,
+    "path": "results/fixed_all22_reversal/protocol.md",
+    "sha256": "b7662d878784cf8cbebcb634023db07b1918ce0fee78d8b4df61b7db063c05ea",
+    "status_note": "The exact approved snapshot retains its pre-execution draft wording. The current docs protocol is a publication status wrapper, not a newly sealed protocol or a claim that these results are unexecuted."
+  },
+  "chronology": {
+    "actual_input_decodes_before_seal": 0,
+    "actual_strategy_calculations_before_seal": 0,
+    "before_first_source_decode_event_utc": "2026-10-20T19:08:22.131262+00:00",
+    "evaluation_complete_utc": "2026-10-20T19:08:30.818771+00:00",
+    "freeze_event_utc": "2026-10-20T19:08:16.129615+00:00",
+    "other_strategy_performance_inputs": false,
+    "other_study_hashing_is_administrative_preservation_only": true,
+    "strict_pre_panel_access_compliance": true
+  },
+  "classification": {
+    "all3_nominal_net_positive": false,
+    "combined_conditional_pass": false,
+    "deployment_authorized": false,
+    "economic_all3_above_cash": false,
+    "independent_unseen_confirmation": false,
+    "risk_all3_hourly_dd_le_40pct": false,
+    "statistical_all3_holm3_cash_mean": false,
+    "strict_pre_panel_access_compliance": true
+  },
+  "combined_with_other_study": false,
+  "environment": {
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.2.3",
+      "pyarrow": "20.0.0",
+      "pytest": "9.0.3",
+      "scipy": "1.15.3",
+      "statsmodels": "0.14.6"
+    },
+    "platform": "macOS-15.6.1-x86_64-i386-64bit",
+    "python": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]"
+  },
+  "exact_configuration": {
+    "analysis_inputs": [
+      "data/prices.parquet",
+      "data/quote_volume.parquet",
+      "data/tradable.parquet",
+      "data/observed.parquet",
+      "data/hold_allowed.parquet",
+      "data/mandatory_exit.parquet",
+      "data/decision_allowed.parquet"
+    ],
+    "annual_days": 365,
+    "bootstrap": {
+      "block_days": 28,
+      "draws": 10000,
+      "seed_reset_each_period": 20261020
+    },
+    "case": {
+      "buffer_l1": 0.0,
+      "experiment_id": "reversal_h0672_r168",
+      "family": "reversal",
+      "grid_id": "time_scale",
+      "lookback_h": 672,
+      "phase_hours": 0,
+      "rebalance_h": 168,
+      "report_family": "reversal",
+      "strategy_id": "reversal_h0672_r168"
+    },
+    "cash_nominal_annual": 0.03,
+    "companion_sharpe_days": 252,
+    "cross_strategy_comparison": false,
+    "cross_strategy_correlation": false,
+    "historical_windows_previously_examined": true,
+    "holm_family_size": 3,
+    "hourly_drawdown_limit": 0.4,
+    "mean_hac_correction": "n/(n-1)",
+    "mean_hac_lags": 27,
+    "periods": {
+      "development": [
+        "2022-01-01T00:00:00Z",
+        "2024-01-01T00:00:00Z"
+      ],
+      "oos_partial_2026_jan_sep": [
+        "2026-01-01T00:00:00Z",
+        "2026-10-01T00:00:00Z"
+      ],
+      "validation": [
+        "2024-01-01T00:00:00Z",
+        "2026-01-01T00:00:00Z"
+      ]
+    },
+    "pooled_tests": false,
+    "primary": {
+      "cost_bps": 20,
+      "execution_lag_h": 1
+    },
+    "scenario_period_keys": 21,
+    "scenarios": [
+      {
+        "cost_bps": 0,
+        "execution_lag_h": 1
+      },
+      {
+        "cost_bps": 5,
+        "execution_lag_h": 1
+      },
+      {
+        "cost_bps": 10,
+        "execution_lag_h": 1
+      },
+      {
+        "cost_bps": 15,
+        "execution_lag_h": 1
+      },
+      {
+        "cost_bps": 20,
+        "execution_lag_h": 1
+      },
+      {
+        "cost_bps": 40,
+        "execution_lag_h": 1
+      },
+      {
+        "cost_bps": 20,
+        "execution_lag_h": 2
+      }
+    ],
+    "symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "SHIBUSDT",
+      "BNBUSDT",
+      "SOLUSDT",
+      "XRPUSDT",
+      "DOTUSDT",
+      "SANDUSDT",
+      "LUNAUSDT",
+      "AVAXUSDT",
+      "DOGEUSDT",
+      "ADAUSDT",
+      "FTMUSDT",
+      "TRXUSDT",
+      "MATICUSDT",
+      "MANAUSDT",
+      "FILUSDT",
+      "GALAUSDT",
+      "LINKUSDT",
+      "AXSUSDT",
+      "LTCUSDT",
+      "VETUSDT"
+    ]
+  },
+  "execution_freeze": {
+    "sealed_utc": "2026-10-20T19:08:15.853982+00:00",
+    "sha256": "77207a042ec73087a51989d748c297c4df50f4cfb27583a73cf07751bd2dcc54",
+    "status": "SEALED_BEFORE_REVERSAL_INPUT_DECODE"
+  },
+  "historical_interpretation": "Established labels retained, but all three historical windows were previously examined. This is a later fixed-specification study, not new unseen OOS confirmation. No new winner, portfolio combination or correlation conclusion is selected.",
+  "inference": {
+    "BTC_attribution": "descriptive full-period raw/cash BTC OLS with BartlettHAC7, no finitecovariancecorrection; annualalpha365;95%marginal coefficientintervals; not extra primary success tests",
+    "bootstrap": "10000centered circular28-day block-bootstrap-t draws; NumPyGeneratorPCG64 seed20261020 reset per period; sameindices for all periodstatistics",
+    "correction": "Holm at5% within this study only; no pooling with another fixed study or original nine",
+    "family_size": 3,
+    "invalid_draws": "never drop; any invalid draw makes affected test/interval unavailable; nonestimable test retains Holm slot atp1",
+    "mean_CI": "95%studentized HAC27 interval by bootstrap-t quantile inversion",
+    "mean_covariance": "Bartlett calendarHAC27 with n/(n-1) covariance correction",
+    "one_sided_p": "(1+count(Tstar>=Tobserved))/(10000+1)",
+    "ordered_period_slots": [
+      "development",
+      "validation",
+      "oos_partial_2026_jan_sep"
+    ],
+    "other_CIs": "95%marginal percentile intervals for cash-relative wealth/growth and raw/cash Sharpe; linearquantiles;252endpoints positive-scale transforms",
+    "primary_hypotheses": "one mean arithmetic daily cash-excess greater than0 per period",
+    "resampling": "saved dailyreturns only; no signal regeneration or invented block-boundary fees",
+    "selection_adjusted": false
+  },
+  "limitations": [
+    "inherited historically chosen universe and previous project inspection",
+    "fixed supplied Binance spotUSDT normalized latest study dataset, not pointintime certified",
+    "theoretical shorting; no realized borrow/funding/margin constraints",
+    "idealized observedclose execution; no orderbook slippage/depth/capacity or ordinarydriftmaintenance",
+    "partial-year2026 has273days and about9.75blocklengths; marginal conditional uncertainty not originalsearch adjusted"
+  ],
+  "performance": {
+    "CAGR_volatility_alpha_annual_days": 365,
+    "cash": "3% nominal annual ACT/365F compounded daily at0.03/365, not credited to strategy",
+    "cash_excess_sharpe365": "sqrt(365)*mean(dailyreturns-0.03/365)/sample_sd(dailyreturns)",
+    "cash_relative_drawdown": "daily relative NAV, not a replacement for original hourly risk limit",
+    "cash_relative_return": "W_strategy/W_cash-1",
+    "original_max_drawdown": "hourly valuation endpoints including initialNAV; intra-hour unknown",
+    "raw": "strategy net of transaction costs before cash comparison",
+    "sharpe252": "Sharpe365*sqrt(252/365), same complete daily sample including weekends",
+    "sharpe365": "sqrt(365)*mean(completeUTCdailyreturns)/sample_sd(completeUTCdailyreturns)",
+    "turnover": "fullL1 unitnotional changes; annualized=sum(turnover)*365/elapsedcalendardays; includes initial and terminal changes"
+  },
+  "pooled_multiple_testing_with_other_studies": false,
+  "predeclared_criteria": {
+    "deployment_approval_or_fresh_confirmation": false,
+    "dimensions_reported_separately": true,
+    "economic": "cash-relative netwealthreturn>0 in each of3primaryperiods",
+    "nominal_profitability": "netcompoundedreturn>0 in everyprimaryperiod disclosed separately",
+    "risk": "hourlymaxdrawdown<=0.4 in eachprimaryperiod, evaluation flag not trading stop",
+    "statistical": "all3 tests available, HACt>0 and Holm3p<=0.05"
+  },
+  "preservation_and_audit": {
+    "accounting_audit_sha256": "8d134a9c2e41631b74835476485942ccf12d93202f88817fc8c6db105d44febf",
+    "accounting_audit_status": "PASS",
+    "accounting_checks": 1245,
+    "accounting_numeric_cells": 6807044,
+    "completion_receipt_sha256": "e02afc226372dad024f2e9076e04d08c56f0b767c722a03dcbe6125aa7e3a747",
+    "final_local_manifest_sha256": "5a085e4d761e0283aff530c25f876bdc991c26cf3a4b43114eaf5d1bcdf4eb39",
+    "original_nine_strategies_results_acceptance_unchanged": true,
+    "original_tracked_file_count_preserved": 290,
+    "scenario_count": 21,
+    "source_code_and_data_unchanged": true,
+    "statistical_audit_sha256": "c6c91459d3d5caf00e7dc829f79d1076c0ac21dc9aae678767e641416dcdc73f",
+    "statistical_audit_status": "PASS_STATISTICAL_AND_PRESERVATION_AUDIT"
+  },
+  "publication_output_pins": {
+    "results/fixed_all22_reversal/classification.json": {
+      "bytes": 326,
+      "sha256": "6fa39697dc3641cb5a0388678eb895bbcca2160c92efecf94176f5a3cc7221a5"
+    },
+    "results/fixed_all22_reversal/daily_returns.csv": {
+      "bytes": 191992,
+      "sha256": "918d1b096085e15ee7db5e609207f86fa092bf2f759ba2da6e7f00b977bdfad7"
+    },
+    "results/fixed_all22_reversal/primary_inference.csv": {
+      "bytes": 10149,
+      "sha256": "6c9b93f81aaafb60fbe4979eae6720befecaab80a6594de34c091f55169bb943"
+    },
+    "results/fixed_all22_reversal/primary_inference.json": {
+      "bytes": 16125,
+      "sha256": "2bc1fa3272b703d2d12c01492cffa4d50410201ccc2486b93851a59f8a81cccf"
+    },
+    "results/fixed_all22_reversal/primary_summary.csv": {
+      "bytes": 14087,
+      "sha256": "958f91b6ab64bb22c63a7f49774f37b4de8f6ec66246de2fd6b93032e98d81e3"
+    },
+    "results/fixed_all22_reversal/protocol.md": {
+      "bytes": 16082,
+      "sha256": "b7662d878784cf8cbebcb634023db07b1918ce0fee78d8b4df61b7db063c05ea"
+    },
+    "results/fixed_all22_reversal/scenario_metrics.csv": {
+      "bytes": 75947,
+      "sha256": "8f9c8e3921cf6fdeabdf5ab84f5e1eb01d233d51ccfc5d6e5492f32e65c6500f"
+    }
+  },
+  "publication_scope": "Exact saved output copies and current publication documentation only. No new strategy run, parameter selection, source-data acquisition or public runner is added.",
+  "schema_version": 1,
+  "sealed_study_code_sha256": {
+    "audit/audit_statistics.py": "0195a888bf77e4cc8894c01f6eab2789657b64fccd4c6a92734bfa110b48e1fd",
+    "audit_reversal_accounting.py": "73b040eb243b7f520695bddb9c8c89354daf4738c1aef9d2892523f36e2a95ca",
+    "conftest.py": "b86979602585147cd673635485e2bd7431bf397646a853b42a6b20e1bc56aead",
+    "inference.py": "00312c1c3709391d041f01996852c83a3aa034da5e72206670f11842e8195f81",
+    "run_study.py": "6bfe6f2499b08f4da088256cb96def0bfaded0d8aa4c74615eed542f3c1b365c",
+    "test_adapter.py": "c65f7bb71eaa5bbe0127a626dfdea49ad46b10ad22beea3c5384bb9451f6b845",
+    "test_inference.py": "20600398f0f905c7fdae6167683579beae0c86d1afb95c0416dd371949172552",
+    "test_reversal_engine.py": "823b23a6ef504969d59ba593ad1fcb261868b831cca670d38cf13359f09e9248"
+  },
+  "separate_study": true,
+  "signal": {
+    "clock": "Monday 00:00 UTC; epoch2022-01-03T00:00:00Z, phase0; preserve warmup Mondays",
+    "direction": "long relative losers; short relative winners",
+    "flat_degenerate_target": true,
+    "formula": "P_i(t)/P_i(t-672h)-1",
+    "inactive_slots_not_replaced": true,
+    "normal_gross": 1.0,
+    "normal_long": 0.5,
+    "normal_net": 0.0,
+    "normal_short": 0.5,
+    "weights": "-(average_tied_rank_i-mean_rank)/sum(abs(rank-mean_rank)) over eligible members"
+  },
+  "source_base_commit": "573b8f646b6b833019f8e3319c427642d39fadff",
+  "source_data": {
+    "frequency": "1h",
+    "manifest_path": "data/manifest.json",
+    "manifest_sha256": "b42a52ad424ea57af44ef542b9f418e353005952c51819cb6c19ee20c535381a",
+    "market": "spot USDT",
+    "panels": {
+      "files": {
+        "decision_allowed.parquet": {
+          "bytes": 405703,
+          "sha256": "ee2d1f4102d74fda2942d8d2640033be6d8b10dca00101c9dfe1b427f7c80538"
+        },
+        "hold_allowed.parquet": {
+          "bytes": 420709,
+          "sha256": "46a939f61bc473d76b1dadfb0dfdcbbe9f7cffa1aeac636112429129c3237e24"
+        },
+        "mandatory_exit.parquet": {
+          "bytes": 420696,
+          "sha256": "be7ee2ad7cf5994208c07c92a728b0a1eabbfa43a7a159077098f86af1bf243d"
+        },
+        "observed.parquet": {
+          "bytes": 420854,
+          "sha256": "873356d8479359ae0627ea82a1bb6323300786e616be41ef900b75452f8ad3bf"
+        },
+        "prices.parquet": {
+          "bytes": 3938710,
+          "sha256": "853e0980a8bdf5cad99cc1ad075db07595e2fc8117aaed7ff7ff3ca34ef14dd2"
+        },
+        "quote_volume.parquet": {
+          "bytes": 10004088,
+          "sha256": "d456f4af680f92e1154ef49ba585b0e82bade046651e60f8ddd1187cebce1dce"
+        },
+        "tradable.parquet": {
+          "bytes": 420708,
+          "sha256": "93358cdfcb2fe105d22289ce82280b54ef67f9a236d903e9bd4a09eb3cf07d27"
+        }
+      },
+      "first_endpoint": "2021-10-01T01:00:00Z",
+      "last_endpoint": "2026-10-01T00:00:00Z",
+      "n_endpoints": 43824,
+      "n_frozen_strategy_union_slots": 21,
+      "n_source_slots": 22,
+      "names": [
+        "prices",
+        "quote_volume",
+        "tradable",
+        "observed",
+        "hold_allowed",
+        "mandatory_exit",
+        "decision_allowed"
+      ],
+      "role": "Complete 22-slot hourly universe for the tiered eight-coin basket search; each frozen strategy uses eight slots and the nine-strategy union has 21.",
+      "source": "Binance Vision normalized hourly endpoints and audited lifecycle masks"
+    },
+    "provider": "Binance public Data Vision",
+    "universe_path": "data/universe.csv",
+    "universe_sha256": "1aa6d5827f220dced04d1bce20b40d52dd5b0a615ab7b1c237aafe2f71a87c7d"
+  },
+  "status": "completed_approved_study_saved_results_publication",
+  "strategy_id": "reversal_h0672_r168",
+  "study": "fixed_all22_reversal",
+  "unchanged_engine_code_sha256": {
+    "src/crypto_research/__init__.py": "5b3782317fdb10c985a3562dd2c60589b6606e10b1bb1dc091495d39ed8eb28e",
+    "src/crypto_research/backtest.py": "282eb35d9bf970c8b623f0ddd03124cec0025a3b818cc08506d81121c5759e51",
+    "src/crypto_research/cash_excess.py": "8a22f418e68cc7413b76fb214a8d6ef9982ef4000277c167725ac0325862ea33",
+    "src/crypto_research/diagnostics.py": "c5c238cff94f6fb1235d06937d886e896710af3ef217cbafef1e09a9c2d838f4",
+    "src/crypto_research/metrics.py": "ac8a2d8c1002b78d3bce076127a7ae6c9baa77c3b647f25b6c52c8e4f95616e3",
+    "src/crypto_research/metrics_adapter.py": "c02aec3acae0aead63a31a97b07931b57b4d8933c013a84dd012ce4390ad7ef6",
+    "src/crypto_research/metrics_extra.py": "2c2a2b71bf6d378cab8d8d6e34f9f0c28e7bb4cefad60356df90bfd0173926bc",
+    "src/crypto_research/output_safety.py": "c0a05ba6bd93103b859c4af9417a4364d767c077fde01d8afe8899f43ef89cf3",
+    "src/crypto_research/performance_indicators.py": "148ee09c30a5834111d661d33527ce74bc67cf8689e0d11e0b2ea582e3867970",
+    "src/crypto_research/runner.py": "42bc0d339c2750011963b9f9e30abf3c97b1a32b0705ee579ffc8013e7d9212a",
+    "src/crypto_research/simulator.py": "23dc58af2eb92164aa0ba9fb3a4ac07d96f8ddd8969df66015c86d93132528c1",
+    "src/crypto_research/strategies.py": "6a8d5f85dac9c248833b947becbae89a2e2fcc263f732fdf364a16b55ad0f5b0"
+  }
+}

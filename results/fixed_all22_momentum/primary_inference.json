@@ -1,0 +1,377 @@
+[
+  {
+    "bootstrap_any_invalid_draws": 0,
+    "bootstrap_invalid_draws": {
+      "cash_excess_sharpe365": 0,
+      "centered_null_t": 0,
+      "raw_sharpe365": 0,
+      "relative_annualized_growth": 0,
+      "studentized_mean_t": 0,
+      "wealth_relative_excess_return": 0
+    },
+    "bootstrap_one_sided_p": 0.4577542245775422,
+    "first_utc_day": "2022-01-01",
+    "hac27_tstat": 0.13398389175685974,
+    "holm3_one_sided_p": 1.0,
+    "intervals95": {
+      "cash_excess_sharpe252": {
+        "high": 1.1938271247782923,
+        "invalid_draws": 0,
+        "low": -1.0514308624607824,
+        "status": "available"
+      },
+      "cash_excess_sharpe365": {
+        "high": 1.4367711670749959,
+        "invalid_draws": 0,
+        "low": -1.2653972388481256,
+        "status": "available"
+      },
+      "daily_mean_cash_excess": {
+        "high": 0.0008322087346244883,
+        "invalid_draws": 0,
+        "low": -0.000744817242306726,
+        "method": "inverted_studentized_circular_block_bootstrap_t",
+        "status": "available"
+      },
+      "raw_sharpe252": {
+        "high": 1.3225147222631854,
+        "invalid_draws": 0,
+        "low": -0.9282655611001299,
+        "status": "available"
+      },
+      "raw_sharpe365": {
+        "high": 1.5916467146219528,
+        "invalid_draws": 0,
+        "low": -1.1171677757154699,
+        "status": "available"
+      },
+      "relative_annualized_growth": {
+        "high": 0.3093811598212748,
+        "invalid_draws": 0,
+        "low": -0.24944894256562208,
+        "status": "available"
+      },
+      "wealth_relative_excess_return": {
+        "high": 0.7144790264565675,
+        "invalid_draws": 0,
+        "low": -0.43667310785873603,
+        "status": "available"
+      }
+    },
+    "last_utc_day": "2023-12-31",
+    "mean_cash_excess": {
+      "annual_arithmetic_hac27_se": 0.14469726578431163,
+      "annual_arithmetic_mean": 0.019387102796358774,
+      "daily_hac27_se": 0.00039643086516249766,
+      "daily_mean": 5.311535012701034e-05,
+      "hac27_t": 0.13398389175685974,
+      "observed_mean_test_estimable": true
+    },
+    "methods": {
+      "bootstrap_block_days": 28,
+      "bootstrap_ci_level": 0.95,
+      "bootstrap_draws": 10000,
+      "bootstrap_generator": "NumPy_Generator_PCG64",
+      "bootstrap_generator_reset_per_period": true,
+      "bootstrap_indices_sha256_int64_little_endian": "36afb1dc59c3263a9bae43c8f16752eae734b32a4397dd7621e92139444ea312",
+      "bootstrap_percentile_quantile_method": "linear",
+      "bootstrap_seed": 20261020,
+      "bootstrap_selection_adjusted": false,
+      "bootstrap_synchronized_draw_indices": true,
+      "cash_daily_return": 8.219178082191781e-05,
+      "cash_day_count": "ACT/365F",
+      "cash_interest_credited_to_strategy": false,
+      "cash_nominal_annual": 0.03,
+      "daily_calendar": "complete_UTC_including_weekends",
+      "hac_covariance_finite_correction": "n/(n-1)",
+      "hac_kernel": "Bartlett",
+      "hac_lags": 27,
+      "invalid_draw_policy": "no_discard; affected_interval_or_test_unavailable",
+      "original_nine_family_changed": false,
+      "sharpe252_from365_factor": 0.8309097176613772
+    },
+    "n_calendar_days": 730,
+    "performance": {
+      "cash_compounded_return": 0.061833928464941804,
+      "cash_excess_sharpe252": 0.07664900892985632,
+      "cash_excess_sharpe365": 0.09224709652642826,
+      "raw_cagr": 0.02765690076513402,
+      "raw_net_return": 0.05607870569020051,
+      "raw_sharpe252": 0.19525725545586928,
+      "raw_sharpe365": 0.23499214331663765,
+      "relative_annualized_growth": -0.0027137211692697576,
+      "wealth_relative_excess_return": -0.0054200780559549725
+    },
+    "period": "development",
+    "primary_test": {
+      "available": true,
+      "bootstrap_invalid_draws": 0,
+      "centered_bootstrap_t_exceedance_count": 4577,
+      "centered_bootstrap_t_one_sided_p": 0.4577542245775422,
+      "correction_family_size": 3,
+      "holm3_adjusted_p": 1.0,
+      "holm3_input_p": 0.4577542245775422,
+      "holm3_status": "complete_family3",
+      "hypothesis": "mean_arithmetic_daily_cash_excess_greater_than_zero",
+      "status": "available"
+    },
+    "primary_test_estimable": true,
+    "raw_mean_descriptive": {
+      "available": true,
+      "hac27_se": 0.00039643086516249766,
+      "hac27_t": 0.3413133104392996,
+      "mean": 0.00013530713094892768
+    },
+    "statistical_period_pass": false
+  },
+  {
+    "bootstrap_any_invalid_draws": 0,
+    "bootstrap_invalid_draws": {
+      "cash_excess_sharpe365": 0,
+      "centered_null_t": 0,
+      "raw_sharpe365": 0,
+      "relative_annualized_growth": 0,
+      "studentized_mean_t": 0,
+      "wealth_relative_excess_return": 0
+    },
+    "bootstrap_one_sided_p": 0.8462153784621538,
+    "first_utc_day": "2024-01-01",
+    "hac27_tstat": -0.969864189474618,
+    "holm3_one_sided_p": 1.0,
+    "intervals95": {
+      "cash_excess_sharpe252": {
+        "high": 0.43254603710521544,
+        "invalid_draws": 0,
+        "low": -1.2662305989569158,
+        "status": "available"
+      },
+      "cash_excess_sharpe365": {
+        "high": 0.5205692362373984,
+        "invalid_draws": 0,
+        "low": -1.5239087617373925,
+        "status": "available"
+      },
+      "daily_mean_cash_excess": {
+        "high": 0.0002836005916661767,
+        "invalid_draws": 0,
+        "low": -0.0008635339304621493,
+        "method": "inverted_studentized_circular_block_bootstrap_t",
+        "status": "available"
+      },
+      "raw_sharpe252": {
+        "high": 0.5656276862775951,
+        "invalid_draws": 0,
+        "low": -1.1444082424897373,
+        "status": "available"
+      },
+      "raw_sharpe365": {
+        "high": 0.6807330258088362,
+        "invalid_draws": 0,
+        "low": -1.377295533034217,
+        "status": "available"
+      },
+      "relative_annualized_growth": {
+        "high": 0.08665270707699381,
+        "invalid_draws": 0,
+        "low": -0.28621106387060186,
+        "status": "available"
+      },
+      "wealth_relative_excess_return": {
+        "high": 0.18108298047496083,
+        "invalid_draws": 0,
+        "low": -0.49097578186855534,
+        "status": "available"
+      }
+    },
+    "last_utc_day": "2025-12-31",
+    "mean_cash_excess": {
+      "annual_arithmetic_hac27_se": 0.10868420694840501,
+      "annual_arithmetic_mean": -0.10540892028070648,
+      "daily_hac27_se": 0.0002977649505435754,
+      "daily_mean": -0.00028879156241289446,
+      "hac27_t": -0.969864189474618,
+      "observed_mean_test_estimable": true
+    },
+    "methods": {
+      "bootstrap_block_days": 28,
+      "bootstrap_ci_level": 0.95,
+      "bootstrap_draws": 10000,
+      "bootstrap_generator": "NumPy_Generator_PCG64",
+      "bootstrap_generator_reset_per_period": true,
+      "bootstrap_indices_sha256_int64_little_endian": "d7e918a67e36c13aeed352cdd1471d5ce85fbfdaaf5e4c395603ef703a8324c3",
+      "bootstrap_percentile_quantile_method": "linear",
+      "bootstrap_seed": 20261020,
+      "bootstrap_selection_adjusted": false,
+      "bootstrap_synchronized_draw_indices": true,
+      "cash_daily_return": 8.219178082191781e-05,
+      "cash_day_count": "ACT/365F",
+      "cash_interest_credited_to_strategy": false,
+      "cash_nominal_annual": 0.03,
+      "daily_calendar": "complete_UTC_including_weekends",
+      "hac_covariance_finite_correction": "n/(n-1)",
+      "hac_kernel": "Bartlett",
+      "hac_lags": 27,
+      "invalid_draw_policy": "no_discard; affected_interval_or_test_unavailable",
+      "original_nine_family_changed": false,
+      "sharpe252_from365_factor": 0.8309097176613772
+    },
+    "n_calendar_days": 731,
+    "performance": {
+      "cash_compounded_return": 0.06192120248645947,
+      "cash_excess_sharpe252": -0.4366328428954822,
+      "cash_excess_sharpe365": -0.5254877077673369,
+      "raw_cagr": -0.09117631119928572,
+      "raw_net_return": -0.1742558175327247,
+      "raw_sharpe252": -0.3123645622605844,
+      "raw_sharpe365": -0.3759308088726471,
+      "relative_annualized_growth": -0.11803502312643399,
+      "wealth_relative_excess_return": -0.2224054096162523
+    },
+    "period": "validation",
+    "primary_test": {
+      "available": true,
+      "bootstrap_invalid_draws": 0,
+      "centered_bootstrap_t_exceedance_count": 8462,
+      "centered_bootstrap_t_one_sided_p": 0.8462153784621538,
+      "correction_family_size": 3,
+      "holm3_adjusted_p": 1.0,
+      "holm3_input_p": 0.8462153784621538,
+      "holm3_status": "complete_family3",
+      "hypothesis": "mean_arithmetic_daily_cash_excess_greater_than_zero",
+      "status": "available"
+    },
+    "primary_test_estimable": true,
+    "raw_mean_descriptive": {
+      "available": true,
+      "hac27_se": 0.00029776495054357533,
+      "hac27_t": -0.6938351246976026,
+      "mean": -0.00020659978159097704
+    },
+    "statistical_period_pass": false
+  },
+  {
+    "bootstrap_any_invalid_draws": 0,
+    "bootstrap_invalid_draws": {
+      "cash_excess_sharpe365": 0,
+      "centered_null_t": 0,
+      "raw_sharpe365": 0,
+      "relative_annualized_growth": 0,
+      "studentized_mean_t": 0,
+      "wealth_relative_excess_return": 0
+    },
+    "bootstrap_one_sided_p": 0.9813018698130187,
+    "first_utc_day": "2026-01-01",
+    "hac27_tstat": -1.9910244223130473,
+    "holm3_one_sided_p": 1.0,
+    "intervals95": {
+      "cash_excess_sharpe252": {
+        "high": -0.05491002638144147,
+        "invalid_draws": 0,
+        "low": -3.0296513068037227,
+        "status": "available"
+      },
+      "cash_excess_sharpe365": {
+        "high": -0.06608422697954183,
+        "invalid_draws": 0,
+        "low": -3.646185912147924,
+        "status": "available"
+      },
+      "daily_mean_cash_excess": {
+        "high": -5.791020290975182e-05,
+        "invalid_draws": 0,
+        "low": -0.0021045455366086887,
+        "method": "inverted_studentized_circular_block_bootstrap_t",
+        "status": "available"
+      },
+      "raw_sharpe252": {
+        "high": 0.10742952192156477,
+        "invalid_draws": 0,
+        "low": -2.897119221956972,
+        "status": "available"
+      },
+      "raw_sharpe365": {
+        "high": 0.1292914496462127,
+        "invalid_draws": 0,
+        "low": -3.486683523344762,
+        "status": "available"
+      },
+      "relative_annualized_growth": {
+        "high": -0.022826855734359535,
+        "invalid_draws": 0,
+        "low": -0.5081909836162288,
+        "status": "available"
+      },
+      "wealth_relative_excess_return": {
+        "high": -0.017122828559280504,
+        "invalid_draws": 0,
+        "low": -0.4118600781506658,
+        "status": "available"
+      }
+    },
+    "last_utc_day": "2026-09-30",
+    "mean_cash_excess": {
+      "annual_arithmetic_hac27_se": 0.16505297426633256,
+      "annual_arithmetic_mean": -0.32862450273967503,
+      "daily_hac27_se": 0.0004521999294968015,
+      "daily_mean": -0.00090034110339637,
+      "hac27_t": -1.9910244223130473,
+      "observed_mean_test_estimable": true
+    },
+    "methods": {
+      "bootstrap_block_days": 28,
+      "bootstrap_ci_level": 0.95,
+      "bootstrap_draws": 10000,
+      "bootstrap_generator": "NumPy_Generator_PCG64",
+      "bootstrap_generator_reset_per_period": true,
+      "bootstrap_indices_sha256_int64_little_endian": "b5a443544b4910c2a93c9be9bf3e0fd874cc028865efa5801fd6c59ec7a96584",
+      "bootstrap_percentile_quantile_method": "linear",
+      "bootstrap_seed": 20261020,
+      "bootstrap_selection_adjusted": false,
+      "bootstrap_synchronized_draw_indices": true,
+      "cash_daily_return": 8.219178082191781e-05,
+      "cash_day_count": "ACT/365F",
+      "cash_interest_credited_to_strategy": false,
+      "cash_nominal_annual": 0.03,
+      "daily_calendar": "complete_UTC_including_weekends",
+      "hac_covariance_finite_correction": "n/(n-1)",
+      "hac_kernel": "Bartlett",
+      "hac_lags": 27,
+      "invalid_draw_policy": "no_discard; affected_interval_or_test_unavailable",
+      "original_nine_family_changed": false,
+      "sharpe252_from365_factor": 0.8309097176613772
+    },
+    "n_calendar_days": 273,
+    "performance": {
+      "cash_compounded_return": 0.022691046567465695,
+      "cash_excess_sharpe252": -1.5536332942468165,
+      "cash_excess_sharpe365": -1.8697979590605447,
+      "raw_cagr": -0.26963287928530244,
+      "raw_net_return": -0.20943732626796327,
+      "raw_sharpe252": -1.4118027294568058,
+      "raw_sharpe365": -1.6991048479134065,
+      "relative_annualized_growth": -0.2912176160588598,
+      "wealth_relative_excess_return": -0.22697800436851262
+    },
+    "period": "oos_partial_2026_jan_sep",
+    "primary_test": {
+      "available": true,
+      "bootstrap_invalid_draws": 0,
+      "centered_bootstrap_t_exceedance_count": 9813,
+      "centered_bootstrap_t_one_sided_p": 0.9813018698130187,
+      "correction_family_size": 3,
+      "holm3_adjusted_p": 1.0,
+      "holm3_input_p": 0.9813018698130187,
+      "holm3_status": "complete_family3",
+      "hypothesis": "mean_arithmetic_daily_cash_excess_greater_than_zero",
+      "status": "available"
+    },
+    "primary_test_estimable": true,
+    "raw_mean_descriptive": {
+      "available": true,
+      "hac27_se": 0.00045219992949680155,
+      "hac27_t": -1.8092645956067959,
+      "mean": -0.0008181493225744523
+    },
+    "statistical_period_pass": false
+  }
+]

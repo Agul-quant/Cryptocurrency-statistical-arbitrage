@@ -1,4 +1,5 @@
-import {GeneralizationFinding,hasSharpe,sharpePair,SharpeInterval} from './SharpeConventions.jsx';
+import {FixedAll22Studies} from './FixedAll22Studies.jsx';
+import {FixedAll22Headline,GeneralizationFinding,hasSharpe,sharpePair,SharpeInterval} from './SharpeConventions.jsx';
 import {MainCashComparison, HistoricalCashComparison, CashPairedPrimary, CashRiskExposure, CashDailyRisk, CashMainNote} from './MainCashPerformance.jsx';
 import {CashBenchmarkAppendix} from './CashBenchmarkAppendix.jsx';
 import {BasketAttributionAppendix} from './BasketAttributionAppendix.jsx';
@@ -23,7 +24,11 @@ export function ReportContent(){
   <header className="report-hero"><h1 data-data-app-title>{appTitle}</h1></header>
  <RichNarrative id="attribution-edition-note" value="[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix). [Cash-excess performance at 3% nominal](#main-cash-performance)."/>
   <GeneralizationFinding/>
+ <FixedAll22Headline/>
   {text('summary','summary',['primary','criteria','cohort_sharpe_display','screening','execution','provenance'])}
+ </section>
+ <FixedAll22Studies period="oos_partial_2026_jan_sep"/>
+ <section className="final-page" id="frozen-primary-performance">
   {text('primary-text','primary',['primary'])}
   <div id="main-cash-performance"><CashPairedPrimary/><CashMainNote id="main-cash-primary-legend"/></div>
  </section>

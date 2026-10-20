@@ -37,6 +37,66 @@ evaluation and subsequent cohort, attribution and factor diagnoses share these
 observations; those diagnoses are not additional independent tests. Period
 labels or frozen file hashes do not remove prior-data-use or selection bias.
 
+## Separate fixed all-22 momentum and reversal studies
+
+The two completed studies are separate, approved fixed-rule evaluations, not
+a direction search or a combined portfolio. Each uses the same 22 economic
+slots, a 672-hour trailing return, Monday 00:00 UTC decisions every 168 hours,
+phase 0 and no buffer. Average-tied ranks are demeaned and full-L1 normalized;
+momentum buys relative winners/shorts losers, while the separate reversal
+study buys relative losers/shorts winners. Normal gross exposure is one and
+net exposure zero. All eligible members determine the cross-section. Neither
+slices eight-coin weights or selects a replacement basket.
+
+The original nine strategies and all their financial evidence, selections,
+acceptance flags and risk limits remain unchanged. The fixed-study additions
+publish already executed outputs; they do not rerun the original nine or alter
+its results. The same three date windows, independent period cash resets,
+entry/terminal full-L1 fees, warm-up, source masks, migration/halts and partial
+legacy-LUNA exit are preserved. Each study retains all 21 fee/delay-period keys:
+0/5/10/15/20/40 bps at lag1, plus 20 bps at lag2, in each of three periods.
+
+### The result is the pattern, not the most attractive period
+
+Fixed momentum net returns were **+5.61%, −17.43%, −20.94%** across development,
+validation and partial 2026. Its cash-relative returns were **−0.54%, −22.24%,
+−22.70%**. Separate fixed reversal net returns were **−33.59%, −15.66%, +9.91%**,
+and cash-relative returns **−37.45%, −20.58%, +7.48%**. Neither met positive
+cash-relative return in every period. Reversal exceeded its 40% hourly drawdown
+guardrail in development (43.69%). Neither study met all-period statistical
+support. These outcomes do not establish that either direction has no possible
+effect, but they do not support a stable all-period edge for these fixed rules.
+No new winner is chosen.
+
+### Separate inference, fixed thresholds and chronology
+
+Each study uses **10,000 circular 28-day bootstrap-t draws**, PCG64 seed
+20261020 reset per period, and calendar Bartlett HAC27 with n/(n−1) correction
+for mean arithmetic daily cash excess. Its three one-sided positive-cash-mean
+hypotheses receive **Holm3 within that study only**. No other study's p-values,
+returns, correlations or acceptance flags enter that family. Cash is 3% nominal
+ACT/365F, not interest credited to P&L. The same UTC daily series, including
+weekends, supplies raw and cash-excess Sharpe under √365 and √252.
+
+Return, relative-growth and Sharpe intervals are marginal percentile intervals;
+the daily mean interval is studentized. They are conditional on saved paths,
+not adjusted for earlier universe/parameter research. Invalid draws are not
+discarded; the completed studies reported none. Descriptive raw/cash BTC
+alpha/betas use marginal HAC7 confidence intervals and 365-times-daily alpha;
+they are not new selection gates. These fixed-study intervals and Holm3 tests
+are distinct from the original nine-strategy and later attribution conventions.
+
+Both studies use periods already examined in the wider project. They are not
+fresh independent holdout confirmation. **Momentum did not satisfy a strict
+pre-input-access seal:** some existing tests decoded source panels and
+recomputed saved-nine statistics before its experiment seal; the seal still
+preceded the first fixed all-22 momentum simulation. This exception remains
+disclosed and numerical reconciliation does not erase it. **Reversal satisfied
+its new-study pre-input-decode seal**, but this does not undo earlier historical
+observation. Public protocol/methods files describe these facts without
+rewriting the completed private receipts. All study outputs and original-nine
+financial assets remain byte-identical.
+
 ## Trading and accounting
 
 Primary cost is **20 bps one-way on full-L1 traded weight changes**, including
@@ -139,12 +199,16 @@ basket-selection campaign, select a new strategy, or fetch raw exchange archives
 reconcile the factor models and coin-attribution intervals. Saved broader cohort tables
 provide the report's screening context and are not independent replications.
 
-The [fixed all-22-coin momentum protocol](FIXED_ALL22_PROTOCOL.md) is a separate
-**draft awaiting explicit approval to run**. It proposes one 28-day weekly
-momentum specification without a new basket or parameter sweep. It does not
-authorize a backtest, alter the frozen-nine runner or create an all-22 result.
-Its already-inspected historical comparison windows cannot supply fresh
-independent confirmation of a rule proposed after seeing the project results.
+The approved [fixed all-22 momentum](FIXED_ALL22_PROTOCOL.md) and
+[separate reversal](FIXED_ALL22_REVERSAL_PROTOCOL.md) studies are completed.
+This update publishes their saved three-period results and audits, rather than
+executing a new backtest or modifying the nine strategies. The supplied research
+runner still reproduces only the nine frozen strategies. Run
+`python scripts/verify_fixed_all22.py` to reconcile the published fixed-study
+evidence without loading prices or rerunning trades/bootstrap draws. Both studies
+use already-examined dates, not fresh independent confirmation; momentum retains
+its disclosed pre-input-access chronology exception. The current protocol
+summaries distinguish completed status from the preserved approved snapshots.
 
 
 ## Cash benchmark comparison

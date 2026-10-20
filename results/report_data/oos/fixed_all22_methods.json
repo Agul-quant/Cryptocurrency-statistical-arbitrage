@@ -1,0 +1,344 @@
+[
+  {
+    "id": "momentum",
+    "study": "momentum",
+    "study_label": "Momentum",
+    "configuration": {
+      "annual_days": 365,
+      "bootstrap": {
+        "block_days": 28,
+        "draws": 10000,
+        "mean_test": "centered circular block bootstrap-t; HAC27 n/(n-1)",
+        "multiple_testing": "one-sided cash-mean Holm family3",
+        "seed_reset_each_period": 20261020
+      },
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "momentum_h0672_r168",
+        "family": "momentum",
+        "grid_id": "time_scale",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "momentum",
+        "strategy_id": "momentum_h0672_r168"
+      },
+      "cash_nominal_annual": 0.03,
+      "companion_sharpe_days": 252,
+      "historical_data_already_examined": true,
+      "new_independent_OOS_claim": false,
+      "output_destination": "results/fixed_all22_momentum",
+      "periods": {
+        "development": [
+          "2022-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ],
+        "oos_partial_2026_jan_sep": [
+          "2026-01-01T00:00:00Z",
+          "2026-10-01T00:00:00Z"
+        ],
+        "validation": [
+          "2024-01-01T00:00:00Z",
+          "2026-01-01T00:00:00Z"
+        ]
+      },
+      "primary": {
+        "cost_bps": 20,
+        "execution_lag_h": 1
+      },
+      "risk_hourly_drawdown_limit": 0.4,
+      "scenario_period_keys": 21,
+      "scenarios": [
+        {
+          "cost_bps": 0,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 5,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 10,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 15,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 20,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 40,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 20,
+          "execution_lag_h": 2
+        }
+      ],
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SHIBUSDT",
+        "BNBUSDT",
+        "SOLUSDT",
+        "XRPUSDT",
+        "DOTUSDT",
+        "SANDUSDT",
+        "LUNAUSDT",
+        "AVAXUSDT",
+        "DOGEUSDT",
+        "ADAUSDT",
+        "FTMUSDT",
+        "TRXUSDT",
+        "MATICUSDT",
+        "MANAUSDT",
+        "FILUSDT",
+        "GALAUSDT",
+        "LINKUSDT",
+        "AXSUSDT",
+        "LTCUSDT",
+        "VETUSDT"
+      ]
+    },
+    "completion": {
+      "status": "COMPLETE_WITH_DISCLOSED_CHRONOLOGY_EXCEPTION",
+      "finished_utc": "2026-10-20T18:48:50.735818+00:00",
+      "source_commit": "573b8f646b6b833019f8e3319c427642d39fadff",
+      "case": "momentum_h0672_r168",
+      "fixed_coin_count": 22,
+      "scenario_period_keys": 21,
+      "evaluated": 21,
+      "primary_periods": 3,
+      "source_files_preserved": 290,
+      "frozen_nine_primary_reproduction": {
+        "absolute_tolerance": 1e-12,
+        "maximum_absolute_error": 2.2737367544323206e-13,
+        "numeric_cells_checked": 2727,
+        "numeric_columns": 101,
+        "paired_missing_values": true,
+        "relative_tolerance": 1e-10,
+        "status": "PASS",
+        "strategy_period_rows": 27
+      },
+      "strict_pre_panel_access_compliance": false,
+      "new_all22_code_sealed_before_its_first_actual_strategy_execution": true,
+      "chronology_disclosure": "Prior existing verification tests decoded actual source/saved data and recalculated old-nine cash statistics; both corrected receipts retained. No all22 actual-price signals or performance before code seal.",
+      "execution_freeze_sha256": "20b3334115aaba341efdd4c39d6694a0f244886aa79319d4a6d9e6870eb1aa94",
+      "accounting_audit_sha256": "422f54f173cf1498ba328eed01d2045c0714e4f06f52020f270be97d2d77f030",
+      "statistics_audit_sha256": "9db07300701c8b35941ab0647c743e751f932fa40851e994e0df6da68a69daf9",
+      "classification": {
+        "all3_nominal_net_positive": false,
+        "combined_conditional_pass": false,
+        "deployment_authorized": false,
+        "economic_all3_above_cash": false,
+        "independent_unseen_confirmation": false,
+        "risk_all3_hourly_dd_le_40pct": true,
+        "statistical_all3_holm3_cash_mean": false,
+        "strict_pre_panel_freeze_compliance": false
+      },
+      "new_price_acquisition": false,
+      "parameter_reselection": false,
+      "github_push": false,
+      "live_orders": false,
+      "publication_reports_changed": false
+    },
+    "strategy_id": "momentum_h0672_r168",
+    "strict_pre_panel_access_compliance": false,
+    "all_period_cash_positive": false,
+    "risk_all3_hourly_dd_le_40pct": true,
+    "statistical_all3_holm3_cash_mean": false,
+    "source_primary_sha256": "2045a2b00a64d72db719e920f2874d4786913cf66be71bb340ee8a06edcc6327",
+    "source_inference_sha256": "5bd6e4629f86f67509fd681e9863e071e6b2a66c93916bdea79fb29cdfc03239",
+    "source_scenarios_sha256": "9c7eab625a2345b9fc8ec4d176b18103559347f213435f2da64e5d6976bd4099",
+    "output_destination_is_publication_projection": true,
+    "original_configuration_sha256": "ab130b7e113d4b623cb253ba8e80b163bcbaafb0f5c7dcb98cf045230776c59e"
+  },
+  {
+    "id": "reversal",
+    "study": "reversal",
+    "study_label": "Reversal",
+    "configuration": {
+      "analysis_inputs": [
+        "data/prices.parquet",
+        "data/quote_volume.parquet",
+        "data/tradable.parquet",
+        "data/observed.parquet",
+        "data/hold_allowed.parquet",
+        "data/mandatory_exit.parquet",
+        "data/decision_allowed.parquet"
+      ],
+      "annual_days": 365,
+      "bootstrap": {
+        "block_days": 28,
+        "draws": 10000,
+        "seed_reset_each_period": 20261020
+      },
+      "case": {
+        "buffer_l1": 0.0,
+        "experiment_id": "reversal_h0672_r168",
+        "family": "reversal",
+        "grid_id": "time_scale",
+        "lookback_h": 672,
+        "phase_hours": 0,
+        "rebalance_h": 168,
+        "report_family": "reversal",
+        "strategy_id": "reversal_h0672_r168"
+      },
+      "cash_nominal_annual": 0.03,
+      "companion_sharpe_days": 252,
+      "cross_strategy_comparison": false,
+      "cross_strategy_correlation": false,
+      "historical_windows_previously_examined": true,
+      "holm_family_size": 3,
+      "hourly_drawdown_limit": 0.4,
+      "mean_hac_correction": "n/(n-1)",
+      "mean_hac_lags": 27,
+      "output_destination": "results/fixed_all22_reversal",
+      "periods": {
+        "development": [
+          "2022-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ],
+        "oos_partial_2026_jan_sep": [
+          "2026-01-01T00:00:00Z",
+          "2026-10-01T00:00:00Z"
+        ],
+        "validation": [
+          "2024-01-01T00:00:00Z",
+          "2026-01-01T00:00:00Z"
+        ]
+      },
+      "pooled_tests": false,
+      "primary": {
+        "cost_bps": 20,
+        "execution_lag_h": 1
+      },
+      "scenario_period_keys": 21,
+      "scenarios": [
+        {
+          "cost_bps": 0,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 5,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 10,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 15,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 20,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 40,
+          "execution_lag_h": 1
+        },
+        {
+          "cost_bps": 20,
+          "execution_lag_h": 2
+        }
+      ],
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SHIBUSDT",
+        "BNBUSDT",
+        "SOLUSDT",
+        "XRPUSDT",
+        "DOTUSDT",
+        "SANDUSDT",
+        "LUNAUSDT",
+        "AVAXUSDT",
+        "DOGEUSDT",
+        "ADAUSDT",
+        "FTMUSDT",
+        "TRXUSDT",
+        "MATICUSDT",
+        "MANAUSDT",
+        "FILUSDT",
+        "GALAUSDT",
+        "LINKUSDT",
+        "AXSUSDT",
+        "LTCUSDT",
+        "VETUSDT"
+      ]
+    },
+    "completion": {
+      "all108completed_momentum_files_unchanged_opaque_hashing_only": true,
+      "all290originaltrackedfiles_unchanged": true,
+      "classification": {
+        "all3_nominal_net_positive": false,
+        "combined_conditional_pass": false,
+        "deployment_authorized": false,
+        "economic_all3_above_cash": false,
+        "independent_unseen_confirmation": false,
+        "risk_all3_hourly_dd_le_40pct": false,
+        "statistical_all3_holm3_cash_mean": false,
+        "strict_pre_panel_access_compliance": true
+      },
+      "complete_calendar_days": [
+        730,
+        731,
+        273
+      ],
+      "completed_utc": "2026-10-20T19:12:19.492482+00:00",
+      "cross_strategy_comparison_or_correlation": false,
+      "evaluated_scenarios": 21,
+      "evaluation_output_pins_verified": 37,
+      "evidence_sha256": {
+        "README.md": "1e46aeeffae37f7b6c52b25c85460bd8f61e1f532f45d3698b2a5c091c0b7f14",
+        "audit/final_statistical_review.json": "c6c91459d3d5caf00e7dc829f79d1076c0ac21dc9aae678767e641416dcdc73f",
+        "audit/independent_accounting_reconciliation.json": "8d134a9c2e41631b74835476485942ccf12d93202f88817fc8c6db105d44febf",
+        "audit/presentation_review.json": "bf85249299592365eaad3bae949927ea56a40767c630cebd515f3aa2e11725df",
+        "evaluation_receipt.json": "d65778b8beae4e069c2fa597db1b06e0737151d65ee25b1da85b4c7f801c5737",
+        "experiment_freeze.json": "77207a042ec73087a51989d748c297c4df50f4cfb27583a73cf07751bd2dcc54"
+      },
+      "execution_freeze_sha256": "77207a042ec73087a51989d748c297c4df50f4cfb27583a73cf07751bd2dcc54",
+      "fixed_coin_count": 22,
+      "github_changed_or_pushed": false,
+      "independent_accounting_checks": 1245,
+      "independent_bootstrap_draws_verified": 30000,
+      "independent_numeric_cells": 6807044,
+      "live_orders_or_scheduled_monitoring": false,
+      "new_price_downloads": false,
+      "new_unseen_confirmation": false,
+      "original_nine_rerun": false,
+      "other_strategy_performance_inputs": false,
+      "pooled_other_study_tests": false,
+      "presentation_checks": 146,
+      "primary_cost_bps": 20,
+      "primary_execution_lag_h": 1,
+      "primary_period_count": 3,
+      "public_three_reports_changed": false,
+      "scenario_period_keys": 21,
+      "sealed_code_metadata_pins_verified": 19,
+      "status": "COMPLETE_AUDITED_STANDALONE_REVERSAL",
+      "strategy": "reversal_h0672_r168",
+      "strict_preaccess_chronology": {
+        "before_first_source_decode_event_utc": "2026-10-20T19:08:22.131262+00:00",
+        "evaluation_complete_utc": "2026-10-20T19:08:30.818771+00:00",
+        "freeze_event_utc": "2026-10-20T19:08:16.129615+00:00"
+      },
+      "synthetic_tests_passed": 72
+    },
+    "strategy_id": "reversal_h0672_r168",
+    "strict_pre_panel_access_compliance": true,
+    "all_period_cash_positive": false,
+    "risk_all3_hourly_dd_le_40pct": false,
+    "statistical_all3_holm3_cash_mean": false,
+    "source_primary_sha256": "958f91b6ab64bb22c63a7f49774f37b4de8f6ec66246de2fd6b93032e98d81e3",
+    "source_inference_sha256": "2bc1fa3272b703d2d12c01492cffa4d50410201ccc2486b93851a59f8a81cccf",
+    "source_scenarios_sha256": "8f9c8e3921cf6fdeabdf5ab84f5e1eb01d233d51ccfc5d6e5492f32e65c6500f",
+    "output_destination_is_publication_projection": true,
+    "original_configuration_sha256": "ccc12e8dea1bebfea1c52e65d65889f00e32b13601592f0af25bed5784695bab"
+  }
+]

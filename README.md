@@ -5,7 +5,7 @@ costs and the reliability of strategy selection. This repository contains the
 current development, validation and OOS results, their implementation, and
 **three final reports**.
 
-## Main finding: the selections did not generalize
+## Main finding: performance did not persist across periods
 
 **All four development-selected strategies (A01–A04) lost money in 2024–2025
 validation; all five validation-selected strategies (B01, B03–B06) lost money
@@ -22,13 +22,42 @@ its validation loss. B06 lost compounded wealth in 2026 despite a slightly
 positive raw arithmetic-return Sharpe. No new OOS winner is selected, and none
 of these results establishes a deployment-ready strategy.
 
+### Separate fixed all-22 studies also lacked persistence
+
+To remove a new eight-coin basket and parameter selection, two **separate fixed
+studies** each used all 22 coins, one 28-day lookback and weekly Monday
+rebalancing. Momentum and reversal were approved and evaluated separately;
+neither is a replacement selected from their outcomes.
+
+| Fixed study | 2022–2023 net return | 2024–2025 net return | Jan–Sep 2026 net return |
+| --- | ---: | ---: | ---: |
+| Momentum | +5.61% | −17.43% | −20.94% |
+| Reversal | −33.59% | −15.66% | +9.91% |
+
+At the fixed **20 bps** primary cost, neither study had positive cash-relative
+net return in all three periods. Momentum's positive development return was
+still below the 3% nominal cash benchmark. Reversal's profitable partial 2026
+had cash-excess HAC t **0.705**, with its own Holm3-adjusted **p = 0.6584**; it
+also lost in both earlier periods and breached the development 40% drawdown
+guardrail. No rule is promoted as a winner. Each study retains its own three
+period tests; no pooled correction, correlation or combined portfolio is used.
+
+These studies use already-examined historical dates, not new independent OOS
+confirmation. **Momentum has a disclosed chronology exception:** its seal
+preceded simulation but not all input access, because existing tests loaded
+market panels/saved-result calculations beforehand. Reversal met its new-study
+pre-input-decode seal. Both completed numerical audits; a numerical audit pass
+is not a performance or procedural pass.
+
 ## Read the results
 
 1. **Development and robustness — 2022–2023:** [PDF](final_reports/01_development/01_development_and_robustness.pdf) · [offline HTML](final_reports/01_development/01_development_and_robustness.html).
 2. **Validation and frozen selection — 2024–2025:** [PDF](final_reports/02_validation/02_validation_and_frozen_selection.pdf) · [offline HTML](final_reports/02_validation/02_validation_and_frozen_selection.html).
 3. **OOS evaluation and conclusions — January–September 2026:** [PDF](final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf) · [offline HTML](final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.html).
 
-The nine frozen strategies are compared over all three periods. Reports include
+The nine frozen strategies are compared over all three periods. Each report also
+contains a clearly separate fixed all-22 study section, retaining all three
+periods and highlighting its own period-specific results. Reports include
 returns, Sharpe, drawdowns, full-L1 turnover, per-coin contribution intervals,
 and BTC-only and joint eight-coin alpha/betas. All nine frozen strategies,
 including validation and OOS failures, remain in the period results; broader
@@ -45,6 +74,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.lock.txt
 python scripts/verify_project.py
+python scripts/verify_fixed_all22.py
 python -m pytest tests -q
 python scripts/run_research.py
 python scripts/reproduce_diagnostics.py
@@ -86,7 +116,9 @@ drawdowns and cash-adjusted alpha. See the
 Source: **Binance Vision, Binance spot USDT, one-hour bars**. The complete
 normalized **22-instrument search dataset** is included, with **43,824 UTC
 endpoints per panel**, from 1 October 2021 at 01:00 UTC to 1 October 2026 at
-00:00 UTC. Each strategy uses eight coins; the frozen nine together use 21.
+00:00 UTC. Each original frozen strategy uses eight coins; those nine together use 21.
+The separate fixed momentum and reversal studies use all 22 eligible slots,
+including SAND, and recompute ranks across that full cross-section.
 The initial 30-name historical liquidity ranking and explicit 22/21 membership
 flags are included in the [universe inventory](data/universe.csv).
 
@@ -103,7 +135,7 @@ campaign; supporting screening and cohort tables are saved research results.
 See [methods and interpretation](docs/METHODS.md) for costs, sample boundaries,
 statistical intervals, data-use limitations and reproduction scope.
 
-## Sharpe conventions and proposed benchmark
+## Sharpe conventions and completed fixed studies
 
 The reports show **√365 and course-convention √252 Sharpe side by side**, for
 both raw and cash-excess returns. They use the same complete UTC daily series,
@@ -111,12 +143,15 @@ including weekends: `S252 = S365 × sqrt(252/365)`. A01's development raw Sharpe
 is therefore **1.84 / 1.53**. This is a display-scale comparison, not a change
 to returns, cash accrual, CAGR, alpha, inference or the frozen acceptance tests.
 
-The [fixed all-22-coin momentum protocol](docs/FIXED_ALL22_PROTOCOL.md) proposes
-one 28-day cross-sectional rank-demean momentum rule, rebalanced weekly on
-Mondays. **It is a draft awaiting approval to run, not an executed strategy or
-a fourth performance report.** It removes a new basket/parameter search, but
-the already-inspected historical periods cannot become fresh tests of this new
-proposal. The current runner remains limited to the nine frozen strategies.
+The [fixed momentum protocol](docs/FIXED_ALL22_PROTOCOL.md) and
+[separate fixed reversal protocol](docs/FIXED_ALL22_REVERSAL_PROTOCOL.md) record
+the completed 28-day weekly studies and their limitations. Saved results,
+scenario tables, daily paths and uncertainty are under
+[`results/fixed_all22_momentum`](results/fixed_all22_momentum) and
+[`results/fixed_all22_reversal`](results/fixed_all22_reversal). Their results
+are integrated into the existing three reports, **not a fourth report**. The
+supplied execution runner remains limited to the original nine strategies;
+this publication adds saved fixed-study evidence without rerunning any strategy.
 
 ## Attribution
 

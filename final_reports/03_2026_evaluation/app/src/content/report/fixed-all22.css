@@ -1,0 +1,36 @@
+.fixed-all22-studies { min-width:0; width:100%; }
+.fixed-all22-page { display:grid; gap:18px; margin-block:36px; min-width:0; }
+.fixed-all22-page > * { min-width:0; }
+.fixed-all22-evidence { max-width:100%; overflow-x:auto; }
+.fixed-all22-studies .table { width:100%; font-size:12px; font-variant-numeric:tabular-nums; }
+.fixed-all22-studies .table th, .fixed-all22-studies .table td { vertical-align:top; }
+.fixed-all22-studies .table th { text-align:left; }
+.fixed-all22-studies .table th.numeric, .fixed-all22-studies .table td.numeric { text-align:right; }
+.fixed-all22-studies .table th button { justify-content:inherit; text-align:inherit; white-space:normal; line-height:1.3; }
+.fixed-all22-pair { display:flex; flex-direction:column; gap:3px; align-items:flex-end; white-space:nowrap; }
+.fixed-all22-pair > span { display:flex; gap:6px; align-items:baseline; }
+.fixed-all22-pair small { color:var(--secondary); font-size:.76em; font-weight:500; }
+.fixed-all22-dates { display:block; white-space:nowrap; font-size:.86em; line-height:1.4; }
+@media print {
+ .fixed-all22-studies { display:block; width:100%; }
+ .fixed-all22-studies .fixed-all22-page { display:block; break-before:page; break-after:page; margin:0; padding:0; }
+ .fixed-all22-studies .fixed-all22-page > * { margin-top:0; margin-bottom:3mm; }
+ .fixed-all22-studies .rich-narrative-content, .fixed-all22-studies .rich-narrative-content p, .fixed-all22-studies .rich-narrative-content li { font-size:8.4pt !important; line-height:1.29 !important; }
+ .fixed-all22-studies .rich-narrative-content h2 { font-size:13pt !important; line-height:1.15 !important; margin:0 0 2mm; }
+ .fixed-all22-studies .rich-narrative-content h3 { font-size:10.3pt !important; line-height:1.2 !important; margin:2mm 0; }
+ .fixed-all22-studies .table, .fixed-all22-studies .table th, .fixed-all22-studies .table td { font-size:7.1pt !important; line-height:1.23 !important; }
+ .fixed-all22-studies .table th, .fixed-all22-studies .table td { padding:1.3mm 1.1mm !important; }
+ .fixed-all22-studies .table th button { font-size:7.1pt !important; }
+ .fixed-all22-studies .table-wrap, .fixed-all22-evidence { overflow:visible; }
+ .fixed-all22-studies .table { min-width:0; table-layout:auto; }
+ .fixed-all22-studies .table tr, .fixed-all22-studies [data-component-kind="table"] { break-inside:avoid; }
+ .fixed-all22-pair { gap:1px; }
+ .fixed-all22-pair small { font-size:6pt; }
+ .fixed-all22-dates { font-size:6.5pt; }
+}
+
+/* Keep the complete source note with its 14 sensitivity rows, without smaller type. */
+@media print {
+ .fixed-all22-studies #fixed-all22-sensitivity-page .table th,
+ .fixed-all22-studies #fixed-all22-sensitivity-page .table td {padding:0.8mm 1.1mm !important;}
+}

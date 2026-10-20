@@ -1,0 +1,401 @@
+[
+  {
+    "intervals95": {
+      "cash_excess_sharpe_252": {
+        "high": 0.29169756648798606,
+        "invalid_draws": 0,
+        "low": -2.038745550623682,
+        "method": "positive_constant_transform_of_365_interval",
+        "status": "available"
+      },
+      "cash_excess_sharpe_365": {
+        "high": 0.3510580756101619,
+        "invalid_draws": 0,
+        "low": -2.4536306499842104,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      },
+      "daily_mean_cash_excess": {
+        "high": 0.00022760242156611224,
+        "invalid_draws": 0,
+        "low": -0.0013633234447084728,
+        "method": "studentized95_HAC27_circular_block_bootstrap_t_quantile_inversion",
+        "status": "available"
+      },
+      "raw_sharpe_252": {
+        "high": 0.4051726214583801,
+        "invalid_draws": 0,
+        "low": -1.908037766540109,
+        "method": "positive_constant_transform_of_365_interval",
+        "status": "available"
+      },
+      "raw_sharpe_365": {
+        "high": 0.48762532540689474,
+        "invalid_draws": 0,
+        "low": -2.2963238074893915,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      },
+      "relative_annualized_growth": {
+        "high": 0.05357203705525649,
+        "invalid_draws": 0,
+        "low": -0.3977565302258903,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      },
+      "wealth_relative_excess_return": {
+        "high": 0.11001403741700855,
+        "invalid_draws": 0,
+        "low": -0.6373028030104496,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      }
+    },
+    "mean_cash_excess": {
+      "annual_arithmetic_mean": -0.21252512218633418,
+      "annual_hac27_se": 0.14483748705445987,
+      "bootstrap_studentized_invalid_draws": 0,
+      "covariance": "calendar_Bartlett_HAC27_n_over_n_minus_1",
+      "daily_mean": -0.0005822606087296827,
+      "hac27_se": 0.0003968150330259174,
+      "hac27_t": -1.4673350560578513,
+      "status": "estimable",
+      "studentized_ci95_high": 0.00022760242156611224,
+      "studentized_ci95_low": -0.0013633234447084728,
+      "studentized_ci95_status": "available"
+    },
+    "methods": {
+      "annual_cash_nominal": 0.03,
+      "bootstrap_any_invalid_draws": 0,
+      "bootstrap_block_days": 28,
+      "bootstrap_generator": "NumPy_Generator_PCG64_reset_each_period",
+      "bootstrap_invalid_draw_policy": "no_dropping_any_invalid_makes_affected_interval_or_test_unavailable",
+      "bootstrap_replications": 10000,
+      "bootstrap_seed": 20261020,
+      "cash_day_count": "ACT/365F",
+      "full_ordered_UTC_calendar_including_weekends": true,
+      "indices_sha256_int64_little_endian": "36afb1dc59c3263a9bae43c8f16752eae734b32a4397dd7621e92139444ea312",
+      "interval_scope": "marginal_conditional_not_earlier_research_search_adjusted",
+      "mean_covariance": "calendar_Bartlett_HAC27_n_over_n_minus_1",
+      "no_resimulated_trades_or_block_boundary_fees": true,
+      "other_strategy_inputs_or_tests": false,
+      "primary_family": "three_reversal_period_positive_cash_mean_tests_Holm3_only",
+      "same_indices_all_statistics": true,
+      "sharpe252_transform_of_same365_series_and_endpoints": 0.8309097176613772,
+      "study": "standalone_fixed_all22_weekly_reversal"
+    },
+    "performance": {
+      "cash_compounded_return": 0.061833928464941804,
+      "cash_daily_return": 8.219178082191781e-05,
+      "cash_excess_sharpe_252": -0.8398345059098747,
+      "cash_excess_sharpe_365": -1.0107409843197124,
+      "cash_interest_credited_to_strategy": false,
+      "cash_nominal_annual": 0.03,
+      "first_utc_day": "2022-01-01",
+      "last_utc_day": "2023-12-31",
+      "n_calendar_days": 730,
+      "raw_annual_daily_volatility": 0.21026665138089354,
+      "raw_cagr": -0.18505098883779356,
+      "raw_net_return": -0.3358581092057419,
+      "raw_sharpe_252": -0.7212836498129377,
+      "raw_sharpe_365": -0.8680650069215875,
+      "relative_annualized_growth": -0.2091353970633363,
+      "sharpe_status": "defined",
+      "wealth_relative_excess_return": -0.37453317982183326
+    },
+    "period": "development",
+    "primary_test": {
+      "alternative": "mean_arithmetic_daily_cash_excess_greater_than_zero",
+      "available": true,
+      "bootstrap_null_invalid_draws": 0,
+      "centered_bootstrap_t_one_sided_p": 0.9233076692330767,
+      "holm3_adjusted_p": 1.0,
+      "holm3_input_p": 0.9233076692330767,
+      "holm3_status": "complete_reversal_family3",
+      "null_centered_at_observed_cash_excess_mean": true,
+      "observed_hac27_t": -1.4673350560578513,
+      "p_for_holm3": 0.9233076692330767,
+      "p_formula": "(1+count(T_star>=T_observed))/(draws+1)",
+      "positive_t": false,
+      "status": "estimable",
+      "unadjusted_one_sided_p": 0.9233076692330767
+    },
+    "raw_mean_descriptive": {
+      "annual_arithmetic_mean": -0.18252512218633438,
+      "annual_hac27_se": 0.14483748705445987,
+      "covariance": "calendar_Bartlett_HAC27_n_over_n_minus_1",
+      "daily_mean": -0.0005000688279077655,
+      "hac27_se": 0.0003968150330259174,
+      "hac27_t": -1.2602063588531036,
+      "scope": "descriptive_not_an_additional_primary_hypothesis",
+      "status": "estimable"
+    },
+    "statistical_period_pass": false
+  },
+  {
+    "intervals95": {
+      "cash_excess_sharpe_252": {
+        "high": 0.4542661052866168,
+        "invalid_draws": 0,
+        "low": -1.3046614038170652,
+        "method": "positive_constant_transform_of_365_interval",
+        "status": "available"
+      },
+      "cash_excess_sharpe_365": {
+        "high": 0.5467093423400604,
+        "invalid_draws": 0,
+        "low": -1.5701602425460586,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      },
+      "daily_mean_cash_excess": {
+        "high": 0.00031326764005229496,
+        "invalid_draws": 0,
+        "low": -0.0008252348296308371,
+        "method": "studentized95_HAC27_circular_block_bootstrap_t_quantile_inversion",
+        "status": "available"
+      },
+      "raw_sharpe_252": {
+        "high": 0.5714558826941987,
+        "invalid_draws": 0,
+        "low": -1.17395109380384,
+        "method": "positive_constant_transform_of_365_interval",
+        "status": "available"
+      },
+      "raw_sharpe_365": {
+        "high": 0.6877472612819839,
+        "invalid_draws": 0,
+        "low": -1.4128503600944324,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      },
+      "relative_annualized_growth": {
+        "high": 0.09735174857608174,
+        "invalid_draws": 0,
+        "low": -0.27474769152986417,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      },
+      "wealth_relative_excess_return": {
+        "high": 0.20448738769489463,
+        "invalid_draws": 0,
+        "low": -0.4744718087799446,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      }
+    },
+    "mean_cash_excess": {
+      "annual_arithmetic_mean": -0.09466657555352986,
+      "annual_hac27_se": 0.10820351579551517,
+      "bootstrap_studentized_invalid_draws": 0,
+      "covariance": "calendar_Bartlett_HAC27_n_over_n_minus_1",
+      "daily_mean": -0.00025936048096857496,
+      "hac27_se": 0.0002964479884808635,
+      "hac27_t": -0.8748937117018669,
+      "status": "estimable",
+      "studentized_ci95_high": 0.00031326764005229496,
+      "studentized_ci95_low": -0.0008252348296308371,
+      "studentized_ci95_status": "available"
+    },
+    "methods": {
+      "annual_cash_nominal": 0.03,
+      "bootstrap_any_invalid_draws": 0,
+      "bootstrap_block_days": 28,
+      "bootstrap_generator": "NumPy_Generator_PCG64_reset_each_period",
+      "bootstrap_invalid_draw_policy": "no_dropping_any_invalid_makes_affected_interval_or_test_unavailable",
+      "bootstrap_replications": 10000,
+      "bootstrap_seed": 20261020,
+      "cash_day_count": "ACT/365F",
+      "full_ordered_UTC_calendar_including_weekends": true,
+      "indices_sha256_int64_little_endian": "d7e918a67e36c13aeed352cdd1471d5ce85fbfdaaf5e4c395603ef703a8324c3",
+      "interval_scope": "marginal_conditional_not_earlier_research_search_adjusted",
+      "mean_covariance": "calendar_Bartlett_HAC27_n_over_n_minus_1",
+      "no_resimulated_trades_or_block_boundary_fees": true,
+      "other_strategy_inputs_or_tests": false,
+      "primary_family": "three_reversal_period_positive_cash_mean_tests_Holm3_only",
+      "same_indices_all_statistics": true,
+      "sharpe252_transform_of_same365_series_and_endpoints": 0.8309097176613772,
+      "study": "standalone_fixed_all22_weekly_reversal"
+    },
+    "performance": {
+      "cash_compounded_return": 0.06192120248645947,
+      "cash_daily_return": 8.219178082191781e-05,
+      "cash_excess_sharpe_252": -0.38876821840291753,
+      "cash_excess_sharpe_365": -0.4678826232735832,
+      "cash_interest_credited_to_strategy": false,
+      "cash_nominal_annual": 0.03,
+      "first_utc_day": "2024-01-01",
+      "last_utc_day": "2025-12-31",
+      "n_calendar_days": 731,
+      "raw_annual_daily_volatility": 0.2023297529008164,
+      "raw_cagr": -0.08152253488455156,
+      "raw_net_return": -0.15659566579172934,
+      "raw_sharpe_252": -0.2655669038534913,
+      "raw_sharpe_365": -0.3196098182615292,
+      "relative_annualized_growth": -0.10866654747038833,
+      "sharpe_status": "defined",
+      "wealth_relative_excess_return": -0.20577503092182126
+    },
+    "period": "validation",
+    "primary_test": {
+      "alternative": "mean_arithmetic_daily_cash_excess_greater_than_zero",
+      "available": true,
+      "bootstrap_null_invalid_draws": 0,
+      "centered_bootstrap_t_one_sided_p": 0.8151184881511849,
+      "holm3_adjusted_p": 1.0,
+      "holm3_input_p": 0.8151184881511849,
+      "holm3_status": "complete_reversal_family3",
+      "null_centered_at_observed_cash_excess_mean": true,
+      "observed_hac27_t": -0.8748937117018669,
+      "p_for_holm3": 0.8151184881511849,
+      "p_formula": "(1+count(T_star>=T_observed))/(draws+1)",
+      "positive_t": false,
+      "status": "estimable",
+      "unadjusted_one_sided_p": 0.8151184881511849
+    },
+    "raw_mean_descriptive": {
+      "annual_arithmetic_mean": -0.06466657555353005,
+      "annual_hac27_se": 0.1082035157955152,
+      "covariance": "calendar_Bartlett_HAC27_n_over_n_minus_1",
+      "daily_mean": -0.00017716870014665765,
+      "hac27_se": 0.00029644798848086354,
+      "hac27_t": -0.5976383953709786,
+      "scope": "descriptive_not_an_additional_primary_hypothesis",
+      "status": "estimable"
+    },
+    "statistical_period_pass": false
+  },
+  {
+    "intervals95": {
+      "cash_excess_sharpe_252": {
+        "high": 1.9682223558353216,
+        "invalid_draws": 0,
+        "low": -1.056976484259994,
+        "method": "positive_constant_transform_of_365_interval",
+        "status": "available"
+      },
+      "cash_excess_sharpe_365": {
+        "high": 2.368755971918283,
+        "invalid_draws": 0,
+        "low": -1.2720713957165999,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      },
+      "daily_mean_cash_excess": {
+        "high": 0.0014050319034726688,
+        "invalid_draws": 0,
+        "low": -0.0005103147199021516,
+        "method": "studentized95_HAC27_circular_block_bootstrap_t_quantile_inversion",
+        "status": "available"
+      },
+      "raw_sharpe_252": {
+        "high": 2.100690317527216,
+        "invalid_draws": 0,
+        "low": -0.8879029055111065,
+        "method": "positive_constant_transform_of_365_interval",
+        "status": "available"
+      },
+      "raw_sharpe_365": {
+        "high": 2.5281811884926295,
+        "invalid_draws": 0,
+        "low": -1.0685913121947093,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      },
+      "relative_annualized_growth": {
+        "high": 0.5407094755315571,
+        "invalid_draws": 0,
+        "low": -0.186355499242482,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      },
+      "wealth_relative_excess_return": {
+        "high": 0.3816716199703567,
+        "invalid_draws": 0,
+        "low": -0.14294230524592694,
+        "method": "marginal_percentile95_numpy_quantile_linear",
+        "status": "available"
+      }
+    },
+    "mean_cash_excess": {
+      "annual_arithmetic_mean": 0.11167731630829791,
+      "annual_hac27_se": 0.15845505643795957,
+      "bootstrap_studentized_invalid_draws": 0,
+      "covariance": "calendar_Bartlett_HAC27_n_over_n_minus_1",
+      "daily_mean": 0.0003059652501597203,
+      "hac27_se": 0.00043412344229577966,
+      "hac27_t": 0.704788593174515,
+      "status": "estimable",
+      "studentized_ci95_high": 0.0014050319034726688,
+      "studentized_ci95_low": -0.0005103147199021516,
+      "studentized_ci95_status": "available"
+    },
+    "methods": {
+      "annual_cash_nominal": 0.03,
+      "bootstrap_any_invalid_draws": 0,
+      "bootstrap_block_days": 28,
+      "bootstrap_generator": "NumPy_Generator_PCG64_reset_each_period",
+      "bootstrap_invalid_draw_policy": "no_dropping_any_invalid_makes_affected_interval_or_test_unavailable",
+      "bootstrap_replications": 10000,
+      "bootstrap_seed": 20261020,
+      "cash_day_count": "ACT/365F",
+      "full_ordered_UTC_calendar_including_weekends": true,
+      "indices_sha256_int64_little_endian": "b5a443544b4910c2a93c9be9bf3e0fd874cc028865efa5801fd6c59ec7a96584",
+      "interval_scope": "marginal_conditional_not_earlier_research_search_adjusted",
+      "mean_covariance": "calendar_Bartlett_HAC27_n_over_n_minus_1",
+      "no_resimulated_trades_or_block_boundary_fees": true,
+      "other_strategy_inputs_or_tests": false,
+      "primary_family": "three_reversal_period_positive_cash_mean_tests_Holm3_only",
+      "same_indices_all_statistics": true,
+      "sharpe252_transform_of_same365_series_and_endpoints": 0.8309097176613772,
+      "study": "standalone_fixed_all22_weekly_reversal"
+    },
+    "performance": {
+      "cash_compounded_return": 0.022691046567465695,
+      "cash_daily_return": 8.219178082191781e-05,
+      "cash_excess_sharpe_252": 0.5290270421948019,
+      "cash_excess_sharpe_365": 0.6366841438366685,
+      "cash_interest_credited_to_strategy": false,
+      "cash_nominal_annual": 0.03,
+      "first_utc_day": "2026-01-01",
+      "last_utc_day": "2026-09-30",
+      "n_calendar_days": 273,
+      "raw_annual_daily_volatility": 0.1754045823025035,
+      "raw_cagr": 0.13471389502458297,
+      "raw_net_return": 0.09913743496582242,
+      "raw_sharpe_252": 0.6711401569300348,
+      "raw_sharpe_365": 0.8077173038955193,
+      "relative_annualized_growth": 0.10117938882523962,
+      "sharpe_status": "defined",
+      "wealth_relative_excess_return": 0.07475022750510962
+    },
+    "period": "oos_partial_2026_jan_sep",
+    "primary_test": {
+      "alternative": "mean_arithmetic_daily_cash_excess_greater_than_zero",
+      "available": true,
+      "bootstrap_null_invalid_draws": 0,
+      "centered_bootstrap_t_one_sided_p": 0.21947805219478053,
+      "holm3_adjusted_p": 0.6584341565843416,
+      "holm3_input_p": 0.21947805219478053,
+      "holm3_status": "complete_reversal_family3",
+      "null_centered_at_observed_cash_excess_mean": true,
+      "observed_hac27_t": 0.704788593174515,
+      "p_for_holm3": 0.21947805219478053,
+      "p_formula": "(1+count(T_star>=T_observed))/(draws+1)",
+      "positive_t": true,
+      "status": "estimable",
+      "unadjusted_one_sided_p": 0.21947805219478053
+    },
+    "raw_mean_descriptive": {
+      "annual_arithmetic_mean": 0.14167731630829786,
+      "annual_hac27_se": 0.15845505643795957,
+      "covariance": "calendar_Bartlett_HAC27_n_over_n_minus_1",
+      "daily_mean": 0.00038815703098163797,
+      "hac27_se": 0.00043412344229577966,
+      "hac27_t": 0.8941167261757231,
+      "scope": "descriptive_not_an_additional_primary_hypothesis",
+      "status": "estimable"
+    },
+    "statistical_period_pass": false
+  }
+]

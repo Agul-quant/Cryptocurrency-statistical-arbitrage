@@ -90,3 +90,105 @@ basket-selection campaign, select a new strategy, or fetch raw exchange archives
 `reproduce_diagnostics.py` uses the compact daily statistical inputs to
 reconcile the factor models and coin-attribution intervals. Saved broader cohort tables
 provide the report's screening context and are not independent replications.
+
+
+## Cash benchmark comparison
+
+### Benchmark and unchanged trading record
+
+The additional comparison uses **3% nominal annual cash**, compounded daily
+with **ACT/365F**: each calendar day's simple cash return is `c = 0.03 / 365`.
+It is not a 3% effective annual rate. Compounded cash growth is approximately
+**3.0453% over 365 days**, **6.1834% over 730 development days**,
+**6.1921% over 731 validation days**, and **2.2691% over 273 OOS days**.
+Leap-year validation still divides the nominal rate by 365, not 366.
+
+This is a hypothetical benchmark in **USDT-quoted units**. It is neither a
+historical deposit/Treasury/lending yield series nor a claim of an available
+risk-free USDT product. Reading it as a USD cash comparison assumes USDT/USD
+parity; no currency conversion or depeg hedge is modeled. No interest is
+credited to unused strategy cash or short-sale proceeds. Positions, trades,
+transaction costs, borrow/funding omissions, per-coin P&L, raw results, frozen
+selections, risk limits and original acceptance tests are unchanged.
+
+### Arithmetic excess versus relative wealth
+
+For saved complete-UTC-day net strategy returns `r[p,t]`, arithmetic excess is
+`d[t] = r[p,t] - c`. **Cash-excess Sharpe** is
+`sqrt(365) * mean(d) / sample_std(d, ddof=1)`. The original report's raw Sharpe
+is retained explicitly as a zero-cash benchmark comparison, not silently
+replaced. Because `c` is constant, subtracting it changes the mean but not the
+standard deviation. Sharpe's historic formulation uses the average and standard
+deviation of a differential return, rather than a compounded return difference.
+[William F. Sharpe, The Sharpe Ratio](https://web.stanford.edu/~wfsharpe/art/sr/sr.htm).
+The square-root annualization remains the established reporting convention;
+serial dependence is addressed separately by HAC and block-bootstrap inference.
+
+Compounded strategy wealth is `W[p] = product(1 + r[p,t])` and cash wealth is
+`W[c] = (1 + c)^n`. **Wealth-relative excess return** is `W[p] / W[c] - 1`.
+It is not `W[p] - W[c]`, nor the compounded product of `1 + d[t]`.
+**Relative annualized growth** is `(W[p] / W[c])^(365/n) - 1`.
+
+Relative drawdown is measured from the daily wealth-ratio path
+`product((1 + r[p,t]) / (1 + c))`, including initial NAV 1. Its peak, trough,
+recovery and underwater durations use **daily endpoints**. It is therefore not
+interchangeable with the original report's hourly maximum drawdown. A matching
+raw daily drawdown is supplied for a like-clock comparison; original hourly
+risk metrics stay unchanged. These daily figures make no intraday-loss claim.
+
+### Cash-adjusted factor models
+
+The regression comparison subtracts the same daily cash return from **both**
+the dependent strategy return and every coin factor:
+
+```text
+r[p,t] - c = alpha_cash_daily + sum_i beta_i * (r[i,t] - c) + residual[t]
+alpha_cash_annual = alpha_raw_annual + 0.03 * (sum_i beta_i - 1)
+```
+
+Annual alpha is 365 times the daily arithmetic intercept, not CAGR. With a
+constant cash rate and unchanged sample, betas, their standard errors and their
+marginal intervals stay unchanged up to numerical precision. Alpha is not
+generally obtained by simply subtracting three percentage points. Its standard
+error and interval are recomputed using the **full coefficient covariance**,
+including alpha–beta and beta–beta terms; they are not an interval translation
+by a fixed annual-rate subtraction.
+
+Joint eight-coin and matched-sample BTC comparisons retain the original
+calendar-aware HAC(27) covariance with the finite-sample correction and HAC(7)
+sensitivity. Full-period BTC-only comparisons retain their HAC(7) convention
+without the correction. Factor-day exclusions and calendar gaps are identical
+to the corresponding raw models; no missing factor is filled and full-period
+performance is not shortened to the regression sample.
+
+### Uncertainty and separate testing families
+
+Mean arithmetic cash excess uses a calendar-aware Bartlett **HAC(27)**
+intercept test with `n/(n-1)` covariance correction and approximate normal
+95% intervals. The reported t-statistic uses that standard error; its p-value
+is asymptotic normal, not a finite-sample Student-t claim. The **27
+strategy-period means** form one new Holm-corrected family, separate from the
+original nine-strategy acceptance tests.
+
+The **243 cash-adjusted joint coefficients** form a separate Holm family,
+with Bonferroni simultaneous intervals also supplied. They are distinct from
+the 243 raw coefficients. Although beta point estimates and marginal intervals
+stay unchanged, Holm-adjusted p-values can change because the family contains
+new alpha p-values. BTC comparison intervals are marginal diagnostics, not an
+additional collection of selected profitability tests.
+
+Wealth-relative return, relative annualized growth and cash-excess Sharpe use
+**4,000 synchronized 28-day circular-block samples** per period, seed 20261016
+reset for each period. Strategy daily returns are sampled; the cash rate is not.
+Every draw retains the period's deterministic number of cash-accrual days and
+rebuilds its compounded wealth. No signals, positions or block-boundary trades
+are rerun. Intervals are marginal 95% percentiles. Invalid draws are counted
+per statistic; any invalid draw makes that statistic's interval unavailable,
+rather than silently discarding a draw.
+
+These are conditional comparisons on the same fixed historical observations,
+not additional independent tests, basket/configuration-search-adjusted evidence,
+or grounds to select another winner. The raw selection statistics and original
+acceptance outcomes remain intact. Run `python scripts/reproduce_cash_excess.py`
+to recompute and reconcile the seven checked CSV tables and two JSON results
+from pinned saved daily inputs; output is restricted to `local_outputs/`.

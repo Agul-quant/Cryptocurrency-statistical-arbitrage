@@ -1,72 +1,100 @@
 {
   "status": "PASS",
   "report_count": 3,
-  "total_pdf_pages": 53,
+  "total_pdf_pages": 56,
   "reports": [
     {
       "report": "01_development",
       "artifact_id": "report:f26b9347-f15d-4a65-bc28-46d53878f60f",
+      "pages": 17,
+      "pdf_sha256": "b48e4cf899a636cb9ccccf0b4b07b2f7f9aced497a7ea07a7577e0629a97301e",
+      "offline_html_sha256": "c4fdaa35779330b868fec82980d63b3b6865ef92193639929555d9559dd92606",
+      "snapshot_sha256": "61198c721918a5d61fa487727a30abffcecab04e7e3213ef9b967e4ac9357f1f",
       "period": "development",
-      "pages": 16,
-      "pdf_sha256": "ab2627f0adaa2a152c28dc5a954bd96d04a048ead19390436304777cf7d4b5b1",
-      "offline_html_sha256": "c3e6b0531953610a2077c862cacfdb4150f43db996159f837fe6e8404cf19a1a",
-      "snapshot_sha256": "a9b1dc95d287bcc81323a1406207224f6391edd2bae1b81ccaa53398f5f832c7",
-      "preview_url": "http://127.0.0.1:63087/?view=1"
+      "preview_url": "http://127.0.0.1:58860/?view=1"
     },
     {
       "report": "02_validation",
       "artifact_id": "report:14e8d12f-59f2-4502-8ad1-811a0302ee01",
+      "pages": 18,
+      "pdf_sha256": "77a253e3dc7b245e7ce0a7ca631a31cdfab9921b5b86ec0224667f850f6ccfd5",
+      "offline_html_sha256": "94e387ccebdd1434dc2639caf2e740cb221be434eb6946c4e5cd327b69b07bc3",
+      "snapshot_sha256": "ccdd0ce8ce35bcd6240ae36f07b06295e2cad073eec3e7505ddef485e8563c75",
       "period": "validation",
-      "pages": 17,
-      "pdf_sha256": "34c4a342977587a72f9c8685a06dc54ec761e5b1728342a9502da4d3ac181bab",
-      "offline_html_sha256": "eda8339c842d0af8dc82e5cb2868609b0bed5b346258b73ca7f675f83d662fd8",
-      "snapshot_sha256": "dd9a853e49a071ffb3d9b8f417b5fc8881a1ff17e103f2aee1e74960c905ccce",
-      "preview_url": "http://127.0.0.1:63089/?view=1"
+      "preview_url": "http://127.0.0.1:58862/?view=1"
     },
     {
       "report": "03_2026_evaluation",
       "artifact_id": "report:5adafe7e-d3eb-4b9e-bf95-d857c77f7240",
+      "pages": 21,
+      "pdf_sha256": "e14b26d8e3d43b00deeedbf8c321fce1ee958d958f6dc4f4d7b64b547f17cca0",
+      "offline_html_sha256": "cd3344e077e6f771515e3d7272a71ccc6e7d2faa0cb55a36a0e8d4799afad5d1",
+      "snapshot_sha256": "8bf9e12c791d46095b321bf6cdfe5cd15f98417e4e3892430e56ab2da974216d",
       "period": "oos",
-      "pages": 20,
-      "pdf_sha256": "8454e16afe3a0dd52ab469f4e3511fdcaa40818c2dc13731857f65c63f87e1e3",
-      "offline_html_sha256": "aff2937548caed338329f1a4201e36819a72bbbd05cfc2b4db2cacd1b6cf39d9",
-      "snapshot_sha256": "d2351f5097ce46b495894d27d19b86b11bcb01fd14411a3a884a8a55e30b6fce",
-      "preview_url": "http://127.0.0.1:63090/?view=1"
+      "preview_url": "http://127.0.0.1:58863/?view=1"
     }
   ],
-  "reviewed_query_count": 68,
-  "field_equality_checks": 30159,
-  "all_financial_values_unchanged": true,
-  "all_saved_query_and_snapshot_bytes_unchanged": true,
-  "stable_report_and_query_identities": true,
+  "reviewed_query_count": 80,
+  "original_reviewed_query_count_unchanged": 68,
+  "original_field_equality_checks": 30159,
+  "all_original_financial_values_unchanged": true,
+  "stable_report_and_original_query_identities": true,
   "no_strategy_rerun_or_selection": true,
-  "formatting": {
-    "table_count": 75,
-    "table_counts_by_period": [
-      19,
-      25,
-      31
+  "cash_benchmark": {
+    "nominal_annual_rate": 0.03,
+    "day_count": "ACT/365F",
+    "daily_rate": 8.219178082191781e-05,
+    "period_days": [
+      730,
+      731,
+      273
     ],
-    "header_body_alignment_mismatches_all_rows": 0,
-    "centered_header_buttons": 0,
-    "numeric_headers_and_cells": "right-aligned, including numeric intervals, counts, ratios, null numeric fields and turnover multipliers",
-    "text_headers_and_cells": "left-aligned, including strategy IDs, coins, periods, dates and statuses",
-    "numeric_header_wrapping": "normal for custom quantitative headers; numeric body cells retain nowrap",
+    "source": "results/cash_excess/strategy_summary.csv",
+    "new_query_count": 12,
+    "new_cash_table_count": 6,
+    "raw_metrics_retained": true,
+    "cash_interest_credited_to_strategy": false,
+    "relative_return": "W(strategy)/W(cash)-1",
+    "relative_drawdown": "daily endpoints including initial NAV; not original hourly drawdown",
+    "new_mean_correction_family": 27,
+    "new_joint_cash_coefficient_correction_family": 243,
+    "original_corrections_and_acceptance_flags_unchanged": true,
+    "bootstrap_replications": 4000,
+    "bootstrap_calendar_block_days": 28,
+    "bootstrap_seed": 20261016,
+    "conditional_not_original_search_adjusted": true
+  },
+  "formatting": {
+    "table_count": 81,
+    "table_counts_by_period": [
+      21,
+      27,
+      33
+    ],
+    "new_numeric_headers_and_cells": "right-aligned; cash alpha estimate/CI can wrap between blocks on constrained desktop panels",
+    "validation_alpha_width_scroll_container": [
+      623,
+      623,
+      623
+    ],
     "protected_runtime_changed": false,
-    "authored_source_files_changed": 10,
-    "native_browser_width_this_edit": 760,
+    "native_viewport_this_edit": [
+      759,
+      899
+    ],
     "offline_connect_src_none": true
   },
   "checks": [
-    "Three current reports only, retaining complete development/validation/OOS scope",
-    "All 53 final PDF pages verified: 34 changed pages directly inspected; 19 exact pixel closures to inspected pages",
-    "All 68 reviewed query JSONs, three snapshots, CSV tables/exports and financial precision byte-identical",
-    "All three PDFs retain exact complete geometrically segmented word multisets and numerical layout-token multisets",
-    "All 75 native tables have consistent column alignment across headings and every row; validation multiplier columns explicitly right-aligned",
-    "All three offline HTML files checked by root native IAB under connect-src none, with no table alignment mismatches",
-    "32 distinct companion CSV links respond HTTP 200 and match local bytes",
-    "All data-source notes, source controls, frozen strategies, statistical estimates and research qualifications unchanged",
-    "PDF edit marker called once by root for this three-file format batch; author called zero markers"
+    "Exactly three current reports, one cash-benchmark page appended to each: 17/18/21 pages",
+    "All 56 final PDF pages verified: six changed/new pages directly inspected and 50 original body pages exact pixel closure outside updated total-page footer",
+    "Every original PDF body word and numeric token unchanged, except five added cash-discoverability words per report",
+    "All original 68 query objects, original query JSON files, existing CSV tables/exports, frozen strategy identities and acceptance flags unchanged",
+    "Twelve new source-backed period query datasets project the audited cash results without new backtests or selection",
+    "All 21 cash CSV companion copies byte-identical to the sealed full-precision calculation tables",
+    "Cash source inspector verified correct current provenance and all nine rows, including page2 B06",
+    "Root native IAB and all three offline HTML checks under connect-src none at actual 759\u00d7899; no horizontal page overflow",
+    "All 53 distinct companion CSV links return HTTP 200 and exact local bytes",
+    "One PDF edit operation marker called by root for all three outputs; this report agent called zero markers"
   ],
   "data_source": {
     "provider": "Binance public Data Vision",
@@ -83,5 +111,5 @@
     "query_data_unchanged": true,
     "root_native_followup_qa": "PASS"
   },
-  "created_at_utc": "2026-10-19T18:25:24.106596+00:00"
+  "created_at_utc": "2026-10-20T16:45:41.182621+00:00"
 }

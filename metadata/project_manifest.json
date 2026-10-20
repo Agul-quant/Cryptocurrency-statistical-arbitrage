@@ -6,8 +6,18 @@
     "total_return_column": "terminal_net_return",
     "totals_path": "results/basket_factors/attribution_totals.csv"
   },
+  "cash_benchmark_comparison": {
+    "annual_nominal_rate": 0.03,
+    "daily_compounding": true,
+    "day_count": "ACT/365F",
+    "families_separate_from_raw_acceptance": true,
+    "interest_credited_to_strategy": false,
+    "joint_coefficient_Holm_and_Bonferroni_family_size": 243,
+    "mean_Holm_family_size": 27,
+    "raw_metrics_and_selections_unchanged": true
+  },
   "configuration_count": 169,
-  "created_at_utc": "2026-10-19T18:28:04.400673+00:00",
+  "created_at_utc": "2026-10-20T16:47:42.848421+00:00",
   "data_universe_slots": 22,
   "data_use_note": "Fixed historical periods with prior project data inspection. The nine-strategy evaluation and later explanatory diagnoses share observations and are not additional independent tests.",
   "files": {
@@ -24,8 +34,12 @@
       "sha256": "1ba0bde14166c529053b0ab9dfd2815751bd6e9286113a3e03f2c7edb1646a8d"
     },
     "README.md": {
-      "bytes": 4628,
-      "sha256": "86f7feebe9f9c49a6a05af917bbbe9b379bff519ab770b4ac89de36fcc9a57ea"
+      "bytes": 5214,
+      "sha256": "b643f3225ed63dc0be0c649c29b797b42be33dc0fdd8daabafc521b02b3c631a"
+    },
+    "configs/cash_benchmark.json": {
+      "bytes": 1648,
+      "sha256": "9f1d448e309ae7b13af259ad27b9a4b5d0bc097479f925cfa89fa64f4805b98c"
     },
     "configs/configuration_space.json": {
       "bytes": 50142,
@@ -112,36 +126,44 @@
       "sha256": "d57e27a6bbdb405ca82e5e8a2cbbc1008b0952033bd89f04443642a6db14929c"
     },
     "docs/METHODS.md": {
-      "bytes": 5317,
-      "sha256": "0f152093eef65f2c60ce5376e84bb8b8cdb6a3b24cf64b5bc92669455cf78c76"
+      "bytes": 11131,
+      "sha256": "1bb4a7e1e8bb74d3d927fd81ab15855dbe22de03cb3e648e15dc32609fbcdb01"
     },
     "final_reports/01_development/01_development_and_robustness.html": {
-      "bytes": 3304880,
-      "sha256": "c3e6b0531953610a2077c862cacfdb4150f43db996159f837fe6e8404cf19a1a"
+      "bytes": 3577236,
+      "sha256": "c4fdaa35779330b868fec82980d63b3b6865ef92193639929555d9559dd92606"
     },
     "final_reports/01_development/01_development_and_robustness.pdf": {
-      "bytes": 663088,
-      "sha256": "ab2627f0adaa2a152c28dc5a954bd96d04a048ead19390436304777cf7d4b5b1"
+      "bytes": 702044,
+      "sha256": "b48e4cf899a636cb9ccccf0b4b07b2f7f9aced497a7ea07a7577e0629a97301e"
     },
     "final_reports/01_development/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3323,
       "sha256": "5aa7508b0fa692454c6fb74698de8a9dd549279b027e881517ee12332aaa6320"
     },
+    "final_reports/01_development/app/src/content/report/CashBenchmarkAppendix.jsx": {
+      "bytes": 6225,
+      "sha256": "e57e481b074477a034456cc7e3c9b9af65c9449298517912b949bb61bd532632"
+    },
     "final_reports/01_development/app/src/content/report/ReportContent.jsx": {
-      "bytes": 23579,
-      "sha256": "3cd67600cf46acd8294141c6a32e6cbfe684b78dc49100ee110502d311d6d1ef"
+      "bytes": 23736,
+      "sha256": "090daede74f592e3daba3f0ece6a480ecb21115bafb65d634bafba95b3069aef"
     },
     "final_reports/01_development/app/src/content/report/basket-attribution.css": {
       "bytes": 2719,
       "sha256": "ab0d5c6c87fe6cb72324c12f2683be152a81ab50907ccc75a3ccaac10ac0c101"
+    },
+    "final_reports/01_development/app/src/content/report/cash-benchmark.css": {
+      "bytes": 2537,
+      "sha256": "5c603de03856209f4f78483344c54ed2c386d77f09568199856dab97a7634309"
     },
     "final_reports/01_development/app/src/content/report/report.css": {
       "bytes": 1746,
       "sha256": "6ccc450af3c865646b084478154610892e29c31c451a97eaeb97d1fac065e038"
     },
     "final_reports/01_development/app/src/data.json": {
-      "bytes": 433699,
-      "sha256": "a9b1dc95d287bcc81323a1406207224f6391edd2bae1b81ccaa53398f5f832c7"
+      "bytes": 696738,
+      "sha256": "61198c721918a5d61fa487727a30abffcecab04e7e3213ef9b967e4ac9357f1f"
     },
     "final_reports/01_development/exports/basket_btc_only.csv": {
       "bytes": 2323,
@@ -167,9 +189,37 @@
       "bytes": 326327,
       "sha256": "d7f6deda011bf668c60d3b5091fa7da80b8872f7350f38ab9fc8496f02304f49"
     },
+    "final_reports/01_development/exports/cash_btc_full_period_coefficients.csv": {
+      "bytes": 17273,
+      "sha256": "2b0a7e9a63dff5fb36b965921248cea644b34981ec914562d95aa0cbe4490122"
+    },
+    "final_reports/01_development/exports/cash_factor_models.csv": {
+      "bytes": 11232,
+      "sha256": "2ab8f16c8a636d19ce5d4cd3aca374554f68ed2c464614d31f0bf6aefddbe06e"
+    },
+    "final_reports/01_development/exports/cash_joint_coefficients.csv": {
+      "bytes": 118462,
+      "sha256": "23aeb23ec2c0448ca59747f49ed41a3dcaa1f0a7e6e523ee4b8bc1cfe3d902f2"
+    },
+    "final_reports/01_development/exports/cash_matched_btc_coefficients.csv": {
+      "bytes": 23551,
+      "sha256": "4b7c8e989a300af726f4e499da342d9feb95febdc366de18ca8ae630b44222a2"
+    },
+    "final_reports/01_development/exports/cash_mean_excess_inference.csv": {
+      "bytes": 8459,
+      "sha256": "ef289b2b25381fede0731f1c942774d08ad9ac83af7ffbd61ddac247a96ee971"
+    },
+    "final_reports/01_development/exports/cash_performance.csv": {
+      "bytes": 30209,
+      "sha256": "73f8761d3ddafcbf608211a792b3d0029aef94e129a9fb1b4f13de35379eabde"
+    },
+    "final_reports/01_development/exports/cash_strategy_summary.csv": {
+      "bytes": 48750,
+      "sha256": "3e8fb35f03cd0a1699e8a2f92a16fbad45afb79f6a634914bd43196b2a290d3a"
+    },
     "final_reports/01_development/reviewed_snapshot.json": {
-      "bytes": 433699,
-      "sha256": "a9b1dc95d287bcc81323a1406207224f6391edd2bae1b81ccaa53398f5f832c7"
+      "bytes": 696738,
+      "sha256": "61198c721918a5d61fa487727a30abffcecab04e7e3213ef9b967e4ac9357f1f"
     },
     "final_reports/01_development/tables/annual.csv": {
       "bytes": 979,
@@ -216,32 +266,40 @@
       "sha256": "7312aedba48b8697d5fa639f8857c0e25b290210f1a42777c7c89738c6f8e790"
     },
     "final_reports/02_validation/02_validation_and_frozen_selection.html": {
-      "bytes": 3194082,
-      "sha256": "eda8339c842d0af8dc82e5cb2868609b0bed5b346258b73ca7f675f83d662fd8"
+      "bytes": 3466857,
+      "sha256": "94e387ccebdd1434dc2639caf2e740cb221be434eb6946c4e5cd327b69b07bc3"
     },
     "final_reports/02_validation/02_validation_and_frozen_selection.pdf": {
-      "bytes": 643285,
-      "sha256": "34c4a342977587a72f9c8685a06dc54ec761e5b1728342a9502da4d3ac181bab"
+      "bytes": 681777,
+      "sha256": "77a253e3dc7b245e7ce0a7ca631a31cdfab9921b5b86ec0224667f850f6ccfd5"
     },
     "final_reports/02_validation/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3323,
       "sha256": "5aa7508b0fa692454c6fb74698de8a9dd549279b027e881517ee12332aaa6320"
     },
+    "final_reports/02_validation/app/src/content/report/CashBenchmarkAppendix.jsx": {
+      "bytes": 6225,
+      "sha256": "e57e481b074477a034456cc7e3c9b9af65c9449298517912b949bb61bd532632"
+    },
     "final_reports/02_validation/app/src/content/report/ReportContent.jsx": {
-      "bytes": 19880,
-      "sha256": "a83201f094d579530776859b1bb369a6537a2db23ae8c079f65632c45318f878"
+      "bytes": 20037,
+      "sha256": "af9d86ea2268948a756998551cdcc7a450c9acb8ee4233055826ef257d12d932"
     },
     "final_reports/02_validation/app/src/content/report/basket-attribution.css": {
       "bytes": 2719,
       "sha256": "ab0d5c6c87fe6cb72324c12f2683be152a81ab50907ccc75a3ccaac10ac0c101"
+    },
+    "final_reports/02_validation/app/src/content/report/cash-benchmark.css": {
+      "bytes": 2537,
+      "sha256": "5c603de03856209f4f78483344c54ed2c386d77f09568199856dab97a7634309"
     },
     "final_reports/02_validation/app/src/content/report/report.css": {
       "bytes": 11034,
       "sha256": "408091aea125c0f873681d89c3bc963a8e3d48c5243cdaea251138cea009df68"
     },
     "final_reports/02_validation/app/src/data.json": {
-      "bytes": 318992,
-      "sha256": "dd9a853e49a071ffb3d9b8f417b5fc8881a1ff17e103f2aee1e74960c905ccce"
+      "bytes": 582474,
+      "sha256": "ccdd0ce8ce35bcd6240ae36f07b06295e2cad073eec3e7505ddef485e8563c75"
     },
     "final_reports/02_validation/exports/basket_btc_only.csv": {
       "bytes": 2315,
@@ -267,29 +325,65 @@
       "bytes": 316069,
       "sha256": "d52cd089691ae0b384dc82b643d943b080eef5166817ae9381d65682c453c2f2"
     },
+    "final_reports/02_validation/exports/cash_btc_full_period_coefficients.csv": {
+      "bytes": 17273,
+      "sha256": "2b0a7e9a63dff5fb36b965921248cea644b34981ec914562d95aa0cbe4490122"
+    },
+    "final_reports/02_validation/exports/cash_factor_models.csv": {
+      "bytes": 11232,
+      "sha256": "2ab8f16c8a636d19ce5d4cd3aca374554f68ed2c464614d31f0bf6aefddbe06e"
+    },
+    "final_reports/02_validation/exports/cash_joint_coefficients.csv": {
+      "bytes": 118462,
+      "sha256": "23aeb23ec2c0448ca59747f49ed41a3dcaa1f0a7e6e523ee4b8bc1cfe3d902f2"
+    },
+    "final_reports/02_validation/exports/cash_matched_btc_coefficients.csv": {
+      "bytes": 23551,
+      "sha256": "4b7c8e989a300af726f4e499da342d9feb95febdc366de18ca8ae630b44222a2"
+    },
+    "final_reports/02_validation/exports/cash_mean_excess_inference.csv": {
+      "bytes": 8459,
+      "sha256": "ef289b2b25381fede0731f1c942774d08ad9ac83af7ffbd61ddac247a96ee971"
+    },
+    "final_reports/02_validation/exports/cash_performance.csv": {
+      "bytes": 30209,
+      "sha256": "73f8761d3ddafcbf608211a792b3d0029aef94e129a9fb1b4f13de35379eabde"
+    },
+    "final_reports/02_validation/exports/cash_strategy_summary.csv": {
+      "bytes": 48750,
+      "sha256": "3e8fb35f03cd0a1699e8a2f92a16fbad45afb79f6a634914bd43196b2a290d3a"
+    },
     "final_reports/02_validation/reviewed_snapshot.json": {
-      "bytes": 318992,
-      "sha256": "dd9a853e49a071ffb3d9b8f417b5fc8881a1ff17e103f2aee1e74960c905ccce"
+      "bytes": 582474,
+      "sha256": "ccdd0ce8ce35bcd6240ae36f07b06295e2cad073eec3e7505ddef485e8563c75"
     },
     "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.html": {
-      "bytes": 3659488,
-      "sha256": "aff2937548caed338329f1a4201e36819a72bbbd05cfc2b4db2cacd1b6cf39d9"
+      "bytes": 3933755,
+      "sha256": "cd3344e077e6f771515e3d7272a71ccc6e7d2faa0cb55a36a0e8d4799afad5d1"
     },
     "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf": {
-      "bytes": 872385,
-      "sha256": "8454e16afe3a0dd52ab469f4e3511fdcaa40818c2dc13731857f65c63f87e1e3"
+      "bytes": 914783,
+      "sha256": "e14b26d8e3d43b00deeedbf8c321fce1ee958d958f6dc4f4d7b64b547f17cca0"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3323,
       "sha256": "5aa7508b0fa692454c6fb74698de8a9dd549279b027e881517ee12332aaa6320"
     },
+    "final_reports/03_2026_evaluation/app/src/content/report/CashBenchmarkAppendix.jsx": {
+      "bytes": 6225,
+      "sha256": "e57e481b074477a034456cc7e3c9b9af65c9449298517912b949bb61bd532632"
+    },
     "final_reports/03_2026_evaluation/app/src/content/report/ReportContent.jsx": {
-      "bytes": 13243,
-      "sha256": "6778c55113abf0990a084aa9063f9cf57ad0a458e1215e140ca5cae17f2fb3b7"
+      "bytes": 13400,
+      "sha256": "e358e6b4d922f5bff454a451bd677d9c2290e7280ef021d45118877c4f1b9491"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/basket-attribution.css": {
       "bytes": 2719,
       "sha256": "ab0d5c6c87fe6cb72324c12f2683be152a81ab50907ccc75a3ccaac10ac0c101"
+    },
+    "final_reports/03_2026_evaluation/app/src/content/report/cash-benchmark.css": {
+      "bytes": 2537,
+      "sha256": "5c603de03856209f4f78483344c54ed2c386d77f09568199856dab97a7634309"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/plan.json": {
       "bytes": 20006,
@@ -300,8 +394,8 @@
       "sha256": "35299fe5dfe95475b050ad078152024d4f3840e78c8f082742c2dcdab664b2ac"
     },
     "final_reports/03_2026_evaluation/app/src/data.json": {
-      "bytes": 777835,
-      "sha256": "d2351f5097ce46b495894d27d19b86b11bcb01fd14411a3a884a8a55e30b6fce"
+      "bytes": 1042809,
+      "sha256": "8bf9e12c791d46095b321bf6cdfe5cd15f98417e4e3892430e56ab2da974216d"
     },
     "final_reports/03_2026_evaluation/exports/all_69108_survivors.csv": {
       "bytes": 61628005,
@@ -338,6 +432,34 @@
     "final_reports/03_2026_evaluation/exports/basket_regression_calendar.csv": {
       "bytes": 152411,
       "sha256": "8f9c05ca26de8a5ca9595e0648fde1bb850c11c5543344c4c6517f8bad02a55f"
+    },
+    "final_reports/03_2026_evaluation/exports/cash_btc_full_period_coefficients.csv": {
+      "bytes": 17273,
+      "sha256": "2b0a7e9a63dff5fb36b965921248cea644b34981ec914562d95aa0cbe4490122"
+    },
+    "final_reports/03_2026_evaluation/exports/cash_factor_models.csv": {
+      "bytes": 11232,
+      "sha256": "2ab8f16c8a636d19ce5d4cd3aca374554f68ed2c464614d31f0bf6aefddbe06e"
+    },
+    "final_reports/03_2026_evaluation/exports/cash_joint_coefficients.csv": {
+      "bytes": 118462,
+      "sha256": "23aeb23ec2c0448ca59747f49ed41a3dcaa1f0a7e6e523ee4b8bc1cfe3d902f2"
+    },
+    "final_reports/03_2026_evaluation/exports/cash_matched_btc_coefficients.csv": {
+      "bytes": 23551,
+      "sha256": "4b7c8e989a300af726f4e499da342d9feb95febdc366de18ca8ae630b44222a2"
+    },
+    "final_reports/03_2026_evaluation/exports/cash_mean_excess_inference.csv": {
+      "bytes": 8459,
+      "sha256": "ef289b2b25381fede0731f1c942774d08ad9ac83af7ffbd61ddac247a96ee971"
+    },
+    "final_reports/03_2026_evaluation/exports/cash_performance.csv": {
+      "bytes": 30209,
+      "sha256": "73f8761d3ddafcbf608211a792b3d0029aef94e129a9fb1b4f13de35379eabde"
+    },
+    "final_reports/03_2026_evaluation/exports/cash_strategy_summary.csv": {
+      "bytes": 48750,
+      "sha256": "3e8fb35f03cd0a1699e8a2f92a16fbad45afb79f6a634914bd43196b2a290d3a"
     },
     "final_reports/03_2026_evaluation/exports/coin_inclusion_frequencies.csv": {
       "bytes": 8188,
@@ -388,16 +510,16 @@
       "sha256": "3af0931786ba29c9db91b97b111d9c09e07f5197b68f9f80e3db5eaf9c4876a4"
     },
     "final_reports/03_2026_evaluation/reviewed_snapshot.json": {
-      "bytes": 777835,
-      "sha256": "d2351f5097ce46b495894d27d19b86b11bcb01fd14411a3a884a8a55e30b6fce"
+      "bytes": 1042809,
+      "sha256": "8bf9e12c791d46095b321bf6cdfe5cd15f98417e4e3892430e56ab2da974216d"
     },
     "final_reports/README.md": {
       "bytes": 1441,
       "sha256": "7502430ca2b1eeca93d2f17685be8a099eda44f70c41b2ddae8783a234a1a162"
     },
     "final_reports/quality_checks.json": {
-      "bytes": 4147,
-      "sha256": "50593897c4c13c00d4a6ddefdf3f78d08c9c0ae2260d65dc77dd6c50931583f9"
+      "bytes": 4951,
+      "sha256": "407855790eafcb16aa5837474fc268345536acfde39f387dcc09581745a99ee4"
     },
     "licenses/DATA_LICENSE.md": {
       "bytes": 925,
@@ -463,6 +585,42 @@
       "bytes": 779046,
       "sha256": "3b61079a9c4034a52072a04fc3a26e87e28ad464df51d4debb03ba2c698f4662"
     },
+    "results/cash_excess/btc_full_period_coefficients.csv": {
+      "bytes": 17273,
+      "sha256": "2b0a7e9a63dff5fb36b965921248cea644b34981ec914562d95aa0cbe4490122"
+    },
+    "results/cash_excess/factor_models.csv": {
+      "bytes": 11232,
+      "sha256": "2ab8f16c8a636d19ce5d4cd3aca374554f68ed2c464614d31f0bf6aefddbe06e"
+    },
+    "results/cash_excess/joint_coefficients.csv": {
+      "bytes": 118462,
+      "sha256": "23aeb23ec2c0448ca59747f49ed41a3dcaa1f0a7e6e523ee4b8bc1cfe3d902f2"
+    },
+    "results/cash_excess/matched_btc_coefficients.csv": {
+      "bytes": 23551,
+      "sha256": "4b7c8e989a300af726f4e499da342d9feb95febdc366de18ca8ae630b44222a2"
+    },
+    "results/cash_excess/mean_excess_inference.csv": {
+      "bytes": 8459,
+      "sha256": "ef289b2b25381fede0731f1c942774d08ad9ac83af7ffbd61ddac247a96ee971"
+    },
+    "results/cash_excess/methods.json": {
+      "bytes": 3520,
+      "sha256": "28f12850a6de31fc8c664585551a3a75ce8dec7c71a5ac06256a0a667c47d1e3"
+    },
+    "results/cash_excess/performance.csv": {
+      "bytes": 30209,
+      "sha256": "73f8761d3ddafcbf608211a792b3d0029aef94e129a9fb1b4f13de35379eabde"
+    },
+    "results/cash_excess/reconciliation.json": {
+      "bytes": 176577,
+      "sha256": "09d791124c79976074dd0706cab5fe84a012eb02054e115500dc61ccfd97a0c8"
+    },
+    "results/cash_excess/strategy_summary.csv": {
+      "bytes": 48750,
+      "sha256": "3e8fb35f03cd0a1699e8a2f92a16fbad45afb79f6a634914bd43196b2a290d3a"
+    },
     "results/daily_returns.csv": {
       "bytes": 1019910,
       "sha256": "7913b6bf52187f293cc594ddea99370b1c9b62365c78f5d0e4a194bfedaf27bd"
@@ -498,6 +656,22 @@
     "results/report_data/development/buffers.json": {
       "bytes": 9320,
       "sha256": "632693dda268f5f60e8b55712170d66490932e0b556832e4e5c6d1859b44ab29"
+    },
+    "results/report_data/development/cash_excess_coefficients.json": {
+      "bytes": 145694,
+      "sha256": "3852806da07b363c4a30d92f880130f4663be4a0c9ec4f3b7deeb3097b679403"
+    },
+    "results/report_data/development/cash_excess_factor_summary.json": {
+      "bytes": 54088,
+      "sha256": "acad827195d9488b7168895370e03c81b5a236b02394126ef7cb77750251821a"
+    },
+    "results/report_data/development/cash_excess_methods.json": {
+      "bytes": 6413,
+      "sha256": "11661faecf202e832a2ff0b481ef1139e22b59cc4a4ccba87101513f8a6ccb18"
+    },
+    "results/report_data/development/cash_excess_performance.json": {
+      "bytes": 36096,
+      "sha256": "df86541e91c1a2ca13420d76b7f8854599b8524c010ac1da96b337b72055e018"
     },
     "results/report_data/development/clocks.json": {
       "bytes": 55326,
@@ -570,6 +744,22 @@
     "results/report_data/oos/basket_attribution_summary.json": {
       "bytes": 16414,
       "sha256": "cbaf0b408ef1dcd14e3c34b71c0ea4cadf36b35748d9df8c5cc4d9a59ccf2f8e"
+    },
+    "results/report_data/oos/cash_excess_coefficients.json": {
+      "bytes": 147188,
+      "sha256": "6668e75afe40b3dc964120e8ac39e50ef5c23aa002aabfbffcdf52073a40c282"
+    },
+    "results/report_data/oos/cash_excess_factor_summary.json": {
+      "bytes": 54327,
+      "sha256": "648904d7f5d16c4762275206da41e4d0c3a3f22436465102288591957485b8f5"
+    },
+    "results/report_data/oos/cash_excess_methods.json": {
+      "bytes": 6443,
+      "sha256": "0e547450bf64663ee2d9899bbba93f5e3be059eb113d1a113248e5efee63bcce"
+    },
+    "results/report_data/oos/cash_excess_performance.json": {
+      "bytes": 36268,
+      "sha256": "b30f895bbd94dc0aa23f3e30a2b3963b4646e44531a4b85085e2812e3ca0c4d1"
     },
     "results/report_data/oos/cohort.json": {
       "bytes": 1233,
@@ -699,6 +889,22 @@
       "bytes": 16393,
       "sha256": "d46c9cc1e8075b0735cdb4f6b42424f7af821239361d357b45290295a289bbdf"
     },
+    "results/report_data/validation/cash_excess_coefficients.json": {
+      "bytes": 145780,
+      "sha256": "ef686ea9f0cf47c4d49a0dbf6b7b89f98dc6e254eeafc5ae200154851111d8f8"
+    },
+    "results/report_data/validation/cash_excess_factor_summary.json": {
+      "bytes": 54289,
+      "sha256": "a42182e09bbc3938239077f57730f6e8200956ff747653c44ca9e46215c17140"
+    },
+    "results/report_data/validation/cash_excess_methods.json": {
+      "bytes": 6408,
+      "sha256": "9812d36084a0c64319b36a0e1d8636d34f3157757e1b60db3758f9efef842258"
+    },
+    "results/report_data/validation/cash_excess_performance.json": {
+      "bytes": 36257,
+      "sha256": "5085a6b20d5f8d374e15bbda1ac54463ec52983473b6d89742560e1e03f4f28f"
+    },
     "results/report_data/validation/development_groups.json": {
       "bytes": 2351,
       "sha256": "f405804d1eae376c4ef056e6be13b7c93f2c379b7865dbded8f3220b5b1a6082"
@@ -743,6 +949,10 @@
       "bytes": 64625,
       "sha256": "ccd03278ddcc33fcf2bd82f7460818a33d39f391a586a93d1fc20384b18cf71f"
     },
+    "scripts/reproduce_cash_excess.py": {
+      "bytes": 4407,
+      "sha256": "be5232593d6bdc81095909331f827ff4fcafd194ac094250d890dc5fe4c9b5ac"
+    },
     "scripts/reproduce_diagnostics.py": {
       "bytes": 1040,
       "sha256": "b3bfbc5e1208ce8f33dc41f2c7606b539162df3038380206df4b01f5ca7bea0b"
@@ -752,8 +962,8 @@
       "sha256": "ced0b627d07dad5cefeeeed8a1779dd090828460997687969797a6130cacfb39"
     },
     "scripts/verify_project.py": {
-      "bytes": 6961,
-      "sha256": "7f364a09c05d4c0f93a839ecaad3f52ab8f012cbfd73f295d3ac176ecadaf433"
+      "bytes": 10697,
+      "sha256": "a0c1268e602889527c77fa310eb93c807b5701106ebad4ea0d17ac74028f9949"
     },
     "src/crypto_research/__init__.py": {
       "bytes": 77,
@@ -762,6 +972,10 @@
     "src/crypto_research/backtest.py": {
       "bytes": 1431,
       "sha256": "282eb35d9bf970c8b623f0ddd03124cec0025a3b818cc08506d81121c5759e51"
+    },
+    "src/crypto_research/cash_excess.py": {
+      "bytes": 32100,
+      "sha256": "8a22f418e68cc7413b76fb214a8d6ef9982ef4000277c167725ac0325862ea33"
     },
     "src/crypto_research/diagnostics.py": {
       "bytes": 16828,
@@ -802,6 +1016,10 @@
     "tests/conftest.py": {
       "bytes": 102,
       "sha256": "64e35b1c51d35d56c7afd0052822a8a0f9feeaadf463ed7cf8b95b82f9bcfab8"
+    },
+    "tests/test_cash_excess.py": {
+      "bytes": 12190,
+      "sha256": "97073c26daaa5b0ea85319f09293676fbba428e84be2208b339c74a269b5f84e"
     },
     "tests/test_current_engine.py": {
       "bytes": 7198,
@@ -1158,6 +1376,212 @@
       "unique_keys": [
         "comparison_id",
         "period"
+      ]
+    },
+    {
+      "finite_columns": [
+        "raw_net_return",
+        "cash_compounded_return",
+        "wealth_relative_excess_return",
+        "cash_excess_sharpe"
+      ],
+      "path": "results/cash_excess/performance.csv",
+      "required_values": {
+        "period": [
+          "development",
+          "oos_partial_2026_jan_sep",
+          "validation"
+        ],
+        "strategy_id": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "B01",
+          "B03",
+          "B04",
+          "B05",
+          "B06"
+        ]
+      },
+      "rows": 27,
+      "unique_keys": [
+        "strategy_id",
+        "period"
+      ]
+    },
+    {
+      "finite_columns": [],
+      "path": "results/cash_excess/strategy_summary.csv",
+      "required_values": {
+        "period": [
+          "development",
+          "oos_partial_2026_jan_sep",
+          "validation"
+        ],
+        "strategy_id": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "B01",
+          "B03",
+          "B04",
+          "B05",
+          "B06"
+        ]
+      },
+      "rows": 27,
+      "unique_keys": [
+        "strategy_id",
+        "period"
+      ]
+    },
+    {
+      "finite_columns": [
+        "annual_mean_excess",
+        "cash_excess_global_holm27_p"
+      ],
+      "path": "results/cash_excess/mean_excess_inference.csv",
+      "required_values": {
+        "period": [
+          "development",
+          "oos_partial_2026_jan_sep",
+          "validation"
+        ],
+        "strategy_id": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "B01",
+          "B03",
+          "B04",
+          "B05",
+          "B06"
+        ]
+      },
+      "rows": 27,
+      "unique_keys": [
+        "strategy_id",
+        "period"
+      ]
+    },
+    {
+      "finite_columns": [],
+      "path": "results/cash_excess/factor_models.csv",
+      "required_values": {
+        "period": [
+          "development",
+          "oos_partial_2026_jan_sep",
+          "validation"
+        ],
+        "strategy_id": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "B01",
+          "B03",
+          "B04",
+          "B05",
+          "B06"
+        ]
+      },
+      "rows": 81,
+      "unique_keys": [
+        "strategy_id",
+        "period",
+        "model_type"
+      ]
+    },
+    {
+      "finite_columns": [
+        "cash_excess_estimate",
+        "cash_excess_ci95_low",
+        "cash_excess_ci95_high",
+        "cash_excess_global_holm243_p"
+      ],
+      "path": "results/cash_excess/joint_coefficients.csv",
+      "required_values": {
+        "period": [
+          "development",
+          "oos_partial_2026_jan_sep",
+          "validation"
+        ],
+        "strategy_id": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "B01",
+          "B03",
+          "B04",
+          "B05",
+          "B06"
+        ]
+      },
+      "rows": 243,
+      "unique_keys": [
+        "strategy_id",
+        "period",
+        "term"
+      ]
+    },
+    {
+      "finite_columns": [],
+      "path": "results/cash_excess/matched_btc_coefficients.csv",
+      "required_values": {
+        "period": [
+          "development",
+          "oos_partial_2026_jan_sep",
+          "validation"
+        ],
+        "strategy_id": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "B01",
+          "B03",
+          "B04",
+          "B05",
+          "B06"
+        ]
+      },
+      "rows": 54,
+      "unique_keys": [
+        "strategy_id",
+        "period",
+        "term"
+      ]
+    },
+    {
+      "finite_columns": [],
+      "path": "results/cash_excess/btc_full_period_coefficients.csv",
+      "required_values": {
+        "period": [
+          "development",
+          "oos_partial_2026_jan_sep",
+          "validation"
+        ],
+        "strategy_id": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "B01",
+          "B03",
+          "B04",
+          "B05",
+          "B06"
+        ]
+      },
+      "rows": 54,
+      "unique_keys": [
+        "strategy_id",
+        "period",
+        "term"
       ]
     }
   ]

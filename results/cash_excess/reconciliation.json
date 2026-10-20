@@ -1,0 +1,4565 @@
+{
+  "bootstrap_any_invalid_draws": 0,
+  "checks": {
+    "A01_development_Sharpe_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "A01_development_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 4
+    },
+    "A01_development_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "A01_development_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "A01_development_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 730
+    },
+    "A01_development_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.3322676295501878e-15,
+      "numeric_cells": 6
+    },
+    "A01_development_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1223660889569942e-15,
+      "numeric_cells": 730
+    },
+    "A01_development_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 4
+    },
+    "A01_development_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.38378239159465e-16,
+      "numeric_cells": 4
+    },
+    "A01_development_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.914335439641036e-16,
+      "numeric_cells": 4
+    },
+    "A01_development_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.5612511283791264e-17,
+      "numeric_cells": 81
+    },
+    "A01_development_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.9038590148845458e-16,
+      "numeric_cells": 9
+    },
+    "A01_development_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.3021142204224816e-16,
+      "numeric_cells": 4
+    },
+    "A01_development_joint_eight_coin_LTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 4
+    },
+    "A01_development_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.42861286636753e-16,
+      "numeric_cells": 4
+    },
+    "A01_development_joint_eight_coin_SOLUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 4
+    },
+    "A01_development_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 4
+    },
+    "A01_development_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 3.5561831257524545e-17,
+      "numeric_cells": 81
+    },
+    "A01_development_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 1.9038590148845458e-16,
+      "numeric_cells": 9
+    },
+    "A01_development_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 2.255140518769849e-16,
+      "numeric_cells": 610
+    },
+    "A01_development_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 7.549516567451064e-14,
+      "numeric_cells": 9
+    },
+    "A01_development_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 7.643885524544203e-14,
+      "numeric_cells": 9
+    },
+    "A01_development_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.0122792321330962e-16,
+      "numeric_cells": 9
+    },
+    "A01_development_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 7.549516567451064e-14,
+      "numeric_cells": 9
+    },
+    "A01_development_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 7.639722188201858e-14,
+      "numeric_cells": 9
+    },
+    "A01_development_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 7.593925488436071e-14,
+      "numeric_cells": 9
+    },
+    "A01_development_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 3.2612801348363973e-16,
+      "numeric_cells": 9
+    },
+    "A01_development_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 4
+    },
+    "A01_development_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "A01_development_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.5612511283791264e-17,
+      "numeric_cells": 2
+    },
+    "A01_development_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 6.505213034913027e-19,
+      "numeric_cells": 4
+    },
+    "A01_development_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 1.5612511283791264e-17,
+      "numeric_cells": 2
+    },
+    "A01_development_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 610
+    },
+    "A01_development_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 5.329070518200751e-15,
+      "numeric_cells": 2
+    },
+    "A01_development_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 5.35682609381638e-15,
+      "numeric_cells": 2
+    },
+    "A01_development_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "A01_development_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 4.884981308350689e-15,
+      "numeric_cells": 2
+    },
+    "A01_development_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 5.551115123125783e-15,
+      "numeric_cells": 2
+    },
+    "A01_development_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 5.440092820663267e-15,
+      "numeric_cells": 2
+    },
+    "A01_development_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "A01_development_original_metric_reconciliation": {
+      "maximum_absolute_error": 2.531308496145357e-14,
+      "numeric_cells": 4
+    },
+    "A01_development_relative_compounding_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "A01_oos_partial_2026_jan_sep_Sharpe_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "A01_oos_partial_2026_jan_sep_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 6.505213034913027e-19,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "A01_oos_partial_2026_jan_sep_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 273
+    },
+    "A01_oos_partial_2026_jan_sep_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.4432899320127035e-15,
+      "numeric_cells": 6
+    },
+    "A01_oos_partial_2026_jan_sep_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.0351962342891596e-15,
+      "numeric_cells": 273
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.2212453270876722e-15,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-15,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.231653667943533e-16,
+      "numeric_cells": 81
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 4.163336342344337e-16,
+      "numeric_cells": 9
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_LTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_SOLUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.4988010832439613e-15,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.632783294297951e-16,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 1.6132928326584306e-16,
+      "numeric_cells": 81
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 4.163336342344337e-16,
+      "numeric_cells": 9
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 273
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.13464793116691e-13,
+      "numeric_cells": 9
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.0963452368173421e-13,
+      "numeric_cells": 9
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 9.71445146547012e-16,
+      "numeric_cells": 9
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.1735057370287905e-13,
+      "numeric_cells": 9
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.0574874309554616e-13,
+      "numeric_cells": 9
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.1148026946017353e-13,
+      "numeric_cells": 9
+    },
+    "A01_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 2.9976021664879227e-15,
+      "numeric_cells": 9
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 6.505213034913027e-19,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-19,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 273
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 7.993605777301127e-15,
+      "numeric_cells": 2
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.4405143744511406e-14,
+      "numeric_cells": 2
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 1.5543122344752192e-15,
+      "numeric_cells": 2
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 6.994405055138486e-15,
+      "numeric_cells": 2
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.5557000132560006e-14,
+      "numeric_cells": 2
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 1.1268763699945339e-14,
+      "numeric_cells": 2
+    },
+    "A01_oos_partial_2026_jan_sep_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 2.192690473634684e-15,
+      "numeric_cells": 2
+    },
+    "A01_oos_partial_2026_jan_sep_original_metric_reconciliation": {
+      "maximum_absolute_error": 4.796163466380676e-14,
+      "numeric_cells": 4
+    },
+    "A01_oos_partial_2026_jan_sep_relative_compounding_identity": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 1
+    },
+    "A01_validation_Sharpe_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "A01_validation_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 4
+    },
+    "A01_validation_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 6.505213034913027e-19,
+      "numeric_cells": 4
+    },
+    "A01_validation_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 2
+    },
+    "A01_validation_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 1.0408340855860843e-17,
+      "numeric_cells": 731
+    },
+    "A01_validation_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.3322676295501878e-15,
+      "numeric_cells": 6
+    },
+    "A01_validation_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1927850200599277e-15,
+      "numeric_cells": 731
+    },
+    "A01_validation_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.608224830031759e-16,
+      "numeric_cells": 4
+    },
+    "A01_validation_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.5265566588595902e-16,
+      "numeric_cells": 4
+    },
+    "A01_validation_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.249000902703301e-16,
+      "numeric_cells": 4
+    },
+    "A01_validation_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 9.75781955236954e-18,
+      "numeric_cells": 81
+    },
+    "A01_validation_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.43982048506075e-16,
+      "numeric_cells": 9
+    },
+    "A01_validation_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 4
+    },
+    "A01_validation_joint_eight_coin_LTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "A01_validation_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 4
+    },
+    "A01_validation_joint_eight_coin_SOLUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.191891195797325e-16,
+      "numeric_cells": 4
+    },
+    "A01_validation_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.8041124150158794e-16,
+      "numeric_cells": 4
+    },
+    "A01_validation_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 1.8865117801247777e-17,
+      "numeric_cells": 81
+    },
+    "A01_validation_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 1.43982048506075e-16,
+      "numeric_cells": 9
+    },
+    "A01_validation_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 727
+    },
+    "A01_validation_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.6653345369377348e-14,
+      "numeric_cells": 9
+    },
+    "A01_validation_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.4099832412739488e-14,
+      "numeric_cells": 9
+    },
+    "A01_validation_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 5.828670879282072e-16,
+      "numeric_cells": 9
+    },
+    "A01_validation_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.5709655798445965e-14,
+      "numeric_cells": 9
+    },
+    "A01_validation_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.4988010832439613e-14,
+      "numeric_cells": 9
+    },
+    "A01_validation_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.5459855617905305e-14,
+      "numeric_cells": 9
+    },
+    "A01_validation_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 3.122502256758253e-16,
+      "numeric_cells": 9
+    },
+    "A01_validation_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 4
+    },
+    "A01_validation_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "A01_validation_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-19,
+      "numeric_cells": 2
+    },
+    "A01_validation_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 6.776263578034403e-21,
+      "numeric_cells": 4
+    },
+    "A01_validation_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-19,
+      "numeric_cells": 2
+    },
+    "A01_validation_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 727
+    },
+    "A01_validation_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.609823385706477e-15,
+      "numeric_cells": 2
+    },
+    "A01_validation_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 4.274358644806853e-15,
+      "numeric_cells": 2
+    },
+    "A01_validation_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 7.216449660063518e-16,
+      "numeric_cells": 2
+    },
+    "A01_validation_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 2.3869795029440866e-15,
+      "numeric_cells": 2
+    },
+    "A01_validation_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 3.6637359812630166e-15,
+      "numeric_cells": 2
+    },
+    "A01_validation_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 2.914335439641036e-15,
+      "numeric_cells": 2
+    },
+    "A01_validation_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 3.0531133177191805e-16,
+      "numeric_cells": 2
+    },
+    "A01_validation_original_metric_reconciliation": {
+      "maximum_absolute_error": 1.0880185641326534e-14,
+      "numeric_cells": 4
+    },
+    "A01_validation_relative_compounding_identity": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 1
+    },
+    "A02_development_Sharpe_identity": {
+      "maximum_absolute_error": 6.661338147750939e-16,
+      "numeric_cells": 1
+    },
+    "A02_development_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 4
+    },
+    "A02_development_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 3.2526065174565133e-19,
+      "numeric_cells": 4
+    },
+    "A02_development_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 1.3010426069826053e-18,
+      "numeric_cells": 2
+    },
+    "A02_development_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 730
+    },
+    "A02_development_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 2.220446049250313e-15,
+      "numeric_cells": 6
+    },
+    "A02_development_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1674688993323912e-15,
+      "numeric_cells": 730
+    },
+    "A02_development_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-16,
+      "numeric_cells": 4
+    },
+    "A02_development_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.967448757360216e-16,
+      "numeric_cells": 4
+    },
+    "A02_development_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.718447854656915e-16,
+      "numeric_cells": 4
+    },
+    "A02_development_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 2.211772431870429e-17,
+      "numeric_cells": 81
+    },
+    "A02_development_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 3.720981855970251e-16,
+      "numeric_cells": 9
+    },
+    "A02_development_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.273559366969494e-16,
+      "numeric_cells": 4
+    },
+    "A02_development_joint_eight_coin_LTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.216449660063518e-16,
+      "numeric_cells": 4
+    },
+    "A02_development_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.273559366969494e-16,
+      "numeric_cells": 4
+    },
+    "A02_development_joint_eight_coin_SOLUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.008282842946301e-16,
+      "numeric_cells": 4
+    },
+    "A02_development_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.204170427930421e-17,
+      "numeric_cells": 4
+    },
+    "A02_development_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 3.122502256758253e-17,
+      "numeric_cells": 81
+    },
+    "A02_development_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 3.720981855970251e-16,
+      "numeric_cells": 9
+    },
+    "A02_development_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-16,
+      "numeric_cells": 610
+    },
+    "A02_development_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.4011014570769476e-13,
+      "numeric_cells": 9
+    },
+    "A02_development_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.369876434509365e-13,
+      "numeric_cells": 9
+    },
+    "A02_development_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 8.326672684688674e-16,
+      "numeric_cells": 9
+    },
+    "A02_development_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.4166445794216997e-13,
+      "numeric_cells": 9
+    },
+    "A02_development_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.3514970392813908e-13,
+      "numeric_cells": 9
+    },
+    "A02_development_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.3844481117075702e-13,
+      "numeric_cells": 9
+    },
+    "A02_development_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 1.7208456881689926e-15,
+      "numeric_cells": 9
+    },
+    "A02_development_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 4
+    },
+    "A02_development_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 6.505213034913027e-19,
+      "numeric_cells": 4
+    },
+    "A02_development_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "numeric_cells": 2
+    },
+    "A02_development_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 1.3010426069826053e-18,
+      "numeric_cells": 4
+    },
+    "A02_development_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "numeric_cells": 2
+    },
+    "A02_development_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 610
+    },
+    "A02_development_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 3.3306690738754696e-15,
+      "numeric_cells": 2
+    },
+    "A02_development_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 6.938893903907228e-16,
+      "numeric_cells": 2
+    },
+    "A02_development_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 8.326672684688674e-16,
+      "numeric_cells": 2
+    },
+    "A02_development_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 4.440892098500626e-15,
+      "numeric_cells": 2
+    },
+    "A02_development_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.1206313654810174e-15,
+      "numeric_cells": 2
+    },
+    "A02_development_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 1.6653345369377348e-15,
+      "numeric_cells": 2
+    },
+    "A02_development_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 1.4432899320127035e-15,
+      "numeric_cells": 2
+    },
+    "A02_development_original_metric_reconciliation": {
+      "maximum_absolute_error": 2.353672812205332e-14,
+      "numeric_cells": 4
+    },
+    "A02_development_relative_compounding_identity": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 1
+    },
+    "A02_oos_partial_2026_jan_sep_Sharpe_identity": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 1
+    },
+    "A02_oos_partial_2026_jan_sep_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.71445146547012e-17,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-19,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 2
+    },
+    "A02_oos_partial_2026_jan_sep_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 273
+    },
+    "A02_oos_partial_2026_jan_sep_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.4988010832439613e-15,
+      "numeric_cells": 6
+    },
+    "A02_oos_partial_2026_jan_sep_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1813466871402056e-15,
+      "numeric_cells": 273
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.8318679906315083e-15,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.27675647831893e-15,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.474514954580286e-16,
+      "numeric_cells": 81
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 3.642919299551295e-16,
+      "numeric_cells": 9
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.38378239159465e-16,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_LTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.718447854656915e-16,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_SOLUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.049116928532385e-16,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.3021142204224816e-16,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 1.938553484404082e-16,
+      "numeric_cells": 81
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 3.642919299551295e-16,
+      "numeric_cells": 9
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 273
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 7.105427357601002e-14,
+      "numeric_cells": 9
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 7.238654120556021e-14,
+      "numeric_cells": 9
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 9
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 7.771561172376096e-14,
+      "numeric_cells": 9
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 6.572520305780927e-14,
+      "numeric_cells": 9
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 7.160244619441869e-14,
+      "numeric_cells": 9
+    },
+    "A02_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 3.0253577421035516e-15,
+      "numeric_cells": 9
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.249000902703301e-16,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-19,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 2
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 2.6020852139652106e-18,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 2
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 273
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.8096635301390052e-14,
+      "numeric_cells": 2
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.915134717478395e-14,
+      "numeric_cells": 2
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 2
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.587618925213974e-14,
+      "numeric_cells": 2
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 2.145505995088115e-14,
+      "numeric_cells": 2
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 1.8707257964933888e-14,
+      "numeric_cells": 2
+    },
+    "A02_oos_partial_2026_jan_sep_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 1.4155343563970746e-15,
+      "numeric_cells": 2
+    },
+    "A02_oos_partial_2026_jan_sep_original_metric_reconciliation": {
+      "maximum_absolute_error": 7.4495964952348e-14,
+      "numeric_cells": 4
+    },
+    "A02_oos_partial_2026_jan_sep_relative_compounding_identity": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 1
+    },
+    "A02_validation_Sharpe_identity": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 1
+    },
+    "A02_validation_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.85722573273506e-17,
+      "numeric_cells": 4
+    },
+    "A02_validation_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "A02_validation_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 2
+    },
+    "A02_validation_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 731
+    },
+    "A02_validation_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.5543122344752192e-15,
+      "numeric_cells": 6
+    },
+    "A02_validation_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1927850200599277e-15,
+      "numeric_cells": 731
+    },
+    "A02_validation_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.0816681711721685e-16,
+      "numeric_cells": 4
+    },
+    "A02_validation_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-16,
+      "numeric_cells": 4
+    },
+    "A02_validation_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.249000902703301e-16,
+      "numeric_cells": 4
+    },
+    "A02_validation_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.5612511283791264e-17,
+      "numeric_cells": 81
+    },
+    "A02_validation_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 9
+    },
+    "A02_validation_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 4
+    },
+    "A02_validation_joint_eight_coin_LTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 4
+    },
+    "A02_validation_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.0816681711721685e-16,
+      "numeric_cells": 4
+    },
+    "A02_validation_joint_eight_coin_SOLUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.5265566588595902e-16,
+      "numeric_cells": 4
+    },
+    "A02_validation_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 4
+    },
+    "A02_validation_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 1.734723475976807e-17,
+      "numeric_cells": 81
+    },
+    "A02_validation_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 9
+    },
+    "A02_validation_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 727
+    },
+    "A02_validation_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.3877787807814457e-14,
+      "numeric_cells": 9
+    },
+    "A02_validation_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.4432899320127035e-14,
+      "numeric_cells": 9
+    },
+    "A02_validation_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 3.2612801348363973e-16,
+      "numeric_cells": 9
+    },
+    "A02_validation_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.4682699500667695e-14,
+      "numeric_cells": 9
+    },
+    "A02_validation_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.3655743202889425e-14,
+      "numeric_cells": 9
+    },
+    "A02_validation_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.4183099139586375e-14,
+      "numeric_cells": 9
+    },
+    "A02_validation_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 5.065392549852277e-16,
+      "numeric_cells": 9
+    },
+    "A02_validation_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 4
+    },
+    "A02_validation_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 4.336808689942018e-19,
+      "numeric_cells": 4
+    },
+    "A02_validation_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 2
+    },
+    "A02_validation_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 4.336808689942018e-19,
+      "numeric_cells": 4
+    },
+    "A02_validation_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 2
+    },
+    "A02_validation_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 727
+    },
+    "A02_validation_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 2.192690473634684e-15,
+      "numeric_cells": 2
+    },
+    "A02_validation_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 2.55351295663786e-15,
+      "numeric_cells": 2
+    },
+    "A02_validation_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 2
+    },
+    "A02_validation_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.27675647831893e-15,
+      "numeric_cells": 2
+    },
+    "A02_validation_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 3.552713678800501e-15,
+      "numeric_cells": 2
+    },
+    "A02_validation_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 2.275957200481571e-15,
+      "numeric_cells": 2
+    },
+    "A02_validation_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 2
+    },
+    "A02_validation_original_metric_reconciliation": {
+      "maximum_absolute_error": 8.104628079763643e-15,
+      "numeric_cells": 4
+    },
+    "A02_validation_relative_compounding_identity": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 1
+    },
+    "A03_development_Sharpe_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "A03_development_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 4
+    },
+    "A03_development_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-19,
+      "numeric_cells": 4
+    },
+    "A03_development_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "A03_development_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "numeric_cells": 730
+    },
+    "A03_development_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "numeric_cells": 6
+    },
+    "A03_development_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1917550279960665e-15,
+      "numeric_cells": 730
+    },
+    "A03_development_joint_eight_coin_ADAUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.71445146547012e-17,
+      "numeric_cells": 4
+    },
+    "A03_development_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.8041124150158794e-16,
+      "numeric_cells": 4
+    },
+    "A03_development_joint_eight_coin_DOTUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 4
+    },
+    "A03_development_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 4
+    },
+    "A03_development_joint_eight_coin_FILUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "A03_development_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.3010426069826053e-17,
+      "numeric_cells": 81
+    },
+    "A03_development_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.5265566588595902e-16,
+      "numeric_cells": 9
+    },
+    "A03_development_joint_eight_coin_MANAUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.0531133177191805e-16,
+      "numeric_cells": 4
+    },
+    "A03_development_joint_eight_coin_SHIBUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.71445146547012e-17,
+      "numeric_cells": 4
+    },
+    "A03_development_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.632783294297951e-17,
+      "numeric_cells": 4
+    },
+    "A03_development_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 1.474514954580286e-17,
+      "numeric_cells": 81
+    },
+    "A03_development_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 1.5265566588595902e-16,
+      "numeric_cells": 9
+    },
+    "A03_development_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.0408340855860843e-16,
+      "numeric_cells": 730
+    },
+    "A03_development_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 3.6193270602780103e-14,
+      "numeric_cells": 9
+    },
+    "A03_development_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 3.4486302702418925e-14,
+      "numeric_cells": 9
+    },
+    "A03_development_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "numeric_cells": 9
+    },
+    "A03_development_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 3.5416114485542494e-14,
+      "numeric_cells": 9
+    },
+    "A03_development_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 3.522182545623309e-14,
+      "numeric_cells": 9
+    },
+    "A03_development_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 3.5360603334311236e-14,
+      "numeric_cells": 9
+    },
+    "A03_development_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 9
+    },
+    "A03_development_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 4
+    },
+    "A03_development_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-19,
+      "numeric_cells": 4
+    },
+    "A03_development_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "A03_development_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-19,
+      "numeric_cells": 4
+    },
+    "A03_development_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "A03_development_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "numeric_cells": 730
+    },
+    "A03_development_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 7.105427357601002e-15,
+      "numeric_cells": 2
+    },
+    "A03_development_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 6.168676680573526e-15,
+      "numeric_cells": 2
+    },
+    "A03_development_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 2
+    },
+    "A03_development_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 6.772360450213455e-15,
+      "numeric_cells": 2
+    },
+    "A03_development_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 6.591949208711867e-15,
+      "numeric_cells": 2
+    },
+    "A03_development_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 6.661338147750939e-15,
+      "numeric_cells": 2
+    },
+    "A03_development_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 1.3183898417423734e-16,
+      "numeric_cells": 2
+    },
+    "A03_development_original_metric_reconciliation": {
+      "maximum_absolute_error": 2.4202861936828413e-14,
+      "numeric_cells": 4
+    },
+    "A03_development_relative_compounding_identity": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 1
+    },
+    "A03_oos_partial_2026_jan_sep_Sharpe_identity": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 1
+    },
+    "A03_oos_partial_2026_jan_sep_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-19,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 1.0408340855860843e-17,
+      "numeric_cells": 2
+    },
+    "A03_oos_partial_2026_jan_sep_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 273
+    },
+    "A03_oos_partial_2026_jan_sep_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.6653345369377348e-15,
+      "numeric_cells": 6
+    },
+    "A03_oos_partial_2026_jan_sep_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.0928757898653885e-15,
+      "numeric_cells": 273
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_ADAUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.800116025829084e-16,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_DOTUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.020562075079397e-17,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.43689570931383e-16,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_FILUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 3.729655473350135e-17,
+      "numeric_cells": 81
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.721347452938616e-16,
+      "numeric_cells": 9
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_MANAUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-16,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_SHIBUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.0122792321330962e-16,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-16,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 3.642919299551295e-17,
+      "numeric_cells": 81
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 2.721347452938616e-16,
+      "numeric_cells": 9
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 4.0592529337857286e-16,
+      "numeric_cells": 273
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.0524914273446484e-13,
+      "numeric_cells": 9
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 9.992007221626409e-14,
+      "numeric_cells": 9
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 1.3739009929736312e-15,
+      "numeric_cells": 9
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.0591527654923993e-13,
+      "numeric_cells": 9
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 9.917067167464211e-14,
+      "numeric_cells": 9
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.0258460747536446e-13,
+      "numeric_cells": 9
+    },
+    "A03_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 1.9012569296705806e-15,
+      "numeric_cells": 9
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-19,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.0408340855860843e-17,
+      "numeric_cells": 2
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 1.0408340855860843e-17,
+      "numeric_cells": 2
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 273
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 9.992007221626409e-16,
+      "numeric_cells": 2
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 3.191891195797325e-15,
+      "numeric_cells": 2
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 6.38378239159465e-16,
+      "numeric_cells": 2
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 4.163336342344337e-16,
+      "numeric_cells": 2
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 3.774758283725532e-15,
+      "numeric_cells": 2
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 1.9984014443252818e-15,
+      "numeric_cells": 2
+    },
+    "A03_oos_partial_2026_jan_sep_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 9.43689570931383e-16,
+      "numeric_cells": 2
+    },
+    "A03_oos_partial_2026_jan_sep_original_metric_reconciliation": {
+      "maximum_absolute_error": 2.886579864025407e-15,
+      "numeric_cells": 4
+    },
+    "A03_oos_partial_2026_jan_sep_relative_compounding_identity": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 1
+    },
+    "A03_validation_Sharpe_identity": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 1
+    },
+    "A03_validation_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.0816681711721685e-17,
+      "numeric_cells": 4
+    },
+    "A03_validation_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-19,
+      "numeric_cells": 4
+    },
+    "A03_validation_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 2.0816681711721685e-17,
+      "numeric_cells": 2
+    },
+    "A03_validation_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 731
+    },
+    "A03_validation_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.5543122344752192e-15,
+      "numeric_cells": 6
+    },
+    "A03_validation_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1796119636642288e-15,
+      "numeric_cells": 731
+    },
+    "A03_validation_joint_eight_coin_ADAUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.0531133177191805e-16,
+      "numeric_cells": 4
+    },
+    "A03_validation_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.0531133177191805e-16,
+      "numeric_cells": 4
+    },
+    "A03_validation_joint_eight_coin_DOTUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 4
+    },
+    "A03_validation_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 4
+    },
+    "A03_validation_joint_eight_coin_FILUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.5388358909926865e-16,
+      "numeric_cells": 4
+    },
+    "A03_validation_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-17,
+      "numeric_cells": 81
+    },
+    "A03_validation_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 9
+    },
+    "A03_validation_joint_eight_coin_MANAUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 4
+    },
+    "A03_validation_joint_eight_coin_SHIBUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 4
+    },
+    "A03_validation_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.0122792321330962e-16,
+      "numeric_cells": 4
+    },
+    "A03_validation_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0699720189716322e-17,
+      "numeric_cells": 81
+    },
+    "A03_validation_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 9
+    },
+    "A03_validation_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.8041124150158794e-16,
+      "numeric_cells": 731
+    },
+    "A03_validation_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 3.83026943495679e-15,
+      "numeric_cells": 9
+    },
+    "A03_validation_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 2.192690473634684e-15,
+      "numeric_cells": 9
+    },
+    "A03_validation_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "numeric_cells": 9
+    },
+    "A03_validation_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 5.218048215738236e-15,
+      "numeric_cells": 9
+    },
+    "A03_validation_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 6.38378239159465e-16,
+      "numeric_cells": 9
+    },
+    "A03_validation_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 2.9004576518332215e-15,
+      "numeric_cells": 9
+    },
+    "A03_validation_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 1.1657341758564144e-15,
+      "numeric_cells": 9
+    },
+    "A03_validation_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 4
+    },
+    "A03_validation_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-19,
+      "numeric_cells": 4
+    },
+    "A03_validation_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.0816681711721685e-17,
+      "numeric_cells": 2
+    },
+    "A03_validation_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "A03_validation_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 2.0816681711721685e-17,
+      "numeric_cells": 2
+    },
+    "A03_validation_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 731
+    },
+    "A03_validation_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.0547118733938987e-15,
+      "numeric_cells": 2
+    },
+    "A03_validation_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 3.3306690738754696e-15,
+      "numeric_cells": 2
+    },
+    "A03_validation_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 6.106226635438361e-16,
+      "numeric_cells": 2
+    },
+    "A03_validation_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 2
+    },
+    "A03_validation_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 4.551914400963142e-15,
+      "numeric_cells": 2
+    },
+    "A03_validation_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 2.1371793224034263e-15,
+      "numeric_cells": 2
+    },
+    "A03_validation_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 1.1657341758564144e-15,
+      "numeric_cells": 2
+    },
+    "A03_validation_original_metric_reconciliation": {
+      "maximum_absolute_error": 7.993605777301127e-15,
+      "numeric_cells": 4
+    },
+    "A03_validation_relative_compounding_identity": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 1
+    },
+    "A04_development_Sharpe_identity": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 1
+    },
+    "A04_development_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 4
+    },
+    "A04_development_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 1.734723475976807e-18,
+      "numeric_cells": 4
+    },
+    "A04_development_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "A04_development_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 730
+    },
+    "A04_development_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.7191109646930158e-15,
+      "numeric_cells": 6
+    },
+    "A04_development_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1102230246251565e-15,
+      "numeric_cells": 730
+    },
+    "A04_development_joint_eight_coin_AVAXUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-15,
+      "numeric_cells": 4
+    },
+    "A04_development_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.9960036108132044e-15,
+      "numeric_cells": 4
+    },
+    "A04_development_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 4
+    },
+    "A04_development_joint_eight_coin_FILUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.245004513516506e-16,
+      "numeric_cells": 4
+    },
+    "A04_development_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.632783294297951e-16,
+      "numeric_cells": 4
+    },
+    "A04_development_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 6.895525817007808e-17,
+      "numeric_cells": 81
+    },
+    "A04_development_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 9
+    },
+    "A04_development_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.71445146547012e-17,
+      "numeric_cells": 4
+    },
+    "A04_development_joint_eight_coin_SOLUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.0531133177191805e-16,
+      "numeric_cells": 4
+    },
+    "A04_development_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.771561172376096e-16,
+      "numeric_cells": 4
+    },
+    "A04_development_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 5.93275428784068e-16,
+      "numeric_cells": 81
+    },
+    "A04_development_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 9
+    },
+    "A04_development_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-16,
+      "numeric_cells": 610
+    },
+    "A04_development_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 9.769962616701378e-15,
+      "numeric_cells": 9
+    },
+    "A04_development_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.2073675392798577e-14,
+      "numeric_cells": 9
+    },
+    "A04_development_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 6.106226635438361e-16,
+      "numeric_cells": 9
+    },
+    "A04_development_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 7.993605777301127e-15,
+      "numeric_cells": 9
+    },
+    "A04_development_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.4155343563970746e-14,
+      "numeric_cells": 9
+    },
+    "A04_development_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.1102230246251565e-14,
+      "numeric_cells": 9
+    },
+    "A04_development_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 2.3037127760972e-15,
+      "numeric_cells": 9
+    },
+    "A04_development_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 4
+    },
+    "A04_development_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.734723475976807e-17,
+      "numeric_cells": 4
+    },
+    "A04_development_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.734723475976807e-18,
+      "numeric_cells": 2
+    },
+    "A04_development_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 1.2197274440461925e-19,
+      "numeric_cells": 4
+    },
+    "A04_development_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 1.734723475976807e-18,
+      "numeric_cells": 2
+    },
+    "A04_development_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "numeric_cells": 610
+    },
+    "A04_development_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.3322676295501878e-15,
+      "numeric_cells": 2
+    },
+    "A04_development_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 2.9004576518332215e-15,
+      "numeric_cells": 2
+    },
+    "A04_development_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 2
+    },
+    "A04_development_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "numeric_cells": 2
+    },
+    "A04_development_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 4.0245584642661925e-15,
+      "numeric_cells": 2
+    },
+    "A04_development_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 2.3314683517128287e-15,
+      "numeric_cells": 2
+    },
+    "A04_development_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "numeric_cells": 2
+    },
+    "A04_development_original_metric_reconciliation": {
+      "maximum_absolute_error": 4.440892098500626e-15,
+      "numeric_cells": 4
+    },
+    "A04_development_relative_compounding_identity": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 1
+    },
+    "A04_oos_partial_2026_jan_sep_Sharpe_identity": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 1
+    },
+    "A04_oos_partial_2026_jan_sep_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 2
+    },
+    "A04_oos_partial_2026_jan_sep_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 273
+    },
+    "A04_oos_partial_2026_jan_sep_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.9984014443252818e-15,
+      "numeric_cells": 6
+    },
+    "A04_oos_partial_2026_jan_sep_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1587952819525071e-15,
+      "numeric_cells": 273
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_AVAXUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.5543122344752192e-15,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.547918011776346e-15,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_FILUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3322676295501878e-15,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.248201624865942e-15,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 3.0253577421035516e-15,
+      "numeric_cells": 81
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.2628786905111156e-15,
+      "numeric_cells": 9
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-16,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_SOLUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.494005416219807e-16,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 2.0192181260370035e-15,
+      "numeric_cells": 81
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 1.2628786905111156e-15,
+      "numeric_cells": 9
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 2.42861286636753e-16,
+      "numeric_cells": 273
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 9.547918011776346e-15,
+      "numeric_cells": 9
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.0658141036401503e-14,
+      "numeric_cells": 9
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.609024107869118e-15,
+      "numeric_cells": 9
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.008915173628111e-14,
+      "numeric_cells": 9
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.1546319456101628e-14,
+      "numeric_cells": 9
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.0158540675320182e-14,
+      "numeric_cells": 9
+    },
+    "A04_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 4.551914400963142e-15,
+      "numeric_cells": 9
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 2
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 2
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 273
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 4.884981308350689e-15,
+      "numeric_cells": 2
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 4.884981308350689e-15,
+      "numeric_cells": 2
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 2
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 5.662137425588298e-15,
+      "numeric_cells": 2
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 4.218847493575595e-15,
+      "numeric_cells": 2
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 5.037636974236648e-15,
+      "numeric_cells": 2
+    },
+    "A04_oos_partial_2026_jan_sep_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "numeric_cells": 2
+    },
+    "A04_oos_partial_2026_jan_sep_original_metric_reconciliation": {
+      "maximum_absolute_error": 1.301736496372996e-14,
+      "numeric_cells": 4
+    },
+    "A04_oos_partial_2026_jan_sep_relative_compounding_identity": {
+      "maximum_absolute_error": 1.3877787807814457e-16,
+      "numeric_cells": 1
+    },
+    "A04_validation_Sharpe_identity": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 1
+    },
+    "A04_validation_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "A04_validation_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 7.030373462210693e-20,
+      "numeric_cells": 4
+    },
+    "A04_validation_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 2
+    },
+    "A04_validation_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 731
+    },
+    "A04_validation_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 2.7755575615628914e-15,
+      "numeric_cells": 6
+    },
+    "A04_validation_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1657341758564144e-15,
+      "numeric_cells": 731
+    },
+    "A04_validation_joint_eight_coin_AVAXUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.1510571102112408e-16,
+      "numeric_cells": 4
+    },
+    "A04_validation_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-15,
+      "numeric_cells": 4
+    },
+    "A04_validation_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "numeric_cells": 4
+    },
+    "A04_validation_joint_eight_coin_FILUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-16,
+      "numeric_cells": 4
+    },
+    "A04_validation_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.273559366969494e-16,
+      "numeric_cells": 4
+    },
+    "A04_validation_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 81
+    },
+    "A04_validation_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 9
+    },
+    "A04_validation_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 4
+    },
+    "A04_validation_joint_eight_coin_SOLUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 4
+    },
+    "A04_validation_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "numeric_cells": 4
+    },
+    "A04_validation_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 1.3877787807814457e-16,
+      "numeric_cells": 81
+    },
+    "A04_validation_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 9
+    },
+    "A04_validation_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 727
+    },
+    "A04_validation_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 4.3853809472693683e-14,
+      "numeric_cells": 9
+    },
+    "A04_validation_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 4.285460875053104e-14,
+      "numeric_cells": 9
+    },
+    "A04_validation_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 6.106226635438361e-16,
+      "numeric_cells": 9
+    },
+    "A04_validation_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 4.518607710224387e-14,
+      "numeric_cells": 9
+    },
+    "A04_validation_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 4.1522341120980855e-14,
+      "numeric_cells": 9
+    },
+    "A04_validation_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 4.3375025793324085e-14,
+      "numeric_cells": 9
+    },
+    "A04_validation_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 9.43689570931383e-16,
+      "numeric_cells": 9
+    },
+    "A04_validation_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "A04_validation_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-18,
+      "numeric_cells": 4
+    },
+    "A04_validation_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 2
+    },
+    "A04_validation_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0408340855860843e-17,
+      "numeric_cells": 4
+    },
+    "A04_validation_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 2
+    },
+    "A04_validation_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 727
+    },
+    "A04_validation_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 9.992007221626409e-16,
+      "numeric_cells": 2
+    },
+    "A04_validation_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.2212453270876722e-15,
+      "numeric_cells": 2
+    },
+    "A04_validation_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 2
+    },
+    "A04_validation_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.0477729794899915e-15,
+      "numeric_cells": 2
+    },
+    "A04_validation_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 2.9976021664879227e-15,
+      "numeric_cells": 2
+    },
+    "A04_validation_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 1.1657341758564144e-15,
+      "numeric_cells": 2
+    },
+    "A04_validation_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 9.43689570931383e-16,
+      "numeric_cells": 2
+    },
+    "A04_validation_original_metric_reconciliation": {
+      "maximum_absolute_error": 9.159339953157541e-16,
+      "numeric_cells": 4
+    },
+    "A04_validation_relative_compounding_identity": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 1
+    },
+    "B01_development_Sharpe_identity": {
+      "maximum_absolute_error": 1.0408340855860843e-16,
+      "numeric_cells": 1
+    },
+    "B01_development_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 4
+    },
+    "B01_development_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 3.2526065174565133e-19,
+      "numeric_cells": 4
+    },
+    "B01_development_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 6.572975670693371e-19,
+      "numeric_cells": 2
+    },
+    "B01_development_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 730
+    },
+    "B01_development_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.5543122344752192e-15,
+      "numeric_cells": 6
+    },
+    "B01_development_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.339206523454095e-15,
+      "numeric_cells": 730
+    },
+    "B01_development_joint_eight_coin_AXSUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.020562075079397e-17,
+      "numeric_cells": 4
+    },
+    "B01_development_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.42861286636753e-16,
+      "numeric_cells": 4
+    },
+    "B01_development_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.608224830031759e-16,
+      "numeric_cells": 4
+    },
+    "B01_development_joint_eight_coin_DOGEUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 4
+    },
+    "B01_development_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 4
+    },
+    "B01_development_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.71445146547012e-17,
+      "numeric_cells": 4
+    },
+    "B01_development_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.474514954580286e-17,
+      "numeric_cells": 81
+    },
+    "B01_development_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.9081958235744878e-16,
+      "numeric_cells": 9
+    },
+    "B01_development_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B01_development_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.249000902703301e-16,
+      "numeric_cells": 4
+    },
+    "B01_development_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 2.4936649967166602e-17,
+      "numeric_cells": 81
+    },
+    "B01_development_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 1.9081958235744878e-16,
+      "numeric_cells": 9
+    },
+    "B01_development_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 5.204170427930421e-17,
+      "numeric_cells": 730
+    },
+    "B01_development_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 7.716050021144838e-15,
+      "numeric_cells": 9
+    },
+    "B01_development_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 8.770761894538737e-15,
+      "numeric_cells": 9
+    },
+    "B01_development_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 9
+    },
+    "B01_development_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 8.215650382226158e-15,
+      "numeric_cells": 9
+    },
+    "B01_development_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 8.43769498715119e-15,
+      "numeric_cells": 9
+    },
+    "B01_development_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 8.215650382226158e-15,
+      "numeric_cells": 9
+    },
+    "B01_development_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 3.0531133177191805e-16,
+      "numeric_cells": 9
+    },
+    "B01_development_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 4
+    },
+    "B01_development_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 3.2526065174565133e-19,
+      "numeric_cells": 4
+    },
+    "B01_development_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 6.572975670693371e-19,
+      "numeric_cells": 2
+    },
+    "B01_development_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "B01_development_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 6.572975670693371e-19,
+      "numeric_cells": 2
+    },
+    "B01_development_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 730
+    },
+    "B01_development_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 3.497202527569243e-15,
+      "numeric_cells": 2
+    },
+    "B01_development_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.4988010832439613e-15,
+      "numeric_cells": 2
+    },
+    "B01_development_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 2
+    },
+    "B01_development_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 3.552713678800501e-15,
+      "numeric_cells": 2
+    },
+    "B01_development_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.4432899320127035e-15,
+      "numeric_cells": 2
+    },
+    "B01_development_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 2.463307335887066e-15,
+      "numeric_cells": 2
+    },
+    "B01_development_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 2
+    },
+    "B01_development_original_metric_reconciliation": {
+      "maximum_absolute_error": 9.2148511043888e-15,
+      "numeric_cells": 4
+    },
+    "B01_development_relative_compounding_identity": {
+      "maximum_absolute_error": 1.8041124150158794e-16,
+      "numeric_cells": 1
+    },
+    "B01_oos_partial_2026_jan_sep_Sharpe_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "B01_oos_partial_2026_jan_sep_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.469446951953614e-17,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-17,
+      "numeric_cells": 2
+    },
+    "B01_oos_partial_2026_jan_sep_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 273
+    },
+    "B01_oos_partial_2026_jan_sep_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.5543122344752192e-15,
+      "numeric_cells": 6
+    },
+    "B01_oos_partial_2026_jan_sep_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.132774429812855e-15,
+      "numeric_cells": 273
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_AXSUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1657341758564144e-15,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_DOGEUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.3021142204224816e-16,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.71445146547012e-17,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 7.112366251504909e-17,
+      "numeric_cells": 81
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 9
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-16,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 9.540979117872439e-17,
+      "numeric_cells": 81
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 9
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 273
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.4162282457874653e-14,
+      "numeric_cells": 9
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.1102230246251565e-14,
+      "numeric_cells": 9
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 8.326672684688674e-16,
+      "numeric_cells": 9
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.5216994331268552e-14,
+      "numeric_cells": 9
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.0103029524088925e-14,
+      "numeric_cells": 9
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.2656542480726785e-14,
+      "numeric_cells": 9
+    },
+    "B01_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 1.3877787807814457e-15,
+      "numeric_cells": 9
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-17,
+      "numeric_cells": 2
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0164395367051604e-20,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-17,
+      "numeric_cells": 2
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 273
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.2212453270876722e-14,
+      "numeric_cells": 2
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.1213252548714081e-14,
+      "numeric_cells": 2
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 2
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.2101430968414206e-14,
+      "numeric_cells": 2
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.1435297153639112e-14,
+      "numeric_cells": 2
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 1.176836406102666e-14,
+      "numeric_cells": 2
+    },
+    "B01_oos_partial_2026_jan_sep_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 2
+    },
+    "B01_oos_partial_2026_jan_sep_original_metric_reconciliation": {
+      "maximum_absolute_error": 4.1522341120980855e-14,
+      "numeric_cells": 4
+    },
+    "B01_oos_partial_2026_jan_sep_relative_compounding_identity": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 1
+    },
+    "B01_validation_Sharpe_identity": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 1
+    },
+    "B01_validation_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 4
+    },
+    "B01_validation_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 7.199780051661553e-21,
+      "numeric_cells": 4
+    },
+    "B01_validation_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 2
+    },
+    "B01_validation_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 731
+    },
+    "B01_validation_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.3322676295501878e-15,
+      "numeric_cells": 6
+    },
+    "B01_validation_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.186550857568136e-15,
+      "numeric_cells": 731
+    },
+    "B01_validation_joint_eight_coin_AXSUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B01_validation_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "B01_validation_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 4
+    },
+    "B01_validation_joint_eight_coin_DOGEUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 4
+    },
+    "B01_validation_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.0816681711721685e-16,
+      "numeric_cells": 4
+    },
+    "B01_validation_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.632783294297951e-17,
+      "numeric_cells": 4
+    },
+    "B01_validation_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 7.101524229780054e-18,
+      "numeric_cells": 81
+    },
+    "B01_validation_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 9
+    },
+    "B01_validation_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "B01_validation_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B01_validation_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 7.806255641895632e-18,
+      "numeric_cells": 81
+    },
+    "B01_validation_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 9
+    },
+    "B01_validation_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 727
+    },
+    "B01_validation_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 6.5503158452884236e-15,
+      "numeric_cells": 9
+    },
+    "B01_validation_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 6.800116025829084e-15,
+      "numeric_cells": 9
+    },
+    "B01_validation_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 9
+    },
+    "B01_validation_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 5.218048215738236e-15,
+      "numeric_cells": 9
+    },
+    "B01_validation_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 8.243405957841787e-15,
+      "numeric_cells": 9
+    },
+    "B01_validation_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 6.689093723366568e-15,
+      "numeric_cells": 9
+    },
+    "B01_validation_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 8.049116928532385e-16,
+      "numeric_cells": 9
+    },
+    "B01_validation_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 4
+    },
+    "B01_validation_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 6.505213034913027e-19,
+      "numeric_cells": 4
+    },
+    "B01_validation_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 2
+    },
+    "B01_validation_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 1.0842021724855044e-18,
+      "numeric_cells": 4
+    },
+    "B01_validation_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 2
+    },
+    "B01_validation_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 727
+    },
+    "B01_validation_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 2.55351295663786e-15,
+      "numeric_cells": 2
+    },
+    "B01_validation_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 2.525757381022231e-15,
+      "numeric_cells": 2
+    },
+    "B01_validation_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 2
+    },
+    "B01_validation_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 4.218847493575595e-15,
+      "numeric_cells": 2
+    },
+    "B01_validation_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 7.632783294297951e-16,
+      "numeric_cells": 2
+    },
+    "B01_validation_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 2.4424906541753444e-15,
+      "numeric_cells": 2
+    },
+    "B01_validation_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 9.43689570931383e-16,
+      "numeric_cells": 2
+    },
+    "B01_validation_original_metric_reconciliation": {
+      "maximum_absolute_error": 1.2434497875801753e-14,
+      "numeric_cells": 4
+    },
+    "B01_validation_relative_compounding_identity": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 1
+    },
+    "B03_development_Sharpe_identity": {
+      "maximum_absolute_error": 2.983724378680108e-16,
+      "numeric_cells": 1
+    },
+    "B03_development_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.0816681711721685e-17,
+      "numeric_cells": 4
+    },
+    "B03_development_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 3.2526065174565133e-19,
+      "numeric_cells": 4
+    },
+    "B03_development_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "B03_development_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 730
+    },
+    "B03_development_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 7.771561172376096e-16,
+      "numeric_cells": 6
+    },
+    "B03_development_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1543500530453166e-15,
+      "numeric_cells": 730
+    },
+    "B03_development_joint_eight_coin_AXSUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 4
+    },
+    "B03_development_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 4
+    },
+    "B03_development_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.661338147750939e-16,
+      "numeric_cells": 4
+    },
+    "B03_development_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.0245584642661925e-16,
+      "numeric_cells": 4
+    },
+    "B03_development_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B03_development_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.9949319973733282e-17,
+      "numeric_cells": 81
+    },
+    "B03_development_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 3.0531133177191805e-16,
+      "numeric_cells": 9
+    },
+    "B03_development_joint_eight_coin_LTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.249000902703301e-16,
+      "numeric_cells": 4
+    },
+    "B03_development_joint_eight_coin_MATICUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.191891195797325e-16,
+      "numeric_cells": 4
+    },
+    "B03_development_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.249000902703301e-16,
+      "numeric_cells": 4
+    },
+    "B03_development_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 2.42861286636753e-17,
+      "numeric_cells": 81
+    },
+    "B03_development_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 3.0531133177191805e-16,
+      "numeric_cells": 9
+    },
+    "B03_development_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 730
+    },
+    "B03_development_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.099120794378905e-14,
+      "numeric_cells": 9
+    },
+    "B03_development_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.0269562977782698e-14,
+      "numeric_cells": 9
+    },
+    "B03_development_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 9
+    },
+    "B03_development_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.0658141036401503e-14,
+      "numeric_cells": 9
+    },
+    "B03_development_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.071365218763276e-14,
+      "numeric_cells": 9
+    },
+    "B03_development_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.061650767297806e-14,
+      "numeric_cells": 9
+    },
+    "B03_development_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 1.214306433183765e-16,
+      "numeric_cells": 9
+    },
+    "B03_development_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.0816681711721685e-17,
+      "numeric_cells": 4
+    },
+    "B03_development_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 3.2526065174565133e-19,
+      "numeric_cells": 4
+    },
+    "B03_development_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "B03_development_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-19,
+      "numeric_cells": 4
+    },
+    "B03_development_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "B03_development_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 730
+    },
+    "B03_development_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 9.43689570931383e-16,
+      "numeric_cells": 2
+    },
+    "B03_development_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 2.275957200481571e-15,
+      "numeric_cells": 2
+    },
+    "B03_development_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 3.608224830031759e-16,
+      "numeric_cells": 2
+    },
+    "B03_development_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.609823385706477e-15,
+      "numeric_cells": 2
+    },
+    "B03_development_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.609823385706477e-15,
+      "numeric_cells": 2
+    },
+    "B03_development_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 1.5126788710517758e-15,
+      "numeric_cells": 2
+    },
+    "B03_development_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 1.5959455978986625e-16,
+      "numeric_cells": 2
+    },
+    "B03_development_original_metric_reconciliation": {
+      "maximum_absolute_error": 6.8833827526759706e-15,
+      "numeric_cells": 4
+    },
+    "B03_development_relative_compounding_identity": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 1
+    },
+    "B03_oos_partial_2026_jan_sep_Sharpe_identity": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 1
+    },
+    "B03_oos_partial_2026_jan_sep_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-19,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 2
+    },
+    "B03_oos_partial_2026_jan_sep_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 273
+    },
+    "B03_oos_partial_2026_jan_sep_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.9984014443252818e-15,
+      "numeric_cells": 6
+    },
+    "B03_oos_partial_2026_jan_sep_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1180292802670522e-15,
+      "numeric_cells": 273
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_AXSUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.85722573273506e-16,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.3592239273284576e-16,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.771561172376096e-16,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 5.204170427930421e-17,
+      "numeric_cells": 81
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 8.083811398051921e-16,
+      "numeric_cells": 9
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_LTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.0122792321330962e-16,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_MATICUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.743006318923108e-16,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.38378239159465e-16,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 2.3418766925686896e-17,
+      "numeric_cells": 81
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 8.083811398051921e-16,
+      "numeric_cells": 9
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 273
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 2.19824158875781e-14,
+      "numeric_cells": 9
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.3322676295501878e-14,
+      "numeric_cells": 9
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.1371793224034263e-15,
+      "numeric_cells": 9
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 2.0816681711721685e-14,
+      "numeric_cells": 9
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.4432899320127035e-14,
+      "numeric_cells": 9
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.765254609153999e-14,
+      "numeric_cells": 9
+    },
+    "B03_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 1.4988010832439613e-15,
+      "numeric_cells": 9
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-19,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 2
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 2
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 273
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.715294573045867e-14,
+      "numeric_cells": 2
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 9.992007221626409e-15,
+      "numeric_cells": 2
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 1.7208456881689926e-15,
+      "numeric_cells": 2
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.63202784619898e-14,
+      "numeric_cells": 2
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.0658141036401503e-14,
+      "numeric_cells": 2
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 1.354472090042691e-14,
+      "numeric_cells": 2
+    },
+    "B03_oos_partial_2026_jan_sep_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 1.3322676295501878e-15,
+      "numeric_cells": 2
+    },
+    "B03_oos_partial_2026_jan_sep_original_metric_reconciliation": {
+      "maximum_absolute_error": 5.950795411990839e-14,
+      "numeric_cells": 4
+    },
+    "B03_oos_partial_2026_jan_sep_relative_compounding_identity": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 1
+    },
+    "B03_validation_Sharpe_identity": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 1
+    },
+    "B03_validation_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 4
+    },
+    "B03_validation_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-19,
+      "numeric_cells": 4
+    },
+    "B03_validation_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-17,
+      "numeric_cells": 2
+    },
+    "B03_validation_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 731
+    },
+    "B03_validation_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 3.4416913763379853e-15,
+      "numeric_cells": 6
+    },
+    "B03_validation_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1413396269754905e-15,
+      "numeric_cells": 731
+    },
+    "B03_validation_joint_eight_coin_AXSUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.191891195797325e-16,
+      "numeric_cells": 4
+    },
+    "B03_validation_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "B03_validation_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B03_validation_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 4
+    },
+    "B03_validation_joint_eight_coin_FTMUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1796119636642288e-16,
+      "numeric_cells": 4
+    },
+    "B03_validation_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 8.239936510889834e-18,
+      "numeric_cells": 81
+    },
+    "B03_validation_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.0816681711721685e-16,
+      "numeric_cells": 9
+    },
+    "B03_validation_joint_eight_coin_LTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 4
+    },
+    "B03_validation_joint_eight_coin_MATICUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.718447854656915e-16,
+      "numeric_cells": 4
+    },
+    "B03_validation_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-17,
+      "numeric_cells": 4
+    },
+    "B03_validation_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 1.2576745200831851e-17,
+      "numeric_cells": 81
+    },
+    "B03_validation_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 2.0816681711721685e-16,
+      "numeric_cells": 9
+    },
+    "B03_validation_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 723
+    },
+    "B03_validation_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 7.93809462606987e-15,
+      "numeric_cells": 9
+    },
+    "B03_validation_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 9.270362255620057e-15,
+      "numeric_cells": 9
+    },
+    "B03_validation_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 3.5388358909926865e-16,
+      "numeric_cells": 9
+    },
+    "B03_validation_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 8.1601392309949e-15,
+      "numeric_cells": 9
+    },
+    "B03_validation_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 9.048317650695026e-15,
+      "numeric_cells": 9
+    },
+    "B03_validation_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 8.715250743307479e-15,
+      "numeric_cells": 9
+    },
+    "B03_validation_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 3.0531133177191805e-16,
+      "numeric_cells": 9
+    },
+    "B03_validation_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 4
+    },
+    "B03_validation_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 4.336808689942018e-19,
+      "numeric_cells": 4
+    },
+    "B03_validation_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "B03_validation_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 6.505213034913027e-19,
+      "numeric_cells": 4
+    },
+    "B03_validation_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "B03_validation_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 723
+    },
+    "B03_validation_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 2
+    },
+    "B03_validation_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 9.71445146547012e-16,
+      "numeric_cells": 2
+    },
+    "B03_validation_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 2
+    },
+    "B03_validation_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 2
+    },
+    "B03_validation_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.609823385706477e-15,
+      "numeric_cells": 2
+    },
+    "B03_validation_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 8.326672684688674e-16,
+      "numeric_cells": 2
+    },
+    "B03_validation_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 4.163336342344337e-16,
+      "numeric_cells": 2
+    },
+    "B03_validation_original_metric_reconciliation": {
+      "maximum_absolute_error": 5.551115123125783e-15,
+      "numeric_cells": 4
+    },
+    "B03_validation_relative_compounding_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "B04_development_Sharpe_identity": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 1
+    },
+    "B04_development_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 4
+    },
+    "B04_development_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 1.3010426069826053e-18,
+      "numeric_cells": 4
+    },
+    "B04_development_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 1.734723475976807e-18,
+      "numeric_cells": 2
+    },
+    "B04_development_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 730
+    },
+    "B04_development_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.4432899320127035e-15,
+      "numeric_cells": 6
+    },
+    "B04_development_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.2169085183977302e-15,
+      "numeric_cells": 730
+    },
+    "B04_development_joint_eight_coin_AVAXUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 4
+    },
+    "B04_development_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 4
+    },
+    "B04_development_joint_eight_coin_DOTUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.077671781985373e-16,
+      "numeric_cells": 4
+    },
+    "B04_development_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "numeric_cells": 4
+    },
+    "B04_development_joint_eight_coin_FILUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B04_development_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 4.3259666682171627e-17,
+      "numeric_cells": 81
+    },
+    "B04_development_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 9
+    },
+    "B04_development_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B04_development_joint_eight_coin_MANAUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.191891195797325e-16,
+      "numeric_cells": 4
+    },
+    "B04_development_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.273559366969494e-16,
+      "numeric_cells": 4
+    },
+    "B04_development_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 5.412879346133881e-17,
+      "numeric_cells": 81
+    },
+    "B04_development_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 9
+    },
+    "B04_development_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 610
+    },
+    "B04_development_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 2.1649348980190553e-15,
+      "numeric_cells": 9
+    },
+    "B04_development_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.6653345369377348e-15,
+      "numeric_cells": 9
+    },
+    "B04_development_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 9
+    },
+    "B04_development_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 3.3306690738754696e-15,
+      "numeric_cells": 9
+    },
+    "B04_development_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.4432899320127035e-15,
+      "numeric_cells": 9
+    },
+    "B04_development_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.9290125052862095e-15,
+      "numeric_cells": 9
+    },
+    "B04_development_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 6.938893903907228e-16,
+      "numeric_cells": 9
+    },
+    "B04_development_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-17,
+      "numeric_cells": 4
+    },
+    "B04_development_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 3.0357660829594124e-18,
+      "numeric_cells": 4
+    },
+    "B04_development_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "numeric_cells": 2
+    },
+    "B04_development_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 2.6020852139652106e-18,
+      "numeric_cells": 4
+    },
+    "B04_development_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "numeric_cells": 2
+    },
+    "B04_development_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 610
+    },
+    "B04_development_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 4.163336342344337e-15,
+      "numeric_cells": 2
+    },
+    "B04_development_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 2.609024107869118e-15,
+      "numeric_cells": 2
+    },
+    "B04_development_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "numeric_cells": 2
+    },
+    "B04_development_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 4.496403249731884e-15,
+      "numeric_cells": 2
+    },
+    "B04_development_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 2.220446049250313e-15,
+      "numeric_cells": 2
+    },
+    "B04_development_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 3.3306690738754696e-15,
+      "numeric_cells": 2
+    },
+    "B04_development_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 5.273559366969494e-16,
+      "numeric_cells": 2
+    },
+    "B04_development_original_metric_reconciliation": {
+      "maximum_absolute_error": 8.104628079763643e-15,
+      "numeric_cells": 4
+    },
+    "B04_development_relative_compounding_identity": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 1
+    },
+    "B04_oos_partial_2026_jan_sep_Sharpe_identity": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 1
+    },
+    "B04_oos_partial_2026_jan_sep_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 2.541098841762901e-21,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "B04_oos_partial_2026_jan_sep_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 273
+    },
+    "B04_oos_partial_2026_jan_sep_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 7.771561172376096e-16,
+      "numeric_cells": 6
+    },
+    "B04_oos_partial_2026_jan_sep_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.1136924715771102e-15,
+      "numeric_cells": 273
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_AVAXUSDT_beta_invariance": {
+      "maximum_absolute_error": 7.7021722333370235e-16,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1934897514720433e-15,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_DOTUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.245004513516506e-16,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.2073675392798577e-15,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_FILUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 5.117434254131581e-17,
+      "numeric_cells": 81
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 3.1925688221551285e-16,
+      "numeric_cells": 9
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.0269562977782698e-15,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_MANAUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-16,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 4.7488055154865094e-17,
+      "numeric_cells": 81
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 3.1925688221551285e-16,
+      "numeric_cells": 9
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 3.7470027081099033e-16,
+      "numeric_cells": 273
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 6.966649479522857e-15,
+      "numeric_cells": 9
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 6.827871601444713e-15,
+      "numeric_cells": 9
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 8.049116928532385e-16,
+      "numeric_cells": 9
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.1934897514720433e-14,
+      "numeric_cells": 9
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.8596235662471372e-15,
+      "numeric_cells": 9
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 6.8542177142361105e-15,
+      "numeric_cells": 9
+    },
+    "B04_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 2.5673907444456745e-15,
+      "numeric_cells": 9
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 2.752857078576476e-21,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 4.336808689942018e-19,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 2
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 273
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 2.55351295663786e-15,
+      "numeric_cells": 2
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 8.770761894538737e-15,
+      "numeric_cells": 2
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 1.5543122344752192e-15,
+      "numeric_cells": 2
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 2.7755575615628914e-15,
+      "numeric_cells": 2
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 8.548717289613705e-15,
+      "numeric_cells": 2
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 5.6066262743570405e-15,
+      "numeric_cells": 2
+    },
+    "B04_oos_partial_2026_jan_sep_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 1.4432899320127035e-15,
+      "numeric_cells": 2
+    },
+    "B04_oos_partial_2026_jan_sep_original_metric_reconciliation": {
+      "maximum_absolute_error": 1.9872992140790302e-14,
+      "numeric_cells": 4
+    },
+    "B04_oos_partial_2026_jan_sep_relative_compounding_identity": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 1
+    },
+    "B04_validation_Sharpe_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "B04_validation_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 4
+    },
+    "B04_validation_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 5.421010862427522e-19,
+      "numeric_cells": 4
+    },
+    "B04_validation_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-17,
+      "numeric_cells": 2
+    },
+    "B04_validation_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 731
+    },
+    "B04_validation_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.1102230246251565e-15,
+      "numeric_cells": 6
+    },
+    "B04_validation_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.4580350815585064e-15,
+      "numeric_cells": 731
+    },
+    "B04_validation_joint_eight_coin_AVAXUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.7470027081099033e-16,
+      "numeric_cells": 4
+    },
+    "B04_validation_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "numeric_cells": 4
+    },
+    "B04_validation_joint_eight_coin_DOTUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.249000902703301e-16,
+      "numeric_cells": 4
+    },
+    "B04_validation_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "B04_validation_joint_eight_coin_FILUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 4
+    },
+    "B04_validation_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 9.540979117872439e-18,
+      "numeric_cells": 81
+    },
+    "B04_validation_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 9
+    },
+    "B04_validation_joint_eight_coin_LUNAUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 4
+    },
+    "B04_validation_joint_eight_coin_MANAUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 4
+    },
+    "B04_validation_joint_eight_coin_VETUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 4
+    },
+    "B04_validation_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 1.5178830414797062e-17,
+      "numeric_cells": 81
+    },
+    "B04_validation_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 9
+    },
+    "B04_validation_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 731
+    },
+    "B04_validation_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 3.108624468950438e-14,
+      "numeric_cells": 9
+    },
+    "B04_validation_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 3.1460944960315373e-14,
+      "numeric_cells": 9
+    },
+    "B04_validation_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 9
+    },
+    "B04_validation_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 3.1308289294429414e-14,
+      "numeric_cells": 9
+    },
+    "B04_validation_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 3.1280533718813786e-14,
+      "numeric_cells": 9
+    },
+    "B04_validation_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 3.1308289294429414e-14,
+      "numeric_cells": 9
+    },
+    "B04_validation_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 5.238864897449957e-16,
+      "numeric_cells": 9
+    },
+    "B04_validation_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.469446951953614e-17,
+      "numeric_cells": 4
+    },
+    "B04_validation_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 5.421010862427522e-19,
+      "numeric_cells": 4
+    },
+    "B04_validation_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-17,
+      "numeric_cells": 2
+    },
+    "B04_validation_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 4.336808689942018e-19,
+      "numeric_cells": 4
+    },
+    "B04_validation_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-17,
+      "numeric_cells": 2
+    },
+    "B04_validation_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 731
+    },
+    "B04_validation_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.3322676295501878e-15,
+      "numeric_cells": 2
+    },
+    "B04_validation_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 2.3869795029440866e-15,
+      "numeric_cells": 2
+    },
+    "B04_validation_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 1.942890293094024e-16,
+      "numeric_cells": 2
+    },
+    "B04_validation_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 2
+    },
+    "B04_validation_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 3.066991105526995e-15,
+      "numeric_cells": 2
+    },
+    "B04_validation_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 1.887379141862766e-15,
+      "numeric_cells": 2
+    },
+    "B04_validation_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 5.828670879282072e-16,
+      "numeric_cells": 2
+    },
+    "B04_validation_original_metric_reconciliation": {
+      "maximum_absolute_error": 8.881784197001252e-15,
+      "numeric_cells": 4
+    },
+    "B04_validation_relative_compounding_identity": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 1
+    },
+    "B05_development_Sharpe_identity": {
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "numeric_cells": 1
+    },
+    "B05_development_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B05_development_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-19,
+      "numeric_cells": 4
+    },
+    "B05_development_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 2
+    },
+    "B05_development_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 730
+    },
+    "B05_development_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "numeric_cells": 6
+    },
+    "B05_development_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.0824674490095276e-15,
+      "numeric_cells": 730
+    },
+    "B05_development_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.938893903907228e-16,
+      "numeric_cells": 4
+    },
+    "B05_development_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.9637069748057456e-15,
+      "numeric_cells": 4
+    },
+    "B05_development_joint_eight_coin_DOGEUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 4
+    },
+    "B05_development_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "numeric_cells": 4
+    },
+    "B05_development_joint_eight_coin_GALAUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 4
+    },
+    "B05_development_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 2.168404344971009e-17,
+      "numeric_cells": 81
+    },
+    "B05_development_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 3.8163916471489756e-16,
+      "numeric_cells": 9
+    },
+    "B05_development_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.134781488891349e-16,
+      "numeric_cells": 4
+    },
+    "B05_development_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 4
+    },
+    "B05_development_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 4
+    },
+    "B05_development_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 5.941427905220564e-17,
+      "numeric_cells": 81
+    },
+    "B05_development_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 3.8163916471489756e-16,
+      "numeric_cells": 9
+    },
+    "B05_development_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 730
+    },
+    "B05_development_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.3489209749195652e-14,
+      "numeric_cells": 9
+    },
+    "B05_development_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.2545520178264269e-14,
+      "numeric_cells": 9
+    },
+    "B05_development_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 9
+    },
+    "B05_development_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.3877787807814457e-14,
+      "numeric_cells": 9
+    },
+    "B05_development_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.2184697695261093e-14,
+      "numeric_cells": 9
+    },
+    "B05_development_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.292022044907526e-14,
+      "numeric_cells": 9
+    },
+    "B05_development_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 1.7208456881689926e-15,
+      "numeric_cells": 9
+    },
+    "B05_development_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B05_development_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-19,
+      "numeric_cells": 4
+    },
+    "B05_development_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 2
+    },
+    "B05_development_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 1.734723475976807e-18,
+      "numeric_cells": 4
+    },
+    "B05_development_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 2
+    },
+    "B05_development_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 730
+    },
+    "B05_development_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 7.716050021144838e-15,
+      "numeric_cells": 2
+    },
+    "B05_development_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 7.271960811294775e-15,
+      "numeric_cells": 2
+    },
+    "B05_development_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 2
+    },
+    "B05_development_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 7.771561172376096e-15,
+      "numeric_cells": 2
+    },
+    "B05_development_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 7.188694084447889e-15,
+      "numeric_cells": 2
+    },
+    "B05_development_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 7.466249840604178e-15,
+      "numeric_cells": 2
+    },
+    "B05_development_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 2
+    },
+    "B05_development_original_metric_reconciliation": {
+      "maximum_absolute_error": 2.270406085358445e-14,
+      "numeric_cells": 4
+    },
+    "B05_development_relative_compounding_identity": {
+      "maximum_absolute_error": 2.636779683484747e-16,
+      "numeric_cells": 1
+    },
+    "B05_oos_partial_2026_jan_sep_Sharpe_identity": {
+      "maximum_absolute_error": 7.216449660063518e-16,
+      "numeric_cells": 1
+    },
+    "B05_oos_partial_2026_jan_sep_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-18,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "B05_oos_partial_2026_jan_sep_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 273
+    },
+    "B05_oos_partial_2026_jan_sep_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.4988010832439613e-15,
+      "numeric_cells": 6
+    },
+    "B05_oos_partial_2026_jan_sep_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.087671619437458e-15,
+      "numeric_cells": 273
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.1649348980190553e-15,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.3175905639050143e-15,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_DOGEUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.604228440844963e-16,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.8318679906315083e-15,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_GALAUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.6740081543176188e-16,
+      "numeric_cells": 81
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 4.822531263215524e-16,
+      "numeric_cells": 9
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.0539125955565396e-15,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.5543122344752192e-15,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 2.76146293332058e-16,
+      "numeric_cells": 81
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 4.822531263215524e-16,
+      "numeric_cells": 9
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 2.8102520310824275e-16,
+      "numeric_cells": 273
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 3.115840918610502e-13,
+      "numeric_cells": 9
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 3.174682738915635e-13,
+      "numeric_cells": 9
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 2.400857290751901e-15,
+      "numeric_cells": 9
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 3.094746681142624e-13,
+      "numeric_cells": 9
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 3.1952218648712005e-13,
+      "numeric_cells": 9
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 3.145539384519225e-13,
+      "numeric_cells": 9
+    },
+    "B05_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 3.975986206938842e-15,
+      "numeric_cells": 9
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 8.673617379884035e-18,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 273
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 3.164135620181696e-15,
+      "numeric_cells": 2
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 7.993605777301127e-15,
+      "numeric_cells": 2
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 1.27675647831893e-15,
+      "numeric_cells": 2
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 4.551914400963142e-15,
+      "numeric_cells": 2
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 6.6058269965196814e-15,
+      "numeric_cells": 2
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 5.578870698741412e-15,
+      "numeric_cells": 2
+    },
+    "B05_oos_partial_2026_jan_sep_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 6.106226635438361e-16,
+      "numeric_cells": 2
+    },
+    "B05_oos_partial_2026_jan_sep_original_metric_reconciliation": {
+      "maximum_absolute_error": 2.4980018054066022e-14,
+      "numeric_cells": 4
+    },
+    "B05_oos_partial_2026_jan_sep_relative_compounding_identity": {
+      "maximum_absolute_error": 0.0,
+      "numeric_cells": 1
+    },
+    "B05_validation_Sharpe_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "B05_validation_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 4
+    },
+    "B05_validation_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 1.3010426069826053e-18,
+      "numeric_cells": 4
+    },
+    "B05_validation_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 2
+    },
+    "B05_validation_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 3.469446951953614e-17,
+      "numeric_cells": 731
+    },
+    "B05_validation_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.3322676295501878e-15,
+      "numeric_cells": 6
+    },
+    "B05_validation_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.4901274658640773e-15,
+      "numeric_cells": 731
+    },
+    "B05_validation_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.914335439641036e-16,
+      "numeric_cells": 4
+    },
+    "B05_validation_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.689893001203927e-16,
+      "numeric_cells": 4
+    },
+    "B05_validation_joint_eight_coin_DOGEUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 4
+    },
+    "B05_validation_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.134781488891349e-16,
+      "numeric_cells": 4
+    },
+    "B05_validation_joint_eight_coin_GALAUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 4
+    },
+    "B05_validation_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.8214596497756474e-17,
+      "numeric_cells": 81
+    },
+    "B05_validation_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.0643209364124004e-16,
+      "numeric_cells": 9
+    },
+    "B05_validation_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.0408340855860843e-16,
+      "numeric_cells": 4
+    },
+    "B05_validation_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 4
+    },
+    "B05_validation_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 4
+    },
+    "B05_validation_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 3.9898639947466563e-17,
+      "numeric_cells": 81
+    },
+    "B05_validation_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 2.0643209364124004e-16,
+      "numeric_cells": 9
+    },
+    "B05_validation_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.8041124150158794e-16,
+      "numeric_cells": 731
+    },
+    "B05_validation_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.312283615106935e-13,
+      "numeric_cells": 9
+    },
+    "B05_validation_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.308623348572624e-13,
+      "numeric_cells": 9
+    },
+    "B05_validation_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 3.122502256758253e-16,
+      "numeric_cells": 9
+    },
+    "B05_validation_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.3011813848606835e-13,
+      "numeric_cells": 9
+    },
+    "B05_validation_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.3219807193376454e-13,
+      "numeric_cells": 9
+    },
+    "B05_validation_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.3106182805699973e-13,
+      "numeric_cells": 9
+    },
+    "B05_validation_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 9
+    },
+    "B05_validation_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 4
+    },
+    "B05_validation_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.3010426069826053e-18,
+      "numeric_cells": 4
+    },
+    "B05_validation_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 2
+    },
+    "B05_validation_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 1.734723475976807e-18,
+      "numeric_cells": 4
+    },
+    "B05_validation_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 2
+    },
+    "B05_validation_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 3.469446951953614e-17,
+      "numeric_cells": 731
+    },
+    "B05_validation_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.2545520178264269e-14,
+      "numeric_cells": 2
+    },
+    "B05_validation_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.584843367652411e-14,
+      "numeric_cells": 2
+    },
+    "B05_validation_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 8.326672684688674e-16,
+      "numeric_cells": 2
+    },
+    "B05_validation_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.099120794378905e-14,
+      "numeric_cells": 2
+    },
+    "B05_validation_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 1.7486012637846216e-14,
+      "numeric_cells": 2
+    },
+    "B05_validation_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 1.426636586643326e-14,
+      "numeric_cells": 2
+    },
+    "B05_validation_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 1.6653345369377348e-15,
+      "numeric_cells": 2
+    },
+    "B05_validation_original_metric_reconciliation": {
+      "maximum_absolute_error": 7.038813976123492e-14,
+      "numeric_cells": 4
+    },
+    "B05_validation_relative_compounding_identity": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 1
+    },
+    "B06_development_Sharpe_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "B06_development_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 4
+    },
+    "B06_development_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 1.734723475976807e-18,
+      "numeric_cells": 4
+    },
+    "B06_development_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "B06_development_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 730
+    },
+    "B06_development_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 6.106226635438361e-16,
+      "numeric_cells": 6
+    },
+    "B06_development_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.231653667943533e-15,
+      "numeric_cells": 730
+    },
+    "B06_development_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 4
+    },
+    "B06_development_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.9960036108132044e-15,
+      "numeric_cells": 4
+    },
+    "B06_development_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.915134717478395e-15,
+      "numeric_cells": 4
+    },
+    "B06_development_joint_eight_coin_GALAUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.187894806610529e-16,
+      "numeric_cells": 4
+    },
+    "B06_development_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 3.382710778154774e-17,
+      "numeric_cells": 81
+    },
+    "B06_development_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.7867651802561113e-16,
+      "numeric_cells": 9
+    },
+    "B06_development_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-16,
+      "numeric_cells": 4
+    },
+    "B06_development_joint_eight_coin_MANAUSDT_beta_invariance": {
+      "maximum_absolute_error": 8.326672684688674e-16,
+      "numeric_cells": 4
+    },
+    "B06_development_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 4
+    },
+    "B06_development_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.8163916471489756e-16,
+      "numeric_cells": 4
+    },
+    "B06_development_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 3.452099717193846e-16,
+      "numeric_cells": 81
+    },
+    "B06_development_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 1.7867651802561113e-16,
+      "numeric_cells": 9
+    },
+    "B06_development_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 730
+    },
+    "B06_development_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 4.3853809472693683e-14,
+      "numeric_cells": 9
+    },
+    "B06_development_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 4.54081217071689e-14,
+      "numeric_cells": 9
+    },
+    "B06_development_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 9
+    },
+    "B06_development_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 4.2521541843143495e-14,
+      "numeric_cells": 9
+    },
+    "B06_development_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 4.668487818548783e-14,
+      "numeric_cells": 9
+    },
+    "B06_development_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 4.474198789239381e-14,
+      "numeric_cells": 9
+    },
+    "B06_development_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 2.1788126858268697e-15,
+      "numeric_cells": 9
+    },
+    "B06_development_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 4
+    },
+    "B06_development_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 1.734723475976807e-18,
+      "numeric_cells": 4
+    },
+    "B06_development_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "B06_development_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "numeric_cells": 4
+    },
+    "B06_development_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 5.551115123125783e-17,
+      "numeric_cells": 2
+    },
+    "B06_development_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 730
+    },
+    "B06_development_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 5.88418203051333e-15,
+      "numeric_cells": 2
+    },
+    "B06_development_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 6.716849298982197e-15,
+      "numeric_cells": 2
+    },
+    "B06_development_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 2
+    },
+    "B06_development_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 4.773959005888173e-15,
+      "numeric_cells": 2
+    },
+    "B06_development_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 7.771561172376096e-15,
+      "numeric_cells": 2
+    },
+    "B06_development_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 6.328271240363392e-15,
+      "numeric_cells": 2
+    },
+    "B06_development_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 7.216449660063518e-16,
+      "numeric_cells": 2
+    },
+    "B06_development_original_metric_reconciliation": {
+      "maximum_absolute_error": 1.6653345369377348e-14,
+      "numeric_cells": 4
+    },
+    "B06_development_relative_compounding_identity": {
+      "maximum_absolute_error": 6.106226635438361e-16,
+      "numeric_cells": 1
+    },
+    "B06_oos_partial_2026_jan_sep_Sharpe_identity": {
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "numeric_cells": 1
+    },
+    "B06_oos_partial_2026_jan_sep_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 2
+    },
+    "B06_oos_partial_2026_jan_sep_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 273
+    },
+    "B06_oos_partial_2026_jan_sep_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 3.3306690738754696e-15,
+      "numeric_cells": 6
+    },
+    "B06_oos_partial_2026_jan_sep_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.2025970497209215e-15,
+      "numeric_cells": 273
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.5543122344752192e-15,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.9484414082171497e-14,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.1934897514720433e-14,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_GALAUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-15,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 7.494005416219807e-16,
+      "numeric_cells": 81
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 8.963641461023908e-16,
+      "numeric_cells": 9
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.1094237467877974e-15,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_MANAUSDT_beta_invariance": {
+      "maximum_absolute_error": 9.298117831235686e-16,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.817990202823694e-15,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.2490009027033011e-15,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 2.8171909249863347e-15,
+      "numeric_cells": 81
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 8.963641461023908e-16,
+      "numeric_cells": 9
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.0547118733938987e-15,
+      "numeric_cells": 273
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 3.2229774404868294e-13,
+      "numeric_cells": 9
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 3.268496584496461e-13,
+      "numeric_cells": 9
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 5.662137425588298e-15,
+      "numeric_cells": 9
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 3.186895192186512e-13,
+      "numeric_cells": 9
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 3.304023721284466e-13,
+      "numeric_cells": 9
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 3.2449043452231763e-13,
+      "numeric_cells": 9
+    },
+    "B06_oos_partial_2026_jan_sep_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 8.1601392309949e-15,
+      "numeric_cells": 9
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 6.938893903907228e-18,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 2
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 4.163336342344337e-17,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 2
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 273
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 8.43769498715119e-15,
+      "numeric_cells": 2
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 7.771561172376096e-15,
+      "numeric_cells": 2
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "numeric_cells": 2
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.2656542480726785e-14,
+      "numeric_cells": 2
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 3.774758283725532e-15,
+      "numeric_cells": 2
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 8.118505867571457e-15,
+      "numeric_cells": 2
+    },
+    "B06_oos_partial_2026_jan_sep_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 2.275957200481571e-15,
+      "numeric_cells": 2
+    },
+    "B06_oos_partial_2026_jan_sep_original_metric_reconciliation": {
+      "maximum_absolute_error": 1.6410484082740595e-14,
+      "numeric_cells": 4
+    },
+    "B06_oos_partial_2026_jan_sep_relative_compounding_identity": {
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "numeric_cells": 1
+    },
+    "B06_validation_Sharpe_identity": {
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "numeric_cells": 1
+    },
+    "B06_validation_btc_only_full_period_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "B06_validation_btc_only_full_period_full_covariance_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "numeric_cells": 4
+    },
+    "B06_validation_btc_only_full_period_parameter_transformation": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 2
+    },
+    "B06_validation_btc_only_full_period_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 731
+    },
+    "B06_validation_btc_only_full_period_saved_full_btc": {
+      "maximum_absolute_error": 1.7763568394002505e-15,
+      "numeric_cells": 6
+    },
+    "B06_validation_daily_input_reconciliation": {
+      "maximum_absolute_error": 1.2646134139870924e-15,
+      "numeric_cells": 731
+    },
+    "B06_validation_joint_eight_coin_BNBUSDT_beta_invariance": {
+      "maximum_absolute_error": 5.551115123125783e-16,
+      "numeric_cells": 4
+    },
+    "B06_validation_joint_eight_coin_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 4
+    },
+    "B06_validation_joint_eight_coin_ETHUSDT_beta_invariance": {
+      "maximum_absolute_error": 6.245004513516506e-16,
+      "numeric_cells": 4
+    },
+    "B06_validation_joint_eight_coin_GALAUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-16,
+      "numeric_cells": 4
+    },
+    "B06_validation_joint_eight_coin_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-17,
+      "numeric_cells": 81
+    },
+    "B06_validation_joint_eight_coin_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 9
+    },
+    "B06_validation_joint_eight_coin_LINKUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.2490009027033011e-15,
+      "numeric_cells": 4
+    },
+    "B06_validation_joint_eight_coin_MANAUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.2628786905111156e-15,
+      "numeric_cells": 4
+    },
+    "B06_validation_joint_eight_coin_TRXUSDT_beta_invariance": {
+      "maximum_absolute_error": 3.191891195797325e-16,
+      "numeric_cells": 4
+    },
+    "B06_validation_joint_eight_coin_XRPUSDT_beta_invariance": {
+      "maximum_absolute_error": 1.249000902703301e-16,
+      "numeric_cells": 4
+    },
+    "B06_validation_joint_eight_coin_full_covariance_transformation": {
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numeric_cells": 81
+    },
+    "B06_validation_joint_eight_coin_parameter_transformation": {
+      "maximum_absolute_error": 2.498001805406602e-16,
+      "numeric_cells": 9
+    },
+    "B06_validation_joint_eight_coin_residual_invariance": {
+      "maximum_absolute_error": 1.3877787807814457e-16,
+      "numeric_cells": 731
+    },
+    "B06_validation_joint_eight_coin_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 1.3766765505351941e-14,
+      "numeric_cells": 9
+    },
+    "B06_validation_joint_eight_coin_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 9.471590178833367e-15,
+      "numeric_cells": 9
+    },
+    "B06_validation_joint_eight_coin_saved_hac7_raw_se": {
+      "maximum_absolute_error": 1.1102230246251565e-15,
+      "numeric_cells": 9
+    },
+    "B06_validation_joint_eight_coin_saved_raw_ci95_high": {
+      "maximum_absolute_error": 1.4654943925052066e-14,
+      "numeric_cells": 9
+    },
+    "B06_validation_joint_eight_coin_saved_raw_ci95_low": {
+      "maximum_absolute_error": 8.756884106730922e-15,
+      "numeric_cells": 9
+    },
+    "B06_validation_joint_eight_coin_saved_raw_estimates": {
+      "maximum_absolute_error": 1.1657341758564144e-14,
+      "numeric_cells": 9
+    },
+    "B06_validation_joint_eight_coin_saved_raw_se": {
+      "maximum_absolute_error": 1.4432899320127035e-15,
+      "numeric_cells": 9
+    },
+    "B06_validation_matched_btc_BTCUSDT_beta_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-16,
+      "numeric_cells": 4
+    },
+    "B06_validation_matched_btc_HAC7_full_covariance_transformation": {
+      "maximum_absolute_error": 3.469446951953614e-18,
+      "numeric_cells": 4
+    },
+    "B06_validation_matched_btc_HAC7_parameter_transformation": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 2
+    },
+    "B06_validation_matched_btc_full_covariance_transformation": {
+      "maximum_absolute_error": 1.3877787807814457e-17,
+      "numeric_cells": 4
+    },
+    "B06_validation_matched_btc_parameter_transformation": {
+      "maximum_absolute_error": 1.6653345369377348e-16,
+      "numeric_cells": 2
+    },
+    "B06_validation_matched_btc_residual_invariance": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "numeric_cells": 731
+    },
+    "B06_validation_matched_btc_saved_hac7_raw_ci95_high": {
+      "maximum_absolute_error": 3.9968028886505635e-15,
+      "numeric_cells": 2
+    },
+    "B06_validation_matched_btc_saved_hac7_raw_ci95_low": {
+      "maximum_absolute_error": 1.2340389127230011e-15,
+      "numeric_cells": 2
+    },
+    "B06_validation_matched_btc_saved_hac7_raw_se": {
+      "maximum_absolute_error": 7.216449660063518e-16,
+      "numeric_cells": 2
+    },
+    "B06_validation_matched_btc_saved_raw_ci95_high": {
+      "maximum_absolute_error": 4.884981308350689e-15,
+      "numeric_cells": 2
+    },
+    "B06_validation_matched_btc_saved_raw_ci95_low": {
+      "maximum_absolute_error": 3.122502256758253e-16,
+      "numeric_cells": 2
+    },
+    "B06_validation_matched_btc_saved_raw_estimates": {
+      "maximum_absolute_error": 2.6645352591003757e-15,
+      "numeric_cells": 2
+    },
+    "B06_validation_matched_btc_saved_raw_se": {
+      "maximum_absolute_error": 1.1102230246251565e-15,
+      "numeric_cells": 2
+    },
+    "B06_validation_original_metric_reconciliation": {
+      "maximum_absolute_error": 1.199040866595169e-14,
+      "numeric_cells": 4
+    },
+    "B06_validation_relative_compounding_identity": {
+      "maximum_absolute_error": 1.1102230246251565e-15,
+      "numeric_cells": 1
+    }
+  },
+  "hourly_prices_loaded": false,
+  "input_sha256": {
+    "configs/frozen_strategies.json": "618307c7301ee6d32b803e4858e336de3a55c4fd86325d123cf3e393d91b2bcf",
+    "data/diagnostics/daily_model_inputs.parquet": "9ddde621256707ffba10fe183a779ad4ef0e81edccbe1d6c5a495ae977f8d290",
+    "results/basket_factors/btc_only_comparison.csv": "20eccb97407c5d194751a613a1ba72c1b0ef406e1f505c294d20d550b2e86561",
+    "results/basket_factors/joint_coefficients.csv": "d72a70c29467a81bf4f662d80ce93bb5ea4211a9719fc6ec3a5d74230a7844eb",
+    "results/basket_factors/matched_btc_coefficients.csv": "3d23248c6c25117672953eb9b1145e984e1b14409b871b2463d347e6c21916c9",
+    "results/daily_returns.csv": "7913b6bf52187f293cc594ddea99370b1c9b62365c78f5d0e4a194bfedaf27bd",
+    "results/strategy_metrics.csv": "ccd03278ddcc33fcf2bd82f7460818a33d39f391a586a93d1fc20384b18cf71f"
+  },
+  "max_absolute_numeric_error": 3.304023721284466e-13,
+  "new_backtests_or_selections": false,
+  "source_writes": false,
+  "status": "passed",
+  "table_rows": {
+    "btc_full_period_coefficients.csv": 54,
+    "factor_models.csv": 81,
+    "joint_coefficients.csv": 243,
+    "matched_btc_coefficients.csv": 54,
+    "mean_excess_inference.csv": 27,
+    "performance.csv": 27,
+    "strategy_summary.csv": 27
+  },
+  "total_numeric_cells_checked": 70245
+}

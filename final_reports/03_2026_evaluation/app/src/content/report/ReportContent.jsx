@@ -1,3 +1,4 @@
+import {CashBenchmarkAppendix} from './CashBenchmarkAppendix.jsx';
 import {BasketAttributionAppendix} from './BasketAttributionAppendix.jsx';
 import React from 'react';
 import {DataComponent,EvidenceChart,ReportSection,RichNarrative,useDataApp} from '../../data-app-public.jsx';
@@ -18,7 +19,7 @@ export function ReportContent(){
  return <article className="report-content final-report">
  <section className="final-page" id="overview">
   <header className="report-hero"><h1 data-data-app-title>{appTitle}</h1></header>
- <RichNarrative id="attribution-edition-note" value="[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix)."/>
+ <RichNarrative id="attribution-edition-note" value="[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix). [Cash-excess performance at 3% nominal](#cash-excess-appendix)."/>
   {text('summary','summary',['primary','criteria','cohort','screening','execution','provenance'])}
   {text('primary-text','primary',['primary'])}
   {table('primary-table','primary','All nine: primary 20 bps results',['ID','Gross return','Net return','Gross Sharpe','Net Sharpe','CAGR estimate','Max DD','Turnover / year'])}
@@ -100,5 +101,6 @@ export function ReportContent(){
   <RichNarrative id="companions:body" value={'[Nine-case inference](exports/nine_primary_inference.csv) · [All 63 scenarios](exports/nine_all_63_scenarios.csv) · [Attribution](exports/attribution_summary.csv) · [Hypothetical carry/slippage](exports/hypothetical_carry_slippage.csv) · [Volume proxy](exports/target_volume_proxy.csv) · [Regime interactions](exports/regime_interactions.csv) · [Full regime results](exports/regime_results.csv)\n\n**Reading order:** 1. Development and robustness; 2. Validation and frozen selection; 3. This report. Companion CSVs are supporting results, not additional reports.'}/>
  </section>
  <BasketAttributionAppendix/>
+ <CashBenchmarkAppendix/>
  </article>;
 }

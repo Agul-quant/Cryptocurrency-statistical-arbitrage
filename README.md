@@ -31,6 +31,7 @@ python scripts/verify_project.py
 python -m pytest tests -q
 python scripts/run_research.py
 python scripts/reproduce_diagnostics.py
+python scripts/reproduce_cash_excess.py
 ```
 
 Verification uses only the standard library. Research execution uses the included normalized hourly panels; it does not acquire market prices,
@@ -51,6 +52,16 @@ checks go to `local_outputs/`, not into the checked research results.
 | `scripts/` | Current verification, research execution and diagnostic reproduction entry points |
 | `tests/` | Strategy, accounting and numerical checks |
 | `metadata/` | Current package file checksums and result contracts |
+
+## Cash benchmark comparison
+
+The reports also compare all nine fixed strategies with **3% nominal annual
+cash, compounded daily on ACT/365F**. This is a hypothetical benchmark in
+USDT-quoted units, not interest credited to strategy P&L or an actual investment
+yield. Original zero-cash Sharpe ratios and raw returns remain unchanged;
+separate tables show cash-excess Sharpe, wealth-relative growth, daily relative
+drawdowns and cash-adjusted alpha with uncertainty. See the
+[cash-comparison methods](docs/METHODS.md#cash-benchmark-comparison).
 
 ## Data sources and included dataset
 

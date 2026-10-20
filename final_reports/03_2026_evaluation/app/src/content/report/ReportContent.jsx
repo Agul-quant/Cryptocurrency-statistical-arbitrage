@@ -1,3 +1,4 @@
+import {MainCashComparison, HistoricalCashComparison, CashPairedPrimary, CashRiskExposure, CashDailyRisk, CashMainNote} from './MainCashPerformance.jsx';
 import {CashBenchmarkAppendix} from './CashBenchmarkAppendix.jsx';
 import {BasketAttributionAppendix} from './BasketAttributionAppendix.jsx';
 import React from 'react';
@@ -19,16 +20,20 @@ export function ReportContent(){
  return <article className="report-content final-report">
  <section className="final-page" id="overview">
   <header className="report-hero"><h1 data-data-app-title>{appTitle}</h1></header>
- <RichNarrative id="attribution-edition-note" value="[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix). [Cash-excess performance at 3% nominal](#cash-excess-appendix)."/>
+ <RichNarrative id="attribution-edition-note" value="[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix). [Cash-excess performance at 3% nominal](#main-cash-performance)."/>
   {text('summary','summary',['primary','criteria','cohort','screening','execution','provenance'])}
   {text('primary-text','primary',['primary'])}
-  {table('primary-table','primary','All nine: primary 20 bps results',['ID','Gross return','Net return','Gross Sharpe','Net Sharpe','CAGR estimate','Max DD','Turnover / year'])}
+  <div id="main-cash-performance"><CashPairedPrimary/><CashMainNote id="main-cash-primary-legend"/></div>
  </section>
  <section className="final-page" id="identities">
   {text('identity-text','identity',['identities'])}
   {table('identities-table','identities','Frozen basket membership and settings',['ID','Basket','Strategy','Lookback days','Rebalance hours','Buffer','Coins'])}
+ </section>
+ <section className="final-page" id="main-cash-risk">
   {text('risk-text','risk',['risk'])}
-  {table('risk-table','risk','Exposure, annualized volatility and descriptive BTC attribution',['ID','Ann. volatility','Gross exposure','Net exposure','Cash allocation','BTC beta','BTC alpha / year'])}
+  <CashRiskExposure/>
+  <CashDailyRisk period="oos_partial_2026_jan_sep"/>
+  <CashMainNote id="main-cash-risk-note" risk/>
  </section>
  <section className="final-page" id="criteria">
   {text('criteria-text','criteria',['criteria'])}

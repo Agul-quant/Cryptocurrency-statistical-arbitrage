@@ -117,8 +117,10 @@ For saved complete-UTC-day net strategy returns `r[p,t]`, arithmetic excess is
 `d[t] = r[p,t] - c`. **Cash-excess Sharpe** is
 `sqrt(365) * mean(d) / sample_std(d, ddof=1)`. The original report's raw Sharpe
 is retained explicitly as a zero-cash benchmark comparison, not silently
-replaced. Because `c` is constant, subtracting it changes the mean but not the
-standard deviation. Sharpe's historic formulation uses the average and standard
+replaced. The main nine-strategy period tables present the raw and cash-excess
+comparisons side by side; the supporting cash tables retain the full uncertainty
+and diagnostic results. Because `c` is constant, subtracting it changes the mean
+but not the standard deviation. Sharpe's historic formulation uses the average and standard
 deviation of a differential return, rather than a compounded return difference.
 [William F. Sharpe, The Sharpe Ratio](https://web.stanford.edu/~wfsharpe/art/sr/sr.htm).
 The square-root annualization remains the established reporting convention;

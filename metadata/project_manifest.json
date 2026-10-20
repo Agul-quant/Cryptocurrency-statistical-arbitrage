@@ -17,7 +17,7 @@
     "raw_metrics_and_selections_unchanged": true
   },
   "configuration_count": 169,
-  "created_at_utc": "2026-10-20T16:47:42.848421+00:00",
+  "created_at_utc": "2026-10-20T17:31:21.461830+00:00",
   "data_universe_slots": 22,
   "data_use_note": "Fixed historical periods with prior project data inspection. The nine-strategy evaluation and later explanatory diagnoses share observations and are not additional independent tests.",
   "files": {
@@ -34,8 +34,8 @@
       "sha256": "1ba0bde14166c529053b0ab9dfd2815751bd6e9286113a3e03f2c7edb1646a8d"
     },
     "README.md": {
-      "bytes": 5214,
-      "sha256": "b643f3225ed63dc0be0c649c29b797b42be33dc0fdd8daabafc521b02b3c631a"
+      "bytes": 5264,
+      "sha256": "b0e4c5ed66aae3f5631ba329b9e5bff5355180cc78c19b1bd26ec67ebf6e1d33"
     },
     "configs/cash_benchmark.json": {
       "bytes": 1648,
@@ -126,16 +126,16 @@
       "sha256": "d57e27a6bbdb405ca82e5e8a2cbbc1008b0952033bd89f04443642a6db14929c"
     },
     "docs/METHODS.md": {
-      "bytes": 11131,
-      "sha256": "1bb4a7e1e8bb74d3d927fd81ab15855dbe22de03cb3e648e15dc32609fbcdb01"
+      "bytes": 11305,
+      "sha256": "7ae2eccaae2ede52e054cdca3111084d1a391f20804f26890a80bf862212a39b"
     },
     "final_reports/01_development/01_development_and_robustness.html": {
-      "bytes": 3577236,
-      "sha256": "c4fdaa35779330b868fec82980d63b3b6865ef92193639929555d9559dd92606"
+      "bytes": 3648504,
+      "sha256": "85a79c6c2cebfd591af367391df36ea5fa05376b4385eab5c9cf2e87d3bd0d4b"
     },
     "final_reports/01_development/01_development_and_robustness.pdf": {
-      "bytes": 702044,
-      "sha256": "b48e4cf899a636cb9ccccf0b4b07b2f7f9aced497a7ea07a7577e0629a97301e"
+      "bytes": 800214,
+      "sha256": "85507581682dffe7b2a945fddd5ec4062d2fdcb4e9c06e7e2aa3117ce7990383"
     },
     "final_reports/01_development/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3323,
@@ -145,9 +145,13 @@
       "bytes": 6225,
       "sha256": "e57e481b074477a034456cc7e3c9b9af65c9449298517912b949bb61bd532632"
     },
+    "final_reports/01_development/app/src/content/report/MainCashPerformance.jsx": {
+      "bytes": 8541,
+      "sha256": "c4ba63de66fd372c8461aa75217ea8cc2bcadc8b7d41a209671f4e8702c20284"
+    },
     "final_reports/01_development/app/src/content/report/ReportContent.jsx": {
-      "bytes": 23736,
-      "sha256": "090daede74f592e3daba3f0ece6a480ecb21115bafb65d634bafba95b3069aef"
+      "bytes": 23935,
+      "sha256": "7ba2585d8b1d7e97aaf3e037d455e9c190ea85e09b427953e7f66553dd31d72b"
     },
     "final_reports/01_development/app/src/content/report/basket-attribution.css": {
       "bytes": 2719,
@@ -157,13 +161,17 @@
       "bytes": 2537,
       "sha256": "5c603de03856209f4f78483344c54ed2c386d77f09568199856dab97a7634309"
     },
+    "final_reports/01_development/app/src/content/report/main-cash.css": {
+      "bytes": 2499,
+      "sha256": "036dba323c592c15e6fabff23a8d77e4e04d4bb42b19f5caddeba7a40551effb"
+    },
     "final_reports/01_development/app/src/content/report/report.css": {
       "bytes": 1746,
       "sha256": "6ccc450af3c865646b084478154610892e29c31c451a97eaeb97d1fac065e038"
     },
     "final_reports/01_development/app/src/data.json": {
-      "bytes": 696738,
-      "sha256": "61198c721918a5d61fa487727a30abffcecab04e7e3213ef9b967e4ac9357f1f"
+      "bytes": 755952,
+      "sha256": "05efa820b194bd8b8a449cb4c6a8bac5cb64cf610d2d5b1ae7d1a135b6fcb777"
     },
     "final_reports/01_development/exports/basket_btc_only.csv": {
       "bytes": 2323,
@@ -218,8 +226,8 @@
       "sha256": "3e8fb35f03cd0a1699e8a2f92a16fbad45afb79f6a634914bd43196b2a290d3a"
     },
     "final_reports/01_development/reviewed_snapshot.json": {
-      "bytes": 696738,
-      "sha256": "61198c721918a5d61fa487727a30abffcecab04e7e3213ef9b967e4ac9357f1f"
+      "bytes": 755952,
+      "sha256": "05efa820b194bd8b8a449cb4c6a8bac5cb64cf610d2d5b1ae7d1a135b6fcb777"
     },
     "final_reports/01_development/tables/annual.csv": {
       "bytes": 979,
@@ -266,12 +274,12 @@
       "sha256": "7312aedba48b8697d5fa639f8857c0e25b290210f1a42777c7c89738c6f8e790"
     },
     "final_reports/02_validation/02_validation_and_frozen_selection.html": {
-      "bytes": 3466857,
-      "sha256": "94e387ccebdd1434dc2639caf2e740cb221be434eb6946c4e5cd327b69b07bc3"
+      "bytes": 3595968,
+      "sha256": "f3a293b8e5915ec9e65a49d6b52d9050328a4ff9b186c95b07662b854ce9a498"
     },
     "final_reports/02_validation/02_validation_and_frozen_selection.pdf": {
-      "bytes": 681777,
-      "sha256": "77a253e3dc7b245e7ce0a7ca631a31cdfab9921b5b86ec0224667f850f6ccfd5"
+      "bytes": 894599,
+      "sha256": "cc7eadeb4701a132c6cfcf432e68a0987021847d4c4828ef7455c78713472db3"
     },
     "final_reports/02_validation/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3323,
@@ -281,9 +289,13 @@
       "bytes": 6225,
       "sha256": "e57e481b074477a034456cc7e3c9b9af65c9449298517912b949bb61bd532632"
     },
+    "final_reports/02_validation/app/src/content/report/MainCashPerformance.jsx": {
+      "bytes": 8541,
+      "sha256": "c4ba63de66fd372c8461aa75217ea8cc2bcadc8b7d41a209671f4e8702c20284"
+    },
     "final_reports/02_validation/app/src/content/report/ReportContent.jsx": {
-      "bytes": 20037,
-      "sha256": "af9d86ea2268948a756998551cdcc7a450c9acb8ee4233055826ef257d12d932"
+      "bytes": 20043,
+      "sha256": "84c440cd6fd29c4caea2a400b203c007b7bcb6e4fe412066942a5c5dd1db223b"
     },
     "final_reports/02_validation/app/src/content/report/basket-attribution.css": {
       "bytes": 2719,
@@ -293,13 +305,17 @@
       "bytes": 2537,
       "sha256": "5c603de03856209f4f78483344c54ed2c386d77f09568199856dab97a7634309"
     },
+    "final_reports/02_validation/app/src/content/report/main-cash.css": {
+      "bytes": 2499,
+      "sha256": "036dba323c592c15e6fabff23a8d77e4e04d4bb42b19f5caddeba7a40551effb"
+    },
     "final_reports/02_validation/app/src/content/report/report.css": {
       "bytes": 11034,
       "sha256": "408091aea125c0f873681d89c3bc963a8e3d48c5243cdaea251138cea009df68"
     },
     "final_reports/02_validation/app/src/data.json": {
-      "bytes": 582474,
-      "sha256": "ccdd0ce8ce35bcd6240ae36f07b06295e2cad073eec3e7505ddef485e8563c75"
+      "bytes": 699680,
+      "sha256": "b5758b0741667286bc19408c5f15c5b2449e37f8abe87cd434348a589acb8829"
     },
     "final_reports/02_validation/exports/basket_btc_only.csv": {
       "bytes": 2315,
@@ -354,16 +370,16 @@
       "sha256": "3e8fb35f03cd0a1699e8a2f92a16fbad45afb79f6a634914bd43196b2a290d3a"
     },
     "final_reports/02_validation/reviewed_snapshot.json": {
-      "bytes": 582474,
-      "sha256": "ccdd0ce8ce35bcd6240ae36f07b06295e2cad073eec3e7505ddef485e8563c75"
+      "bytes": 699680,
+      "sha256": "b5758b0741667286bc19408c5f15c5b2449e37f8abe87cd434348a589acb8829"
     },
     "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.html": {
-      "bytes": 3933755,
-      "sha256": "cd3344e077e6f771515e3d7272a71ccc6e7d2faa0cb55a36a0e8d4799afad5d1"
+      "bytes": 4010483,
+      "sha256": "06e913103b9da8e310fa17295ad776d02562e93ebb2927204af347d48d3c4c6b"
     },
     "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf": {
-      "bytes": 914783,
-      "sha256": "e14b26d8e3d43b00deeedbf8c321fce1ee958d958f6dc4f4d7b64b547f17cca0"
+      "bytes": 985005,
+      "sha256": "6a9e39e2432cb7b649f095180e34688fa42604211d72337592637bb533900c6b"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3323,
@@ -373,9 +389,13 @@
       "bytes": 6225,
       "sha256": "e57e481b074477a034456cc7e3c9b9af65c9449298517912b949bb61bd532632"
     },
+    "final_reports/03_2026_evaluation/app/src/content/report/MainCashPerformance.jsx": {
+      "bytes": 8541,
+      "sha256": "c4ba63de66fd372c8461aa75217ea8cc2bcadc8b7d41a209671f4e8702c20284"
+    },
     "final_reports/03_2026_evaluation/app/src/content/report/ReportContent.jsx": {
-      "bytes": 13400,
-      "sha256": "e358e6b4d922f5bff454a451bd677d9c2290e7280ef021d45118877c4f1b9491"
+      "bytes": 13470,
+      "sha256": "7f6c17ddc4133ddedb817ea8f5542958a92f248e840c4ef69d260210eb4257fa"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/basket-attribution.css": {
       "bytes": 2719,
@@ -384,6 +404,10 @@
     "final_reports/03_2026_evaluation/app/src/content/report/cash-benchmark.css": {
       "bytes": 2537,
       "sha256": "5c603de03856209f4f78483344c54ed2c386d77f09568199856dab97a7634309"
+    },
+    "final_reports/03_2026_evaluation/app/src/content/report/main-cash.css": {
+      "bytes": 2499,
+      "sha256": "036dba323c592c15e6fabff23a8d77e4e04d4bb42b19f5caddeba7a40551effb"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/plan.json": {
       "bytes": 20006,
@@ -394,8 +418,8 @@
       "sha256": "35299fe5dfe95475b050ad078152024d4f3840e78c8f082742c2dcdab664b2ac"
     },
     "final_reports/03_2026_evaluation/app/src/data.json": {
-      "bytes": 1042809,
-      "sha256": "8bf9e12c791d46095b321bf6cdfe5cd15f98417e4e3892430e56ab2da974216d"
+      "bytes": 1107495,
+      "sha256": "78f6a7c3d7e6cb41d8fab3212ad9434697e3222842fb55c6cdde5d80bd2186ce"
     },
     "final_reports/03_2026_evaluation/exports/all_69108_survivors.csv": {
       "bytes": 61628005,
@@ -510,16 +534,16 @@
       "sha256": "3af0931786ba29c9db91b97b111d9c09e07f5197b68f9f80e3db5eaf9c4876a4"
     },
     "final_reports/03_2026_evaluation/reviewed_snapshot.json": {
-      "bytes": 1042809,
-      "sha256": "8bf9e12c791d46095b321bf6cdfe5cd15f98417e4e3892430e56ab2da974216d"
+      "bytes": 1107495,
+      "sha256": "78f6a7c3d7e6cb41d8fab3212ad9434697e3222842fb55c6cdde5d80bd2186ce"
     },
     "final_reports/README.md": {
       "bytes": 1441,
       "sha256": "7502430ca2b1eeca93d2f17685be8a099eda44f70c41b2ddae8783a234a1a162"
     },
     "final_reports/quality_checks.json": {
-      "bytes": 4951,
-      "sha256": "407855790eafcb16aa5837474fc268345536acfde39f387dcc09581745a99ee4"
+      "bytes": 6860,
+      "sha256": "745e64ee8694099927c0f4fb1d5fd43f578edc1367b49817f55a98e3ea91c68b"
     },
     "licenses/DATA_LICENSE.md": {
       "bytes": 925,
@@ -697,6 +721,10 @@
       "bytes": 2212,
       "sha256": "deff82d698b9c2cc736e0fc5811acbebb432d67265c40a5b1842aa84af067496"
     },
+    "results/report_data/development/main_cash_performance.json": {
+      "bytes": 55328,
+      "sha256": "a1ede13aaee3c625e60cd23534c850e34da030c30e269cede35aec812539fea7"
+    },
     "results/report_data/development/metrics.json": {
       "bytes": 838,
       "sha256": "4aa7c27fdca2d3df51d9aa62a47f0c7c0dd47d34d33ddc719be780c6257a4d89"
@@ -809,6 +837,10 @@
       "bytes": 304,
       "sha256": "4b32e4836f13b0119ac8ae59120bbdc9e7ad3e94ef31c26b2a173cda823b715e"
     },
+    "results/report_data/oos/main_cash_performance.json": {
+      "bytes": 60312,
+      "sha256": "5862bdc8690618cf7cdab39b492830bb4692d48ca8c84db250f412123748bc95"
+    },
     "results/report_data/oos/market.json": {
       "bytes": 1017,
       "sha256": "87c1d8a41be483ffd3e6e7bfe8b1ed43d9edf3c564f8fb61e42a260b9ebbf63e"
@@ -920,6 +952,10 @@
     "results/report_data/validation/luna_attribution.json": {
       "bytes": 494,
       "sha256": "355cc6c4ead1765d25b54125cda0485c40b012126cdb30ff395401c8c994eb59"
+    },
+    "results/report_data/validation/main_cash_performance.json": {
+      "bytes": 109476,
+      "sha256": "93ddc6b68e609953aa0998146d44031fc0930523bc05fd325a8f516ff6c75408"
     },
     "results/report_data/validation/rank_transfer.json": {
       "bytes": 450,

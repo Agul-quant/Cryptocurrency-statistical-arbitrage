@@ -1,3 +1,4 @@
+import {MainCashComparison, HistoricalCashComparison, CashPairedPrimary, CashRiskExposure, CashDailyRisk, CashMainNote} from './MainCashPerformance.jsx';
 import {CashBenchmarkAppendix} from './CashBenchmarkAppendix.jsx';
 import {BasketAttributionAppendix} from './BasketAttributionAppendix.jsx';
 import React from 'react';
@@ -12,13 +13,14 @@ export function ReportContent(){
  return <article className="report-content validation-report" aria-label="Validation and frozen selection report">
  <section className="reading-page opening-page">
  <header className="report-hero"><h1 data-data-app-title contentEditable={canEdit&&mode==='edit'} suppressContentEditableWarning onBlur={canEdit&&mode==='edit'?e=>setAppTitle(e.currentTarget.textContent.trim()||appTitle):undefined}>{appTitle}</h1><RichNarrative id="edition-label" value="Report 2 of 3 · Validation and frozen selection" className="report-deck"/></header>
- <RichNarrative id="attribution-edition-note" value="[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix). [Cash-excess performance at 3% nominal](#cash-excess-appendix)."/>
+ <RichNarrative id="attribution-edition-note" value="[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix). [Cash-excess performance at 3% nominal](#main-cash-performance)."/>
  <N id="summary" qs={['track_a_performance','track_b_performance','development_groups','eligibility']} text={`## Executive Summary\n\n- **All four development-selected candidates lost in 2024–2025**, with net returns from **−22.31% to −45.31%** at 20 bps. Their positive development Sharpes did not generalize to the next two years.\n- The broad development-Q1 group retained a useful relative ordering, but not positive median economics: its validation median return was **−16.27%** and **30.73%** of cases were profitable. “Q1” is the best approximately 20% of development Sharpe ranks within each basket, not a calendar quarter.\n- A separate validation-informed rule produced **five Track B candidates** from **39,332 eligible pairs**. Their validation Sharpes of **1.14–1.85 are selection statistics**, not independent evidence of discovery. B02 had no eligible candidate.\n- The final research shortlist preserves the **original four plus five Track B selections**. No single combined portfolio, weights or winner is implied.`}/>
  <N id="opening-scope" qs={['rules']} text={`### Read the periods correctly\n\n**Development: 1 January 2022–31 December 2023.** Design and diagnose the rule using this period only. **Validation: 1 January 2024–31 December 2025.** Test Track A unchanged, then explicitly label later validation-informed selection as Track B.\n\nThe reserved evaluation was subsequently approved for **1 January–30 September 2026**, with an October 1 UTC closing endpoint. Its outcomes belong only in Report 3. Performance and factor diagnostics use the audited saved strategy paths and existing factor prices; signals, trades and selections are fixed.\n\n**Primary convention:** 20 bps one-way fees on full-L1 target changes. Lag1 means idealized observed-close execution, not a real one-hour delay.`}/>
  </section>
+ <MainCashComparison period="validation"/>
  <section className="reading-page">
  <N id="a-rule" qs={['rules']} text={`## 1. Track A tested development robustness, not the validation winner\n\nThe original development-only screen required positive 2022 and 2023 returns and Sharpes, positive full-development returns under 40 bps and an additional-hour execution delay, and more than half of both parameter and all 28 one-swap basket neighbors to be profitable.\n\nThe robustness score was the minimum of the two annual Sharpes and the two neighborhood median Sharpes. At most one case-basket was selected per family; score ties used lower turnover, experiment ID and basket ID. No family gate was relaxed when empty.\n\nThe rule was designed after development robustness had been inspected. Freezing it prevents later reselection; it does not remove development search bias or earlier historical inspection.`}/>
- <T id="a-performance" q="track_a_performance" title="The same four identities in both periods" columns={perf}/>
+ <HistoricalCashComparison id="a-performance" track="A" title="The same four identities: raw and cash-excess results in both periods"/>
  <N id="a-conclusion" qs={['track_a_performance']} text={`All four failed the economic expectation of positive net validation returns. The result is not simply that they failed to remain rank one. Original risk also persisted: A04's validation maximum drawdown reached **70.96%**. The four stay in the record unchanged rather than being replaced by favorable controls.`}/>
  </section>
  <section className="reading-page">
@@ -59,7 +61,7 @@ Reference risk was not uniformly lower. A03 reversal had a larger validation dra
  </section>
  <section className="reading-page">
  <N id="b-conclusion" qs={['track_b_performance','annual_b']} text={`## 8. Track B's strong validation results came with weak development cases\n\nB01 and B03 barely cleared the positive-development-return gate. They were eligible under the frozen rule; annual consistency was diagnostic only. Their validation improvement deserves investigation without pretending it was forecast by strong development performance.`}/>
- <T id="b-performance" q="track_b_performance" title="Frozen Track B cases, unchanged in each period" columns={['ID','Net return','Sharpe','Annual L1 turnover','Max drawdown']} split={[{label:'2022–2023 development',filter:r=>r.Period==='Development'},{label:'2024–2025 validation: selection statistics',filter:r=>r.Period==='Validation'}]}/>
+ <HistoricalCashComparison id="b-performance" track="B" title="Frozen Track B cases: raw and cash-excess results in both periods"/>
  <T id="annual-b" q="annual_b" title="Annual consistency was not a Track B gate" columns={['ID','2022','2023','2024','2025']}/>
  </section>
  <section className="reading-page identity-page">

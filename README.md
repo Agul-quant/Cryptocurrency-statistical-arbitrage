@@ -58,9 +58,10 @@ checks go to `local_outputs/`, not into the checked research results.
 The reports also compare all nine fixed strategies with **3% nominal annual
 cash, compounded daily on ACT/365F**. This is a hypothetical benchmark in
 USDT-quoted units, not interest credited to strategy P&L or an actual investment
-yield. Original zero-cash Sharpe ratios and raw returns remain unchanged;
-separate tables show cash-excess Sharpe, wealth-relative growth, daily relative
-drawdowns and cash-adjusted alpha with uncertainty. See the
+yield. Original zero-cash Sharpe ratios and raw returns remain unchanged.
+The main nine-strategy period tables show raw and cash-excess performance
+side by side; supporting cash tables provide uncertainty, daily relative
+drawdowns and cash-adjusted alpha. See the
 [cash-comparison methods](docs/METHODS.md#cash-benchmark-comparison).
 
 ## Data sources and included dataset

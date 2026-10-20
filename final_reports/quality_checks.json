@@ -1,45 +1,89 @@
 {
   "status": "PASS",
   "report_count": 3,
-  "total_pdf_pages": 56,
+  "total_pdf_pages": 60,
   "reports": [
     {
       "report": "01_development",
       "artifact_id": "report:f26b9347-f15d-4a65-bc28-46d53878f60f",
-      "pages": 17,
-      "pdf_sha256": "b48e4cf899a636cb9ccccf0b4b07b2f7f9aced497a7ea07a7577e0629a97301e",
-      "offline_html_sha256": "c4fdaa35779330b868fec82980d63b3b6865ef92193639929555d9559dd92606",
-      "snapshot_sha256": "61198c721918a5d61fa487727a30abffcecab04e7e3213ef9b967e4ac9357f1f",
       "period": "development",
+      "pages": 19,
+      "pdf_sha256": "85507581682dffe7b2a945fddd5ec4062d2fdcb4e9c06e7e2aa3117ce7990383",
+      "offline_html_sha256": "85a79c6c2cebfd591af367391df36ea5fa05376b4385eab5c9cf2e87d3bd0d4b",
+      "snapshot_sha256": "05efa820b194bd8b8a449cb4c6a8bac5cb64cf610d2d5b1ae7d1a135b6fcb777",
       "preview_url": "http://127.0.0.1:58860/?view=1"
     },
     {
       "report": "02_validation",
       "artifact_id": "report:14e8d12f-59f2-4502-8ad1-811a0302ee01",
-      "pages": 18,
-      "pdf_sha256": "77a253e3dc7b245e7ce0a7ca631a31cdfab9921b5b86ec0224667f850f6ccfd5",
-      "offline_html_sha256": "94e387ccebdd1434dc2639caf2e740cb221be434eb6946c4e5cd327b69b07bc3",
-      "snapshot_sha256": "ccdd0ce8ce35bcd6240ae36f07b06295e2cad073eec3e7505ddef485e8563c75",
       "period": "validation",
+      "pages": 19,
+      "pdf_sha256": "cc7eadeb4701a132c6cfcf432e68a0987021847d4c4828ef7455c78713472db3",
+      "offline_html_sha256": "f3a293b8e5915ec9e65a49d6b52d9050328a4ff9b186c95b07662b854ce9a498",
+      "snapshot_sha256": "b5758b0741667286bc19408c5f15c5b2449e37f8abe87cd434348a589acb8829",
       "preview_url": "http://127.0.0.1:58862/?view=1"
     },
     {
       "report": "03_2026_evaluation",
       "artifact_id": "report:5adafe7e-d3eb-4b9e-bf95-d857c77f7240",
-      "pages": 21,
-      "pdf_sha256": "e14b26d8e3d43b00deeedbf8c321fce1ee958d958f6dc4f4d7b64b547f17cca0",
-      "offline_html_sha256": "cd3344e077e6f771515e3d7272a71ccc6e7d2faa0cb55a36a0e8d4799afad5d1",
-      "snapshot_sha256": "8bf9e12c791d46095b321bf6cdfe5cd15f98417e4e3892430e56ab2da974216d",
       "period": "oos",
+      "pages": 22,
+      "pdf_sha256": "6a9e39e2432cb7b649f095180e34688fa42604211d72337592637bb533900c6b",
+      "offline_html_sha256": "06e913103b9da8e310fa17295ad776d02562e93ebb2927204af347d48d3c4c6b",
+      "snapshot_sha256": "78f6a7c3d7e6cb41d8fab3212ad9434697e3222842fb55c6cdde5d80bd2186ce",
       "preview_url": "http://127.0.0.1:58863/?view=1"
     }
   ],
-  "reviewed_query_count": 80,
-  "original_reviewed_query_count_unchanged": 68,
-  "original_field_equality_checks": 30159,
-  "all_original_financial_values_unchanged": true,
-  "stable_report_and_original_query_identities": true,
+  "reviewed_query_count": 83,
+  "existing_reviewed_query_count_unchanged": 80,
+  "all_existing_financial_values_and_cash_calculations_unchanged": true,
+  "stable_report_and_existing_query_identities": true,
   "no_strategy_rerun_or_selection": true,
+  "main_performance": {
+    "source": "results/cash_excess/strategy_summary.csv",
+    "new_query_count": 3,
+    "new_query_rows_by_report": [
+      9,
+      18,
+      9
+    ],
+    "fixed_id_order": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "B01",
+      "B03",
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "raw_cash_pairs": [
+      "net return versus cash-relative wealth return",
+      "raw CAGR versus relative CAGR",
+      "raw Sharpe versus arithmetic-excess Sharpe"
+    ],
+    "raw_definition": "net of 20 bps transaction costs, before the cash benchmark; not gross-versus-net fees",
+    "turnover_and_original_hourly_drawdown_retained": true,
+    "like_clock_daily_drawdown_comparison": true,
+    "validation_historical_comparisons": "Track A 4+4 and Track B 5+5 rows retain both development and validation raw/cash pairs;9pt body text",
+    "oos_gross_exposures_and_beta_retained": true,
+    "oos_cash_alpha_convention": "full-calendar BTC-only HAC7, like-convention raw/cash pair",
+    "full_grid_family_and_reference_control_metrics_unchanged": true,
+    "development_trackB_validation_informed_identities_labeled": true,
+    "original_acceptance_flags_and_risk_limits_unchanged": true,
+    "main_table_pdf_locations": {
+      "development": [
+        2,
+        3
+      ],
+      "validation_unified": 2,
+      "validation_track_A": 3,
+      "validation_track_B": 10,
+      "oos_primary": 1,
+      "oos_risk": 3
+    }
+  },
   "cash_benchmark": {
     "nominal_annual_rate": 0.03,
     "day_count": "ACT/365F",
@@ -65,36 +109,35 @@
     "conditional_not_original_search_adjusted": true
   },
   "formatting": {
-    "table_count": 81,
+    "table_count": 87,
     "table_counts_by_period": [
-      21,
-      27,
-      33
+      23,
+      30,
+      34
     ],
-    "new_numeric_headers_and_cells": "right-aligned; cash alpha estimate/CI can wrap between blocks on constrained desktop panels",
-    "validation_alpha_width_scroll_container": [
-      623,
-      623,
-      623
-    ],
-    "protected_runtime_changed": false,
+    "numeric_headers_and_cells": "right-aligned; fixed IDs left",
     "native_viewport_this_edit": [
-      759,
-      899
+      1280,
+      720
     ],
+    "narrow_viewport_this_edit": "Not performed: viewport capability unavailable",
+    "page_horizontal_overflow": false,
+    "protected_runtime_changed": false,
     "offline_connect_src_none": true
   },
   "checks": [
-    "Exactly three current reports, one cash-benchmark page appended to each: 17/18/21 pages",
-    "All 56 final PDF pages verified: six changed/new pages directly inspected and 50 original body pages exact pixel closure outside updated total-page footer",
-    "Every original PDF body word and numeric token unchanged, except five added cash-discoverability words per report",
-    "All original 68 query objects, original query JSON files, existing CSV tables/exports, frozen strategy identities and acceptance flags unchanged",
-    "Twelve new source-backed period query datasets project the audited cash results without new backtests or selection",
-    "All 21 cash CSV companion copies byte-identical to the sealed full-precision calculation tables",
-    "Cash source inspector verified correct current provenance and all nine rows, including page2 B06",
-    "Root native IAB and all three offline HTML checks under connect-src none at actual 759\u00d7899; no horizontal page overflow",
-    "All 53 distinct companion CSV links return HTTP 200 and exact local bytes",
-    "One PDF edit operation marker called by root for all three outputs; this report agent called zero markers"
+    "Exactly three current reports; main raw/cash comparisons integrated without changing frozen strategies or calculations",
+    "All 80 existing query objects and their saved JSON files unchanged; three new main-display query objects preserve full-precision source metrics and exact existing raw display aliases",
+    "All 60 final PDF pages verified:17 changed/reflowed pages directly inspected and43 original body pages exact pixel closure outside changed page-number footer",
+    "Main development nine-case comparison explicitly separate from full-grid family medians; Track B identities labeled validation-informed",
+    "Validation unified main nine-case table plus both Track A/Track B historical same-pair tables show paired raw/cash return, CAGR and Sharpe",
+    "OOS original primary table retains gross metrics, turnover and hourly drawdown while pairing net return, CAGR and Sharpe; exposure, beta and like-convention BTC alpha retained",
+    "Raw is NET of 20 bps costs; cash is a hypothetical 3% nominal USDT opportunity benchmark, not strategy interest or a gross-versus-net-fee comparison",
+    "Daily raw and cash-relative drawdown shown at like-clock endpoints separately from original hourly drawdown",
+    "Root native and offline connect-src-none checks at actual 1280\u00d7720:87 tables, proper scopes,numeric alignment,no horizontal page overflow",
+    "All 53 distinct companion CSV links return HTTP200 and exact local bytes",
+    "Existing detailed cash-inference and basket-factor appendices, all original raw metrics and acceptance decisions remain unchanged",
+    "One PDF edit operation marker called by root for the three outputs; author called zero markers"
   ],
   "data_source": {
     "provider": "Binance public Data Vision",
@@ -111,5 +154,5 @@
     "query_data_unchanged": true,
     "root_native_followup_qa": "PASS"
   },
-  "created_at_utc": "2026-10-20T16:45:41.182621+00:00"
+  "created_at_utc": "2026-10-20T17:30:10.690304+00:00"
 }

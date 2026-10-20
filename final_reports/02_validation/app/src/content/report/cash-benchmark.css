@@ -31,3 +31,8 @@
  .cash-benchmark-factor-table th:last-child{width:10%;}
  .cash-benchmark-factor-table td.numeric{white-space:normal;}
 }
+
+@media print{.cash-benchmark-factor-sheet{break-before:page;page-break-before:always;}}
+
+.cash-benchmark-factor-sheet{margin-top:20px;}
+@media print{.cash-benchmark-factor-sheet{margin-top:0;}}

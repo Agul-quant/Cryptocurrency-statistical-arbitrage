@@ -1,0 +1,4 @@
+.sharpe-convention-lines{display:grid;gap:3px;text-align:right;}
+.sharpe-convention-lines>span{display:flex;justify-content:flex-end;align-items:baseline;gap:5px;white-space:nowrap;}
+.sharpe-convention-lines small{font-size:.78em;color:var(--text-muted);}
+@media print{.sharpe-convention-lines{gap:.4mm;}.sharpe-convention-lines>span{gap:1mm;}}

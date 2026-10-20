@@ -5,6 +5,23 @@ costs and the reliability of strategy selection. This repository contains the
 current development, validation and OOS results, their implementation, and
 **three final reports**.
 
+## Main finding: the selections did not generalize
+
+**All four development-selected strategies (A01–A04) lost money in 2024–2025
+validation; all five validation-selected strategies (B01, B03–B06) lost money
+in January–September 2026.** The A strategies' validation Sharpe ratios were
+−0.22 to −0.64 using √365 (−0.18 to −0.53 using √252).
+
+The pattern is consistent with basket and parameter selection fitting each
+period rather than identifying a stable edge. It is not proof that search is
+the sole cause: market conditions, strategy settings and execution assumptions
+also matter. The development and validation selections largely share momentum,
+reversal and trend families but differ in basket, lookback and sometimes cadence;
+Track B also includes long/cash trend. A03's strong 2026 result does not erase
+its validation loss. B06 lost compounded wealth in 2026 despite a slightly
+positive raw arithmetic-return Sharpe. No new OOS winner is selected, and none
+of these results establishes a deployment-ready strategy.
+
 ## Read the results
 
 1. **Development and robustness — 2022–2023:** [PDF](final_reports/01_development/01_development_and_robustness.pdf) · [offline HTML](final_reports/01_development/01_development_and_robustness.html).
@@ -85,6 +102,21 @@ campaign; supporting screening and cohort tables are saved research results.
 
 See [methods and interpretation](docs/METHODS.md) for costs, sample boundaries,
 statistical intervals, data-use limitations and reproduction scope.
+
+## Sharpe conventions and proposed benchmark
+
+The reports show **√365 and course-convention √252 Sharpe side by side**, for
+both raw and cash-excess returns. They use the same complete UTC daily series,
+including weekends: `S252 = S365 × sqrt(252/365)`. A01's development raw Sharpe
+is therefore **1.84 / 1.53**. This is a display-scale comparison, not a change
+to returns, cash accrual, CAGR, alpha, inference or the frozen acceptance tests.
+
+The [fixed all-22-coin momentum protocol](docs/FIXED_ALL22_PROTOCOL.md) proposes
+one 28-day cross-sectional rank-demean momentum rule, rebalanced weekly on
+Mondays. **It is a draft awaiting approval to run, not an executed strategy or
+a fourth performance report.** It removes a new basket/parameter search, but
+the already-inspected historical periods cannot become fresh tests of this new
+proposal. The current runner remains limited to the nine frozen strategies.
 
 ## Attribution
 

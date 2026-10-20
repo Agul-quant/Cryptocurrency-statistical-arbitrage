@@ -1,0 +1,187 @@
+{
+  "rows": [
+    {
+      "Familywise mean LB": -0.00027431085791565545,
+      "Growth 95% CI": "[-8.93, 93.45]%",
+      "ID": "A01",
+      "Mean 95% CI": "[-0.003, 0.186]%",
+      "Mean daily": 0.0008222943231448111,
+      "Sharpe 95% CI": "[-0.28, 2.58]",
+      "sharpe365_sharpe_95_ci_low": -0.27694698305915616,
+      "sharpe252_sharpe_95_ci_low": -0.23011793950085366,
+      "sharpe252_approx_sharpe_95_ci_low": false,
+      "sharpe365_sharpe_95_ci_high": 2.5785399191598835,
+      "sharpe252_sharpe_95_ci_high": 2.1425338762077293,
+      "sharpe252_approx_sharpe_95_ci_high": false
+    },
+    {
+      "Familywise mean LB": -0.0007250589845966615,
+      "Growth 95% CI": "[-19.56, 78.74]%",
+      "ID": "A02",
+      "Mean 95% CI": "[-0.045, 0.179]%",
+      "Mean daily": 0.0005831716493143677,
+      "Sharpe 95% CI": "[-0.87, 2.17]",
+      "sharpe365_sharpe_95_ci_low": -0.8713313967347581,
+      "sharpe252_sharpe_95_ci_low": -0.7239977248503713,
+      "sharpe252_approx_sharpe_95_ci_low": false,
+      "sharpe365_sharpe_95_ci_high": 2.1686364168713568,
+      "sharpe252_sharpe_95_ci_high": 1.8019410728527598,
+      "sharpe252_approx_sharpe_95_ci_high": false
+    },
+    {
+      "Familywise mean LB": 0.0001298151981847628,
+      "Growth 95% CI": "[12.83, 86.64]%",
+      "ID": "A03",
+      "Mean 95% CI": "[0.039, 0.171]%",
+      "Mean daily": 0.0010362547358135068,
+      "Sharpe 95% CI": "[0.85, 3.88]",
+      "sharpe365_sharpe_95_ci_low": 0.8541334707484685,
+      "sharpe252_sharpe_95_ci_low": 0.7097078010247422,
+      "sharpe252_approx_sharpe_95_ci_low": false,
+      "sharpe365_sharpe_95_ci_high": 3.8812618266518872,
+      "sharpe252_sharpe_95_ci_high": 3.224978168553201,
+      "sharpe252_approx_sharpe_95_ci_high": false
+    },
+    {
+      "Familywise mean LB": -0.004522374060311373,
+      "Growth 95% CI": "[-71.70, 119.50]%",
+      "ID": "A04",
+      "Mean 95% CI": "[-0.343, 0.347]%",
+      "Mean daily": -0.0003119274824032498,
+      "Sharpe 95% CI": "[-2.72, 1.65]",
+      "sharpe365_sharpe_95_ci_low": -2.7152040835112676,
+      "sharpe252_sharpe_95_ci_low": -2.2560894584233657,
+      "sharpe252_approx_sharpe_95_ci_low": false,
+      "sharpe365_sharpe_95_ci_high": 1.646707340875842,
+      "sharpe252_sharpe_95_ci_high": 1.368265131678063,
+      "sharpe252_approx_sharpe_95_ci_high": false
+    },
+    {
+      "Familywise mean LB": -0.0025354579693807593,
+      "Growth 95% CI": "[-59.14, 46.84]%",
+      "ID": "B01",
+      "Mean 95% CI": "[-0.218, 0.182]%",
+      "Mean daily": -0.0006549828368205463,
+      "Sharpe 95% CI": "[-3.50, 1.25]",
+      "sharpe365_sharpe_95_ci_low": -3.495415145710238,
+      "sharpe252_sharpe_95_ci_low": -2.9043744118313954,
+      "sharpe252_approx_sharpe_95_ci_low": false,
+      "sharpe365_sharpe_95_ci_high": 1.2473172523680551,
+      "sharpe252_sharpe_95_ci_high": 1.0364080259993056,
+      "sharpe252_approx_sharpe_95_ci_high": false
+    },
+    {
+      "Familywise mean LB": -0.004532236784341198,
+      "Growth 95% CI": "[-76.94, -26.69]%",
+      "ID": "B03",
+      "Mean 95% CI": "[-0.396, -0.087]%",
+      "Mean daily": -0.0020967445154249998,
+      "Sharpe 95% CI": "[-5.09, -0.98]",
+      "sharpe365_sharpe_95_ci_low": -5.089116809644403,
+      "sharpe252_sharpe_95_ci_low": -4.2285966114474,
+      "sharpe252_approx_sharpe_95_ci_low": false,
+      "sharpe365_sharpe_95_ci_high": -0.9806482957263811,
+      "sharpe252_sharpe_95_ci_high": -0.8148301985271181,
+      "sharpe252_approx_sharpe_95_ci_high": false
+    },
+    {
+      "Familywise mean LB": -0.0033677920566194865,
+      "Growth 95% CI": "[-57.41, 44.44]%",
+      "ID": "B04",
+      "Mean 95% CI": "[-0.255, 0.110]%",
+      "Mean daily": -0.00048539094222370806,
+      "Sharpe 95% CI": "[-2.91, 1.88]",
+      "sharpe365_sharpe_95_ci_low": -2.909493455927701,
+      "sharpe252_sharpe_95_ci_low": -2.4175263860025105,
+      "sharpe252_approx_sharpe_95_ci_low": false,
+      "sharpe365_sharpe_95_ci_high": 1.8775892932311344,
+      "sharpe252_sharpe_95_ci_high": 1.5601071895227068,
+      "sharpe252_approx_sharpe_95_ci_high": false
+    },
+    {
+      "Familywise mean LB": -0.002405802525195434,
+      "Growth 95% CI": "[-46.83, 55.15]%",
+      "ID": "B05",
+      "Mean 95% CI": "[-0.187, 0.145]%",
+      "Mean daily": -0.00013977718358640164,
+      "Sharpe 95% CI": "[-2.51, 1.92]",
+      "sharpe365_sharpe_95_ci_low": -2.5118777536313055,
+      "sharpe252_sharpe_95_ci_low": -2.0871436350696824,
+      "sharpe252_approx_sharpe_95_ci_low": false,
+      "sharpe365_sharpe_95_ci_high": 1.9177349599819349,
+      "sharpe252_sharpe_95_ci_high": 1.593464614147942,
+      "sharpe252_approx_sharpe_95_ci_high": false
+    },
+    {
+      "Familywise mean LB": -0.001671265459376633,
+      "Growth 95% CI": "[-42.89, 60.11]%",
+      "ID": "B06",
+      "Mean 95% CI": "[-0.128, 0.168]%",
+      "Mean daily": 5.320104060674371e-05,
+      "Sharpe 95% CI": "[-1.53, 1.25]",
+      "sharpe365_sharpe_95_ci_low": -1.5306859565913293,
+      "sharpe252_sharpe_95_ci_low": -1.2718618360195366,
+      "sharpe252_approx_sharpe_95_ci_low": false,
+      "sharpe365_sharpe_95_ci_high": 1.2507765757616425,
+      "sharpe252_sharpe_95_ci_high": 1.0392824114235706,
+      "sharpe252_approx_sharpe_95_ci_high": false
+    }
+  ],
+  "source": {
+    "description": "Presentation-only365/252 annualization aliases for existing Sharpe values. Original reviewed fields and inference are retained.",
+    "files": [
+      "results/report_data/oos/uncertainty_sharpe_display.json",
+      "results/report_data/oos/uncertainty.json",
+      "final_reports/03_2026_evaluation/exports/nine_primary_inference.csv"
+    ],
+    "metricDefinitions": [
+      {
+        "componentIds": [
+          "uncertainty-table",
+          "inference-text"
+        ],
+        "definition": "10000 synchronized circular28day block-bootstrap-t, seed20261015; HAC27Bartlett. Studentized mean95CI, percentile Sharpe/growth95CI are marginal. Bonferroni one-sided familywise mean lower bound is separate, not Holm-inverted.",
+        "label": "uncertainty",
+        "sourceLineage": [
+          {
+            "files": [
+              "results/report_data/oos/uncertainty.json"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Sharpe annualization comparison",
+        "definition": "On the SAME contiguous UTC daily return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). Confidence interval endpoints receive the same positive scale; no bootstrap, return, risk, rank, correlation, t-statistic, alpha, CAGR or selection is recomputed. Approximate flags explicitly mark252 values derived only from rounded current365 displays.",
+        "sourceLineage": [
+          {
+            "files": [
+              "results/report_data/oos/uncertainty.json",
+              "final_reports/03_2026_evaluation/exports/nine_primary_inference.csv"
+            ]
+          }
+        ],
+        "componentIds": [
+          "inference-text",
+          "uncertainty-table"
+        ]
+      }
+    ],
+    "evidenceFlow": [
+      {
+        "title": "Deterministic display scaling only",
+        "detail": "Read the exact source rows and any listed full-precision companion CSV; multiply only the explicitly declared numeric Sharpe statistics or Sharpe CI endpoints by sqrt(252/365). Keep all original fields unmodified; do not resample or drop weekends."
+      }
+    ],
+    "limitations": [
+      "252 is an alternative annualization convention, not a252-trading-day subsample or an independent result.",
+      "Existing primary inference, risk limits, and365-day scientific outputs remain unchanged."
+    ]
+  },
+  "methods": [
+    {
+      "language": "text",
+      "code": "For declared Sharpe fields, write sharpe365_<field>=original fullprecision statistic and sharpe252_<field>=statistic*sqrt(252/365). Scale CI endpoints identically. For current group medians only, retain the original rounded365 display and flag252 as approximate. Counts, ranks and correlations are not scaling targets."
+    }
+  ]
+}

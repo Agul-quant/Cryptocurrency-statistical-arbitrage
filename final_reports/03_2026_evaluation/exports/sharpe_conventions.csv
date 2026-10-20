@@ -1,0 +1,97 @@
+query_id,row_index,row_identity,period,metric,sharpe_365,sharpe_252,original_365_display,precision_basis,approximate_252_from_rounded_source,factor
+cohort,0,Broad survivors,oos,Median Sharpe,-0.4154397815470234,-0.3451929515905414,-0.4154397815470234,existing_full_precision_reviewed_query,False,0.8309097176613772
+cohort,1,Strict both-positive,oos,Median Sharpe,-0.3201318196089763,-0.2660006398457174,-0.3201318196089763,existing_full_precision_reviewed_query,False,0.8309097176613772
+cohort,2,Dev-negative survivors,oos,Median Sharpe,-0.5933872643289435,-0.4930512442674195,-0.5933872643289435,existing_full_precision_reviewed_query,False,0.8309097176613772
+cohort,3,Controls,oos,Median Sharpe,-0.4328573124545264,-0.3596653472792531,-0.4328573124545264,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,0,Survivors,oos,Median Sharpe,-1.3932659632965851,-1.1576782281899722,-1.3932659632965851,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,1,Controls,oos,Median Sharpe,-1.0827321231949645,-0.8996526427868314,-1.0827321231949645,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,2,Survivors,oos,Median Sharpe,-1.1111797968712338,-0.9232900912893034,-1.1111797968712338,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,3,Controls,oos,Median Sharpe,-0.926610788976243,-0.7699299090502361,-0.926610788976243,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,4,Survivors,oos,Median Sharpe,0.09921769896541664,0.08244095023436586,0.09921769896541664,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,5,Controls,oos,Median Sharpe,0.058099157643663774,0.04827515467406051,0.058099157643663774,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,6,Survivors,oos,Median Sharpe,-0.06442440623286208,-0.0535308651934493,-0.06442440623286208,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,7,Controls,oos,Median Sharpe,0.07905982769309151,0.0656915791068238,0.07905982769309151,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,8,Survivors,oos,Median Sharpe,-0.1323895987377734,-0.11000380410850631,-0.1323895987377734,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,9,Controls,oos,Median Sharpe,-0.02238407856404312,-0.018599148399759156,-0.02238407856404312,existing_full_precision_reviewed_query,False,0.8309097176613772
+family,10,Controls,oos,Median Sharpe,-0.6731173509396505,-0.5592997480222391,-0.6731173509396505,existing_full_precision_reviewed_query,False,0.8309097176613772
+uncertainty,0,A01,oos,Sharpe 95% CI low,-0.27694698305915616,-0.23011793950085366,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,0,A01,oos,Sharpe 95% CI high,2.5785399191598835,2.1425338762077293,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,1,A02,oos,Sharpe 95% CI low,-0.8713313967347581,-0.7239977248503713,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,1,A02,oos,Sharpe 95% CI high,2.1686364168713568,1.8019410728527598,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,2,A03,oos,Sharpe 95% CI low,0.8541334707484685,0.7097078010247422,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,2,A03,oos,Sharpe 95% CI high,3.8812618266518872,3.224978168553201,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,3,A04,oos,Sharpe 95% CI low,-2.7152040835112676,-2.2560894584233657,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,3,A04,oos,Sharpe 95% CI high,1.646707340875842,1.368265131678063,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,4,B01,oos,Sharpe 95% CI low,-3.495415145710238,-2.9043744118313954,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,4,B01,oos,Sharpe 95% CI high,1.2473172523680551,1.0364080259993056,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,5,B03,oos,Sharpe 95% CI low,-5.089116809644403,-4.2285966114474,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,5,B03,oos,Sharpe 95% CI high,-0.9806482957263811,-0.8148301985271181,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,6,B04,oos,Sharpe 95% CI low,-2.909493455927701,-2.4175263860025105,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,6,B04,oos,Sharpe 95% CI high,1.8775892932311344,1.5601071895227068,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,7,B05,oos,Sharpe 95% CI low,-2.5118777536313055,-2.0871436350696824,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,7,B05,oos,Sharpe 95% CI high,1.9177349599819349,1.593464614147942,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,8,B06,oos,Sharpe 95% CI low,-1.5306859565913293,-1.2718618360195366,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+uncertainty,8,B06,oos,Sharpe 95% CI high,1.2507765757616425,1.0392824114235706,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
+main_cash_performance,0,A01,oos_partial_2026_jan_sep,raw_sharpe,1.1903119670107665,0.9890417804378745,1.1903119670107665,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,0,A01,oos_partial_2026_jan_sep,cash_excess_sharpe,1.0713352727194918,0.8901828889760275,1.0713352727194918,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,0,A01,oos_partial_2026_jan_sep,Gross Sharpe,1.4717315858734106,1.2228760764914066,1.4717315858734106,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,1,A02,oos_partial_2026_jan_sep,raw_sharpe,0.8195851223821075,0.6810012426379822,0.8195851223821075,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,1,A02,oos_partial_2026_jan_sep,cash_excess_sharpe,0.7040734015655566,0.5850214313077221,0.7040734015655566,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,1,A02,oos_partial_2026_jan_sep,Gross Sharpe,1.2639743632815896,1.0502485813255247,1.2639743632815896,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,2,A03,oos_partial_2026_jan_sep,raw_sharpe,2.316890485684198,1.9251268193121882,2.316890485684198,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,2,A03,oos_partial_2026_jan_sep,cash_excess_sharpe,2.1331235523169423,1.7724330885925046,2.1331235523169423,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,2,A03,oos_partial_2026_jan_sep,Gross Sharpe,2.737237408982947,2.27439716267018,2.737237408982947,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,3,A04,oos_partial_2026_jan_sep,raw_sharpe,-0.21856800416906402,-0.1816102786339277,-0.21856800416906402,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,3,A04,oos_partial_2026_jan_sep,cash_excess_sharpe,-0.27615989493463206,-0.2294639403295307,-0.27615989493463206,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,3,A04,oos_partial_2026_jan_sep,Gross Sharpe,0.07732870149583644,0.06425316952702638,0.07732870149583644,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,4,B01,oos_partial_2026_jan_sep,raw_sharpe,-0.8163659328772257,-0.6783263867953825,-0.8163659328772257,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,4,B01,oos_partial_2026_jan_sep,cash_excess_sharpe,-0.9188091818503474,-0.7634474778759532,-0.9188091818503474,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,4,B01,oos_partial_2026_jan_sep,Gross Sharpe,-0.14929930587425227,-0.12405424409101455,-0.14929930587425227,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,5,B03,oos_partial_2026_jan_sep,raw_sharpe,-2.647197570218496,-2.1995821856641347,-2.647197570218496,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,5,B03,oos_partial_2026_jan_sep,cash_excess_sharpe,-2.750966952173744,-2.285805173526465,-2.750966952173744,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,5,B03,oos_partial_2026_jan_sep,Gross Sharpe,-2.3516838561968783,-1.954036968981367,-2.3516838561968783,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,6,B04,oos_partial_2026_jan_sep,raw_sharpe,-0.7349384221699228,-0.6106674768637086,-0.7349384221699228,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,6,B04,oos_partial_2026_jan_sep,cash_excess_sharpe,-0.859386351576809,-0.7140724707507274,-0.859386351576809,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,6,B04,oos_partial_2026_jan_sep,Gross Sharpe,-0.5634029512429742,-0.4681369871468864,-0.5634029512429742,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,7,B05,oos_partial_2026_jan_sep,raw_sharpe,-0.20882808397872019,-0.17351728429852475,-0.20882808397872019,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,7,B05,oos_partial_2026_jan_sep,cash_excess_sharpe,-0.3316231759060678,-0.27554891946208004,-0.3316231759060678,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,7,B05,oos_partial_2026_jan_sep,Gross Sharpe,-0.08794788431664134,-0.07307675172645592,-0.08794788431664134,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,8,B06,oos_partial_2026_jan_sep,raw_sharpe,0.04912324419139089,0.040816980961679496,0.04912324419139089,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,8,B06,oos_partial_2026_jan_sep,cash_excess_sharpe,-0.02676863449734774,-0.022242318532371814,-0.02676863449734774,existing_full_precision_reviewed_query,False,0.8309097176613772
+main_cash_performance,8,B06,oos_partial_2026_jan_sep,Gross Sharpe,0.19457536838513997,0.1616745644087551,0.19457536838513997,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,0,A01,oos_partial_2026_jan_sep,raw_sharpe,1.1903119670107665,0.9890417804378745,1.1903119670107665,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,0,A01,oos_partial_2026_jan_sep,cash_excess_sharpe,1.0713352727194918,0.8901828889760275,1.0713352727194918,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,0,A01,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_low,-0.411591923562002,-0.34199572899860625,-0.411591923562002,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,0,A01,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_high,2.4191966308394584,2.0101339894981693,2.4191966308394584,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,1,A02,oos_partial_2026_jan_sep,raw_sharpe,0.8195851223821075,0.6810012426379822,0.8195851223821075,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,1,A02,oos_partial_2026_jan_sep,cash_excess_sharpe,0.7040734015655566,0.5850214313077221,0.7040734015655566,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,1,A02,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_low,-1.0432278159926354,-0.8668281300429358,-1.0432278159926354,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,1,A02,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_high,2.0307562748399643,1.687375122966345,2.0307562748399643,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,2,A03,oos_partial_2026_jan_sep,raw_sharpe,2.316890485684198,1.9251268193121882,2.316890485684198,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,2,A03,oos_partial_2026_jan_sep,cash_excess_sharpe,2.1331235523169423,1.7724330885925046,2.1331235523169423,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,2,A03,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_low,0.6425750752232847,0.5339218743300177,0.6425750752232847,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,2,A03,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_high,3.642602702707202,3.026673983259011,3.642602702707202,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,3,A04,oos_partial_2026_jan_sep,raw_sharpe,-0.21856800416906402,-0.1816102786339277,-0.21856800416906402,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,3,A04,oos_partial_2026_jan_sep,cash_excess_sharpe,-0.27615989493463206,-0.2294639403295307,-0.27615989493463206,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,3,A04,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_low,-2.7747094949427606,-2.3055330830352316,-2.7747094949427606,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,3,A04,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_high,1.6417739645428886,1.3641659413421314,1.6417739645428886,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,4,B01,oos_partial_2026_jan_sep,raw_sharpe,-0.8163659328772257,-0.6783263867953825,-0.8163659328772257,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,4,B01,oos_partial_2026_jan_sep,cash_excess_sharpe,-0.9188091818503474,-0.7634474778759532,-0.9188091818503474,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,4,B01,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_low,-3.6040963457219357,-2.9946786770482148,-3.6040963457219357,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,4,B01,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_high,1.144620113546573,0.9510759753765166,1.144620113546573,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,5,B03,oos_partial_2026_jan_sep,raw_sharpe,-2.647197570218496,-2.1995821856641347,-2.647197570218496,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,5,B03,oos_partial_2026_jan_sep,cash_excess_sharpe,-2.750966952173744,-2.285805173526465,-2.750966952173744,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,5,B03,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_low,-5.244300802852991,-4.357540499429913,-5.244300802852991,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,5,B03,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_high,-1.1153903205557198,-0.9267886563351863,-1.1153903205557198,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,6,B04,oos_partial_2026_jan_sep,raw_sharpe,-0.7349384221699228,-0.6106674768637086,-0.7349384221699228,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,6,B04,oos_partial_2026_jan_sep,cash_excess_sharpe,-0.859386351576809,-0.7140724707507274,-0.859386351576809,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,6,B04,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_low,-3.025518926136407,-2.5139330766951553,-3.025518926136407,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,6,B04,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_high,1.6472302298866137,1.3686996052383718,1.6472302298866137,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,7,B05,oos_partial_2026_jan_sep,raw_sharpe,-0.20882808397872019,-0.17351728429852475,-0.20882808397872019,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,7,B05,oos_partial_2026_jan_sep,cash_excess_sharpe,-0.3316231759060678,-0.27554891946208004,-0.3316231759060678,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,7,B05,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_low,-2.671809308539638,-2.2200323182037103,-2.671809308539638,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,7,B05,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_high,1.7787445025667978,1.477976092419505,1.7787445025667978,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,8,B06,oos_partial_2026_jan_sep,raw_sharpe,0.04912324419139089,0.040816980961679496,0.04912324419139089,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,8,B06,oos_partial_2026_jan_sep,cash_excess_sharpe,-0.02676863449734774,-0.022242318532371814,-0.02676863449734774,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,8,B06,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_low,-1.596067036778477,-1.3261876108982353,-1.596067036778477,existing_full_precision_reviewed_query,False,0.8309097176613772
+cash_excess_performance,8,B06,oos_partial_2026_jan_sep,cash_excess_sharpe_bootstrap_ci95_high,1.1923412486475664,0.9907279302697634,1.1923412486475664,existing_full_precision_reviewed_query,False,0.8309097176613772

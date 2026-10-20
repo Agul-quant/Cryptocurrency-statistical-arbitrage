@@ -1,3 +1,4 @@
+import {GeneralizationFinding,hasSharpe,sharpePair,SharpeInterval} from './SharpeConventions.jsx';
 import {MainCashComparison, HistoricalCashComparison, CashPairedPrimary, CashRiskExposure, CashDailyRisk, CashMainNote} from './MainCashPerformance.jsx';
 import {CashBenchmarkAppendix} from './CashBenchmarkAppendix.jsx';
 import {BasketAttributionAppendix} from './BasketAttributionAppendix.jsx';
@@ -14,14 +15,15 @@ function format(k,v){if(v==null)return k==='Cash allocation'?'Not applicable':'U
 export function ReportContent(){
  const {appTitle,reviewedRows}=useDataApp();const rows=q=>reviewedRows(q);
  const text=(id,key,qs)=><ReportSection id={id} title={key} queryId={qs[0]} queryIds={qs} sourceRowsByQuery={Object.fromEntries(qs.map(q=>[q,rows(q)]))} showHeading={false}><RichNarrative id={`${id}:body`} value={plan.narrative[key]}/></ReportSection>;
- const table=(id,q,title,fields,subset)=>{let a=subset||rows(q);const columnClasses=Object.fromEntries(fields.map(k=>[k,isNumericColumn(k,a)?'num':'']));return <DataComponent id={id} queryId={q} title={title} kind="table" sourceRows={a} displayRows={a}><div className="final-scroll"><table className="final-table" data-reviewed-rows aria-label={title}><thead><tr>{fields.map(k=><th key={k} className={columnClasses[k]}>{k}</th>)}</tr></thead><tbody>{a.map((r,i)=><tr key={i}>{fields.map(k=><td key={k} className={columnClasses[k]}>{format(k,r[k])}</td>)}</tr>)}</tbody></table></div></DataComponent>};
+ const table=(id,q,title,fields,subset)=>{let a=subset||rows(q);const columnClasses=Object.fromEntries(fields.map(k=>[k,isNumericColumn(k,a)?'num':'']));return <DataComponent id={id} queryId={q} title={title} kind="table" sourceRows={a} displayRows={a}><div className="final-scroll"><table className="final-table" data-reviewed-rows aria-label={title}><thead><tr>{fields.map(k=><th key={k} className={columnClasses[k]}>{k.includes('Sharpe')?k+' (365 / 252)':k}</th>)}</tr></thead><tbody>{a.map((r,i)=><tr key={i}>{fields.map(k=><td key={k} className={columnClasses[k]}>{k==='Sharpe 95% CI'?<SharpeInterval row={r} lowKey="Sharpe 95% CI low" highKey="Sharpe 95% CI high" originalInterval={r[k]}/>:hasSharpe(r,k)?sharpePair(r,k):format(k,r[k])}</td>)}</tr>)}</tbody></table></div></DataComponent>};
  const evidence=(id,q,title,value)=><DataComponent id={id} queryId={q} title={title} kind="text" sourceRows={rows(q)} displayRows={rows(q)}><RichNarrative id={`${id}:body`} value={value}/></DataComponent>;
  const pp=q=>rows(q).map(r=>({...r,'ProfitableShare':r.Profitable}));
  return <article className="report-content final-report">
  <section className="final-page" id="overview">
   <header className="report-hero"><h1 data-data-app-title>{appTitle}</h1></header>
  <RichNarrative id="attribution-edition-note" value="[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix). [Cash-excess performance at 3% nominal](#main-cash-performance)."/>
-  {text('summary','summary',['primary','criteria','cohort','screening','execution','provenance'])}
+  <GeneralizationFinding/>
+  {text('summary','summary',['primary','criteria','cohort_sharpe_display','screening','execution','provenance'])}
   {text('primary-text','primary',['primary'])}
   <div id="main-cash-performance"><CashPairedPrimary/><CashMainNote id="main-cash-primary-legend"/></div>
  </section>
@@ -39,7 +41,7 @@ export function ReportContent(){
   {text('criteria-text','criteria',['criteria'])}
   {table('criteria-table','criteria','Approved criteria and frozen turnover caps',['ID','HAC t','Bootstrap p','Holm-9 p','Economic','Statistical','DD','Turnover','TO cap / year','All criteria'])}
   {text('inference-text','inference',['uncertainty','criteria'])}
-  {table('uncertainty-table','uncertainty','Approximate intervals; no OOS reselection',['ID','Mean daily','Mean 95% CI','Sharpe 95% CI','Growth 95% CI','Familywise mean LB'])}
+  {table('uncertainty-table','uncertainty_sharpe_display','Approximate intervals; no OOS reselection',['ID','Mean daily','Mean 95% CI','Sharpe 95% CI','Growth 95% CI','Familywise mean LB'])}
  </section>
  <section className="final-page" id="drawdown">
   {text('drawdown-text','drawdowns',['drawdowns'])}
@@ -67,7 +69,7 @@ export function ReportContent(){
  </section>
  <section className="final-page" id="cohort">
   {text('cohort-text','cohort',['cohort'])}
-  {table('cohort-table','cohort','Exploratory 2026 constituent distributions, 20 bps',['Cohort','Pairs','Profitable','Median net return','Median Sharpe','Median Max DD','Median TO / year'])}
+  {table('cohort-table','cohort_sharpe_display','Exploratory 2026 constituent distributions, 20 bps',['Cohort','Pairs','Profitable','Median net return','Median Sharpe','Median Max DD','Median TO / year'])}
   <EvidenceChart id="cohort-chart" queryId="cohort" title="Profitable fraction: groups are overlapping, not additive" rows={pp('cohort')} sourceRows={rows('cohort')} height={300} spec={{type:'horizontalBar',x:'Cohort',y:'ProfitableShare',stackable:false,valueDecimals:2,colors:{ProfitableShare:'#245c99'}}}/>
   {evidence('cohort-cost-evidence','cohort_costs','All cohort fee and delay sensitivities','The source view retains every predeclared cohort fee/delay scenario. Broad and strict median zero-fee returns were still negative. [All 69,108 survivor rows](exports/all_69108_survivors.csv) and [all 39,332 strict-subgroup rows](exports/strict_39332_survivors.csv) remain in experiment-ID/basket-ID order, not OOS performance order.')}
  </section>
@@ -79,8 +81,8 @@ export function ReportContent(){
  </section>
  <section className="final-page" id="settings">
   {text('settings-text','settings',['family','decomposition'])}
-  {table('family-table','family','Every family: no favorable family is promoted',['Family','Cohort','Pairs','Share of cohort','Profitable','Median net return','Median Sharpe'])}
-  {evidence('settings-evidence','family','Settings companion','[Download all settings and subgroups](exports/all_settings_summary.csv), including the full eight trend settings and every represented configuration. An unavailable factor-survivor cell means no qualifying member, not zero performance.')}
+  {table('family-table','family_sharpe_display','Every family: no favorable family is promoted',['Family','Cohort','Pairs','Share of cohort','Profitable','Median net return','Median Sharpe'])}
+  {evidence('settings-evidence','family_sharpe_display','Settings companion','[Download all settings and subgroups](exports/all_settings_summary.csv), including the full eight trend settings and every represented configuration. An unavailable factor-survivor cell means no qualifying member, not zero performance.')}
  </section>
  <section className="final-page" id="baskets">
   {text('baskets-text','baskets',['decomposition','coins'])}
@@ -102,7 +104,7 @@ export function ReportContent(){
  </section>
  <section className="final-page" id="conclusions">
   {text('conclusion-text','conclusion',['criteria','screening','regime_tests','execution','prospective'])}
-  {text('provenance-text','provenance',['primary','criteria','cohort','provenance'])}
+  {text('provenance-text','provenance',['primary','criteria','cohort_sharpe_display','provenance'])}
   <RichNarrative id="companions:body" value={'[Nine-case inference](exports/nine_primary_inference.csv) · [All 63 scenarios](exports/nine_all_63_scenarios.csv) · [Attribution](exports/attribution_summary.csv) · [Hypothetical carry/slippage](exports/hypothetical_carry_slippage.csv) · [Volume proxy](exports/target_volume_proxy.csv) · [Regime interactions](exports/regime_interactions.csv) · [Full regime results](exports/regime_results.csv)\n\n**Reading order:** 1. Development and robustness; 2. Validation and frozen selection; 3. This report. Companion CSVs are supporting results, not additional reports.'}/>
  </section>
  <BasketAttributionAppendix/>

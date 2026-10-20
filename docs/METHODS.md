@@ -12,6 +12,25 @@ family slot because no candidate qualified; it is not a tenth strategy.
 Track A selections used development only. Track B selections used development
 eligibility and validation; their validation statistics are selection statistics.
 
+### Headline and interpretation
+
+All four A strategies lost compounded net wealth in 2024–2025 validation;
+their raw √365 Sharpe ratios ranged from −0.22 to −0.64 (−0.18 to −0.53 under
+√252). All five B strategies
+lost compounded net wealth in January–September 2026. This is the headline
+pattern across the three reports, not a claim that every individual period or
+arithmetic-return statistic was negative. In particular, A03 passed the original
+2026 acceptance test after losing in validation, and B06's 2026 raw √365 Sharpe
+was slightly positive (0.05; 0.04 under √252) despite its compounded loss.
+
+This failure to generalize is consistent with fitting basket/parameter choices
+to the selection period. It does not establish that search alone caused the
+failures. Differences in basket, lookback, cadence, family, realized regimes
+and idealized execution remain relevant. No OOS winner is newly promoted.
+Project-level follow-up headlines orient readers across periods; they were not
+inputs to the original development selections. Original strategy definitions,
+results, selections, risk limits and acceptance flags remain unchanged.
+
 **Data-use note:** These are fixed historical evaluation periods. Some 2026
 observations had been inspected during the wider project. The nine-strategy
 evaluation and subsequent cohort, attribution and factor diagnoses share these
@@ -37,8 +56,37 @@ capacity, realistic execution and weight-drift maintenance costs are not fully
 modeled. Dollar neutrality does not imply market-beta neutrality.
 
 Returns compound on the accounting path. Sharpe and risk statistics use complete
-UTC-day returns and the 365-day convention. Annualized CAGR extrapolates the
-observed interval; it is not a forecast. Full-L1 turnover is not divided by two.
+UTC-day returns, including weekends. The established 365-day convention remains
+the frozen result convention; the reports additionally show the course's √252
+Sharpe scale as described below. Annualized CAGR extrapolates the observed
+interval; it is not a forecast. Full-L1 turnover is not divided by two.
+
+## Sharpe annualization comparison
+
+For the **same** complete UTC daily observations, define
+`S365 = sqrt(365) × mean(d) / sample_std(d, ddof=1)` and
+`S252 = S365 × sqrt(252/365)`, where d is raw simple daily strategy return for
+the zero-cash comparison or daily net return minus `0.03/365` for cash excess.
+The conversion factor is approximately **0.8309097176613772**. This does not
+remove weekends or claim that crypto trades only 252 days a year. It supplies
+both the calendar-crypto convention and course comparison explicitly.
+
+For example, A01's development raw Sharpe is **1.83818 / 1.52736** under
+√365 / √252; its cash-excess Sharpe is **1.73402 / 1.44081**. The reports label
+both scales in performance tables and numeric Sharpe comparisons. Positive
+constant rescaling leaves signs and rankings unchanged. Where a saved source
+provides only rounded group medians, the converted display is marked
+approximate rather than implying recovered full precision.
+
+Sharpe confidence-interval endpoints are multiplied by the same positive
+factor; these are not independent bootstrap results or a new testing family.
+Counts, rank correlations, t-statistics, p-values and acceptance decisions are
+not rescaled. Cash accrual remains ACT/365F, and existing elapsed-calendar CAGR,
+volatility and 365-times-daily-intercept alpha definitions remain unchanged.
+The original query evidence and financial results are retained; added display
+projections and `sharpe_conventions.csv` exports expose the arithmetic comparison.
+Square-root annualization is a reporting convention, not a claim of independent
+daily returns; HAC and block-bootstrap inference retain their established rules.
 
 ## Per-coin attribution
 
@@ -90,6 +138,13 @@ basket-selection campaign, select a new strategy, or fetch raw exchange archives
 `reproduce_diagnostics.py` uses the compact daily statistical inputs to
 reconcile the factor models and coin-attribution intervals. Saved broader cohort tables
 provide the report's screening context and are not independent replications.
+
+The [fixed all-22-coin momentum protocol](FIXED_ALL22_PROTOCOL.md) is a separate
+**draft awaiting explicit approval to run**. It proposes one 28-day weekly
+momentum specification without a new basket or parameter sweep. It does not
+authorize a backtest, alter the frozen-nine runner or create an all-22 result.
+Its already-inspected historical comparison windows cannot supply fresh
+independent confirmation of a rule proposed after seeing the project results.
 
 
 ## Cash benchmark comparison

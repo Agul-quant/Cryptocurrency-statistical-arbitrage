@@ -48,10 +48,14 @@ Two separate fixed studies each used all 22 eligible coins, a **28-day
 lookback** and **weekly Monday rebalancing**, without a new basket or parameter
 selection. Momentum and reversal were approved and evaluated separately.
 
-| Fixed study | 2022–2023 net return | 2024–2025 net return | Jan–Sep 2026 net return |
-| --- | ---: | ---: | ---: |
-| Momentum | +5.61% | −17.43% | −20.94% |
-| Reversal | −33.59% | −15.66% | +9.91% |
+| Fixed study | Period | Net return | Sharpe √365 | Sharpe √252 |
+| --- | --- | ---: | ---: | ---: |
+| Momentum | 2022–2023 development | +5.61% | 0.23 | 0.20 |
+| Momentum | 2024–2025 validation | −17.43% | −0.38 | −0.31 |
+| Momentum | Jan–Sep 2026 OOS (273 days) | −20.94% | −1.70 | −1.41 |
+| Reversal | 2022–2023 development | −33.59% | −0.87 | −0.72 |
+| Reversal | 2024–2025 validation | −15.66% | −0.32 | −0.27 |
+| Reversal | Jan–Sep 2026 OOS (273 days) | +9.91% | 0.81 | 0.67 |
 
 At the fixed **20 bps** primary cost, neither rule made money in all three
 periods. Reversal's positive partial 2026 does not erase its earlier losses;

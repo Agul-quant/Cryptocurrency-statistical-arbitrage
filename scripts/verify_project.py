@@ -77,52 +77,6 @@ def verify(root: Path) -> dict:
     assert set(protocol['periods']) == set(manifest['periods'])
     assert protocol['primary_cost_bps'] == manifest['primary_cost_bps'] == 20
     assert protocol['primary_execution_lag'] == manifest['primary_execution_lag'] == 1
-    cash = json.loads((root/'configs/cash_benchmark.json').read_text())
-    assert cash['annual_nominal_rate'] == 0.03 and cash['calendar_days_per_fixed_year'] == 365
-    assert cash['day_count'] == 'ACT/365F' and cash['daily_compounding'] is True
-    assert cash['interest_credited_to_strategy'] is False and cash['benchmark_is_not_actual_instrument_yield'] is True
-    assert cash['bootstrap']['replications'] == 4000 and cash['bootstrap']['block_days'] == 28
-    assert cash['bootstrap']['seed'] == 20261016 and cash['bootstrap']['synchronized_nine'] is True
-    for relative,pin in cash['input_pins'].items():
-        assert relative in files and files[relative]['sha256'] == pin['sha256']
-        assert files[relative]['bytes'] == pin['bytes']
-    c = 0.03/365
-    performance = read_rows(root/'results/cash_excess/performance.csv')
-    assert len(performance) == 27
-    for row in performance:
-        n = manifest['periods'][row['period']]['days']
-        assert int(row['n_calendar_days']) == n and row['cash_interest_credited_to_strategy'] == 'False'
-        for value,expected in [
-            (row['cash_daily_return'],c),
-            (row['cash_compounded_return'],math.expm1(n*math.log1p(c))),
-            (row['cash_effective_365_day_return'],math.expm1(365*math.log1p(c))),
-            (row['wealth_relative_excess_return'],math.expm1(math.log1p(float(row['raw_net_return']))-n*math.log1p(c))),
-            (row['annual_arithmetic_mean_excess'],float(row['raw_annual_arithmetic_return'])-0.03),
-            (row['arithmetic_excess_annual_volatility'],float(row['raw_annual_daily_volatility'])),
-            (row['cash_excess_sharpe'],float(row['annual_arithmetic_mean_excess'])/float(row['raw_annual_daily_volatility']))]:
-            assert math.isclose(float(value),expected,rel_tol=1e-10,abs_tol=1e-12), (row['strategy_id'],row['period'],value,expected)
-    mean_rows = read_rows(root/'results/cash_excess/mean_excess_inference.csv')
-    assert len(mean_rows) == 27 and all(row['cash_excess_mean_multiplicity_family_size'] == '27' for row in mean_rows)
-    assert all(row['original_acceptance_retested'] == 'False' for row in mean_rows)
-    for name,count in [('joint_coefficients.csv',243),('matched_btc_coefficients.csv',54),('btc_full_period_coefficients.csv',54)]:
-        rows=read_rows(root/'results/cash_excess'/name);assert len(rows) == count
-        groups={}
-        for row in rows:
-            groups.setdefault((row['strategy_id'],row['period']),[]).append(row)
-            if row['term'] != 'alpha_annual':
-                for raw,adjusted in [('raw_estimate','cash_excess_estimate'),('raw_se','cash_excess_se'),('raw_ci95_low','cash_excess_ci95_low'),('raw_ci95_high','cash_excess_ci95_high')]:
-                    assert math.isclose(float(row[raw]),float(row[adjusted]),rel_tol=1e-10,abs_tol=1e-12), (name,row['strategy_id'],row['period'],row['term'])
-            if name == 'joint_coefficients.csv':
-                assert row['cash_excess_coefficient_multiplicity_family_size'] == '243'
-        assert len(groups) == 27
-        for key,group in groups.items():
-            alpha=next(row for row in group if row['term'] == 'alpha_annual')
-            beta_sum=sum(float(row['raw_estimate']) for row in group if row['term'] != 'alpha_annual')
-            expected=float(alpha['raw_estimate'])+0.03*(beta_sum-1)
-            assert math.isclose(float(alpha['cash_excess_estimate']),expected,rel_tol=1e-10,abs_tol=1e-12), (name,key)
-    cash_methods=json.loads((root/'results/cash_excess/methods.json').read_text())
-    assert cash_methods['interest_credited_to_strategy'] is False
-    assert cash_methods['strategy_trades_costs_selections_risk_limits_and_original_acceptance_tests_unchanged'] is True
     checked_rows = 0
     for contract in manifest.get('table_contracts', []):
         path = safe_path(root, contract['path'])

@@ -10,52 +10,16 @@
     "periods_reset_independently_from_cash": true,
     "warmup_start": "2021-10-01"
   },
-  "approved_protocol_snapshot": {
-    "byte_identical_to_approved_snapshot": true,
-    "path": "results/fixed_all22_momentum/protocol.md",
-    "sha256": "57b01784b17929b60bcef0db5eda3ee53e675fdfcfcfd1be88a549d38950197a",
-    "status_note": "The exact approved snapshot retains its pre-execution draft wording. The current docs protocol is a publication status wrapper, not a newly sealed protocol or a claim that these results are unexecuted."
-  },
   "chronology": {
     "chronology_deviation_sha256": "cf940825f4aaf6154bbbc1fa125416e95cee4b832a3bf38c5a33367d110ebffa",
-    "correction": "Existing verifier tests decoded all7sourcepanels plus saved dailyfactorinputs and recomputed oldnine cash/attribution statistics before this study full execution seal. No new all22 actualprice targets or performance were calculated before that seal. Later sealing cannot repair the pre-panel chronology gate failure.",
-    "disclosure": "Prior existing verification tests decoded actual source/saved data and recalculated old-nine cash statistics; both corrected receipts retained. No all22 actual-price signals or performance before code seal.",
+    "correction": "Existing verifier tests decoded the seven source panels and saved daily factor inputs and recalculated saved nine-strategy statistics before this study execution seal. No all-22 actual-price targets or performance were calculated before that seal. Later sealing cannot repair the pre-panel chronology gate failure.",
+    "disclosure": "The strategy code/settings seal preceded the first all-22 simulation, but prior verification tests had already decoded actual source and saved data. Strict pre-panel-access compliance is false.",
     "new_strategy_code_sealed_before_its_first_strategy_execution": true,
     "preaccess_test_correction_sha256": "05b960c25c1a4029a0c62e369a44f8a71d42848e0819ddcfc1c2425b1b95534d",
     "strict_pre_panel_access_compliance": false
   },
-  "classification": {
-    "all3_nominal_net_positive": false,
-    "combined_conditional_pass": false,
-    "deployment_authorized": false,
-    "economic_all3_above_cash": false,
-    "independent_unseen_confirmation": false,
-    "risk_all3_hourly_dd_le_40pct": true,
-    "statistical_all3_holm3_cash_mean": false,
-    "strict_pre_panel_freeze_compliance": false
-  },
-  "combined_with_other_study": false,
-  "environment": {
-    "packages": {
-      "numpy": "2.4.6",
-      "pandas": "2.2.3",
-      "pyarrow": "20.0.0",
-      "pytest": "9.0.3",
-      "scipy": "1.15.3",
-      "statsmodels": "0.14.6"
-    },
-    "platform": "macOS-15.6.1-x86_64-i386-64bit",
-    "python": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]"
-  },
-  "exact_configuration": {
+  "configuration": {
     "annual_days": 365,
-    "bootstrap": {
-      "block_days": 28,
-      "draws": 10000,
-      "mean_test": "centered circular block bootstrap-t; HAC27 n/(n-1)",
-      "multiple_testing": "one-sided cash-mean Holm family3",
-      "seed_reset_each_period": 20261020
-    },
     "case": {
       "buffer_l1": 0.0,
       "experiment_id": "momentum_h0672_r168",
@@ -67,10 +31,8 @@
       "report_family": "momentum",
       "strategy_id": "momentum_h0672_r168"
     },
-    "cash_nominal_annual": 0.03,
     "companion_sharpe_days": 252,
-    "historical_data_already_examined": true,
-    "new_independent_OOS_claim": false,
+    "output_destination": "results/fixed_all22_momentum",
     "periods": {
       "development": [
         "2022-01-01T00:00:00Z",
@@ -89,7 +51,6 @@
       "cost_bps": 20,
       "execution_lag_h": 1
     },
-    "risk_hourly_drawdown_limit": 0.4,
     "scenario_period_keys": 21,
     "scenarios": [
       {
@@ -146,6 +107,31 @@
       "VETUSDT"
     ]
   },
+  "engine_code_sha256": {
+    "src/crypto_research/__init__.py": "5b3782317fdb10c985a3562dd2c60589b6606e10b1bb1dc091495d39ed8eb28e",
+    "src/crypto_research/backtest.py": "282eb35d9bf970c8b623f0ddd03124cec0025a3b818cc08506d81121c5759e51",
+    "src/crypto_research/diagnostics.py": "c5c238cff94f6fb1235d06937d886e896710af3ef217cbafef1e09a9c2d838f4",
+    "src/crypto_research/metrics.py": "ac8a2d8c1002b78d3bce076127a7ae6c9baa77c3b647f25b6c52c8e4f95616e3",
+    "src/crypto_research/metrics_adapter.py": "c02aec3acae0aead63a31a97b07931b57b4d8933c013a84dd012ce4390ad7ef6",
+    "src/crypto_research/metrics_extra.py": "2c2a2b71bf6d378cab8d8d6e34f9f0c28e7bb4cefad60356df90bfd0173926bc",
+    "src/crypto_research/output_safety.py": "c0a05ba6bd93103b859c4af9417a4364d767c077fde01d8afe8899f43ef89cf3",
+    "src/crypto_research/performance_indicators.py": "148ee09c30a5834111d661d33527ce74bc67cf8689e0d11e0b2ea582e3867970",
+    "src/crypto_research/runner.py": "42bc0d339c2750011963b9f9e30abf3c97b1a32b0705ee579ffc8013e7d9212a",
+    "src/crypto_research/simulator.py": "23dc58af2eb92164aa0ba9fb3a4ac07d96f8ddd8969df66015c86d93132528c1",
+    "src/crypto_research/strategies.py": "6a8d5f85dac9c248833b947becbae89a2e2fcc263f732fdf364a16b55ad0f5b0"
+  },
+  "environment": {
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.2.3",
+      "pyarrow": "20.0.0",
+      "pytest": "9.0.3",
+      "scipy": "1.15.3",
+      "statsmodels": "0.14.6"
+    },
+    "platform": "macOS-15.6.1-x86_64-i386-64bit",
+    "python": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]"
+  },
   "execution_freeze": {
     "sealed_utc": "2026-10-20T18:45:54.540375+00:00",
     "sha256": "20b3334115aaba341efdd4c39d6694a0f244886aa79319d4a6d9e6870eb1aa94",
@@ -153,23 +139,10 @@
   },
   "historical_interpretation": "Established labels retained, but all three historical windows were previously examined. This is a later fixed-specification study, not new unseen OOS confirmation. No new winner, portfolio combination or correlation conclusion is selected.",
   "inference": {
-    "BTC_attribution": "descriptive full-period raw/cash BTC OLS with BartlettHAC7, no finitecovariancecorrection; annualalpha365;95%marginal coefficientintervals; not extra primary success tests",
-    "bootstrap": "10000centered circular28-day block-bootstrap-t draws; NumPyGeneratorPCG64 seed20261020 reset per period; sameindices for all periodstatistics",
-    "correction": "Holm at5% within this study only; no pooling with another fixed study or original nine",
-    "family_size": 3,
-    "invalid_draws": "never drop; any invalid draw makes affected test/interval unavailable; nonestimable test retains Holm slot atp1",
-    "mean_CI": "95%studentized HAC27 interval by bootstrap-t quantile inversion",
-    "mean_covariance": "Bartlett calendarHAC27 with n/(n-1) covariance correction",
-    "one_sided_p": "(1+count(Tstar>=Tobserved))/(10000+1)",
-    "ordered_period_slots": [
-      "development",
-      "validation",
-      "oos_partial_2026_jan_sep"
-    ],
-    "other_CIs": "95%marginal percentile intervals for cash-relative wealth/growth and raw/cash Sharpe; linearquantiles;252endpoints positive-scale transforms",
-    "primary_hypotheses": "one mean arithmetic daily cash-excess greater than0 per period",
-    "resampling": "saved dailyreturns only; no signal regeneration or invented block-boundary fees",
-    "selection_adjusted": false
+    "BTC_attribution": "descriptive full-period strategy-return OLS against BTC returns, Bartlett HAC7 without finite covariance correction; annual alpha uses 365 and coefficient intervals are marginal 95%",
+    "intervals": "saved 95% marginal percentile raw Sharpe intervals, 10,000 circular 28-day blocks; NumPy PCG64 seed 20261020 reset per period; 252 endpoints are positive-scale transforms of 365 endpoints",
+    "mean": "saved descriptive calendar Bartlett HAC27 mean t-statistics with n/(n-1) covariance correction",
+    "scope": "descriptive uncertainty conditional on the specified strategy and supplied dataset, not adjusted for earlier basket/parameter research"
   },
   "limitations": [
     "inherited historically chosen universe and previous project inspection",
@@ -180,71 +153,23 @@
   ],
   "performance": {
     "CAGR_volatility_alpha_annual_days": 365,
-    "cash": "3% nominal annual ACT/365F compounded daily at0.03/365, not credited to strategy",
-    "cash_excess_sharpe365": "sqrt(365)*mean(dailyreturns-0.03/365)/sample_sd(dailyreturns)",
-    "cash_relative_drawdown": "daily relative NAV, not a replacement for original hourly risk limit",
-    "cash_relative_return": "W_strategy/W_cash-1",
-    "original_max_drawdown": "hourly valuation endpoints including initialNAV; intra-hour unknown",
-    "raw": "strategy net of transaction costs before cash comparison",
-    "sharpe252": "Sharpe365*sqrt(252/365), same complete daily sample including weekends",
-    "sharpe365": "sqrt(365)*mean(completeUTCdailyreturns)/sample_sd(completeUTCdailyreturns)",
-    "turnover": "fullL1 unitnotional changes; annualized=sum(turnover)*365/elapsedcalendardays; includes initial and terminal changes"
-  },
-  "pooled_multiple_testing_with_other_studies": false,
-  "predeclared_criteria": {
-    "deployment_approval_or_fresh_confirmation": false,
-    "dimensions_reported_separately": true,
-    "economic": "cash-relative netwealthreturn>0 in each of3primaryperiods",
-    "nominal_profitability": "netcompoundedreturn>0 in everyprimaryperiod disclosed separately",
-    "risk": "hourlymaxdrawdown<=0.4 in eachprimaryperiod, evaluation flag not trading stop",
-    "statistical": "all3 tests available, HACt>0 and Holm3p<=0.05"
+    "max_drawdown": "hourly valuation endpoints including initial NAV; intra-hour path unknown",
+    "returns": "strategy compounded returns net of transaction costs, with gross returns reported separately",
+    "sharpe252": "Sharpe365*sqrt(252/365), using the same complete daily sample including weekends",
+    "sharpe365": "sqrt(365)*mean(complete UTC daily returns)/sample_sd(complete UTC daily returns)",
+    "turnover": "full-L1 unit-notional changes, annualized as sum(turnover)*365/elapsed calendar days, including initial and terminal changes"
   },
   "preservation_and_audit": {
     "accounting_audit_sha256": "422f54f173cf1498ba328eed01d2045c0714e4f06f52020f270be97d2d77f030",
     "accounting_audit_status": "PASS",
     "accounting_checks": 1197,
     "accounting_numeric_cells": 6432506,
-    "completion_receipt_sha256": "d1d13ebbd711dcbdbc86eb16c29dd3f85221f0d4fc2171fec2a7eb6fb751c400",
-    "final_local_manifest_sha256": "1adf7bed99a715a75f4ed9f3aae31a456bf034e063dae79e4e94742e87571181",
-    "original_nine_strategies_results_acceptance_unchanged": true,
-    "original_tracked_file_count_preserved": 290,
     "scenario_count": 21,
-    "source_code_and_data_unchanged": true,
     "statistical_audit_sha256": "9db07300701c8b35941ab0647c743e751f932fa40851e994e0df6da68a69daf9",
-    "statistical_audit_status": "PASS_WITH_CHRONOLOGY_EXCEPTION"
+    "strategy_parameters_trades_and_raw_results_unchanged": true
   },
-  "publication_output_pins": {
-    "results/fixed_all22_momentum/classification.json": {
-      "bytes": 326,
-      "sha256": "e577d6a030ec775ab5088dd36baa26e3eba22e6e83807bdfae3ad5a808d9d2fb"
-    },
-    "results/fixed_all22_momentum/daily_returns.csv": {
-      "bytes": 191937,
-      "sha256": "49209751b5b1afb899b014625752c4c4f73b392d5b927d8066db9c4ec94ef511"
-    },
-    "results/fixed_all22_momentum/primary_inference.csv": {
-      "bytes": 7368,
-      "sha256": "767f7bf33442ec8867484ab56d312800adc406edb3a4bcd5b23fd8a10ccaf3d5"
-    },
-    "results/fixed_all22_momentum/primary_inference.json": {
-      "bytes": 13212,
-      "sha256": "5bd6e4629f86f67509fd681e9863e071e6b2a66c93916bdea79fb29cdfc03239"
-    },
-    "results/fixed_all22_momentum/primary_summary.csv": {
-      "bytes": 14168,
-      "sha256": "2045a2b00a64d72db719e920f2874d4786913cf66be71bb340ee8a06edcc6327"
-    },
-    "results/fixed_all22_momentum/protocol.md": {
-      "bytes": 16388,
-      "sha256": "57b01784b17929b60bcef0db5eda3ee53e675fdfcfcfd1be88a549d38950197a"
-    },
-    "results/fixed_all22_momentum/scenario_metrics.csv": {
-      "bytes": 76417,
-      "sha256": "9c7eab625a2345b9fc8ec4d176b18103559347f213435f2da64e5d6976bd4099"
-    }
-  },
-  "publication_scope": "Exact saved output copies and current publication documentation only. No new strategy run, parameter selection, source-data acquisition or public runner is added.",
-  "schema_version": 1,
+  "publication_scope": "Saved fixed-strategy performance, descriptive uncertainty, settings, chronology and source provenance. No new strategy execution, statistical test, parameter selection or source-data acquisition.",
+  "schema_version": 2,
   "sealed_study_code_sha256": {
     "audit_all22_accounting.py": "8cf27ba06031aef1412c0abe94dc26978fa52ea7f07ce55af12242922f6968b0",
     "inference.py": "19c63eeb4ba497dd5151592c3f1832fcc5037b327713c873186d59051530d115",
@@ -324,21 +249,7 @@
     "universe_path": "data/universe.csv",
     "universe_sha256": "1aa6d5827f220dced04d1bce20b40d52dd5b0a615ab7b1c237aafe2f71a87c7d"
   },
-  "status": "completed_approved_study_saved_results_publication",
+  "status": "completed_saved_fixed_strategy_results",
   "strategy_id": "momentum_h0672_r168",
-  "study": "fixed_all22_momentum",
-  "unchanged_engine_code_sha256": {
-    "src/crypto_research/__init__.py": "5b3782317fdb10c985a3562dd2c60589b6606e10b1bb1dc091495d39ed8eb28e",
-    "src/crypto_research/backtest.py": "282eb35d9bf970c8b623f0ddd03124cec0025a3b818cc08506d81121c5759e51",
-    "src/crypto_research/cash_excess.py": "8a22f418e68cc7413b76fb214a8d6ef9982ef4000277c167725ac0325862ea33",
-    "src/crypto_research/diagnostics.py": "c5c238cff94f6fb1235d06937d886e896710af3ef217cbafef1e09a9c2d838f4",
-    "src/crypto_research/metrics.py": "ac8a2d8c1002b78d3bce076127a7ae6c9baa77c3b647f25b6c52c8e4f95616e3",
-    "src/crypto_research/metrics_adapter.py": "c02aec3acae0aead63a31a97b07931b57b4d8933c013a84dd012ce4390ad7ef6",
-    "src/crypto_research/metrics_extra.py": "2c2a2b71bf6d378cab8d8d6e34f9f0c28e7bb4cefad60356df90bfd0173926bc",
-    "src/crypto_research/output_safety.py": "c0a05ba6bd93103b859c4af9417a4364d767c077fde01d8afe8899f43ef89cf3",
-    "src/crypto_research/performance_indicators.py": "148ee09c30a5834111d661d33527ce74bc67cf8689e0d11e0b2ea582e3867970",
-    "src/crypto_research/runner.py": "42bc0d339c2750011963b9f9e30abf3c97b1a32b0705ee579ffc8013e7d9212a",
-    "src/crypto_research/simulator.py": "23dc58af2eb92164aa0ba9fb3a4ac07d96f8ddd8969df66015c86d93132528c1",
-    "src/crypto_research/strategies.py": "6a8d5f85dac9c248833b947becbae89a2e2fcc263f732fdf364a16b55ad0f5b0"
-  }
+  "study": "fixed_all22_momentum"
 }

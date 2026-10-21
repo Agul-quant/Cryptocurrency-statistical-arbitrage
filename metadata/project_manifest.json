@@ -6,20 +6,10 @@
     "total_return_column": "terminal_net_return",
     "totals_path": "results/basket_factors/attribution_totals.csv"
   },
-  "cash_benchmark_comparison": {
-    "annual_nominal_rate": 0.03,
-    "daily_compounding": true,
-    "day_count": "ACT/365F",
-    "families_separate_from_raw_acceptance": true,
-    "interest_credited_to_strategy": false,
-    "joint_coefficient_Holm_and_Bonferroni_family_size": 243,
-    "mean_Holm_family_size": 27,
-    "raw_metrics_and_selections_unchanged": true
-  },
   "configuration_count": 169,
-  "created_at_utc": "2026-10-20T19:33:46.530872+00:00",
+  "created_at_utc": "2026-10-21T00:28:38.802483+00:00",
   "data_universe_slots": 22,
-  "data_use_note": "Fixed historical periods with prior project data inspection. Original nine and separate fixed all22 studies share observations; no new independent confirmation or pooled testing. Momentum chronology exception remains disclosed; reversal met its new-study predecode gate.",
+  "data_use_note": "Fixed historical periods with prior project data inspection. The original nine and separate fixed all-22 studies share observations; no new independent confirmation or pooled testing. Momentum chronology exception remains disclosed; reversal met its study-specific predecode gate.",
   "files": {
     ".gitattributes": {
       "bytes": 277,
@@ -34,12 +24,8 @@
       "sha256": "1ba0bde14166c529053b0ab9dfd2815751bd6e9286113a3e03f2c7edb1646a8d"
     },
     "README.md": {
-      "bytes": 9298,
-      "sha256": "3c8c8f47b865013cdfe0caa4fb8d43c3aa80c2229d4df3cd9b2427a81cfcc6ba"
-    },
-    "configs/cash_benchmark.json": {
-      "bytes": 1648,
-      "sha256": "9f1d448e309ae7b13af259ad27b9a4b5d0bc097479f925cfa89fa64f4805b98c"
+      "bytes": 8378,
+      "sha256": "65b7fd25a602c2a4a190d7cfc27979e28fe0afb851883a689c1afa2a7b8a6e35"
     },
     "configs/configuration_space.json": {
       "bytes": 50142,
@@ -126,64 +112,56 @@
       "sha256": "d57e27a6bbdb405ca82e5e8a2cbbc1008b0952033bd89f04443642a6db14929c"
     },
     "docs/FIXED_ALL22_PROTOCOL.md": {
-      "bytes": 9056,
-      "sha256": "622e8471115ada7a4eacbb2edbb6751c0102b936eaaffe3412383b7791feac8d"
+      "bytes": 8657,
+      "sha256": "44edf12eeb05e1ecfbb3ae1deb256d86396da85b63d18fc1632797ce04f8e35d"
     },
     "docs/FIXED_ALL22_REVERSAL_PROTOCOL.md": {
-      "bytes": 9010,
-      "sha256": "1b15c8fcb4936874a178006fdb2cd67b00b7a095ce2f9fb56deb32f192106d75"
+      "bytes": 8691,
+      "sha256": "7ecd2a47a094c2950288eb34e6542f8534aa8cc822e7c2494c263cf36fa7d73a"
     },
     "docs/METHODS.md": {
-      "bytes": 18861,
-      "sha256": "36b0fbdfc0066d3dedacc1eba963d3ebb91e230839b89ab1471854db9d69472d"
+      "bytes": 11478,
+      "sha256": "c0a7cfac9ff8f92902571159fa5faab1bc1988f384075f3446394470cef4d65d"
     },
     "final_reports/01_development/01_development_and_robustness.html": {
-      "bytes": 4425014,
-      "sha256": "80fb8f0e060a2ced2fce9f0d433be37ed63e910aaded309879f7c8150c07d772"
+      "bytes": 3820682,
+      "sha256": "502b569f105ec51f71de0693933160a12d59a9aad19737b7c9cbb02685a506b7"
     },
     "final_reports/01_development/01_development_and_robustness.pdf": {
-      "bytes": 1082613,
-      "sha256": "9c40ba52036131678fccf44b4fc3c3be52eb9cc72f887c8fe8137289a9d5b169"
+      "bytes": 994397,
+      "sha256": "121b4be205d2d45e065ab792b0de61c2f154ea0773161c5f959c3ec34deab61e"
     },
     "final_reports/01_development/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3323,
       "sha256": "5aa7508b0fa692454c6fb74698de8a9dd549279b027e881517ee12332aaa6320"
     },
-    "final_reports/01_development/app/src/content/report/CashBenchmarkAppendix.jsx": {
-      "bytes": 6641,
-      "sha256": "4798fd39229686a90814a6b7d3db73bf4fc1a17c16fae373a9a9f1d9b27985e5"
-    },
     "final_reports/01_development/app/src/content/report/FixedAll22Studies.jsx": {
-      "bytes": 13911,
-      "sha256": "63d26e2d4b5a49bc68d96fc1536596ba3714bfd64103f37b5625f2e5aa757608"
+      "bytes": 11783,
+      "sha256": "13062296265a63d02a7754778b2c6b13c68f2a62a43155540e815140ec237695"
     },
-    "final_reports/01_development/app/src/content/report/MainCashPerformance.jsx": {
-      "bytes": 8731,
-      "sha256": "cff847e95b3b236a1c829d6f7b555d604812ffbcd7947236f04d8bd841e0f4a2"
+    "final_reports/01_development/app/src/content/report/MainPerformance.jsx": {
+      "bytes": 6365,
+      "sha256": "16004e841bbfd7d2092a350c1283e0edb3df3790996178cf8571d68051f76264"
     },
     "final_reports/01_development/app/src/content/report/ReportContent.jsx": {
-      "bytes": 24716,
-      "sha256": "ae111d33a41f1397fabc80feeaa5603d948199a2d572aea22ee049d80e126c0c"
+      "bytes": 24527,
+      "sha256": "cf6cf80493a4847965150282a83e68cb7c879d63eb8aa2dfefb9631a0ba6a3b2"
     },
     "final_reports/01_development/app/src/content/report/SharpeConventions.jsx": {
-      "bytes": 4659,
-      "sha256": "780bcca5e7c194754f874e74e63a5c1ad88c8645b7910652cd9c55f465ac5503"
+      "bytes": 4631,
+      "sha256": "595a8fc1886cc48b9f4843463c9f9a313fe278f041a2a322163c527e840de972"
     },
     "final_reports/01_development/app/src/content/report/basket-attribution.css": {
       "bytes": 2719,
       "sha256": "ab0d5c6c87fe6cb72324c12f2683be152a81ab50907ccc75a3ccaac10ac0c101"
     },
-    "final_reports/01_development/app/src/content/report/cash-benchmark.css": {
-      "bytes": 2732,
-      "sha256": "8120340651a3a2c2c558e5dbf8e8036c68072e6c59c5e24eda79668342bf66e2"
-    },
     "final_reports/01_development/app/src/content/report/fixed-all22.css": {
       "bytes": 2727,
       "sha256": "dea15d2e525bedb61419f9e9bc673fa9a75c45d29d24a6e165fa5a8d8bab5c28"
     },
-    "final_reports/01_development/app/src/content/report/main-cash.css": {
-      "bytes": 2499,
-      "sha256": "036dba323c592c15e6fabff23a8d77e4e04d4bb42b19f5caddeba7a40551effb"
+    "final_reports/01_development/app/src/content/report/main-performance.css": {
+      "bytes": 2392,
+      "sha256": "2161fc25ebce5974963b4d5a9aec6f95c87685001fde38b1e890796da9a293b3"
     },
     "final_reports/01_development/app/src/content/report/report.css": {
       "bytes": 1746,
@@ -194,8 +172,8 @@
       "sha256": "a831ed56f669fb1f8017d92f4ff13615290391d824995c7adbeed720630ab20a"
     },
     "final_reports/01_development/app/src/data.json": {
-      "bytes": 1507849,
-      "sha256": "b56cfaef8fe8f42c2e6f584895ce0ef3974966983d7fa832763b156281baf1a7"
+      "bytes": 918760,
+      "sha256": "0c5a88947efd0aae59cb05c256bd5f137485580d60dd3e8a93ea4da76fa8718a"
     },
     "final_reports/01_development/exports/basket_btc_only.csv": {
       "bytes": 2323,
@@ -221,65 +199,37 @@
       "bytes": 326327,
       "sha256": "d7f6deda011bf668c60d3b5091fa7da80b8872f7350f38ab9fc8496f02304f49"
     },
-    "final_reports/01_development/exports/cash_btc_full_period_coefficients.csv": {
-      "bytes": 17273,
-      "sha256": "2b0a7e9a63dff5fb36b965921248cea644b34981ec914562d95aa0cbe4490122"
-    },
-    "final_reports/01_development/exports/cash_factor_models.csv": {
-      "bytes": 11232,
-      "sha256": "2ab8f16c8a636d19ce5d4cd3aca374554f68ed2c464614d31f0bf6aefddbe06e"
-    },
-    "final_reports/01_development/exports/cash_joint_coefficients.csv": {
-      "bytes": 118462,
-      "sha256": "23aeb23ec2c0448ca59747f49ed41a3dcaa1f0a7e6e523ee4b8bc1cfe3d902f2"
-    },
-    "final_reports/01_development/exports/cash_matched_btc_coefficients.csv": {
-      "bytes": 23551,
-      "sha256": "4b7c8e989a300af726f4e499da342d9feb95febdc366de18ca8ae630b44222a2"
-    },
-    "final_reports/01_development/exports/cash_mean_excess_inference.csv": {
-      "bytes": 8459,
-      "sha256": "ef289b2b25381fede0731f1c942774d08ad9ac83af7ffbd61ddac247a96ee971"
-    },
-    "final_reports/01_development/exports/cash_performance.csv": {
-      "bytes": 30209,
-      "sha256": "73f8761d3ddafcbf608211a792b3d0029aef94e129a9fb1b4f13de35379eabde"
-    },
-    "final_reports/01_development/exports/cash_strategy_summary.csv": {
-      "bytes": 48750,
-      "sha256": "3e8fb35f03cd0a1699e8a2f92a16fbad45afb79f6a634914bd43196b2a290d3a"
-    },
     "final_reports/01_development/exports/fixed_all22_momentum_primary_inference.csv": {
-      "bytes": 7368,
-      "sha256": "767f7bf33442ec8867484ab56d312800adc406edb3a4bcd5b23fd8a10ccaf3d5"
+      "bytes": 3025,
+      "sha256": "09b119b47b4bd4b1cb4d8aceee85a96cc52318da087ca5864784f403e2c1cf21"
     },
     "final_reports/01_development/exports/fixed_all22_momentum_primary_summary.csv": {
-      "bytes": 14168,
-      "sha256": "2045a2b00a64d72db719e920f2874d4786913cf66be71bb340ee8a06edcc6327"
+      "bytes": 11441,
+      "sha256": "64144bcc4b2594dcc3976e338670b82e476b98f1108f5d3a03b4b8183a75dbaf"
     },
     "final_reports/01_development/exports/fixed_all22_momentum_scenario_metrics.csv": {
-      "bytes": 76417,
-      "sha256": "9c7eab625a2345b9fc8ec4d176b18103559347f213435f2da64e5d6976bd4099"
+      "bytes": 62890,
+      "sha256": "38b73575324eefa91758c0966088e68baf11048dc73e380b8639f004cc6c25bb"
     },
     "final_reports/01_development/exports/fixed_all22_reversal_primary_inference.csv": {
-      "bytes": 10149,
-      "sha256": "6c9b93f81aaafb60fbe4979eae6720befecaab80a6594de34c091f55169bb943"
+      "bytes": 4266,
+      "sha256": "0180f74f8f4be0500889c78adcc959724c8f549ce42ecf60457240fbafa042fe"
     },
     "final_reports/01_development/exports/fixed_all22_reversal_primary_summary.csv": {
-      "bytes": 14087,
-      "sha256": "958f91b6ab64bb22c63a7f49774f37b4de8f6ec66246de2fd6b93032e98d81e3"
+      "bytes": 11359,
+      "sha256": "fcbeb396e572e10f92fa9bbe3018c0ba3a3ef9d1985115cc42a3346e21d53273"
     },
     "final_reports/01_development/exports/fixed_all22_reversal_scenario_metrics.csv": {
-      "bytes": 75947,
-      "sha256": "8f9c8e3921cf6fdeabdf5ab84f5e1eb01d233d51ccfc5d6e5492f32e65c6500f"
+      "bytes": 62462,
+      "sha256": "c988849934d23e36d511876f880078f7f601c52bc532ce3f278a52d2023baff5"
     },
     "final_reports/01_development/exports/sharpe_conventions.csv": {
-      "bytes": 14640,
-      "sha256": "c14ead6fa68da072326d275fc6ed5b17f5eb28510141cdcefe3d7d3ec1e3a6bd"
+      "bytes": 6112,
+      "sha256": "0dd93aceb12fbc3f46c39f5d3db3268db8761e2f36a73e2ddad965d29a3cce6f"
     },
     "final_reports/01_development/reviewed_snapshot.json": {
-      "bytes": 1507849,
-      "sha256": "b56cfaef8fe8f42c2e6f584895ce0ef3974966983d7fa832763b156281baf1a7"
+      "bytes": 918760,
+      "sha256": "0c5a88947efd0aae59cb05c256bd5f137485580d60dd3e8a93ea4da76fa8718a"
     },
     "final_reports/01_development/tables/annual.csv": {
       "bytes": 979,
@@ -326,52 +276,44 @@
       "sha256": "7312aedba48b8697d5fa639f8857c0e25b290210f1a42777c7c89738c6f8e790"
     },
     "final_reports/02_validation/02_validation_and_frozen_selection.html": {
-      "bytes": 4430119,
-      "sha256": "5b0e1de3344d4d29b9f204de884d5f6fcc5c7146e3ff597704ae593ab417559d"
+      "bytes": 3725898,
+      "sha256": "220175c0bf38ad5ddb902341a4a0f2535b992f910ded8495e757e5f3c21d92cc"
     },
     "final_reports/02_validation/02_validation_and_frozen_selection.pdf": {
-      "bytes": 1171430,
-      "sha256": "844ad42c4b1ea749f89dbd5fbce39f319ba4dad571dd4bb6f3fd241ddf879118"
+      "bytes": 1059561,
+      "sha256": "fa7e198150d3d0ba1a7db4a23b1d6a3ae1d9a033a97006eabcc386e556af29fb"
     },
     "final_reports/02_validation/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3323,
       "sha256": "5aa7508b0fa692454c6fb74698de8a9dd549279b027e881517ee12332aaa6320"
     },
-    "final_reports/02_validation/app/src/content/report/CashBenchmarkAppendix.jsx": {
-      "bytes": 6641,
-      "sha256": "4798fd39229686a90814a6b7d3db73bf4fc1a17c16fae373a9a9f1d9b27985e5"
-    },
     "final_reports/02_validation/app/src/content/report/FixedAll22Studies.jsx": {
-      "bytes": 13911,
-      "sha256": "63d26e2d4b5a49bc68d96fc1536596ba3714bfd64103f37b5625f2e5aa757608"
+      "bytes": 11783,
+      "sha256": "13062296265a63d02a7754778b2c6b13c68f2a62a43155540e815140ec237695"
     },
-    "final_reports/02_validation/app/src/content/report/MainCashPerformance.jsx": {
-      "bytes": 8731,
-      "sha256": "cff847e95b3b236a1c829d6f7b555d604812ffbcd7947236f04d8bd841e0f4a2"
+    "final_reports/02_validation/app/src/content/report/MainPerformance.jsx": {
+      "bytes": 6365,
+      "sha256": "16004e841bbfd7d2092a350c1283e0edb3df3790996178cf8571d68051f76264"
     },
     "final_reports/02_validation/app/src/content/report/ReportContent.jsx": {
-      "bytes": 20861,
-      "sha256": "381d96862cae4779df10fef95a204569f29a1c591a9e0a9dd0f37ec336d5c979"
+      "bytes": 20674,
+      "sha256": "62834a90c0df729d105dad54a35a42606df0401f8fe0b5bb024de147e2bd2814"
     },
     "final_reports/02_validation/app/src/content/report/SharpeConventions.jsx": {
-      "bytes": 4659,
-      "sha256": "780bcca5e7c194754f874e74e63a5c1ad88c8645b7910652cd9c55f465ac5503"
+      "bytes": 4631,
+      "sha256": "595a8fc1886cc48b9f4843463c9f9a313fe278f041a2a322163c527e840de972"
     },
     "final_reports/02_validation/app/src/content/report/basket-attribution.css": {
       "bytes": 2719,
       "sha256": "ab0d5c6c87fe6cb72324c12f2683be152a81ab50907ccc75a3ccaac10ac0c101"
     },
-    "final_reports/02_validation/app/src/content/report/cash-benchmark.css": {
-      "bytes": 2732,
-      "sha256": "8120340651a3a2c2c558e5dbf8e8036c68072e6c59c5e24eda79668342bf66e2"
-    },
     "final_reports/02_validation/app/src/content/report/fixed-all22.css": {
       "bytes": 2727,
       "sha256": "dea15d2e525bedb61419f9e9bc673fa9a75c45d29d24a6e165fa5a8d8bab5c28"
     },
-    "final_reports/02_validation/app/src/content/report/main-cash.css": {
-      "bytes": 2499,
-      "sha256": "036dba323c592c15e6fabff23a8d77e4e04d4bb42b19f5caddeba7a40551effb"
+    "final_reports/02_validation/app/src/content/report/main-performance.css": {
+      "bytes": 2392,
+      "sha256": "2161fc25ebce5974963b4d5a9aec6f95c87685001fde38b1e890796da9a293b3"
     },
     "final_reports/02_validation/app/src/content/report/report.css": {
       "bytes": 11034,
@@ -382,8 +324,8 @@
       "sha256": "a831ed56f669fb1f8017d92f4ff13615290391d824995c7adbeed720630ab20a"
     },
     "final_reports/02_validation/app/src/data.json": {
-      "bytes": 1509184,
-      "sha256": "cb4346a99cae8cf5b2436b73f48a920a59a68c99551f90f2fb726a5f4cc71adc"
+      "bytes": 820326,
+      "sha256": "afef5020bd274ae0a5dfb2952822ffed3b73c64bddc6a56f3c7a0d3c87ed1c90"
     },
     "final_reports/02_validation/exports/basket_btc_only.csv": {
       "bytes": 2315,
@@ -409,113 +351,77 @@
       "bytes": 316069,
       "sha256": "d52cd089691ae0b384dc82b643d943b080eef5166817ae9381d65682c453c2f2"
     },
-    "final_reports/02_validation/exports/cash_btc_full_period_coefficients.csv": {
-      "bytes": 17273,
-      "sha256": "2b0a7e9a63dff5fb36b965921248cea644b34981ec914562d95aa0cbe4490122"
-    },
-    "final_reports/02_validation/exports/cash_factor_models.csv": {
-      "bytes": 11232,
-      "sha256": "2ab8f16c8a636d19ce5d4cd3aca374554f68ed2c464614d31f0bf6aefddbe06e"
-    },
-    "final_reports/02_validation/exports/cash_joint_coefficients.csv": {
-      "bytes": 118462,
-      "sha256": "23aeb23ec2c0448ca59747f49ed41a3dcaa1f0a7e6e523ee4b8bc1cfe3d902f2"
-    },
-    "final_reports/02_validation/exports/cash_matched_btc_coefficients.csv": {
-      "bytes": 23551,
-      "sha256": "4b7c8e989a300af726f4e499da342d9feb95febdc366de18ca8ae630b44222a2"
-    },
-    "final_reports/02_validation/exports/cash_mean_excess_inference.csv": {
-      "bytes": 8459,
-      "sha256": "ef289b2b25381fede0731f1c942774d08ad9ac83af7ffbd61ddac247a96ee971"
-    },
-    "final_reports/02_validation/exports/cash_performance.csv": {
-      "bytes": 30209,
-      "sha256": "73f8761d3ddafcbf608211a792b3d0029aef94e129a9fb1b4f13de35379eabde"
-    },
-    "final_reports/02_validation/exports/cash_strategy_summary.csv": {
-      "bytes": 48750,
-      "sha256": "3e8fb35f03cd0a1699e8a2f92a16fbad45afb79f6a634914bd43196b2a290d3a"
-    },
     "final_reports/02_validation/exports/fixed_all22_momentum_primary_inference.csv": {
-      "bytes": 7368,
-      "sha256": "767f7bf33442ec8867484ab56d312800adc406edb3a4bcd5b23fd8a10ccaf3d5"
+      "bytes": 3025,
+      "sha256": "09b119b47b4bd4b1cb4d8aceee85a96cc52318da087ca5864784f403e2c1cf21"
     },
     "final_reports/02_validation/exports/fixed_all22_momentum_primary_summary.csv": {
-      "bytes": 14168,
-      "sha256": "2045a2b00a64d72db719e920f2874d4786913cf66be71bb340ee8a06edcc6327"
+      "bytes": 11441,
+      "sha256": "64144bcc4b2594dcc3976e338670b82e476b98f1108f5d3a03b4b8183a75dbaf"
     },
     "final_reports/02_validation/exports/fixed_all22_momentum_scenario_metrics.csv": {
-      "bytes": 76417,
-      "sha256": "9c7eab625a2345b9fc8ec4d176b18103559347f213435f2da64e5d6976bd4099"
+      "bytes": 62890,
+      "sha256": "38b73575324eefa91758c0966088e68baf11048dc73e380b8639f004cc6c25bb"
     },
     "final_reports/02_validation/exports/fixed_all22_reversal_primary_inference.csv": {
-      "bytes": 10149,
-      "sha256": "6c9b93f81aaafb60fbe4979eae6720befecaab80a6594de34c091f55169bb943"
+      "bytes": 4266,
+      "sha256": "0180f74f8f4be0500889c78adcc959724c8f549ce42ecf60457240fbafa042fe"
     },
     "final_reports/02_validation/exports/fixed_all22_reversal_primary_summary.csv": {
-      "bytes": 14087,
-      "sha256": "958f91b6ab64bb22c63a7f49774f37b4de8f6ec66246de2fd6b93032e98d81e3"
+      "bytes": 11359,
+      "sha256": "fcbeb396e572e10f92fa9bbe3018c0ba3a3ef9d1985115cc42a3346e21d53273"
     },
     "final_reports/02_validation/exports/fixed_all22_reversal_scenario_metrics.csv": {
-      "bytes": 75947,
-      "sha256": "8f9c8e3921cf6fdeabdf5ab84f5e1eb01d233d51ccfc5d6e5492f32e65c6500f"
+      "bytes": 62462,
+      "sha256": "c988849934d23e36d511876f880078f7f601c52bc532ce3f278a52d2023baff5"
     },
     "final_reports/02_validation/exports/sharpe_conventions.csv": {
-      "bytes": 17659,
-      "sha256": "438f1388fd6bb6590433d2092bf2cd446df77cf6368880922a6cbb95d9d9f646"
+      "bytes": 7497,
+      "sha256": "b170068b08af344da66e2179919cf5c45ed4d5f21c0692b2f7cc8f28f7caa9df"
     },
     "final_reports/02_validation/reviewed_snapshot.json": {
-      "bytes": 1509184,
-      "sha256": "cb4346a99cae8cf5b2436b73f48a920a59a68c99551f90f2fb726a5f4cc71adc"
+      "bytes": 820326,
+      "sha256": "afef5020bd274ae0a5dfb2952822ffed3b73c64bddc6a56f3c7a0d3c87ed1c90"
     },
     "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.html": {
-      "bytes": 4793669,
-      "sha256": "00a07fb1b80da6f21bc2b696515cadab77410be53c9682c2b140d8aaba6c67b1"
+      "bytes": 4181661,
+      "sha256": "e96eb450e60ca32be548f8de279ec795a23f22bda223f6b64c8b7003d33b85cf"
     },
     "final_reports/03_2026_evaluation/03_2026_evaluation_and_conclusions.pdf": {
-      "bytes": 1262972,
-      "sha256": "e3763601a67a1180ddc7f406e2e23b52b63b589289f96de1f846db30e84f2832"
+      "bytes": 1180472,
+      "sha256": "0bef09821a4fcbe0352ced49bd77f87783f3f99114222d4a234639ba583501e5"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/BasketAttributionAppendix.jsx": {
       "bytes": 3323,
       "sha256": "5aa7508b0fa692454c6fb74698de8a9dd549279b027e881517ee12332aaa6320"
     },
-    "final_reports/03_2026_evaluation/app/src/content/report/CashBenchmarkAppendix.jsx": {
-      "bytes": 6641,
-      "sha256": "4798fd39229686a90814a6b7d3db73bf4fc1a17c16fae373a9a9f1d9b27985e5"
-    },
     "final_reports/03_2026_evaluation/app/src/content/report/FixedAll22Studies.jsx": {
-      "bytes": 13911,
-      "sha256": "63d26e2d4b5a49bc68d96fc1536596ba3714bfd64103f37b5625f2e5aa757608"
+      "bytes": 11783,
+      "sha256": "13062296265a63d02a7754778b2c6b13c68f2a62a43155540e815140ec237695"
     },
-    "final_reports/03_2026_evaluation/app/src/content/report/MainCashPerformance.jsx": {
-      "bytes": 8731,
-      "sha256": "cff847e95b3b236a1c829d6f7b555d604812ffbcd7947236f04d8bd841e0f4a2"
+    "final_reports/03_2026_evaluation/app/src/content/report/MainPerformance.jsx": {
+      "bytes": 6365,
+      "sha256": "16004e841bbfd7d2092a350c1283e0edb3df3790996178cf8571d68051f76264"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/ReportContent.jsx": {
-      "bytes": 14116,
-      "sha256": "b4c14f48b219fd25b40ff8d1c92d6eaf49e9d6813b0123965ded5698111df0c5"
+      "bytes": 13917,
+      "sha256": "ecf80ef3887c11022a3e10734b57f5ce2ed56c76505a9ab3821ddb9a90ee4c3a"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/SharpeConventions.jsx": {
-      "bytes": 4659,
-      "sha256": "780bcca5e7c194754f874e74e63a5c1ad88c8645b7910652cd9c55f465ac5503"
+      "bytes": 4631,
+      "sha256": "595a8fc1886cc48b9f4843463c9f9a313fe278f041a2a322163c527e840de972"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/basket-attribution.css": {
       "bytes": 2719,
       "sha256": "ab0d5c6c87fe6cb72324c12f2683be152a81ab50907ccc75a3ccaac10ac0c101"
     },
-    "final_reports/03_2026_evaluation/app/src/content/report/cash-benchmark.css": {
-      "bytes": 2732,
-      "sha256": "8120340651a3a2c2c558e5dbf8e8036c68072e6c59c5e24eda79668342bf66e2"
-    },
     "final_reports/03_2026_evaluation/app/src/content/report/fixed-all22.css": {
       "bytes": 2727,
       "sha256": "dea15d2e525bedb61419f9e9bc673fa9a75c45d29d24a6e165fa5a8d8bab5c28"
     },
-    "final_reports/03_2026_evaluation/app/src/content/report/main-cash.css": {
-      "bytes": 2499,
-      "sha256": "036dba323c592c15e6fabff23a8d77e4e04d4bb42b19f5caddeba7a40551effb"
+    "final_reports/03_2026_evaluation/app/src/content/report/main-performance.css": {
+      "bytes": 2392,
+      "sha256": "2161fc25ebce5974963b4d5a9aec6f95c87685001fde38b1e890796da9a293b3"
     },
     "final_reports/03_2026_evaluation/app/src/content/report/plan.json": {
       "bytes": 20082,
@@ -530,8 +436,8 @@
       "sha256": "a831ed56f669fb1f8017d92f4ff13615290391d824995c7adbeed720630ab20a"
     },
     "final_reports/03_2026_evaluation/app/src/data.json": {
-      "bytes": 1866130,
-      "sha256": "445b20d11d85d8aff140988422239647b62a57f0e2d88e5a1f20def3e91372cc"
+      "bytes": 1269384,
+      "sha256": "8839bbc5858620732c59a3f7046dce13cd00f6485347f387b6ef7b75e86a827e"
     },
     "final_reports/03_2026_evaluation/exports/all_69108_survivors.csv": {
       "bytes": 61628005,
@@ -569,61 +475,33 @@
       "bytes": 152411,
       "sha256": "8f9c05ca26de8a5ca9595e0648fde1bb850c11c5543344c4c6517f8bad02a55f"
     },
-    "final_reports/03_2026_evaluation/exports/cash_btc_full_period_coefficients.csv": {
-      "bytes": 17273,
-      "sha256": "2b0a7e9a63dff5fb36b965921248cea644b34981ec914562d95aa0cbe4490122"
-    },
-    "final_reports/03_2026_evaluation/exports/cash_factor_models.csv": {
-      "bytes": 11232,
-      "sha256": "2ab8f16c8a636d19ce5d4cd3aca374554f68ed2c464614d31f0bf6aefddbe06e"
-    },
-    "final_reports/03_2026_evaluation/exports/cash_joint_coefficients.csv": {
-      "bytes": 118462,
-      "sha256": "23aeb23ec2c0448ca59747f49ed41a3dcaa1f0a7e6e523ee4b8bc1cfe3d902f2"
-    },
-    "final_reports/03_2026_evaluation/exports/cash_matched_btc_coefficients.csv": {
-      "bytes": 23551,
-      "sha256": "4b7c8e989a300af726f4e499da342d9feb95febdc366de18ca8ae630b44222a2"
-    },
-    "final_reports/03_2026_evaluation/exports/cash_mean_excess_inference.csv": {
-      "bytes": 8459,
-      "sha256": "ef289b2b25381fede0731f1c942774d08ad9ac83af7ffbd61ddac247a96ee971"
-    },
-    "final_reports/03_2026_evaluation/exports/cash_performance.csv": {
-      "bytes": 30209,
-      "sha256": "73f8761d3ddafcbf608211a792b3d0029aef94e129a9fb1b4f13de35379eabde"
-    },
-    "final_reports/03_2026_evaluation/exports/cash_strategy_summary.csv": {
-      "bytes": 48750,
-      "sha256": "3e8fb35f03cd0a1699e8a2f92a16fbad45afb79f6a634914bd43196b2a290d3a"
-    },
     "final_reports/03_2026_evaluation/exports/coin_inclusion_frequencies.csv": {
       "bytes": 8188,
       "sha256": "eb3137a067acca606187e6013833e2b1f78adcb85329e90a93d62ffd1b70217a"
     },
     "final_reports/03_2026_evaluation/exports/fixed_all22_momentum_primary_inference.csv": {
-      "bytes": 7368,
-      "sha256": "767f7bf33442ec8867484ab56d312800adc406edb3a4bcd5b23fd8a10ccaf3d5"
+      "bytes": 3025,
+      "sha256": "09b119b47b4bd4b1cb4d8aceee85a96cc52318da087ca5864784f403e2c1cf21"
     },
     "final_reports/03_2026_evaluation/exports/fixed_all22_momentum_primary_summary.csv": {
-      "bytes": 14168,
-      "sha256": "2045a2b00a64d72db719e920f2874d4786913cf66be71bb340ee8a06edcc6327"
+      "bytes": 11441,
+      "sha256": "64144bcc4b2594dcc3976e338670b82e476b98f1108f5d3a03b4b8183a75dbaf"
     },
     "final_reports/03_2026_evaluation/exports/fixed_all22_momentum_scenario_metrics.csv": {
-      "bytes": 76417,
-      "sha256": "9c7eab625a2345b9fc8ec4d176b18103559347f213435f2da64e5d6976bd4099"
+      "bytes": 62890,
+      "sha256": "38b73575324eefa91758c0966088e68baf11048dc73e380b8639f004cc6c25bb"
     },
     "final_reports/03_2026_evaluation/exports/fixed_all22_reversal_primary_inference.csv": {
-      "bytes": 10149,
-      "sha256": "6c9b93f81aaafb60fbe4979eae6720befecaab80a6594de34c091f55169bb943"
+      "bytes": 4266,
+      "sha256": "0180f74f8f4be0500889c78adcc959724c8f549ce42ecf60457240fbafa042fe"
     },
     "final_reports/03_2026_evaluation/exports/fixed_all22_reversal_primary_summary.csv": {
-      "bytes": 14087,
-      "sha256": "958f91b6ab64bb22c63a7f49774f37b4de8f6ec66246de2fd6b93032e98d81e3"
+      "bytes": 11359,
+      "sha256": "fcbeb396e572e10f92fa9bbe3018c0ba3a3ef9d1985115cc42a3346e21d53273"
     },
     "final_reports/03_2026_evaluation/exports/fixed_all22_reversal_scenario_metrics.csv": {
-      "bytes": 75947,
-      "sha256": "8f9c8e3921cf6fdeabdf5ab84f5e1eb01d233d51ccfc5d6e5492f32e65c6500f"
+      "bytes": 62462,
+      "sha256": "c988849934d23e36d511876f880078f7f601c52bc532ce3f278a52d2023baff5"
     },
     "final_reports/03_2026_evaluation/exports/gap_decompositions.csv": {
       "bytes": 4785,
@@ -662,8 +540,8 @@
       "sha256": "970b4dba9fbcffde05ee4fd9504595cc0b0a45f18ff468bfcb773103eede84ae"
     },
     "final_reports/03_2026_evaluation/exports/sharpe_conventions.csv": {
-      "bytes": 17919,
-      "sha256": "4b1773f63cbf46e43cd41cf29ecb8f6b194da4f27d7d6d3db3589094beaa9ac4"
+      "bytes": 8750,
+      "sha256": "12a75322b675763f9c9ac8e2ec90396293bb9170723fcbfd5f262675ecf88f34"
     },
     "final_reports/03_2026_evaluation/exports/strict_39332_survivors.csv": {
       "bytes": 35397560,
@@ -674,16 +552,16 @@
       "sha256": "3af0931786ba29c9db91b97b111d9c09e07f5197b68f9f80e3db5eaf9c4876a4"
     },
     "final_reports/03_2026_evaluation/reviewed_snapshot.json": {
-      "bytes": 1866130,
-      "sha256": "445b20d11d85d8aff140988422239647b62a57f0e2d88e5a1f20def3e91372cc"
+      "bytes": 1269384,
+      "sha256": "8839bbc5858620732c59a3f7046dce13cd00f6485347f387b6ef7b75e86a827e"
     },
     "final_reports/README.md": {
-      "bytes": 2754,
-      "sha256": "38f3aaa89880265a419574133c07a7ddcffcba4e6646d301d76fce1c4cf0b625"
+      "bytes": 4262,
+      "sha256": "ec1908e074e2d5f355fb02e79d8c2d3564d28f56d37655fc3ef7e0d74ea27e2f"
     },
     "final_reports/quality_checks.json": {
-      "bytes": 9861,
-      "sha256": "9d21af5e423ca902b8bff764fabd0254e73e427df5ffcfd9094929549c953eda"
+      "bytes": 5025,
+      "sha256": "d68fd215e2903335ebe28a4a3ec6a87b0d4123add1f1385bce59c88aa4e79bf6"
     },
     "licenses/DATA_LICENSE.md": {
       "bytes": 925,
@@ -749,109 +627,57 @@
       "bytes": 779046,
       "sha256": "3b61079a9c4034a52072a04fc3a26e87e28ad464df51d4debb03ba2c698f4662"
     },
-    "results/cash_excess/btc_full_period_coefficients.csv": {
-      "bytes": 17273,
-      "sha256": "2b0a7e9a63dff5fb36b965921248cea644b34981ec914562d95aa0cbe4490122"
-    },
-    "results/cash_excess/factor_models.csv": {
-      "bytes": 11232,
-      "sha256": "2ab8f16c8a636d19ce5d4cd3aca374554f68ed2c464614d31f0bf6aefddbe06e"
-    },
-    "results/cash_excess/joint_coefficients.csv": {
-      "bytes": 118462,
-      "sha256": "23aeb23ec2c0448ca59747f49ed41a3dcaa1f0a7e6e523ee4b8bc1cfe3d902f2"
-    },
-    "results/cash_excess/matched_btc_coefficients.csv": {
-      "bytes": 23551,
-      "sha256": "4b7c8e989a300af726f4e499da342d9feb95febdc366de18ca8ae630b44222a2"
-    },
-    "results/cash_excess/mean_excess_inference.csv": {
-      "bytes": 8459,
-      "sha256": "ef289b2b25381fede0731f1c942774d08ad9ac83af7ffbd61ddac247a96ee971"
-    },
-    "results/cash_excess/methods.json": {
-      "bytes": 3520,
-      "sha256": "28f12850a6de31fc8c664585551a3a75ce8dec7c71a5ac06256a0a667c47d1e3"
-    },
-    "results/cash_excess/performance.csv": {
-      "bytes": 30209,
-      "sha256": "73f8761d3ddafcbf608211a792b3d0029aef94e129a9fb1b4f13de35379eabde"
-    },
-    "results/cash_excess/reconciliation.json": {
-      "bytes": 176577,
-      "sha256": "09d791124c79976074dd0706cab5fe84a012eb02054e115500dc61ccfd97a0c8"
-    },
-    "results/cash_excess/strategy_summary.csv": {
-      "bytes": 48750,
-      "sha256": "3e8fb35f03cd0a1699e8a2f92a16fbad45afb79f6a634914bd43196b2a290d3a"
-    },
     "results/daily_returns.csv": {
       "bytes": 1019910,
       "sha256": "7913b6bf52187f293cc594ddea99370b1c9b62365c78f5d0e4a194bfedaf27bd"
-    },
-    "results/fixed_all22_momentum/classification.json": {
-      "bytes": 326,
-      "sha256": "e577d6a030ec775ab5088dd36baa26e3eba22e6e83807bdfae3ad5a808d9d2fb"
     },
     "results/fixed_all22_momentum/daily_returns.csv": {
       "bytes": 191937,
       "sha256": "49209751b5b1afb899b014625752c4c4f73b392d5b927d8066db9c4ec94ef511"
     },
     "results/fixed_all22_momentum/methods.json": {
-      "bytes": 15878,
-      "sha256": "8cb1f7c7f302933659dceb46ec0480549ba03746a2b0ef609a0971650d3ba881"
+      "bytes": 11497,
+      "sha256": "cff92c782ec42496bc2675d1bb61df4c463a5a0ec9ece90343668d8c8182f5c9"
     },
     "results/fixed_all22_momentum/primary_inference.csv": {
-      "bytes": 7368,
-      "sha256": "767f7bf33442ec8867484ab56d312800adc406edb3a4bcd5b23fd8a10ccaf3d5"
+      "bytes": 3025,
+      "sha256": "09b119b47b4bd4b1cb4d8aceee85a96cc52318da087ca5864784f403e2c1cf21"
     },
     "results/fixed_all22_momentum/primary_inference.json": {
-      "bytes": 13212,
-      "sha256": "5bd6e4629f86f67509fd681e9863e071e6b2a66c93916bdea79fb29cdfc03239"
+      "bytes": 5677,
+      "sha256": "250c2ae27ded5e26fb95ce821d0b0fba485932465e7f4fda9012336f07c536cc"
     },
     "results/fixed_all22_momentum/primary_summary.csv": {
-      "bytes": 14168,
-      "sha256": "2045a2b00a64d72db719e920f2874d4786913cf66be71bb340ee8a06edcc6327"
-    },
-    "results/fixed_all22_momentum/protocol.md": {
-      "bytes": 16388,
-      "sha256": "57b01784b17929b60bcef0db5eda3ee53e675fdfcfcfd1be88a549d38950197a"
+      "bytes": 11441,
+      "sha256": "64144bcc4b2594dcc3976e338670b82e476b98f1108f5d3a03b4b8183a75dbaf"
     },
     "results/fixed_all22_momentum/scenario_metrics.csv": {
-      "bytes": 76417,
-      "sha256": "9c7eab625a2345b9fc8ec4d176b18103559347f213435f2da64e5d6976bd4099"
-    },
-    "results/fixed_all22_reversal/classification.json": {
-      "bytes": 326,
-      "sha256": "6fa39697dc3641cb5a0388678eb895bbcca2160c92efecf94176f5a3cc7221a5"
+      "bytes": 62890,
+      "sha256": "38b73575324eefa91758c0966088e68baf11048dc73e380b8639f004cc6c25bb"
     },
     "results/fixed_all22_reversal/daily_returns.csv": {
       "bytes": 191992,
       "sha256": "918d1b096085e15ee7db5e609207f86fa092bf2f759ba2da6e7f00b977bdfad7"
     },
     "results/fixed_all22_reversal/methods.json": {
-      "bytes": 15914,
-      "sha256": "04edd9ec7db3af9d8d3d5d40e17d5faf14d1179c20c34987436e14b6db2f2f86"
+      "bytes": 11246,
+      "sha256": "c22f39c8bdd21ad96687a94ceeb34341d11dbbfab11e6615e71217cd6a9c9bcb"
     },
     "results/fixed_all22_reversal/primary_inference.csv": {
-      "bytes": 10149,
-      "sha256": "6c9b93f81aaafb60fbe4979eae6720befecaab80a6594de34c091f55169bb943"
+      "bytes": 4266,
+      "sha256": "0180f74f8f4be0500889c78adcc959724c8f549ce42ecf60457240fbafa042fe"
     },
     "results/fixed_all22_reversal/primary_inference.json": {
-      "bytes": 16125,
-      "sha256": "2bc1fa3272b703d2d12c01492cffa4d50410201ccc2486b93851a59f8a81cccf"
+      "bytes": 7082,
+      "sha256": "fc8c961f0a78ca650bd8e78fba20e9925fc4013e4be76f5debda5a46fe2a811c"
     },
     "results/fixed_all22_reversal/primary_summary.csv": {
-      "bytes": 14087,
-      "sha256": "958f91b6ab64bb22c63a7f49774f37b4de8f6ec66246de2fd6b93032e98d81e3"
-    },
-    "results/fixed_all22_reversal/protocol.md": {
-      "bytes": 16082,
-      "sha256": "b7662d878784cf8cbebcb634023db07b1918ce0fee78d8b4df61b7db063c05ea"
+      "bytes": 11359,
+      "sha256": "fcbeb396e572e10f92fa9bbe3018c0ba3a3ef9d1985115cc42a3346e21d53273"
     },
     "results/fixed_all22_reversal/scenario_metrics.csv": {
-      "bytes": 75947,
-      "sha256": "8f9c8e3921cf6fdeabdf5ab84f5e1eb01d233d51ccfc5d6e5492f32e65c6500f"
+      "bytes": 62462,
+      "sha256": "c988849934d23e36d511876f880078f7f601c52bc532ce3f278a52d2023baff5"
     },
     "results/report_data/development/annual.json": {
       "bytes": 2312,
@@ -885,26 +711,6 @@
       "bytes": 9320,
       "sha256": "632693dda268f5f60e8b55712170d66490932e0b556832e4e5c6d1859b44ab29"
     },
-    "results/report_data/development/cash_excess_coefficients.json": {
-      "bytes": 145694,
-      "sha256": "3852806da07b363c4a30d92f880130f4663be4a0c9ec4f3b7deeb3097b679403"
-    },
-    "results/report_data/development/cash_excess_factor_summary.json": {
-      "bytes": 54088,
-      "sha256": "acad827195d9488b7168895370e03c81b5a236b02394126ef7cb77750251821a"
-    },
-    "results/report_data/development/cash_excess_methods.json": {
-      "bytes": 6413,
-      "sha256": "11661faecf202e832a2ff0b481ef1139e22b59cc4a4ccba87101513f8a6ccb18"
-    },
-    "results/report_data/development/cash_excess_performance.json": {
-      "bytes": 36096,
-      "sha256": "df86541e91c1a2ca13420d76b7f8854599b8524c010ac1da96b337b72055e018"
-    },
-    "results/report_data/development/cash_excess_performance_sharpe_display.json": {
-      "bytes": 43819,
-      "sha256": "c5dd53e0409cd82c0ab9b2812a1353e9c9469e0db7256855190e361565ac0cd6"
-    },
     "results/report_data/development/clocks.json": {
       "bytes": 55326,
       "sha256": "ef782660d2a3bbde6d260f719a94d8d50c2ad26367c9a3411003724f4867e737"
@@ -930,20 +736,20 @@
       "sha256": "cede93afebf8ce942010a20a7a42bc575dc4bf7a672a17596a893905d7769925"
     },
     "results/report_data/development/fixed_all22_inference.json": {
-      "bytes": 37415,
-      "sha256": "22dfe2c13722890753e0ebcd36a6653f23ca8adfab9e892e4c0b71c9e4dea1a5"
+      "bytes": 15308,
+      "sha256": "10783f45045a22481bd711ee9368752caa9c394142297288a1facfaf4e44e666"
     },
     "results/report_data/development/fixed_all22_methods.json": {
-      "bytes": 11395,
-      "sha256": "5f9ce1e57047174c7b8e4d32ea12db39f9d10a1a7ce48ad2a2d23ad5017d19f6"
+      "bytes": 6521,
+      "sha256": "ba0ce557cb2b07b9bbb0ee0a34e3b8b5c9b8c47ed9c46087af8bc2ab970dcf5f"
     },
     "results/report_data/development/fixed_all22_primary.json": {
-      "bytes": 53582,
-      "sha256": "a1efe465009556f20599d99b006a81af2ac567ecabfa28370a8371cf0ce7e894"
+      "bytes": 42580,
+      "sha256": "03302a8958f330d2b23b0f6ea2621f21478313969749db126b0245b4240204d6"
     },
     "results/report_data/development/fixed_all22_scenarios.json": {
-      "bytes": 375498,
-      "sha256": "7a2d2688d556c2fe8a760c955702208fe3e8d0c7ddb026f04b5effa3bf0bd25a"
+      "bytes": 298473,
+      "sha256": "9acc172568fe3fc596d8b8294cc2e073107ffd9363d5b28159f110c686055b15"
     },
     "results/report_data/development/liquidity.json": {
       "bytes": 3268,
@@ -957,13 +763,9 @@
       "bytes": 6506,
       "sha256": "480ea01ee93c9ce6cd3d099745fcdd79f9da7066b8bb97f92b4219bd2c46081e"
     },
-    "results/report_data/development/main_cash_performance.json": {
-      "bytes": 55328,
-      "sha256": "a1ede13aaee3c625e60cd23534c850e34da030c30e269cede35aec812539fea7"
-    },
-    "results/report_data/development/main_cash_performance_sharpe_display.json": {
-      "bytes": 58434,
-      "sha256": "8fc1333026443396cafb7cc4b29b98fec7e4b9f6210d3adc75b76784d134b313"
+    "results/report_data/development/main_raw_performance_sharpe_display.json": {
+      "bytes": 18764,
+      "sha256": "694609e83f584437b29b8727312de33e0ede734e01f23430c5b2bec4b3a3fb95"
     },
     "results/report_data/development/metrics.json": {
       "bytes": 838,
@@ -978,8 +780,8 @@
       "sha256": "82f0fd313f93a7228ae10df844d0f9a73814faa54eac66ddd40de48bc74a7bde"
     },
     "results/report_data/development/selection_generalization.json": {
-      "bytes": 61244,
-      "sha256": "172043f12f3ae922f2a4142fa68bbf9b836cde767f08059d354cb4504a7c26d1"
+      "bytes": 19794,
+      "sha256": "cf4c2f81720fafe9354ca4e9f14a9080cd5843f8a38385533b684fbce215e077"
     },
     "results/report_data/development/strategy.json": {
       "bytes": 32434,
@@ -1020,26 +822,6 @@
     "results/report_data/oos/basket_attribution_summary.json": {
       "bytes": 16414,
       "sha256": "cbaf0b408ef1dcd14e3c34b71c0ea4cadf36b35748d9df8c5cc4d9a59ccf2f8e"
-    },
-    "results/report_data/oos/cash_excess_coefficients.json": {
-      "bytes": 147188,
-      "sha256": "6668e75afe40b3dc964120e8ac39e50ef5c23aa002aabfbffcdf52073a40c282"
-    },
-    "results/report_data/oos/cash_excess_factor_summary.json": {
-      "bytes": 54327,
-      "sha256": "648904d7f5d16c4762275206da41e4d0c3a3f22436465102288591957485b8f5"
-    },
-    "results/report_data/oos/cash_excess_methods.json": {
-      "bytes": 6443,
-      "sha256": "0e547450bf64663ee2d9899bbba93f5e3be059eb113d1a113248e5efee63bcce"
-    },
-    "results/report_data/oos/cash_excess_performance.json": {
-      "bytes": 36268,
-      "sha256": "b30f895bbd94dc0aa23f3e30a2b3963b4646e44531a4b85085e2812e3ca0c4d1"
-    },
-    "results/report_data/oos/cash_excess_performance_sharpe_display.json": {
-      "bytes": 43985,
-      "sha256": "1cb5dc7c10688ef97f33c25c0d7e1e53ecf94cd9535a93cf0bf3a42dd3133b8b"
     },
     "results/report_data/oos/cohort.json": {
       "bytes": 1233,
@@ -1090,20 +872,20 @@
       "sha256": "ae645e484f48cd88942715619ecf37216040320c596fd4c35596eb13a72608fd"
     },
     "results/report_data/oos/fixed_all22_inference.json": {
-      "bytes": 37415,
-      "sha256": "22dfe2c13722890753e0ebcd36a6653f23ca8adfab9e892e4c0b71c9e4dea1a5"
+      "bytes": 15308,
+      "sha256": "10783f45045a22481bd711ee9368752caa9c394142297288a1facfaf4e44e666"
     },
     "results/report_data/oos/fixed_all22_methods.json": {
-      "bytes": 11395,
-      "sha256": "5f9ce1e57047174c7b8e4d32ea12db39f9d10a1a7ce48ad2a2d23ad5017d19f6"
+      "bytes": 6521,
+      "sha256": "ba0ce557cb2b07b9bbb0ee0a34e3b8b5c9b8c47ed9c46087af8bc2ab970dcf5f"
     },
     "results/report_data/oos/fixed_all22_primary.json": {
-      "bytes": 53582,
-      "sha256": "a1efe465009556f20599d99b006a81af2ac567ecabfa28370a8371cf0ce7e894"
+      "bytes": 42580,
+      "sha256": "03302a8958f330d2b23b0f6ea2621f21478313969749db126b0245b4240204d6"
     },
     "results/report_data/oos/fixed_all22_scenarios.json": {
-      "bytes": 375498,
-      "sha256": "7a2d2688d556c2fe8a760c955702208fe3e8d0c7ddb026f04b5effa3bf0bd25a"
+      "bytes": 298473,
+      "sha256": "9acc172568fe3fc596d8b8294cc2e073107ffd9363d5b28159f110c686055b15"
     },
     "results/report_data/oos/identities.json": {
       "bytes": 2139,
@@ -1113,13 +895,9 @@
       "bytes": 304,
       "sha256": "4b32e4836f13b0119ac8ae59120bbdc9e7ad3e94ef31c26b2a173cda823b715e"
     },
-    "results/report_data/oos/main_cash_performance.json": {
-      "bytes": 60312,
-      "sha256": "5862bdc8690618cf7cdab39b492830bb4692d48ca8c84db250f412123748bc95"
-    },
-    "results/report_data/oos/main_cash_performance_sharpe_display.json": {
-      "bytes": 65112,
-      "sha256": "fcaf72101bd521e89b8db7f5863ea5db54bf2ed2bde04a7ea6050974141ec7f2"
+    "results/report_data/oos/main_raw_performance_sharpe_display.json": {
+      "bytes": 25366,
+      "sha256": "79942036a56975006b16af2b12a91b069be2cdb11d434fa5af325821cf2cfc84"
     },
     "results/report_data/oos/market.json": {
       "bytes": 1017,
@@ -1170,8 +948,8 @@
       "sha256": "4c418cffea1129fe321ca771793ca42eca12e09d7ecd2b1fae1733d65fad8876"
     },
     "results/report_data/oos/selection_generalization.json": {
-      "bytes": 61236,
-      "sha256": "d3ca66fae3b1985f2132542e3fe3dda0c0c91e31ead92d59fbcaa2ea9ec9e48e"
+      "bytes": 19778,
+      "sha256": "8694d18c79f91666a2fef86cd48bc9ef7a284126a63e42307ccf6637dda4d663"
     },
     "results/report_data/oos/uncertainty.json": {
       "bytes": 2320,
@@ -1209,26 +987,6 @@
       "bytes": 16393,
       "sha256": "d46c9cc1e8075b0735cdb4f6b42424f7af821239361d357b45290295a289bbdf"
     },
-    "results/report_data/validation/cash_excess_coefficients.json": {
-      "bytes": 145780,
-      "sha256": "ef686ea9f0cf47c4d49a0dbf6b7b89f98dc6e254eeafc5ae200154851111d8f8"
-    },
-    "results/report_data/validation/cash_excess_factor_summary.json": {
-      "bytes": 54289,
-      "sha256": "a42182e09bbc3938239077f57730f6e8200956ff747653c44ca9e46215c17140"
-    },
-    "results/report_data/validation/cash_excess_methods.json": {
-      "bytes": 6408,
-      "sha256": "9812d36084a0c64319b36a0e1d8636d34f3157757e1b60db3758f9efef842258"
-    },
-    "results/report_data/validation/cash_excess_performance.json": {
-      "bytes": 36257,
-      "sha256": "5085a6b20d5f8d374e15bbda1ac54463ec52983473b6d89742560e1e03f4f28f"
-    },
-    "results/report_data/validation/cash_excess_performance_sharpe_display.json": {
-      "bytes": 43994,
-      "sha256": "5169d9e864bb3bf2dc9b6f9cc6e2d468c5dd02dd980f0411cc6005aec1b223cc"
-    },
     "results/report_data/validation/development_groups.json": {
       "bytes": 2351,
       "sha256": "f405804d1eae376c4ef056e6be13b7c93f2c379b7865dbded8f3220b5b1a6082"
@@ -1242,20 +1000,20 @@
       "sha256": "b04165e1b31db87f1c60e75d9062e4dbdf08b39393f34769921cfd368d98a877"
     },
     "results/report_data/validation/fixed_all22_inference.json": {
-      "bytes": 37415,
-      "sha256": "22dfe2c13722890753e0ebcd36a6653f23ca8adfab9e892e4c0b71c9e4dea1a5"
+      "bytes": 15308,
+      "sha256": "10783f45045a22481bd711ee9368752caa9c394142297288a1facfaf4e44e666"
     },
     "results/report_data/validation/fixed_all22_methods.json": {
-      "bytes": 11395,
-      "sha256": "5f9ce1e57047174c7b8e4d32ea12db39f9d10a1a7ce48ad2a2d23ad5017d19f6"
+      "bytes": 6521,
+      "sha256": "ba0ce557cb2b07b9bbb0ee0a34e3b8b5c9b8c47ed9c46087af8bc2ab970dcf5f"
     },
     "results/report_data/validation/fixed_all22_primary.json": {
-      "bytes": 53582,
-      "sha256": "a1efe465009556f20599d99b006a81af2ac567ecabfa28370a8371cf0ce7e894"
+      "bytes": 42580,
+      "sha256": "03302a8958f330d2b23b0f6ea2621f21478313969749db126b0245b4240204d6"
     },
     "results/report_data/validation/fixed_all22_scenarios.json": {
-      "bytes": 375498,
-      "sha256": "7a2d2688d556c2fe8a760c955702208fe3e8d0c7ddb026f04b5effa3bf0bd25a"
+      "bytes": 298473,
+      "sha256": "9acc172568fe3fc596d8b8294cc2e073107ffd9363d5b28159f110c686055b15"
     },
     "results/report_data/validation/frozen_nine.json": {
       "bytes": 1504,
@@ -1265,13 +1023,9 @@
       "bytes": 494,
       "sha256": "355cc6c4ead1765d25b54125cda0485c40b012126cdb30ff395401c8c994eb59"
     },
-    "results/report_data/validation/main_cash_performance.json": {
-      "bytes": 109476,
-      "sha256": "93ddc6b68e609953aa0998146d44031fc0930523bc05fd325a8f516ff6c75408"
-    },
-    "results/report_data/validation/main_cash_performance_sharpe_display.json": {
-      "bytes": 115789,
-      "sha256": "838b383bb4f2535b7539f16f020862a283c153e4bd304453b1acd62412ae803b"
+    "results/report_data/validation/main_raw_performance_sharpe_display.json": {
+      "bytes": 37497,
+      "sha256": "e6696d224212f410faecb0b5f11c25e53c999795ec4557613aad42c5f0635b06"
     },
     "results/report_data/validation/rank_transfer.json": {
       "bytes": 450,
@@ -1290,8 +1044,8 @@
       "sha256": "9782d0b26aee46c9d508c17b2c72ff8a841eb82c2bc6e2468f6810a1f8b4a6ef"
     },
     "results/report_data/validation/selection_generalization.json": {
-      "bytes": 61243,
-      "sha256": "0d95abbdfc3218fe86322687ddaf47fb60ac0c28dfdb7969b19fb6b5245d99d0"
+      "bytes": 19792,
+      "sha256": "4319794efaefce1c596fb6ee97a64229a38c4be0f6ade0c561be081dd6ec4e53"
     },
     "results/report_data/validation/sign_flips.json": {
       "bytes": 1371,
@@ -1309,10 +1063,6 @@
       "bytes": 64625,
       "sha256": "ccd03278ddcc33fcf2bd82f7460818a33d39f391a586a93d1fc20384b18cf71f"
     },
-    "scripts/reproduce_cash_excess.py": {
-      "bytes": 4407,
-      "sha256": "be5232593d6bdc81095909331f827ff4fcafd194ac094250d890dc5fe4c9b5ac"
-    },
     "scripts/reproduce_diagnostics.py": {
       "bytes": 1040,
       "sha256": "b3bfbc5e1208ce8f33dc41f2c7606b539162df3038380206df4b01f5ca7bea0b"
@@ -1322,12 +1072,12 @@
       "sha256": "ced0b627d07dad5cefeeeed8a1779dd090828460997687969797a6130cacfb39"
     },
     "scripts/verify_fixed_all22.py": {
-      "bytes": 5693,
-      "sha256": "ccdec3a9d7c7ae86b8847ab34f050ba0bbf3fd42bf4c8551ce4c11e1ff0e028c"
+      "bytes": 7275,
+      "sha256": "af14e2581e375dad0d8b9d2dd620af25bf3217caaa730466aac80311ef55cf0a"
     },
     "scripts/verify_project.py": {
-      "bytes": 10697,
-      "sha256": "a0c1268e602889527c77fa310eb93c807b5701106ebad4ea0d17ac74028f9949"
+      "bytes": 6961,
+      "sha256": "7f364a09c05d4c0f93a839ecaad3f52ab8f012cbfd73f295d3ac176ecadaf433"
     },
     "src/crypto_research/__init__.py": {
       "bytes": 77,
@@ -1336,10 +1086,6 @@
     "src/crypto_research/backtest.py": {
       "bytes": 1431,
       "sha256": "282eb35d9bf970c8b623f0ddd03124cec0025a3b818cc08506d81121c5759e51"
-    },
-    "src/crypto_research/cash_excess.py": {
-      "bytes": 32100,
-      "sha256": "8a22f418e68cc7413b76fb214a8d6ef9982ef4000277c167725ac0325862ea33"
     },
     "src/crypto_research/diagnostics.py": {
       "bytes": 16828,
@@ -1381,10 +1127,6 @@
       "bytes": 102,
       "sha256": "64e35b1c51d35d56c7afd0052822a8a0f9feeaadf463ed7cf8b95b82f9bcfab8"
     },
-    "tests/test_cash_excess.py": {
-      "bytes": 12190,
-      "sha256": "97073c26daaa5b0ea85319f09293676fbba428e84be2208b339c74a269b5f84e"
-    },
     "tests/test_current_engine.py": {
       "bytes": 7198,
       "sha256": "4cfa7158db44935ca3f082b9e77b7c3c3f8469cbd3b082c801de77eb63fc7950"
@@ -1400,10 +1142,10 @@
     "NOTICE.md",
     "README.md",
     "docs/DATA.md",
-    "docs/FIXED_ALL22_REVERSAL_PROTOCOL.md",
     "docs/METHODS.md",
-    "results/fixed_all22_momentum/protocol.md",
-    "results/fixed_all22_reversal/protocol.md"
+    "docs/FIXED_ALL22_PROTOCOL.md",
+    "docs/FIXED_ALL22_REVERSAL_PROTOCOL.md",
+    "final_reports/README.md"
   ],
   "package": "Current cryptocurrency strategy research",
   "periods": {
@@ -1436,6 +1178,7 @@
   },
   "schema_version": 1,
   "separate_fixed_all22_studies": {
+    "inference_scope": "Saved raw descriptive HAC27 means/t-statistics and marginal raw Sharpe intervals; no revised acceptance tests or new selection.",
     "momentum_chronology_exception_disclosed": true,
     "new_unseen_confirmation": false,
     "original_nine_unchanged": true,
@@ -1448,8 +1191,7 @@
     "studies": [
       "momentum_h0672_r168",
       "reversal_h0672_r168"
-    ],
-    "testing": "separate Holm3 within eachstudy, not pooled"
+    ]
   },
   "statistical_methods": {
     "BTC_only_benchmark_HAC_lag": 7,
@@ -1759,212 +1501,6 @@
       "unique_keys": [
         "comparison_id",
         "period"
-      ]
-    },
-    {
-      "finite_columns": [
-        "raw_net_return",
-        "cash_compounded_return",
-        "wealth_relative_excess_return",
-        "cash_excess_sharpe"
-      ],
-      "path": "results/cash_excess/performance.csv",
-      "required_values": {
-        "period": [
-          "development",
-          "oos_partial_2026_jan_sep",
-          "validation"
-        ],
-        "strategy_id": [
-          "A01",
-          "A02",
-          "A03",
-          "A04",
-          "B01",
-          "B03",
-          "B04",
-          "B05",
-          "B06"
-        ]
-      },
-      "rows": 27,
-      "unique_keys": [
-        "strategy_id",
-        "period"
-      ]
-    },
-    {
-      "finite_columns": [],
-      "path": "results/cash_excess/strategy_summary.csv",
-      "required_values": {
-        "period": [
-          "development",
-          "oos_partial_2026_jan_sep",
-          "validation"
-        ],
-        "strategy_id": [
-          "A01",
-          "A02",
-          "A03",
-          "A04",
-          "B01",
-          "B03",
-          "B04",
-          "B05",
-          "B06"
-        ]
-      },
-      "rows": 27,
-      "unique_keys": [
-        "strategy_id",
-        "period"
-      ]
-    },
-    {
-      "finite_columns": [
-        "annual_mean_excess",
-        "cash_excess_global_holm27_p"
-      ],
-      "path": "results/cash_excess/mean_excess_inference.csv",
-      "required_values": {
-        "period": [
-          "development",
-          "oos_partial_2026_jan_sep",
-          "validation"
-        ],
-        "strategy_id": [
-          "A01",
-          "A02",
-          "A03",
-          "A04",
-          "B01",
-          "B03",
-          "B04",
-          "B05",
-          "B06"
-        ]
-      },
-      "rows": 27,
-      "unique_keys": [
-        "strategy_id",
-        "period"
-      ]
-    },
-    {
-      "finite_columns": [],
-      "path": "results/cash_excess/factor_models.csv",
-      "required_values": {
-        "period": [
-          "development",
-          "oos_partial_2026_jan_sep",
-          "validation"
-        ],
-        "strategy_id": [
-          "A01",
-          "A02",
-          "A03",
-          "A04",
-          "B01",
-          "B03",
-          "B04",
-          "B05",
-          "B06"
-        ]
-      },
-      "rows": 81,
-      "unique_keys": [
-        "strategy_id",
-        "period",
-        "model_type"
-      ]
-    },
-    {
-      "finite_columns": [
-        "cash_excess_estimate",
-        "cash_excess_ci95_low",
-        "cash_excess_ci95_high",
-        "cash_excess_global_holm243_p"
-      ],
-      "path": "results/cash_excess/joint_coefficients.csv",
-      "required_values": {
-        "period": [
-          "development",
-          "oos_partial_2026_jan_sep",
-          "validation"
-        ],
-        "strategy_id": [
-          "A01",
-          "A02",
-          "A03",
-          "A04",
-          "B01",
-          "B03",
-          "B04",
-          "B05",
-          "B06"
-        ]
-      },
-      "rows": 243,
-      "unique_keys": [
-        "strategy_id",
-        "period",
-        "term"
-      ]
-    },
-    {
-      "finite_columns": [],
-      "path": "results/cash_excess/matched_btc_coefficients.csv",
-      "required_values": {
-        "period": [
-          "development",
-          "oos_partial_2026_jan_sep",
-          "validation"
-        ],
-        "strategy_id": [
-          "A01",
-          "A02",
-          "A03",
-          "A04",
-          "B01",
-          "B03",
-          "B04",
-          "B05",
-          "B06"
-        ]
-      },
-      "rows": 54,
-      "unique_keys": [
-        "strategy_id",
-        "period",
-        "term"
-      ]
-    },
-    {
-      "finite_columns": [],
-      "path": "results/cash_excess/btc_full_period_coefficients.csv",
-      "required_values": {
-        "period": [
-          "development",
-          "oos_partial_2026_jan_sep",
-          "validation"
-        ],
-        "strategy_id": [
-          "A01",
-          "A02",
-          "A03",
-          "A04",
-          "B01",
-          "B03",
-          "B04",
-          "B05",
-          "B06"
-        ]
-      },
-      "rows": 54,
-      "unique_keys": [
-        "strategy_id",
-        "period",
-        "term"
       ]
     },
     {

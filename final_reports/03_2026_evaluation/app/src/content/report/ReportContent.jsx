@@ -1,7 +1,6 @@
 import {FixedAll22Studies} from './FixedAll22Studies.jsx';
 import {FixedAll22Headline,GeneralizationFinding,hasSharpe,sharpePair,SharpeInterval} from './SharpeConventions.jsx';
-import {MainCashComparison, HistoricalCashComparison, CashPairedPrimary, CashRiskExposure, CashDailyRisk, CashMainNote} from './MainCashPerformance.jsx';
-import {CashBenchmarkAppendix} from './CashBenchmarkAppendix.jsx';
+import {MainComparison,HistoricalComparison,PrimaryPerformance,RiskExposure,MainPerformanceNote} from './MainPerformance.jsx';
 import {BasketAttributionAppendix} from './BasketAttributionAppendix.jsx';
 import React from 'react';
 import {DataComponent,EvidenceChart,ReportSection,RichNarrative,useDataApp} from '../../data-app-public.jsx';
@@ -22,7 +21,7 @@ export function ReportContent(){
  return <article className="report-content final-report">
  <section className="final-page" id="overview">
   <header className="report-hero"><h1 data-data-app-title>{appTitle}</h1></header>
- <RichNarrative id="attribution-edition-note" value="[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix). [Cash-excess performance at 3% nominal](#main-cash-performance)."/>
+ <RichNarrative id="attribution-edition-note" value="[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix)."/>
   <GeneralizationFinding/>
  <FixedAll22Headline/>
   {text('summary','summary',['primary','criteria','cohort_sharpe_display','screening','execution','provenance'])}
@@ -30,17 +29,16 @@ export function ReportContent(){
  <FixedAll22Studies period="oos_partial_2026_jan_sep"/>
  <section className="final-page" id="frozen-primary-performance">
   {text('primary-text','primary',['primary'])}
-  <div id="main-cash-performance"><CashPairedPrimary/><CashMainNote id="main-cash-primary-legend"/></div>
+  <div id="main-performance-performance"><PrimaryPerformance/><MainPerformanceNote id="main-performance-primary-legend"/></div>
  </section>
  <section className="final-page" id="identities">
   {text('identity-text','identity',['identities'])}
   {table('identities-table','identities','Frozen basket membership and settings',['ID','Basket','Strategy','Lookback days','Rebalance hours','Buffer','Coins'])}
  </section>
- <section className="final-page" id="main-cash-risk">
+ <section className="final-page" id="main-performance-risk">
   {text('risk-text','risk',['risk'])}
-  <CashRiskExposure/>
-  <CashDailyRisk period="oos_partial_2026_jan_sep"/>
-  <CashMainNote id="main-cash-risk-note" risk/>
+  <RiskExposure/>
+  <MainPerformanceNote id="main-performance-risk-note" risk/>
  </section>
  <section className="final-page" id="criteria">
   {text('criteria-text','criteria',['criteria'])}
@@ -113,6 +111,5 @@ export function ReportContent(){
   <RichNarrative id="companions:body" value={'[Nine-case inference](exports/nine_primary_inference.csv) · [All 63 scenarios](exports/nine_all_63_scenarios.csv) · [Attribution](exports/attribution_summary.csv) · [Hypothetical carry/slippage](exports/hypothetical_carry_slippage.csv) · [Volume proxy](exports/target_volume_proxy.csv) · [Regime interactions](exports/regime_interactions.csv) · [Full regime results](exports/regime_results.csv)\n\n**Reading order:** 1. Development and robustness; 2. Validation and frozen selection; 3. This report. Companion CSVs are supporting results, not additional reports.'}/>
  </section>
  <BasketAttributionAppendix/>
- <CashBenchmarkAppendix/>
  </article>;
 }

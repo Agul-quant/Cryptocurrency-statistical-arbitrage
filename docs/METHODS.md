@@ -1,315 +1,197 @@
 # Research methods and interpretation
 
-## Periods and frozen strategies
+## Baskets, periods and frozen selections
 
-- Development: **1 January 2022–31 December 2023**, 730 UTC days.
-- Validation: **1 January 2024–31 December 2025**, 731 UTC days.
-- OOS: **1 January–30 September 2026**, ending 1 October at 00:00 UTC,
-  273 days. This is a partial-year interval, not a full-year or live record.
+The main study enumerated 6,615 eight-coin baskets from historical liquidity ranks
+1–22. Every basket included BTC and ETH, two members of ranks 3–9, two of 10–16
+and two of 17–22. Each basket's signals and weights were recomputed in its own
+cross-section. The inherited liquidity-ranked inventory has 30 names; the study
+is not an unrestricted census of every historical exchange listing.
 
-The frozen strategy IDs are A01–A04 and B01/B03/B04/B05/B06. B02 is an empty
-family slot because no candidate qualified; it is not a tenth strategy.
-Track A selections used development only. Track B selections used development
-eligibility and validation; their validation statistics are selection statistics.
+The complete basket grid uses 169 definitions. The frozen IDs A01–A04 were
+selected from 2022–2023 development only. B01/B03/B04/B05/B06 used development
+eligibility and 2024–2025 validation; their validation statistics are selection
+statistics. B02 is an empty family slot, not a tenth strategy. The nine identities
+use different eight-coin baskets and remain fixed.
 
-### Headline and interpretation
+| Period | Start UTC | Closing endpoint UTC | Complete days |
+| --- | --- | --- | ---: |
+| Development | 1 January 2022 00:00 | 1 January 2024 00:00 | 730 |
+| Validation | 1 January 2024 00:00 | 1 January 2026 00:00 | 731 |
+| Partial-year OOS | 1 January 2026 00:00 | 1 October 2026 00:00 | 273 |
 
-All four A strategies lost compounded net wealth in 2024–2025 validation;
-their raw √365 Sharpe ratios ranged from −0.22 to −0.64 (−0.18 to −0.53 under
-√252). All five B strategies
-lost compounded net wealth in January–September 2026. This is the headline
-pattern across the three reports, not a claim that every individual period or
-arithmetic-return statistic was negative. In particular, A03 passed the original
-2026 acceptance test after losing in validation, and B06's 2026 raw √365 Sharpe
-was slightly positive (0.05; 0.04 under √252) despite its compounded loss.
+All four Track A strategies lost compounded net wealth in validation. All five
+Track B strategies lost in January–September 2026. A03's positive 2026 result
+does not erase its validation loss; B06's small positive arithmetic-return Sharpe
+coexisted with a compounded loss. This pattern is consistent with weak transfer
+or period-specific fitting, but does not uniquely identify its cause. Baskets,
+settings, market conditions and execution assumptions also matter.
 
-This failure to generalize is consistent with fitting basket/parameter choices
-to the selection period. It does not establish that search alone caused the
-failures. Differences in basket, lookback, cadence, family, realized regimes
-and idealized execution remain relevant. No OOS winner is newly promoted.
-Project-level follow-up headlines orient readers across periods; they were not
-inputs to the original development selections. Original strategy definitions,
-results, selections, risk limits and acceptance flags remain unchanged.
+The periods are fixed historical comparisons. Data had been inspected during
+the wider project, and later explanatory diagnoses share those observations.
+Neither a frozen file nor a period label creates additional independent tests.
+No new OOS winner or deployment recommendation is selected.
 
-**Data-use note:** These are fixed historical evaluation periods. Some 2026
-observations had been inspected during the wider project. The nine-strategy
-evaluation and subsequent cohort, attribution and factor diagnoses share these
-observations; those diagnoses are not additional independent tests. Period
-labels or frozen file hashes do not remove prior-data-use or selection bias.
+## Strategy mechanics and accounting
 
-## Separate fixed all-22 momentum and reversal studies
+Cross-sectional momentum and reversal rank trailing simple returns, demean the
+ranks and normalize full L1 gross exposure to one. Average ties receive average
+ranks. Momentum buys relative winners and shorts relative losers; reversal has
+the opposite sign. Eligibility, complete lookbacks, missingness, inactivity and
+whole-target deferral follow the unchanged engine. Buffered momentum skips an
+entire ordinary rebalance only when full-L1 target change is below 0.25.
 
-The two completed studies are separate, approved fixed-rule evaluations, not
-a direction search or a combined portfolio. Each uses the same 22 economic
-slots, a 672-hour trailing return, Monday 00:00 UTC decisions every 168 hours,
-phase 0 and no buffer. Average-tied ranks are demeaned and full-L1 normalized;
-momentum buys relative winners/shorts losers, while the separate reversal
-study buys relative losers/shorts winners. Normal gross exposure is one and
-net exposure zero. All eligible members determine the cross-section. Neither
-slices eight-coin weights or selects a replacement basket.
+Time-series long/cash and theoretical long/short trend retain fixed 1/N slots;
+inactive positions do not cause the remaining slots to be rescaled. The fixed
+BTC-factor residual model retains monthly formation, eligibility and exit rules.
+Dollar neutrality is not beta neutrality. Exact nine-strategy definitions,
+baskets and risk limits are in the frozen registry.
 
-The original nine strategies and all their financial evidence, selections,
-acceptance flags and risk limits remain unchanged. The fixed-study additions
-publish already executed outputs; they do not rerun the original nine or alter
-its results. The same three date windows, independent period cash resets,
-entry/terminal full-L1 fees, warm-up, source masks, migration/halts and partial
-legacy-LUNA exit are preserved. Each study retains all 21 fee/delay-period keys:
-0/5/10/15/20/40 bps at lag1, plus 20 bps at lag2, in each of three periods.
+Primary costs are **20 bps one-way on full-L1 weight changes**, including entry,
+ordinary changes, forced exits and terminal liquidation. Sensitivities are
+0/5/10/15/40 bps and an additional execution hour at 20 bps. Lag1 is idealized
+observed-close execution, not a guaranteed real-world one-hour latency; lag2
+adds an hour. Full-L1 turnover is not divided by two and does not include
+ordinary drift-maintenance trades that the model omits.
 
-### The result is the pattern, not the most attractive period
+Each evaluated period starts flat, preserves full preceding warm-up and the
+Monday scheduling epoch, and pays entry and final liquidation. Weekly means
+168 elapsed hours from the established Monday epoch, not every seventh observed
+row. Internal annual slices preserve continuous positions and actual fees.
+Do not concatenate separately reset periods into one investable curve.
 
-Fixed momentum net returns were **+5.61%, −17.43%, −20.94%** across development,
-validation and partial 2026. Its cash-relative returns were **−0.54%, −22.24%,
-−22.70%**. Separate fixed reversal net returns were **−33.59%, −15.66%, +9.91%**,
-and cash-relative returns **−37.45%, −20.58%, +7.48%**. Neither met positive
-cash-relative return in every period. Reversal exceeded its 40% hourly drawdown
-guardrail in development (43.69%). Neither study met all-period statistical
-support. These outcomes do not establish that either direction has no possible
-effect, but they do not support a stable all-period edge for these fixed rules.
-No new winner is chosen.
+Binance Data Vision spot-USDT hourly panels provide normalized prices and quote
+volume. Seven pinned panels/masks retain lifecycle permissions, migrations,
+whole-venue suspensions and mandatory exits. Missing active observations do not
+trigger interpolation or a shorter test. Legacy LUNA's audited 13 May 2022 00:40
+quote exit remains in its 01:00 accounting bucket, with the partial exposure
+adjustment. LUNA/LUNC is not Terra 2.0; FTM/S and MATIC/POL retain their economic
+slots. [Data documentation](DATA.md) and the [source manifest](../data/manifest.json)
+define the complete dataset.
 
-### Separate inference, fixed thresholds and chronology
+Theoretical shorts omit actual borrowing, funding and margin constraints.
+Order-book depth, impact, capacity, realistic fills and ordinary drift-maintenance
+costs are not validated. Quoted returns use USDT units; a USD interpretation
+assumes parity. Historical quote volume does not establish executable capacity.
 
-Each study uses **10,000 circular 28-day bootstrap-t draws**, PCG64 seed
-20261020 reset per period, and calendar Bartlett HAC27 with n/(n−1) correction
-for mean arithmetic daily cash excess. Its three one-sided positive-cash-mean
-hypotheses receive **Holm3 within that study only**. No other study's p-values,
-returns, correlations or acceptance flags enter that family. Cash is 3% nominal
-ACT/365F, not interest credited to P&L. The same UTC daily series, including
-weekends, supplies raw and cash-excess Sharpe under √365 and √252.
+## Performance and two Sharpe conventions
 
-Return, relative-growth and Sharpe intervals are marginal percentile intervals;
-the daily mean interval is studentized. They are conditional on saved paths,
-not adjusted for earlier universe/parameter research. Invalid draws are not
-discarded; the completed studies reported none. Descriptive raw/cash BTC
-alpha/betas use marginal HAC7 confidence intervals and 365-times-daily alpha;
-they are not new selection gates. These fixed-study intervals and Holm3 tests
-are distinct from the original nine-strategy and later attribution conventions.
+Gross return compounds the zero-modeled-fee path; net return compounds interval
+P&L after modeled fees. Neither is the sum of daily returns. CAGR uses elapsed
+calendar days; annualized volatility uses daily sample standard deviation and
+√365. Maximum drawdown is positive loss depth at observed valuation endpoints,
+including initial NAV. Intrahour lows and halt interiors are not observed.
+Peak, trough, recovery, duration and censored recovery are retained.
 
-Both studies use periods already examined in the wider project. They are not
-fresh independent holdout confirmation. **Momentum did not satisfy a strict
-pre-input-access seal:** some existing tests decoded source panels and
-recomputed saved-nine statistics before its experiment seal; the seal still
-preceded the first fixed all-22 momentum simulation. This exception remains
-disclosed and numerical reconciliation does not erase it. **Reversal satisfied
-its new-study pre-input-decode seal**, but this does not undo earlier historical
-observation. Public protocol/methods files describe these facts without
-rewriting the completed private receipts. All study outputs and original-nine
-financial assets remain byte-identical.
+For the **same complete UTC daily net returns**, including weekends, report:
 
-## Trading and accounting
+`S365 = sqrt(365) × mean(r) / std(r, ddof=1)`  
+`S252 = sqrt(252) × mean(r) / std(r, ddof=1)`
 
-Primary cost is **20 bps one-way on full-L1 traded weight changes**, including
-entries, forced changes and terminal liquidation. Saved cost sensitivities use
-0/5/10/15/40 bps; an additional-hour delay is a separate execution sensitivity.
-The inherited lag1 fill is an idealized observed-close fill, not a guaranteed
-real-world one-hour delay. Each evaluation period starts from cash and retains
-its full warmup and scheduling epoch. Weekly scheduling uses elapsed calendar
-time, not every seventh observed row.
+These are **two separate annualization conventions**. Their factor is
+`sqrt(252/365) = 0.8309097176613772`; no weekend observation is removed. Positive
+constant scaling preserves signs and rankings. A01's development values are
+1.83818 and 1.52736. Confidence-interval endpoints use the same factor; these
+are not independent resampling results or a new test family. Approximation
+marks remain where a source supplied only rounded group medians.
 
-Cross-sectional ranks, inactive allocations, whole-target buffering, lifecycle
-cash gaps, migrations, forced exits and shared decision suspensions follow the
-fixed engine. Remaining trend positions are not rescaled to use inactive slots.
-No price gap is silently filled and no failed economic slot is replaced.
-Theoretical shorts omit borrowing, funding and margin constraints. Liquidity,
-capacity, realistic execution and weight-drift maintenance costs are not fully
-modeled. Dollar neutrality does not imply market-beta neutrality.
+CAGR, volatility, alpha, t-statistics, p-values and original acceptance flags do
+not change with the Sharpe display convention. A constant/all-flat series has
+undefined Sharpe. Arithmetic mean and compounded wealth can have different
+signs. Partial-year CAGR is an extrapolation, not realized full-year performance.
 
-Returns compound on the accounting path. Sharpe and risk statistics use complete
-UTC-day returns, including weekends. The established 365-day convention remains
-the frozen result convention; the reports additionally show the course's √252
-Sharpe scale as described below. Annualized CAGR extrapolates the observed
-interval; it is not a forecast. Full-L1 turnover is not divided by two.
+## Original nine-strategy inference
 
-## Sharpe annualization comparison
+Original acceptance uses positive full-period compounded net return, positive
+HAC27 t, centered circular 28-day bootstrap-t Holm9 p≤0.05, hourly drawdown
+≤40%, and each unchanged turnover cap. The cap is 1.5 times the maximum saved
+development/validation annualized full-L1 turnover. These are evaluation flags,
+not intra-run stop or trading rules. The 10,000-draw mean test uses the shared
+calendar and accounts for serial dependence; Holm9 covers the nine fixed cases,
+not the preceding universe/configuration search. The original flags and raw
+statistical evidence remain unchanged.
 
-For the **same** complete UTC daily observations, define
-`S365 = sqrt(365) × mean(d) / sample_std(d, ddof=1)` and
-`S252 = S365 × sqrt(252/365)`, where d is raw simple daily strategy return for
-the zero-cash comparison or daily net return minus `0.03/365` for cash excess.
-The conversion factor is approximately **0.8309097176613772**. This does not
-remove weekends or claim that crypto trades only 252 days a year. It supplies
-both the calendar-crypto convention and course comparison explicitly.
+The 273-day window is short, with about 9.75 nonoverlapping 28-day block lengths.
+Intervals are conditional and approximate, not proof that highlighted strategies
+will remain profitable. Full raw inference and risk tables are retained in
+Report 3 and its companions.
 
-For example, A01's development raw Sharpe is **1.83818 / 1.52736** under
-√365 / √252; its cash-excess Sharpe is **1.73402 / 1.44081**. The reports label
-both scales in performance tables and numeric Sharpe comparisons. Positive
-constant rescaling leaves signs and rankings unchanged. Where a saved source
-provides only rounded group medians, the converted display is marked
-approximate rather than implying recovered full precision.
+## Separate fixed all-22 studies
 
-Sharpe confidence-interval endpoints are multiplied by the same positive
-factor; these are not independent bootstrap results or a new testing family.
-Counts, rank correlations, t-statistics, p-values and acceptance decisions are
-not rescaled. Cash accrual remains ACT/365F, and existing elapsed-calendar CAGR,
-volatility and 365-times-daily-intercept alpha definitions remain unchanged.
-The original query evidence and financial results are retained; added display
-projections and `sharpe_conventions.csv` exports expose the arithmetic comparison.
-Square-root annualization is a reporting convention, not a claim of independent
-daily returns; HAC and block-bootstrap inference retain their established rules.
+The momentum and reversal studies each fix 22 members, a 672-hour lookback,
+weekly Monday 00:00 UTC decisions, phase 0 and no buffer. Every eligible member
+determines the cross-section; BTC and ETH are ordinary ranked members. Neither
+selects an eight-coin subset, another parameter or a replacement winner.
 
-## Per-coin attribution
+Their three-period net returns are:
 
-Each interval's gross coin contribution is held weight times audited coin
-return. Ordinary, forced and terminal transaction costs are allocated to the
-coin that incurred them. Contributions are linked on prior **net strategy NAV**;
-the eight net coin contributions sum to the strategy's full compounded net
-return. Gross linked contributions are therefore not a separately compounded
-zero-cost strategy return.
+| Study | Development | Validation | Jan–Sep 2026 |
+| --- | ---: | ---: | ---: |
+| Momentum | +5.61% | −17.43% | −20.94% |
+| Reversal | −33.59% | −15.66% | +9.91% |
 
-Confidence intervals use **4,000 seeded 28-day circular block samples** per
-period, synchronized across strategies and coins (seed 20261016). Each draw
-rebuilds net NAV and relinks all gross, fee and net components. No strategy
-signals or new block-boundary trades are generated. Reported percentile intervals
-are marginal conditional intervals, not universe/configuration-search-adjusted
-profitability claims. Invalid draws are counted rather than discarded.
+Neither had positive net return in every period. Reversal's development hourly
+drawdown was 43.69%. These are descriptive observations about unchanged paths,
+not new acceptance tests or a claim that all momentum/reversal rules fail.
+The reports do not promote one direction, pool tests, calculate cross-study
+correlation or construct a combined portfolio.
 
-## Joint basket alpha and betas
+Raw daily-mean HAC27 t-statistics are descriptive. Raw Sharpe intervals use the
+saved 10,000 circular 28-day draws, PCG64 seed 20261020 reset for each period;
+√252 endpoints are scaled from the same √365 draw intervals. Mean covariance
+uses Bartlett HAC27 with n/(n−1), and the Sharpe intervals are marginal
+percentiles. The same within-period indices drive statistics. No trade or fee
+is inserted at a resampled block boundary, and invalid draws are not discarded.
+No raw positive-mean hypothesis is newly tested by this publication.
 
-The dependent variable is saved net simple daily strategy return. Regressors
-are an intercept and the eight basket coins' contemporaneous simple daily
-returns. Annual alpha is **365 times the arithmetic daily intercept**, not CAGR.
-Betas are conditional historical sensitivities, not capital weights, causal
-effects or recommended hedge sizes.
+BTC alpha/beta intervals for these two studies are descriptive full-calendar
+HAC7 estimates, not joint 22-coin regressions. Alpha is 365 times the arithmetic
+daily intercept, not CAGR. Coefficients are not selection gates.
 
-Regressions exclude a day when any required factor return is unknown; full
-strategy performance and attribution retain all days. No missing factor is
-zero-filled or bridged across a lifecycle event. Calendar-aware Bartlett
-**HAC(27)** intervals keep actual calendar lags and use an n/(n−k) covariance
-correction. HAC(7) is a same-design sensitivity. BTC-only full-period HAC(7)
-results remain a benchmark; matched-sample BTC-only HAC(27) results separate
-factor-specification effects from sample effects.
+Both studies use already-examined periods and are not fresh independent OOS
+confirmation. Momentum's seal preceded its first all-22 simulation but not all
+input access by existing verification tests; that chronology exception remains.
+Reversal met its new-study pre-decode seal. Numerical audit success cannot
+repair a procedural exception. Public raw tables are explicit field projections
+of the completed studies; the trading rules and retained values are unchanged.
 
-The 243 joint coefficients form one global two-sided Holm family, with
-Bonferroni simultaneous intervals also supplied. These coefficient corrections
-are separate from the original nine-strategy acceptance tests and do not adjust
-for the entire basket/configuration search. Standardized condition numbers,
-VIF, sample exclusions, leverage and Cook's distance disclose model reliability.
-Heavy-tailed influential observations can make asymptotic intervals fragile
-even when collinearity is acceptable.
+## Per-coin attribution and joint basket alpha/betas
 
-## Reproduction boundary
+Coin gross P&L is held weight times audited coin return. Ordinary, forced and
+terminal fees are assigned to the coin that incurred them. Components are
+linked on prior net strategy NAV, so eight net contributions sum to the unchanged
+full compounded return. Gross linked contributions are not a separately
+compounded zero-fee strategy return.
 
-`verify_project.py` checks the current package checksums, result coverage and
-report links without fitting a model or accessing the network. `run_research.py`
-reconstructs the nine fixed strategies on the included normalized hourly panels
-and reconciles all three primary-cost periods. It does not rerun the complete
-basket-selection campaign, select a new strategy, or fetch raw exchange archives.
-`reproduce_diagnostics.py` uses the compact daily statistical inputs to
-reconcile the factor models and coin-attribution intervals. Saved broader cohort tables
-provide the report's screening context and are not independent replications.
+Attribution intervals use 4,000 seeded, synchronized 28-day circular daily-vector
+samples across all nine strategies and coins, seed 20261016 reset per period.
+Each draw rebuilds NAV and relinks gross/fee/net contributions. Signals and
+trades are not regenerated. Invalid draws make affected intervals unavailable,
+rather than being dropped. Reported 95% intervals are marginal and conditional,
+not adjusted for the original basket/parameter search.
 
-The approved [fixed all-22 momentum](FIXED_ALL22_PROTOCOL.md) and
-[separate reversal](FIXED_ALL22_REVERSAL_PROTOCOL.md) studies are completed.
-This update publishes their saved three-period results and audits, rather than
-executing a new backtest or modifying the nine strategies. The supplied research
-runner still reproduces only the nine frozen strategies. Run
-`python scripts/verify_fixed_all22.py` to reconcile the published fixed-study
-evidence without loading prices or rerunning trades/bootstrap draws. Both studies
-use already-examined dates, not fresh independent confirmation; momentum retains
-its disclosed pre-input-access chronology exception. The current protocol
-summaries distinguish completed status from the preserved approved snapshots.
+Joint regressions use daily net strategy returns, an intercept and all eight
+basket coin returns simultaneously. Annual alpha is 365 times the daily
+arithmetic intercept. Conditional betas are neither portfolio weights nor
+causal effects. A day with any unknown required factor is excluded only from
+the regression; full performance is not shortened, and missing factors are not
+filled. Calendar-aware Bartlett HAC27 with n/(n−k) correction retains actual
+calendar lags; HAC7 is a same-design sensitivity. Full-period BTC-only HAC7 and
+matched-sample BTC-only HAC27 help distinguish sample and factor specifications.
 
+The 243 raw joint coefficients form a separate global two-sided Holm family;
+Bonferroni simultaneous intervals are also supplied. They do not correct the
+original configuration/universe search or replace original nine-strategy tests.
+Condition numbers, VIF, exclusions, leverage and Cook's distance disclose model
+reliability; influential heavy-tailed observations can make asymptotic intervals
+fragile even when collinearity is acceptable.
 
-## Cash benchmark comparison
+## Reproduction scope
 
-### Benchmark and unchanged trading record
-
-The additional comparison uses **3% nominal annual cash**, compounded daily
-with **ACT/365F**: each calendar day's simple cash return is `c = 0.03 / 365`.
-It is not a 3% effective annual rate. Compounded cash growth is approximately
-**3.0453% over 365 days**, **6.1834% over 730 development days**,
-**6.1921% over 731 validation days**, and **2.2691% over 273 OOS days**.
-Leap-year validation still divides the nominal rate by 365, not 366.
-
-This is a hypothetical benchmark in **USDT-quoted units**. It is neither a
-historical deposit/Treasury/lending yield series nor a claim of an available
-risk-free USDT product. Reading it as a USD cash comparison assumes USDT/USD
-parity; no currency conversion or depeg hedge is modeled. No interest is
-credited to unused strategy cash or short-sale proceeds. Positions, trades,
-transaction costs, borrow/funding omissions, per-coin P&L, raw results, frozen
-selections, risk limits and original acceptance tests are unchanged.
-
-### Arithmetic excess versus relative wealth
-
-For saved complete-UTC-day net strategy returns `r[p,t]`, arithmetic excess is
-`d[t] = r[p,t] - c`. **Cash-excess Sharpe** is
-`sqrt(365) * mean(d) / sample_std(d, ddof=1)`. The original report's raw Sharpe
-is retained explicitly as a zero-cash benchmark comparison, not silently
-replaced. The main nine-strategy period tables present the raw and cash-excess
-comparisons side by side; the supporting cash tables retain the full uncertainty
-and diagnostic results. Because `c` is constant, subtracting it changes the mean
-but not the standard deviation. Sharpe's historic formulation uses the average and standard
-deviation of a differential return, rather than a compounded return difference.
-[William F. Sharpe, The Sharpe Ratio](https://web.stanford.edu/~wfsharpe/art/sr/sr.htm).
-The square-root annualization remains the established reporting convention;
-serial dependence is addressed separately by HAC and block-bootstrap inference.
-
-Compounded strategy wealth is `W[p] = product(1 + r[p,t])` and cash wealth is
-`W[c] = (1 + c)^n`. **Wealth-relative excess return** is `W[p] / W[c] - 1`.
-It is not `W[p] - W[c]`, nor the compounded product of `1 + d[t]`.
-**Relative annualized growth** is `(W[p] / W[c])^(365/n) - 1`.
-
-Relative drawdown is measured from the daily wealth-ratio path
-`product((1 + r[p,t]) / (1 + c))`, including initial NAV 1. Its peak, trough,
-recovery and underwater durations use **daily endpoints**. It is therefore not
-interchangeable with the original report's hourly maximum drawdown. A matching
-raw daily drawdown is supplied for a like-clock comparison; original hourly
-risk metrics stay unchanged. These daily figures make no intraday-loss claim.
-
-### Cash-adjusted factor models
-
-The regression comparison subtracts the same daily cash return from **both**
-the dependent strategy return and every coin factor:
-
-```text
-r[p,t] - c = alpha_cash_daily + sum_i beta_i * (r[i,t] - c) + residual[t]
-alpha_cash_annual = alpha_raw_annual + 0.03 * (sum_i beta_i - 1)
-```
-
-Annual alpha is 365 times the daily arithmetic intercept, not CAGR. With a
-constant cash rate and unchanged sample, betas, their standard errors and their
-marginal intervals stay unchanged up to numerical precision. Alpha is not
-generally obtained by simply subtracting three percentage points. Its standard
-error and interval are recomputed using the **full coefficient covariance**,
-including alpha–beta and beta–beta terms; they are not an interval translation
-by a fixed annual-rate subtraction.
-
-Joint eight-coin and matched-sample BTC comparisons retain the original
-calendar-aware HAC(27) covariance with the finite-sample correction and HAC(7)
-sensitivity. Full-period BTC-only comparisons retain their HAC(7) convention
-without the correction. Factor-day exclusions and calendar gaps are identical
-to the corresponding raw models; no missing factor is filled and full-period
-performance is not shortened to the regression sample.
-
-### Uncertainty and separate testing families
-
-Mean arithmetic cash excess uses a calendar-aware Bartlett **HAC(27)**
-intercept test with `n/(n-1)` covariance correction and approximate normal
-95% intervals. The reported t-statistic uses that standard error; its p-value
-is asymptotic normal, not a finite-sample Student-t claim. The **27
-strategy-period means** form one new Holm-corrected family, separate from the
-original nine-strategy acceptance tests.
-
-The **243 cash-adjusted joint coefficients** form a separate Holm family,
-with Bonferroni simultaneous intervals also supplied. They are distinct from
-the 243 raw coefficients. Although beta point estimates and marginal intervals
-stay unchanged, Holm-adjusted p-values can change because the family contains
-new alpha p-values. BTC comparison intervals are marginal diagnostics, not an
-additional collection of selected profitability tests.
-
-Wealth-relative return, relative annualized growth and cash-excess Sharpe use
-**4,000 synchronized 28-day circular-block samples** per period, seed 20261016
-reset for each period. Strategy daily returns are sampled; the cash rate is not.
-Every draw retains the period's deterministic number of cash-accrual days and
-rebuilds its compounded wealth. No signals, positions or block-boundary trades
-are rerun. Intervals are marginal 95% percentiles. Invalid draws are counted
-per statistic; any invalid draw makes that statistic's interval unavailable,
-rather than silently discarding a draw.
-
-These are conditional comparisons on the same fixed historical observations,
-not additional independent tests, basket/configuration-search-adjusted evidence,
-or grounds to select another winner. The raw selection statistics and original
-acceptance outcomes remain intact. Run `python scripts/reproduce_cash_excess.py`
-to recompute and reconcile the seven checked CSV tables and two JSON results
-from pinned saved daily inputs; output is restricted to `local_outputs/`.
+`verify_project.py` checks package hashes, result coverage and links without
+network or model fitting. `run_research.py` reconstructs the nine fixed
+strategies and reconciles their 27 primary paths; it does not repeat the full
+basket campaign or reselect candidates. `reproduce_diagnostics.py` reconciles
+raw factor models and attribution from compact daily inputs. The fixed all-22
+folders contain saved raw evidence; `verify_fixed_all22.py` checks those
+projections without loading prices or rerunning strategies or bootstrap draws.

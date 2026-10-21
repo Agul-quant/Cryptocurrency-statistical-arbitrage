@@ -7,7 +7,7 @@
     "totals_path": "results/basket_factors/attribution_totals.csv"
   },
   "configuration_count": 169,
-  "created_at_utc": "2026-10-21T00:28:38.802483+00:00",
+  "created_at_utc": "2026-10-21T00:38:30.917016+00:00",
   "data_universe_slots": 22,
   "data_use_note": "Fixed historical periods with prior project data inspection. The original nine and separate fixed all-22 studies share observations; no new independent confirmation or pooled testing. Momentum chronology exception remains disclosed; reversal met its study-specific predecode gate.",
   "files": {
@@ -24,8 +24,8 @@
       "sha256": "1ba0bde14166c529053b0ab9dfd2815751bd6e9286113a3e03f2c7edb1646a8d"
     },
     "README.md": {
-      "bytes": 8378,
-      "sha256": "65b7fd25a602c2a4a190d7cfc27979e28fe0afb851883a689c1afa2a7b8a6e35"
+      "bytes": 8590,
+      "sha256": "02b1e1fe8c5dc302fb91a9f946414cdf6d7a91d081dd9e3a5061381781335da2"
     },
     "configs/configuration_space.json": {
       "bytes": 50142,
@@ -556,12 +556,12 @@
       "sha256": "8839bbc5858620732c59a3f7046dce13cd00f6485347f387b6ef7b75e86a827e"
     },
     "final_reports/README.md": {
-      "bytes": 4262,
-      "sha256": "ec1908e074e2d5f355fb02e79d8c2d3564d28f56d37655fc3ef7e0d74ea27e2f"
+      "bytes": 4542,
+      "sha256": "016ecd79a78d6ac5c5cadba9edf33312bb95ee1b0548ebacf199d68e496b0425"
     },
     "final_reports/quality_checks.json": {
-      "bytes": 5025,
-      "sha256": "d68fd215e2903335ebe28a4a3ec6a87b0d4123add1f1385bce59c88aa4e79bf6"
+      "bytes": 5089,
+      "sha256": "8cfeaf6ac6a35509cbdd587d1b9fd854f599baa71f64d64d1fc9e5f473140b1b"
     },
     "licenses/DATA_LICENSE.md": {
       "bytes": 925,

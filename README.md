@@ -5,7 +5,13 @@ costs and whether strategy selection generalizes across market periods. The
 project contains the implementation, development/validation/OOS results and
 **three final reports**.
 
-## The eight-coin basket study
+## Main finding: performance did not persist across periods
+
+The evidence is the **pattern across periods**, not the best isolated result.
+Neither the basket-selection study nor the separate fixed all-22 studies
+established a stable all-period edge. The two examples below show why.
+
+### Example 1: the eight-coin basket study
 
 The main study tested **6,615 different eight-coin baskets** within a historically
 liquidity-ranked 22-coin universe. Each basket kept **BTC and ETH**, then selected
@@ -21,29 +27,6 @@ development only; five Track B strategies used development eligibility and
 validation. The nine frozen strategies use different eight-coin baskets, not one
 common basket. Their combined membership covers 21 economic slots.
 
-## Periods and Sharpe conventions
-
-| Period | Dates | Complete UTC days |
-| --- | --- | ---: |
-| Development | 1 January 2022–31 December 2023 | 730 |
-| Validation | 1 January 2024–31 December 2025 | 731 |
-| OOS evaluation | 1 January–30 September 2026 | 273 |
-
-We report **two Sharpe annualization conventions: √365 and √252**. Both use the
-same complete UTC daily strategy returns, including weekends, net of modeled
-transaction costs, with sample standard deviation:
-
-`S365 = sqrt(365) × mean(r) / std(r, ddof=1)`  
-`S252 = S365 × sqrt(252/365)`
-
-For example, A01's development Sharpe is **1.84 / 1.53** under √365 / √252.
-Changing the annualization convention does not change the daily observations,
-returns, rankings, t-statistics or p-values. CAGR, volatility and annual alpha
-retain elapsed-calendar/365-day definitions. The 2026 interval is a partial year;
-its annualized statistics are not realized full-year performance.
-
-## Main finding: performance did not persist across periods
-
 **All four development-selected strategies (A01–A04) lost money in 2024–2025
 validation; all five validation-selected strategies (B01, B03–B06) lost money
 in January–September 2026.** Track A's validation Sharpe ratios ranged from
@@ -57,7 +40,7 @@ compounded wealth in 2026 despite a slightly positive arithmetic-return Sharpe.
 No new OOS winner is selected, and these results do not establish a
 deployment-ready strategy.
 
-### Separate fixed all-22 studies show the same persistence problem
+### Example 2: separate fixed all-22 studies
 
 Two separate fixed studies each used all 22 eligible coins, a **28-day
 lookback** and **weekly Monday rebalancing**, without a new basket or parameter
@@ -80,6 +63,27 @@ a chronology exception: its seal preceded the first all-22 simulation but not
 all input access by existing verification tests. Reversal met its new-study
 pre-input-decode seal. Numerical reconciliation does not erase a procedural
 exception.
+
+## Periods and Sharpe conventions
+
+| Period | Dates | Complete UTC days |
+| --- | --- | ---: |
+| Development | 1 January 2022–31 December 2023 | 730 |
+| Validation | 1 January 2024–31 December 2025 | 731 |
+| OOS evaluation | 1 January–30 September 2026 | 273 |
+
+We report **two Sharpe annualization conventions: √365 and √252**. Both use the
+same complete UTC daily strategy returns, including weekends, net of modeled
+transaction costs, with sample standard deviation:
+
+`S365 = sqrt(365) × mean(r) / std(r, ddof=1)`  
+`S252 = S365 × sqrt(252/365)`
+
+For example, A01's development Sharpe is **1.84 / 1.53** under √365 / √252.
+Changing the annualization convention does not change the daily observations,
+returns, rankings, t-statistics or p-values. CAGR, volatility and annual alpha
+retain elapsed-calendar/365-day definitions. The 2026 interval is a partial year;
+its annualized statistics are not realized full-year performance.
 
 ## Read the three reports
 

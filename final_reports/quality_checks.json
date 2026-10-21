@@ -34,10 +34,10 @@
     "strategies_selections_positions_costs_data_raw_results_unchanged": true
   },
   "readme_order": [
-    "Eight-coin basket design",
-    "Periods and two Sharpe conventions",
-    "Cross-period finding",
-    "Three reports and evidence"
+    "Main finding: performance did not persist across periods",
+    "Example 1: the eight-coin basket study",
+    "Example 2: separate fixed all-22 studies",
+    "Periods and two Sharpe conventions"
   ],
   "reporting_basis": "Gross and net strategy performance; cross-period generalization is the headline. Net includes transaction costs.",
   "reports": [

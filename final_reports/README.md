@@ -1,12 +1,18 @@
 # Final reports
 
-## The eight-coin basket design
+## Main finding: performance did not persist across periods
+
+The evidence is the **pattern across periods**, not the best isolated result.
+Neither the basket-selection study nor the separate fixed all-22 studies
+established a stable all-period edge. The two examples below show why.
+
+### Example 1: the eight-coin basket study
 
 Each strategy uses **BTC and ETH plus six other coins**: two from historical liquidity ranks 3–9, two from ranks 10–16, and two from ranks 17–22. This gives **6,615 eligible baskets** from the top 22 of the initial 30-coin pool. Liquidity was ranked using 90 daily quote-volume endpoints in late 2021. The nine frozen strategies may use different baskets; each basket stays fixed through development, validation and the 2026 evaluation. The later fixed all-22 studies remove that basket-selection step. [Full universe, ranking and data sources](../docs/DATA.md).
 
-## Main finding: performance did not persist across periods
-
 **All four development-selected A strategies lost in 2024–2025; all five validation-selected B strategies lost in January–September 2026.** The families are shared, while baskets and parameters differ. This pattern is consistent with the search fitting each selection period rather than establishing a stable edge.
+
+### Example 2: separate fixed all-22 studies
 
 The separate fixed all-22 studies also failed to maintain positive net returns across all three periods:
 

@@ -7,7 +7,7 @@
     "totals_path": "results/basket_factors/attribution_totals.csv"
   },
   "configuration_count": 169,
-  "created_at_utc": "2026-10-21T00:38:30.917016+00:00",
+  "created_at_utc": "2026-10-21T00:42:26.792981+00:00",
   "data_universe_slots": 22,
   "data_use_note": "Fixed historical periods with prior project data inspection. The original nine and separate fixed all-22 studies share observations; no new independent confirmation or pooled testing. Momentum chronology exception remains disclosed; reversal met its study-specific predecode gate.",
   "files": {
@@ -24,8 +24,8 @@
       "sha256": "1ba0bde14166c529053b0ab9dfd2815751bd6e9286113a3e03f2c7edb1646a8d"
     },
     "README.md": {
-      "bytes": 8590,
-      "sha256": "02b1e1fe8c5dc302fb91a9f946414cdf6d7a91d081dd9e3a5061381781335da2"
+      "bytes": 8720,
+      "sha256": "6a5c67d9068d4879c31ab58657348ff70f9993afd85121e65c3c4995de9461a6"
     },
     "configs/configuration_space.json": {
       "bytes": 50142,

@@ -31,6 +31,8 @@ common basket. Their combined membership covers 21 economic slots.
 validation; all five validation-selected strategies (B01, B03–B06) lost money
 in January–September 2026.** Track A's validation Sharpe ratios ranged from
 −0.64 to −0.22 using √365, or −0.53 to −0.18 using √252.
+Track B's January–September 2026 OOS Sharpe ratios ranged from −2.65 to +0.05
+using √365, or −2.20 to +0.04 using √252.
 
 This pattern is consistent with basket and parameter selection fitting each
 period rather than identifying a stable edge. It does not prove search was the

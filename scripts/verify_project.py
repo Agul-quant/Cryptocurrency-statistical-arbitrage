@@ -57,8 +57,10 @@ def verify(root: Path) -> dict:
     attributes = (root / '.gitattributes').read_text()
     assert 'linguist-generated' in attributes and 'final_reports/' in attributes
     grid = json.loads((root/'configs/configuration_space.json').read_text())
-    assert grid['unique_case_count'] == len(grid['cases']) == 169
-    assert len({row['experiment_id'] for row in grid['cases']}) == 169
+    assert grid['unique_case_count'] == len(grid['cases']) == 168
+    assert len({row['experiment_id'] for row in grid['cases']}) == 168
+    assert grid['family_counts'] == {'momentum':78,'reversal':78,'buffered_momentum':4,'trend_long_cash':4,'trend_long_short':4}
+    assert manifest['configuration_count'] == 168
     registry = json.loads((root/'configs/frozen_strategies.json').read_text())
     assert registry['order'] == sorted(IDS)
     assert {row['comparison_id'] for row in registry['strategies']} == IDS

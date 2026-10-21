@@ -1,30 +1,27 @@
 query_id,row_index,row_identity,period,metric,sharpe_365,sharpe_252,original_365_display,precision_basis,approximate_252_from_rounded_source,factor
-family,0,Momentum,development,sharpe,-1.5339541198211517,-1.2745773846060995,-1.5339541198211517,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,1,Reversal,development,sharpe,-2.3068046389893015,-1.9167463912825558,-2.3068046389893015,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,2,Buffered momentum,development,sharpe,0.01965245831212769,0.016329418587482006,0.01965245831212769,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,3,Trend long/cash,development,sharpe,0.24590202686793922,0.20432238371719977,0.24590202686793922,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,4,Trend long/short,development,sharpe,0.4613163788128537,0.38331226207195723,0.4613163788128537,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,5,BTC residual reversal,development,sharpe,-0.6401975063842523,-0.5319463292772568,-0.6401975063842523,existing_full_precision_reviewed_query,False,0.8309097176613772
-cost,0,cost00_lag1,development,medianSharpe,-0.008734402966446897,-0.0072575003027910865,-0.008734402966446897,existing_full_precision_reviewed_query,False,0.8309097176613772
-cost,1,cost05_lag1,development,medianSharpe,-0.6989930862557949,-0.5808001479480572,-0.6989930862557949,existing_full_precision_reviewed_query,False,0.8309097176613772
-cost,2,cost10_lag1,development,medianSharpe,-1.0896608585959044,-0.9054097963625769,-1.0896608585959044,existing_full_precision_reviewed_query,False,0.8309097176613772
-cost,3,cost15_lag1,development,medianSharpe,-1.4364450554667898,-1.1935561554739917,-1.4364450554667898,existing_full_precision_reviewed_query,False,0.8309097176613772
-cost,4,cost20_lag1,development,medianSharpe,-1.7720099769645337,-1.4723803096527441,-1.7720099769645337,existing_full_precision_reviewed_query,False,0.8309097176613772
-cost,5,cost40_lag1,development,medianSharpe,-3.0316716135695594,-2.5190454044730943,-3.0316716135695594,existing_full_precision_reviewed_query,False,0.8309097176613772
-cost,6,cost20_lag2,development,medianSharpe,-1.7462240164783036,-1.4509545045055035,-1.7462240164783036,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,0,Momentum,development,medianSharpe,-0.9142748339763853,-0.7596798441642209,-0.9142748339763853,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,1,Momentum,development,medianSharpe,-1.7971401862138376,-1.4932612447248548,-1.7971401862138376,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,2,Reversal,development,medianSharpe,-2.1374147748181844,-1.7759987070694339,-2.1374147748181844,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,3,Reversal,development,medianSharpe,-2.456762588287078,-2.04134790859465,-2.456762588287078,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,4,Buffered momentum,development,medianSharpe,0.1240297970341883,0.10305756363527532,0.1240297970341883,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,5,Buffered momentum,development,medianSharpe,-0.040153941192388104,-0.033364299939158744,-0.040153941192388104,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,6,Trend long/cash,development,medianSharpe,0.2527610636190768,0.2100216240075165,0.2527610636190768,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,7,Trend long/cash,development,medianSharpe,0.2429111282824832,0.2018372170180047,0.2429111282824832,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,8,Trend long/short,development,medianSharpe,0.6467943779036456,0.5374277339288843,0.6467943779036456,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,9,Trend long/short,development,medianSharpe,0.40744827538691797,0.33855273146335907,0.40744827538691797,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,10,BTC residual reversal,development,medianSharpe,-0.5506430982457701,-0.4575347012955788,-0.5506430982457701,existing_full_precision_reviewed_query,False,0.8309097176613772
-luna,11,BTC residual reversal,development,medianSharpe,-0.7780896191517939,-0.6465222257646656,-0.7780896191517939,existing_full_precision_reviewed_query,False,0.8309097176613772
-metrics,6,Sharpe,development,value,-1.7720099769645337,-1.4723803096527441,-1.7720099769645337,existing_full_precision_reviewed_query,False,0.8309097176613772
+cost,0,cost00_lag1,development,medianSharpe,-0.005394319506588462,-0.0044821924981946785,-0.005394319506588462,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+cost,1,cost05_lag1,development,medianSharpe,-0.702932143428697,-0.5840731488314453,-0.702932143428697,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+cost,2,cost10_lag1,development,medianSharpe,-1.1002939607915212,-0.9142449443058014,-1.1002939607915212,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+cost,3,cost15_lag1,development,medianSharpe,-1.4494401267784858,-1.2043538865085823,-1.4494401267784858,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+cost,4,cost20_lag1,development,medianSharpe,-1.788831800607432,-1.4863577263864143,-1.788831800607432,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+cost,5,cost40_lag1,development,medianSharpe,-3.064602255026274,-2.5464077944683012,-3.064602255026274,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+cost,6,cost20_lag2,development,medianSharpe,-1.7626376520363545,-1.4645927537928403,-1.7626376520363545,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,0,Momentum,development,sharpe,-1.5339541198211517,-1.2745773846060995,-1.5339541198211517,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,1,Reversal,development,sharpe,-2.3068046389893015,-1.9167463912825558,-2.3068046389893015,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,2,Buffered momentum,development,sharpe,0.01965245831212769,0.016329418587482006,0.01965245831212769,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,3,Trend long/cash,development,sharpe,0.24590202686793922,0.20432238371719977,0.24590202686793922,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,4,Trend long/short,development,sharpe,0.4613163788128537,0.38331226207195723,0.4613163788128537,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+luna,0,Momentum,development,medianSharpe,-0.9142748339763853,-0.7596798441642209,-0.9142748339763853,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+luna,1,Momentum,development,medianSharpe,-1.7971401862138376,-1.4932612447248548,-1.7971401862138376,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+luna,2,Reversal,development,medianSharpe,-2.1374147748181844,-1.7759987070694339,-2.1374147748181844,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+luna,3,Reversal,development,medianSharpe,-2.456762588287078,-2.04134790859465,-2.456762588287078,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+luna,4,Buffered momentum,development,medianSharpe,0.1240297970341883,0.10305756363527532,0.1240297970341883,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+luna,5,Buffered momentum,development,medianSharpe,-0.040153941192388104,-0.033364299939158744,-0.040153941192388104,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+luna,6,Trend long/cash,development,medianSharpe,0.2527610636190768,0.2100216240075165,0.2527610636190768,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+luna,7,Trend long/cash,development,medianSharpe,0.2429111282824832,0.2018372170180047,0.2429111282824832,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+luna,8,Trend long/short,development,medianSharpe,0.6467943779036456,0.5374277339288843,0.6467943779036456,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+luna,9,Trend long/short,development,medianSharpe,0.40744827538691797,0.33855273146335907,0.40744827538691797,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+metrics,6,Sharpe,development,value,-1.788831800607432,-1.4863577263864143,-1.788831800607432,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
 main_raw_performance,0,A01,development,raw_sharpe,1.838181940152938,1.5273632369027204,1.838181940152938,existing_full_precision_reviewed_query,False,0.8309097176613772
 main_raw_performance,1,A02,development,raw_sharpe,2.031457445115922,1.6879577321623735,2.031457445115922,existing_full_precision_reviewed_query,False,0.8309097176613772
 main_raw_performance,2,A03,development,raw_sharpe,1.1887937126643842,0.9877802481475838,1.1887937126643842,existing_full_precision_reviewed_query,False,0.8309097176613772

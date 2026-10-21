@@ -1,0 +1,5 @@
+95% CI bps,Centered p,Holm-4 p,Interaction bps,Invalid draws,Regime,Status
+"[-0.93, 14.18]",0.10822294426393402,0.43289177705573606,6.31230309931956,0,BTC 30-day direction,Conditional posthoc
+Unavailable,,,0.42177872595140975,29,BTC trailing volatility,Unavailable; no state in 29 draws
+"[-13.44, 4.09]",0.3579105223694076,1.0,-4.152299696410472,0,Cross-coin dispersion,Conditional posthoc
+"[-15.87, 5.66]",0.3964008997750562,1.0,-4.672264348800512,0,Relative BTC quote volume,Conditional posthoc

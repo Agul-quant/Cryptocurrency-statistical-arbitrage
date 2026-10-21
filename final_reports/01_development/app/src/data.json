@@ -196,82 +196,70 @@
     "family": {
       "rows": [
         {
-          "family": "Momentum",
           "cases": 78,
+          "family": "Momentum",
+          "grossReturn": -0.014407013524019725,
+          "maxDD": 0.7235917861591911,
+          "netReturn": -0.6086126351615002,
           "pairs": 515970,
           "positive": 0.09512762369905227,
-          "grossReturn": -0.014407013524019725,
-          "netReturn": -0.6086126351615002,
           "sharpe": -1.5339541198211517,
-          "maxDD": 0.7235917861591911,
           "turnover": 268.6927083333333,
           "undefinedSharpe": 0
         },
         {
-          "family": "Reversal",
           "cases": 78,
+          "family": "Reversal",
+          "grossReturn": -0.21028582942512083,
+          "maxDD": 0.8573220886487385,
+          "netReturn": -0.838126059436108,
           "pairs": 515970,
           "positive": 0.026158497587069014,
-          "grossReturn": -0.21028582942512083,
-          "netReturn": -0.838126059436108,
           "sharpe": -2.3068046389893015,
-          "maxDD": 0.8573220886487385,
           "turnover": 268.6927083333333,
           "undefinedSharpe": 0
         },
         {
-          "family": "Buffered momentum",
           "cases": 4,
+          "family": "Buffered momentum",
+          "grossReturn": 0.24509314381888253,
+          "maxDD": 0.39804190262016514,
+          "netReturn": -0.06992138217253105,
           "pairs": 26460,
           "positive": 0.4051020408163265,
-          "grossReturn": 0.24509314381888253,
-          "netReturn": -0.06992138217253105,
           "sharpe": 0.01965245831212769,
-          "maxDD": 0.39804190262016514,
           "turnover": 62.255208333333336,
           "undefinedSharpe": 0
         },
         {
-          "family": "Trend long/cash",
           "cases": 4,
+          "family": "Trend long/cash",
+          "grossReturn": 0.17525974887051576,
+          "maxDD": 0.45843157345734264,
+          "netReturn": 0.0405129657490063,
           "pairs": 26460,
           "positive": 0.5630385487528344,
-          "grossReturn": 0.17525974887051576,
-          "netReturn": 0.0405129657490063,
           "sharpe": 0.24590202686793922,
-          "maxDD": 0.45843157345734264,
           "turnover": 20.75,
           "undefinedSharpe": 0
         },
         {
-          "family": "Trend long/short",
           "cases": 4,
+          "family": "Trend long/short",
+          "grossReturn": 0.5815630741976621,
+          "maxDD": 0.5825943890608337,
+          "netReturn": 0.22042127915622417,
           "pairs": 26460,
           "positive": 0.6558956916099773,
-          "grossReturn": 0.5815630741976621,
-          "netReturn": 0.22042127915622417,
           "sharpe": 0.4613163788128537,
-          "maxDD": 0.5825943890608337,
           "turnover": 41.5625,
           "undefinedSharpe": 0
-        },
-        {
-          "family": "BTC residual reversal",
-          "cases": 1,
-          "pairs": 6615,
-          "positive": 0.11337868480725624,
-          "grossReturn": -0.0046374863921534925,
-          "netReturn": -0.005774714856583322,
-          "sharpe": -0.6401975063842523,
-          "maxDD": 0.008138026943067927,
-          "turnover": 0.2857142857142857,
-          "undefinedSharpe": 1000
         }
       ],
       "source": {
-        "label": "Checksum-verified accepted development evidence",
+        "label": "Audited retained-scope saved-result projection",
         "files": [
-          "results/report_data/development/family.json"
+          "results/retained_scope/development/family.csv"
         ],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
@@ -288,7 +276,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/family.json"
+                  "results/retained_scope/development/family.csv"
                 ]
               }
             ]
@@ -296,20 +284,27 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/development/family.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/family.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "caveats": [
           "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
         ],
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/family.csv": {
+            "sha256": "5c91fa9aef61896ee67255e7ee0e6e80d1853a4e07d0cf691fead04cefcb8d60",
+            "bytes": 791
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/development/family.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/development/family.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
@@ -317,58 +312,58 @@
       "rows": [
         {
           "costBps": 0,
-          "scenario": "cost00_lag1",
-          "positive": 0.43168431080518993,
-          "medianReturn": -0.07885591235394296,
-          "medianSharpe": -0.008734402966446897
+          "medianReturn": -0.08249892235651708,
+          "medianSharpe": -0.005394319506588462,
+          "positive": 0.4331290717345139,
+          "scenario": "cost00_lag1"
         },
         {
           "costBps": 5,
-          "scenario": "cost05_lag1",
-          "positive": 0.22683161364480045,
-          "medianReturn": -0.36873855230569474,
-          "medianSharpe": -0.6989930862557949
+          "medianReturn": -0.3728316966508587,
+          "medianSharpe": -0.702932143428697,
+          "positive": 0.22705701328150307,
+          "scenario": "cost05_lag1"
         },
         {
           "costBps": 10,
-          "scenario": "cost10_lag1",
-          "positive": 0.1624844020448416,
-          "medianReturn": -0.5133796249227087,
-          "medianSharpe": -1.0896608585959044
+          "medianReturn": -0.518475391861718,
+          "medianSharpe": -1.1002939607915212,
+          "positive": 0.16232678256487781,
+          "scenario": "cost10_lag1"
         },
         {
           "costBps": 15,
-          "scenario": "cost15_lag1",
-          "positive": 0.12278531399410521,
-          "medianReturn": -0.6242353287012056,
-          "medianSharpe": -1.4364450554667898
+          "medianReturn": -0.6294199255525098,
+          "medianSharpe": -1.4494401267784858,
+          "positive": 0.12284130583450312,
+          "scenario": "cost15_lag1"
         },
         {
           "costBps": 20,
-          "scenario": "cost20_lag1",
-          "positive": 0.09508781816474124,
-          "medianReturn": -0.7103480782827848,
-          "medianSharpe": -1.7720099769645337
+          "medianReturn": -0.7154500511517711,
+          "medianSharpe": -1.788831800607432,
+          "positive": 0.09497894395853579,
+          "scenario": "cost20_lag1"
         },
         {
           "costBps": 40,
-          "scenario": "cost40_lag1",
-          "positive": 0.04237187314110391,
-          "medianReturn": -0.8746488888710472,
-          "medianSharpe": -3.0316716135695594
+          "medianReturn": -0.8784777300498557,
+          "medianSharpe": -3.064602255026274,
+          "positive": 0.04217417125580391,
+          "scenario": "cost40_lag1"
         },
         {
           "costBps": 20,
-          "scenario": "cost20_lag2",
-          "positive": 0.09602883888598174,
-          "medianReturn": -0.7080480477852777,
-          "medianSharpe": -1.7462240164783036
+          "medianReturn": -0.713215914651498,
+          "medianSharpe": -1.7626376520363545,
+          "positive": 0.0959255659935932,
+          "scenario": "cost20_lag2"
         }
       ],
       "source": {
-        "label": "Checksum-verified accepted development evidence",
+        "label": "Audited retained-scope saved-result projection",
         "files": [
-          "results/report_data/development/cost.json"
+          "results/retained_scope/development/cost.csv"
         ],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
@@ -385,7 +380,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/cost.json"
+                  "results/retained_scope/development/cost.csv"
                 ]
               }
             ]
@@ -393,78 +388,77 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/development/cost.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/cost.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "caveats": [
           "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
         ],
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/cost.csv": {
+            "sha256": "52ef64688fe3c8ab3035476af25047dd9a3181605c4ea287458f115215395be8",
+            "bytes": 588
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/development/cost.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/development/cost.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
     "years": {
       "rows": [
         {
-          "family": "Momentum",
-          "pairs": 515970,
           "bothPositive": 0.047793476364904934,
+          "family": "Momentum",
+          "neither": 0.7893540322111751,
           "only2022": 0.07029866077485125,
           "only2023": 0.09255383064906875,
-          "neither": 0.7893540322111751
+          "pairs": 515970
         },
         {
-          "family": "Reversal",
-          "pairs": 515970,
           "bothPositive": 0.006889935461364033,
+          "family": "Reversal",
+          "neither": 0.906294939628273,
           "only2022": 0.05354768688102021,
           "only2023": 0.03326743802934279,
-          "neither": 0.906294939628273
+          "pairs": 515970
         },
         {
-          "family": "Buffered momentum",
-          "pairs": 26460,
           "bothPositive": 0.24221466364323507,
+          "family": "Buffered momentum",
+          "neither": 0.3888510959939531,
           "only2022": 0.14070294784580498,
           "only2023": 0.2282312925170068,
-          "neither": 0.3888510959939531
+          "pairs": 26460
         },
         {
-          "family": "Trend long/cash",
-          "pairs": 26460,
           "bothPositive": 0.0,
+          "family": "Trend long/cash",
+          "neither": 0.0,
           "only2022": 0.0,
           "only2023": 1.0,
-          "neither": 0.0
+          "pairs": 26460
         },
         {
-          "family": "Trend long/short",
-          "pairs": 26460,
           "bothPositive": 0.39145880574452,
+          "family": "Trend long/short",
+          "neither": 0.2331065759637188,
           "only2022": 0.15487528344671203,
           "only2023": 0.22055933484504914,
-          "neither": 0.2331065759637188
-        },
-        {
-          "family": "BTC residual reversal",
-          "pairs": 6615,
-          "bothPositive": 0.0,
-          "only2022": 0.0,
-          "only2023": 0.11337868480725624,
-          "neither": 0.8866213151927438
+          "pairs": 26460
         }
       ],
       "source": {
-        "label": "Checksum-verified accepted development evidence",
+        "label": "Audited retained-scope saved-result projection",
         "files": [
-          "results/report_data/development/years.json"
+          "results/retained_scope/development/years.csv"
         ],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
@@ -480,7 +474,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/years.json"
+                  "results/retained_scope/development/years.csv"
                 ]
               }
             ]
@@ -488,20 +482,27 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/development/years.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/years.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "caveats": [
           "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
         ],
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/years.csv": {
+            "sha256": "0f3b5ffae8bce4926bf58c49c22ae3f61c51de74d21c2fea03b58dc14e34c61a",
+            "bytes": 487
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/development/years.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/development/years.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
@@ -509,93 +510,79 @@
       "rows": [
         {
           "family": "Momentum",
-          "year": "2022",
+          "maxDD": 0.6508436190567202,
           "medianReturn": -0.42262900918359314,
           "medianSharpe": -1.5959982103338848,
-          "maxDD": 0.6508436190567202
+          "year": "2022"
         },
         {
           "family": "Momentum",
-          "year": "2023",
+          "maxDD": 0.46660341417260964,
           "medianReturn": -0.36946924525043223,
           "medianSharpe": -1.907003299132284,
-          "maxDD": 0.46660341417260964
+          "year": "2023"
         },
         {
           "family": "Reversal",
-          "year": "2022",
+          "maxDD": 0.7063453587309696,
           "medianReturn": -0.6736995970801416,
           "medianSharpe": -2.2967917797294106,
-          "maxDD": 0.7063453587309696
+          "year": "2022"
         },
         {
           "family": "Reversal",
-          "year": "2023",
+          "maxDD": 0.549621539331562,
           "medianReturn": -0.500715284598223,
           "medianSharpe": -2.812832780412344,
-          "maxDD": 0.549621539331562
+          "year": "2023"
         },
         {
           "family": "Buffered momentum",
-          "year": "2022",
+          "maxDD": 0.3403754210582055,
           "medianReturn": -0.05412604710992024,
           "medianSharpe": -0.0090554888988389,
-          "maxDD": 0.3403754210582055
+          "year": "2022"
         },
         {
           "family": "Buffered momentum",
-          "year": "2023",
+          "maxDD": 0.2399281636251911,
           "medianReturn": -0.013342514864728643,
           "medianSharpe": 0.06602319237499649,
-          "maxDD": 0.2399281636251911
+          "year": "2023"
         },
         {
           "family": "Trend long/cash",
-          "year": "2022",
+          "maxDD": 0.4351935094793582,
           "medianReturn": -0.3858742890271646,
           "medianSharpe": -1.0171686246373397,
-          "maxDD": 0.4351935094793582
+          "year": "2022"
         },
         {
           "family": "Trend long/cash",
-          "year": "2023",
+          "maxDD": 0.3176419517077867,
           "medianReturn": 0.6498368438211013,
           "medianSharpe": 1.4930690419583688,
-          "maxDD": 0.3176419517077867
+          "year": "2023"
         },
         {
           "family": "Trend long/short",
-          "year": "2022",
+          "maxDD": 0.5126360764235229,
           "medianReturn": 0.03549792056370839,
           "medianSharpe": 0.4002078502591886,
-          "maxDD": 0.5126360764235229
+          "year": "2022"
         },
         {
           "family": "Trend long/short",
-          "year": "2023",
+          "maxDD": 0.3998011029494575,
           "medianReturn": 0.14089253367137458,
           "medianSharpe": 0.5221553640552293,
-          "maxDD": 0.3998011029494575
-        },
-        {
-          "family": "BTC residual reversal",
-          "year": "2022",
-          "medianReturn": 0.0,
-          "medianSharpe": -0.12635261416997473,
-          "maxDD": 0.0
-        },
-        {
-          "family": "BTC residual reversal",
-          "year": "2023",
-          "medianReturn": -0.005774714856583322,
-          "medianSharpe": -0.9691646510626896,
-          "maxDD": 0.007473937536146556
+          "year": "2023"
         }
       ],
       "source": {
-        "label": "Checksum-verified accepted development evidence",
+        "label": "Audited retained-scope saved-result projection",
         "files": [
-          "results/report_data/development/annual.json"
+          "results/retained_scope/development/annual.csv"
         ],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
@@ -610,7 +597,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/annual.json"
+                  "results/retained_scope/development/annual.csv"
                 ]
               }
             ]
@@ -618,20 +605,27 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/development/annual.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/annual.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "caveats": [
           "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
         ],
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/annual.csv": {
+            "sha256": "83dcc0ea358a1b4361726cd248f300591dcba2a19650fbc6b07ce3598226b87b",
+            "bytes": 840
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/development/annual.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/development/annual.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
@@ -640,104 +634,88 @@
         {
           "family": "Momentum",
           "kind": "parameter",
-          "positiveCenters": 49083,
-          "withNeighbors": 49083,
           "meanPositiveNeighbor": 0.500256368464302,
-          "medianAbsoluteReturnChange": 0.14672434358123995
+          "medianAbsoluteReturnChange": 0.14672434358123995,
+          "positiveCenters": 49083,
+          "withNeighbors": 49083
         },
         {
           "family": "Reversal",
           "kind": "parameter",
-          "positiveCenters": 13497,
-          "withNeighbors": 13497,
           "meanPositiveNeighbor": 0.2979180558642661,
-          "medianAbsoluteReturnChange": 0.08163879359622539
+          "medianAbsoluteReturnChange": 0.08163879359622539,
+          "positiveCenters": 13497,
+          "withNeighbors": 13497
         },
         {
           "family": "Buffered momentum",
           "kind": "parameter",
-          "positiveCenters": 10719,
-          "withNeighbors": 10719,
           "meanPositiveNeighbor": 0.6607892527287993,
-          "medianAbsoluteReturnChange": 0.18564142837401765
+          "medianAbsoluteReturnChange": 0.18564142837401765,
+          "positiveCenters": 10719,
+          "withNeighbors": 10719
         },
         {
           "family": "Trend long/cash",
           "kind": "parameter",
-          "positiveCenters": 14898,
-          "withNeighbors": 14898,
           "meanPositiveNeighbor": 0.5532286212914486,
-          "medianAbsoluteReturnChange": 0.264769842627188
+          "medianAbsoluteReturnChange": 0.264769842627188,
+          "positiveCenters": 14898,
+          "withNeighbors": 14898
         },
         {
           "family": "Trend long/short",
           "kind": "parameter",
-          "positiveCenters": 17355,
-          "withNeighbors": 17355,
           "meanPositiveNeighbor": 0.6236819360414866,
-          "medianAbsoluteReturnChange": 0.6116962209270519
-        },
-        {
-          "family": "BTC residual reversal",
-          "kind": "parameter",
-          "positiveCenters": 750,
-          "withNeighbors": 0,
-          "meanPositiveNeighbor": null,
-          "medianAbsoluteReturnChange": null
+          "medianAbsoluteReturnChange": 0.6116962209270519,
+          "positiveCenters": 17355,
+          "withNeighbors": 17355
         },
         {
           "family": "Momentum",
           "kind": "basket",
-          "positiveCenters": 49083,
-          "withNeighbors": 49083,
           "meanPositiveNeighbor": 0.6743358916820197,
-          "medianAbsoluteReturnChange": 0.06871939788264855
+          "medianAbsoluteReturnChange": 0.06871939788264855,
+          "positiveCenters": 49083,
+          "withNeighbors": 49083
         },
         {
           "family": "Reversal",
           "kind": "basket",
-          "positiveCenters": 13497,
-          "withNeighbors": 13497,
           "meanPositiveNeighbor": 0.5456344796198097,
-          "medianAbsoluteReturnChange": 0.04632436671027616
+          "medianAbsoluteReturnChange": 0.04632436671027616,
+          "positiveCenters": 13497,
+          "withNeighbors": 13497
         },
         {
           "family": "Buffered momentum",
           "kind": "basket",
-          "positiveCenters": 10719,
-          "withNeighbors": 10719,
           "meanPositiveNeighbor": 0.7314781496141698,
-          "medianAbsoluteReturnChange": 0.14850092937161052
+          "medianAbsoluteReturnChange": 0.14850092937161052,
+          "positiveCenters": 10719,
+          "withNeighbors": 10719
         },
         {
           "family": "Trend long/cash",
           "kind": "basket",
-          "positiveCenters": 14898,
-          "withNeighbors": 14898,
           "meanPositiveNeighbor": 0.897057131350325,
-          "medianAbsoluteReturnChange": 0.08124301728618216
+          "medianAbsoluteReturnChange": 0.08124301728618216,
+          "positiveCenters": 14898,
+          "withNeighbors": 14898
         },
         {
           "family": "Trend long/short",
           "kind": "basket",
-          "positiveCenters": 17355,
-          "withNeighbors": 17355,
           "meanPositiveNeighbor": 0.9227435485862453,
-          "medianAbsoluteReturnChange": 0.19783230946251912
-        },
-        {
-          "family": "BTC residual reversal",
-          "kind": "basket",
-          "positiveCenters": 750,
-          "withNeighbors": 750,
-          "meanPositiveNeighbor": 0.642857142857143,
-          "medianAbsoluteReturnChange": 0.0020541667076743294
+          "medianAbsoluteReturnChange": 0.19783230946251912,
+          "positiveCenters": 17355,
+          "withNeighbors": 17355
         }
       ],
       "source": {
-        "label": "Checksum-verified accepted development evidence",
+        "label": "Audited retained-scope saved-result projection",
         "files": [
-          "results/report_data/development/neighbors.json"
+          "results/retained_scope/development/neighbors.csv"
         ],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
@@ -754,7 +732,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/neighbors.json"
+                  "results/retained_scope/development/neighbors.csv"
                 ]
               }
             ]
@@ -762,114 +740,107 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/development/neighbors.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/neighbors.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "caveats": [
           "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
         ],
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/neighbors.csv": {
+            "sha256": "3fd72906b52d50675bbb4a18dc955abdbabd7d7c94bcad45ea0db7ae02afe55d",
+            "bytes": 833
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/development/neighbors.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/development/neighbors.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
     "luna": {
       "rows": [
         {
-          "family": "Momentum",
-          "present": true,
           "baskets": 1890,
+          "family": "Momentum",
           "medianReturn": -0.589958079971741,
-          "medianSharpe": -0.9142748339763853
+          "medianSharpe": -0.9142748339763853,
+          "present": true
         },
         {
+          "baskets": 4725,
           "family": "Momentum",
-          "present": false,
-          "baskets": 4725,
           "medianReturn": -0.615119429620631,
-          "medianSharpe": -1.7971401862138376
+          "medianSharpe": -1.7971401862138376,
+          "present": false
         },
         {
-          "family": "Reversal",
-          "present": true,
           "baskets": 1890,
+          "family": "Reversal",
           "medianReturn": -0.9251703910162887,
-          "medianSharpe": -2.1374147748181844
+          "medianSharpe": -2.1374147748181844,
+          "present": true
         },
         {
+          "baskets": 4725,
           "family": "Reversal",
-          "present": false,
-          "baskets": 4725,
           "medianReturn": -0.7319613142340404,
-          "medianSharpe": -2.456762588287078
+          "medianSharpe": -2.456762588287078,
+          "present": false
         },
         {
-          "family": "Buffered momentum",
-          "present": true,
           "baskets": 1890,
+          "family": "Buffered momentum",
           "medianReturn": -0.03881196239707582,
-          "medianSharpe": 0.1240297970341883
+          "medianSharpe": 0.1240297970341883,
+          "present": true
         },
         {
+          "baskets": 4725,
           "family": "Buffered momentum",
-          "present": false,
-          "baskets": 4725,
           "medianReturn": -0.08304723013711285,
-          "medianSharpe": -0.040153941192388104
+          "medianSharpe": -0.040153941192388104,
+          "present": false
         },
         {
-          "family": "Trend long/cash",
-          "present": true,
           "baskets": 1890,
+          "family": "Trend long/cash",
           "medianReturn": 0.04725357534574581,
-          "medianSharpe": 0.2527610636190768
+          "medianSharpe": 0.2527610636190768,
+          "present": true
         },
         {
+          "baskets": 4725,
           "family": "Trend long/cash",
-          "present": false,
-          "baskets": 4725,
           "medianReturn": 0.03742160509864456,
-          "medianSharpe": 0.2429111282824832
+          "medianSharpe": 0.2429111282824832,
+          "present": false
         },
         {
-          "family": "Trend long/short",
-          "present": true,
           "baskets": 1890,
+          "family": "Trend long/short",
           "medianReturn": 0.5233412173533587,
-          "medianSharpe": 0.6467943779036456
+          "medianSharpe": 0.6467943779036456,
+          "present": true
         },
         {
+          "baskets": 4725,
           "family": "Trend long/short",
-          "present": false,
-          "baskets": 4725,
           "medianReturn": 0.14357280454793092,
-          "medianSharpe": 0.40744827538691797
-        },
-        {
-          "family": "BTC residual reversal",
-          "present": true,
-          "baskets": 1890,
-          "medianReturn": -0.010527603854744902,
-          "medianSharpe": -0.5506430982457701
-        },
-        {
-          "family": "BTC residual reversal",
-          "present": false,
-          "baskets": 4725,
-          "medianReturn": -0.004780494993623089,
-          "medianSharpe": -0.7780896191517939
+          "medianSharpe": 0.40744827538691797,
+          "present": false
         }
       ],
       "source": {
-        "label": "Checksum-verified accepted development evidence",
+        "label": "Audited retained-scope saved-result projection",
         "files": [
-          "results/report_data/development/luna.json"
+          "results/retained_scope/development/luna.csv"
         ],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
@@ -885,7 +856,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/luna.json"
+                  "results/retained_scope/development/luna.csv"
                 ]
               }
             ]
@@ -893,20 +864,27 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/development/luna.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/luna.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "caveats": [
           "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
         ],
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/luna.csv": {
+            "sha256": "1009f59f7800e32570f85b695cff443d0af61616322cc1ec23cebe41b2bd3ff7",
+            "bytes": 702
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/development/luna.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/development/luna.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
@@ -914,177 +892,149 @@
       "rows": [
         {
           "family": "Momentum",
-          "scope": "development",
-          "lunaNetDollarContribution": 0.015910092055362434,
+          "feeDollarContribution": 0.020511287510621697,
           "grossDollarContribution": 0.036421379565984145,
-          "feeDollarContribution": 0.020511287510621697
+          "lunaNetDollarContribution": 0.015910092055362434,
+          "scope": "development"
         },
         {
           "family": "Momentum",
-          "scope": "2022",
-          "lunaNetDollarContribution": 0.017348465703695092,
+          "feeDollarContribution": 0.014704759280042584,
           "grossDollarContribution": 0.03205322498373768,
-          "feeDollarContribution": 0.014704759280042584
+          "lunaNetDollarContribution": 0.017348465703695092,
+          "scope": "2022"
         },
         {
           "family": "Momentum",
-          "scope": "2023",
-          "lunaNetDollarContribution": -0.0014383736483326718,
+          "feeDollarContribution": 0.005806528230579138,
           "grossDollarContribution": 0.004368154582246466,
-          "feeDollarContribution": 0.005806528230579138
+          "lunaNetDollarContribution": -0.0014383736483326718,
+          "scope": "2023"
         },
         {
           "family": "Momentum",
-          "scope": "event_window",
-          "lunaNetDollarContribution": 0.04080681300089327,
+          "feeDollarContribution": 0.0003809995170827777,
           "grossDollarContribution": 0.04118781251797604,
-          "feeDollarContribution": 0.0003809995170827777
+          "lunaNetDollarContribution": 0.04080681300089327,
+          "scope": "event_window"
         },
         {
           "family": "Reversal",
-          "scope": "development",
-          "lunaNetDollarContribution": -0.13344226847491408,
+          "feeDollarContribution": 0.014055696696667919,
           "grossDollarContribution": -0.11938657177824614,
-          "feeDollarContribution": 0.014055696696667919
+          "lunaNetDollarContribution": -0.13344226847491408,
+          "scope": "development"
         },
         {
           "family": "Reversal",
-          "scope": "2022",
-          "lunaNetDollarContribution": -0.12954807275251207,
+          "feeDollarContribution": 0.012292064171214732,
           "grossDollarContribution": -0.11725600858129732,
-          "feeDollarContribution": 0.012292064171214732
+          "lunaNetDollarContribution": -0.12954807275251207,
+          "scope": "2022"
         },
         {
           "family": "Reversal",
-          "scope": "2023",
-          "lunaNetDollarContribution": -0.003894195722402026,
+          "feeDollarContribution": 0.0017636325254532105,
           "grossDollarContribution": -0.002130563196948815,
-          "feeDollarContribution": 0.0017636325254532105
+          "lunaNetDollarContribution": -0.003894195722402026,
+          "scope": "2023"
         },
         {
           "family": "Reversal",
-          "scope": "event_window",
-          "lunaNetDollarContribution": -0.12072617344396062,
+          "feeDollarContribution": 0.00034280137737970957,
           "grossDollarContribution": -0.12038337206658091,
-          "feeDollarContribution": 0.00034280137737970957
+          "lunaNetDollarContribution": -0.12072617344396062,
+          "scope": "event_window"
         },
         {
           "family": "Buffered momentum",
-          "scope": "development",
-          "lunaNetDollarContribution": 0.01593600997738032,
+          "feeDollarContribution": 0.01011751539016201,
           "grossDollarContribution": 0.02605352536754233,
-          "feeDollarContribution": 0.01011751539016201
+          "lunaNetDollarContribution": 0.01593600997738032,
+          "scope": "development"
         },
         {
           "family": "Buffered momentum",
-          "scope": "2022",
-          "lunaNetDollarContribution": 0.012860989558649255,
+          "feeDollarContribution": 0.004823152558369945,
           "grossDollarContribution": 0.017684142117019203,
-          "feeDollarContribution": 0.004823152558369945
+          "lunaNetDollarContribution": 0.012860989558649255,
+          "scope": "2022"
         },
         {
           "family": "Buffered momentum",
-          "scope": "2023",
-          "lunaNetDollarContribution": 0.0030750204187310645,
+          "feeDollarContribution": 0.005294362831792063,
           "grossDollarContribution": 0.008369383250523128,
-          "feeDollarContribution": 0.005294362831792063
+          "lunaNetDollarContribution": 0.0030750204187310645,
+          "scope": "2023"
         },
         {
           "family": "Buffered momentum",
-          "scope": "event_window",
-          "lunaNetDollarContribution": 0.04868800841476079,
+          "feeDollarContribution": 0.00025049923837398776,
           "grossDollarContribution": 0.04893850765313479,
-          "feeDollarContribution": 0.00025049923837398776
+          "lunaNetDollarContribution": 0.04868800841476079,
+          "scope": "event_window"
         },
         {
           "family": "Trend long/cash",
-          "scope": "development",
-          "lunaNetDollarContribution": 0.00661003332369093,
+          "feeDollarContribution": 0.0022569991345456173,
           "grossDollarContribution": 0.008867032458236548,
-          "feeDollarContribution": 0.0022569991345456173
+          "lunaNetDollarContribution": 0.00661003332369093,
+          "scope": "development"
         },
         {
           "family": "Trend long/cash",
-          "scope": "2022",
-          "lunaNetDollarContribution": -0.0057745331509120425,
+          "feeDollarContribution": 0.0010251832584163895,
           "grossDollarContribution": -0.004749349892495653,
-          "feeDollarContribution": 0.0010251832584163895
+          "lunaNetDollarContribution": -0.0057745331509120425,
+          "scope": "2022"
         },
         {
           "family": "Trend long/cash",
-          "scope": "2023",
-          "lunaNetDollarContribution": 0.012384566474602973,
+          "feeDollarContribution": 0.001231815876129228,
           "grossDollarContribution": 0.013616382350732202,
-          "feeDollarContribution": 0.001231815876129228
+          "lunaNetDollarContribution": 0.012384566474602973,
+          "scope": "2023"
         },
         {
           "family": "Trend long/cash",
-          "scope": "event_window",
-          "lunaNetDollarContribution": -0.0017774600712444986,
+          "feeDollarContribution": 1.4631279552443693e-05,
           "grossDollarContribution": -0.0017628287916920552,
-          "feeDollarContribution": 1.4631279552443693e-05
+          "lunaNetDollarContribution": -0.0017774600712444986,
+          "scope": "event_window"
         },
         {
           "family": "Trend long/short",
-          "scope": "development",
-          "lunaNetDollarContribution": 0.15307609049561804,
+          "feeDollarContribution": 0.007266453325107377,
           "grossDollarContribution": 0.16034254382072544,
-          "feeDollarContribution": 0.007266453325107377
+          "lunaNetDollarContribution": 0.15307609049561804,
+          "scope": "development"
         },
         {
           "family": "Trend long/short",
-          "scope": "2022",
-          "lunaNetDollarContribution": 0.1366855393728589,
+          "feeDollarContribution": 0.003077099709228025,
           "grossDollarContribution": 0.13976263908208691,
-          "feeDollarContribution": 0.003077099709228025
+          "lunaNetDollarContribution": 0.1366855393728589,
+          "scope": "2022"
         },
         {
           "family": "Trend long/short",
-          "scope": "2023",
-          "lunaNetDollarContribution": 0.016390551122759143,
+          "feeDollarContribution": 0.0041893536158793526,
           "grossDollarContribution": 0.020579904738638497,
-          "feeDollarContribution": 0.0041893536158793526
+          "lunaNetDollarContribution": 0.016390551122759143,
+          "scope": "2023"
         },
         {
           "family": "Trend long/short",
-          "scope": "event_window",
-          "lunaNetDollarContribution": 0.14481910618902916,
+          "feeDollarContribution": 0.000149589982034279,
           "grossDollarContribution": 0.14496869617106345,
-          "feeDollarContribution": 0.000149589982034279
-        },
-        {
-          "family": "BTC residual reversal",
-          "scope": "development",
-          "lunaNetDollarContribution": -0.0026325121919645385,
-          "grossDollarContribution": -0.0024573738838359004,
-          "feeDollarContribution": 0.00017513830812863855
-        },
-        {
-          "family": "BTC residual reversal",
-          "scope": "2022",
-          "lunaNetDollarContribution": 0.0,
-          "grossDollarContribution": 0.0,
-          "feeDollarContribution": 0.0
-        },
-        {
-          "family": "BTC residual reversal",
-          "scope": "2023",
-          "lunaNetDollarContribution": -0.0026325121919645385,
-          "grossDollarContribution": -0.0024573738838359004,
-          "feeDollarContribution": 0.00017513830812863855
-        },
-        {
-          "family": "BTC residual reversal",
-          "scope": "event_window",
-          "lunaNetDollarContribution": 0.0,
-          "grossDollarContribution": 0.0,
-          "feeDollarContribution": 0.0
+          "lunaNetDollarContribution": 0.14481910618902916,
+          "scope": "event_window"
         }
       ],
       "source": {
-        "label": "Checksum-verified accepted development evidence",
+        "label": "Audited retained-scope saved-result projection",
         "files": [
-          "results/report_data/development/attribution.json"
+          "results/retained_scope/development/attribution.csv"
         ],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
@@ -1100,7 +1050,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/attribution.json"
+                  "results/retained_scope/development/attribution.csv"
                 ]
               }
             ]
@@ -1108,20 +1058,27 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/development/attribution.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/attribution.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "caveats": [
           "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
         ],
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/attribution.csv": {
+            "sha256": "034a88da048358d6f0c6226927cbf3a9a4bbe6a6e8dc8ab2dde2126bd1355324",
+            "bytes": 1824
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/development/attribution.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/development/attribution.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
@@ -2495,44 +2452,44 @@
       "rows": [
         {
           "metric": "Total net return",
-          "value": -0.7103480782827848,
-          "unit": "fraction"
+          "unit": "fraction",
+          "value": -0.7154500511517711
         },
         {
           "metric": "CAGR",
-          "value": -0.46180679889354304,
-          "unit": "fraction"
+          "unit": "fraction",
+          "value": -0.46656776546152
         },
         {
           "metric": "Annual volatility",
-          "value": 0.27153502012898373,
-          "unit": "fraction"
+          "unit": "fraction",
+          "value": 0.2719637352811991
         },
         {
           "metric": "Maximum drawdown",
-          "value": 0.7684626171459502,
-          "unit": "fraction"
+          "unit": "fraction",
+          "value": 0.7722170330372333
         },
         {
           "metric": "Longest underwater span (days)",
-          "value": 708.5833333333334,
-          "unit": "days"
+          "unit": "days",
+          "value": 709.0833333333334
         },
         {
           "metric": "Full-L1 turnover (times/year)",
-          "value": 189.2291666666666,
-          "unit": "times/year"
+          "unit": "times/year",
+          "value": 190.91666666666674
         },
         {
           "metric": "Sharpe",
-          "value": -1.7720099769645337,
-          "unit": "ratio"
+          "unit": "ratio",
+          "value": -1.788831800607432
         }
       ],
       "source": {
-        "label": "Checksum-verified accepted development evidence",
+        "label": "Audited retained-scope saved-result projection",
         "files": [
-          "results/report_data/development/metrics.json"
+          "results/retained_scope/development/metrics.csv"
         ],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
@@ -2547,7 +2504,7 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/metrics.json"
+                  "results/retained_scope/development/metrics.csv"
                 ]
               }
             ]
@@ -2555,20 +2512,27 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/development/metrics.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/metrics.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "caveats": [
           "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
         ],
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/metrics.csv": {
+            "sha256": "6d52b2856c9d562fe15e59a5c06cffff575f937774c1601f5437e29a846e9928",
+            "bytes": 339
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/development/metrics.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/development/metrics.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
@@ -2576,18 +2540,20 @@
       "rows": [
         {
           "baskets": 6615,
-          "configurations": 169,
-          "primaryPairs": 1117935,
-          "scenarioKeys": 7825545,
-          "positiveNet": 106302,
-          "undefinedSharpe": 1000,
-          "rankCorrelationMedian": 0.8672314293001299
+          "configurations": 168,
+          "positiveNet": 105552,
+          "primaryPairs": 1111320,
+          "rankCorrelationMedian": 0.8676002191730898,
+          "scenarioKeys": 7779240,
+          "undefinedSharpe": 0
         }
       ],
       "source": {
-        "label": "Checksum-verified accepted development evidence",
+        "label": "Audited retained-scope saved-result projection",
         "files": [
-          "results/report_data/development/coverage.json"
+          "results/retained_scope/development/coverage.csv",
+          "configs/configuration_space.json",
+          "configs/frozen_strategies.json"
         ],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
@@ -2607,1390 +2573,1406 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/coverage.json"
+                  "results/retained_scope/development/coverage.csv"
                 ]
+              }
+            ]
+          },
+          {
+            "label": "Post-evaluation retained scope",
+            "definition": "Post-evaluation scope amendment. The current publication retains 168 definitions across five families. This scope was narrowed after the development, validation and 2026 evaluations; it is not a new pre-evaluation freeze. The nine frozen IDs, baskets and settings, and the original development-ranked group memberships, are unchanged: there is no reranking or reselection. Population summaries are filtered or recomputed from saved retained-case results, not new strategy runs. This change supplies no new independent OOS evidence.",
+            "componentIds": [
+              "scope",
+              "methods"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "configs/configuration_space.json",
+                  "configs/frozen_strategies.json"
+                ],
+                "detail": "Current retained case definitions and unchanged frozen identities. Original development-ranked memberships are retained; filtered saved-result summaries are descriptive, not a new selection or OOS evaluation."
               }
             ]
           }
         ],
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/development/coverage.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/coverage.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "caveats": [
           "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
         ],
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/coverage.csv": {
+            "sha256": "48b60f1a613ab0960040bbebd279c66641ca3e020545253ee5028823ce33c06b",
+            "bytes": 153
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/development/coverage.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/development/coverage.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
     "strategy": {
       "rows": [
         {
-          "lookback_h": 24,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0024_r001",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 24,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0024_r004",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 24,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0024_r024",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0072_r001",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0072_r004",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0072_r024",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0168_r001",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0168_r004",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0168_r024",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0001_r001",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0001_r004",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0001_r024",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0004_r001",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0004_r004",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0004_r024",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0012_r001",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0012_r004",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0012_r024",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0001_r001",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0001_r004",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0001_r012",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0001_r024",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0001_r072",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0001_r168",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0002_r001",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0002_r004",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0002_r012",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0002_r024",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0002_r072",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0002_r168",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0004_r001",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0004_r004",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0004_r012",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0004_r024",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0004_r072",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0004_r168",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0008_r001",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0008_r004",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0008_r012",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0008_r024",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0008_r072",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0008_r168",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0012_r001",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0012_r004",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0012_r012",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0012_r024",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0012_r072",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0012_r168",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 24,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0024_r012",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 24,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0024_r072",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 24,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0024_r168",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0048_r001",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0048_r004",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0048_r012",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0048_r024",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0048_r072",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0048_r168",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0072_r012",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0072_r072",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0072_r168",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0168_r012",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0168_r072",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0168_r168",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0336_r001",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0336_r004",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0336_r012",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0336_r024",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0336_r072",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0336_r168",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0672_r001",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0672_r004",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0672_r012",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0672_r024",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0672_r072",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h0672_r168",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1440,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h1440_r001",
+          "lookback_h": 1440,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1440,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h1440_r004",
+          "lookback_h": 1440,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1440,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h1440_r012",
+          "lookback_h": 1440,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1440,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h1440_r024",
+          "lookback_h": 1440,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1440,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h1440_r072",
+          "lookback_h": 1440,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1440,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h1440_r168",
+          "lookback_h": 1440,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2160,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h2160_r001",
+          "lookback_h": 2160,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2160,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h2160_r004",
+          "lookback_h": 2160,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2160,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h2160_r012",
+          "lookback_h": 2160,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2160,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h2160_r024",
+          "lookback_h": 2160,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2160,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h2160_r072",
+          "lookback_h": 2160,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 2160,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "momentum_h2160_r168",
+          "lookback_h": 2160,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "momentum"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0001_r012",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 1,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0001_r072",
-          "report_family": "reversal"
-        },
-        {
           "lookback_h": 1,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
+          "rebalance_h": 72,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
           "experiment_id": "reversal_h0001_r168",
+          "lookback_h": 1,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0002_r001",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0002_r004",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0002_r012",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0002_r024",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 2,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0002_r072",
-          "report_family": "reversal"
-        },
-        {
           "lookback_h": 2,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
+          "rebalance_h": 72,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
           "experiment_id": "reversal_h0002_r168",
+          "lookback_h": 2,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0004_r012",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 4,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0004_r072",
-          "report_family": "reversal"
-        },
-        {
           "lookback_h": 4,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
+          "rebalance_h": 72,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
           "experiment_id": "reversal_h0004_r168",
+          "lookback_h": 4,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0008_r001",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0008_r004",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0008_r012",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0008_r024",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 8,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0008_r072",
-          "report_family": "reversal"
-        },
-        {
           "lookback_h": 8,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
+          "rebalance_h": 72,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
           "experiment_id": "reversal_h0008_r168",
+          "lookback_h": 8,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0012_r012",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 12,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0012_r072",
-          "report_family": "reversal"
-        },
-        {
           "lookback_h": 12,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
+          "rebalance_h": 72,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
           "experiment_id": "reversal_h0012_r168",
+          "lookback_h": 12,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 24,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0024_r001",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 24,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0024_r004",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 24,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0024_r012",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 24,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0024_r024",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 24,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0024_r072",
-          "report_family": "reversal"
-        },
-        {
           "lookback_h": 24,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
+          "rebalance_h": 72,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
           "experiment_id": "reversal_h0024_r168",
+          "lookback_h": 24,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0048_r001",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0048_r004",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0048_r012",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0048_r024",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 48,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0048_r072",
-          "report_family": "reversal"
-        },
-        {
           "lookback_h": 48,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
+          "rebalance_h": 72,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
           "experiment_id": "reversal_h0048_r168",
+          "lookback_h": 48,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0072_r001",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0072_r004",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0072_r012",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0072_r024",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 72,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0072_r072",
-          "report_family": "reversal"
-        },
-        {
           "lookback_h": 72,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
+          "rebalance_h": 72,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
           "experiment_id": "reversal_h0072_r168",
+          "lookback_h": 72,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0168_r001",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0168_r004",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0168_r012",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0168_r024",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 168,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0168_r072",
-          "report_family": "reversal"
-        },
-        {
           "lookback_h": 168,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
+          "rebalance_h": 72,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
           "experiment_id": "reversal_h0168_r168",
+          "lookback_h": 168,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0336_r001",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0336_r004",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0336_r012",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0336_r024",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0336_r072",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0336_r168",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0672_r001",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 4,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0672_r004",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 4,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 12,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0672_r012",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 12,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0672_r024",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 72,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0672_r072",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 72,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h0672_r168",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 1440,
-          "rebalance_h": 1,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "reversal_h1440_r001",
-          "report_family": "reversal"
-        },
-        {
           "lookback_h": 1440,
-          "rebalance_h": 4,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
-          "experiment_id": "reversal_h1440_r004",
-          "report_family": "reversal"
-        },
-        {
-          "lookback_h": 1440,
-          "rebalance_h": 12,
-          "buffer_l1": 0.0,
-          "phase_hours": 0,
-          "experiment_id": "reversal_h1440_r012",
-          "report_family": "reversal"
-        },
-        {
-          "lookback_h": 1440,
-          "rebalance_h": 24,
-          "buffer_l1": 0.0,
-          "phase_hours": 0,
-          "experiment_id": "reversal_h1440_r024",
-          "report_family": "reversal"
-        },
-        {
-          "lookback_h": 1440,
-          "rebalance_h": 72,
-          "buffer_l1": 0.0,
-          "phase_hours": 0,
-          "experiment_id": "reversal_h1440_r072",
-          "report_family": "reversal"
-        },
-        {
-          "lookback_h": 1440,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
-          "phase_hours": 0,
-          "experiment_id": "reversal_h1440_r168",
-          "report_family": "reversal"
-        },
-        {
-          "lookback_h": 2160,
           "rebalance_h": 1,
-          "buffer_l1": 0.0,
-          "phase_hours": 0,
-          "experiment_id": "reversal_h2160_r001",
           "report_family": "reversal"
         },
         {
-          "lookback_h": 2160,
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h1440_r004",
+          "lookback_h": 1440,
+          "phase_hours": 0,
           "rebalance_h": 4,
-          "buffer_l1": 0.0,
-          "phase_hours": 0,
-          "experiment_id": "reversal_h2160_r004",
           "report_family": "reversal"
         },
         {
-          "lookback_h": 2160,
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h1440_r012",
+          "lookback_h": 1440,
+          "phase_hours": 0,
           "rebalance_h": 12,
-          "buffer_l1": 0.0,
-          "phase_hours": 0,
-          "experiment_id": "reversal_h2160_r012",
           "report_family": "reversal"
         },
         {
-          "lookback_h": 2160,
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h1440_r024",
+          "lookback_h": 1440,
+          "phase_hours": 0,
           "rebalance_h": 24,
-          "buffer_l1": 0.0,
-          "phase_hours": 0,
-          "experiment_id": "reversal_h2160_r024",
           "report_family": "reversal"
         },
         {
-          "lookback_h": 2160,
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h1440_r072",
+          "lookback_h": 1440,
+          "phase_hours": 0,
           "rebalance_h": 72,
-          "buffer_l1": 0.0,
-          "phase_hours": 0,
-          "experiment_id": "reversal_h2160_r072",
           "report_family": "reversal"
         },
         {
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h1440_r168",
+          "lookback_h": 1440,
+          "phase_hours": 0,
+          "rebalance_h": 168,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h2160_r001",
           "lookback_h": 2160,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
-          "experiment_id": "reversal_h2160_r168",
+          "rebalance_h": 1,
           "report_family": "reversal"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 24,
-          "buffer_l1": 0.25,
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h2160_r004",
+          "lookback_h": 2160,
           "phase_hours": 0,
+          "rebalance_h": 4,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h2160_r012",
+          "lookback_h": 2160,
+          "phase_hours": 0,
+          "rebalance_h": 12,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h2160_r024",
+          "lookback_h": 2160,
+          "phase_hours": 0,
+          "rebalance_h": 24,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h2160_r072",
+          "lookback_h": 2160,
+          "phase_hours": 0,
+          "rebalance_h": 72,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.0,
+          "experiment_id": "reversal_h2160_r168",
+          "lookback_h": 2160,
+          "phase_hours": 0,
+          "rebalance_h": 168,
+          "report_family": "reversal"
+        },
+        {
+          "buffer_l1": 0.25,
           "experiment_id": "buffered_momentum_h0336_r024_b025",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "buffered_momentum"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 168,
           "buffer_l1": 0.25,
-          "phase_hours": 0,
           "experiment_id": "buffered_momentum_h0336_r168_b025",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "buffered_momentum"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 24,
           "buffer_l1": 0.25,
-          "phase_hours": 0,
           "experiment_id": "buffered_momentum_h0672_r024_b025",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "buffered_momentum"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 168,
           "buffer_l1": 0.25,
-          "phase_hours": 0,
           "experiment_id": "buffered_momentum_h0672_r168_b025",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "buffered_momentum"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "trend_long_cash_h0336_r024",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "trend_long_cash"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "trend_long_cash_h0336_r168",
+          "lookback_h": 336,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "trend_long_cash"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "trend_long_cash_h0672_r024",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 24,
           "report_family": "trend_long_cash"
         },
         {
-          "lookback_h": 672,
-          "rebalance_h": 168,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "trend_long_cash_h0672_r168",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 168,
           "report_family": "trend_long_cash"
         },
         {
-          "lookback_h": 336,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
-          "phase_hours": 0,
           "experiment_id": "trend_long_short_h0336_r024",
-          "report_family": "trend_long_short"
-        },
-        {
           "lookback_h": 336,
-          "rebalance_h": 168,
-          "buffer_l1": 0.0,
           "phase_hours": 0,
+          "rebalance_h": 24,
+          "report_family": "trend_long_short"
+        },
+        {
+          "buffer_l1": 0.0,
           "experiment_id": "trend_long_short_h0336_r168",
-          "report_family": "trend_long_short"
-        },
-        {
-          "lookback_h": 672,
-          "rebalance_h": 24,
-          "buffer_l1": 0.0,
+          "lookback_h": 336,
           "phase_hours": 0,
-          "experiment_id": "trend_long_short_h0672_r024",
-          "report_family": "trend_long_short"
-        },
-        {
-          "lookback_h": 672,
           "rebalance_h": 168,
-          "buffer_l1": 0.0,
-          "phase_hours": 0,
-          "experiment_id": "trend_long_short_h0672_r168",
           "report_family": "trend_long_short"
         },
         {
-          "lookback_h": 0,
-          "rebalance_h": 24,
           "buffer_l1": 0.0,
+          "experiment_id": "trend_long_short_h0672_r024",
+          "lookback_h": 672,
           "phase_hours": 0,
-          "experiment_id": "factor_residual_fixed",
-          "report_family": "factor_residual"
+          "rebalance_h": 24,
+          "report_family": "trend_long_short"
+        },
+        {
+          "buffer_l1": 0.0,
+          "experiment_id": "trend_long_short_h0672_r168",
+          "lookback_h": 672,
+          "phase_hours": 0,
+          "rebalance_h": 168,
+          "report_family": "trend_long_short"
         }
       ],
       "source": {
-        "label": "Checksum-verified accepted development evidence",
+        "label": "Audited retained-scope saved-result projection",
         "files": [
-          "results/report_data/development/strategy.json"
+          "results/retained_scope/development/strategy.csv"
         ],
         "filters": [
           "Development 2022-01-01 through 2024-01-01 exclusive;20bps/lag1 unless scenario-labelled otherwise"
@@ -3998,14 +3980,14 @@
         "metricDefinitions": [
           {
             "label": "Strategy",
-            "definition": "All169 frozen cases: 78 momentum,78 reversal,4 buffered momentum,4 long/cash,4 long/short,1 fixed BTC residual reversal. Full specification retained; no newly selected configuration.",
+            "definition": "The current retained space has168 definitions:78 momentum,78 reversal,4 buffered momentum,4 long/cash trend and4 long/short trend. This is a post-evaluation scope amendment; no newly selected configuration.",
             "componentIds": [
               "strategy-definitions"
             ],
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/strategy.json"
+                  "results/retained_scope/development/strategy.csv"
                 ]
               }
             ]
@@ -4013,20 +3995,27 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/development/strategy.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/strategy.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "caveats": [
           "Correlated historical research paths; not a portfolio or search-adjusted discovery.",
           "Lag1 is idealized observed-close, not1hour elapsed delay."
         ],
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component."
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/strategy.csv": {
+            "sha256": "1cb9bad083eca885cd8b89d6e473ea7231f945a734738022674c28d61c2b7cda",
+            "bytes": 6877
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/development/strategy.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/development/strategy.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
@@ -9940,101 +9929,85 @@
     "family_sharpe_display": {
       "rows": [
         {
-          "family": "Momentum",
           "cases": 78,
+          "family": "Momentum",
+          "grossReturn": -0.014407013524019725,
+          "maxDD": 0.7235917861591911,
+          "netReturn": -0.6086126351615002,
           "pairs": 515970,
           "positive": 0.09512762369905227,
-          "grossReturn": -0.014407013524019725,
-          "netReturn": -0.6086126351615002,
           "sharpe": -1.5339541198211517,
-          "maxDD": 0.7235917861591911,
-          "turnover": 268.6927083333333,
-          "undefinedSharpe": 0,
-          "sharpe365_sharpe": -1.5339541198211517,
+          "sharpe252_approx_sharpe": false,
           "sharpe252_sharpe": -1.2745773846060995,
-          "sharpe252_approx_sharpe": false
+          "sharpe365_sharpe": -1.5339541198211517,
+          "turnover": 268.6927083333333,
+          "undefinedSharpe": 0
         },
         {
-          "family": "Reversal",
           "cases": 78,
+          "family": "Reversal",
+          "grossReturn": -0.21028582942512083,
+          "maxDD": 0.8573220886487385,
+          "netReturn": -0.838126059436108,
           "pairs": 515970,
           "positive": 0.026158497587069014,
-          "grossReturn": -0.21028582942512083,
-          "netReturn": -0.838126059436108,
           "sharpe": -2.3068046389893015,
-          "maxDD": 0.8573220886487385,
-          "turnover": 268.6927083333333,
-          "undefinedSharpe": 0,
-          "sharpe365_sharpe": -2.3068046389893015,
+          "sharpe252_approx_sharpe": false,
           "sharpe252_sharpe": -1.9167463912825558,
-          "sharpe252_approx_sharpe": false
+          "sharpe365_sharpe": -2.3068046389893015,
+          "turnover": 268.6927083333333,
+          "undefinedSharpe": 0
         },
         {
-          "family": "Buffered momentum",
           "cases": 4,
+          "family": "Buffered momentum",
+          "grossReturn": 0.24509314381888253,
+          "maxDD": 0.39804190262016514,
+          "netReturn": -0.06992138217253105,
           "pairs": 26460,
           "positive": 0.4051020408163265,
-          "grossReturn": 0.24509314381888253,
-          "netReturn": -0.06992138217253105,
           "sharpe": 0.01965245831212769,
-          "maxDD": 0.39804190262016514,
-          "turnover": 62.255208333333336,
-          "undefinedSharpe": 0,
-          "sharpe365_sharpe": 0.01965245831212769,
+          "sharpe252_approx_sharpe": false,
           "sharpe252_sharpe": 0.016329418587482006,
-          "sharpe252_approx_sharpe": false
+          "sharpe365_sharpe": 0.01965245831212769,
+          "turnover": 62.255208333333336,
+          "undefinedSharpe": 0
         },
         {
-          "family": "Trend long/cash",
           "cases": 4,
+          "family": "Trend long/cash",
+          "grossReturn": 0.17525974887051576,
+          "maxDD": 0.45843157345734264,
+          "netReturn": 0.0405129657490063,
           "pairs": 26460,
           "positive": 0.5630385487528344,
-          "grossReturn": 0.17525974887051576,
-          "netReturn": 0.0405129657490063,
           "sharpe": 0.24590202686793922,
-          "maxDD": 0.45843157345734264,
-          "turnover": 20.75,
-          "undefinedSharpe": 0,
-          "sharpe365_sharpe": 0.24590202686793922,
+          "sharpe252_approx_sharpe": false,
           "sharpe252_sharpe": 0.20432238371719977,
-          "sharpe252_approx_sharpe": false
+          "sharpe365_sharpe": 0.24590202686793922,
+          "turnover": 20.75,
+          "undefinedSharpe": 0
         },
         {
-          "family": "Trend long/short",
           "cases": 4,
+          "family": "Trend long/short",
+          "grossReturn": 0.5815630741976621,
+          "maxDD": 0.5825943890608337,
+          "netReturn": 0.22042127915622417,
           "pairs": 26460,
           "positive": 0.6558956916099773,
-          "grossReturn": 0.5815630741976621,
-          "netReturn": 0.22042127915622417,
           "sharpe": 0.4613163788128537,
-          "maxDD": 0.5825943890608337,
-          "turnover": 41.5625,
-          "undefinedSharpe": 0,
-          "sharpe365_sharpe": 0.4613163788128537,
+          "sharpe252_approx_sharpe": false,
           "sharpe252_sharpe": 0.38331226207195723,
-          "sharpe252_approx_sharpe": false
-        },
-        {
-          "family": "BTC residual reversal",
-          "cases": 1,
-          "pairs": 6615,
-          "positive": 0.11337868480725624,
-          "grossReturn": -0.0046374863921534925,
-          "netReturn": -0.005774714856583322,
-          "sharpe": -0.6401975063842523,
-          "maxDD": 0.008138026943067927,
-          "turnover": 0.2857142857142857,
-          "undefinedSharpe": 1000,
-          "sharpe365_sharpe": -0.6401975063842523,
-          "sharpe252_sharpe": -0.5319463292772568,
-          "sharpe252_approx_sharpe": false
+          "sharpe365_sharpe": 0.4613163788128537,
+          "turnover": 41.5625,
+          "undefinedSharpe": 0
         }
       ],
       "source": {
-        "description": "Presentation-only365/252 annualization aliases for existing Sharpe values. Original reviewed fields and inference are retained.",
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
         "files": [
-          "results/report_data/development/family_sharpe_display.json",
-          "results/report_data/development/family.json"
+          "results/retained_scope/development/family_sharpe_display.csv"
         ],
         "metricDefinitions": [
           {
@@ -10048,18 +10021,18 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/family.json"
+                  "results/retained_scope/development/family_sharpe_display.csv"
                 ]
               }
             ]
           },
           {
             "label": "Sharpe annualization comparison",
-            "definition": "On the SAME contiguous UTC daily return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). Confidence interval endpoints receive the same positive scale; no bootstrap, return, risk, rank, correlation, t-statistic, alpha, CAGR or selection is recomputed. Approximate flags explicitly mark252 values derived only from rounded current365 displays.",
+            "definition": "On the same complete UTC daily-return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). These display aliases use full-precision saved or retained-scope aggregate Sharpe values; approximation flags are false. Scaling does not change the underlying strategy, daily observations, t-statistics, alpha, CAGR or selections.",
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/family.json"
+                  "results/retained_scope/development/family_sharpe_display.csv"
                 ]
               }
             ],
@@ -10072,19 +10045,27 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Deterministic display scaling only",
-            "detail": "Read the exact source rows and any listed full-precision companion CSV; multiply only the explicitly declared numeric Sharpe statistics or Sharpe CI endpoints by sqrt(252/365). Keep all original fields unmodified; do not resample or drop weekends."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/family_sharpe_display.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "limitations": [
           "252 is an alternative annualization convention, not a252-trading-day subsample or an independent result.",
           "Existing primary inference, risk limits, and365-day scientific outputs remain unchanged."
-        ]
+        ],
+        "label": "Audited retained-scope saved-result projection",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/family_sharpe_display.csv": {
+            "sha256": "d8e0eee785a4ff73b1cfdfedbe11c2317392a4f2ca0a127173fa618f6b50f55d",
+            "bytes": 1080
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "For declared Sharpe fields, write sharpe365_<field>=original fullprecision statistic and sharpe252_<field>=statistic*sqrt(252/365). Scale CI endpoints identically. For current group medians only, retain the original rounded365 display and flag252 as approximate. Counts, ranks and correlations are not scaling targets."
+          "code": "Read results/retained_scope/development/family_sharpe_display.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
@@ -10092,80 +10073,79 @@
       "rows": [
         {
           "costBps": 0,
+          "medianReturn": -0.08249892235651708,
+          "medianSharpe": -0.005394319506588462,
+          "positive": 0.4331290717345139,
           "scenario": "cost00_lag1",
-          "positive": 0.43168431080518993,
-          "medianReturn": -0.07885591235394296,
-          "medianSharpe": -0.008734402966446897,
-          "sharpe365_mediansharpe": -0.008734402966446897,
-          "sharpe252_mediansharpe": -0.0072575003027910865,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe252_approx_mediansharpe": false,
+          "sharpe252_mediansharpe": -0.0044821924981946785,
+          "sharpe365_mediansharpe": -0.005394319506588462
         },
         {
           "costBps": 5,
+          "medianReturn": -0.3728316966508587,
+          "medianSharpe": -0.702932143428697,
+          "positive": 0.22705701328150307,
           "scenario": "cost05_lag1",
-          "positive": 0.22683161364480045,
-          "medianReturn": -0.36873855230569474,
-          "medianSharpe": -0.6989930862557949,
-          "sharpe365_mediansharpe": -0.6989930862557949,
-          "sharpe252_mediansharpe": -0.5808001479480572,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe252_approx_mediansharpe": false,
+          "sharpe252_mediansharpe": -0.5840731488314453,
+          "sharpe365_mediansharpe": -0.702932143428697
         },
         {
           "costBps": 10,
+          "medianReturn": -0.518475391861718,
+          "medianSharpe": -1.1002939607915212,
+          "positive": 0.16232678256487781,
           "scenario": "cost10_lag1",
-          "positive": 0.1624844020448416,
-          "medianReturn": -0.5133796249227087,
-          "medianSharpe": -1.0896608585959044,
-          "sharpe365_mediansharpe": -1.0896608585959044,
-          "sharpe252_mediansharpe": -0.9054097963625769,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe252_approx_mediansharpe": false,
+          "sharpe252_mediansharpe": -0.9142449443058014,
+          "sharpe365_mediansharpe": -1.1002939607915212
         },
         {
           "costBps": 15,
+          "medianReturn": -0.6294199255525098,
+          "medianSharpe": -1.4494401267784858,
+          "positive": 0.12284130583450312,
           "scenario": "cost15_lag1",
-          "positive": 0.12278531399410521,
-          "medianReturn": -0.6242353287012056,
-          "medianSharpe": -1.4364450554667898,
-          "sharpe365_mediansharpe": -1.4364450554667898,
-          "sharpe252_mediansharpe": -1.1935561554739917,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe252_approx_mediansharpe": false,
+          "sharpe252_mediansharpe": -1.2043538865085823,
+          "sharpe365_mediansharpe": -1.4494401267784858
         },
         {
           "costBps": 20,
+          "medianReturn": -0.7154500511517711,
+          "medianSharpe": -1.788831800607432,
+          "positive": 0.09497894395853579,
           "scenario": "cost20_lag1",
-          "positive": 0.09508781816474124,
-          "medianReturn": -0.7103480782827848,
-          "medianSharpe": -1.7720099769645337,
-          "sharpe365_mediansharpe": -1.7720099769645337,
-          "sharpe252_mediansharpe": -1.4723803096527441,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe252_approx_mediansharpe": false,
+          "sharpe252_mediansharpe": -1.4863577263864143,
+          "sharpe365_mediansharpe": -1.788831800607432
         },
         {
           "costBps": 40,
+          "medianReturn": -0.8784777300498557,
+          "medianSharpe": -3.064602255026274,
+          "positive": 0.04217417125580391,
           "scenario": "cost40_lag1",
-          "positive": 0.04237187314110391,
-          "medianReturn": -0.8746488888710472,
-          "medianSharpe": -3.0316716135695594,
-          "sharpe365_mediansharpe": -3.0316716135695594,
-          "sharpe252_mediansharpe": -2.5190454044730943,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe252_approx_mediansharpe": false,
+          "sharpe252_mediansharpe": -2.5464077944683012,
+          "sharpe365_mediansharpe": -3.064602255026274
         },
         {
           "costBps": 20,
+          "medianReturn": -0.713215914651498,
+          "medianSharpe": -1.7626376520363545,
+          "positive": 0.0959255659935932,
           "scenario": "cost20_lag2",
-          "positive": 0.09602883888598174,
-          "medianReturn": -0.7080480477852777,
-          "medianSharpe": -1.7462240164783036,
-          "sharpe365_mediansharpe": -1.7462240164783036,
-          "sharpe252_mediansharpe": -1.4509545045055035,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe252_approx_mediansharpe": false,
+          "sharpe252_mediansharpe": -1.4645927537928403,
+          "sharpe365_mediansharpe": -1.7626376520363545
         }
       ],
       "source": {
-        "description": "Presentation-only365/252 annualization aliases for existing Sharpe values. Original reviewed fields and inference are retained.",
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
         "files": [
-          "results/report_data/development/cost_sharpe_display.json",
-          "results/report_data/development/cost.json"
+          "results/retained_scope/development/cost_sharpe_display.csv"
         ],
         "metricDefinitions": [
           {
@@ -10179,18 +10159,18 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/cost.json"
+                  "results/retained_scope/development/cost_sharpe_display.csv"
                 ]
               }
             ]
           },
           {
             "label": "Sharpe annualization comparison",
-            "definition": "On the SAME contiguous UTC daily return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). Confidence interval endpoints receive the same positive scale; no bootstrap, return, risk, rank, correlation, t-statistic, alpha, CAGR or selection is recomputed. Approximate flags explicitly mark252 values derived only from rounded current365 displays.",
+            "definition": "On the same complete UTC daily-return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). These display aliases use full-precision saved or retained-scope aggregate Sharpe values; approximation flags are false. Scaling does not change the underlying strategy, daily observations, t-statistics, alpha, CAGR or selections.",
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/cost.json"
+                  "results/retained_scope/development/cost_sharpe_display.csv"
                 ]
               }
             ],
@@ -10203,150 +10183,137 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Deterministic display scaling only",
-            "detail": "Read the exact source rows and any listed full-precision companion CSV; multiply only the explicitly declared numeric Sharpe statistics or Sharpe CI endpoints by sqrt(252/365). Keep all original fields unmodified; do not resample or drop weekends."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/cost_sharpe_display.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "limitations": [
           "252 is an alternative annualization convention, not a252-trading-day subsample or an independent result.",
           "Existing primary inference, risk limits, and365-day scientific outputs remain unchanged."
-        ]
+        ],
+        "label": "Audited retained-scope saved-result projection",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/cost_sharpe_display.csv": {
+            "sha256": "1d0fab41f2085c68f23b229367830ddc73be80d2633ba5922966124c221b697b",
+            "bytes": 993
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "For declared Sharpe fields, write sharpe365_<field>=original fullprecision statistic and sharpe252_<field>=statistic*sqrt(252/365). Scale CI endpoints identically. For current group medians only, retain the original rounded365 display and flag252 as approximate. Counts, ranks and correlations are not scaling targets."
+          "code": "Read results/retained_scope/development/cost_sharpe_display.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
     "luna_sharpe_display": {
       "rows": [
         {
-          "family": "Momentum",
-          "present": true,
           "baskets": 1890,
+          "family": "Momentum",
           "medianReturn": -0.589958079971741,
           "medianSharpe": -0.9142748339763853,
-          "sharpe365_mediansharpe": -0.9142748339763853,
+          "present": true,
+          "sharpe252_approx_mediansharpe": false,
           "sharpe252_mediansharpe": -0.7596798441642209,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe365_mediansharpe": -0.9142748339763853
         },
         {
-          "family": "Momentum",
-          "present": false,
           "baskets": 4725,
+          "family": "Momentum",
           "medianReturn": -0.615119429620631,
           "medianSharpe": -1.7971401862138376,
-          "sharpe365_mediansharpe": -1.7971401862138376,
+          "present": false,
+          "sharpe252_approx_mediansharpe": false,
           "sharpe252_mediansharpe": -1.4932612447248548,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe365_mediansharpe": -1.7971401862138376
         },
         {
-          "family": "Reversal",
-          "present": true,
           "baskets": 1890,
+          "family": "Reversal",
           "medianReturn": -0.9251703910162887,
           "medianSharpe": -2.1374147748181844,
-          "sharpe365_mediansharpe": -2.1374147748181844,
+          "present": true,
+          "sharpe252_approx_mediansharpe": false,
           "sharpe252_mediansharpe": -1.7759987070694339,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe365_mediansharpe": -2.1374147748181844
         },
         {
-          "family": "Reversal",
-          "present": false,
           "baskets": 4725,
+          "family": "Reversal",
           "medianReturn": -0.7319613142340404,
           "medianSharpe": -2.456762588287078,
-          "sharpe365_mediansharpe": -2.456762588287078,
+          "present": false,
+          "sharpe252_approx_mediansharpe": false,
           "sharpe252_mediansharpe": -2.04134790859465,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe365_mediansharpe": -2.456762588287078
         },
         {
-          "family": "Buffered momentum",
-          "present": true,
           "baskets": 1890,
+          "family": "Buffered momentum",
           "medianReturn": -0.03881196239707582,
           "medianSharpe": 0.1240297970341883,
-          "sharpe365_mediansharpe": 0.1240297970341883,
+          "present": true,
+          "sharpe252_approx_mediansharpe": false,
           "sharpe252_mediansharpe": 0.10305756363527532,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe365_mediansharpe": 0.1240297970341883
         },
         {
-          "family": "Buffered momentum",
-          "present": false,
           "baskets": 4725,
+          "family": "Buffered momentum",
           "medianReturn": -0.08304723013711285,
           "medianSharpe": -0.040153941192388104,
-          "sharpe365_mediansharpe": -0.040153941192388104,
+          "present": false,
+          "sharpe252_approx_mediansharpe": false,
           "sharpe252_mediansharpe": -0.033364299939158744,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe365_mediansharpe": -0.040153941192388104
         },
         {
-          "family": "Trend long/cash",
-          "present": true,
           "baskets": 1890,
+          "family": "Trend long/cash",
           "medianReturn": 0.04725357534574581,
           "medianSharpe": 0.2527610636190768,
-          "sharpe365_mediansharpe": 0.2527610636190768,
+          "present": true,
+          "sharpe252_approx_mediansharpe": false,
           "sharpe252_mediansharpe": 0.2100216240075165,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe365_mediansharpe": 0.2527610636190768
         },
         {
-          "family": "Trend long/cash",
-          "present": false,
           "baskets": 4725,
+          "family": "Trend long/cash",
           "medianReturn": 0.03742160509864456,
           "medianSharpe": 0.2429111282824832,
-          "sharpe365_mediansharpe": 0.2429111282824832,
+          "present": false,
+          "sharpe252_approx_mediansharpe": false,
           "sharpe252_mediansharpe": 0.2018372170180047,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe365_mediansharpe": 0.2429111282824832
         },
         {
-          "family": "Trend long/short",
-          "present": true,
           "baskets": 1890,
+          "family": "Trend long/short",
           "medianReturn": 0.5233412173533587,
           "medianSharpe": 0.6467943779036456,
-          "sharpe365_mediansharpe": 0.6467943779036456,
+          "present": true,
+          "sharpe252_approx_mediansharpe": false,
           "sharpe252_mediansharpe": 0.5374277339288843,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe365_mediansharpe": 0.6467943779036456
         },
         {
-          "family": "Trend long/short",
-          "present": false,
           "baskets": 4725,
+          "family": "Trend long/short",
           "medianReturn": 0.14357280454793092,
           "medianSharpe": 0.40744827538691797,
-          "sharpe365_mediansharpe": 0.40744827538691797,
-          "sharpe252_mediansharpe": 0.33855273146335907,
-          "sharpe252_approx_mediansharpe": false
-        },
-        {
-          "family": "BTC residual reversal",
-          "present": true,
-          "baskets": 1890,
-          "medianReturn": -0.010527603854744902,
-          "medianSharpe": -0.5506430982457701,
-          "sharpe365_mediansharpe": -0.5506430982457701,
-          "sharpe252_mediansharpe": -0.4575347012955788,
-          "sharpe252_approx_mediansharpe": false
-        },
-        {
-          "family": "BTC residual reversal",
           "present": false,
-          "baskets": 4725,
-          "medianReturn": -0.004780494993623089,
-          "medianSharpe": -0.7780896191517939,
-          "sharpe365_mediansharpe": -0.7780896191517939,
-          "sharpe252_mediansharpe": -0.6465222257646656,
-          "sharpe252_approx_mediansharpe": false
+          "sharpe252_approx_mediansharpe": false,
+          "sharpe252_mediansharpe": 0.33855273146335907,
+          "sharpe365_mediansharpe": 0.40744827538691797
         }
       ],
       "source": {
-        "description": "Presentation-only365/252 annualization aliases for existing Sharpe values. Original reviewed fields and inference are retained.",
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
         "files": [
-          "results/report_data/development/luna_sharpe_display.json",
-          "results/report_data/development/luna.json"
+          "results/retained_scope/development/luna_sharpe_display.csv"
         ],
         "metricDefinitions": [
           {
@@ -10359,18 +10326,18 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/luna.json"
+                  "results/retained_scope/development/luna_sharpe_display.csv"
                 ]
               }
             ]
           },
           {
             "label": "Sharpe annualization comparison",
-            "definition": "On the SAME contiguous UTC daily return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). Confidence interval endpoints receive the same positive scale; no bootstrap, return, risk, rank, correlation, t-statistic, alpha, CAGR or selection is recomputed. Approximate flags explicitly mark252 values derived only from rounded current365 displays.",
+            "definition": "On the same complete UTC daily-return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). These display aliases use full-precision saved or retained-scope aggregate Sharpe values; approximation flags are false. Scaling does not change the underlying strategy, daily observations, t-statistics, alpha, CAGR or selections.",
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/luna.json"
+                  "results/retained_scope/development/luna_sharpe_display.csv"
                 ]
               }
             ],
@@ -10382,19 +10349,27 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Deterministic display scaling only",
-            "detail": "Read the exact source rows and any listed full-precision companion CSV; multiply only the explicitly declared numeric Sharpe statistics or Sharpe CI endpoints by sqrt(252/365). Keep all original fields unmodified; do not resample or drop weekends."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/luna_sharpe_display.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "limitations": [
           "252 is an alternative annualization convention, not a252-trading-day subsample or an independent result.",
           "Existing primary inference, risk limits, and365-day scientific outputs remain unchanged."
-        ]
+        ],
+        "label": "Audited retained-scope saved-result projection",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/luna_sharpe_display.csv": {
+            "sha256": "bc5c4c96187faf9d472800c2f718226e965efb7487b52643df544eb7688a97ba",
+            "bytes": 1242
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "For declared Sharpe fields, write sharpe365_<field>=original fullprecision statistic and sharpe252_<field>=statistic*sqrt(252/365). Scale CI endpoints identically. For current group medians only, retain the original rounded365 display and flag252 as approximate. Counts, ranks and correlations are not scaling targets."
+          "code": "Read results/retained_scope/development/luna_sharpe_display.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
@@ -10402,48 +10377,47 @@
       "rows": [
         {
           "metric": "Total net return",
-          "value": -0.7103480782827848,
-          "unit": "fraction"
+          "unit": "fraction",
+          "value": -0.7154500511517711
         },
         {
           "metric": "CAGR",
-          "value": -0.46180679889354304,
-          "unit": "fraction"
+          "unit": "fraction",
+          "value": -0.46656776546152
         },
         {
           "metric": "Annual volatility",
-          "value": 0.27153502012898373,
-          "unit": "fraction"
+          "unit": "fraction",
+          "value": 0.2719637352811991
         },
         {
           "metric": "Maximum drawdown",
-          "value": 0.7684626171459502,
-          "unit": "fraction"
+          "unit": "fraction",
+          "value": 0.7722170330372333
         },
         {
           "metric": "Longest underwater span (days)",
-          "value": 708.5833333333334,
-          "unit": "days"
+          "unit": "days",
+          "value": 709.0833333333334
         },
         {
           "metric": "Full-L1 turnover (times/year)",
-          "value": 189.2291666666666,
-          "unit": "times/year"
+          "unit": "times/year",
+          "value": 190.91666666666674
         },
         {
           "metric": "Sharpe",
-          "value": -1.7720099769645337,
+          "sharpe252_approx_value": false,
+          "sharpe252_value": -1.4863577263864143,
+          "sharpe365_value": -1.788831800607432,
           "unit": "ratio",
-          "sharpe365_value": -1.7720099769645337,
-          "sharpe252_value": -1.4723803096527441,
-          "sharpe252_approx_value": false
+          "value": -1.788831800607432
         }
       ],
       "source": {
-        "description": "Presentation-only365/252 annualization aliases for existing Sharpe values. Original reviewed fields and inference are retained.",
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
         "files": [
-          "results/report_data/development/metrics_sharpe_display.json",
-          "results/report_data/development/metrics.json"
+          "results/retained_scope/development/metrics_sharpe_display.csv"
         ],
         "metricDefinitions": [
           {
@@ -10455,18 +10429,18 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/metrics.json"
+                  "results/retained_scope/development/metrics_sharpe_display.csv"
                 ]
               }
             ]
           },
           {
             "label": "Sharpe annualization comparison",
-            "definition": "On the SAME contiguous UTC daily return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). Confidence interval endpoints receive the same positive scale; no bootstrap, return, risk, rank, correlation, t-statistic, alpha, CAGR or selection is recomputed. Approximate flags explicitly mark252 values derived only from rounded current365 displays.",
+            "definition": "On the same complete UTC daily-return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). These display aliases use full-precision saved or retained-scope aggregate Sharpe values; approximation flags are false. Scaling does not change the underlying strategy, daily observations, t-statistics, alpha, CAGR or selections.",
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/development/metrics.json"
+                  "results/retained_scope/development/metrics_sharpe_display.csv"
                 ]
               }
             ],
@@ -10477,19 +10451,27 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Deterministic display scaling only",
-            "detail": "Read the exact source rows and any listed full-precision companion CSV; multiply only the explicitly declared numeric Sharpe statistics or Sharpe CI endpoints by sqrt(252/365). Keep all original fields unmodified; do not resample or drop weekends."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/development/metrics_sharpe_display.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "limitations": [
           "252 is an alternative annualization convention, not a252-trading-day subsample or an independent result.",
           "Existing primary inference, risk limits, and365-day scientific outputs remain unchanged."
-        ]
+        ],
+        "label": "Audited retained-scope saved-result projection",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/development/metrics_sharpe_display.csv": {
+            "sha256": "82b2e8b2aa6a5e898f1d2e1de93566380713cc349090b672d316d5265df9d578",
+            "bytes": 457
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "For declared Sharpe fields, write sharpe365_<field>=original fullprecision statistic and sharpe252_<field>=statistic*sqrt(252/365). Scale CI endpoints identically. For current group medians only, retain the original rounded365 display and flag252 as approximate. Counts, ranks and correlations are not scaling targets."
+          "code": "Read results/retained_scope/development/metrics_sharpe_display.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },

@@ -8,11 +8,10 @@ and two of 17–22. Each basket's signals and weights were recomputed in its own
 cross-section. The inherited liquidity-ranked inventory has 30 names; the study
 is not an unrestricted census of every historical exchange listing.
 
-The complete basket grid uses 169 definitions. The frozen IDs A01–A04 were
+The complete basket grid uses 168 retained definitions. The frozen IDs A01–A04 were
 selected from 2022–2023 development only. B01/B03/B04/B05/B06 used development
 eligibility and 2024–2025 validation; their validation statistics are selection
-statistics. B02 is an empty family slot, not a tenth strategy. The nine identities
-use different eight-coin baskets and remain fixed.
+statistics. The nine identities use different eight-coin baskets and remain fixed; identifier gaps do not imply additional selected strategies.
 
 | Period | Start UTC | Closing endpoint UTC | Complete days |
 | --- | --- | --- | ---: |
@@ -32,6 +31,8 @@ the wider project, and later explanatory diagnoses share those observations.
 Neither a frozen file nor a period label creates additional independent tests.
 No new OOS winner or deployment recommendation is selected.
 
+The current reporting scope contains **168 retained configurations**. This scope was narrowed after evaluation; the nine frozen selections and historical development-ranked group memberships were not reselected or reranked. Grid-wide summaries are recomputed for the retained scope, not presented as a newly independent test.
+
 ## Strategy mechanics and accounting
 
 Cross-sectional momentum and reversal rank trailing simple returns, demean the
@@ -42,9 +43,7 @@ whole-target deferral follow the unchanged engine. Buffered momentum skips an
 entire ordinary rebalance only when full-L1 target change is below 0.25.
 
 Time-series long/cash and theoretical long/short trend retain fixed 1/N slots;
-inactive positions do not cause the remaining slots to be rescaled. The fixed
-BTC-factor residual model retains monthly formation, eligibility and exit rules.
-Dollar neutrality is not beta neutrality. Exact nine-strategy definitions,
+inactive positions do not cause the remaining slots to be rescaled. Dollar neutrality is not beta neutrality. Exact nine-strategy definitions,
 baskets and risk limits are in the frozen registry.
 
 Primary costs are **20 bps one-way on full-L1 weight changes**, including entry,
@@ -195,3 +194,5 @@ basket campaign or reselect candidates. `reproduce_diagnostics.py` reconciles
 raw factor models and attribution from compact daily inputs. The fixed all-22
 folders contain saved raw evidence; `verify_fixed_all22.py` checks those
 projections without loading prices or rerunning strategies or bootstrap draws.
+
+Current scope and preserved financial-file checks are available through `python scripts/verify_reporting_scope.py`. The current grid has 168 retained definitions; summary CSVs are in `results/retained_scope/`, with scope and source hashes in `metadata/reporting_scope.json` and `metadata/retained_scope_sources.json`. Frozen group labels are not recalculated quintiles of the narrower grid.

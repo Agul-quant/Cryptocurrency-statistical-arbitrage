@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ffffff">
-<meta name="data-app-snapshot-sha256" content="afef5020bd274ae0a5dfb2952822ffed3b73c64bddc6a56f3c7a0d3c87ed1c90">
+<meta name="data-app-snapshot-sha256" content="244cca40bce70521ff12779e60143fd2541dd71eca2239e3f217880a7be84e6f">
 <meta name="data-app-runtime-sha256" content="9e3ede84b28aded3c7379b6e6a5611f0d95b9977eb0f781e279ceefabfcbd27e">
 <meta name="data-app-bootstrap" content="deferred-content-v1">
 
@@ -180,61 +180,61 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/validation/development_groups.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/validation/development_groups.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ],
       "rows": [
         {
-          "Cases": 224867,
+          "Cases": 223512,
           "Group": "Q1 (best)",
           "Median Sharpe": "0.14",
-          "Median annual TO": "60.01×",
-          "Median net": "-1.55%",
+          "Median annual TO": "60.81×",
+          "Median net": "-1.72%",
           "Period": "Development",
-          "Positive fraction": "47.19%"
+          "Positive fraction": "47.14%"
         },
         {
-          "Cases": 224867,
+          "Cases": 223512,
           "Group": "Q1 (best)",
-          "Median Sharpe": "-0.15",
-          "Median annual TO": "64.77×",
-          "Median net": "-16.27%",
+          "Median Sharpe": "-0.14",
+          "Median annual TO": "64.93×",
+          "Median net": "-16.53%",
           "Period": "Validation",
-          "Positive fraction": "30.73%"
+          "Positive fraction": "30.92%"
         },
         {
-          "Cases": 223954,
+          "Cases": 219923,
           "Group": "Q2",
           "Median Sharpe": "-0.74",
-          "Median annual TO": "70.25×",
-          "Median net": "-37.25%",
+          "Median annual TO": "70.69×",
+          "Median net": "-37.53%",
           "Period": "Development",
           "Positive fraction": "0.08%"
         },
         {
-          "Cases": 223954,
+          "Cases": 219923,
           "Group": "Q2",
-          "Median Sharpe": "-0.76",
-          "Median annual TO": "69.73×",
-          "Median net": "-35.59%",
+          "Median Sharpe": "-0.75",
+          "Median annual TO": "70.05×",
+          "Median net": "-36.18%",
           "Period": "Validation",
-          "Positive fraction": "12.99%"
+          "Positive fraction": "13.23%"
         },
         {
-          "Cases": 219294,
+          "Cases": 219065,
           "Group": "Q3",
           "Median Sharpe": "-1.77",
-          "Median annual TO": "159.44×",
-          "Median net": "-69.06%",
+          "Median annual TO": "159.47×",
+          "Median net": "-69.08%",
           "Period": "Development",
           "Positive fraction": "0.00%"
         },
         {
-          "Cases": 219294,
+          "Cases": 219065,
           "Group": "Q3",
           "Median Sharpe": "-1.63",
           "Median annual TO": "162.09×",
-          "Median net": "-59.56%",
+          "Median net": "-59.58%",
           "Period": "Validation",
           "Positive fraction": "2.68%"
         },
@@ -276,15 +276,15 @@
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/validation/development_groups.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/validation/development_groups.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "files": [
-          "results/report_data/validation/development_groups.json"
+          "results/retained_scope/validation/development_groups.csv"
         ],
         "metricDefinitions": [
           {
@@ -294,26 +294,36 @@
               "groups-text",
               "sign-text"
             ],
-            "definition": "Development-only within-basket five ranked groups across169 configurations, using defined Sharpe average ranks and keeping ties together. Q1 means best approximately20%, not first calendar quarter. Descriptive constituent distributions, not portfolios or independent trials. Undefined group retained in saved full-grid results.",
+            "definition": "Retained subsets of the original development-only within-basket ranked groups, using the original defined-Sharpe average ranks and keeping original ties/membership. Q1 originally meant approximately the best20%; these are not newly computed168-definition quintiles. Constituent distributions, not portfolios or independent trials. All retained cases have defined development Sharpe.",
             "label": "Development Groups",
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/validation/development_groups.json"
+                  "results/retained_scope/validation/development_groups.csv"
                 ]
               }
             ]
           }
         ],
         "period": "2022–2023 development; 2024–2025 validation",
-        "type": "local reviewed research artifacts"
+        "type": "local saved-result retained-scope projection",
+        "label": "Audited retained-scope saved-result projection",
+        "sourcePins": {
+          "results/retained_scope/validation/development_groups.csv": {
+            "sha256": "c59780e5cf549b7839f78d6cb0b1c257746e619db4448275ebf0627b6f402400",
+            "bytes": 619
+          }
+        },
+        "limitations": [
+          "Original development-ranked memberships retained without reranking or reselection. Current counts are retained subsets, not a newly frozen selection universe."
+        ]
       }
     },
     "eligibility": {
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/validation/eligibility.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/validation/eligibility.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ],
       "rows": [
@@ -324,14 +334,6 @@
           "Full grid": 26460,
           "ID": "B01",
           "Selected": 1
-        },
-        {
-          "Dev Q1": 1355,
-          "Eligible": 0,
-          "Family": "BTC residual reversal",
-          "Full grid": 6615,
-          "ID": "B02",
-          "Selected": 0
         },
         {
           "Dev Q1": 107412,
@@ -367,37 +369,46 @@
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/validation/eligibility.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/validation/eligibility.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "files": [
-          "results/report_data/validation/eligibility.json"
+          "results/retained_scope/validation/eligibility.csv"
         ],
         "metricDefinitions": [
           {
             "componentIds": [
               "summary",
               "eligibility-table",
-              "b-rule",
-              "b02-note"
+              "b-rule"
             ],
-            "definition": "Track B eligibility requires development Q1, evaluated statuses, defined finite Sharpes and strictly positive net returns in both development and validation at20bps lag1. Select one per existing family by validation Sharpe, then lower validation total turnover, lexical experimentID and numeric basketID. B02 had zero eligible pairs and no candidate.",
+            "definition": "Track B eligibility requires development Q1, evaluated statuses, defined finite Sharpes and strictly positive net returns in both development and validation at20bps lag1. Select one per existing family by validation Sharpe, then lower validation total turnover, lexical experimentID and numeric basketID.",
             "label": "Eligibility",
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/validation/eligibility.json"
+                  "results/retained_scope/validation/eligibility.csv"
                 ]
               }
             ]
           }
         ],
         "period": "2022–2023 development; 2024–2025 validation",
-        "type": "local reviewed research artifacts"
+        "type": "local saved-result retained-scope projection",
+        "label": "Audited retained-scope saved-result projection",
+        "sourcePins": {
+          "results/retained_scope/validation/eligibility.csv": {
+            "sha256": "961879c6b2c0ac224b692a7b4e749d15dad1092a5438394172a9cdcdf13264fd",
+            "bytes": 234
+          }
+        },
+        "limitations": [
+          "Original development-ranked memberships retained without reranking or reselection. Current counts are retained subsets, not a newly frozen selection universe."
+        ]
       }
     },
     "frozen_nine": {
@@ -557,7 +568,7 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/validation/rank_transfer.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/validation/rank_transfer.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ],
       "rows": [
@@ -571,21 +582,21 @@
         {
           "10th percentile": "-0.23",
           "90th percentile": "0.62",
-          "Cohorts": 169,
+          "Cohorts": 168,
           "Comparison": "Across baskets within setting",
           "Median Spearman": "0.14"
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/validation/rank_transfer.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/validation/rank_transfer.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "files": [
-          "results/report_data/validation/rank_transfer.json"
+          "results/retained_scope/validation/rank_transfer.csv"
         ],
         "metricDefinitions": [
           {
@@ -600,14 +611,21 @@
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/validation/rank_transfer.json"
+                  "results/retained_scope/validation/rank_transfer.csv"
                 ]
               }
             ]
           }
         ],
         "period": "2022–2023 development; 2024–2025 validation",
-        "type": "local reviewed research artifacts"
+        "type": "local saved-result retained-scope projection",
+        "label": "Audited retained-scope saved-result projection",
+        "sourcePins": {
+          "results/retained_scope/validation/rank_transfer.csv": {
+            "sha256": "429a1475d70d9f19199c4533bb04d9ac74aa4656a4b2468b35eb5f0a2da1e4e5",
+            "bytes": 167
+          }
+        }
       }
     },
     "reference_comparison": {
@@ -829,7 +847,7 @@
             "neighborhood_gate": "Atleastonedeclaredparameterneighbor ANDall28declaredsame-tierbasketneighbors. Everyexpectedneighbor evaluatedfiniteprimarynetreturn anddefinedfiniteprimarySharpe; eachkind strictly>0.5 positiveprimarynetreturnfraction. Centerexcluded.",
             "no_qualifier_policy": "Selectnoneforfamilywithzeroeligiblepairs; neverrelaxrulesaftercounts",
             "robust_score": "min(2022Sharpe,2023Sharpe,medianparameterneighborfull20lag1Sharpe,medianbasketneighborfull20lag1Sharpe), finite andstrictly>0",
-            "scope": "All169cases×6615baskets; only2022–2023saveddevelopmentresults",
+            "scope": "Original development selection over the complete earlier grid; current retained scope168; only2022–2023saveddevelopmentresults; no reselection",
             "search_bias": "Ruledesignedafterdevelopmentrobustness; thresholds are heuristics, not calibratedsignificance. Candidateis optimizedovercorrelatedconfigurationsandbaskets; freeze doesnoterase search/priorinspectionbias.",
             "stress_gate": "Full2022–23 evaluatedfinite netreturn>0 at40bpslag1 and20bpslag2; definedfiniteSharpe>0 at20bpslag2. Noannualstressgate andno40bpsSharpegate."
           },
@@ -852,7 +870,9 @@
           }
         ],
         "files": [
-          "results/report_data/validation/rules.json"
+          "results/report_data/validation/rules.json",
+          "configs/configuration_space.json",
+          "configs/frozen_strategies.json"
         ],
         "metricDefinitions": [
           {
@@ -860,7 +880,6 @@
               "opening-scope",
               "a-rule",
               "b-rule",
-              "b02-note",
               "methods-text",
               "method-notes"
             ],
@@ -873,6 +892,23 @@
                 ]
               }
             ]
+          },
+          {
+            "label": "Post-evaluation retained scope",
+            "definition": "Post-evaluation scope amendment. The current publication retains 168 definitions across five families. This scope was narrowed after the development, validation and 2026 evaluations; it is not a new pre-evaluation freeze. The nine frozen IDs, baskets and settings, and the original development-ranked group memberships, are unchanged: there is no reranking or reselection. Population summaries are filtered or recomputed from saved retained-case results, not new strategy runs. This change supplies no new independent OOS evidence.",
+            "componentIds": [
+              "methods-text",
+              "method-notes"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "configs/configuration_space.json",
+                  "configs/frozen_strategies.json"
+                ],
+                "detail": "Current retained case definitions and unchanged frozen identities. Original development-ranked memberships are retained; filtered saved-result summaries are descriptive, not a new selection or OOS evaluation."
+              }
+            ]
           }
         ],
         "period": "2022–2023 development; 2024–2025 validation",
@@ -883,16 +919,16 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/validation/sign_flips.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/validation/sign_flips.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ],
       "rows": [
         {
-          "Dev negative": 1010633,
-          "Dev positive": 106302,
+          "Dev negative": 1005768,
+          "Dev positive": 105552,
           "Family": "All families",
-          "Negative → positive": "6.40%",
-          "Positive → negative": "62.90%"
+          "Negative → positive": "6.43%",
+          "Positive → negative": "62.71%"
         },
         {
           "Dev negative": 466887,
@@ -928,25 +964,18 @@
           "Family": "Long/short trend",
           "Negative → positive": "24.91%",
           "Positive → negative": "49.43%"
-        },
-        {
-          "Dev negative": 4865,
-          "Dev positive": 750,
-          "Family": "BTC residual reversal",
-          "Negative → positive": "0.00%",
-          "Positive → negative": "90.40%"
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/validation/sign_flips.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/validation/sign_flips.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "files": [
-          "results/report_data/validation/sign_flips.json"
+          "results/retained_scope/validation/sign_flips.csv"
         ],
         "metricDefinitions": [
           {
@@ -955,19 +984,26 @@
               "sign-table",
               "rank-interpretation"
             ],
-            "definition": "Full-grid conditional proportions: positive-to-negative divides by strictly positive development results; negative-to-positive divides by strictly negative development results. Exact zero is a separate state, never counted as strictly negative. All1,117,935 pairs jointly available.",
+            "definition": "Full-grid conditional proportions: positive-to-negative divides by strictly positive development results; negative-to-positive divides by strictly negative development results. Exact zero is a separate state, never counted as strictly negative. All1,111,320 retained pairs jointly available.",
             "label": "Sign Flips",
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/validation/sign_flips.json"
+                  "results/retained_scope/validation/sign_flips.csv"
                 ]
               }
             ]
           }
         ],
         "period": "2022–2023 development; 2024–2025 validation",
-        "type": "local reviewed research artifacts"
+        "type": "local saved-result retained-scope projection",
+        "label": "Audited retained-scope saved-result projection",
+        "sourcePins": {
+          "results/retained_scope/validation/sign_flips.csv": {
+            "sha256": "edac1ae8dd4af5ee735e34d89fcd742a92dd3686bfcc5bcfd76a8e233718e4c2",
+            "bytes": 316
+          }
+        }
       }
     },
     "track_a_performance": {
@@ -1481,7 +1517,7 @@
         "metricDefinitions": [
           {
             "label": "Summary",
-            "definition": "Annual alpha is 365 times the daily arithmetic intercept. All displayed alpha values/intervals are percent/year. Joint and matched BTC use the same complete-case dates and corrected calendar HAC27; full-calendar BTC-only retains original full-period saved HAC7. R2 is joint in-sample fit; VIF and condition diagnostics are descriptive.",
+            "definition": "Annual alpha is 365 times the daily arithmetic intercept. All displayed alpha values/intervals are percent/year. Joint and matched BTC use the same complete-case dates and corrected calendar HAC27; full-calendar BTC-only retains original full-period saved HAC7. R2 is joint in-sample fit; VIF and condition diagnostics are descripti</script><script type="application/json" data-app-snapshot-chunk>ve.",
             "componentIds": [
               "basket-attribution-20261016-overview",
               "basket-attribution-20261016-interpretation",
@@ -1560,7 +1596,7 @@
           "joint_beta": 0.013764241952286633,
           "joint_beta_ci95_low": -0.0870946851084413,
           "joint_beta_ci95_high": 0.11462316901301457,
-          "joint_beta_holm243_p"</script><script type="application/json" data-app-snapshot-chunk>: 1.0,
+          "joint_beta_holm243_p": 1.0,
           "joint_beta_bonferroni243_ci95_low": -0.17724528509729257,
           "joint_beta_bonferroni243_ci95_high": 0.2047737690018658,
           "vif": 3.292516250840022
@@ -2897,7 +2933,7 @@
           "net_ci95_high": 0.5828670360050108,
           "net_ci95_low": -0.16046850320899939,
           "net_linked_contribution": 0.15788342033241057,
-          "net_linked_contribution_saved": 0.15788342033240937,
+          "net_linked_contribution_saved":</script><script type="application/json" data-app-snapshot-chunk> 0.15788342033240937,
           "ordinary_turnover": 18.5625,
           "period": "validation",
           "strategy_id": "B01",
@@ -2978,7 +3014,7 @@
           "n_calendar_days": 731,
           "net_ci95_high": 1.445384058003899,
           "net_ci95_low": -0.2612941403989234,
-       </script><script type="application/json" data-app-snapshot-chunk>   "net_linked_contribution": 0.2872706824088478,
+          "net_linked_contribution": 0.2872706824088478,
           "net_linked_contribution_saved": 0.28727068240884646,
           "ordinary_turnover": 16.604166666666668,
           "period": "validation",
@@ -4323,7 +4359,7 @@
           "fees_linked_contribution": 0.017867895002671937,
           "forced_turnover": 0.0,
           "full_l1_turnover": 5.75,
-          "gross_ci95_high": 0.9588494346702321,
+          "gross_c</script><script type="application/json" data-app-snapshot-chunk>i95_high": 0.9588494346702321,
           "gross_ci95_low": -0.0902407650546396,
           "gross_linked_contribution": 0.11627670686097978,
           "gross_linked_contribution_saved": 0.11627670686097927,
@@ -4404,7 +4440,7 @@
           "fees_ci95_low": 0.006289994073988567,
           "fees_linked_contribution": 0.013611334911642394,
           "forced_turnover": 0.0,
-          </script><script type="application/json" data-app-snapshot-chunk>"full_l1_turnover": 4.5,
+          "full_l1_turnover": 4.5,
           "gross_ci95_high": 2.6191271916812533,
           "gross_ci95_low": 0.015090792913098174,
           "gross_linked_contribution": 0.5379543677704248,
@@ -5661,7 +5697,7 @@
           "bonferroni243_ci95_high": 0.22076166932450905,
           "bonferroni243_ci95_low": -0.14938406843111432,
           "ci95_high": 0.13341298871832108,
-          "ci95_low": -0.062035387824926326,
+          "ci95_low"</script><script type="application/json" data-app-snapshot-chunk>: -0.062035387824926326,
           "ci_scope": "marginal_approximate_conditional_not_search_adjusted",
           "coefficient_kind": "conditional_coin_beta",
           "estimate": 0.03568880044669737,
@@ -5744,7 +5780,7 @@
           "hac7_ci95_high": 0.2270734872106189,
           "hac7_ci95_low": 0.008117555118450998,
           "hac7_se": 0.05585713151345238,
-          "model_type": "joint_eight_</script><script type="application/json" data-app-snapshot-chunk>coin",
+          "model_type": "joint_eight_coin",
           "multiplicity_family_size": 243,
           "n_calendar_days": 731,
           "n_fit_days": 727,
@@ -7051,7 +7087,7 @@
         {
           "Annual TO selected / reference": "22.34 / 21.41",
           "ID": "A03",
-          "Max DD selected / reference": "43.11% / 53.46%",
+          </script><script type="application/json" data-app-snapshot-chunk>"Max DD selected / reference": "43.11% / 53.46%",
           "Period": "Validation",
           "Reference Sharpe": "-0.73",
           "Reference annual TO": "21.41×",
@@ -7136,7 +7172,7 @@
               "diagnosis-text",
               "attribution-limit"
             ],
-            "definition": "Sa</script><script type="application/json" data-app-snapshot-chunk>me exact strategy settings on selected basket versus the predefined liquidity-tier reference basket0; basket changes alter all cross-sectional ranks, not just the substituted coin P&L.",
+            "definition": "Same exact strategy settings on selected basket versus the predefined liquidity-tier reference basket0; basket changes alter all cross-sectional ranks, not just the substituted coin P&L.",
             "label": "Reference Comparison",
             "sourceLineage": [
               {
@@ -7189,76 +7225,76 @@
     "development_groups_sharpe_display": {
       "rows": [
         {
-          "Cases": 224867,
+          "Cases": 223512,
           "Group": "Q1 (best)",
           "Median Sharpe": "0.14",
-          "Median annual TO": "60.01×",
-          "Median net": "-1.55%",
+          "Median annual TO": "60.81×",
+          "Median net": "-1.72%",
           "Period": "Development",
-          "Positive fraction": "47.19%",
-          "sharpe365_median_sharpe": 0.14,
-          "sharpe252_median_sharpe": 0.11632736047259282,
-          "sharpe252_approx_median_sharpe": true
+          "Positive fraction": "47.14%",
+          "sharpe252_approx_median_sharpe": false,
+          "sharpe252_median_sharpe": 0.11401568565461147,
+          "sharpe365_median_sharpe": 0.1372178989259054
         },
         {
-          "Cases": 224867,
+          "Cases": 223512,
           "Group": "Q1 (best)",
-          "Median Sharpe": "-0.15",
-          "Median annual TO": "64.77×",
-          "Median net": "-16.27%",
+          "Median Sharpe": "-0.14",
+          "Median annual TO": "64.93×",
+          "Median net": "-16.53%",
           "Period": "Validation",
-          "Positive fraction": "30.73%",
-          "sharpe365_median_sharpe": -0.15,
-          "sharpe252_median_sharpe": -0.12463645764920658,
-          "sharpe252_approx_median_sharpe": true
+          "Positive fraction": "30.92%",
+          "sharpe252_approx_median_sharpe": false,
+          "sharpe252_median_sharpe": -0.11738353489932915,
+          "sharpe365_median_sharpe": -0.14127110611933746
         },
         {
-          "Cases": 223954,
+          "Cases": 219923,
           "Group": "Q2",
           "Median Sharpe": "-0.74",
-          "Median annual TO": "70.25×",
-          "Median net": "-37.25%",
+          "Median annual TO": "70.69×",
+          "Median net": "-37.53%",
           "Period": "Development",
           "Positive fraction": "0.08%",
-          "sharpe365_median_sharpe": -0.74,
-          "sharpe252_median_sharpe": -0.6148731910694192,
-          "sharpe252_approx_median_sharpe": true
+          "sharpe252_approx_median_sharpe": false,
+          "sharpe252_median_sharpe": -0.6124657014067734,
+          "sharpe365_median_sharpe": -0.7371025857425019
         },
         {
-          "Cases": 223954,
+          "Cases": 219923,
           "Group": "Q2",
-          "Median Sharpe": "-0.76",
-          "Median annual TO": "69.73×",
-          "Median net": "-35.59%",
+          "Median Sharpe": "-0.75",
+          "Median annual TO": "70.05×",
+          "Median net": "-36.18%",
           "Period": "Validation",
-          "Positive fraction": "12.99%",
-          "sharpe365_median_sharpe": -0.76,
-          "sharpe252_median_sharpe": -0.6314913854226467,
-          "sharpe252_approx_median_sharpe": true
+          "Positive fraction": "13.23%",
+          "sharpe252_approx_median_sharpe": false,
+          "sharpe252_median_sharpe": -0.6212185897865852,
+          "sharpe365_median_sharpe": -0.747636688538227
         },
         {
-          "Cases": 219294,
+          "Cases": 219065,
           "Group": "Q3",
           "Median Sharpe": "-1.77",
-          "Median annual TO": "159.44×",
-          "Median net": "-69.06%",
+          "Median annual TO": "159.47×",
+          "Median net": "-69.08%",
           "Period": "Development",
           "Positive fraction": "0.00%",
-          "sharpe365_median_sharpe": -1.77,
-          "sharpe252_median_sharpe": -1.4707102002606376,
-          "sharpe252_approx_median_sharpe": true
+          "sharpe252_approx_median_sharpe": false,
+          "sharpe252_median_sharpe": -1.4729636310512586,
+          "sharpe365_median_sharpe": -1.7727120043763156
         },
         {
-          "Cases": 219294,
+          "Cases": 219065,
           "Group": "Q3",
           "Median Sharpe": "-1.63",
           "Median annual TO": "162.09×",
-          "Median net": "-59.56%",
+          "Median net": "-59.58%",
           "Period": "Validation",
           "Positive fraction": "2.68%",
-          "sharpe365_median_sharpe": -1.63,
-          "sharpe252_median_sharpe": -1.3543828397880449,
-          "sharpe252_approx_median_sharpe": true
+          "sharpe252_approx_median_sharpe": false,
+          "sharpe252_median_sharpe": -1.3531349756862987,
+          "sharpe365_median_sharpe": -1.6284981953210773
         },
         {
           "Cases": 223910,
@@ -7268,9 +7304,9 @@
           "Median net": "-92.90%",
           "Period": "Development",
           "Positive fraction": "0.00%",
-          "sharpe365_median_sharpe": -4.03,
-          "sharpe252_median_sharpe": -3.3485661621753504,
-          "sharpe252_approx_median_sharpe": true
+          "sharpe252_approx_median_sharpe": false,
+          "sharpe252_median_sharpe": -3.345416725733349,
+          "sharpe365_median_sharpe": -4.026209652655327
         },
         {
           "Cases": 223910,
@@ -7280,9 +7316,9 @@
           "Median net": "-90.15%",
           "Period": "Validation",
           "Positive fraction": "0.01%",
-          "sharpe365_median_sharpe": -4.18,
-          "sharpe252_median_sharpe": -3.4732026198245567,
-          "sharpe252_approx_median_sharpe": true
+          "sharpe252_approx_median_sharpe": false,
+          "sharpe252_median_sharpe": -3.47500591591121,
+          "sharpe365_median_sharpe": -4.182170267176232
         },
         {
           "Cases": 224910,
@@ -7292,9 +7328,9 @@
           "Median net": "-99.9973%",
           "Period": "Development",
           "Positive fraction": "0.00%",
-          "sharpe365_median_sharpe": -15.69,
-          "sharpe252_median_sharpe": -13.036973470107009,
-          "sharpe252_approx_median_sharpe": true
+          "sharpe252_approx_median_sharpe": false,
+          "sharpe252_median_sharpe": -13.040079915529,
+          "sharpe365_median_sharpe": -15.693738607644082
         },
         {
           "Cases": 224910,
@@ -7304,16 +7340,15 @@
           "Median net": "-99.9977%",
           "Period": "Validation",
           "Positive fraction": "0.00%",
-          "sharpe365_median_sharpe": -17.87,
-          "sharpe252_median_sharpe": -14.848356654608812,
-          "sharpe252_approx_median_sharpe": true
+          "sharpe252_approx_median_sharpe": false,
+          "sharpe252_median_sharpe": -14.846891330503407,
+          "sharpe365_median_sharpe": -17.868236482166164
         }
       ],
       "source": {
-        "description": "Presentation-only365/252 annualization aliases for existing Sharpe values. Original reviewed fields and inference are retained.",
+        "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
         "files": [
-          "results/report_data/validation/development_groups_sharpe_display.json",
-          "results/report_data/validation/development_groups.json"
+          "results/retained_scope/validation/development_groups_sharpe_display.csv"
         ],
         "metricDefinitions": [
           {
@@ -7323,23 +7358,23 @@
               "groups-text",
               "sign-text"
             ],
-            "definition": "Development-only within-basket five ranked groups across169 configurations, using defined Sharpe average ranks and keeping ties together. Q1 means best approximately20%, not first calendar quarter. Descriptive constituent distributions, not portfolios or independent trials. Undefined group retained in saved full-grid results.",
+            "definition": "Retained subsets of the original development-only within-basket ranked groups, using the original defined-Sharpe average ranks and keeping original ties/membership. Q1 originally meant approximately the best20%; these are not newly computed168-definition quintiles. Constituent distributions, not portfolios or independent trials. All retained cases have defined development Sharpe.",
             "label": "Development Groups",
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/validation/development_groups.json"
+                  "results/retained_scope/validation/development_groups_sharpe_display.csv"
                 ]
               }
             ]
           },
           {
             "label": "Sharpe annualization comparison",
-            "definition": "On the SAME contiguous UTC daily return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). Confidence interval endpoints receive the same positive scale; no bootstrap, return, risk, rank, correlation, t-statistic, alpha, CAGR or selection is recomputed. Approximate flags explicitly mark252 values derived only from rounded current365 displays.",
+            "definition": "On the same complete UTC daily-return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). These display aliases use full-precision saved or retained-scope aggregate Sharpe values; approximation flags are false. Scaling does not change the underlying strategy, daily observations, t-statistics, alpha, CAGR or selections.",
             "sourceLineage": [
               {
                 "files": [
-                  "results/report_data/validation/development_groups.json"
+                  "results/retained_scope/validation/development_groups_sharpe_display.csv"
                 ]
               }
             ],
@@ -7353,19 +7388,28 @@
         ],
         "evidenceFlow": [
           {
-            "title": "Deterministic display scaling only",
-            "detail": "Read the exact source rows and any listed full-precision companion CSV; multiply only the explicitly declared numeric Sharpe statistics or Sharpe CI endpoints by sqrt(252/365). Keep all original fields unmodified; do not resample or drop weekends."
+            "title": "Retained-scope saved-result projection",
+            "detail": "Read results/retained_scope/validation/development_groups_sharpe_display.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
           }
         ],
         "limitations": [
           "252 is an alternative annualization convention, not a252-trading-day subsample or an independent result.",
-          "Existing primary inference, risk limits, and365-day scientific outputs remain unchanged."
-        ]
+          "Existing primary inference, risk limits, and365-day scientific outputs remain unchanged.",
+          "Original development-ranked memberships retained without reranking or reselection. Current counts are retained subsets, not a newly frozen selection universe."
+        ],
+        "label": "Audited retained-scope saved-result projection",
+        "type": "local saved-result retained-scope projection",
+        "sourcePins": {
+          "results/retained_scope/validation/development_groups_sharpe_display.csv": {
+            "sha256": "630ee2086c32a1625583b748a9673cbcb941240c91c1a4e07a9c92e934e9dd13",
+            "bytes": 1164
+          }
+        }
       },
       "methods": [
         {
           "language": "text",
-          "code": "For declared Sharpe fields, write sharpe365_\u003cfield>=original fullprecision statistic and sharpe252_\u003cfield>=statistic*sqrt(252/365). Scale CI endpoints identically. For current group medians only, retain the original rounded365 display and flag252 as approximate. Counts, ranks and correlations are not scaling targets."
+          "code": "Read results/retained_scope/validation/development_groups_sharpe_display.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
         }
       ]
     },
@@ -8342,7 +8386,7 @@
           "btc_alpha_ci_low": -0.4750416738170485,
           "btc_alpha_ci_high": 0.106375904209061,
           "btc_beta_ci_low": -0.030010299792818575,
-          "btc_beta_ci_high": 0.06376960841503247,
+ </script><script type="application/json" data-app-snapshot-chunk>         "btc_beta_ci_high": 0.06376960841503247,
           "gross_sharpe": -0.548217355744594,
           "n_complete_utc_days": 730.0,
           "full_period_start": "2022-01-01T00:00:00+00:00",
@@ -8435,7 +8479,7 @@
           "ulcer_time_basis": "full requested elapsed hours, observed endpoint drawdowns",
           "mean_daily_turnover": 0.09564391584040882,
           "annualized_turnover": 34.91002928174922,
-          "annualized_full_l1_turnov</script><script type="application/json" data-app-snapshot-chunk>er": 34.91002928174922,
+          "annualized_full_l1_turnover": 34.91002928174922,
           "entry_liquidation_included_if_present_in_input": true,
           "daily_win_rate": 0.506155950752394,
           "zero_daily_return_fraction": 0.0,
@@ -9555,7 +9599,7 @@
           "total_turnover": 67.16198347107438,
           "total_cost_sum": 0.10074297520661157,
           "n_hours": 17520.0,
-          "n_observations": 17517.0,
+          "n_observations": 17517.</script><script type="application/json" data-app-snapshot-chunk>0,
           "n_days": 730.0,
           "alpha_annual": 0.06812409087110029,
           "beta": -0.018317500873130717,
@@ -9637,7 +9681,7 @@
           "partial_event_return_accounting": "returns/costs retain original accounting buckets; not prorated or resimulated",
           "partial_event_other_assets_convention": "other held assets/hedges remain until completed bucket endpoint; possible temporary loss of neutrality",
           "intrahour_mark_to_market_unobserved": true,
-          "temporary_orphan_hedge_possible"</script><script type="application/json" data-app-snapshot-chunk>: false,
+          "temporary_orphan_hedge_possible": false,
           "n_asset_slots": 22.0,
           "n_factor_spread_slots": null,
           "btc_beta": -0.018317500873130332,
@@ -10816,7 +10860,7 @@
           "worst_day_return": -0.07328135540316917,
           "worst_day_date": "2025-11-07",
           "worst_7day_return": -0.0937277417345116,
-          "worst_7day_start": "2025-11-01",
+          "worst_7day_start": "2025</script><script type="application/json" data-app-snapshot-chunk>-11-01",
           "worst_7day_end": "2025-11-07",
           "calmar": -0.3432629640938686,
           "ulcer_index": 0.15395996300365106,
@@ -10902,7 +10946,7 @@
           "partial_net_return": 0.0,
           "partial_gross_return": 0.0,
           "partial_day_records_json": "[]",
-         </script><script type="application/json" data-app-snapshot-chunk> "daily_risk_basis": "complete contiguous 24-hour UTC days from original saved path; boundary partial days excluded only from daily statistics",
+          "daily_risk_basis": "complete contiguous 24-hour UTC days from original saved path; boundary partial days excluded only from daily statistics",
           "full_performance_basis": "every requested hourly interval including opening/closing partial days, entry and terminal liquidation",
           "risk_slice_rebased_without_resimulation": true,
           "partial_fees_reallocated": false,
@@ -12083,7 +12127,7 @@
           "dd_max_drawdown_recovery_censored": true,
           "dd_longest_underwater_days": 273.0,
           "dd_longest_underwater_start": "2026-01-01T00:00:00+00:00",
-          "dd_longest_underwater_end": "2026-10-01T00:00:00+00:00",
+          "dd_longest_underwater_end": "2026-10-01T00:00:00+00:00"</script><script type="application/json" data-app-snapshot-chunk>,
           "dd_longest_underwater_censored": true,
           "dd_time_underwater_fraction": 1.0,
           "dd_underwater_time_convention": "elapsed interval duration classified by ending observed drawdown",
@@ -12169,7 +12213,7 @@
           "raw_daily_time_underwater_fraction": 1.0,
           "sharpe252": -1.7666210031032779,
           "gross_sharpe252": -1.0469378074562128,
-          "study": "</script><script type="application/json" data-app-snapshot-chunk>momentum",
+          "study": "momentum",
           "study_label": "Momentum",
           "period_label": "Jan–Sep 2026 (273 days)",
           "id": "momentum__oos_partial_2026_jan_sep__lag1__cost40"
@@ -13341,7 +13385,7 @@
           "mean_long": 0.5,
           "min_long": 0.49999999999999994,
           "max_long": 0.5000000000000001,
-          "mean_short": 0.4999997641420431,
+  </script><script type="application/json" data-app-snapshot-chunk>        "mean_short": 0.4999997641420431,
           "min_short": 0.487603305785124,
           "max_short": 0.5000000000000001,
           "mean_unused_gross_budget": 2.3585795693915865e-07,
@@ -13426,7 +13470,7 @@
           "annual_volatility": 0.20211077626470492,
           "sharpe": 0.0254196988496409,
           "max_drawdown": 0.2516207471306288,
-          "mean_hou</script><script type="application/json" data-app-snapshot-chunk>rly_turnover": 0.003985163160017034,
+          "mean_hourly_turnover": 0.003985163160017034,
           "total_turnover": 69.91570247933885,
           "total_cost_sum": 0.0,
           "n_hours": 17544.0,
@@ -14609,7 +14653,7 @@
           "gross_sharpe": 1.2528819095272081,
           "n_complete_utc_days": 273.0,
           "full_period_start": "2026-01-01T00:00:00+00:00",
-          "full_period_end": "2026-10-01T00:00:00+00:00",
+          "full_period_end": "2026-10-01T00:00:00+00:00</script><script type="application/json" data-app-snapshot-chunk>",
           "risk_period_start": "2026-01-01T00:00:00+00:00",
           "risk_period_end": "2026-10-01T00:00:00+00:00",
           "risk_first_day": "2026-01-01",
@@ -14702,7 +14746,7 @@
           "entry_liquidation_included_if_present_in_input": true,
           "daily_win_rate": 0.4981684981684982,
           "zero_daily_return_fraction": 0.0,
-          "daily_gain_loss_ratio": 1.179491450294949</script><script type="application/json" data-app-snapshot-chunk>4,
+          "daily_gain_loss_ratio": 1.1794914502949494,
           "trade_profit_factor_status": "undefined_without_portfolio_trade_grouping",
           "turnover_convention": "supplied full-L1 target changes including entry/liquidation; not drift-adjusted actual notional/NAV",
           "capacity_status": "not_identifiable_from_fixed_path_price_only_model",
@@ -15940,7 +15984,7 @@
           "period": "development",
           "n_calendar_days": 730,
           "first_utc_day": "2022-01-01",
-          "last_utc_day": "2023-12-31",
+          "last_ut</script><script type="application/json" data-app-snapshot-chunk>c_day": "2023-12-31",
           "raw_net_return": 2.529364668549518,
           "raw_cagr": 0.8786603387918525,
           "raw_annual_arithmetic_return": 0.6857201136965688,
@@ -16027,7 +16071,7 @@
           "raw_annual_daily_volatility": 0.6347803908842009,
           "raw_sharpe": 1.429829437829922,
           "raw_daily_max_drawdown": 0.4070019699782449,
-          "ra</script><script type="application/json" data-app-snapshot-chunk>w_daily_dd_peak_utc": "2022-08-13T00:00:00+00:00",
+          "raw_daily_dd_peak_utc": "2022-08-13T00:00:00+00:00",
           "raw_daily_dd_trough_utc": "2023-01-12T00:00:00+00:00",
           "raw_daily_dd_recovery_utc": "2023-11-11T00:00:00+00:00",
           "raw_daily_dd_peak_to_trough_days": 152,
@@ -16817,7 +16861,7 @@ function ReportContent(){
  , jsxRuntime.jsx(dataApp.RichNarrative, { id: "attribution-edition-note", value: "[Per-coin P&L and joint basket alpha/betas, with confidence intervals, for all nine frozen strategies](#basket-attribution-appendix)."             ,})
  , jsxRuntime.jsx(GeneralizationFinding, {})
  , jsxRuntime.jsx(FixedAll22Headline, {})
- , jsxRuntime.jsx(N, { id: "summary", qs: ['track_a_performance','track_b_performance','development_groups','eligibility'], text: `### Validation findings\n\n- **All four development-selected candidates lost in 2024–2025**, with net returns from **−22.31% to −45.31%** at 20 bps. Their positive development Sharpes did not generalize to the next two years.\n- The broad development-Q1 group retained a useful relative ordering, but not positive median economics: its validation median return was **−16.27%** and **30.73%** of cases were profitable. “Q1” is the best approximately 20% of development Sharpe ranks within each basket, not a calendar quarter.\n- A separate validation-informed rule produced **five Track B candidates** from **39,332 eligible pairs**. Their validation Sharpes of **1.14–1.85 (365-day), or 0.95–1.54 (252-day), are selection statistics**, not independent evidence of discovery. B02 had no eligible candidate.\n- The final research shortlist preserves the **original four plus five Track B selections**. No single combined portfolio, weights or winner is implied.`,})
+ , jsxRuntime.jsx(N, { id: "summary", qs: ['track_a_performance','track_b_performance','development_groups','eligibility'], text: `### Validation findings\n\n- **All four development-selected candidates lost in 2024–2025**, with net returns from **−22.31% to −45.31%** at 20 bps. Their positive development Sharpes did not generalize to the next two years.\n- The broad development-Q1 group retained a useful relative ordering, but not positive median economics: its validation median return was **−16.53%** and **30.92%** of cases were profitable. “Q1” preserves the original best-approximately-20% development-rank labels within each basket, not a calendar quarter; current counts are retained subsets, not newly ranked quintiles.\n- A separate validation-informed rule produced **five Track B candidates** from **39,332 eligible pairs**. Their validation Sharpes of **1.14–1.85 (365-day), or 0.95–1.54 (252-day), are selection statistics**, not independent evidence of discovery.\n- The final research shortlist preserves the **original four plus five Track B selections**. No single combined portfolio, weights or winner is implied.`,})
  , jsxRuntime.jsx(N, { id: "opening-scope", qs: ['rules'], text: `### Read the periods correctly\n\n**Development: 1 January 2022–31 December 2023.** Design and diagnose the rule using this period only. **Validation: 1 January 2024–31 December 2025.** Test Track A unchanged, then explicitly label later validation-informed selection as Track B.\n\nThe reserved evaluation was subsequently approved for **1 January–30 September 2026**, with an October 1 UTC closing endpoint. Detailed outcomes belong in Report 3. Performance and factor diagnostics use the audited saved strategy paths and existing factor prices; signals, trades and selections are fixed.\n\n**Primary convention:** 20 bps one-way fees on full-L1 target changes. Lag1 means idealized observed-close execution, not a real one-hour delay.`,})
  ]})
  , jsxRuntime.jsx(FixedAll22Studies, { period: "validation",})
@@ -16849,19 +16893,19 @@ Reference risk was not uniformly lower. A03 reversal had a larger validation dra
  , jsxRuntime.jsx(N, { id: "attribution-limit", qs: ['luna_attribution','reference_comparison'], text: `The legacy LUNA slot contributed **+49.39, +132.19 and +78.96 percentage points** to A01, A02 and A04's development net returns, respectively, but negative contributions in validation. These are NAV-weighted accounting contributions to starting capital, not standalone coin returns. The table reports percentage-point (pp) contributions.\n\nAll four selected baskets also lost **before modeled fees** in validation: gross compounded returns ranged from **−15.03% to −29.34%**. Costs deepened the losses rather than explaining them in full.\n\nThe diagnostic supports **concentration and period-dependence concerns**. It does not establish that deleting LUNA would have produced the same remaining positions or returns. Documented halts, forced exits and symbol lifecycle treatment were preserved; no event was removed to improve the backtest.`,})
  ]})
  , jsxRuntime.jsxs('section', { className: "reading-page", children: [
- jsxRuntime.jsx(N, { id: "groups-text", qs: ['development_groups','rank_transfer'], text: `## 5. Relative rank transfer was stronger than economic transfer\n\nThe full grid retained **1,117,935 basket–configuration pairs**: 6,615 baskets × 169 settings. Development-ranked groups were frozen before full-grid validation; the 10 accepted case-baskets retain their audited saved paths.\n\nQ1 retained a higher validation median Sharpe than lower-ranked groups, but its median net return remained negative. Much of the rank hierarchy reflects the persistent cost burden of fast settings, not proof that a positive-alpha winner transfers.\n\nThese medians are constituent distributions, **not portfolios**. A further 1,000 development all-cash cases had undefined Sharpe and remain unranked in the saved results rather than being assigned to the worst group.`,})
+ jsxRuntime.jsx(N, { id: "groups-text", qs: ['development_groups','rank_transfer'], text: `## 5. Relative rank transfer was stronger than economic transfer\n\nThe full grid retained **1,111,320 basket–configuration pairs**: 6,615 baskets × 168 retained settings. Original development-ranked memberships were frozen before full-grid validation and remain unchanged in this retained subset; the 10 accepted case-baskets retain their audited saved paths.\n\nQ1 retained a higher validation median Sharpe than lower-ranked groups, but its median net return remained negative. Much of the rank hierarchy reflects the persistent cost burden of fast settings, not proof that a positive-alpha winner transfers.\n\nThese medians are constituent distributions, **not portfolios**. All retained development cases have defined Sharpe. No value is zero-filled, and no retained case is reassigned to a different original development group.`,})
  , jsxRuntime.jsx(T, { id: "groups-table", q: "development_groups", title: "Frozen development-ranked groups"  , columns: ['Group','Cases','Median net','Median Sharpe','Median annual TO','Positive fraction'], split: [{label:'2022–2023 development',filter:r=>r.Period==='Development'},{label:'2024–2025 validation',filter:r=>r.Period==='Validation'}],})
  ]})
  , jsxRuntime.jsxs('section', { className: "reading-page", children: [
- jsxRuntime.jsx(N, { id: "sign-text", qs: ['sign_flips','development_groups','rank_transfer'], text: `## 6. A high rank need not imply a positive return\n\nAcross the full grid, **62.90% of strictly positive development results became strictly negative** in validation. Conversely, **6.40% of strictly negative development results became positive**. The denominators differ, so these are conditional transition rates rather than symmetric probabilities. Exact zeros remain separate.\n\nThe best development-ranked group had **224,867 cases**; **69,108 (30.73%)** were profitable in validation. Of these, **39,332** also had positive development returns. The remaining **29,776** were development-negative cases that survived validation. These counts are not independent replications.`,})
+ jsxRuntime.jsx(N, { id: "sign-text", qs: ['sign_flips','development_groups','rank_transfer'], text: `## 6. A high rank need not imply a positive return\n\nAcross the full grid, **62.71% of strictly positive retained development results became strictly negative** in validation. Conversely, **6.43% of strictly negative retained development results became positive**. The denominators differ, so these are conditional transition rates rather than symmetric probabilities. Exact zeros remain separate.\n\nThe retained subset of the original best development-ranked group has **223,512 cases**; **69,108 (30.92%)** were profitable in validation. Of these, **39,332** also had positive development returns. The remaining **29,776** were development-negative cases that survived validation. These counts are not independent replications.`,})
  , jsxRuntime.jsx(T, { id: "sign-table", q: "sign_flips", title: "How often the return sign changed"     , columns: ['Family','Dev positive','Positive → negative','Dev negative','Negative → positive'],})
  , jsxRuntime.jsx(T, { id: "rank-table", q: "rank_transfer", title: "Development–validation Sharpe rank correlation"   , columns: ['Comparison','Cohorts','Median Spearman','10th percentile','90th percentile'],})
  , jsxRuntime.jsx(N, { id: "rank-interpretation", qs: ['rank_transfer','sign_flips'], text: `The median rank correlation was **0.91 across settings within a basket**, but only **0.14 across baskets within the same setting**. That distinction explains why broad setting hierarchies can persist while the exact development-winning basket is unstable.\n\nNo IID p-value or confidence interval is attached to these full-grid cross-sectional summaries. Adjacent baskets share seven coins; configurations share signals, prices and dates. Long/cash trend's lower sign-flip rate is descriptive, not a new final-test endorsement.`,})
  ]})
  , jsxRuntime.jsxs('section', { className: "reading-page", children: [
- jsxRuntime.jsx(N, { id: "b-rule", qs: ['rules','eligibility'], text: `## 7. Track B was an honest validation-informed selection\n\nAfter validation had been inspected, a separate rule was frozen **before executing its selection**. Start with development Q1, require evaluated statuses, finite defined Sharpes and strictly positive net returns in both development and validation at 20 bps.\n\nWithin each of the existing six families, select the highest validation Sharpe. Ties use lower validation full-L1 turnover, lexical experiment ID and numeric basket ID. Select none when no case qualifies. No positive-Sharpe threshold, annual consistency, stress-cost survival, neighborhood success or risk cap was added as a hidden eligibility gate.`,})
- , jsxRuntime.jsx(T, { id: "eligibility-table", q: "eligibility", title: "Every family was retained, including the empty one"       , columns: ['ID','Family','Full grid','Dev Q1','Eligible','Selected'],})
- , jsxRuntime.jsx(N, { id: "b02-note", qs: ['eligibility','rules'], text: `### B02 was never a failed selected strategy\n\nB02 is the reserved family label for BTC-factor residual reversal. **Zero** of its **1,355** development-Q1 pairs met the positive-in-both-periods rule, so no B02 candidate was selected. The earlier factor reference control was a diagnostic comparison, not a Track B selection. An empty family is a valid result; it is not replaced by another family or treated as a zero-return investment.\n\nAll five selected validation Sharpes are selection statistics from a large correlated pool. They are not unbiased final-test Sharpe estimates, and do not retroactively repair Track A.`,})
+ jsxRuntime.jsx(N, { id: "b-rule", qs: ['rules','eligibility'], text: `## 7. Track B was an honest validation-informed selection\n\nAfter validation had been inspected, a separate rule was frozen **before executing its selection**. Start with development Q1, require evaluated statuses, finite defined Sharpes and strictly positive net returns in both development and validation at 20 bps.\n\nWithin each of the five retained families, select the highest validation Sharpe. Ties use lower validation full-L1 turnover, lexical experiment ID and numeric basket ID. Select none when no case qualifies. No positive-Sharpe threshold, annual consistency, stress-cost survival, neighborhood success or risk cap was added as a hidden eligibility gate.`,})
+ , jsxRuntime.jsx(N, { id: "validation-selection-qualification", qs: ['rules'], text: `All five selected validation Sharpes are selection statistics from a large correlated pool. They are not unbiased final-test estimates and do not retroactively repair Track A.`,})
+ , jsxRuntime.jsx(T, { id: "eligibility-table", q: "eligibility", title: "Eligibility within the five retained families"     , columns: ['ID','Family','Full grid','Dev Q1','Eligible','Selected'],})
  ]})
  , jsxRuntime.jsxs('section', { className: "reading-page", children: [
  jsxRuntime.jsx(N, { id: "b-conclusion", qs: ['track_b_performance','annual_b'], text: `## 8. Track B's strong validation results came with weak development cases\n\nB01 and B03 barely cleared the positive-development-return gate. They were eligible under the frozen rule; annual consistency was diagnostic only. Their validation improvement deserves investigation without pretending it was forecast by strong development performance.`,})
@@ -16873,7 +16917,7 @@ Reference risk was not uniformly lower. A03 reversal had a larger validation dra
  , jsxRuntime.jsx(T, { id: "frozen-table", q: "frozen_nine", title: "Case–basket identity register"  , columns: ['ID','Strategy','Basket','Other six coins'], split: [{label:'Track A: four original selections',filter:r=>r.ID.startsWith('A')},{label:'Track B: five validation-informed selections',filter:r=>r.ID.startsWith('B')}],})
  ]})
  , jsxRuntime.jsxs('section', { className: "reading-page", children: [
- jsxRuntime.jsx(N, { id: "methods-text", qs: ['rules','frozen_nine'], text: `## 10. What was frozen, and what these results can support\n\n**Do not move windows after inspecting performance.** Development and validation each span two complete years, with no result-driven change of boundaries. Annual slices inherit the continuous path's positions and fees; there is no invented internal-year liquidation or cash reset.\n\n**Report the right Sharpe.** Development Sharpe describes fitted evidence; Track A validation Sharpe describes transfer of a development-selected rule; Track B validation Sharpe is selection-biased. The 2026 evaluation must retain this selection history; later explanatory diagnostics are not a new independent test.\n\n**Separate statistical aims.** Track A asks whether a development-selection procedure generalizes. Track B asks whether a strategy selected using development and validation transfers to a later period. Neither requires the development winner to remain rank one, but economic and risk expectations must be stated before that later evaluation.\n\n**Reserved evaluation protocol.** The nine identities and approved risk limits remain fixed. The later approved amendment uses 1 January–30 September 2026 (273 days), rather than a complete calendar year. It requires daily-mean t-statistics, block-bootstrap intervals, multiple-testing correction and honest partial-year labels. Only the cross-period opening uses 2026 follow-up outcomes for orientation; the locked validation tables remain 2024-2025.`,})
+ jsxRuntime.jsx(N, { id: "methods-text", qs: ['rules','frozen_nine'], text: `## 10. What was frozen, and what these results can support\n\n**Post-evaluation scope amendment.** The current publication retains **168 definitions across five families**. This scope was narrowed after the development, validation and 2026 evaluations; it is not a new pre-evaluation freeze. The nine frozen IDs, baskets and settings, and the original development-ranked group memberships, are unchanged: there is **no reranking or reselection**. Population summaries are filtered or recomputed from saved retained-case results, not new strategy runs. This change supplies **no new independent OOS evidence**.\n\n**Do not move windows after inspecting performance.** Development and validation each span two complete years, with no result-driven change of boundaries. Annual slices inherit the continuous path's positions and fees; there is no invented internal-year liquidation or cash reset.\n\n**Report the right Sharpe.** Development Sharpe describes fitted evidence; Track A validation Sharpe describes transfer of a development-selected rule; Track B validation Sharpe is selection-biased. The 2026 evaluation must retain this selection history; later explanatory diagnostics are not a new independent test.\n\n**Separate statistical aims.** Track A asks whether a development-selection procedure generalizes. Track B asks whether a strategy selected using development and validation transfers to a later period. Neither requires the development winner to remain rank one, but economic and risk expectations must be stated before that later evaluation.\n\n**Reserved evaluation protocol.** The nine identities and approved risk limits remain fixed. The later approved amendment uses 1 January–30 September 2026 (273 days), rather than a complete calendar year. It requires daily-mean t-statistics, block-bootstrap intervals, multiple-testing correction and honest partial-year labels. Only the cross-period opening uses 2026 follow-up outcomes for orientation; the locked validation tables remain 2024-2025.`,})
  , jsxRuntime.jsx(N, { id: "method-notes", qs: ['rules','track_a_performance','track_b_performance'], text: `### Common measurement and limitations\n\n**Data source and complete study dataset.** [Binance public Data Vision](https://data.binance.vision/) (**data.binance.vision**) spot-USDT **1-hour klines** supply prices and quote volumes. The normalized UTC grid has **43,824 hourly close endpoints**, from **1 October 2021 01:00 to 1 October 2026 00:00**, including warm-up. The packaged **22-slot screening universe** includes SAND; the nine frozen strategies use the **21-slot union of the full universe except SAND**. Lifecycle and missingness masks remain explicit. [Data documentation](https://github.com/Agul-quant/Cryptocurrency-statistical-arbitrage/blob/main/docs/DATA.md) | [Full coin inventory](https://github.com/Agul-quant/Cryptocurrency-statistical-arbitrage/blob/main/data/universe.csv) | [File hashes and coverage](https://github.com/Agul-quant/Cryptocurrency-statistical-arbitrage/blob/main/data/manifest.json).\n\nNet return compounds the saved hourly gross P&L less one-way fee × full-L1 target change, including actual entry and terminal liquidation. Annual turnover is 365 × mean daily full-L1 target change, **not** round-trip turnover or drift-adjusted executed notional. Maximum drawdown is positive peak-to-trough loss magnitude; annualized daily Sharpe uses sample SD and both 365- and 252-day conventions on the same complete UTC daily series.\n\nThe sensitivity set is 0/5/10/15/40 bps around the 20 bps primary scenario, plus 20 bps with one additional execution hour. Actual borrowing, funding, margin, order-book depth, impact and ordinary drift-maintenance trading were not modeled. Spot shorts are theoretical; historical liquidity and surviving economic slots do not remove universe or lifecycle bias.\n\nPerformance tables and fixed-basket attribution describe the same frozen strategies. Source menus expose each component's exact evidence. Detailed configurations, failed cases, cost scenarios, annual risk tables, model logs and provenance are supporting results, not additional reports.`,})
  ]})
  , jsxRuntime.jsx(BasketAttributionAppendix, {})

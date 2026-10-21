@@ -3,56 +3,56 @@
   "period": "validation",
   "rows": [
     {
-      "Cases": 224867,
+      "Cases": 223512,
       "Group": "Q1 (best)",
       "Median Sharpe": "0.14",
-      "Median annual TO": "60.01×",
-      "Median net": "-1.55%",
+      "Median annual TO": "60.81×",
+      "Median net": "-1.72%",
       "Period": "Development",
-      "Positive fraction": "47.19%"
+      "Positive fraction": "47.14%"
     },
     {
-      "Cases": 224867,
+      "Cases": 223512,
       "Group": "Q1 (best)",
-      "Median Sharpe": "-0.15",
-      "Median annual TO": "64.77×",
-      "Median net": "-16.27%",
+      "Median Sharpe": "-0.14",
+      "Median annual TO": "64.93×",
+      "Median net": "-16.53%",
       "Period": "Validation",
-      "Positive fraction": "30.73%"
+      "Positive fraction": "30.92%"
     },
     {
-      "Cases": 223954,
+      "Cases": 219923,
       "Group": "Q2",
       "Median Sharpe": "-0.74",
-      "Median annual TO": "70.25×",
-      "Median net": "-37.25%",
+      "Median annual TO": "70.69×",
+      "Median net": "-37.53%",
       "Period": "Development",
       "Positive fraction": "0.08%"
     },
     {
-      "Cases": 223954,
+      "Cases": 219923,
       "Group": "Q2",
-      "Median Sharpe": "-0.76",
-      "Median annual TO": "69.73×",
-      "Median net": "-35.59%",
+      "Median Sharpe": "-0.75",
+      "Median annual TO": "70.05×",
+      "Median net": "-36.18%",
       "Period": "Validation",
-      "Positive fraction": "12.99%"
+      "Positive fraction": "13.23%"
     },
     {
-      "Cases": 219294,
+      "Cases": 219065,
       "Group": "Q3",
       "Median Sharpe": "-1.77",
-      "Median annual TO": "159.44×",
-      "Median net": "-69.06%",
+      "Median annual TO": "159.47×",
+      "Median net": "-69.08%",
       "Period": "Development",
       "Positive fraction": "0.00%"
     },
     {
-      "Cases": 219294,
+      "Cases": 219065,
       "Group": "Q3",
       "Median Sharpe": "-1.63",
       "Median annual TO": "162.09×",
-      "Median net": "-59.56%",
+      "Median net": "-59.58%",
       "Period": "Validation",
       "Positive fraction": "2.68%"
     },

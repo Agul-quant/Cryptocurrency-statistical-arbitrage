@@ -87,21 +87,15 @@ def _exposure_rows(weights, family, columns):
         fields['inactive_slot_budget'] = (np.abs(weights) <= WEIGHT_TOLERANCE).sum(axis=1) / len(columns)
     elif family.startswith('trend_long_short'):
         fields['inactive_slot_budget'] = (np.abs(weights) <= WEIGHT_TOLERANCE).sum(axis=1) / len(columns)
-    elif family.startswith('factor_residual'):
-        if 'BTCUSDT' not in columns or len(columns) < 2:
-            raise ValueError('Factor exposure requires BTCUSDT and at least one fixed non-BTC slot.')
-        positions = [i for i, name in enumerate(columns) if name != 'BTCUSDT']
-        active = (np.abs(weights[:, positions]) > WEIGHT_TOLERANCE).sum(axis=1)
-        fields['unallocated_spread_budget'] = 1 - active / len(positions)
     return fields
 
 
 def _exposures(held, family, frame, hours):
     """Integrate documented symbol-only partial events, never prorate returns.
 
-    Other assets (including a BTC hedge) retain the interval's held allocation
-    until its completed endpoint. This preserves the explicitly modeled orphan
-    hedge interval instead of pretending portfolio-wide neutrality at 00:40.
+    Other assets retain the interval's held allocation until its completed
+    endpoint. A symbol-specific exit does not imply simultaneous exits or
+    continued portfolio-wide neutrality for the remaining positions.
     """
     matrix = held.to_numpy(dtype=float)
     fields = _exposure_rows(matrix, family, held.columns)
@@ -183,9 +177,9 @@ def _exposures(held, family, frame, hours):
         'partial_event_return_accounting': 'returns/costs retain original accounting buckets; not prorated or resimulated',
         'partial_event_other_assets_convention': 'other held assets/hedges remain until completed bucket endpoint; possible temporary loss of neutrality',
         'intrahour_mark_to_market_unobserved': True,
-        'temporary_orphan_hedge_possible': bool(applicable and family.startswith('factor_residual')),
+        'temporary_orphan_hedge_possible': False,
         'n_asset_slots': len(held.columns),
-        'n_factor_spread_slots': len(held.columns) - 1 if family.startswith('factor_residual') else None,
+        'n_factor_spread_slots': None,
     }
     summary = pi.exposure_statistics(result, held.index, hours.sum() / 24, hours)
     for key in minima:
@@ -324,8 +318,8 @@ def _extra(context):
 def extra_metrics(result, family, benchmark_hourly=None) -> dict:
     """Flat all-configuration diagnostics, no bootstrap/rolling/strategy rerun.
 
-    Fixed-slot counts are inferred from held columns (30 assets / 29 spreads in
-    the requested study). Partial-event metadata may adjust exposures only;
+    Fixed-slot counts are inferred from held columns. Partial-event metadata
+    may adjust exposures only;
     returns, fees and turnover always retain their saved accounting path.
     """
     return _extra(_context(result, family, benchmark_hourly))
@@ -377,7 +371,7 @@ def detailed_selected(result, family, benchmark_hourly=None,
                          'exposure': context['exposure_metadata']['exposure_time_basis'],
                          'exposure_extrema': 'instantaneous supplied pre/post-event states, not extrema of time-averaged weights',
                          'cash': 'only explicit long/cash allocation; inactive slots and unallocated spread budgets are NOT cash',
-                         'fixed_slot_budget': 'actual asset-column count; factor budget excludes BTCUSDT once',
+                         'fixed_slot_budget': 'actual asset-column count',
                          'search_adjustment': 'none: selected realized-path bootstrap is conditional and descriptive, not DSR or fresh OOS',
                      }})
     native['rolling'] = rolling

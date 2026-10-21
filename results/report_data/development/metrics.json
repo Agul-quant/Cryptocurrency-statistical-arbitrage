@@ -4,38 +4,38 @@
   "rows": [
     {
       "metric": "Total net return",
-      "value": -0.7103480782827848,
-      "unit": "fraction"
+      "unit": "fraction",
+      "value": -0.7154500511517711
     },
     {
       "metric": "CAGR",
-      "value": -0.46180679889354304,
-      "unit": "fraction"
+      "unit": "fraction",
+      "value": -0.46656776546152
     },
     {
       "metric": "Annual volatility",
-      "value": 0.27153502012898373,
-      "unit": "fraction"
+      "unit": "fraction",
+      "value": 0.2719637352811991
     },
     {
       "metric": "Maximum drawdown",
-      "value": 0.7684626171459502,
-      "unit": "fraction"
+      "unit": "fraction",
+      "value": 0.7722170330372333
     },
     {
       "metric": "Longest underwater span (days)",
-      "value": 708.5833333333334,
-      "unit": "days"
+      "unit": "days",
+      "value": 709.0833333333334
     },
     {
       "metric": "Full-L1 turnover (times/year)",
-      "value": 189.2291666666666,
-      "unit": "times/year"
+      "unit": "times/year",
+      "value": 190.91666666666674
     },
     {
       "metric": "Sharpe",
-      "value": -1.7720099769645337,
-      "unit": "ratio"
+      "unit": "ratio",
+      "value": -1.788831800607432
     }
   ]
 }

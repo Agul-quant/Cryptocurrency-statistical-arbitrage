@@ -1,0 +1,8 @@
+metric,value,unit,sharpe365_value,sharpe252_value,sharpe252_approx_value
+Total net return,-0.71545005115177107,fraction,,,
+CAGR,-0.46656776546152001,fraction,,,
+Annual volatility,0.2719637352811991,fraction,,,
+Maximum drawdown,0.77221703303723332,fraction,,,
+Longest underwater span (days),709.08333333333337,days,,,
+Full-L1 turnover (times/year),190.91666666666674,times/year,,,
+Sharpe,-1.788831800607432,ratio,-1.788831800607432,-1.4863577263864143,False

@@ -1,12 +1,11 @@
 {
-  "unique_case_count": 169,
+  "unique_case_count": 168,
   "family_counts": {
     "momentum": 78,
     "reversal": 78,
     "buffered_momentum": 4,
     "trend_long_cash": 4,
-    "trend_long_short": 4,
-    "factor_residual": 1
+    "trend_long_short": 4
   },
   "cases": [
     {
@@ -1856,17 +1855,6 @@
       "phase_hours": 0,
       "experiment_id": "trend_long_short_h0672_r168",
       "report_family": "trend_long_short"
-    },
-    {
-      "grid_id": "extensions",
-      "strategy_id": "factor_residual_fixed",
-      "family": "factor_residual",
-      "lookback_h": 0,
-      "rebalance_h": 24,
-      "buffer_l1": 0.0,
-      "phase_hours": 0,
-      "experiment_id": "factor_residual_fixed",
-      "report_family": "factor_residual"
     }
   ]
 }

@@ -2,80 +2,79 @@
   "rows": [
     {
       "costBps": 0,
+      "medianReturn": -0.08249892235651708,
+      "medianSharpe": -0.005394319506588462,
+      "positive": 0.4331290717345139,
       "scenario": "cost00_lag1",
-      "positive": 0.43168431080518993,
-      "medianReturn": -0.07885591235394296,
-      "medianSharpe": -0.008734402966446897,
-      "sharpe365_mediansharpe": -0.008734402966446897,
-      "sharpe252_mediansharpe": -0.0072575003027910865,
-      "sharpe252_approx_mediansharpe": false
+      "sharpe252_approx_mediansharpe": false,
+      "sharpe252_mediansharpe": -0.0044821924981946785,
+      "sharpe365_mediansharpe": -0.005394319506588462
     },
     {
       "costBps": 5,
+      "medianReturn": -0.3728316966508587,
+      "medianSharpe": -0.702932143428697,
+      "positive": 0.22705701328150307,
       "scenario": "cost05_lag1",
-      "positive": 0.22683161364480045,
-      "medianReturn": -0.36873855230569474,
-      "medianSharpe": -0.6989930862557949,
-      "sharpe365_mediansharpe": -0.6989930862557949,
-      "sharpe252_mediansharpe": -0.5808001479480572,
-      "sharpe252_approx_mediansharpe": false
+      "sharpe252_approx_mediansharpe": false,
+      "sharpe252_mediansharpe": -0.5840731488314453,
+      "sharpe365_mediansharpe": -0.702932143428697
     },
     {
       "costBps": 10,
+      "medianReturn": -0.518475391861718,
+      "medianSharpe": -1.1002939607915212,
+      "positive": 0.16232678256487781,
       "scenario": "cost10_lag1",
-      "positive": 0.1624844020448416,
-      "medianReturn": -0.5133796249227087,
-      "medianSharpe": -1.0896608585959044,
-      "sharpe365_mediansharpe": -1.0896608585959044,
-      "sharpe252_mediansharpe": -0.9054097963625769,
-      "sharpe252_approx_mediansharpe": false
+      "sharpe252_approx_mediansharpe": false,
+      "sharpe252_mediansharpe": -0.9142449443058014,
+      "sharpe365_mediansharpe": -1.1002939607915212
     },
     {
       "costBps": 15,
+      "medianReturn": -0.6294199255525098,
+      "medianSharpe": -1.4494401267784858,
+      "positive": 0.12284130583450312,
       "scenario": "cost15_lag1",
-      "positive": 0.12278531399410521,
-      "medianReturn": -0.6242353287012056,
-      "medianSharpe": -1.4364450554667898,
-      "sharpe365_mediansharpe": -1.4364450554667898,
-      "sharpe252_mediansharpe": -1.1935561554739917,
-      "sharpe252_approx_mediansharpe": false
+      "sharpe252_approx_mediansharpe": false,
+      "sharpe252_mediansharpe": -1.2043538865085823,
+      "sharpe365_mediansharpe": -1.4494401267784858
     },
     {
       "costBps": 20,
+      "medianReturn": -0.7154500511517711,
+      "medianSharpe": -1.788831800607432,
+      "positive": 0.09497894395853579,
       "scenario": "cost20_lag1",
-      "positive": 0.09508781816474124,
-      "medianReturn": -0.7103480782827848,
-      "medianSharpe": -1.7720099769645337,
-      "sharpe365_mediansharpe": -1.7720099769645337,
-      "sharpe252_mediansharpe": -1.4723803096527441,
-      "sharpe252_approx_mediansharpe": false
+      "sharpe252_approx_mediansharpe": false,
+      "sharpe252_mediansharpe": -1.4863577263864143,
+      "sharpe365_mediansharpe": -1.788831800607432
     },
     {
       "costBps": 40,
+      "medianReturn": -0.8784777300498557,
+      "medianSharpe": -3.064602255026274,
+      "positive": 0.04217417125580391,
       "scenario": "cost40_lag1",
-      "positive": 0.04237187314110391,
-      "medianReturn": -0.8746488888710472,
-      "medianSharpe": -3.0316716135695594,
-      "sharpe365_mediansharpe": -3.0316716135695594,
-      "sharpe252_mediansharpe": -2.5190454044730943,
-      "sharpe252_approx_mediansharpe": false
+      "sharpe252_approx_mediansharpe": false,
+      "sharpe252_mediansharpe": -2.5464077944683012,
+      "sharpe365_mediansharpe": -3.064602255026274
     },
     {
       "costBps": 20,
+      "medianReturn": -0.713215914651498,
+      "medianSharpe": -1.7626376520363545,
+      "positive": 0.0959255659935932,
       "scenario": "cost20_lag2",
-      "positive": 0.09602883888598174,
-      "medianReturn": -0.7080480477852777,
-      "medianSharpe": -1.7462240164783036,
-      "sharpe365_mediansharpe": -1.7462240164783036,
-      "sharpe252_mediansharpe": -1.4509545045055035,
-      "sharpe252_approx_mediansharpe": false
+      "sharpe252_approx_mediansharpe": false,
+      "sharpe252_mediansharpe": -1.4645927537928403,
+      "sharpe365_mediansharpe": -1.7626376520363545
     }
   ],
   "source": {
-    "description": "Presentation-only365/252 annualization aliases for existing Sharpe values. Original reviewed fields and inference are retained.",
+    "description": "Current168-definition reporting subset, applied after completed evaluation. Rows are filtered or reaggregated from saved results; no new strategy execution, price acquisition or reselection.",
     "files": [
-      "results/report_data/development/cost_sharpe_display.json",
-      "results/report_data/development/cost.json"
+      "results/retained_scope/development/cost_sharpe_display.csv"
     ],
     "metricDefinitions": [
       {
@@ -89,18 +88,18 @@
         "sourceLineage": [
           {
             "files": [
-              "results/report_data/development/cost.json"
+              "results/retained_scope/development/cost_sharpe_display.csv"
             ]
           }
         ]
       },
       {
         "label": "Sharpe annualization comparison",
-        "definition": "On the SAME contiguous UTC daily return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). Confidence interval endpoints receive the same positive scale; no bootstrap, return, risk, rank, correlation, t-statistic, alpha, CAGR or selection is recomputed. Approximate flags explicitly mark252 values derived only from rounded current365 displays.",
+        "definition": "On the same complete UTC daily-return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). These display aliases use full-precision saved or retained-scope aggregate Sharpe values; approximation flags are false. Scaling does not change the underlying strategy, daily observations, t-statistics, alpha, CAGR or selections.",
         "sourceLineage": [
           {
             "files": [
-              "results/report_data/development/cost.json"
+              "results/retained_scope/development/cost_sharpe_display.csv"
             ]
           }
         ],
@@ -113,19 +112,27 @@
     ],
     "evidenceFlow": [
       {
-        "title": "Deterministic display scaling only",
-        "detail": "Read the exact source rows and any listed full-precision companion CSV; multiply only the explicitly declared numeric Sharpe statistics or Sharpe CI endpoints by sqrt(252/365). Keep all original fields unmodified; do not resample or drop weekends."
+        "title": "Retained-scope saved-result projection",
+        "detail": "Read results/retained_scope/development/cost_sharpe_display.csv and preserve its exact reviewed rows. Population statistics were filtered/recomputed from saved retained-case metrics after completed evaluation; original frozen identities and development-group memberships are unchanged. No new prices or strategy runs."
       }
     ],
     "limitations": [
       "252 is an alternative annualization convention, not a252-trading-day subsample or an independent result.",
       "Existing primary inference, risk limits, and365-day scientific outputs remain unchanged."
-    ]
+    ],
+    "label": "Audited retained-scope saved-result projection",
+    "type": "local saved-result retained-scope projection",
+    "sourcePins": {
+      "results/retained_scope/development/cost_sharpe_display.csv": {
+        "sha256": "1d0fab41f2085c68f23b229367830ddc73be80d2633ba5922966124c221b697b",
+        "bytes": 993
+      }
+    }
   },
   "methods": [
     {
       "language": "text",
-      "code": "For declared Sharpe fields, write sharpe365_<field>=original fullprecision statistic and sharpe252_<field>=statistic*sqrt(252/365). Scale CI endpoints identically. For current group medians only, retain the original rounded365 display and flag252 as approximate. Counts, ranks and correlations are not scaling targets."
+      "code": "Read results/retained_scope/development/cost_sharpe_display.csv; use the exact saved retained-scope rows. Do not regenerate signals, trades or selection. Sharpe252 aliases scale full-precision Sharpe365 values by sqrt(252/365), on the same daily series. Original development-ranked group memberships remain fixed."
     }
   ]
 }

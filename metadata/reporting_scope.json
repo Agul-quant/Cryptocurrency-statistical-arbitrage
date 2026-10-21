@@ -1,0 +1,212 @@
+{
+  "amended_after_evaluation": true,
+  "baskets": 6615,
+  "bootstrap": {
+    "block_days": 28,
+    "indices": "synchronized original calendar draws",
+    "replications": 4000,
+    "scope": "conditional descriptive update after scope restriction, not fresh OOS confirmation or selection",
+    "seed": 20261015
+  },
+  "both_fixed_all22_studies_unchanged": true,
+  "created_at_utc": "2026-10-21T01:19:06.988819+00:00",
+  "families": {
+    "buffered_momentum": 4,
+    "momentum": 78,
+    "reversal": 78,
+    "trend_long_cash": 4,
+    "trend_long_short": 4
+  },
+  "frozen_nine_reselected": false,
+  "frozen_nine_strategy_definitions_sha256": "7545b605ab77b9a029d001dc748cf65643c2df3cad3f5c0529fd8daffa4593eb",
+  "historical_development_groups_reranked": false,
+  "new_strategy_or_signal_execution": false,
+  "oos_saved_scenario_rows_retained": 638160,
+  "original_nine_acceptance_and_joint_attribution_unchanged": true,
+  "primary_pairs_per_period": 1111320,
+  "protected_financial_files": {
+    "data/availability_ranges.csv": {
+      "bytes": 2452,
+      "sha256": "588e8580ca8bf0c98966f2d65159781ea6136970e83cd5d9d932971658004f67"
+    },
+    "data/decision_allowed.parquet": {
+      "bytes": 405703,
+      "sha256": "ee2d1f4102d74fda2942d8d2640033be6d8b10dca00101c9dfe1b427f7c80538"
+    },
+    "data/diagnostics/daily_attribution_components.parquet": {
+      "bytes": 1230543,
+      "sha256": "a93031b3c34d53c80a5c539b8f13e59cf438762fac77e391c8be96295c1b0276"
+    },
+    "data/diagnostics/daily_model_inputs.parquet": {
+      "bytes": 644195,
+      "sha256": "9ddde621256707ffba10fe183a779ad4ef0e81edccbe1d6c5a495ae977f8d290"
+    },
+    "data/historical_liquidity_candidates.csv": {
+      "bytes": 125084,
+      "sha256": "153b1727d2346b1c38341c1ce962ca7cebbac917d74c7347115ccd156d2739a7"
+    },
+    "data/historical_liquidity_top30.csv": {
+      "bytes": 5138,
+      "sha256": "049f66e194fe099182ccc0ce59b1715899cfc75e70a5fddbe101705a3d40cf37"
+    },
+    "data/hold_allowed.parquet": {
+      "bytes": 420709,
+      "sha256": "46a939f61bc473d76b1dadfb0dfdcbbe9f7cffa1aeac636112429129c3237e24"
+    },
+    "data/liquidity_source_archive_inventory.csv": {
+      "bytes": 338317,
+      "sha256": "7a1419b6475c22d161b051d4964335c81cb0c55bc8a3793177c9f5e2e2c2571e"
+    },
+    "data/mandatory_exit.parquet": {
+      "bytes": 420696,
+      "sha256": "be7ee2ad7cf5994208c07c92a728b0a1eabbfa43a7a159077098f86af1bf243d"
+    },
+    "data/manifest.json": {
+      "bytes": 1586,
+      "sha256": "b42a52ad424ea57af44ef542b9f418e353005952c51819cb6c19ee20c535381a"
+    },
+    "data/metadata_correction_sources.csv": {
+      "bytes": 1457,
+      "sha256": "9a4c036e1d46164afaa1417d509aff62917c1d4d8cb5b0344abbbd9d46b86b69"
+    },
+    "data/observed.parquet": {
+      "bytes": 420854,
+      "sha256": "873356d8479359ae0627ea82a1bb6323300786e616be41ef900b75452f8ad3bf"
+    },
+    "data/prices.parquet": {
+      "bytes": 3938710,
+      "sha256": "853e0980a8bdf5cad99cc1ad075db07595e2fc8117aaed7ff7ff3ca34ef14dd2"
+    },
+    "data/quote_volume.parquet": {
+      "bytes": 10004088,
+      "sha256": "d456f4af680f92e1154ef49ba585b0e82bade046651e60f8ddd1187cebce1dce"
+    },
+    "data/source_archive_inventory.csv": {
+      "bytes": 530240,
+      "sha256": "2f169e7151989eedd6bdaedeadaa8b2efa9340a84fa930ba8b3fc943e5050504"
+    },
+    "data/tradable.parquet": {
+      "bytes": 420708,
+      "sha256": "93358cdfcb2fe105d22289ce82280b54ef67f9a236d903e9bd4a09eb3cf07d27"
+    },
+    "data/universe.csv": {
+      "bytes": 7849,
+      "sha256": "1aa6d5827f220dced04d1bce20b40d52dd5b0a615ab7b1c237aafe2f71a87c7d"
+    },
+    "results/basket_factors/attribution_totals.csv": {
+      "bytes": 4406,
+      "sha256": "0db0302e9b36ad84692ace98061c606357c2b645cdf3ce28af70b6376d268525"
+    },
+    "results/basket_factors/bootstrap_methods.json": {
+      "bytes": 1584,
+      "sha256": "8a18522d27179d49128f2ed1d2a6466cfa82c0a95db0600a15fcae496d2193ec"
+    },
+    "results/basket_factors/btc_only_comparison.csv": {
+      "bytes": 6756,
+      "sha256": "20eccb97407c5d194751a613a1ba72c1b0ef406e1f505c294d20d550b2e86561"
+    },
+    "results/basket_factors/coin_attribution.csv": {
+      "bytes": 99287,
+      "sha256": "d63c08623d9c0b681527836cbcd20687b27e12a71b305fdd44ef5c0b4fc630f5"
+    },
+    "results/basket_factors/joint_coefficients.csv": {
+      "bytes": 102535,
+      "sha256": "d72a70c29467a81bf4f662d80ce93bb5ea4211a9719fc6ec3a5d74230a7844eb"
+    },
+    "results/basket_factors/joint_models.csv": {
+      "bytes": 20804,
+      "sha256": "fa0348a162752a3c7f621299bdcac7922cfc1ec0a81cee5cdf482077302c6fe6"
+    },
+    "results/basket_factors/joint_models.json": {
+      "bytes": 56800,
+      "sha256": "0b9197754fdad4b9a83f17a47f5bc3d5678d9686fbc45dbb304c076e177dad19"
+    },
+    "results/basket_factors/matched_btc_coefficients.csv": {
+      "bytes": 18052,
+      "sha256": "3d23248c6c25117672953eb9b1145e984e1b14409b871b2463d347e6c21916c9"
+    },
+    "results/basket_factors/matched_btc_models.json": {
+      "bytes": 45393,
+      "sha256": "dd5a51de8f4cb490217eb2e273e0970cccde3edb2b7427a9616824c898610817"
+    },
+    "results/basket_factors/path_accounting_audit.csv": {
+      "bytes": 5062,
+      "sha256": "03ecf75c0c72985b121588c646d762c32b5d6091c2b7480888a84b1ebee4df15"
+    },
+    "results/basket_factors/path_accounting_audit.json": {
+      "bytes": 16819,
+      "sha256": "e5b6cd27a1d69e1ff52635a42642fe6bb26199d188fb084e5aed58ebe2cfa19c"
+    },
+    "results/basket_factors/regression_sample_calendar.csv": {
+      "bytes": 779046,
+      "sha256": "3b61079a9c4034a52072a04fc3a26e87e28ad464df51d4debb03ba2c698f4662"
+    },
+    "results/daily_returns.csv": {
+      "bytes": 1019910,
+      "sha256": "7913b6bf52187f293cc594ddea99370b1c9b62365c78f5d0e4a194bfedaf27bd"
+    },
+    "results/fixed_all22_momentum/daily_returns.csv": {
+      "bytes": 191937,
+      "sha256": "49209751b5b1afb899b014625752c4c4f73b392d5b927d8066db9c4ec94ef511"
+    },
+    "results/fixed_all22_momentum/methods.json": {
+      "bytes": 11497,
+      "sha256": "cff92c782ec42496bc2675d1bb61df4c463a5a0ec9ece90343668d8c8182f5c9"
+    },
+    "results/fixed_all22_momentum/primary_inference.csv": {
+      "bytes": 3025,
+      "sha256": "09b119b47b4bd4b1cb4d8aceee85a96cc52318da087ca5864784f403e2c1cf21"
+    },
+    "results/fixed_all22_momentum/primary_inference.json": {
+      "bytes": 5677,
+      "sha256": "250c2ae27ded5e26fb95ce821d0b0fba485932465e7f4fda9012336f07c536cc"
+    },
+    "results/fixed_all22_momentum/primary_summary.csv": {
+      "bytes": 11441,
+      "sha256": "64144bcc4b2594dcc3976e338670b82e476b98f1108f5d3a03b4b8183a75dbaf"
+    },
+    "results/fixed_all22_momentum/scenario_metrics.csv": {
+      "bytes": 62890,
+      "sha256": "38b73575324eefa91758c0966088e68baf11048dc73e380b8639f004cc6c25bb"
+    },
+    "results/fixed_all22_reversal/daily_returns.csv": {
+      "bytes": 191992,
+      "sha256": "918d1b096085e15ee7db5e609207f86fa092bf2f759ba2da6e7f00b977bdfad7"
+    },
+    "results/fixed_all22_reversal/methods.json": {
+      "bytes": 11246,
+      "sha256": "c22f39c8bdd21ad96687a94ceeb34341d11dbbfab11e6615e71217cd6a9c9bcb"
+    },
+    "results/fixed_all22_reversal/primary_inference.csv": {
+      "bytes": 4266,
+      "sha256": "0180f74f8f4be0500889c78adcc959724c8f549ce42ecf60457240fbafa042fe"
+    },
+    "results/fixed_all22_reversal/primary_inference.json": {
+      "bytes": 7082,
+      "sha256": "fc8c961f0a78ca650bd8e78fba20e9925fc4013e4be76f5debda5a46fe2a811c"
+    },
+    "results/fixed_all22_reversal/primary_summary.csv": {
+      "bytes": 11359,
+      "sha256": "fcbeb396e572e10f92fa9bbe3018c0ba3a3ef9d1985115cc42a3346e21d53273"
+    },
+    "results/fixed_all22_reversal/scenario_metrics.csv": {
+      "bytes": 62462,
+      "sha256": "c988849934d23e36d511876f880078f7f601c52bc532ce3f278a52d2023baff5"
+    },
+    "results/strategy_metrics.csv": {
+      "bytes": 64625,
+      "sha256": "ccd03278ddcc33fcf2bd82f7460818a33d39f391a586a93d1fc20384b18cf71f"
+    }
+  },
+  "rank_group_interpretation": "Retained subsets of original frozen development groups; not newly computed168-definition quintiles. Source-rank fields in survivor CSVs refer to that frozen ranking, not the current grid size.",
+  "reporting_configurations": 168,
+  "retained_Q1_pairs": 223512,
+  "scenario_keys_per_full_grid_period": 7779240,
+  "schema_version": 1,
+  "screening_and_regime_estimates_recomputed": true,
+  "source_prices_loaded": false,
+  "source_provenance": "metadata/retained_scope_sources.json",
+  "strict_both_positive_survivors": 39332,
+  "validation_nonpositive_controls": 154404,
+  "validation_survivors": 69108
+}

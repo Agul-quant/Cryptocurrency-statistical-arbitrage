@@ -1,19 +1,18 @@
 query_id,row_index,row_identity,period,metric,sharpe_365,sharpe_252,original_365_display,precision_basis,approximate_252_from_rounded_source,factor
-cohort,0,Broad survivors,oos,Median Sharpe,-0.4154397815470234,-0.3451929515905414,-0.4154397815470234,existing_full_precision_reviewed_query,False,0.8309097176613772
-cohort,1,Strict both-positive,oos,Median Sharpe,-0.3201318196089763,-0.2660006398457174,-0.3201318196089763,existing_full_precision_reviewed_query,False,0.8309097176613772
-cohort,2,Dev-negative survivors,oos,Median Sharpe,-0.5933872643289435,-0.4930512442674195,-0.5933872643289435,existing_full_precision_reviewed_query,False,0.8309097176613772
-cohort,3,Controls,oos,Median Sharpe,-0.4328573124545264,-0.3596653472792531,-0.4328573124545264,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,0,Survivors,oos,Median Sharpe,-1.3932659632965851,-1.1576782281899722,-1.3932659632965851,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,1,Controls,oos,Median Sharpe,-1.0827321231949645,-0.8996526427868314,-1.0827321231949645,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,2,Survivors,oos,Median Sharpe,-1.1111797968712338,-0.9232900912893034,-1.1111797968712338,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,3,Controls,oos,Median Sharpe,-0.926610788976243,-0.7699299090502361,-0.926610788976243,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,4,Survivors,oos,Median Sharpe,0.09921769896541664,0.08244095023436586,0.09921769896541664,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,5,Controls,oos,Median Sharpe,0.058099157643663774,0.04827515467406051,0.058099157643663774,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,6,Survivors,oos,Median Sharpe,-0.06442440623286208,-0.0535308651934493,-0.06442440623286208,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,7,Controls,oos,Median Sharpe,0.07905982769309151,0.0656915791068238,0.07905982769309151,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,8,Survivors,oos,Median Sharpe,-0.1323895987377734,-0.11000380410850631,-0.1323895987377734,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,9,Controls,oos,Median Sharpe,-0.02238407856404312,-0.018599148399759156,-0.02238407856404312,existing_full_precision_reviewed_query,False,0.8309097176613772
-family,10,Controls,oos,Median Sharpe,-0.6731173509396505,-0.5592997480222391,-0.6731173509396505,existing_full_precision_reviewed_query,False,0.8309097176613772
+cohort,0,Broad survivors,oos,Median Sharpe,-0.4154397815470234,-0.3451929515905414,-0.4154397815470234,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+cohort,1,Strict both-positive,oos,Median Sharpe,-0.3201318196089763,-0.2660006398457174,-0.3201318196089763,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+cohort,2,Dev-negative survivors,oos,Median Sharpe,-0.5933872643289435,-0.4930512442674195,-0.5933872643289435,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+cohort,3,Controls,oos,Median Sharpe,-0.43029394204692006,-0.35753541789760734,-0.43029394204692006,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,0,Buffered momentum | Survivors,oos,Median Sharpe,-1.3932659632965851,-1.1576782281899722,-1.3932659632965851,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,1,Momentum | Survivors,oos,Median Sharpe,-1.1111797968712338,-0.9232900912893034,-1.1111797968712338,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,2,Reversal | Survivors,oos,Median Sharpe,0.09921769896541664,0.08244095023436586,0.09921769896541664,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,3,Trend long/cash | Survivors,oos,Median Sharpe,-0.06442440623286208,-0.0535308651934493,-0.06442440623286208,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,4,Trend long/short | Survivors,oos,Median Sharpe,-0.1323895987377734,-0.11000380410850631,-0.1323895987377734,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,5,Buffered momentum | Controls,oos,Median Sharpe,-1.0827321231949645,-0.8996526427868314,-1.0827321231949645,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,6,Momentum | Controls,oos,Median Sharpe,-0.926610788976243,-0.7699299090502361,-0.926610788976243,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,7,Reversal | Controls,oos,Median Sharpe,0.058099157643663774,0.04827515467406051,0.058099157643663774,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,8,Trend long/cash | Controls,oos,Median Sharpe,0.07905982769309151,0.0656915791068238,0.07905982769309151,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+family,9,Trend long/short | Controls,oos,Median Sharpe,-0.02238407856404312,-0.018599148399759156,-0.02238407856404312,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
 uncertainty,0,A01,oos,Sharpe 95% CI low,-0.27694698305915616,-0.23011793950085366,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
 uncertainty,0,A01,oos,Sharpe 95% CI high,2.5785399191598835,2.1425338762077293,,existing_nine_primary_inference_full_precision,False,0.8309097176613772
 uncertainty,1,A02,oos,Sharpe 95% CI low,-0.8713313967347581,-0.7239977248503713,,existing_nine_primary_inference_full_precision,False,0.8309097176613772

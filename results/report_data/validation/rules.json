@@ -31,7 +31,7 @@
         "neighborhood_gate": "Atleastonedeclaredparameterneighbor ANDall28declaredsame-tierbasketneighbors. Everyexpectedneighbor evaluatedfiniteprimarynetreturn anddefinedfiniteprimarySharpe; eachkind strictly>0.5 positiveprimarynetreturnfraction. Centerexcluded.",
         "no_qualifier_policy": "Selectnoneforfamilywithzeroeligiblepairs; neverrelaxrulesaftercounts",
         "robust_score": "min(2022Sharpe,2023Sharpe,medianparameterneighborfull20lag1Sharpe,medianbasketneighborfull20lag1Sharpe), finite andstrictly>0",
-        "scope": "All169cases×6615baskets; only2022–2023saveddevelopmentresults",
+        "scope": "Original development selection over the complete earlier grid; current retained scope168; only2022–2023saveddevelopmentresults; no reselection",
         "search_bias": "Ruledesignedafterdevelopmentrobustness; thresholds are heuristics, not calibratedsignificance. Candidateis optimizedovercorrelatedconfigurationsandbaskets; freeze doesnoterase search/priorinspectionbias.",
         "stress_gate": "Full2022–23 evaluatedfinite netreturn>0 at40bpslag1 and20bpslag2; definedfiniteSharpe>0 at20bpslag2. Noannualstressgate andno40bpsSharpegate."
       },

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ffffff">
-<meta name="data-app-snapshot-sha256" content="8839bbc5858620732c59a3f7046dce13cd00f6485347f387b6ef7b75e86a827e">
+<meta name="data-app-snapshot-sha256" content="b29c5292bfc139d4442154818c7ba9661f6dea879ce8e8aeece74f1881214c73">
 <meta name="data-app-runtime-sha256" content="9e3ede84b28aded3c7379b6e6a5611f0d95b9977eb0f781e279ceefabfcbd27e">
 <meta name="data-app-bootstrap" content="deferred-content-v1">
 
@@ -1489,76 +1489,11 @@
         "type": "hash-verified saved research results"
       }
     },
-    "b02": {
-      "methods": [
-        {
-          "language": "text",
-          "code": "Read results/report_data/oos/b02.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
-        }
-      ],
-      "rows": [
-        {
-          "Pairs": 6615,
-          "Stage": "All factor baskets"
-        },
-        {
-          "Pairs": 1355,
-          "Stage": "Development Q1"
-        },
-        {
-          "Pairs": 1355,
-          "Stage": "Evaluated in both periods"
-        },
-        {
-          "Pairs": 740,
-          "Stage": "Positive development"
-        },
-        {
-          "Pairs": 0,
-          "Stage": "Positive both periods"
-        },
-        {
-          "Pairs": 0,
-          "Stage": "Eligible with defined Sharpes"
-        }
-      ],
-      "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
-        "evidenceFlow": [
-          {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/b02.json; retain all rows and values; apply only the documented display projections and period scope."
-          }
-        ],
-        "files": [
-          "results/report_data/oos/b02.json"
-        ],
-        "metricDefinitions": [
-          {
-            "componentIds": [
-              "b02-table",
-              "b02-text"
-            ],
-            "definition": "Reviewed saved fixed-path metrics projected without new simulation or selection. Percentages stored as fractions unless field explicitly says pp or bps. Missing values retain unavailable status. Same periods and unchanged strategies as governing research.",
-            "label": "b02",
-            "sourceLineage": [
-              {
-                "files": [
-                  "results/report_data/oos/b02.json"
-                ]
-              }
-            ]
-          }
-        ],
-        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
-        "type": "hash-verified saved research results"
-      }
-    },
     "cohort": {
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/oos/cohort.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/oos/cohort.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
       ],
       "rows": [
@@ -1591,23 +1526,24 @@
         },
         {
           "Cohort": "Controls",
-          "Median Max DD": 0.25854479586482226,
-          "Median Sharpe": -0.4328573124545264,
-          "Median TO / year": 68.85531135531136,
-          "Median net return": -0.10821187348556802,
-          "Pairs": 155759,
-          "Profitable": 0.27158623257725073
+          "Median Max DD": 0.25969741362197485,
+          "Median Sharpe": -0.43029394204692006,
+          "Median TO / year": 69.0224358974359,
+          "Median net return": -0.11014835656197466,
+          "Pairs": 154404,
+          "Profitable": 0.27230512162897336
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/cohort.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/cohort.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
           }
         ],
         "files": [
+          "results/retained_scope/oos/cohort.csv",
           "results/report_data/oos/cohort.json"
         ],
         "metricDefinitions": [
@@ -1619,9 +1555,14 @@
               "summary",
               "provenance-text"
             ],
-            "definition": "Full past within-basket development-Q1 census224867. Validation-positive survivors69108 partition into strict positiveboth39332 and developmentnegative29776. Controls155759 validationnonpositive. Positive fraction uses strictly>0 at20bpslag1. All medians constituent distributions, not portfolios.",
+            "definition": "Retained original within-basket development-ranked Q1 assignments:223512 pairs. Validation-positive survivors69108 partition into strict positiveboth39332 and developmentnegative29776. Controls154404 validationnonpositive. Original memberships are preserved, not a newly computed168-definition quintile. Positive fraction is strictly>0 at20bpslag1. Medians describe constituent distributions, not portfolios. Post-evaluation scope amendment; no new independent OOS evidence.",
             "label": "cohort",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/cohort.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/cohort.json"
@@ -1638,7 +1579,7 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/oos/cohort_costs.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/oos/cohort_costs.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
       ],
       "rows": [
@@ -1646,73 +1587,73 @@
           "annualized_full_l1_turnover_median": 47.79761904761905,
           "annualized_full_l1_turnover_n_defined": 69108,
           "annualized_full_l1_turnover_p10": 17.715201465201464,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
           "fraction_positive": 0.3305550732187301,
           "group": "validation_survivors",
           "max_drawdown_median": 0.2544645567380792,
           "max_drawdown_n_defined": 69108,
-          "max_drawdown_p10": 0.15497633712056086,
-          "max_drawdown_p90": 0.34493619087665306,
+          "max_drawdown_p10": 0.1549763371205608,
+          "max_drawdown_p90": 0.344936190876653,
           "n_pairs": 69108,
           "scenario_id": "cost00_lag1",
-          "sharpe_median": -0.12768666996058964,
+          "sharpe_median": -0.1276866699605896,
           "sharpe_n_defined": 69108,
           "sharpe_p10": -1.4817607302642932,
           "sharpe_p90": 0.7117365673181424,
-          "total_return_median": -0.05964599601435698,
+          "total_return_median": -0.0596459960143569,
           "total_return_n_defined": 69108,
-          "total_return_p10": -0.23982169441913914,
-          "total_return_p90": 0.13356639656200064
+          "total_return_p10": -0.2398216944191391,
+          "total_return_p90": 0.1335663965620006
         },
         {
           "annualized_full_l1_turnover_median": 47.79761904761905,
           "annualized_full_l1_turnover_n_defined": 69108,
           "annualized_full_l1_turnover_p10": 17.715201465201464,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
           "fraction_positive": 0.2862910227470047,
           "group": "validation_survivors",
-          "max_drawdown_median": 0.26269961500836714,
+          "max_drawdown_median": 0.2626996150083671,
           "max_drawdown_n_defined": 69108,
-          "max_drawdown_p10": 0.16206289089531725,
+          "max_drawdown_p10": 0.1620628908953172,
           "max_drawdown_p90": 0.3544648760111958,
           "n_pairs": 69108,
           "scenario_id": "cost05_lag1",
-          "sharpe_median": -0.20175156809300693,
+          "sharpe_median": -0.2017515680930069,
           "sharpe_n_defined": 69108,
           "sharpe_p10": -1.6278458977193453,
           "sharpe_p90": 0.6151838143764524,
-          "total_return_median": -0.07508695273314339,
+          "total_return_median": -0.0750869527331433,
           "total_return_n_defined": 69108,
           "total_return_p10": -0.2548996167529047,
-          "total_return_p90": 0.10990687636145843
+          "total_return_p90": 0.1099068763614584
         },
         {
           "annualized_full_l1_turnover_median": 47.79761904761905,
           "annualized_full_l1_turnover_n_defined": 69108,
           "annualized_full_l1_turnover_p10": 17.715201465201464,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
-          "fraction_positive": 0.24629565318052904,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
+          "fraction_positive": 0.246295653180529,
           "group": "validation_survivors",
-          "max_drawdown_median": 0.27116704350007714,
+          "max_drawdown_median": 0.2711670435000771,
           "max_drawdown_n_defined": 69108,
-          "max_drawdown_p10": 0.16958549900830994,
-          "max_drawdown_p90": 0.36455121883269964,
+          "max_drawdown_p10": 0.1695854990083099,
+          "max_drawdown_p90": 0.3645512188326996,
           "n_pairs": 69108,
           "scenario_id": "cost10_lag1",
-          "sharpe_median": -0.27380098876894143,
+          "sharpe_median": -0.2738009887689414,
           "sharpe_n_defined": 69108,
           "sharpe_p10": -1.7832871634178873,
           "sharpe_p90": 0.5276778704828924,
-          "total_return_median": -0.09066401391789405,
+          "total_return_median": -0.090664013917894,
           "total_return_n_defined": 69108,
-          "total_return_p10": -0.27075775518221584,
-          "total_return_p90": 0.08779912037158269
+          "total_return_p10": -0.2707577551822158,
+          "total_return_p90": 0.0877991203715826
         },
         {
           "annualized_full_l1_turnover_median": 47.79761904761905,
           "annualized_full_l1_turnover_n_defined": 69108,
           "annualized_full_l1_turnover_p10": 17.715201465201464,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
           "fraction_positive": 0.2100191005382879,
           "group": "validation_survivors",
           "max_drawdown_median": 0.2798370876414853,
@@ -1721,21 +1662,21 @@
           "max_drawdown_p90": 0.3753009649756792,
           "n_pairs": 69108,
           "scenario_id": "cost15_lag1",
-          "sharpe_median": -0.34506927423728906,
+          "sharpe_median": -0.345069274237289,
           "sharpe_n_defined": 69108,
-          "sharpe_p10": -1.9405693060322218,
-          "sharpe_p90": 0.44408118598334656,
-          "total_return_median": -0.10567380294964954,
+          "sharpe_p10": -1.9405693060322216,
+          "sharpe_p90": 0.4440811859833465,
+          "total_return_median": -0.1056738029496495,
           "total_return_n_defined": 69108,
           "total_return_p10": -0.2868700622067189,
-          "total_return_p90": 0.06744552048261544
+          "total_return_p90": 0.0674455204826154
         },
         {
           "annualized_full_l1_turnover_median": 47.79761904761905,
           "annualized_full_l1_turnover_n_defined": 69108,
           "annualized_full_l1_turnover_p10": 17.715201465201464,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
-          "fraction_positive": 0.17722984314406437,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
+          "fraction_positive": 0.1772298431440643,
           "group": "validation_survivors",
           "max_drawdown_median": 0.2884362301115474,
           "max_drawdown_n_defined": 69108,
@@ -1747,7 +1688,7 @@
           "sharpe_n_defined": 69108,
           "sharpe_p10": -2.1020955709706417,
           "sharpe_p90": 0.3643011395285946,
-          "total_return_median": -0.12078949890664589,
+          "total_return_median": -0.1207894989066458,
           "total_return_n_defined": 69108,
           "total_return_p10": -0.3039674181090642,
           "total_return_p90": 0.0478945111691447
@@ -1756,67 +1697,67 @@
           "annualized_full_l1_turnover_median": 47.79761904761905,
           "annualized_full_l1_turnover_n_defined": 69108,
           "annualized_full_l1_turnover_p10": 17.715201465201464,
-          "annualized_full_l1_turnover_p90": 95.26098901098901,
-          "fraction_positive": 0.17116686924813335,
+          "annualized_full_l1_turnover_p90": 95.260989010989,
+          "fraction_positive": 0.1711668692481333,
           "group": "validation_survivors",
           "max_drawdown_median": 0.2882085041869865,
           "max_drawdown_n_defined": 69108,
-          "max_drawdown_p10": 0.18402628978102403,
+          "max_drawdown_p10": 0.184026289781024,
           "max_drawdown_p90": 0.3893042090502499,
           "n_pairs": 69108,
           "scenario_id": "cost20_lag2",
-          "sharpe_median": -0.41226236698140195,
+          "sharpe_median": -0.4122623669814019,
           "sharpe_n_defined": 69108,
           "sharpe_p10": -2.153532025087129,
           "sharpe_p90": 0.3437594181288982,
-          "total_return_median": -0.12072944724092838,
+          "total_return_median": -0.1207294472409283,
           "total_return_n_defined": 69108,
           "total_return_p10": -0.3088296757211652,
-          "total_return_p90": 0.04298873601965113
+          "total_return_p90": 0.0429887360196511
         },
         {
           "annualized_full_l1_turnover_median": 47.79761904761905,
           "annualized_full_l1_turnover_n_defined": 69108,
           "annualized_full_l1_turnover_p10": 17.715201465201464,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
           "fraction_positive": 0.0775597615326735,
           "group": "validation_survivors",
           "max_drawdown_median": 0.3227528587339724,
           "max_drawdown_n_defined": 69108,
-          "max_drawdown_p10": 0.21494983789221456,
-          "max_drawdown_p90": 0.43730331034411724,
+          "max_drawdown_p10": 0.2149498378922145,
+          "max_drawdown_p90": 0.4373033103441172,
           "n_pairs": 69108,
           "scenario_id": "cost40_lag1",
           "sharpe_median": -0.6965148124810003,
           "sharpe_n_defined": 69108,
           "sharpe_p10": -2.7570835002886263,
-          "sharpe_p90": 0.08861568480629489,
-          "total_return_median": -0.17942177487107205,
+          "sharpe_p90": 0.0886156848062948,
+          "total_return_median": -0.179421774871072,
           "total_return_n_defined": 69108,
           "total_return_p10": -0.3705808289207115,
-          "total_return_p90": -0.016488139083570944
+          "total_return_p90": -0.0164881390835709
         },
         {
           "annualized_full_l1_turnover_median": 39.60851648351648,
           "annualized_full_l1_turnover_n_defined": 39332,
           "annualized_full_l1_turnover_p10": 15.041208791208792,
           "annualized_full_l1_turnover_p90": 94.59249084249085,
-          "fraction_positive": 0.34178277229736603,
+          "fraction_positive": 0.341782772297366,
           "group": "strict_positive_both",
           "max_drawdown_median": 0.2602425306948279,
           "max_drawdown_n_defined": 39332,
-          "max_drawdown_p10": 0.16116738467594285,
+          "max_drawdown_p10": 0.1611673846759428,
           "max_drawdown_p90": 0.344150247421835,
           "n_pairs": 39332,
           "scenario_id": "cost00_lag1",
-          "sharpe_median": -0.07010102962996115,
+          "sharpe_median": -0.0701010296299611,
           "sharpe_n_defined": 39332,
           "sharpe_p10": -1.3329748756969653,
           "sharpe_p90": 0.6886694581447537,
-          "total_return_median": -0.05223187650496329,
+          "total_return_median": -0.0522318765049632,
           "total_return_n_defined": 39332,
           "total_return_p10": -0.228264758161816,
-          "total_return_p90": 0.13229355035198234
+          "total_return_p90": 0.1322935503519823
         },
         {
           "annualized_full_l1_turnover_median": 39.60851648351648,
@@ -1825,42 +1766,42 @@
           "annualized_full_l1_turnover_p90": 94.59249084249085,
           "fraction_positive": 0.2968829451845825,
           "group": "strict_positive_both",
-          "max_drawdown_median": 0.26753887590409026,
+          "max_drawdown_median": 0.2675388759040902,
           "max_drawdown_n_defined": 39332,
-          "max_drawdown_p10": 0.16910530620319872,
+          "max_drawdown_p10": 0.1691053062031987,
           "max_drawdown_p90": 0.3530930050388516,
           "n_pairs": 39332,
           "scenario_id": "cost05_lag1",
-          "sharpe_median": -0.13482952624932765,
+          "sharpe_median": -0.1348295262493276,
           "sharpe_n_defined": 39332,
           "sharpe_p10": -1.489532919114201,
           "sharpe_p90": 0.5985853281264325,
-          "total_return_median": -0.06681788203181047,
+          "total_return_median": -0.0668178820318104,
           "total_return_n_defined": 39332,
-          "total_return_p10": -0.24323539753722395,
-          "total_return_p90": 0.10894845267511719
+          "total_return_p10": -0.2432353975372239,
+          "total_return_p90": 0.1089484526751171
         },
         {
           "annualized_full_l1_turnover_median": 39.60851648351648,
           "annualized_full_l1_turnover_n_defined": 39332,
           "annualized_full_l1_turnover_p10": 15.041208791208792,
           "annualized_full_l1_turnover_p90": 94.59249084249085,
-          "fraction_positive": 0.25559340994609986,
+          "fraction_positive": 0.2555934099460998,
           "group": "strict_positive_both",
           "max_drawdown_median": 0.2752527138815844,
           "max_drawdown_n_defined": 39332,
-          "max_drawdown_p10": 0.17673510798699701,
+          "max_drawdown_p10": 0.176735107986997,
           "max_drawdown_p90": 0.362169625415485,
           "n_pairs": 39332,
           "scenario_id": "cost10_lag1",
-          "sharpe_median": -0.19738186366384497,
+          "sharpe_median": -0.1973818636638449,
           "sharpe_n_defined": 39332,
           "sharpe_p10": -1.6495575972114696,
           "sharpe_p90": 0.517952841236794,
-          "total_return_median": -0.08132130425306087,
+          "total_return_median": -0.0813213042530608,
           "total_return_n_defined": 39332,
           "total_return_p10": -0.2595073889247304,
-          "total_return_p90": 0.08764432171529621
+          "total_return_p90": 0.0876443217152962
         },
         {
           "annualized_full_l1_turnover_median": 39.60851648351648,
@@ -1871,29 +1812,29 @@
           "group": "strict_positive_both",
           "max_drawdown_median": 0.283007895224594,
           "max_drawdown_n_defined": 39332,
-          "max_drawdown_p10": 0.18466196743816474,
+          "max_drawdown_p10": 0.1846619674381647,
           "max_drawdown_p90": 0.3722630012024701,
           "n_pairs": 39332,
           "scenario_id": "cost15_lag1",
-          "sharpe_median": -0.25912039577579327,
+          "sharpe_median": -0.2591203957757932,
           "sharpe_n_defined": 39332,
           "sharpe_p10": -1.8123032495560625,
           "sharpe_p90": 0.4409027262730947,
-          "total_return_median": -0.09563059312899394,
+          "total_return_median": -0.0956305931289939,
           "total_return_n_defined": 39332,
-          "total_return_p10": -0.27543237969930934,
-          "total_return_p90": 0.06820361450822615
+          "total_return_p10": -0.2754323796993093,
+          "total_return_p90": 0.0682036145082261
         },
         {
           "annualized_full_l1_turnover_median": 39.60851648351648,
           "annualized_full_l1_turnover_n_defined": 39332,
           "annualized_full_l1_turnover_p10": 15.041208791208792,
           "annualized_full_l1_turnover_p90": 94.59249084249085,
-          "fraction_positive": 0.18483677412793653,
+          "fraction_positive": 0.1848367741279365,
           "group": "strict_positive_both",
           "max_drawdown_median": 0.2908746960055648,
           "max_drawdown_n_defined": 39332,
-          "max_drawdown_p10": 0.19262820546569248,
+          "max_drawdown_p10": 0.1926282054656924,
           "max_drawdown_p90": 0.3828653697032676,
           "n_pairs": 39332,
           "scenario_id": "cost20_lag1",
@@ -1901,87 +1842,87 @@
           "sharpe_n_defined": 39332,
           "sharpe_p10": -1.9948894263396708,
           "sharpe_p90": 0.3681111805785116,
-          "total_return_median": -0.10946102799283931,
+          "total_return_median": -0.1094610279928393,
           "total_return_n_defined": 39332,
-          "total_return_p10": -0.29168288240433793,
-          "total_return_p90": 0.049057184348616126
+          "total_return_p10": -0.2916828824043379,
+          "total_return_p90": 0.0490571843486161
         },
         {
           "annualized_full_l1_turnover_median": 39.69207875457876,
           "annualized_full_l1_turnover_n_defined": 39332,
           "annualized_full_l1_turnover_p10": 15.041208791208792,
-          "annualized_full_l1_turnover_p90": 95.09386446886447,
-          "fraction_positive": 0.18666734465575105,
+          "annualized_full_l1_turnover_p90": 95.09386446886448,
+          "fraction_positive": 0.186667344655751,
           "group": "strict_positive_both",
-          "max_drawdown_median": 0.28865741416104346,
+          "max_drawdown_median": 0.2886574141610434,
           "max_drawdown_n_defined": 39332,
-          "max_drawdown_p10": 0.19196215271253955,
-          "max_drawdown_p90": 0.38607195446438775,
+          "max_drawdown_p10": 0.1919621527125395,
+          "max_drawdown_p90": 0.3860719544643877,
           "n_pairs": 39332,
           "scenario_id": "cost20_lag2",
           "sharpe_median": -0.2882363833872923,
           "sharpe_n_defined": 39332,
           "sharpe_p10": -2.054149538086733,
           "sharpe_p90": 0.3558219394749268,
-          "total_return_median": -0.10381511892795556,
+          "total_return_median": -0.1038151189279555,
           "total_return_n_defined": 39332,
           "total_return_p10": -0.2968321047208773,
-          "total_return_p90": 0.04635407344571217
+          "total_return_p90": 0.0463540734457121
         },
         {
           "annualized_full_l1_turnover_median": 39.60851648351648,
           "annualized_full_l1_turnover_n_defined": 39332,
           "annualized_full_l1_turnover_p10": 15.041208791208792,
           "annualized_full_l1_turnover_p90": 94.59249084249085,
-          "fraction_positive": 0.08227397538899624,
+          "fraction_positive": 0.0822739753889962,
           "group": "strict_positive_both",
-          "max_drawdown_median": 0.32203844788019714,
+          "max_drawdown_median": 0.3220384478801971,
           "max_drawdown_n_defined": 39332,
-          "max_drawdown_p10": 0.22214420121766795,
+          "max_drawdown_p10": 0.2221442012176679,
           "max_drawdown_p90": 0.4320874978979194,
           "n_pairs": 39332,
           "scenario_id": "cost40_lag1",
           "sharpe_median": -0.5565010313342869,
           "sharpe_n_defined": 39332,
           "sharpe_p10": -2.637163791757357,
-          "sharpe_p90": 0.11555228925958683,
+          "sharpe_p90": 0.1155522892595868,
           "total_return_median": -0.1656171761896836,
           "total_return_n_defined": 39332,
-          "total_return_p10": -0.35843162367280534,
-          "total_return_p90": -0.012595971655883156
+          "total_return_p10": -0.3584316236728053,
+          "total_return_p90": -0.0125959716558831
         },
         {
           "annualized_full_l1_turnover_median": 50.8058608058608,
           "annualized_full_l1_turnover_n_defined": 29776,
           "annualized_full_l1_turnover_p10": 19.386446886446887,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
           "fraction_positive": 0.3157240730789898,
           "group": "development_negative_survivors",
-          "max_drawdown_median": 0.24564353323563914,
+          "max_drawdown_median": 0.2456435332356391,
           "max_drawdown_n_defined": 29776,
-          "max_drawdown_p10": 0.14781636382592128,
-          "max_drawdown_p90": 0.34673986974790927,
+          "max_drawdown_p10": 0.1478163638259212,
+          "max_drawdown_p90": 0.3467398697479092,
           "n_pairs": 29776,
           "scenario_id": "cost00_lag1",
-          "sharpe_median": -0.22194227621416898,
+          "sharpe_median": -0.2219422762141689,
           "sharpe_n_defined": 29776,
           "sharpe_p10": -1.645148147524498,
           "sharpe_p90": 0.7460928555810376,
           "total_return_median": -0.0703006643866823,
           "total_return_n_defined": 29776,
-          "total_return_p10": -0.25430195674073786,
-          "total_return_p90": 0.13563905359102837
+          "total_return_p10": -0.2543019567407378,
+          "total_return_p90": 0.1356390535910283
         },
         {
           "annualized_full_l1_turnover_median": 50.8058608058608,
           "annualized_full_l1_turnover_n_defined": 29776,
           "annualized_full_l1_turnover_p10": 19.386446886446887,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
-          "fraction_positive": 0.27229983879634606,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
+          "fraction_positive": 0.272299838796346,
           "group": "development_negative_survivors",
-          "max_drawdown_median": 0.25497642959335576,
+          "max_drawdown_median": 0.2549764295933557,
           "max_drawdown_n_defined": 29776,
-          "max_drawdown_p10": 0.15433987206093386,
+          "max_drawdown_p10": 0.1543398720609338,
           "max_drawdown_p90": 0.356714777484795,
           "n_pairs": 29776,
           "scenario_id": "cost05_lag1",
@@ -1992,70 +1933,70 @@
           "total_return_median": -0.0883782442563526,
           "total_return_n_defined": 29776,
           "total_return_p10": -0.2703053611990925,
-          "total_return_p90": 0.11170536053724987
+          "total_return_p90": 0.1117053605372498
         },
         {
           "annualized_full_l1_turnover_median": 50.8058608058608,
           "annualized_full_l1_turnover_n_defined": 29776,
           "annualized_full_l1_turnover_p10": 19.386446886446887,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
-          "fraction_positive": 0.23401397098334228,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
+          "fraction_positive": 0.2340139709833422,
           "group": "development_negative_survivors",
           "max_drawdown_median": 0.2645241580515785,
           "max_drawdown_n_defined": 29776,
-          "max_drawdown_p10": 0.16146011876295058,
+          "max_drawdown_p10": 0.1614601187629505,
           "max_drawdown_p90": 0.3674926255959879,
           "n_pairs": 29776,
           "scenario_id": "cost10_lag1",
-          "sharpe_median": -0.41235222218117396,
+          "sharpe_median": -0.4123522221811739,
           "sharpe_n_defined": 29776,
           "sharpe_p10": -1.9225730500478049,
           "sharpe_p90": 0.5449651860752619,
-          "total_return_median": -0.10515760496631152,
+          "total_return_median": -0.1051576049663115,
           "total_return_n_defined": 29776,
           "total_return_p10": -0.2860810333085747,
-          "total_return_p90": 0.08805027567533738
+          "total_return_p90": 0.0880502756753373
         },
         {
           "annualized_full_l1_turnover_median": 50.8058608058608,
           "annualized_full_l1_turnover_n_defined": 29776,
           "annualized_full_l1_turnover_p10": 19.386446886446887,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
-          "fraction_positive": 0.19807898979043526,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
+          "fraction_positive": 0.1980789897904352,
           "group": "development_negative_survivors",
           "max_drawdown_median": 0.274349046991456,
           "max_drawdown_n_defined": 29776,
-          "max_drawdown_p10": 0.16849109333446238,
-          "max_drawdown_p90": 0.37921731335612074,
+          "max_drawdown_p10": 0.1684910933344623,
+          "max_drawdown_p90": 0.3792173133561207,
           "n_pairs": 29776,
           "scenario_id": "cost15_lag1",
           "sharpe_median": -0.5048970847507208,
           "sharpe_n_defined": 29776,
           "sharpe_p10": -2.069412053756098,
-          "sharpe_p90": 0.44827810887354114,
-          "total_return_median": -0.12172382639455323,
+          "sharpe_p90": 0.4482781088735411,
+          "total_return_median": -0.1217238263945532,
           "total_return_n_defined": 29776,
           "total_return_p10": -0.3020380990709156,
-          "total_return_p90": 0.06611131376557725
+          "total_return_p90": 0.0661113137655772
         },
         {
           "annualized_full_l1_turnover_median": 50.8058608058608,
           "annualized_full_l1_turnover_n_defined": 29776,
           "annualized_full_l1_turnover_p10": 19.386446886446887,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
-          "fraction_positive": 0.16718162278344975,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
+          "fraction_positive": 0.1671816227834497,
           "group": "development_negative_survivors",
-          "max_drawdown_median": 0.28428326548200566,
+          "max_drawdown_median": 0.2842832654820056,
           "max_drawdown_n_defined": 29776,
-          "max_drawdown_p10": 0.17539835635197137,
-          "max_drawdown_p90": 0.39137356150127073,
+          "max_drawdown_p10": 0.1753983563519713,
+          "max_drawdown_p90": 0.3913735615012707,
           "n_pairs": 29776,
           "scenario_id": "cost20_lag1",
           "sharpe_median": -0.5933872643289435,
           "sharpe_n_defined": 29776,
           "sharpe_p10": -2.225142618389876,
-          "sharpe_p90": 0.35873120074629017,
-          "total_return_median": -0.13826504761851838,
+          "sharpe_p90": 0.3587312007462901,
+          "total_return_median": -0.1382650476185183,
           "total_return_n_defined": 29776,
           "total_return_p10": -0.3186097928998002,
           "total_return_p90": 0.0458169185404865
@@ -2064,8 +2005,8 @@
           "annualized_full_l1_turnover_median": 50.8058608058608,
           "annualized_full_l1_turnover_n_defined": 29776,
           "annualized_full_l1_turnover_p10": 19.386446886446887,
-          "annualized_full_l1_turnover_p90": 95.26098901098901,
-          "fraction_positive": 0.15069183234819988,
+          "annualized_full_l1_turnover_p90": 95.260989010989,
+          "fraction_positive": 0.1506918323481998,
           "group": "development_negative_survivors",
           "max_drawdown_median": 0.2875008869765413,
           "max_drawdown_n_defined": 29776,
@@ -2076,44 +2017,45 @@
           "sharpe_median": -0.6273634448913957,
           "sharpe_n_defined": 29776,
           "sharpe_p10": -2.2637350372755307,
-          "sharpe_p90": 0.31972857155968326,
+          "sharpe_p90": 0.3197285715596832,
           "total_return_median": -0.1458561697660361,
           "total_return_n_defined": 29776,
-          "total_return_p10": -0.32415547156090524,
-          "total_return_p90": 0.03695693041338635
+          "total_return_p10": -0.3241554715609052,
+          "total_return_p90": 0.0369569304133863
         },
         {
           "annualized_full_l1_turnover_median": 50.8058608058608,
           "annualized_full_l1_turnover_n_defined": 29776,
           "annualized_full_l1_turnover_p10": 19.386446886446887,
-          "annualized_full_l1_turnover_p90": 94.75961538461539,
-          "fraction_positive": 0.07133261687264911,
+          "annualized_full_l1_turnover_p90": 94.7596153846154,
+          "fraction_positive": 0.0713326168726491,
           "group": "development_negative_survivors",
-          "max_drawdown_median": 0.32396362732683537,
+          "max_drawdown_median": 0.3239636273268353,
           "max_drawdown_n_defined": 29776,
           "max_drawdown_p10": 0.2054619456774049,
-          "max_drawdown_p90": 0.44247682867823646,
+          "max_drawdown_p90": 0.4424768286782364,
           "n_pairs": 29776,
           "scenario_id": "cost40_lag1",
-          "sharpe_median": -0.9623274095084733,
+          "sharpe_median": -0.9623274095084732,
           "sharpe_n_defined": 29776,
-          "sharpe_p10": -2.8828769946550716,
-          "sharpe_p90": 0.04020181845791299,
-          "total_return_median": -0.19934261315210183,
+          "sharpe_p10": -2.882876994655072,
+          "sharpe_p90": 0.0402018184579129,
+          "total_return_median": -0.1993426131521018,
           "total_return_n_defined": 29776,
-          "total_return_p10": -0.38468496860186213,
-          "total_return_p90": -0.022918062765040874
+          "total_return_p10": -0.3846849686018621,
+          "total_return_p90": -0.0229180627650408
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/cohort_costs.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/cohort_costs.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
           }
         ],
         "files": [
+          "results/retained_scope/oos/cohort_costs.csv",
           "results/report_data/oos/cohort_costs.json"
         ],
         "metricDefinitions": [
@@ -2125,6 +2067,11 @@
             "definition": "Reviewed saved fixed-path metrics projected without new simulation or selection. Percentages stored as fractions unless field explicitly says pp or bps. Missing values retain unavailable status. Same periods and unchanged strategies as governing research.",
             "label": "cohort_costs",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/cohort_costs.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/cohort_costs.json"
@@ -2141,7 +2088,7 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/oos/coins.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/oos/coins.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
       ],
       "rows": [
@@ -2151,8 +2098,8 @@
           "liquidity_rank": 1,
           "membership_association_identifiable": false,
           "membership_varies": false,
-          "n_included": 224867,
-          "n_pairs": 224867,
+          "n_included": 223512,
+          "n_pairs": 223512,
           "symbol": "BTCUSDT",
           "tier": "fixed"
         },
@@ -2162,228 +2109,228 @@
           "liquidity_rank": 2,
           "membership_association_identifiable": false,
           "membership_varies": false,
-          "n_included": 224867,
-          "n_pairs": 224867,
+          "n_included": 223512,
+          "n_pairs": 223512,
           "symbol": "ETHUSDT",
           "tier": "fixed"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2857244504529344,
+          "inclusion_fraction": 0.2857385733204481,
           "liquidity_rank": 3,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64250,
-          "n_pairs": 224867,
+          "n_included": 63866,
+          "n_pairs": 223512,
           "symbol": "SHIBUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2857244504529344,
+          "inclusion_fraction": 0.28416818783778947,
           "liquidity_rank": 4,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64250,
-          "n_pairs": 224867,
+          "n_included": 63515,
+          "n_pairs": 223512,
           "symbol": "BNBUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.285688873867664,
+          "inclusion_fraction": 0.28593990479258385,
           "liquidity_rank": 5,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64242,
-          "n_pairs": 224867,
+          "n_included": 63911,
+          "n_pairs": 223512,
           "symbol": "SOLUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2856977680139816,
+          "inclusion_fraction": 0.28585489817101545,
           "liquidity_rank": 6,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64244,
-          "n_pairs": 224867,
+          "n_included": 63892,
+          "n_pairs": 223512,
           "symbol": "XRPUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2857155563066168,
+          "inclusion_fraction": 0.28569830702602095,
           "liquidity_rank": 7,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64248,
-          "n_pairs": 224867,
+          "n_included": 63857,
+          "n_pairs": 223512,
           "symbol": "DOTUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2857244504529344,
+          "inclusion_fraction": 0.28570725509144923,
           "liquidity_rank": 8,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64250,
-          "n_pairs": 224867,
+          "n_included": 63859,
+          "n_pairs": 223512,
           "symbol": "SANDUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2857244504529344,
+          "inclusion_fraction": 0.28689287376069295,
           "liquidity_rank": 9,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64250,
-          "n_pairs": 224867,
+          "n_included": 64124,
+          "n_pairs": 223512,
           "symbol": "LUNAUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2856933209408228,
+          "inclusion_fraction": 0.2856177744371667,
           "liquidity_rank": 10,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64243,
-          "n_pairs": 224867,
+          "n_included": 63839,
+          "n_pairs": 223512,
           "symbol": "AVAXUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2856977680139816,
+          "inclusion_fraction": 0.28568041089516444,
           "liquidity_rank": 11,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64244,
-          "n_pairs": 224867,
+          "n_included": 63853,
+          "n_pairs": 223512,
           "symbol": "DOGEUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2857022150871404,
+          "inclusion_fraction": 0.2856356705680232,
           "liquidity_rank": 12,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64245,
-          "n_pairs": 224867,
+          "n_included": 63843,
+          "n_pairs": 223512,
           "symbol": "ADAUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.285755579965046,
+          "inclusion_fraction": 0.2840071226600809,
           "liquidity_rank": 13,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64257,
-          "n_pairs": 224867,
+          "n_included": 63479,
+          "n_pairs": 223512,
           "symbol": "FTMUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2857422387455696,
+          "inclusion_fraction": 0.28593095672715557,
           "liquidity_rank": 14,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64254,
-          "n_pairs": 224867,
+          "n_included": 63909,
+          "n_pairs": 223512,
           "symbol": "TRXUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2856933209408228,
+          "inclusion_fraction": 0.28568041089516444,
           "liquidity_rank": 15,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 64243,
-          "n_pairs": 224867,
+          "n_included": 63853,
+          "n_pairs": 223512,
           "symbol": "MATICUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.2857155563066168,
+          "inclusion_fraction": 0.2874476538172447,
           "liquidity_rank": 16,
           "membership_association_identifiable": true,
           "membership_varies": true,
           "n_included": 64248,
-          "n_pairs": 224867,
+          "n_pairs": 223512,
           "symbol": "MANAUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.3333303686178941,
+          "inclusion_fraction": 0.3328143455384946,
           "liquidity_rank": 17,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 74955,
-          "n_pairs": 224867,
+          "n_included": 74388,
+          "n_pairs": 223512,
           "symbol": "FILUSDT",
           "tier": "rank17_22"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.3333081332521001,
+          "inclusion_fraction": 0.33297988474891727,
           "liquidity_rank": 18,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 74950,
-          "n_pairs": 224867,
+          "n_included": 74425,
+          "n_pairs": 223512,
           "symbol": "GALAUSDT",
           "tier": "rank17_22"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.33335705105684693,
+          "inclusion_fraction": 0.3332125344500519,
           "liquidity_rank": 19,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 74961,
-          "n_pairs": 224867,
+          "n_included": 74477,
+          "n_pairs": 223512,
           "symbol": "LINKUSDT",
           "tier": "rank17_22"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.33335705105684693,
+          "inclusion_fraction": 0.332689072622499,
           "liquidity_rank": 20,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 74961,
-          "n_pairs": 224867,
+          "n_included": 74360,
+          "n_pairs": 223512,
           "symbol": "AXSUSDT",
           "tier": "rank17_22"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.3333081332521001,
+          "inclusion_fraction": 0.33532875192383405,
           "liquidity_rank": 21,
           "membership_association_identifiable": true,
           "membership_varies": true,
           "n_included": 74950,
-          "n_pairs": 224867,
+          "n_pairs": 223512,
           "symbol": "LTCUSDT",
           "tier": "rank17_22"
         },
         {
           "cohort": "all_Q1",
-          "inclusion_fraction": 0.3333392627642117,
+          "inclusion_fraction": 0.3329754107162032,
           "liquidity_rank": 22,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 74957,
-          "n_pairs": 224867,
+          "n_included": 74424,
+          "n_pairs": 223512,
           "symbol": "VETUSDT",
           "tier": "rank17_22"
         },
@@ -3119,8 +3066,8 @@
           "liquidity_rank": 1,
           "membership_association_identifiable": false,
           "membership_varies": false,
-          "n_included": 155759,
-          "n_pairs": 155759,
+          "n_included": 154404,
+          "n_pairs": 154404,
           "symbol": "BTCUSDT",
           "tier": "fixed"
         },
@@ -3130,241 +3077,242 @@
           "liquidity_rank": 2,
           "membership_association_identifiable": false,
           "membership_varies": false,
-          "n_included": 155759,
-          "n_pairs": 155759,
+          "n_included": 154404,
+          "n_pairs": 154404,
           "symbol": "ETHUSDT",
           "tier": "fixed"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.288946385120603,
+          "inclusion_fraction": 0.2889951037537888,
           "liquidity_rank": 3,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 45006,
-          "n_pairs": 155759,
+          "n_included": 44622,
+          "n_pairs": 154404,
           "symbol": "SHIBUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "controls",
-          "inclusion_fractio</script><script type="application/json" data-app-snapshot-chunk>n": 0.265949319140467,
+          "inclusion_fraction": 0.26352296572627654,
           "liquidity_rank": 4,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 41424,
-          "n_pairs": 155759,
+          "n_included": 40689,
+          "n_pairs": 154404,
           "symbol": "BNBUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.28333515238284784,
+          "inclusion_fraction": 0.28367788399264265,
           "liquidity_rank": 5,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 44132,
-          "n_pairs": 155759,
+          "n_included": 43801,
+          "n_pairs": 154404,
           "symbol": "SOLUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.23639725473327383,
+          "inclusion_fraction": 0.2361920675630165,
           "liquidity_rank": 6,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 36821,
-          "n_pairs": 155759,
+          "n_included": 36469,
+          "n_pairs": 154404,
           "symbol": "XRPUSDT",
           "tier": "rank3_9"
         },
-        {
+        </script><script type="application/json" data-app-snapshot-chunk>{
           "cohort": "controls",
-          "inclusion_fraction": 0.30100347331454363,
+          "inclusion_fraction": 0.3011126654749877,
           "liquidity_rank": 7,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 46884,
-          "n_pairs": 155759,
+          "n_included": 46493,
+          "n_pairs": 154404,
           "symbol": "DOTUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.2896718648681617,
+          "inclusion_fraction": 0.2896816144659465,
           "liquidity_rank": 8,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 45119,
-          "n_pairs": 155759,
+          "n_included": 44728,
+          "n_pairs": 154404,
           "symbol": "SANDUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.334696550440103,
+          "inclusion_fraction": 0.33681769902334135,
           "liquidity_rank": 9,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 52132,
-          "n_pairs": 155759,
+          "n_included": 52006,
+          "n_pairs": 154404,
           "symbol": "LUNAUSDT",
           "tier": "rank3_9"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.3082775313144024,
+          "inclusion_fraction": 0.30836636356571073,
           "liquidity_rank": 10,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 48017,
-          "n_pairs": 155759,
+          "n_included": 47613,
+          "n_pairs": 154404,
           "symbol": "AVAXUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.26614834455793884,
+          "inclusion_fraction": 0.2659516592834383,
           "liquidity_rank": 11,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 41455,
-          "n_pairs": 155759,
+          "n_included": 41064,
+          "n_pairs": 154404,
           "symbol": "DOGEUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.30077876719804314,
+          "inclusion_fraction": 0.30081474573197586,
           "liquidity_rank": 12,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 46849,
-          "n_pairs": 155759,
+          "n_included": 46447,
+          "n_pairs": 154404,
           "symbol": "ADAUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.24407578374283348,
+          "inclusion_fraction": 0.2411789850003886,
           "liquidity_rank": 13,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 38017,
-          "n_pairs": 155759,
+          "n_included": 37239,
+          "n_pairs": 154404,
           "symbol": "FTMUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.2981593358971231,
+          "inclusion_fraction": 0.2985414885624725,
           "liquidity_rank": 14,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 46441,
-          "n_pairs": 155759,
+          "n_included": 46096,
+          "n_pairs": 154404,
           "symbol": "TRXUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.28621139067405416,
+          "inclusion_fraction": 0.28619724877593844,
           "liquidity_rank": 15,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 44580,
-          "n_pairs": 155759,
+          "n_included": 44190,
+          "n_pairs": 154404,
           "symbol": "MATICUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.2963488466156049,
+          "inclusion_fraction": 0.29894950908007567,
           "liquidity_rank": 16,
           "membership_association_identifiable": true,
           "membership_varies": true,
           "n_included": 46159,
-          "n_pairs": 155759,
+          "n_pairs": 154404,
           "symbol": "MANAUSDT",
           "tier": "rank10_16"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.3495399944786497,
+          "inclusion_fraction": 0.3489352607445403,
           "liquidity_rank": 17,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 54444,
-          "n_pairs": 155759,
+          "n_included": 53877,
+          "n_pairs": 154404,
           "symbol": "FILUSDT",
           "tier": "rank17_22"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.31465276484825916,
+          "inclusion_fraction": 0.3140138856506308,
           "liquidity_rank": 18,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 49010,
-          "n_pairs": 155759,
+          "n_included": 48485,
+          "n_pairs": 154404,
           "symbol": "GALAUSDT",
           "tier": "rank17_22"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.33289248133334187,
+          "inclusion_fraction": 0.3326792052019378,
           "liquidity_rank": 19,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 51851,
-          "n_pairs": 155759,
+          "n_included": 51367,
+          "n_pairs": 154404,
           "symbol": "LINKUSDT",
           "tier": "rank17_22"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.3298300579741781,
+          "inclusion_fraction": 0.32883215460739357,
           "liquidity_rank": 20,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 51374,
-          "n_pairs": 155759,
+          "n_included": 50773,
+          "n_pairs": 154404,
           "symbol": "AXSUSDT",
           "tier": "rank17_22"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.3501049698572795,
+          "inclusion_fraction": 0.35317737882438277,
           "liquidity_rank": 21,
           "membership_association_identifiable": true,
           "membership_varies": true,
           "n_included": 54532,
-          "n_pairs": 155759,
+          "n_pairs": 154404,
           "symbol": "LTCUSDT",
           "tier": "rank17_22"
         },
         {
           "cohort": "controls",
-          "inclusion_fraction": 0.3229797315082917,
+          "inclusion_fraction": 0.3223621149711147,
           "liquidity_rank": 22,
           "membership_association_identifiable": true,
           "membership_varies": true,
-          "n_included": 50307,
-          "n_pairs": 155759,
+          "n_included": 49774,
+          "n_pairs": 154404,
           "symbol": "VETUSDT",
           "tier": "rank17_22"
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/coins.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/coins.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
           }
         ],
         "files": [
+          "results/retained_scope/oos/coins.csv",
           "results/report_data/oos/coins.json"
         ],
         "metricDefinitions": [
@@ -3376,6 +3324,11 @@
             "definition": "Reviewed saved fixed-path metrics projected without new simulation or selection. Percentages stored as fractions unless field explicitly says pp or bps. Missing values retain unavailable status. Same periods and unchanged strategies as governing research.",
             "label": "coins",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/coins.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/coins.json"
@@ -3676,50 +3629,51 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/oos/decomposition.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/oos/decomposition.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
       ],
       "rows": [
         {
-          "Composition pp": 2.3294820712338526,
+          "Composition pp": 2.543184010249261,
           "Conditioning": "Family",
-          "Raw gap pp": 9.435638943318637,
+          "Raw gap pp": 9.507527848490898,
           "Shared pairs": 223512,
           "Shared strata": 5,
           "Standardized gap pp": 6.3408016211628,
-          "Unsupported pp": 0.1649984912589321,
-          "Within pp": 6.941158380825854
+          "Unsupported pp": 0.0,
+          "Within pp": 6.964343838241641
         },
         {
-          "Composition pp": -4.2401243292115085,
+          "Composition pp": -4.060604645292245,
           "Conditioning": "Exact configuration",
-          "Raw gap pp": 9.435638943318637,
+          "Raw gap pp": 9.507527848490898,
           "Shared pairs": 207804,
           "Shared strata": 62,
           "Standardized gap pp": 10.709614299783013,
-          "Unsupported pp": 2.652174192181511,
-          "Within pp": 11.023589080348636
+          "Unsupported pp": 2.5090023574518794,
+          "Within pp": 11.059130136331262
         },
         {
-          "Composition pp": 3.8079183332998303,
+          "Composition pp": 3.815271642817206,
           "Conditioning": "Exact basket",
-          "Raw gap pp": 9.435638943318637,
-          "Shared pairs": 224731,
+          "Raw gap pp": 9.507527848490898,
+          "Shared pairs": 223376,
           "Shared strata": 6611,
-          "Standardized gap pp": 4.920493093525106,
-          "Unsupported pp": 0.03531096116436289,
-          "Within pp": 5.592409648854446
+          "Standardized gap pp": 4.972596305598334,
+          "Unsupported pp": 0.03562083883837207,
+          "Within pp": 5.656635366835321
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/decomposition.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/decomposition.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
           }
         ],
         "files": [
+          "results/retained_scope/oos/decomposition.csv",
           "results/report_data/oos/decomposition.json"
         ],
         "metricDefinitions": [
@@ -3729,9 +3683,14 @@
               "baskets-text",
               "settings-text"
             ],
-            "definition": "Alternative descriptive compositions of same9.44ppC-S breadthgap. Composition+within+unsupported reconcile within rows; rows not additive. FixedpastpooledQ1stratumweights on common support; no missing-group fabrication, no causal interpretation.",
+            "definition": "Alternative descriptive compositions of same retained-scope control-minus-survivor breadth gap. Composition+within+unsupported reconcile within rows; rows not additive. FixedpastpooledQ1stratumweights on common support; no missing-group fabrication, no causal interpretation.",
             "label": "decomposition",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/decomposition.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/decomposition.json"
@@ -4004,7 +3963,7 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/oos/family.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/oos/family.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
       ],
       "rows": [
@@ -4018,15 +3977,6 @@
           "Share of cohort": 0.09953985066851884
         },
         {
-          "Cohort": "Controls",
-          "Family": "Buffered momentum",
-          "Median Sharpe": -1.0827321231949645,
-          "Median net return": -0.18831840552601498,
-          "Pairs": 13189,
-          "Profitable": 0.109712639320646,
-          "Share of cohort": 0.08467568487214222
-        },
-        {
           "Cohort": "Survivors",
           "Family": "Momentum",
           "Median Sharpe": -1.1111797968712338,
@@ -4034,15 +3984,6 @@
           "Pairs": 29269,
           "Profitable": 0.09996925074310704,
           "Share of cohort": 0.4235254963245934
-        },
-        {
-          "Cohort": "Controls",
-          "Family": "Momentum",
-          "Median Sharpe": -0.926610788976243,
-          "Median net return": -0.16649195973581776,
-          "Pairs": 78143,
-          "Profitable": 0.17755909038557516,
-          "Share of cohort": 0.5016917160485108
         },
         {
           "Cohort": "Survivors",
@@ -4054,15 +3995,6 @@
           "Share of cohort": 0.04808415812930485
         },
         {
-          "Cohort": "Controls",
-          "Family": "Reversal",
-          "Median Sharpe": 0.058099157643663774,
-          "Median net return": -0.009214628697336181,
-          "Pairs": 42350,
-          "Profitable": 0.48028335301062575,
-          "Share of cohort": 0.2718944009655943
-        },
-        {
           "Cohort": "Survivors",
           "Family": "Trend long/cash",
           "Median Sharpe": -0.06442440623286208,
@@ -4070,15 +4002,6 @@
           "Pairs": 18685,
           "Profitable": 0.28975113727588975,
           "Share of cohort": 0.27037390750709034
-        },
-        {
-          "Cohort": "Controls",
-          "Family": "Trend long/cash",
-          "Median Sharpe": 0.07905982769309151,
-          "Median net return": -0.018059433611161826,
-          "Pairs": 6171,
-          "Profitable": 0.41581591314211636,
-          "Share of cohort": 0.03961889842641517
         },
         {
           "Cohort": "Survivors",
@@ -4091,32 +4014,60 @@
         },
         {
           "Cohort": "Controls",
+          "Family": "Buffered momentum",
+          "Median Sharpe": -1.0827321231949645,
+          "Median net return": -0.18831840552601498,
+          "Pairs": 13189,
+          "Profitable": 0.109712639320646,
+          "Share of cohort": 0.08541877153441621
+        },
+        {
+          "Cohort": "Controls",
+          "Family": "Momentum",
+          "Median Sharpe": -0.926610788976243,
+          "Median net return": -0.16649195973581776,
+          "Pairs": 78143,
+          "Profitable": 0.17755909038557516,
+          "Share of cohort": 0.5060944016994379
+        },
+        {
+          "Cohort": "Controls",
+          "Family": "Reversal",
+          "Median Sharpe": 0.058099157643663774,
+          "Median net return": -0.009214628697336181,
+          "Pairs": 42350,
+          "Profitable": 0.48028335301062575,
+          "Share of cohort": 0.2742804590554649
+        },
+        {
+          "Cohort": "Controls",
+          "Family": "Trend long/cash",
+          "Median Sharpe": 0.07905982769309151,
+          "Median net return": -0.018059433611161826,
+          "Pairs": 6171,
+          "Profitable": 0.41581591314211636,
+          "Share of cohort": 0.03996658117665346
+        },
+        {
+          "Cohort": "Controls",
           "Family": "Trend long/short",
           "Median Sharpe": -0.02238407856404312,
           "Median net return": -0.08397593995978453,
           "Pairs": 14551,
           "Profitable": 0.26231874098000135,
-          "Share of cohort": 0.0934199628913899
-        },
-        {
-          "Cohort": "Controls",
-          "Family": "BTC-factor residual",
-          "Median Sharpe": -0.6731173509396505,
-          "Median net return": -0.004052954226744685,
-          "Pairs": 1355,
-          "Profitable": 0.1896678966789668,
-          "Share of cohort": 0.008699336795947586
+          "Share of cohort": 0.09423978653402762
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/family.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/family.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
           }
         ],
         "files": [
+          "results/retained_scope/oos/family.csv",
           "results/report_data/oos/family.json"
         ],
         "metricDefinitions": [
@@ -4129,6 +4080,11 @@
             "definition": "Reviewed saved fixed-path metrics projected without new simulation or selection. Percentages stored as fractions unless field explicitly says pp or bps. Missing values retain unavailable status. Same periods and unchanged strategies as governing research.",
             "label": "family",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/family.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/family.json"
@@ -4145,7 +4101,7 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/oos/fees.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/oos/fees.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
       ],
       "rows": [
@@ -4160,23 +4116,24 @@
         },
         {
           "Cohort": "Controls",
-          "Gross profit erased pp": 23.528014432552855,
-          "Gross profitable": 0.5068663769027792,
-          "Median TO / year": 68.85531135531136,
-          "Median gross return": 0.002245092974728018,
-          "Median net return": -0.10821187348556802,
-          "Net profitable": 0.27158623257725073
+          "Gross profit erased pp": 23.539545607626746,
+          "Gross profitable": 0.5077005777052408,
+          "Median TO / year": 69.0224358974359,
+          "Median gross return": 0.003119189074904344,
+          "Median net return": -0.11014835656197466,
+          "Net profitable": 0.27230512162897336
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/fees.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/fees.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
           }
         ],
         "files": [
+          "results/retained_scope/oos/fees.csv",
           "results/report_data/oos/fees.json"
         ],
         "metricDefinitions": [
@@ -4188,6 +4145,11 @@
             "definition": "Reviewed saved fixed-path metrics projected without new simulation or selection. Percentages stored as fractions unless field explicitly says pp or bps. Missing values retain unavailable status. Same periods and unchanged strategies as governing research.",
             "label": "fees",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/fees.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/fees.json"
@@ -4326,7 +4288,7 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/oos/joint.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/oos/joint.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
       ],
       "rows": [
@@ -4340,14 +4302,15 @@
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/joint.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/joint.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
           }
         ],
         "files": [
+          "results/retained_scope/oos/joint.csv",
           "results/report_data/oos/joint.json"
         ],
         "metricDefinitions": [
@@ -4359,6 +4322,11 @@
             "definition": "Reviewed saved fixed-path metrics projected without new simulation or selection. Percentages stored as fractions unless field explicitly says pp or bps. Missing values retain unavailable status. Same periods and unchanged strategies as governing research.",
             "label": "joint",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/joint.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/joint.json"
@@ -5146,7 +5114,7 @@
           "NAV": 1.1097793480026916
         },
         {
-          "Date": "2026-05-01",
+ </script><script type="application/json" data-app-snapshot-chunk>         "Date": "2026-05-01",
           "ID": "A01",
           "NAV": 1.1227617828597187
         },
@@ -5207,7 +5175,7 @@
         },
         {
           "Date": "2026-05-13",
-</script><script type="application/json" data-app-snapshot-chunk>          "ID": "A01",
+          "ID": "A01",
           "NAV": 1.1295146933903772
         },
         {
@@ -8078,7 +8046,7 @@
         {
           "Date": "2026-06-08",
           "ID": "A03",
-          "NAV": 1.1888527013839683
+  </script><script type="application/json" data-app-snapshot-chunk>        "NAV": 1.1888527013839683
         },
         {
           "Date": "2026-06-09",
@@ -8138,7 +8106,7 @@
         {
           "Date": "2026-06-20",
           "ID": "A03",
-          "NAV": 1.19103308512781</script><script type="application/json" data-app-snapshot-chunk>13
+          "NAV": 1.1910330851278113
         },
         {
           "Date": "2026-06-21",
@@ -11009,7 +10977,7 @@
           "Date": "2026-07-16",
           "ID": "B01",
           "NAV": 0.8360037141778475
-        },
+     </script><script type="application/json" data-app-snapshot-chunk>   },
         {
           "Date": "2026-07-17",
           "ID": "B01",
@@ -11071,7 +11039,7 @@
           "NAV": 0.8472327885875068
         },
         {
-          "D</script><script type="application/json" data-app-snapshot-chunk>ate": "2026-07-29",
+          "Date": "2026-07-29",
           "ID": "B01",
           "NAV": 0.8514449695831159
         },
@@ -13940,7 +13908,7 @@
           "ID": "B04",
           "NAV": 0.8047161212864374
         },
-        {
+ </script><script type="application/json" data-app-snapshot-chunk>       {
           "Date": "2026-08-24",
           "ID": "B04",
           "NAV": 0.8044984213137071
@@ -14001,7 +13969,7 @@
           "NAV": 0.7857023864907304
         },
         {
-          "Date": "</script><script type="application/json" data-app-snapshot-chunk>2026-09-05",
+          "Date": "2026-09-05",
           "ID": "B04",
           "NAV": 0.7828318733745842
         },
@@ -16870,7 +16838,7 @@
           "ID": "B06",
           "NAV": 0.9530432345834957
         },
-        {
+ </script><script type="application/json" data-app-snapshot-chunk>       {
           "Date": "2026-10-01",
           "ID": "B06",
           "NAV": 0.9577746388090341
@@ -16905,7 +16873,7 @@
             ]
           }
         ],
-        "period": "2022-2023 deve</script><script type="application/json" data-app-snapshot-chunk>lopment;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
         "type": "hash-verified saved research results"
       }
     },
@@ -17373,7 +17341,9 @@
           }
         ],
         "files": [
-          "results/report_data/oos/provenance.json"
+          "results/report_data/oos/provenance.json",
+          "configs/configuration_space.json",
+          "configs/frozen_strategies.json"
         ],
         "metricDefinitions": [
           {
@@ -17388,6 +17358,22 @@
                 "files": [
                   "results/report_data/oos/provenance.json"
                 ]
+              }
+            ]
+          },
+          {
+            "label": "Post-evaluation retained scope",
+            "definition": "Post-evaluation scope amendment. The current publication retains 168 definitions across five families. This scope was narrowed after the development, validation and 2026 evaluations; it is not a new pre-evaluation freeze. The nine frozen IDs, baskets and settings, and the original development-ranked group memberships, are unchanged: there is no reranking or reselection. Population summaries are filtered or recomputed from saved retained-case results, not new strategy runs. This change supplies no new independent OOS evidence.",
+            "componentIds": [
+              "provenance-text"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "configs/configuration_space.json",
+                  "configs/frozen_strategies.json"
+                ],
+                "detail": "Current retained case definitions and unchanged frozen identities. Original development-ranked memberships are retained; filtered saved-result summaries are descriptive, not a new selection or OOS evaluation."
               }
             ]
           }
@@ -17504,15 +17490,15 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/oos/regime_tests.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/oos/regime_tests.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
       ],
       "rows": [
         {
-          "95% CI bps": "[-0.93, 14.21]",
-          "Centered p": 0.108222944263934,
-          "Holm-4 p": 0.432891777055736,
-          "Interaction bps": 6.324227241987624,
+          "95% CI bps": "[-0.93, 14.18]",
+          "Centered p": 0.10822294426393402,
+          "Holm-4 p": 0.43289177705573606,
+          "Interaction bps": 6.31230309931956,
           "Invalid draws": 0,
           "Regime": "BTC 30-day direction",
           "Status": "Conditional posthoc"
@@ -17521,39 +17507,40 @@
           "95% CI bps": "Unavailable",
           "Centered p": null,
           "Holm-4 p": null,
-          "Interaction bps": 0.4913354728224101,
+          "Interaction bps": 0.42177872595140975,
           "Invalid draws": 29,
           "Regime": "BTC trailing volatility",
           "Status": "Unavailable; no state in 29 draws"
         },
         {
-          "95% CI bps": "[-13.47, 4.05]",
-          "Centered p": 0.3559110222444389,
+          "95% CI bps": "[-13.44, 4.09]",
+          "Centered p": 0.3579105223694076,
           "Holm-4 p": 1.0,
-          "Interaction bps": -4.18402029931926,
+          "Interaction bps": -4.152299696410472,
           "Invalid draws": 0,
           "Regime": "Cross-coin dispersion",
           "Status": "Conditional posthoc"
         },
         {
-          "95% CI bps": "[-16.02, 5.63]",
-          "Centered p": 0.3916520869782554,
+          "95% CI bps": "[-15.87, 5.66]",
+          "Centered p": 0.3964008997750562,
           "Holm-4 p": 1.0,
-          "Interaction bps": -4.7500743639489125,
+          "Interaction bps": -4.672264348800512,
           "Invalid draws": 0,
           "Regime": "Relative BTC quote volume",
           "Status": "Conditional posthoc"
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/regime_tests.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/regime_tests.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
           }
         ],
         "files": [
+          "results/retained_scope/oos/regime_tests.csv",
           "results/report_data/oos/regime_tests.json"
         ],
         "metricDefinitions": [
@@ -17566,6 +17553,11 @@
             "definition": "C-S high/up daily mean gap minus C-S low/down gap, bps.4000jointcalendardraws; volatility29invalidmissingstate=>CI/punavailable. p1 correction-only placeholder preservesHolm4familyforother3; unavailable rownot validp1finding.",
             "label": "regime_tests",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/regime_tests.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/regime_tests.json"
@@ -17582,25 +17574,25 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/oos/regimes.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/oos/regimes.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
       ],
       "rows": [
         {
-          "Control mean bps/day": -4.160310878904714,
+          "Control mean bps/day": -4.193309906809145,
           "Days": 159,
-          "Raw C-S gap bps/day": 3.363259203519081,
+          "Raw C-S gap bps/day": 3.3302601756146486,
           "Regime": "BTC 30-day direction",
           "Same-setting gap bps/day": 3.2664984659702756,
           "State": "High / up",
           "Survivor mean bps/day": -7.523570082423795
         },
         {
-          "Control mean bps/day": -2.1796675062153623,
+          "Control mean bps/day": -2.2007423914517266,
           "Days": 114,
-          "Raw C-S gap bps/day": -2.9609680384685455,
+          "Raw C-S gap bps/day": -2.98204292370491,
           "Regime": "BTC 30-day direction",
-          "Same-setting gap bps/day": -0.5980475763423966,
+          "Same-setting gap bps/day": -0.5980475763423969,
           "State": "Low / down",
           "Survivor mean bps/day": 0.7813005322531833
         },
@@ -17614,20 +17606,20 @@
           "Survivor mean bps/day": null
         },
         {
-          "Control mean bps/day": -9.596243985894969,
+          "Control mean bps/day": -9.679552397707265,
           "Days": 56,
-          "Raw C-S gap bps/day": 1.1129218116358341,
+          "Raw C-S gap bps/day": 1.029613399823536,
           "Regime": "BTC trailing volatility",
-          "Same-setting gap bps/day": -0.745127768540994,
+          "Same-setting gap bps/day": -0.745127768540999,
           "State": "High / up",
           "Survivor mean bps/day": -10.709165797530803
         },
         {
-          "Control mean bps/day": -1.7169671071165096,
+          "Control mean bps/day": -1.7307187720578066,
           "Days": 217,
-          "Raw C-S gap bps/day": 0.6215863388134231,
+          "Raw C-S gap bps/day": 0.6078346738721264,
           "Regime": "BTC trailing volatility",
-          "Same-setting gap bps/day": 2.2715345042605355,
+          "Same-setting gap bps/day": 2.271534504260537,
           "State": "Low / down",
           "Survivor mean bps/day": -2.3385534459299326
         },
@@ -17641,20 +17633,20 @@
           "Survivor mean bps/day": null
         },
         {
-          "Control mean bps/day": -1.4003089147721197,
+          "Control mean bps/day": -1.4091568373867733,
           "Days": 108,
-          "Raw C-S gap bps/day": -1.8064303751412378,
+          "Raw C-S gap bps/day": -1.8152782977558934,
           "Regime": "Cross-coin dispersion",
-          "Same-setting gap bps/day": 1.3343356900421826,
+          "Same-setting gap bps/day": 1.3343356900421808,
           "State": "High / up",
           "Survivor mean bps/day": 0.40612146036911806
         },
         {
-          "Control mean bps/day": -4.598413107024313,
+          "Control mean bps/day": -4.638981632547754,
           "Days": 165,
-          "Raw C-S gap bps/day": 2.3775899241780207,
+          "Raw C-S gap bps/day": 2.33702139865458,
           "Regime": "Cross-coin dispersion",
-          "Same-setting gap bps/day": 1.8611368355253626,
+          "Same-setting gap bps/day": 1.861136835525364,
           "State": "Low / down",
           "Survivor mean bps/day": -6.976003031202334
         },
@@ -17668,20 +17660,20 @@
           "Survivor mean bps/day": null
         },
         {
-          "Control mean bps/day": 1.1943049364520681,
+          "Control mean bps/day": 1.205617756000526,
           "Days": 135,
-          "Raw C-S gap bps/day": -1.6787633891971803,
+          "Raw C-S gap bps/day": -1.6674505696487225,
           "Regime": "Relative BTC quote volume",
-          "Same-setting gap bps/day": 0.7018493400906313,
+          "Same-setting gap bps/day": 0.7018493400906309,
           "State": "High / up",
           "Survivor mean bps/day": 2.8730683256492484
         },
         {
-          "Control mean bps/day": -7.762338346923406,
+          "Control mean bps/day": -7.828835542523347,
           "Days": 138,
-          "Raw C-S gap bps/day": 3.0713109747517295,
+          "Raw C-S gap bps/day": 3.00481377915179,
           "Regime": "Relative BTC quote volume",
-          "Same-setting gap bps/day": 2.582943271550763,
+          "Same-setting gap bps/day": 2.5829432715507634,
           "State": "Low / down",
           "Survivor mean bps/day": -10.833649321675136
         },
@@ -17696,14 +17688,15 @@
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/regimes.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/regimes.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
           }
         ],
         "files": [
+          "results/retained_scope/oos/regimes.csv",
           "results/report_data/oos/regimes.json"
         ],
         "metricDefinitions": [
@@ -17715,6 +17708,11 @@
             "definition": "Decision00UTC past-only states label followingday. Direction sign of trailing30day BTCreturn threshold0; volatility/dispersion/relativeBTCquotevol high vs low uses2022-2023medianthresholds,tieslow. Unknowns retained. No switching ordiscontinuousSharpe. Fixedpastconfigurationmass standardization is descriptive.",
             "label": "regimes",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/regimes.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/regimes.json"
@@ -17871,32 +17869,32 @@
       "methods": [
         {
           "language": "text",
-          "code": "Read results/report_data/oos/screening.json; use its reviewed rows without signal regeneration, strategy reselection, regression fitting or changes to financial values. Display-only formatting follows this report's authored components."
+          "code": "Read results/retained_scope/oos/screening.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
       ],
       "rows": [
         {
-          "95% CI pp": "[-18.21, 9.24]",
-          "Centered p": 0.3224193951512122,
+          "95% CI pp": "[-18.44, 9.22]",
+          "Centered p": 0.32141964508872783,
           "Contrast": "Overall survivors - controls",
-          "Holm-4 p": 0.6448387903024244,
-          "Lift pp": -9.435638943318637,
+          "Holm-4 p": 0.6428392901774557,
+          "Lift pp": -9.507527848490898,
           "Reject 5%": false
         },
         {
-          "95% CI pp": "[-20.73, 15.25]",
-          "Centered p": 0.4038990252436891,
+          "95% CI pp": "[-21.11, 15.04]",
+          "Centered p": 0.4008997750562359,
           "Contrast": "Within development-positive",
-          "Holm-4 p": 0.6448387903024244,
-          "Lift pp": -9.368973081366278,
+          "Holm-4 p": 0.6428392901774557,
+          "Lift pp": -9.48422083069514,
           "Reject 5%": false
         },
         {
-          "95% CI pp": "[-18.52, 7.33]",
-          "Centered p": 0.20019995001249688,
+          "95% CI pp": "[-18.75, 7.50]",
+          "Centered p": 0.20444888777805548,
           "Contrast": "Within development-negative",
-          "Holm-4 p": 0.6005998500374906,
-          "Lift pp": -9.919583706662724,
+          "Holm-4 p": 0.6133466633341664,
+          "Lift pp": -9.961254678786888,
           "Reject 5%": false
         },
         {
@@ -17904,19 +17902,20 @@
           "Centered p": 0.05923519120219945,
           "Contrast": "Configuration-standardized",
           "Holm-4 p": 0.2369407648087978,
-          "Lift pp": -10.709614299783336,
+          "Lift pp": -10.709614299783338,
           "Reject 5%": false
         }
       ],
       "source": {
-        "description": "Verified saved results for the current development, validation and OOS study. The listed JSON contains the exact reviewed rows used by this component.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
         "evidenceFlow": [
           {
-            "title": "Current saved result rows",
-            "detail": "Read results/report_data/oos/screening.json; retain all rows and values; apply only the documented display projections and period scope."
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/screening.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
           }
         ],
         "files": [
+          "results/retained_scope/oos/screening.csv",
           "results/report_data/oos/screening.json"
         ],
         "metricDefinitions": [
@@ -17930,6 +17929,11 @@
             "definition": "Four fixed contrasts survivors-minus-controls in fraction of positive273day compound returns.4000synchronized circular28day PCG64draws seed20261015. Marginal percentile95CIs and centered2sided+1p, Holm4 only. Same-setting62config207804pastQ1pairs fixedpastcasemassweights. No IIDconfiguration inference.",
             "label": "screening",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/screening.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/screening.json"
@@ -18318,7 +18322,7 @@
         "metricDefinitions": [
           {
             "label": "Summary",
-            "definition": "Annual alpha is 365 times the daily arithmetic intercept. All displayed alpha values/intervals are percent/year. Joint and matched BTC use the same complete-case dates and corrected calendar HAC27; full-calendar BTC-only retains original full-period saved HAC7. R2 is joint in-sample fit; VIF and condition diagnostics are descriptive.",
+            "definition": "Annual alpha is 365 times the daily arithmetic intercept. All displayed alpha values/intervals are percent/year. Joint and matched BTC use the same complete-case dates and correc</script><script type="application/json" data-app-snapshot-chunk>ted calendar HAC27; full-calendar BTC-only retains original full-period saved HAC7. R2 is joint in-sample fit; VIF and condition diagnostics are descriptive.",
             "componentIds": [
               "basket-attribution-20261016-overview",
               "basket-attribution-20261016-interpretation",
@@ -18407,7 +18411,7 @@
           "bootstrap_replications": 4000,
           "bootstrap_status": "estimated_conditional_posthoc",
           "ci_scope": "marginal_approximate_conditional_not_search_adjusted",
-          "contribution_units": "fraction_of_initial_net_NAV_whole_period_not_ann</script><script type="application/json" data-app-snapshot-chunk>ualized",
+          "contribution_units": "fraction_of_initial_net_NAV_whole_period_not_annualized",
           "fees_ci95_high": 0.008952709120610344,
           "fees_ci95_low": 0.0045165110371149005,
           "fees_linked_contribution": 0.006685114499461046,
@@ -19733,7 +19737,7 @@
           "n_calendar_days": 273,
           "net_ci95_high": 0.23543233099404465,
           "net_ci95_low": 0.05777503283032853,
-          "net_linked_contribution": 0.13555077142508865,
+       </script><script type="application/json" data-app-snapshot-chunk>   "net_linked_contribution": 0.13555077142508865,
           "net_linked_contribution_saved": 0.13555077142508892,
           "ordinary_turnover": 7.46875,
           "period": "oos_partial_2026_jan_sep",
@@ -19828,7 +19832,7 @@
           "Fees pp": "1.69",
           "Net pp": "-14.26",
           "Net 95% CI (pp)": "[-24.93, -6.59]",
-          "Joint beta [95% CI]": "-0.036 [-0.15</script><script type="application/json" data-app-snapshot-chunk>3, 0.082]",
+          "Joint beta [95% CI]": "-0.036 [-0.153, 0.082]",
           "joint_beta": -0.0358682246924794,
           "joint_beta_ci95_low": -0.1532966793032794,
           "joint_beta_ci95_high": 0.08156022991832058,
@@ -21152,7 +21156,7 @@
         {
           "bootstrap_invalid_draws": 0,
           "bootstrap_replications": 4000,
-          "bootstrap_status": "estimated_conditional_posthoc",
+          "bootstrap_status": "estimated_c</script><script type="application/json" data-app-snapshot-chunk>onditional_posthoc",
           "ci_scope": "marginal_approximate_conditional_not_search_adjusted",
           "contribution_units": "fraction_of_initial_net_NAV_whole_period_not_annualized",
           "fees_ci95_high": 0.008122951438556831,
@@ -21244,7 +21248,7 @@
           "full_l1_turnover": 2.5,
           "gross_ci95_high": 0.17041018555682952,
           "gross_ci95_low": -0.16880348569131692,
-          "gross_linked_contr</script><script type="application/json" data-app-snapshot-chunk>ibution": -0.00732002889774516,
+          "gross_linked_contribution": -0.00732002889774516,
           "gross_linked_contribution_saved": -0.007320028897745065,
           "linked_fees": 0.004683179314400036,
           "n_calendar_days": 273,
@@ -22496,7 +22500,7 @@
         },
         {
           "bonferroni243_ci95_high": 0.2723515331667185,
-          "bonferroni243_ci95_low": -0.24421676600387435,
+          "bonferroni243</script><script type="application/json" data-app-snapshot-chunk>_ci95_low": -0.24421676600387435,
           "ci95_high": 0.15044938821935752,
           "ci95_low": -0.12231462105651335,
           "ci_scope": "marginal_approximate_conditional_not_search_adjusted",
@@ -22593,7 +22597,7 @@
         {
           "bonferroni243_ci95_high": 0.27998724620425414,
           "bonferroni243_ci95_low": -1.0748176979525077,
-          "ci95_high": -0.039725808087252346,</script><script type="application/json" data-app-snapshot-chunk>
+          "ci95_high": -0.039725808087252346,
           "ci95_low": -0.7551046436610012,
           "ci_scope": "marginal_approximate_conditional_not_search_adjusted",
           "coefficient_kind": "annualized_intercept_alpha",
@@ -23769,6 +23773,12 @@
       ]
     },
     "cohort_sharpe_display": {
+      "methods": [
+        {
+          "language": "text",
+          "code": "Read results/retained_scope/oos/cohort.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
+        }
+      ],
       "rows": [
         {
           "Cohort": "Broad survivors",
@@ -23808,21 +23818,27 @@
         },
         {
           "Cohort": "Controls",
-          "Median Max DD": 0.25854479586482226,
-          "Median Sharpe": -0.4328573124545264,
-          "Median TO / year": 68.85531135531136,
-          "Median net return": -0.10821187348556802,
-          "Pairs": 155759,
-          "Profitable": 0.27158623257725073,
-          "sharpe365_median_sharpe": -0.4328573124545264,
-          "sharpe252_median_sharpe": -0.3596653472792531,
+          "Median Max DD": 0.25969741362197485,
+          "Median Sharpe": -0.43029394204692006,
+          "Median TO / year": 69.0224358974359,
+          "Median net return": -0.11014835656197466,
+          "Pairs": 154404,
+          "Profitable": 0.27230512162897336,
+          "sharpe365_median_sharpe": -0.43029394204692006,
+          "sharpe252_median_sharpe": -0.35753541789760734,
           "sharpe252_approx_median_sharpe": false
         }
       ],
       "source": {
-        "description": "Presentation-only365/252 annualization aliases for existing Sharpe values. Original reviewed fields and inference are retained.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
+        "evidenceFlow": [
+          {
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/cohort.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
+          }
+        ],
         "files": [
-          "results/report_data/oos/cohort_sharpe_display.json",
+          "results/retained_scope/oos/cohort.csv",
           "results/report_data/oos/cohort.json"
         ],
         "metricDefinitions": [
@@ -23834,9 +23850,14 @@
               "summary",
               "provenance-text"
             ],
-            "definition": "Full past within-basket development-Q1 census224867. Validation-positive survivors69108 partition into strict positiveboth39332 and developmentnegative29776. Controls155759 validationnonpositive. Positive fraction uses strictly>0 at20bpslag1. All medians constituent distributions, not portfolios.",
+            "definition": "Retained original within-basket development-ranked Q1 assignments:223512 pairs. Validation-positive survivors69108 partition into strict positiveboth39332 and developmentnegative29776. Controls154404 validationnonpositive. Original memberships are preserved, not a newly computed168-definition quintile. Positive fraction is strictly>0 at20bpslag1. Medians describe constituent distributions, not portfolios. Post-evaluation scope amendment; no new independent OOS evidence.",
             "label": "cohort",
             "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/cohort.csv"
+                ]
+              },
               {
                 "files": [
                   "results/report_data/oos/cohort.json"
@@ -23845,43 +23866,36 @@
             ]
           },
           {
-            "label": "Sharpe annualization comparison",
-            "definition": "On the SAME contiguous UTC daily return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). Confidence interval endpoints receive the same positive scale; no bootstrap, return, risk, rank, correlation, t-statistic, alpha, CAGR or selection is recomputed. Approximate flags explicitly mark252 values derived only from rounded current365 displays.",
-            "sourceLineage": [
-              {
-                "files": [
-                  "results/report_data/oos/cohort.json"
-                ]
-              }
-            ],
+            "label": "Two Sharpe annual</script><script type="application/json" data-app-snapshot-chunk>ization conventions",
+            "definition": "Same complete UTC daily series including weekends: Sharpe252=Sharpe365*sqrt(252/365). These aliases use full-precision retained-scope medians; no daily observations are dropped and no strategy results or inference are altered by this display scaling.",
             "componentIds": [
               "cohort-chart",
               "cohort-table",
               "cohort-text",
               "provenance-text",
               "summary"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/cohort.csv",
+                  "results/report_data/oos/cohort.json"
+                ]
+              }
             ]
           }
         ],
-        "evidenceFlow": [
-          {
-            "title": "Deterministic display scaling only",
-            "detail": "Read the exact source rows and any listed full-precision companion CSV; multiply only the explicitly declared numeric Sharpe statistics or Sharpe CI endpoints by sqrt(252/365). Keep all original fields unmodified; do not resample or drop weekends."
-          }
-        ],
-        "limitations": [
-          "252 is an alternative annualization convention, not a252-trading-day subsample or an independent result.",
-          "Existing primary inference, risk limits, and365-day scientific outputs remain unchanged."
-        ]
-      },
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
+      }
+    },
+    "family_sharpe_display": {
       "methods": [
         {
           "language": "text",
-          "code": "For declared Sharpe fields, write sharpe365_\u003cfield>=original fullprecision statistic and sharpe252_\u003cfield>=statistic*sqrt(252/365). Scale CI endpoints identically. For current group medians only, retain the original rounded365 display and flag252 as approximate. Counts, ranks and correlations are not scaling targets."
+          "code": "Read results/retained_scope/oos/family.csv, the saved-output retained-scope aggregation. Original development-Q1 memberships are retained, not reranked within 168 definitions. Use synchronized4000circular28day bootstrap draws with original PCG64seed20261015 where indicated. No prices, signals, backtests, strategy selection or new independent OOS test."
         }
-      ]
-    },
-    "family_sharpe_display": {
+      ],
       "rows": [
         {
           "Cohort": "Survivors",
@@ -23893,18 +23907,6 @@
           "Share of cohort": 0.09953985066851884,
           "sharpe365_median_sharpe": -1.3932659632965851,
           "sharpe252_median_sharpe": -1.1576782281899722,
-          "sharpe252_approx_median_sharpe": false
-        },
-        {
-          "Cohort": "Controls",
-          "Family": "Buffered momentum",
-          "Median Sharpe": -1.0827321231949645,
-          "Median net return": -0.18831840552601498,
-          "Pairs": 13189,
-          "Profitable": 0.109712639320646,
-          "Share of cohort": 0.08467568487214222,
-          "sharpe365_median_sharpe": -1.0827321231949645,
-          "sharpe252_median_sharpe": -0.8996526427868314,
           "sharpe252_approx_median_sharpe": false
         },
         {
@@ -23920,18 +23922,6 @@
           "sharpe252_approx_median_sharpe": false
         },
         {
-          "Cohort": "Controls",
-          "Family": "Momentum",
-          "Median Sharpe": -0.926610788976243,
-          "Median net return": -0.16649195973581776,
-          "Pairs": 78143,
-          "Profitable": 0.17755909038557516,
-          "Share of cohort": 0.5016917160485108,
-          "sharpe365_median_sharpe": -0.926610788976243,
-          "sharpe252_median_sharpe": -0.7699299090502361,
-          "sharpe252_approx_median_sharpe": false
-        },
-        {
           "Cohort": "Survivors",
           "Family": "Reversal",
           "Median Sharpe": 0.09921769896541664,
@@ -23944,18 +23934,6 @@
           "sharpe252_approx_median_sharpe": false
         },
         {
-          "Cohort": "Controls",
-          "Family": "Reversal",
-          "Median Sharpe": 0.058099157643663774,
-          "Median net return": -0.009214628697336181,
-          "Pairs": 42350,
-          "Profitable": 0.48028335301062575,
-          "Share of cohort": 0.2718944009655943,
-          "sharpe365_median_sharpe": 0.058099157643663774,
-          "sharpe252_median_sharpe": 0.04827515467406051,
-          "sharpe252_approx_median_sharpe": false
-        },
-        {
           "Cohort": "Survivors",
           "Family": "Trend long/cash",
           "Median Sharpe": -0.06442440623286208,
@@ -23965,18 +23943,6 @@
           "Share of cohort": 0.27037390750709034,
           "sharpe365_median_sharpe": -0.06442440623286208,
           "sharpe252_median_sharpe": -0.0535308651934493,
-          "sharpe252_approx_median_sharpe": false
-        },
-        {
-          "Cohort": "Controls",
-          "Family": "Trend long/cash",
-          "Median Sharpe": 0.07905982769309151,
-          "Median net return": -0.018059433611161826,
-          "Pairs": 6171,
-          "Profitable": 0.41581591314211636,
-          "Share of cohort": 0.03961889842641517,
-          "sharpe365_median_sharpe": 0.07905982769309151,</script><script type="application/json" data-app-snapshot-chunk>
-          "sharpe252_median_sharpe": 0.0656915791068238,
           "sharpe252_approx_median_sharpe": false
         },
         {
@@ -23993,33 +23959,75 @@
         },
         {
           "Cohort": "Controls",
+          "Family": "Buffered momentum",
+          "Median Sharpe": -1.0827321231949645,
+          "Median net return": -0.18831840552601498,
+          "Pairs": 13189,
+          "Profitable": 0.109712639320646,
+          "Share of cohort": 0.08541877153441621,
+          "sharpe365_median_sharpe": -1.0827321231949645,
+          "sharpe252_median_sharpe": -0.8996526427868314,
+          "sharpe252_approx_median_sharpe": false
+        },
+        {
+          "Cohort": "Controls",
+          "Family": "Momentum",
+          "Median Sharpe": -0.926610788976243,
+          "Median net return": -0.16649195973581776,
+          "Pairs": 78143,
+          "Profitable": 0.17755909038557516,
+          "Share of cohort": 0.5060944016994379,
+          "sharpe365_median_sharpe": -0.926610788976243,
+          "sharpe252_median_sharpe": -0.7699299090502361,
+          "sharpe252_approx_median_sharpe": false
+        },
+        {
+          "Cohort": "Controls",
+          "Family": "Reversal",
+          "Median Sharpe": 0.058099157643663774,
+          "Median net return": -0.009214628697336181,
+          "Pairs": 42350,
+          "Profitable": 0.48028335301062575,
+          "Share of cohort": 0.2742804590554649,
+          "sharpe365_median_sharpe": 0.058099157643663774,
+          "sharpe252_median_sharpe": 0.04827515467406051,
+          "sharpe252_approx_median_sharpe": false
+        },
+        {
+          "Cohort": "Controls",
+          "Family": "Trend long/cash",
+          "Median Sharpe": 0.07905982769309151,
+          "Median net return": -0.018059433611161826,
+          "Pairs": 6171,
+          "Profitable": 0.41581591314211636,
+          "Share of cohort": 0.03996658117665346,
+          "sharpe365_median_sharpe": 0.07905982769309151,
+          "sharpe252_median_sharpe": 0.0656915791068238,
+          "sharpe252_approx_median_sharpe": false
+        },
+        {
+          "Cohort": "Controls",
           "Family": "Trend long/short",
           "Median Sharpe": -0.02238407856404312,
           "Median net return": -0.08397593995978453,
           "Pairs": 14551,
           "Profitable": 0.26231874098000135,
-          "Share of cohort": 0.0934199628913899,
+          "Share of cohort": 0.09423978653402762,
           "sharpe365_median_sharpe": -0.02238407856404312,
           "sharpe252_median_sharpe": -0.018599148399759156,
-          "sharpe252_approx_median_sharpe": false
-        },
-        {
-          "Cohort": "Controls",
-          "Family": "BTC-factor residual",
-          "Median Sharpe": -0.6731173509396505,
-          "Median net return": -0.004052954226744685,
-          "Pairs": 1355,
-          "Profitable": 0.1896678966789668,
-          "Share of cohort": 0.008699336795947586,
-          "sharpe365_median_sharpe": -0.6731173509396505,
-          "sharpe252_median_sharpe": -0.5592997480222391,
           "sharpe252_approx_median_sharpe": false
         }
       ],
       "source": {
-        "description": "Presentation-only365/252 annualization aliases for existing Sharpe values. Original reviewed fields and inference are retained.",
+        "description": "Post-evaluation 168-definition retained-scope diagnostics reaggregated from saved unchanged strategy paths. Original development-ranked memberships and nine frozen identities remain fixed; no new OOS test, signal generation, strategy run, reranking or reselection.",
+        "evidenceFlow": [
+          {
+            "title": "Saved-output retained-scope reaggregation",
+            "detail": "Read results/retained_scope/oos/family.csv; retain exact reviewed rows. The original chronological labels, simulation settings and observed daily paths are unchanged. Recalculate population summaries and conditional shared-calendar uncertainty only."
+          }
+        ],
         "files": [
-          "results/report_data/oos/family_sharpe_display.json",
+          "results/retained_scope/oos/family.csv",
           "results/report_data/oos/family.json"
         ],
         "metricDefinitions": [
@@ -24034,45 +24042,37 @@
             "sourceLineage": [
               {
                 "files": [
+                  "results/retained_scope/oos/family.csv"
+                ]
+              },
+              {
+                "files": [
                   "results/report_data/oos/family.json"
                 ]
               }
             ]
           },
           {
-            "label": "Sharpe annualization comparison",
-            "definition": "On the SAME contiguous UTC daily return series including weekends, Sharpe252=Sharpe365*sqrt(252/365). Confidence interval endpoints receive the same positive scale; no bootstrap, return, risk, rank, correlation, t-statistic, alpha, CAGR or selection is recomputed. Approximate flags explicitly mark252 values derived only from rounded current365 displays.",
-            "sourceLineage": [
-              {
-                "files": [
-                  "results/report_data/oos/family.json"
-                ]
-              }
-            ],
+            "label": "Two Sharpe annualization conventions",
+            "definition": "Same complete UTC daily series including weekends: Sharpe252=Sharpe365*sqrt(252/365). These aliases use full-precision retained-scope medians; no daily observations are dropped and no strategy results or inference are altered by this display scaling.",
             "componentIds": [
               "family-table",
               "settings-evidence",
               "settings-text"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/retained_scope/oos/family.csv",
+                  "results/report_data/oos/family.json"
+                ]
+              }
             ]
           }
         ],
-        "evidenceFlow": [
-          {
-            "title": "Deterministic display scaling only",
-            "detail": "Read the exact source rows and any listed full-precision companion CSV; multiply only the explicitly declared numeric Sharpe statistics or Sharpe CI endpoints by sqrt(252/365). Keep all original fields unmodified; do not resample or drop weekends."
-          }
-        ],
-        "limitations": [
-          "252 is an alternative annualization convention, not a252-trading-day subsample or an independent result.",
-          "Existing primary inference, risk limits, and365-day scientific outputs remain unchanged."
-        ]
-      },
-      "methods": [
-        {
-          "language": "text",
-          "code": "For declared Sharpe fields, write sharpe365_\u003cfield>=original fullprecision statistic and sharpe252_\u003cfield>=statistic*sqrt(252/365). Scale CI endpoints identically. For current group medians only, retain the original rounded365 display and flag252 as approximate. Counts, ranks and correlations are not scaling targets."
-        }
-      ]
+        "period": "2022-2023 development;2024-2025 validation;1Jan-30Sep2026 partial-year historical OOS evaluation",
+        "type": "hash-verified saved research results"
+      }
     },
     "uncertainty_sharpe_display": {
       "rows": [
@@ -25178,7 +25178,7 @@
           "zero_daily_return_fraction": 0.0,
           "daily_gain_loss_ratio": 0.8726666434091221,
           "trade_profit_factor_status": "undefined_without_portfolio_trade_grouping",
-          "turnover_convention": "supplied full-L1 target changes including entry/liquidation; not drift-adjusted actual notional/NAV",
+          "turnover_convention": "supplied full-L1 target changes including en</script><script type="application/json" data-app-snapshot-chunk>try/liquidation; not drift-adjusted actual notional/NAV",
           "capacity_status": "not_identifiable_from_fixed_path_price_only_model",
           "bootstrap_status": "not_calculated_for_all_configurations",
           "es95_daily_loss": 0.024677773660965463,
@@ -25256,7 +25256,7 @@
           "risk_slice_rebased_without_resimulation": true,
           "partial_fees_reallocated": false,
           "partial_returns_annualized": false,
-          "n_calenda</script><script type="application/json" data-app-snapshot-chunk>r_days": 730.0,
+          "n_calendar_days": 730.0,
           "first_utc_day": "2022-01-01",
           "last_utc_day": "2023-12-31",
           "raw_net_return": -0.3358581092057419,
@@ -26384,7 +26384,7 @@
           "btc_beta_ci_low": -0.0649760737260636,
           "btc_beta_ci_high": 0.028647741317662297,
           "gross_sharpe": 0.5551278410364291,
-          "n_complete_utc_days": 730.0,
+      </script><script type="application/json" data-app-snapshot-chunk>    "n_complete_utc_days": 730.0,
           "full_period_start": "2022-01-01T00:00:00+00:00",
           "full_period_end": "2024-01-01T00:00:00+00:00",
           "risk_period_start": "2022-01-01T00:00:00+00:00",
@@ -26473,7 +26473,7 @@
           "calmar": 0.15489081762870413,
           "ulcer_index": 0.17571560698072003,
           "ulcer_time_basis": "full requested elapsed hours, observed endpoint drawdowns",
-          "mean_daily_turnover": 0.09200271708366</script><script type="application/json" data-app-snapshot-chunk>353,
+          "mean_daily_turnover": 0.09200271708366353,
           "annualized_turnover": 33.58099173553719,
           "annualized_full_l1_turnover": 33.58099173553719,
           "entry_liquidation_included_if_present_in_input": true,
@@ -27640,7 +27640,7 @@
           "partial_gross_return": 0.0,
           "partial_day_records_json": "[]",
           "daily_risk_basis": "complete contiguous 24-hour UTC days from original saved path; boundary partial days excluded only from daily statistics",
-          "full_performance_basis": "every requested hourly interval including opening/closing partial days, entry and terminal liquidation",
+          "full_performance_basis": "every requested hourly interval including opening/closing partial days, entry and t</script><script type="application/json" data-app-snapshot-chunk>erminal liquidation",
           "risk_slice_rebased_without_resimulation": true,
           "partial_fees_reallocated": false,
           "partial_returns_annualized": false,
@@ -27728,7 +27728,7 @@
           "dd_max_drawdown": 0.26561651193559443,
           "dd_max_drawdown_log_depth": 0.30872392350104816,
           "dd_peak": "2024-01-02T08:00:00+00:00",
-          "dd_tro</script><script type="application/json" data-app-snapshot-chunk>ugh": "2025-01-06T17:00:00+00:00",
+          "dd_trough": "2025-01-06T17:00:00+00:00",
           "dd_recovery": null,
           "dd_peak_to_trough_days": 370.375,
           "dd_underwater_days": 729.6666666666666,
@@ -28913,7 +28913,7 @@
         },
         {
           "strategy_id": "momentum_h0672_r168",
-          "period": "oos_partial_2026_jan_sep",
+  </script><script type="application/json" data-app-snapshot-chunk>        "period": "oos_partial_2026_jan_sep",
           "execution_lag_h": 1.0,
           "cost_bps": 40.0,
           "status": "evaluated",
@@ -29002,7 +29002,7 @@
           "partial_event_count": 0.0,
           "partial_event_adjusted_count": 0.0,
           "partial_event_active_count": 0.0,
-</script><script type="application/json" data-app-snapshot-chunk>          "partial_event_exposure_adjusted": false,
+          "partial_event_exposure_adjusted": false,
           "partial_event_exposure_unadjusted": false,
           "partial_event_exposure_warning": null,
           "exposure_time_basis": "accounting interval held weights",
@@ -30173,7 +30173,7 @@
           "beta": 0.017450350286906703,
           "alpha_tstat": -1.2269091414230786,
           "alpha_pvalue": 0.21985674233572816,
-          "alpha_ci_low": -0.4725675343604625,
+          </script><script type="application/json" data-app-snapshot-chunk>"alpha_ci_low": -0.4725675343604625,
           "alpha_ci_high": 0.10870150962099905,
           "beta_ci_low": -0.029768566506435223,
           "beta_ci_high": 0.06466926708024863,
@@ -30251,7 +30251,7 @@
           "intrahour_mark_to_market_unobserved": true,
           "temporary_orphan_hedge_possible": false,
           "n_asset_slots": 22.0,
-          "n_fact</script><script type="application/json" data-app-snapshot-chunk>or_spread_slots": null,
+          "n_factor_spread_slots": null,
           "btc_beta": 0.01745035028690644,
           "btc_alpha_annual": -0.18193301236973786,
           "btc_alpha_ci_low": -0.47256753436046767,
@@ -31442,7 +31442,7 @@
           "daily_gain_loss_ratio": 1.1982841764078371,
           "trade_profit_factor_status": "undefined_without_portfolio_trade_grouping",
           "turnover_convention": "supplied full-L1 target changes including entry/liquidation; not drift-adjusted actual notional/NAV",
-          "capacity_status": "not_identifiable_from_fixed_path_price_only_model",
+          "capacity_status": "not_iden</script><script type="application/json" data-app-snapshot-chunk>tifiable_from_fixed_path_price_only_model",
           "bootstrap_status": "not_calculated_for_all_configurations",
           "es95_daily_loss": 0.018180682637772085,
           "dd_max_drawdown": 0.09570154848718535,
@@ -31525,7 +31525,7 @@
           "raw_net_return": 0.16568742559191163,
           "raw_cagr": 0.22749586967217136,
           "raw_annual_arithmetic_return": 0.2203925852830977,
- </script><script type="application/json" data-app-snapshot-chunk>         "raw_annual_daily_volatility": 0.1759085063062853,
+          "raw_annual_daily_volatility": 0.1759085063062853,
           "raw_sharpe": 1.2528819095272081,
           "raw_daily_max_drawdown": 0.09063150021698023,
           "raw_daily_dd_peak_utc": "2026-05-20T00:00:00+00:00",
@@ -32761,7 +32761,7 @@
         "metricDefinitions": [
           {
             "label": "Saved strategy performance",
-            "definition": "Separate fixed momentum and reversal studies: 22 historical-liquidity slots, 672-hour lookback, Monday00UTC 168-hour cadence and no buffer. The hourly drawdown guardrail is 40%. Momentum strict pre-panel chronology is false: existing verification tests decoded panels and recalculated derived saved metrics before its seal. Reversal strict pre-access chronology is true. Both windows had already been examined. Source hashes retain the unchanged underlying study identity; report fields are presentation-only projections.",
+            "definition": "Separate fixed momentum and reversal studies: 22 historical-liquidity slots, 672-hour lookback, Monday00UTC 168-hour cadence and no buffer. The hourly drawdown guardrail is 40%. Momentum strict pre-panel chronology is false: existing verification tests decoded panels and recalculated derived saved metrics before its seal. Reversal strict pre-access chronology is true. Both windows had already been examined. Source hashes retain the unchanged underlying study identity; report fields are presenta</script><script type="application/json" data-app-snapshot-chunk>tion-only projections.",
             "componentIds": [
               "fixed-all22-introduction",
               "fixed-all22-period-caption",
@@ -32855,7 +32855,7 @@
           "raw_daily_max_drawdown": 0.14005817811332077,
           "raw_daily_dd_peak_utc": "2026-03-01T00:00:00+00:00",
           "raw_daily_dd_trough_utc": "2026-04-20T00:00:00+00:00",
-          "raw_daily_dd_recovery_utc": "2026-05-03T00:00:00+00:00",</script><script type="application/json" data-app-snapshot-chunk>
+          "raw_daily_dd_recovery_utc": "2026-05-03T00:00:00+00:00",
           "raw_daily_dd_peak_to_trough_days": 50,
           "raw_daily_dd_underwater_days": 63,
           "raw_daily_dd_recovery_censored": false,
@@ -33463,7 +33463,7 @@ function BasketAttributionAppendix(){
  ]})
 }
 
-const value = JSON.parse("{\"narrative\":{\"b02\":\"### Why there is no B02\\n\\nThe factor-residual family had **1,355 development-Q1 baskets**; **740** had positive development returns, but **zero** also gained in validation with defined Sharpe. Across all 6,615 factor baskets, none gained in validation even before costs. **6,015 did trade** during validation, while 600 were cash: absence of a shortlist candidate is not the same as universal monthly model ineligibility. No substitute factor candidate was manufactured.\",\"baskets\":\"## 10. Basket composition explains part, not all, of the difference\\n\\nThe legacy **LUNA/LUNC** slot appeared in **33.47% of controls versus 17.53% of survivors**; XRP appeared in **23.64% versus 39.68%**, and legacy FTM/S in **24.41% versus 37.97%**. BTC and ETH were fixed in every basket, so their inclusion effects cannot be estimated here. Coin associations involve within-tier replacement baskets, not isolated coin P&L or recommendations.\\n\\nEach row below is an **alternative** decomposition of the same 9.44 pp raw control advantage. Within a row, composition + within-stratum + unsupported terms reconcile. **Do not add rows together.** Exact-configuration standardization still compares different baskets; exact-basket standardization still compares different strategies. Unsupported groups remain explicit, without fabricated missing-cohort rates.\\n\\nAll 22 economic slots were active in 2026, which rules out **retired-slot cash** as the explanation. It does not rule out ordinary signal-driven cash in long/cash trend.\",\"cohort\":\"## 8. The full exploratory cohort did not demonstrate robust transfer\\n\\n**Q1 means approximately the best 20% of defined development Sharpe ranks within each basket across 169 configurations, with average ties retained—not calendar quarter one.** The full Q1 census has 224,867 basket-configuration pairs. Its 69,108 validation-positive survivors split into 39,332 positive in both periods and 29,776 development-negative survivors; the remaining 155,759 are validation-nonpositive controls.\\n\\nThe middle two rows below **partition**, rather than add to, broad survivors. These are constituent distributions, **not investable portfolio returns or independent trials**. The subgroup definition and screening tests were frozen for an exploratory review of already-examined 2026 observations, not an independent new test. All 639,515 requested scenario rows were evaluated; no unfavorable or missing result was silently dropped.\",\"conclusion\":\"## 13. Final conclusions\\n\\n**The project produced reproducible conditional findings, not a deployable arbitrage strategy.** A03 passed the approved historical nine-case test, but lost in validation and faces material execution uncertainty. Neither a positive case nor profitable controls are promoted. Track B's validation-informed choices failed this partial-year window; the broad validation screen did not demonstrate reliable economic transfer.\\n\\nThe control advantage was already present before transaction costs. Family, exact-setting and basket composition explain portions of the association, but no single parameter, coin or market regime is a proven causal explanation. Wide shared-calendar uncertainty is consistent with limited market history despite a large configuration grid.\\n\\nThe chronology matters: development was **2022-2023**, validation **2024-2025**, and the partial-year evaluation **January-September 2026**. The approved protocol and window amendment fixed this evaluation's rules before its price access. However, **2026 prices had been examined before later diagnostics; those diagnostics are not independent new confirmation or live performance**. Nine-case Holm, four-screening-contrast Holm and four-regime Holm apply only to their stated conditional families, not the entire adaptive project.\\n\\nNo live orders, monitoring or deployment are authorized by these findings. An independent future test would require unseen observations and a separately approved, execution-aware protocol; no such result is claimed here.\",\"criteria\":\"## 3. Positive return and statistical support are separate criteria\\n\\n**Economic:** net compounded return > 0. **Statistical:** positive HAC mean-return t-statistic and primary Holm-9 p \u003c= 0.05. **Drawdown:** observed-hour maximum drawdown \u003c= 40%. **Turnover:** annualized full-L1 turnover \u003c= 1.5 times the greater historical development/validation turnover, with caps fixed before this study's access.\\n\\nThese are **evaluation limits, not trading stop-loss switches**. A01 and A02 gained but did not pass the corrected statistical criterion. A04 and all five Track B cases lost. B03 also exceeded its drawdown and turnover limits. No unsuccessful case was removed and no risk cap was revised.\",\"drawdowns\":\"## 4. Drawdown dates describe the observed hourly path\\n\\nDates and durations refer to the **maximum-depth drawdown episode**. Recovery is the first observed endpoint regaining its previous peak; an unrecovered episode is right-censored at 1 October 00:00 UTC. The maximum-depth episode need not be the longest underwater episode, which is retained separately below. Intrahour drawdowns are unobserved.\\n\\nDaily expected shortfall (ES95) is the mean loss in the worst 5% of complete daily observations, using the established engine convention. These risk diagnostics do not change the frozen decision rule.\",\"execution\":\"## 12. Historical statistical support is not execution feasibility\\n\\nThe stress adds **10 bps one-way slippage plus 20% annual simple carry on negative held notional**, on top of 20 bps base charges. A03 remains positive at **+18.80%**. These are **hypothetical assumptions**, not observed funding, borrow, spread or market impact; actual short availability is unverified.\\n\\nAt constant **100,000-USDT scenario capital**, A03's absolute target-change notional divided by preceding completed-hour quote volume was **89.61% at the 95th percentile and 467.29% maximum**. The maximum was a 6,250-USDT MANA target change versus 1,337.49 USDT prior-hour volume. Even at 25k capital the maximum proxy was 116.82%.\\n\\nThis is **not actual participation in a future fill window, order-book impact, certified capacity, an AUM recommendation or proof of impossibility**. It warns against assuming an observed-close fill is harmless. Borrow inventory, funding, historical spread/depth and fill reconstruction remain unresolved; drift-maintenance trades are omitted.\",\"fees\":\"## 9. Controls' advantage began before modeled transaction costs\\n\\nControls had **50.69%** gross-profitable paths versus **33.06%** among survivors: a **17.63 pp** advantage. Costs erased profit in **23.53%** of all control paths and **15.33%** of survivor paths, narrowing the gap by **8.20 pp** to **9.44 pp** net. Controls traded **more**, not less: median annualized full-L1 turnover was **68.86x versus 47.80x**.\\n\\nEven at zero transaction cost, broad and strict survivors had negative median compound returns (**-5.96% and -5.22%**). Signal/path transfer, not only fees, was weak. Separate medians need not describe the same constituent path.\",\"identity\":\"## 2. Frozen identities and allocations did not change\\n\\nTrack A contains the four development-only selections; Track B contains five validation-informed family selections. Track B validation Sharpe was therefore a **selection statistic**, not an unbiased final-test estimate. B02 is an empty factor-family slot, not a tenth traded strategy.\\n\\nSignals use **trailing returns**, not moving-average crossings. Weekly decisions are Monday 00:00 UTC; 72-hour decisions follow the inherited elapsed-time epoch. The 0.25 buffer skips the **entire** rebalance below that proposed full-L1 change. Rank/demean/L1 cross-sectional weights have unit gross exposure and zero net target; trend slot budgets remain 1/8 without rescaling active coins. Legacy symbols denote audited economic slots: **LUNA/LUNC is original Terra, not Terra 2**; FTM/S and MATIC/POL include migration treatment.\",\"inference\":\"### Uncertainty uses the shared calendar, not independent daily observations\\n\\nThe primary hypothesis is positive **expected arithmetic daily net return**, not positive BTC alpha or geometric growth. HAC uses a Bartlett kernel with 27 lags and the frozen n/(n-1) variance adjustment. The primary test uses **10,000 centered circular 28-day block-bootstrap-t samples**, seed 20261015, synchronized across all nine strategies; Holm retains all nine hypotheses.\\n\\nDaily-mean intervals are 95% studentized intervals; Sharpe and annualized complete-day geometric-growth intervals are 95% percentile intervals. These are **approximate marginal intervals**, not jointly 95% across nine cases. The separately shown familywise mean lower bound is Bonferroni, **not a Holm-inverted interval or another success gate**. Only about 9.75 block lengths fit this nine-month sample, so dependence/stationarity assumptions and limited power matter. Holm-9 does not correct the much larger earlier research search.\",\"joint\":\"### A joint additive sensitivity leaves a descriptive 5.97 pp gap\\n\\nAn additive configuration-plus-basket fixed-effect projection on **207,674 pairs**, 62 shared configurations and 6,611 shared baskets leaves a **5.97 pp** controls-minus-survivors coefficient, versus **9.79 pp** raw within that retained subset. Independent sparse solvers agree.\\n\\nThis assumes common additive basket effects despite possible strategy-basket interactions. It has **no causal interpretation, standard error or p-value** and is not an extra term to add to the decompositions. Exact conditioning on both configuration and basket would identify the original pair itself; a pair cannot be both survivor and control.\",\"paths\":\"## 5. Neither track was consistently successful across periods\\n\\nThe plots show each saved path's daily closing net NAV, starting at 1.00. They are **not combined portfolios**; no portfolio weights are inferred. All daily observations and the terminal liquidation endpoint are retained. Earlier development/validation windows each span two years, whereas this evaluation covers nine months, so raw returns are not equal-horizon rates.\\n\\nA03 passed this test but lost in validation; Track B's favorable validation did not carry through to 2026. These observations do not constitute a formal claim that Track A is generally superior.\",\"posthoc\":\"## 7. Post-evaluation checks locate sensitivity, not a replacement winner\\n\\nA03's three nearest pre-enumerated parameter controls all gained in 2026, but their validation results ranged from **-43.76% to +3.75%**. All **11 Track B parameter neighbors** lost in 2026. Thus the observed failures were not confined to one precise setting. The counts below retain every frozen anchor, without ranking the controls.\\n\\nBasket sensitivity remained substantial: applying B04's same rule to the **predefined liquidity-tier reference basket** returned **+11.17%**, versus **-14.29%** on its selected basket. Several members change together; this is not an isolated coin effect and the reference is not promoted.\\n\\nA03's short contribution reversed sign: **-26.95 percentage points in validation versus +10.86 pp in 2026**. Its long side contributed +20.52 pp in 2026. Contributions are linked hourly net P&L in points of initial capital and reconcile to the original compounded path, not independently compounded coin or sleeve returns.\",\"primary\":\"## 1. All nine frozen cases remain in the primary result\\n\\nThe primary convention is **20 bps one-way full-L1 transaction cost at lag 1**, including entry, forced-event and terminal liquidation charges. Lag 1 is an **idealized observed-close fill**, not an actual extra one-hour wait. The window is **1 January-30 September 2026**, ending **1 October at 00:00 UTC**, with 6,552 hourly intervals and 273 complete UTC days.\\n\\nReturns are simulated nine-month compounded changes. Sharpe, volatility, turnover and CAGR are annualized estimates; the CAGR column is **not a realized full-year return**. Every case begins the evaluation independently from cash and is liquidated once at the final endpoint.\",\"provenance\":\"### Evidence and companion results\\n\\nThis report covers the frozen-nine OOS evaluation, parameter and basket controls, exploratory screening cohort and explanatory gap diagnostics. Reports 1 and 2 cover development/robustness and validation/frozen selection.\\n\\n**Data source and complete study dataset.** [Binance public Data Vision](https://data.binance.vision/) (**data.binance.vision**) spot-USDT **1-hour klines** supply prices and quote volumes. The normalized UTC grid has **43,824 hourly close endpoints**, from **1 October 2021 01:00 to 1 October 2026 00:00**, including warm-up. The packaged **22-slot screening universe** includes SAND; the nine frozen strategies use the **21-slot union of the full universe except SAND**. Lifecycle and missingness masks remain explicit. [Data documentation](https://github.com/Agul-quant/Cryptocurrency-statistical-arbitrage/blob/main/docs/DATA.md) | [Full coin inventory](https://github.com/Agul-quant/Cryptocurrency-statistical-arbitrage/blob/main/data/universe.csv) | [File hashes and coverage](https://github.com/Agul-quant/Cryptocurrency-statistical-arbitrage/blob/main/data/manifest.json).\\n\\nThe performance tables use audited, saved metric and accounting outputs. Per-coin attribution and joint-factor diagnostics use the same strategy paths and existing factor prices; they do not regenerate signals, targets, trades or selections. The nine strategies have independent accounting/calendar/metric and inference audits. The large cohort has exhaustive coverage/algebra audits plus bounded public-engine parity, not independent signal reimplementation for every pair.\\n\\nCompanion files retain **all nine primary metrics and all 63 scenarios**, same-pair period comparisons, every 69,108 survivor and 39,332 strict case in fixed experiment/basket order, full settings/basket/regime diagnostics, attribution and execution scenarios. These are supporting results, not another report or a ranked shortlist. Self-contained HTML supports offline reading; source actions retain definitions and provenance.\",\"regime_inference\":\"### Regime interactions do not establish reliable outperformance\\n\\nThe interaction is the **controls-minus-survivors mean daily gap in high/up minus the gap in low/down**, in basis points. Three 4,000-draw joint-calendar bootstrap intervals include zero. The volatility CI and estimated p-value are **unavailable** because **29 draws lacked a required state**; they were not dropped or filled.\\n\\nHolm keeps a four-test family using **p = 1 only as a conservative correction placeholder** for the unavailable volatility hypothesis. The volatility row remains unavailable, not a valid p = 1 finding or proof of no effect. All regime comparisons are posthoc, conditional associations—not causal explanations or strategy-selection evidence.\",\"regimes\":\"## 11. Market conditions changed, but regime causality is unproven\\n\\nValidation's BTC/ETH endpoint returns were **+107.29% / +30.23%**, versus **-4.59% / -9.61%** in January-September 2026. Median trailing BTC volatility fell from **45.01% to 40.66%**. Endpoint losses do not imply continuously falling prices.\\n\\nRegimes use information available at each **00:00 UTC decision**, applied to the **following day**. High/low median thresholds are fitted using 2022-2023 only; BTC direction is the sign of its trailing 30-day return. Unknown regimes are retained; no strategy switches on/off and no Sharpe is computed from discontinuous concatenated regime observations. The fixed-22 contextual 28-day rank IC was only **-0.019** in 2026 and is not the engine's eight-coin signal.\\n\\nSome raw regime comparisons changed sign after configuration standardization: settings mix confounded apparent state effects. The table retains raw and same-setting daily-mean gaps rather than claiming a unique regime cause.\",\"risk\":\"### Exposure and secondary risk measures\\n\\nExposure is measured from held accounting-interval weights. The long/cash case B05 retains inactive signal allocations as cash; unavailable cells are not zero. BTC alpha and beta are descriptive regressions of daily returns, not proof of arbitrage. Alpha, Sharpe and CAGR answer different questions; inherited regression significance is not a new selection gate.\",\"screening\":\"### Dependence-aware screening comparisons remain inconclusive\\n\\nThe statistic is survivors-minus-controls in the fraction with **strictly positive full-period net return**. Four predeclared contrasts use **4,000 synchronized circular 28-day blocks**, PCG64 seed 20261015. Every constituent shares each calendar draw. Intervals are 95% marginal percentile intervals; centered two-sided bootstrap p-values use the +1 convention and Holm correction across **these four contrasts only**.\\n\\nThe configuration-standardized contrast uses **62 shared configurations and 207,804 Q1 pairs**, weighted by fixed past all-Q1 case mass. It is -10.71 pp, with **[-16.77, +1.21] pp** interval and Holm p = **0.237**. All four intervals include zero. This does not prove screening harmful, equivalent to no screening, or useless; the grid is highly dependent and the correction is not research-wide search adjustment.\",\"settings\":\"### Family mix matters, but lower turnover was not sufficient\\n\\nReversal represented **27.19% of controls versus 4.81% of survivors**; long/cash trend was **3.96% versus 27.04%**, partly offsetting that imbalance. Family composition contributed **2.33 pp** to the raw net gap, with **6.94 pp within shared families** and **0.17 pp** from controls-only residual cases. The advantage was not universal: reversal survivor breadth was **49.68% versus 48.03%** for reversal controls.\\n\\nSurvivors were more often weekly (**56.23% versus 42.87%**) and in 14/28-day lookbacks (**70.50% versus 41.23%**). Among 14-day long/cash survivors, profitable breadth was **52.62% daily versus 18.21% weekly**; for long/short it was **52.97% versus 6.23%**. These contain different basket mixtures, not causal parameter experiments. No setting is selected from these observations.\",\"stress\":\"## 6. Fee sensitivities do not replace the primary test\\n\\nAll **63 frozen case-scenario outcomes** remain available: 0/5/10/15/20/40 bps at lag 1 and 20 bps at lag 2. Lag 2 adds one hour. Full-L1 charges include entry and terminal exit; ordinary drift-maintenance trades, borrow, funding and realistic fills are omitted.\\n\\nA03 remains positive at **40 bps (+24.77%)** and with the additional-hour delay (**+33.01%**), versus +31.38% primary. These are diagnostics, not fee-optimized rescue tests. B06 has slightly positive arithmetic daily Sharpe (**0.05 at 365-day / 0.04 at 252-day**) but negative compounded return (**-4.22%**); arithmetic and geometric measures can differ without an accounting contradiction.\",\"summary\":\"### Nine-case and wider-cohort results\\n\\n**One of the nine frozen strategy-basket pairs met the approved joint criteria in January-September 2026; the wider validation screen did not show reliable transfer.** A03 returned **+31.38% net**, with **2.32 net Sharpe (365-day), or 1.93 (252-day)**, **7.28% maximum drawdown** and **Holm-9 p = 0.0216**. Its earlier validation return was **-22.31%**, so this is not stable profitability across every period.\\n\\nThe exploratory cohort was substantially weaker: only **17.72%** of the **69,108 validation survivors** gained after 20 bps costs, versus **27.16%** of controls. The stricter **39,332 both-positive** subgroup still had **-10.95% median net return**. Settings and basket composition explain part of the observed gap; uncertainty does not establish that screening is harmful.\\n\\n**No new 2026 winner, basket or portfolio was selected.** This is a **273-day partial-year OOS evaluation**. Short availability, funding, order books and realistic fills remain unverified.\"}}");
+const value = JSON.parse("{\"narrative\":{\"baskets\":\"## 10. Basket composition explains part, not all, of the difference\\n\\nThe legacy **LUNA/LUNC** slot appeared in **33.68% of controls versus 17.53% of survivors**; XRP appeared in **23.62% versus 39.68%**, and legacy FTM/S in **24.12% versus 37.97%**. BTC and ETH were fixed in every basket, so their inclusion effects cannot be estimated here. Coin associations involve within-tier replacement baskets, not isolated coin P&L or recommendations.\\n\\nEach row below is an **alternative** decomposition of the same 9.51 pp raw control advantage. Within a row, composition + within-stratum + unsupported terms reconcile. **Do not add rows together.** Exact-configuration standardization still compares different baskets; exact-basket standardization still compares different strategies. Unsupported groups remain explicit, without fabricated missing-cohort rates.\\n\\nAll 22 economic slots were active in 2026, which rules out **retired-slot cash** as the explanation. It does not rule out ordinary signal-driven cash in long/cash trend.\",\"cohort\":\"## 8. The full exploratory cohort did not demonstrate robust transfer\\n\\n**Q1 means the retained members of the originally frozen within-basket development Sharpe group, with average ties—not calendar quarter one or newly calculated quintiles of the current 168 definitions.** The retained Q1 census has **223,512 basket-configuration pairs**. Its **69,108 validation-positive survivors** split into **39,332 positive in both periods** and **29,776 development-negative survivors**; the remaining **154,404 are validation-nonpositive controls**. No group assignment, frozen strategy or selection was changed.\\n\\nThe middle two rows below **partition**, rather than add to, broad survivors. These are constituent distributions, **not investable portfolio returns or independent trials**. All **638,160 retained scenario rows** were evaluated. Population summaries and uncertainty were reaggregated from saved paths after the scope amendment; this is a **descriptive update on already-examined 2026 observations**, not a new predeclared screen or independent OOS test. No missing result was filled, and no strategy was rerun.\",\"conclusion\":\"## 13. Final conclusions\\n\\n**The project produced reproducible conditional findings, not a deployable arbitrage strategy.** A03 passed the approved historical nine-case test, but lost in validation and faces material execution uncertainty. Neither a positive case nor profitable controls are promoted. Track B's validation-informed choices failed this partial-year window; the broad validation screen did not demonstrate reliable economic transfer.\\n\\nThe control advantage was already present before transaction costs. Family, exact-setting and basket composition explain portions of the association, but no single parameter, coin or market regime is a proven causal explanation. Wide shared-calendar uncertainty is consistent with limited market history despite a large configuration grid.\\n\\nThe chronology matters: development was **2022-2023**, validation **2024-2025**, and the partial-year evaluation **January-September 2026**. The approved protocol and window amendment fixed this evaluation's rules before its price access. However, **2026 prices had been examined before later diagnostics; those diagnostics are not independent new confirmation or live performance**. Nine-case Holm, four-screening-contrast Holm and four-regime Holm apply only to their stated conditional families, not the entire adaptive project.\\n\\nNo live orders, monitoring or deployment are authorized by these findings. An independent future test would require unseen observations and a separately approved, execution-aware protocol; no such result is claimed here.\",\"criteria\":\"## 3. Positive return and statistical support are separate criteria\\n\\n**Economic:** net compounded return > 0. **Statistical:** positive HAC mean-return t-statistic and primary Holm-9 p \u003c= 0.05. **Drawdown:** observed-hour maximum drawdown \u003c= 40%. **Turnover:** annualized full-L1 turnover \u003c= 1.5 times the greater historical development/validation turnover, with caps fixed before this study's access.\\n\\nThese are **evaluation limits, not trading stop-loss switches**. A01 and A02 gained but did not pass the corrected statistical criterion. A04 and all five Track B cases lost. B03 also exceeded its drawdown and turnover limits. No unsuccessful case was removed and no risk cap was revised.\",\"drawdowns\":\"## 4. Drawdown dates describe the observed hourly path\\n\\nDates and durations refer to the **maximum-depth drawdown episode**. Recovery is the first observed endpoint regaining its previous peak; an unrecovered episode is right-censored at 1 October 00:00 UTC. The maximum-depth episode need not be the longest underwater episode, which is retained separately below. Intrahour drawdowns are unobserved.\\n\\nDaily expected shortfall (ES95) is the mean loss in the worst 5% of complete daily observations, using the established engine convention. These risk diagnostics do not change the frozen decision rule.\",\"execution\":\"## 12. Historical statistical support is not execution feasibility\\n\\nThe stress adds **10 bps one-way slippage plus 20% annual simple carry on negative held notional**, on top of 20 bps base charges. A03 remains positive at **+18.80%**. These are **hypothetical assumptions**, not observed funding, borrow, spread or market impact; actual short availability is unverified.\\n\\nAt constant **100,000-USDT scenario capital**, A03's absolute target-change notional divided by preceding completed-hour quote volume was **89.61% at the 95th percentile and 467.29% maximum**. The maximum was a 6,250-USDT MANA target change versus 1,337.49 USDT prior-hour volume. Even at 25k capital the maximum proxy was 116.82%.\\n\\nThis is **not actual participation in a future fill window, order-book impact, certified capacity, an AUM recommendation or proof of impossibility**. It warns against assuming an observed-close fill is harmless. Borrow inventory, funding, historical spread/depth and fill reconstruction remain unresolved; drift-maintenance trades are omitted.\",\"fees\":\"## 9. Controls' advantage began before modeled transaction costs\\n\\nControls had **50.77%** gross-profitable paths versus **33.06%** among survivors: a **17.71 pp** advantage. Costs erased profit in **23.54%** of all control paths and **15.33%** of survivor paths, narrowing the gap by **8.21 pp** to **9.51 pp** net. Controls traded **more**, not less: median annualized full-L1 turnover was **69.02× versus 47.80×**.\\n\\nControls' median gross return was **+0.31%**, versus **−11.01% net**. Even at zero transaction cost, broad and strict survivors had negative median compounded returns (**−5.96% and −5.22%**). Signal/path transfer, not only fees, was weak. Separate medians need not describe the same constituent path. These retained-scope summaries do not select a new strategy.\",\"identity\":\"## 2. Frozen identities and allocations did not change\\n\\nTrack A contains the four development-only selections; Track B contains five validation-informed family selections. Track B validation Sharpe was therefore a **selection statistic**, not an unbiased final-test estimate.\\n\\nSignals use **trailing returns**, not moving-average crossings. Weekly decisions are Monday 00:00 UTC; 72-hour decisions follow the inherited elapsed-time epoch. The 0.25 buffer skips the **entire** rebalance below that proposed full-L1 change. Rank/demean/L1 cross-sectional weights have unit gross exposure and zero net target; trend slot budgets remain 1/8 without rescaling active coins. Legacy symbols denote audited economic slots: **LUNA/LUNC is original Terra, not Terra 2**; FTM/S and MATIC/POL include migration treatment.\",\"inference\":\"### Uncertainty uses the shared calendar, not independent daily observations\\n\\nThe primary hypothesis is positive **expected arithmetic daily net return**, not positive BTC alpha or geometric growth. HAC uses a Bartlett kernel with 27 lags and the frozen n/(n-1) variance adjustment. The primary test uses **10,000 centered circular 28-day block-bootstrap-t samples**, seed 20261015, synchronized across all nine strategies; Holm retains all nine hypotheses.\\n\\nDaily-mean intervals are 95% studentized intervals; Sharpe and annualized complete-day geometric-growth intervals are 95% percentile intervals. These are **approximate marginal intervals**, not jointly 95% across nine cases. The separately shown familywise mean lower bound is Bonferroni, **not a Holm-inverted interval or another success gate**. Only about 9.75 block lengths fit this nine-month sample, so dependence/stationarity assumptions and limited power matter. Holm-9 does not correct the much larger earlier research search.\",\"joint\":\"### A joint additive sensitivity leaves a descriptive 5.97 pp gap\\n\\nAn additive configuration-plus-basket fixed-effect projection on **207,674 pairs**, 62 shared configurations and 6,611 shared baskets leaves a **5.97 pp** controls-minus-survivors coefficient, versus **9.79 pp** raw within that retained subset. Independent sparse solvers agree.\\n\\nThis assumes common additive basket effects despite possible strategy-basket interactions. It has **no causal interpretation, standard error or p-value** and is not an extra term to add to the decompositions. Exact conditioning on both configuration and basket would identify the original pair itself; a pair cannot be both survivor and control.\",\"paths\":\"## 5. Neither track was consistently successful across periods\\n\\nThe plots show each saved path's daily closing net NAV, starting at 1.00. They are **not combined portfolios**; no portfolio weights are inferred. All daily observations and the terminal liquidation endpoint are retained. Earlier development/validation windows each span two years, whereas this evaluation covers nine months, so raw returns are not equal-horizon rates.\\n\\nA03 passed this test but lost in validation; Track B's favorable validation did not carry through to 2026. These observations do not constitute a formal claim that Track A is generally superior.\",\"posthoc\":\"## 7. Post-evaluation checks locate sensitivity, not a replacement winner\\n\\nA03's three nearest pre-enumerated parameter controls all gained in 2026, but their validation results ranged from **-43.76% to +3.75%**. All **11 Track B parameter neighbors** lost in 2026. Thus the observed failures were not confined to one precise setting. The counts below retain every frozen anchor, without ranking the controls.\\n\\nBasket sensitivity remained substantial: applying B04's same rule to the **predefined liquidity-tier reference basket** returned **+11.17%**, versus **-14.29%** on its selected basket. Several members change together; this is not an isolated coin effect and the reference is not promoted.\\n\\nA03's short contribution reversed sign: **-26.95 percentage points in validation versus +10.86 pp in 2026**. Its long side contributed +20.52 pp in 2026. Contributions are linked hourly net P&L in points of initial capital and reconcile to the original compounded path, not independently compounded coin or sleeve returns.\",\"primary\":\"## 1. All nine frozen cases remain in the primary result\\n\\nThe primary convention is **20 bps one-way full-L1 transaction cost at lag 1**, including entry, forced-event and terminal liquidation charges. Lag 1 is an **idealized observed-close fill**, not an actual extra one-hour wait. The window is **1 January-30 September 2026**, ending **1 October at 00:00 UTC**, with 6,552 hourly intervals and 273 complete UTC days.\\n\\nReturns are simulated nine-month compounded changes. Sharpe, volatility, turnover and CAGR are annualized estimates; the CAGR column is **not a realized full-year return**. Every case begins the evaluation independently from cash and is liquidated once at the final endpoint.\",\"provenance\":\"### Evidence and companion results\\n\\nThis report covers the frozen-nine OOS evaluation, parameter and basket controls, exploratory screening cohort and explanatory gap diagnostics. Reports 1 and 2 cover development/robustness and validation/frozen selection.\\n\\n**Data source and complete study dataset.** [Binance public Data Vision](https://data.binance.vision/) (**data.binance.vision**) spot-USDT **1-hour klines** supply prices and quote volumes. The normalized UTC grid has **43,824 hourly close endpoints**, from **1 October 2021 01:00 to 1 October 2026 00:00**, including warm-up. The packaged **22-slot screening universe** includes SAND; the nine frozen strategies use the **21-slot union of the full universe except SAND**. Lifecycle and missingness masks remain explicit. [Data documentation](https://github.com/Agul-quant/Cryptocurrency-statistical-arbitrage/blob/main/docs/DATA.md) | [Full coin inventory](https://github.com/Agul-quant/Cryptocurrency-statistical-arbitrage/blob/main/data/universe.csv) | [File hashes and coverage](https://github.com/Agul-quant/Cryptocurrency-statistical-arbitrage/blob/main/data/manifest.json).\\n\\nThe performance tables use audited, saved metric and accounting outputs. Per-coin attribution and joint-factor diagnostics use the same strategy paths and existing factor prices; they do not regenerate signals, targets, trades or selections. The nine strategies have independent accounting/calendar/metric and inference audits. The large cohort has exhaustive coverage/algebra audits plus bounded public-engine parity, not independent signal reimplementation for every pair.\\n\\nCompanion files retain **all nine primary metrics and all 63 scenarios**, same-pair period comparisons, every 69,108 survivor and 39,332 strict case in fixed experiment/basket order, full settings/basket/regime diagnostics, attribution and execution scenarios. These are supporting results, not another report or a ranked shortlist. Self-contained HTML supports offline reading; source actions retain definitions and provenance.\\n\\n**Post-evaluation scope amendment.** The current publication retains **168 definitions across five families**. This scope was narrowed after the development, validation and 2026 evaluations; it is not a new pre-evaluation freeze. The nine frozen IDs, baskets and settings, and the original development-ranked group memberships, are unchanged: there is **no reranking or reselection**. Population summaries are filtered or recomputed from saved retained-case results, not new strategy runs. This change supplies **no new independent OOS evidence**.\",\"regime_inference\":\"### Regime interactions do not establish reliable outperformance\\n\\nThe interaction is the **controls-minus-survivors mean daily gap in high/up minus the gap in low/down**, in basis points. Three 4,000-draw joint-calendar bootstrap intervals include zero. The volatility CI and estimated p-value are **unavailable** because **29 draws lacked a required state**; they were not dropped or filled.\\n\\nHolm keeps a four-test family using **p = 1 only as a conservative correction placeholder** for the unavailable volatility hypothesis. The volatility row remains unavailable, not a valid p = 1 finding or proof of no effect. All regime comparisons are posthoc, conditional associations—not causal explanations or strategy-selection evidence.\",\"regimes\":\"## 11. Market conditions changed, but regime causality is unproven\\n\\nValidation's BTC/ETH endpoint returns were **+107.29% / +30.23%**, versus **-4.59% / -9.61%** in January-September 2026. Median trailing BTC volatility fell from **45.01% to 40.66%**. Endpoint losses do not imply continuously falling prices.\\n\\nRegimes use information available at each **00:00 UTC decision**, applied to the **following day**. High/low median thresholds are fitted using 2022-2023 only; BTC direction is the sign of its trailing 30-day return. Unknown regimes are retained; no strategy switches on/off and no Sharpe is computed from discontinuous concatenated regime observations. The fixed-22 contextual 28-day rank IC was only **-0.019** in 2026 and is not the engine's eight-coin signal.\\n\\nSome raw regime comparisons changed sign after configuration standardization: settings mix confounded apparent state effects. The table retains raw and same-setting daily-mean gaps rather than claiming a unique regime cause.\",\"risk\":\"### Exposure and secondary risk measures\\n\\nExposure is measured from held accounting-interval weights. The long/cash case B05 retains inactive signal allocations as cash; unavailable cells are not zero. BTC alpha and beta are descriptive regressions of daily returns, not proof of arbitrage. Alpha, Sharpe and CAGR answer different questions; inherited regression significance is not a new selection gate.\",\"screening\":\"### Dependence-aware screening comparisons remain inconclusive\\n\\nThe statistic is survivors-minus-controls in the fraction with **strictly positive full-period net return**. The four originally frozen contrast definitions were recomputed for the retained scope using **4,000 synchronized circular 28-day blocks**, PCG64 seed 20261015. Every constituent shares each calendar draw. Intervals are 95% marginal percentile intervals; centered two-sided bootstrap p-values use the +1 convention and Holm correction across **these four contrasts only**.\\n\\nThe configuration-standardized contrast uses **62 shared configurations and 207,804 Q1 pairs**, weighted by fixed past all-Q1 case mass. It is -10.71 pp, with **[-16.77, +1.21] pp** interval and Holm p = **0.237**. All four intervals include zero. This does not prove screening harmful, equivalent to no screening, or useless; the grid is highly dependent and the correction is not research-wide search adjustment.\\n\\nThe overall retained-scope lift is **−9.51 pp**, with **[−18.44, +9.22] pp** interval and Holm-4 p = **0.643**. Reusing the original methods and frozen memberships does not turn this post-evaluation scope update into new independent confirmation.\",\"settings\":\"### Family mix matters, but lower turnover was not sufficient\\n\\nReversal represented **27.43% of controls versus 4.81% of survivors**; long/cash trend was **4.00% versus 27.04%**, partly offsetting that imbalance. Family composition contributed **2.54 pp** to the raw net gap, with **6.96 pp within shared families and no unsupported family contribution**. The advantage was not universal: reversal survivor breadth was **49.68% versus 48.03%** for reversal controls.\\n\\nSurvivors were more often weekly (**56.23% versus 43.25%**) and in 14/28-day lookbacks (**70.50% versus 41.60%**). Among 14-day long/cash survivors, profitable breadth was **52.62% daily versus 18.21% weekly**; for long/short it was **52.97% versus 6.23%**. These contain different basket mixtures, not causal parameter experiments. No setting is selected from these observations.\",\"stress\":\"## 6. Fee sensitivities do not replace the primary test\\n\\nAll **63 frozen case-scenario outcomes** remain available: 0/5/10/15/20/40 bps at lag 1 and 20 bps at lag 2. Lag 2 adds one hour. Full-L1 charges include entry and terminal exit; ordinary drift-maintenance trades, borrow, funding and realistic fills are omitted.\\n\\nA03 remains positive at **40 bps (+24.77%)** and with the additional-hour delay (**+33.01%**), versus +31.38% primary. These are diagnostics, not fee-optimized rescue tests. B06 has slightly positive arithmetic daily Sharpe (**0.05 at 365-day / 0.04 at 252-day**) but negative compounded return (**-4.22%**); arithmetic and geometric measures can differ without an accounting contradiction.\",\"summary\":\"### Nine-case and wider-cohort results\\n\\n**One of the nine frozen strategy-basket pairs met the approved joint criteria in January-September 2026; the wider validation screen did not show reliable transfer.** A03 returned **+31.38% net**, with **2.32 net Sharpe (365-day), or 1.93 (252-day)**, **7.28% maximum drawdown** and **Holm-9 p = 0.0216**. Its earlier validation return was **-22.31%**, so this is not stable profitability across every period.\\n\\nThe exploratory cohort was substantially weaker: only **17.72%** of the **69,108 validation survivors** gained after 20 bps costs, versus **27.23%** of controls. The stricter **39,332 both-positive** subgroup still had **-10.95% median net return**. Settings and basket composition explain part of the observed gap; uncertainty does not establish that screening is harmful.\\n\\n**No new 2026 winner, basket or portfolio was selected.** This is a **273-day partial-year OOS evaluation**. Short availability, funding, order books and realistic fills remain unverified.\"}}");
 const jsonValue0 = value["narrative"];
 
 const pctFields=new Set(['Gross return','Net return','CAGR estimate','Max DD','Ann. volatility','Gross exposure','Net exposure','Cash allocation','BTC alpha / year','Mean daily','Familywise mean LB','Worst day','Daily ES95 loss','Selected net return','Reference net return','Profitable','Median net return','Median Max DD','Gross profitable','Net profitable','Median gross return','Share of cohort','BTC hold return','ETH hold return','Median BTC trailing vol','Base net return','Stressed net return','P95 volume proxy','Max volume proxy','Largest abs. coin share','Best 5 weeks share']);
@@ -33527,8 +33527,6 @@ function ReportContent(){
  , jsxRuntime.jsxs('section', { className: "final-page", id: "neighbors", children: [
   table('neighbor-table','neighbor_breadth','Positive / all pre-enumerated nearest-parameter controls',['ID','2022-2023','2024-2025','Jan-Sep 2026'])
   , evidence('reference-evidence','reference','Same-rule reference-basket contrasts','[Download all posthoc control contrasts](exports/posthoc_control_contrasts.csv). The reference-basket and nearest-parameter comparisons are explanatory, not a new selection exercise.')
-  , text('b02-text','b02',['b02'])
-  , table('b02-table','b02','Factor-family qualification funnel',['Stage','Pairs'])
  ]})
  , jsxRuntime.jsxs('section', { className: "final-page", id: "cohort", children: [
   text('cohort-text','cohort',['cohort'])
@@ -33545,7 +33543,7 @@ function ReportContent(){
  , jsxRuntime.jsxs('section', { className: "final-page", id: "settings", children: [
   text('settings-text','settings',['family','decomposition'])
   , table('family-table','family_sharpe_display','Every family: no favorable family is promoted',['Family','Cohort','Pairs','Share of cohort','Profitable','Median net return','Median Sharpe'])
-  , evidence('settings-evidence','family_sharpe_display','Settings companion','[Download all settings and subgroups](exports/all_settings_summary.csv), including the full eight trend settings and every represented configuration. An unavailable factor-survivor cell means no qualifying member, not zero performance.')
+  , evidence('settings-evidence','family_sharpe_display','Settings companion','[Download all settings and subgroups](exports/all_settings_summary.csv), including the full eight trend settings and every represented configuration.')
  ]})
  , jsxRuntime.jsxs('section', { className: "final-page", id: "baskets", children: [
   text('baskets-text','baskets',['decomposition','coins'])

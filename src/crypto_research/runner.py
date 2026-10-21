@@ -47,8 +47,6 @@ def subset_panel(panel,symbols):
 
 def generate(panel,case):
     controls={name:panel[name] for name in ('tradable','observed','decision_allowed','mandatory_exit')}
-    if case['family']=='factor_residual':
-        return strategies.generate_factor_targets(panel['prices'],**controls).targets
     return strategies.generate_targets(panel['prices'],case,**controls)
 
 

@@ -4,171 +4,143 @@
   "rows": [
     {
       "family": "Momentum",
-      "scope": "development",
-      "lunaNetDollarContribution": 0.015910092055362434,
+      "feeDollarContribution": 0.020511287510621697,
       "grossDollarContribution": 0.036421379565984145,
-      "feeDollarContribution": 0.020511287510621697
+      "lunaNetDollarContribution": 0.015910092055362434,
+      "scope": "development"
     },
     {
       "family": "Momentum",
-      "scope": "2022",
-      "lunaNetDollarContribution": 0.017348465703695092,
+      "feeDollarContribution": 0.014704759280042584,
       "grossDollarContribution": 0.03205322498373768,
-      "feeDollarContribution": 0.014704759280042584
+      "lunaNetDollarContribution": 0.017348465703695092,
+      "scope": "2022"
     },
     {
       "family": "Momentum",
-      "scope": "2023",
-      "lunaNetDollarContribution": -0.0014383736483326718,
+      "feeDollarContribution": 0.005806528230579138,
       "grossDollarContribution": 0.004368154582246466,
-      "feeDollarContribution": 0.005806528230579138
+      "lunaNetDollarContribution": -0.0014383736483326718,
+      "scope": "2023"
     },
     {
       "family": "Momentum",
-      "scope": "event_window",
-      "lunaNetDollarContribution": 0.04080681300089327,
+      "feeDollarContribution": 0.0003809995170827777,
       "grossDollarContribution": 0.04118781251797604,
-      "feeDollarContribution": 0.0003809995170827777
+      "lunaNetDollarContribution": 0.04080681300089327,
+      "scope": "event_window"
     },
     {
       "family": "Reversal",
-      "scope": "development",
-      "lunaNetDollarContribution": -0.13344226847491408,
+      "feeDollarContribution": 0.014055696696667919,
       "grossDollarContribution": -0.11938657177824614,
-      "feeDollarContribution": 0.014055696696667919
+      "lunaNetDollarContribution": -0.13344226847491408,
+      "scope": "development"
     },
     {
       "family": "Reversal",
-      "scope": "2022",
-      "lunaNetDollarContribution": -0.12954807275251207,
+      "feeDollarContribution": 0.012292064171214732,
       "grossDollarContribution": -0.11725600858129732,
-      "feeDollarContribution": 0.012292064171214732
+      "lunaNetDollarContribution": -0.12954807275251207,
+      "scope": "2022"
     },
     {
       "family": "Reversal",
-      "scope": "2023",
-      "lunaNetDollarContribution": -0.003894195722402026,
+      "feeDollarContribution": 0.0017636325254532105,
       "grossDollarContribution": -0.002130563196948815,
-      "feeDollarContribution": 0.0017636325254532105
+      "lunaNetDollarContribution": -0.003894195722402026,
+      "scope": "2023"
     },
     {
       "family": "Reversal",
-      "scope": "event_window",
-      "lunaNetDollarContribution": -0.12072617344396062,
+      "feeDollarContribution": 0.00034280137737970957,
       "grossDollarContribution": -0.12038337206658091,
-      "feeDollarContribution": 0.00034280137737970957
+      "lunaNetDollarContribution": -0.12072617344396062,
+      "scope": "event_window"
     },
     {
       "family": "Buffered momentum",
-      "scope": "development",
-      "lunaNetDollarContribution": 0.01593600997738032,
+      "feeDollarContribution": 0.01011751539016201,
       "grossDollarContribution": 0.02605352536754233,
-      "feeDollarContribution": 0.01011751539016201
+      "lunaNetDollarContribution": 0.01593600997738032,
+      "scope": "development"
     },
     {
       "family": "Buffered momentum",
-      "scope": "2022",
-      "lunaNetDollarContribution": 0.012860989558649255,
+      "feeDollarContribution": 0.004823152558369945,
       "grossDollarContribution": 0.017684142117019203,
-      "feeDollarContribution": 0.004823152558369945
+      "lunaNetDollarContribution": 0.012860989558649255,
+      "scope": "2022"
     },
     {
       "family": "Buffered momentum",
-      "scope": "2023",
-      "lunaNetDollarContribution": 0.0030750204187310645,
+      "feeDollarContribution": 0.005294362831792063,
       "grossDollarContribution": 0.008369383250523128,
-      "feeDollarContribution": 0.005294362831792063
+      "lunaNetDollarContribution": 0.0030750204187310645,
+      "scope": "2023"
     },
     {
       "family": "Buffered momentum",
-      "scope": "event_window",
-      "lunaNetDollarContribution": 0.04868800841476079,
+      "feeDollarContribution": 0.00025049923837398776,
       "grossDollarContribution": 0.04893850765313479,
-      "feeDollarContribution": 0.00025049923837398776
+      "lunaNetDollarContribution": 0.04868800841476079,
+      "scope": "event_window"
     },
     {
       "family": "Trend long/cash",
-      "scope": "development",
-      "lunaNetDollarContribution": 0.00661003332369093,
+      "feeDollarContribution": 0.0022569991345456173,
       "grossDollarContribution": 0.008867032458236548,
-      "feeDollarContribution": 0.0022569991345456173
+      "lunaNetDollarContribution": 0.00661003332369093,
+      "scope": "development"
     },
     {
       "family": "Trend long/cash",
-      "scope": "2022",
-      "lunaNetDollarContribution": -0.0057745331509120425,
+      "feeDollarContribution": 0.0010251832584163895,
       "grossDollarContribution": -0.004749349892495653,
-      "feeDollarContribution": 0.0010251832584163895
+      "lunaNetDollarContribution": -0.0057745331509120425,
+      "scope": "2022"
     },
     {
       "family": "Trend long/cash",
-      "scope": "2023",
-      "lunaNetDollarContribution": 0.012384566474602973,
+      "feeDollarContribution": 0.001231815876129228,
       "grossDollarContribution": 0.013616382350732202,
-      "feeDollarContribution": 0.001231815876129228
+      "lunaNetDollarContribution": 0.012384566474602973,
+      "scope": "2023"
     },
     {
       "family": "Trend long/cash",
-      "scope": "event_window",
-      "lunaNetDollarContribution": -0.0017774600712444986,
+      "feeDollarContribution": 1.4631279552443693e-05,
       "grossDollarContribution": -0.0017628287916920552,
-      "feeDollarContribution": 1.4631279552443693e-05
+      "lunaNetDollarContribution": -0.0017774600712444986,
+      "scope": "event_window"
     },
     {
       "family": "Trend long/short",
-      "scope": "development",
-      "lunaNetDollarContribution": 0.15307609049561804,
+      "feeDollarContribution": 0.007266453325107377,
       "grossDollarContribution": 0.16034254382072544,
-      "feeDollarContribution": 0.007266453325107377
+      "lunaNetDollarContribution": 0.15307609049561804,
+      "scope": "development"
     },
     {
       "family": "Trend long/short",
-      "scope": "2022",
-      "lunaNetDollarContribution": 0.1366855393728589,
+      "feeDollarContribution": 0.003077099709228025,
       "grossDollarContribution": 0.13976263908208691,
-      "feeDollarContribution": 0.003077099709228025
+      "lunaNetDollarContribution": 0.1366855393728589,
+      "scope": "2022"
     },
     {
       "family": "Trend long/short",
-      "scope": "2023",
-      "lunaNetDollarContribution": 0.016390551122759143,
+      "feeDollarContribution": 0.0041893536158793526,
       "grossDollarContribution": 0.020579904738638497,
-      "feeDollarContribution": 0.0041893536158793526
+      "lunaNetDollarContribution": 0.016390551122759143,
+      "scope": "2023"
     },
     {
       "family": "Trend long/short",
-      "scope": "event_window",
-      "lunaNetDollarContribution": 0.14481910618902916,
+      "feeDollarContribution": 0.000149589982034279,
       "grossDollarContribution": 0.14496869617106345,
-      "feeDollarContribution": 0.000149589982034279
-    },
-    {
-      "family": "BTC residual reversal",
-      "scope": "development",
-      "lunaNetDollarContribution": -0.0026325121919645385,
-      "grossDollarContribution": -0.0024573738838359004,
-      "feeDollarContribution": 0.00017513830812863855
-    },
-    {
-      "family": "BTC residual reversal",
-      "scope": "2022",
-      "lunaNetDollarContribution": 0.0,
-      "grossDollarContribution": 0.0,
-      "feeDollarContribution": 0.0
-    },
-    {
-      "family": "BTC residual reversal",
-      "scope": "2023",
-      "lunaNetDollarContribution": -0.0026325121919645385,
-      "grossDollarContribution": -0.0024573738838359004,
-      "feeDollarContribution": 0.00017513830812863855
-    },
-    {
-      "family": "BTC residual reversal",
-      "scope": "event_window",
-      "lunaNetDollarContribution": 0.0,
-      "grossDollarContribution": 0.0,
-      "feeDollarContribution": 0.0
+      "lunaNetDollarContribution": 0.14481910618902916,
+      "scope": "event_window"
     }
   ]
 }

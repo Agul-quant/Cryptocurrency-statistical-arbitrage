@@ -344,6 +344,5 @@
         "max_drawdown": 0.4
       }
     }
-  ],
-  "factor_family_status": "No eligible Track B factor candidate; no factor strategy added."
+  ]
 }

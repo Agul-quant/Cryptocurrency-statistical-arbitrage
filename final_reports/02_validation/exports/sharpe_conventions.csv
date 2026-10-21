@@ -1,4 +1,14 @@
 query_id,row_index,row_identity,period,metric,sharpe_365,sharpe_252,original_365_display,precision_basis,approximate_252_from_rounded_source,factor
+development_groups,0,Q1 (best),Development,Median Sharpe,0.1372178989259054,0.11401568565461147,0.14,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+development_groups,1,Q1 (best),Validation,Median Sharpe,-0.14127110611933746,-0.11738353489932915,-0.14,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+development_groups,2,Q2,Development,Median Sharpe,-0.7371025857425019,-0.6124657014067734,-0.74,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+development_groups,3,Q2,Validation,Median Sharpe,-0.747636688538227,-0.6212185897865852,-0.75,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+development_groups,4,Q3,Development,Median Sharpe,-1.7727120043763156,-1.4729636310512586,-1.77,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+development_groups,5,Q3,Validation,Median Sharpe,-1.6284981953210773,-1.3531349756862987,-1.63,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+development_groups,6,Q4,Development,Median Sharpe,-4.026209652655327,-3.345416725733349,-4.03,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+development_groups,7,Q4,Validation,Median Sharpe,-4.182170267176232,-3.47500591591121,-4.18,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+development_groups,8,Q5 (worst),Development,Median Sharpe,-15.693738607644082,-13.040079915529,-15.69,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
+development_groups,9,Q5 (worst),Validation,Median Sharpe,-17.868236482166164,-14.846891330503407,-17.87,retained_scope_full_precision_saved_aggregate,False,0.8309097176613772
 reference_comparison,0,A01,Development,Selected Sharpe,1.8381819401529187,1.5273632369027044,1.84,existing_posthoc_control_contrasts_full_precision,False,0.8309097176613772
 reference_comparison,0,A01,Development,Reference Sharpe,0.2813790142590418,0.23380055729381707,0.28,existing_posthoc_control_contrasts_full_precision,False,0.8309097176613772
 reference_comparison,1,A01,Validation,Selected Sharpe,-0.3923624374590584,-0.326017762130036,-0.39,existing_posthoc_control_contrasts_full_precision,False,0.8309097176613772
@@ -15,16 +25,6 @@ reference_comparison,6,A04,Development,Selected Sharpe,1.429829437829922,1.18805
 reference_comparison,6,A04,Development,Reference Sharpe,0.8643620684853016,0.718206842282326,0.86,existing_posthoc_control_contrasts_full_precision,False,0.8309097176613772
 reference_comparison,7,A04,Validation,Selected Sharpe,-0.2151929208151949,-0.1788058890772807,-0.22,existing_posthoc_control_contrasts_full_precision,False,0.8309097176613772
 reference_comparison,7,A04,Validation,Reference Sharpe,0.34869542377897267,0.28973441612200046,0.35,existing_posthoc_control_contrasts_full_precision,False,0.8309097176613772
-development_groups,0,Q1 (best),Development,Median Sharpe,0.14,0.11632736047259282,0.14,existing_rounded_365_display_only,True,0.8309097176613772
-development_groups,1,Q1 (best),Validation,Median Sharpe,-0.15,-0.12463645764920658,-0.15,existing_rounded_365_display_only,True,0.8309097176613772
-development_groups,2,Q2,Development,Median Sharpe,-0.74,-0.6148731910694192,-0.74,existing_rounded_365_display_only,True,0.8309097176613772
-development_groups,3,Q2,Validation,Median Sharpe,-0.76,-0.6314913854226467,-0.76,existing_rounded_365_display_only,True,0.8309097176613772
-development_groups,4,Q3,Development,Median Sharpe,-1.77,-1.4707102002606376,-1.77,existing_rounded_365_display_only,True,0.8309097176613772
-development_groups,5,Q3,Validation,Median Sharpe,-1.63,-1.3543828397880449,-1.63,existing_rounded_365_display_only,True,0.8309097176613772
-development_groups,6,Q4,Development,Median Sharpe,-4.03,-3.3485661621753504,-4.03,existing_rounded_365_display_only,True,0.8309097176613772
-development_groups,7,Q4,Validation,Median Sharpe,-4.18,-3.4732026198245567,-4.18,existing_rounded_365_display_only,True,0.8309097176613772
-development_groups,8,Q5 (worst),Development,Median Sharpe,-15.69,-13.036973470107009,-15.69,existing_rounded_365_display_only,True,0.8309097176613772
-development_groups,9,Q5 (worst),Validation,Median Sharpe,-17.87,-14.848356654608812,-17.87,existing_rounded_365_display_only,True,0.8309097176613772
 main_raw_performance,0,A01,development,raw_sharpe,1.838181940152938,1.5273632369027204,1.838181940152938,existing_full_precision_reviewed_query,False,0.8309097176613772
 main_raw_performance,1,A02,development,raw_sharpe,2.031457445115922,1.6879577321623735,2.031457445115922,existing_full_precision_reviewed_query,False,0.8309097176613772
 main_raw_performance,2,A03,development,raw_sharpe,1.1887937126643842,0.9877802481475838,1.1887937126643842,existing_full_precision_reviewed_query,False,0.8309097176613772

@@ -1,0 +1,11 @@
+group,period,n_frozen_group_members,n_defined_sharpe,sharpe_median,total_return_median,annualized_full_l1_turnover_median,positive_return_n,positive_return_denominator,positive_return_fraction,membership_basis
+1,development,223512,223512,0.13721789892590541,-0.017194195860064862,60.8125,105372,223512,0.47143777515301194,"unchanged frozen development rank labels; retained-scope subset, not re-ranked168 quintiles"
+1,validation,223512,223512,-0.14127110611933746,-0.16526290308554606,64.93188554491563,69108,223512,0.30919145280790294,"unchanged frozen development rank labels; retained-scope subset, not re-ranked168 quintiles"
+2,development,219923,219923,-0.73710258574250187,-0.37527478970077782,70.6875,180,219923,0.00081846828208054635,"unchanged frozen development rank labels; retained-scope subset, not re-ranked168 quintiles"
+2,validation,219923,219923,-0.74763668853822696,-0.36181700818645018,70.049874601003211,29090,219923,0.13227356847623942,"unchanged frozen development rank labels; retained-scope subset, not re-ranked168 quintiles"
+3,development,219065,219065,-1.7727120043763156,-0.69078820388015438,159.46875,0,219065,0,"unchanged frozen development rank labels; retained-scope subset, not re-ranked168 quintiles"
+3,validation,219065,219065,-1.6284981953210773,-0.59583306288891702,162.09045827633378,5868,219065,0.026786570196060532,"unchanged frozen development rank labels; retained-scope subset, not re-ranked168 quintiles"
+4,development,223910,223910,-4.0262096526553268,-0.92895328440473168,487.59375,0,223910,0,"unchanged frozen development rank labels; retained-scope subset, not re-ranked168 quintiles"
+4,validation,223910,223910,-4.1821702671762324,-0.90145781572396944,489.29847811217508,13,223910,5.8059041579205933e-05,"unchanged frozen development rank labels; retained-scope subset, not re-ranked168 quintiles"
+5,development,224910,224910,-15.693738607644082,-0.9999727312979515,2753.0062500000008,0,224910,0,"unchanged frozen development rank labels; retained-scope subset, not re-ranked168 quintiles"
+5,validation,224910,224910,-17.868236482166164,-0.99997658691399405,2654.2848267213863,0,224910,0,"unchanged frozen development rank labels; retained-scope subset, not re-ranked168 quintiles"

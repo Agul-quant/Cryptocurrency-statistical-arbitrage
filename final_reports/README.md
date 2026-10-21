@@ -23,6 +23,8 @@ The separate fixed all-22 studies also failed to maintain positive net returns a
 
 Primary results are net of **20 bps one-way full-L1 transaction costs**. These are separate fixed studies, not ranked alternatives, a combined strategy or another winner selection. Their saved period performance and descriptive uncertainty do not revise their acceptance criteria. All fee/delay sensitivities remain available. Exactly three final PDFs remain.
 
+The current reporting scope contains **168 retained configurations**. This scope was narrowed after evaluation; the nine frozen selections and historical development-ranked group memberships were not reselected or reranked. Grid-wide summaries below are recomputed for the retained scope, not presented as a newly independent test.
+
 ## Two separate Sharpe conventions
 
 The reports show **√365 and √252** Sharpe annualization conventions, using the **same complete UTC daily return observations, including weekends**. The √252 value equals the √365 value multiplied by `sqrt(252/365)`; this changes the scale, not the strategy, sample or P&L. CAGR, volatility, turnover annualization and annual alpha retain calendar/365-day conventions.

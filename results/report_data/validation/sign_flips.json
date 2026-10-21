@@ -3,11 +3,11 @@
   "period": "validation",
   "rows": [
     {
-      "Dev negative": 1010633,
-      "Dev positive": 106302,
+      "Dev negative": 1005768,
+      "Dev positive": 105552,
       "Family": "All families",
-      "Negative → positive": "6.40%",
-      "Positive → negative": "62.90%"
+      "Negative → positive": "6.43%",
+      "Positive → negative": "62.71%"
     },
     {
       "Dev negative": 466887,
@@ -43,13 +43,6 @@
       "Family": "Long/short trend",
       "Negative → positive": "24.91%",
       "Positive → negative": "49.43%"
-    },
-    {
-      "Dev negative": 4865,
-      "Dev positive": 750,
-      "Family": "BTC residual reversal",
-      "Negative → positive": "0.00%",
-      "Positive → negative": "90.40%"
     }
   ]
 }

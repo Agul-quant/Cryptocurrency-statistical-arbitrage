@@ -3,88 +3,74 @@
   "period": "development",
   "rows": [
     {
-      "family": "Momentum",
-      "present": true,
       "baskets": 1890,
+      "family": "Momentum",
       "medianReturn": -0.589958079971741,
-      "medianSharpe": -0.9142748339763853
+      "medianSharpe": -0.9142748339763853,
+      "present": true
     },
     {
+      "baskets": 4725,
       "family": "Momentum",
-      "present": false,
-      "baskets": 4725,
       "medianReturn": -0.615119429620631,
-      "medianSharpe": -1.7971401862138376
+      "medianSharpe": -1.7971401862138376,
+      "present": false
     },
     {
-      "family": "Reversal",
-      "present": true,
       "baskets": 1890,
+      "family": "Reversal",
       "medianReturn": -0.9251703910162887,
-      "medianSharpe": -2.1374147748181844
+      "medianSharpe": -2.1374147748181844,
+      "present": true
     },
     {
+      "baskets": 4725,
       "family": "Reversal",
-      "present": false,
-      "baskets": 4725,
       "medianReturn": -0.7319613142340404,
-      "medianSharpe": -2.456762588287078
+      "medianSharpe": -2.456762588287078,
+      "present": false
     },
     {
-      "family": "Buffered momentum",
-      "present": true,
       "baskets": 1890,
+      "family": "Buffered momentum",
       "medianReturn": -0.03881196239707582,
-      "medianSharpe": 0.1240297970341883
+      "medianSharpe": 0.1240297970341883,
+      "present": true
     },
     {
+      "baskets": 4725,
       "family": "Buffered momentum",
-      "present": false,
-      "baskets": 4725,
       "medianReturn": -0.08304723013711285,
-      "medianSharpe": -0.040153941192388104
+      "medianSharpe": -0.040153941192388104,
+      "present": false
     },
     {
-      "family": "Trend long/cash",
-      "present": true,
       "baskets": 1890,
+      "family": "Trend long/cash",
       "medianReturn": 0.04725357534574581,
-      "medianSharpe": 0.2527610636190768
+      "medianSharpe": 0.2527610636190768,
+      "present": true
     },
     {
+      "baskets": 4725,
       "family": "Trend long/cash",
-      "present": false,
-      "baskets": 4725,
       "medianReturn": 0.03742160509864456,
-      "medianSharpe": 0.2429111282824832
+      "medianSharpe": 0.2429111282824832,
+      "present": false
     },
     {
-      "family": "Trend long/short",
-      "present": true,
       "baskets": 1890,
+      "family": "Trend long/short",
       "medianReturn": 0.5233412173533587,
-      "medianSharpe": 0.6467943779036456
+      "medianSharpe": 0.6467943779036456,
+      "present": true
     },
     {
+      "baskets": 4725,
       "family": "Trend long/short",
-      "present": false,
-      "baskets": 4725,
       "medianReturn": 0.14357280454793092,
-      "medianSharpe": 0.40744827538691797
-    },
-    {
-      "family": "BTC residual reversal",
-      "present": true,
-      "baskets": 1890,
-      "medianReturn": -0.010527603854744902,
-      "medianSharpe": -0.5506430982457701
-    },
-    {
-      "family": "BTC residual reversal",
-      "present": false,
-      "baskets": 4725,
-      "medianReturn": -0.004780494993623089,
-      "medianSharpe": -0.7780896191517939
+      "medianSharpe": 0.40744827538691797,
+      "present": false
     }
   ]
 }

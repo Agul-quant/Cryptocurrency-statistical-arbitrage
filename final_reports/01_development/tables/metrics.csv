@@ -1,8 +1,8 @@
 metric,value,unit
-Total net return,-0.7103480782827848,fraction
-CAGR,-0.46180679889354304,fraction
-Annual volatility,0.27153502012898373,fraction
-Maximum drawdown,0.7684626171459502,fraction
-Longest underwater span (days),708.5833333333334,days
-Full-L1 turnover (times/year),189.2291666666666,times/year
-Sharpe,-1.7720099769645337,ratio
+Total net return,-0.71545005115177107,fraction
+CAGR,-0.46656776546152001,fraction
+Annual volatility,0.2719637352811991,fraction
+Maximum drawdown,0.77221703303723332,fraction
+Longest underwater span (days),709.08333333333337,days
+Full-L1 turnover (times/year),190.91666666666674,times/year
+Sharpe,-1.788831800607432,ratio

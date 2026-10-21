@@ -4,52 +4,52 @@
   "rows": [
     {
       "costBps": 0,
-      "scenario": "cost00_lag1",
-      "positive": 0.43168431080518993,
-      "medianReturn": -0.07885591235394296,
-      "medianSharpe": -0.008734402966446897
+      "medianReturn": -0.08249892235651708,
+      "medianSharpe": -0.005394319506588462,
+      "positive": 0.4331290717345139,
+      "scenario": "cost00_lag1"
     },
     {
       "costBps": 5,
-      "scenario": "cost05_lag1",
-      "positive": 0.22683161364480045,
-      "medianReturn": -0.36873855230569474,
-      "medianSharpe": -0.6989930862557949
+      "medianReturn": -0.3728316966508587,
+      "medianSharpe": -0.702932143428697,
+      "positive": 0.22705701328150307,
+      "scenario": "cost05_lag1"
     },
     {
       "costBps": 10,
-      "scenario": "cost10_lag1",
-      "positive": 0.1624844020448416,
-      "medianReturn": -0.5133796249227087,
-      "medianSharpe": -1.0896608585959044
+      "medianReturn": -0.518475391861718,
+      "medianSharpe": -1.1002939607915212,
+      "positive": 0.16232678256487781,
+      "scenario": "cost10_lag1"
     },
     {
       "costBps": 15,
-      "scenario": "cost15_lag1",
-      "positive": 0.12278531399410521,
-      "medianReturn": -0.6242353287012056,
-      "medianSharpe": -1.4364450554667898
+      "medianReturn": -0.6294199255525098,
+      "medianSharpe": -1.4494401267784858,
+      "positive": 0.12284130583450312,
+      "scenario": "cost15_lag1"
     },
     {
       "costBps": 20,
-      "scenario": "cost20_lag1",
-      "positive": 0.09508781816474124,
-      "medianReturn": -0.7103480782827848,
-      "medianSharpe": -1.7720099769645337
+      "medianReturn": -0.7154500511517711,
+      "medianSharpe": -1.788831800607432,
+      "positive": 0.09497894395853579,
+      "scenario": "cost20_lag1"
     },
     {
       "costBps": 40,
-      "scenario": "cost40_lag1",
-      "positive": 0.04237187314110391,
-      "medianReturn": -0.8746488888710472,
-      "medianSharpe": -3.0316716135695594
+      "medianReturn": -0.8784777300498557,
+      "medianSharpe": -3.064602255026274,
+      "positive": 0.04217417125580391,
+      "scenario": "cost40_lag1"
     },
     {
       "costBps": 20,
-      "scenario": "cost20_lag2",
-      "positive": 0.09602883888598174,
-      "medianReturn": -0.7080480477852777,
-      "medianSharpe": -1.7462240164783036
+      "medianReturn": -0.713215914651498,
+      "medianSharpe": -1.7626376520363545,
+      "positive": 0.0959255659935932,
+      "scenario": "cost20_lag2"
     }
   ]
 }

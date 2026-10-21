@@ -69,8 +69,8 @@ def test_inactive_slot_stays_cash():
     assert (t.iloc[:,0]==0).all();assert (t.abs().sum(axis=1)<=7/8).all()
 
 def test_frozen_grid_and_periods():
-    cases=s.candidate_grid();assert len(cases)==169
-    assert len({x['experiment_id'] for x in cases})==169
+    cases=s.candidate_grid();assert len(cases)==168
+    assert len({x['experiment_id'] for x in cases})==168
     p=json.loads((ROOT/'configs/research_protocol.json').read_text())
     assert p['periods']['development'][1]==p['periods']['validation'][0]
     assert p['periods']['validation'][1]==p['periods']['oos_partial_2026_jan_sep'][0]
@@ -139,3 +139,23 @@ def test_diagnostic_output_rejects_target_symlink(tmp_path):
     (output/'diagnostic.json').symlink_to(protected)
     with pytest.raises(ValueError):checked_output_path(root,output/'diagnostic.json')
     assert protected.read_text()=='protected'
+
+
+def test_current_definition_space_has_only_supported_trading_rules():
+    cases=s.candidate_grid()
+    assert {row['report_family'] for row in cases}=={
+        'momentum','reversal','buffered_momentum','trend_long_cash','trend_long_short'}
+    expected={'momentum':78,'reversal':78,'buffered_momentum':4,
+              'trend_long_cash':4,'trend_long_short':4}
+    assert {family:sum(row['report_family']==family for row in cases)
+            for family in expected}==expected
+    registry=json.loads((ROOT/'configs/frozen_strategies.json').read_text())
+    by_id={row['experiment_id']:row for row in cases}
+    assert len(registry['strategies'])==9
+    assert all(row['case']==by_id[row['experiment_id']] for row in registry['strategies'])
+
+
+def test_unknown_family_is_rejected():
+    bad=case('unsupported')
+    with pytest.raises(ValueError,match='Unsupported strategy family'):
+        s.generate_targets(fixture(),bad)

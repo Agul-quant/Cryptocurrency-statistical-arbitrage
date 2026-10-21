@@ -3,34 +3,34 @@
   "period": "oos",
   "rows": [
     {
-      "Composition pp": 2.3294820712338526,
+      "Composition pp": 2.543184010249261,
       "Conditioning": "Family",
-      "Raw gap pp": 9.435638943318637,
+      "Raw gap pp": 9.507527848490898,
       "Shared pairs": 223512,
       "Shared strata": 5,
       "Standardized gap pp": 6.3408016211628,
-      "Unsupported pp": 0.1649984912589321,
-      "Within pp": 6.941158380825854
+      "Unsupported pp": 0.0,
+      "Within pp": 6.964343838241641
     },
     {
-      "Composition pp": -4.2401243292115085,
+      "Composition pp": -4.060604645292245,
       "Conditioning": "Exact configuration",
-      "Raw gap pp": 9.435638943318637,
+      "Raw gap pp": 9.507527848490898,
       "Shared pairs": 207804,
       "Shared strata": 62,
       "Standardized gap pp": 10.709614299783013,
-      "Unsupported pp": 2.652174192181511,
-      "Within pp": 11.023589080348636
+      "Unsupported pp": 2.5090023574518794,
+      "Within pp": 11.059130136331262
     },
     {
-      "Composition pp": 3.8079183332998303,
+      "Composition pp": 3.815271642817206,
       "Conditioning": "Exact basket",
-      "Raw gap pp": 9.435638943318637,
-      "Shared pairs": 224731,
+      "Raw gap pp": 9.507527848490898,
+      "Shared pairs": 223376,
       "Shared strata": 6611,
-      "Standardized gap pp": 4.920493093525106,
-      "Unsupported pp": 0.03531096116436289,
-      "Within pp": 5.592409648854446
+      "Standardized gap pp": 4.972596305598334,
+      "Unsupported pp": 0.03562083883837207,
+      "Within pp": 5.656635366835321
     }
   ]
 }

@@ -155,7 +155,7 @@ statistical missing-factor handling are in [Methods](METHODS.md).
 
 The included 22-slot source supports all baskets in the stated tiered universe.
 The supplied research runner deliberately reproduces **only the nine fixed
-strategies**, not the complete 6,615 × 169 search. Supporting campaign/cohort
+strategies**, not the complete 6,615 × 168 retained search. Supporting campaign/cohort
 outputs remain saved results. Current daily factor and attribution inputs are
 also included under `data/diagnostics/`.
 

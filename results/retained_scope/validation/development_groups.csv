@@ -1,0 +1,11 @@
+Cases,Group,Median Sharpe,Median annual TO,Median net,Period,Positive fraction
+223512,Q1 (best),0.14,60.81×,-1.72%,Development,47.14%
+223512,Q1 (best),-0.14,64.93×,-16.53%,Validation,30.92%
+219923,Q2,-0.74,70.69×,-37.53%,Development,0.08%
+219923,Q2,-0.75,70.05×,-36.18%,Validation,13.23%
+219065,Q3,-1.77,159.47×,-69.08%,Development,0.00%
+219065,Q3,-1.63,162.09×,-59.58%,Validation,2.68%
+223910,Q4,-4.03,487.59×,-92.90%,Development,0.00%
+223910,Q4,-4.18,489.30×,-90.15%,Validation,0.01%
+224910,Q5 (worst),-15.69,2753.01×,-99.9973%,Development,0.00%
+224910,Q5 (worst),-17.87,2654.28×,-99.9977%,Validation,0.00%

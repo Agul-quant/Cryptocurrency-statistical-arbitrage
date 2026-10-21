@@ -20,12 +20,14 @@ and weights were recomputed inside each basket; these are not slices of one
 22-coin portfolio. The universe comes from the inherited historical top-30
 inventory, not an unrestricted census of exchange listings.
 
-Across these baskets, the study evaluated **169 strategy definitions** spanning
-cross-sectional momentum, reversal, buffered momentum, time-series trend and a
-fixed BTC-factor residual model. Four Track A strategies were selected using
+Across these baskets, the study evaluated **168 retained strategy definitions** spanning
+cross-sectional momentum, reversal, buffered momentum and time-series trend
+(long/cash and theoretical long/short). Four Track A strategies were selected using
 development only; five Track B strategies used development eligibility and
 validation. The nine frozen strategies use different eight-coin baskets, not one
 common basket. Their combined membership covers 21 economic slots.
+
+The current reporting scope contains **168 retained configurations**. This scope was narrowed after evaluation; the nine frozen selections and historical development-ranked group memberships were not reselected or reranked. Grid-wide summaries below are recomputed for the retained scope, not presented as a newly independent test.
 
 **All four development-selected strategies (A01–A04) lost money in 2024–2025
 validation; all five validation-selected strategies (B01, B03–B06) lost money
@@ -114,6 +116,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.lock.txt
 python scripts/verify_project.py
 python scripts/verify_fixed_all22.py
+python scripts/verify_reporting_scope.py
 python -m pytest tests -q
 python scripts/run_research.py
 python scripts/reproduce_diagnostics.py
@@ -144,7 +147,7 @@ and masks, not all raw OHLCV fields or ZIP archives.
 | Folder | Contents |
 | --- | --- |
 | `src/` | Strategies, accounting, metrics and statistical diagnostics |
-| `configs/` | 169 definitions, nine frozen strategies and periods |
+| `configs/` | 168 retained definitions, nine frozen strategies and periods |
 | `data/` | Hourly panels, source catalogs, liquidity inventory and masks |
 | `results/` | Performance, screening, attribution and fixed-study evidence |
 | `final_reports/` | Three PDFs and their offline HTML counterparts |

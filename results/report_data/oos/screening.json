@@ -3,27 +3,27 @@
   "period": "oos",
   "rows": [
     {
-      "95% CI pp": "[-18.21, 9.24]",
-      "Centered p": 0.3224193951512122,
+      "95% CI pp": "[-18.44, 9.22]",
+      "Centered p": 0.32141964508872783,
       "Contrast": "Overall survivors - controls",
-      "Holm-4 p": 0.6448387903024244,
-      "Lift pp": -9.435638943318637,
+      "Holm-4 p": 0.6428392901774557,
+      "Lift pp": -9.507527848490898,
       "Reject 5%": false
     },
     {
-      "95% CI pp": "[-20.73, 15.25]",
-      "Centered p": 0.4038990252436891,
+      "95% CI pp": "[-21.11, 15.04]",
+      "Centered p": 0.4008997750562359,
       "Contrast": "Within development-positive",
-      "Holm-4 p": 0.6448387903024244,
-      "Lift pp": -9.368973081366278,
+      "Holm-4 p": 0.6428392901774557,
+      "Lift pp": -9.48422083069514,
       "Reject 5%": false
     },
     {
-      "95% CI pp": "[-18.52, 7.33]",
-      "Centered p": 0.20019995001249688,
+      "95% CI pp": "[-18.75, 7.50]",
+      "Centered p": 0.20444888777805548,
       "Contrast": "Within development-negative",
-      "Holm-4 p": 0.6005998500374906,
-      "Lift pp": -9.919583706662724,
+      "Holm-4 p": 0.6133466633341664,
+      "Lift pp": -9.961254678786888,
       "Reject 5%": false
     },
     {
@@ -31,7 +31,7 @@
       "Centered p": 0.05923519120219945,
       "Contrast": "Configuration-standardized",
       "Holm-4 p": 0.2369407648087978,
-      "Lift pp": -10.709614299783336,
+      "Lift pp": -10.709614299783338,
       "Reject 5%": false
     }
   ]

@@ -1,10 +1,10 @@
 {
-  "created_at_utc": "2026-10-21T00:27:52.427154+00:00",
+  "created_at_utc": "2026-10-21T01:28:38.770732+00:00",
   "formatting": {
     "all_pages_reviewed": true,
     "build": "Installed Data plugin verified runtime, separate-data compilation and native offline export",
     "external_network_requests_during_offline_render": 0,
-    "native_source_overview_and_scoped_three_row_preview": "PASS",
+    "native_source_overview_and_scoped_four_row_preview": "PASS; retained cohort metadata and154404 controls visible",
     "numeric_headers_and_cells": "right-aligned; identifiers/text left-aligned",
     "offline_all_three_complete_under_connect_src_none_test_response_header": true,
     "pages_by_report": [
@@ -13,7 +13,7 @@
       27
     ],
     "protected_runtime_changed": false,
-    "responsive_scope": "Existing native browser viewport and 1280px export checked; no mobile viewport emulation",
+    "responsive_scope": "Existing native browser viewport and1280px export checked; no mobile emulation",
     "runtime_sha256": "9e3ede84b28aded3c7379b6e6a5611f0d95b9977eb0f781e279ceefabfcbd27e",
     "visual_QA_pages": 71
   },
@@ -23,15 +23,12 @@
     "joint_coefficient_Holm243_Bonferroni243_unchanged": true
   },
   "preservation": {
-    "all22_raw_financial_CSV_numeric_cells_verified": 4512,
-    "core_raw_asset_files_verified_unchanged": 47,
-    "frozen_strategy_count": 9,
-    "private_completed_study_files_verified_unchanged": {
-      "momentum": 108,
-      "reversal": 81
-    },
-    "retained_report_field_values_verified_unchanged": 56232,
-    "strategies_selections_positions_costs_data_raw_results_unchanged": true
+    "archived_campaigns_unchanged": true,
+    "both_fixed_all22_studies_unchanged": true,
+    "nine_strategy_dictionaries_and_order_unchanged": true,
+    "original_nine_acceptance_and_joint_attribution_unchanged": true,
+    "protected_financial_files_verified_unchanged": 43,
+    "survivor_rows_and_original_frozen_rank_values_unchanged": true
   },
   "readme_order": [
     "Main finding: performance did not persist across periods",
@@ -47,19 +44,20 @@
       "all22_uncertainty_rows": 6,
       "files": {
         "01_development_and_robustness.html": {
-          "bytes": 3820682,
-          "sha256": "502b569f105ec51f71de0693933160a12d59a9aad19737b7c9cbb02685a506b7"
+          "bytes": 3824341,
+          "sha256": "1c7a17a06a68542aacfba3e9160ca40fd20619455302e38eb3c3c2cd65193145"
         },
         "01_development_and_robustness.pdf": {
-          "bytes": 994397,
-          "sha256": "121b4be205d2d45e065ab792b0de61c2f154ea0773161c5f959c3ec34deab61e"
+          "bytes": 988918,
+          "sha256": "91e3568532e4988ef6049e47938e17d456945db0aafdd48d381a5509924de76d"
         }
       },
       "main_performance_rows": 9,
       "pages": 22,
       "report": "01_development",
       "reviewed_queries": 28,
-      "snapshot_sha256": "0c5a88947efd0aae59cb05c256bd5f137485580d60dd3e8a93ea4da76fa8718a"
+      "snapshot_sha256": "0dd66f7ba0ab88a5f3436f7804aa64c48e3b5c93f2ab13f59f0412bb6eb846dc",
+      "visual_review": "PASS"
     },
     {
       "all22_primary_rows": 6,
@@ -67,19 +65,20 @@
       "all22_uncertainty_rows": 6,
       "files": {
         "02_validation_and_frozen_selection.html": {
-          "bytes": 3725898,
-          "sha256": "220175c0bf38ad5ddb902341a4a0f2535b992f910ded8495e757e5f3c21d92cc"
+          "bytes": 3730710,
+          "sha256": "a668d097a8f603a4c024d5bfe3cf0cc1bf4875f374f820790e84267e332cca56"
         },
         "02_validation_and_frozen_selection.pdf": {
-          "bytes": 1059561,
-          "sha256": "fa7e198150d3d0ba1a7db4a23b1d6a3ae1d9a033a97006eabcc386e556af29fb"
+          "bytes": 1058244,
+          "sha256": "86f688d12efe3e4744dc58a2fc637c06309115807cf58a617f7b38edafd20f2c"
         }
       },
       "main_performance_rows": 18,
       "pages": 22,
       "report": "02_validation",
       "reviewed_queries": 25,
-      "snapshot_sha256": "afef5020bd274ae0a5dfb2952822ffed3b73c64bddc6a56f3c7a0d3c87ed1c90"
+      "snapshot_sha256": "244cca40bce70521ff12779e60143fd2541dd71eca2239e3f217880a7be84e6f",
+      "visual_review": "PASS"
     },
     {
       "all22_primary_rows": 6,
@@ -87,21 +86,65 @@
       "all22_uncertainty_rows": 6,
       "files": {
         "03_2026_evaluation_and_conclusions.html": {
-          "bytes": 4181661,
-          "sha256": "e96eb450e60ca32be548f8de279ec795a23f22bda223f6b64c8b7003d33b85cf"
+          "bytes": 4186465,
+          "sha256": "d9ee5e9157b16fa19dfed90afb075ee3c3bcbe5ed97d895293817a6f0f9252a1"
         },
         "03_2026_evaluation_and_conclusions.pdf": {
-          "bytes": 1180472,
-          "sha256": "0bef09821a4fcbe0352ced49bd77f87783f3f99114222d4a234639ba583501e5"
+          "bytes": 1179236,
+          "sha256": "7e85e846d9bc2bc5c226b74a9fcce788ebfb5ee87b8bac860dbb787848eaee45"
         }
       },
       "main_performance_rows": 9,
       "pages": 27,
       "report": "03_2026_evaluation",
-      "reviewed_queries": 42,
-      "snapshot_sha256": "8839bbc5858620732c59a3f7046dce13cd00f6485347f387b6ef7b75e86a827e"
+      "reviewed_queries": 41,
+      "snapshot_sha256": "b29c5292bfc139d4442154818c7ba9661f6dea879ce8e8aeece74f1881214c73",
+      "visual_review": "PASS"
     }
   ],
+  "retained_scope": {
+    "amended_after_evaluation": true,
+    "baskets": 6615,
+    "families": {
+      "buffered_momentum": 4,
+      "momentum": 78,
+      "reversal": 78,
+      "trend_long_cash": 4,
+      "trend_long_short": 4
+    },
+    "frozen_nine_reselected": false,
+    "historical_development_groups_reranked": false,
+    "oos_saved_scenario_rows_retained": 638160,
+    "primary_pairs_per_period": 1111320,
+    "reporting_configurations": 168,
+    "retained_Q1_pairs": 223512,
+    "scenario_keys_per_full_grid_period": 7779240,
+    "strict_both_positive_survivors": 39332,
+    "validation_nonpositive_controls": 154404,
+    "validation_survivors": 69108
+  },
+  "scope_reaggregation": {
+    "affected_volatility_interval_and_p_value": "unavailable; no invalid draws silently dropped",
+    "conditional_screening_bootstrap_recomputed": {
+      "block_days": 28,
+      "indices": "synchronized original calendar draws",
+      "replications": 4000,
+      "scope": "conditional descriptive update after scope restriction, not fresh OOS confirmation or selection",
+      "seed": 20261015
+    },
+    "current_configurations": 168,
+    "fresh_prices_loaded": false,
+    "independent_saved_result_reconciliation": "PASS",
+    "invalid_volatility_bootstrap_draws": 29,
+    "new_actual_strategy_or_signal_execution": false,
+    "pooled_summaries_recomputed_from_saved_results": true,
+    "saved_development_source_partitions_verified": 4376,
+    "screening_Holm_family_size": 4,
+    "screening_contrasts": 4,
+    "screening_rejections": 0,
+    "thresholds_or_selection_recomputed": false,
+    "unknown_regimes_preserved": true
+  },
   "separate_all22_studies": {
     "exact_report_CSV_companions": 18,
     "momentum_chronology_exception_disclosed": true,
@@ -121,13 +164,21 @@
   },
   "status": "PASS",
   "verification": {
-    "actual_panel_loading_test_not_executed": 1,
+    "actual_panel_loading_test_explicitly_deselected": 1,
     "all_report_csv_companions_HTTP200_and_hash_match": 54,
     "live_orders_or_monitoring": false,
     "new_market_data_acquisition": false,
-    "saved_result_numeric_reconciliation_checks": 2934,
-    "scientific_strategy_or_bootstrap_rerun": false,
+    "real_price_and_saved_metric_readers_blocked_during_synthetic_tests": true,
     "single_PDF_edit_operation_marker_expected_outputs": 3,
-    "synthetic_tests_passed": 29
+    "synthetic_basket_sizes": [
+      8,
+      22
+    ],
+    "synthetic_case_basket_comparisons": 336,
+    "synthetic_exposure_numeric_cells": 618,
+    "synthetic_parity": "bit-exact retained targets, runner adapter and exposure metrics",
+    "synthetic_target_numeric_cells": 11617200,
+    "synthetic_target_parity_configurations": 168,
+    "synthetic_tests_passed": 31
   }
 }

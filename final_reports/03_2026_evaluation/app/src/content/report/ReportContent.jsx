@@ -67,8 +67,6 @@ export function ReportContent(){
  <section className="final-page" id="neighbors">
   {table('neighbor-table','neighbor_breadth','Positive / all pre-enumerated nearest-parameter controls',['ID','2022-2023','2024-2025','Jan-Sep 2026'])}
   {evidence('reference-evidence','reference','Same-rule reference-basket contrasts','[Download all posthoc control contrasts](exports/posthoc_control_contrasts.csv). The reference-basket and nearest-parameter comparisons are explanatory, not a new selection exercise.')}
-  {text('b02-text','b02',['b02'])}
-  {table('b02-table','b02','Factor-family qualification funnel',['Stage','Pairs'])}
  </section>
  <section className="final-page" id="cohort">
   {text('cohort-text','cohort',['cohort'])}
@@ -85,7 +83,7 @@ export function ReportContent(){
  <section className="final-page" id="settings">
   {text('settings-text','settings',['family','decomposition'])}
   {table('family-table','family_sharpe_display','Every family: no favorable family is promoted',['Family','Cohort','Pairs','Share of cohort','Profitable','Median net return','Median Sharpe'])}
-  {evidence('settings-evidence','family_sharpe_display','Settings companion','[Download all settings and subgroups](exports/all_settings_summary.csv), including the full eight trend settings and every represented configuration. An unavailable factor-survivor cell means no qualifying member, not zero performance.')}
+  {evidence('settings-evidence','family_sharpe_display','Settings companion','[Download all settings and subgroups](exports/all_settings_summary.csv), including the full eight trend settings and every represented configuration.')}
  </section>
  <section className="final-page" id="baskets">
   {text('baskets-text','baskets',['decomposition','coins'])}

@@ -4,12 +4,12 @@
   "rows": [
     {
       "baskets": 6615,
-      "configurations": 169,
-      "primaryPairs": 1117935,
-      "scenarioKeys": 7825545,
-      "positiveNet": 106302,
-      "undefinedSharpe": 1000,
-      "rankCorrelationMedian": 0.8672314293001299
+      "configurations": 168,
+      "positiveNet": 105552,
+      "primaryPairs": 1111320,
+      "rankCorrelationMedian": 0.8676002191730898,
+      "scenarioKeys": 7779240,
+      "undefinedSharpe": 0
     }
   ]
 }
